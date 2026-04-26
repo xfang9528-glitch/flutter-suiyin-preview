@@ -30,6 +30,7 @@ a:hover { text-decoration: underline; }
 <label>查看版本：</label>
 <select onchange="var v=this.value; location.href=v?(encodeURIComponent(v)+'.html'):'./';">
   <option value="">📦 当前预览（下一版）</option>
+  <option value="2026042601">🕘 2026042601（无后续 bump）</option>
   <option value="2026042502">🕘 2026042601 发版预览</option>
   <option value="2026042501">🕘 2026042502 发版预览</option>
   <option value="2026042403">🕘 2026042501 发版预览</option>
@@ -43,28 +44,11 @@ a:hover { text-decoration: underline; }
 当前线上：<code>2026042602</code> · 下一版（预览）：<code>2026042603</code><br>
 基线 commit：<code>fix(customer-info #723): set-remark 成功后本地直写 remark + customerNames (#795)</code>（2026-04-26） · ⚠️ 此 commit 没用标准 <code>chore(release): bump</code> 格式，多半也漏了归档 next.md → <code>&lt;PREV&gt;.md</code> + 重置 next.md 步骤<br>
 共 <strong>13</strong> 个 PR 已合入 main，待下次发版携带（cutoff: 2026-04-26 起）。<br>
-生成时间：2026-04-26 21:17:48 · 重新跑脚本后刷新页面即拿最新
+生成时间：2026-04-26 21:32:52 · 重新跑脚本后刷新页面即拿最新
 </div>
 
-<div class="notice">⚠️ <code>docs/release-notes/next.md</code> 引用了 <strong>10</strong> 个 bump 之前合入的 PR：<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/796">#796</a>、<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/800">#800</a>、<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/766">#766</a>、<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/764">#764</a>、<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/754">#754</a>、<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/782">#782</a>、<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/783">#783</a>、<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/784">#784</a>、<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/774">#774</a>、<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/765">#765</a>。这些 PR 已在上版（<code>2026042602</code>）发出，请考虑从 next.md 移除（或确认它们就是要在本版重新提示用户）。</div>
-<h2>📣 本版用户感知更新</h2>
-<h3>🆕 新功能</h3>
-<ul>
-  <li>话术管理改版：可以从聊天消息内容里多选直接添加话术，新建/编辑入口收敛到一处，不再分散 — 房昕 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/796">#796</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/769">#769</a>)</li>
-  <li>「发起群聊」流程优化：先选定要用哪个人设号发起，再选群成员，避免拉到一半发现人设不对要重来 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/800">#800</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/763">#763</a>)</li>
-  <li>在「搜索聊天记录」点搜索结果可以弹出浮层，看到那条消息上下 50 条的对话上下文，不用跳回原会话 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/766">#766</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/710">#710</a>)</li>
-  <li>「新的朋友」列表里每个申请项会显示对方的人设徽章 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/764">#764</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/762">#762</a>)</li>
-  <li>支持「合并转发」：可以把多条消息打包转发出去，接收方点开能完整看到原始会话内容（跟微信一致） — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/754">#754</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/716">#716</a>)</li>
-</ul>
-<h3>🐞 问题修复</h3>
-<ul>
-  <li>切租户后界面卡死（窗口拖不动、点哪都没反应）已修复 — 房昕、王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/782">#782</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/768">#768</a>)</li>
-  <li>切换企业时应用闪退、以及关闭子窗口（图片预览 / 朋友圈等）会顺手把主窗口一起关掉的问题已修复 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/783">#783</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/781">#781</a>)</li>
-  <li>拼音输入法输中文敲空格上屏后搜索没反应已修复（话术 / 聊天记录 / 转发选人 3 处搜索框 + 登录页手机号输入框） — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/784">#784</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/779">#779</a>)</li>
-  <li>电脑用户名含中文时，「提取图片中的文字」功能现在能正常使用 — 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/774">#774</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/761">#761</a>)</li>
-  <li>收到的「视频号直播」消息现在能完整显示直播标题、简介、封面图，点封面可直接跳转直播间（之前因字段对不上几乎只剩空壳） — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/765">#765</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/753">#753</a>)</li>
-</ul>
 
+<div class="notice">📝 <code>docs/release-notes/next.md</code> 还没填用户感知更新条目。在 bump 前由发版同学按模板补一下；现在先看下方「本期所有 PR」对照。</div>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏</h2>

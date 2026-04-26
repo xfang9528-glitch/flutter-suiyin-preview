@@ -39,12 +39,12 @@ a:hover { text-decoration: underline; }
 </select>
 </div>
 
-<h1>📦 after-2026042502 发版预览</h1>
+<h1>📦 2026042601 发版预览</h1>
 <div class="meta">
-🕘 历史回看模式 · 重现 <code>after-2026042502</code> 发版前的预览页 · anchor: 当时 pubspec 在 <code>2026042502</code>，紧接的下一次 bump <code>fix(customer-info #723): set-remark 成功后本地直写 remark + customerNames (#795)</code>（2026-04-26）归档了 <code>2026042502.md</code><br>当前线上：<code>2026042601</code> · 该版本：<code>after-2026042502</code><br>
-基线 commit：<code>chore(release): bump to 26.04.26+2026042601 + 归档 2502 release notes</code>（2026-04-25）<br>
-共 <strong>16</strong> 个 PR 在该版本中合入（cutoff: 2026-04-25 起）。<br>
-生成时间：2026-04-26 21:42:03 · 重新跑脚本后刷新页面即拿最新 · 顶部用户视角内容来自归档 <code>docs/release-notes/2026042502.md</code>
+🕘 历史回看模式 · 重现 <code>2026042601</code> 发版前的预览页 · anchor: 当时 pubspec 在 <code>2026042502</code>，紧接的下一次 bump <code>chore(release): bump to 26.04.26+2026042601 + 归档 2502 release notes</code>（2026-04-25）归档了 <code>2026042502.md</code><br>当前线上：<code>2026042502</code> · 该版本：<code>2026042601</code><br>
+基线 commit：<code>chore(release): bump to 26.04.25+2026042502 + 归档 2501 release notes</code>（2026-04-25）<br>
+共 <strong>6</strong> 个 PR 在该版本中合入（cutoff: 2026-04-25 起）。<br>
+生成时间：2026-04-26 21:48:20 · 重新跑脚本后刷新页面即拿最新 · 顶部用户视角内容来自归档 <code>docs/release-notes/2026042502.md</code>
 </div>
 
 
@@ -61,28 +61,18 @@ a:hover { text-decoration: underline; }
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏</h2>
-<div class="ref-hint">下面是自上次 bump 以来合入 main 的全部 16 个 PR。对照顶部 next.md，看看有没有用户感知得到、但顶部没列的；有就补到 next.md 上面去。</div>
+<div class="ref-hint">下面是自上次 bump 以来合入 main 的全部 6 个 PR。对照顶部 next.md，看看有没有用户感知得到、但顶部没列的；有就补到 next.md 上面去。</div>
 <h2>🆕 新功能</h2>
 <ul>
-  <li>close #769 添加话术迭代 — 入口收敛 + 公共/私有合并版弹窗 + 三级管理 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/796">#796</a> <span class="author">— 房昕</span></li>
-  <li>发起群聊改两步流程 + 跨人设拉群确认 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/800">#800</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/763">#763</a>) <span class="author">— 王梓先</span></li>
+  <li>搜索聊天记录命中消息预览浮层 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/766">#766</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/710">#710</a>) <span class="author">— 王梓先</span></li>
+  <li>新的朋友列表项展示人设徽章 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/764">#764</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/762">#762</a>) <span class="author">— 王梓先</span></li>
+  <li>合并转发走 link:relay / link:relayCompose 原生协议 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/754">#754</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/716">#716</a>) <span class="author">— 陈聪、王争</span></li>
 </ul>
 
 <h2>🐞 问题修复</h2>
 <ul>
-  <li>发送合并转发后详情窗口只显示摘要文本 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/815">#815</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/799">#799</a>) <span class="author">— 王争</span></li>
-  <li>搜索跳转后通讯录列表自动滚到选中项 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/810">#810</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/802">#802</a>) <span class="author">— 王梓先</span></li>
-  <li>非艺星默认状态去掉硬编码排除外联/内部筛选 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/793">#793</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/790">#790</a>) <span class="author">— 王梓先</span></li>
-  <li>输入框 placeholder 与光标重叠 — 去 placeholder + focus 切背景 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/809">#809</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/744">#744</a>) <span class="author">— 梁晨</span></li>
-  <li>finderLive 气泡自适应宽度 + scrim 高度 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/808">#808</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/767">#767</a>) <span class="author">— 梁晨</span></li>
-  <li>艺星侧边筛选面板泄漏到非艺星企业 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/805">#805</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/788">#788</a>) <span class="author">— 王梓先</span></li>
-  <li>切企业后子窗口复用旧企业数据 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/801">#801</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/781">#781</a>) <span class="author">— 王争</span></li>
-  <li>历史消息加载阈值 120→600 + 指数重试 + 失败 banner <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/778">#778</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/658">#658</a>) <span class="author">— 张拓</span></li>
-  <li>4 处搜索/输入框扫尾治理 IME commit onChanged 不触发 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/784">#784</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/779">#779</a>) <span class="author">— 王梓先</span></li>
-  <li>close #657 link:notify 空 payload 隐整条 + SLS 上报 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/777">#777</a> <span class="author">— 张拓</span></li>
-  <li>切租户卡死 — bubble OverlayEntry 残留 + hideAll 死锁 platform thread <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/782">#782</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/768">#768</a>) <span class="author">— 房昕、王争</span></li>
-  <li>切企业 native crash — observer use-after-free + hideAll 误杀主窗口 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/783">#783</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/781">#781</a>) <span class="author">— 王争</span></li>
-  <li>对齐 SDK 与历史 API 的 msgId 归一化规则 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/772">#772</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/617">#617</a>) <span class="author">— 王梓先</span></li>
+  <li>Windows 含中文路径下 OCR initModels 报 File doesn't exist <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/774">#774</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/761">#761</a>) <span class="author">— 张拓</span></li>
+  <li>finderLive 气泡按设计图重构 + parser 字段别名修正 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/765">#765</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/753">#753</a>) <span class="author">— 陈聪</span></li>
 </ul>
 
 <h2>✨ 体验优化</h2>
@@ -92,7 +82,7 @@ a:hover { text-decoration: underline; }
 
 <h2>🔧 其他（chore / docs / test / ...）</h2>
 <ul>
-  <li>chore(tool): release-preview 生成器 + 服务 + 补 #796/#800 用户视角条目 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/814">#814</a> <span class="author">— 房昕</span></li>
+  <li>docs(chat): #618 first-in-wins 对 UI msgId key 稳定性调查结论 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/771">#771</a> <span class="author">— 王梓先</span></li>
 </ul>
 
 

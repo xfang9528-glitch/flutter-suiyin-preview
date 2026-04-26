@@ -41,10 +41,10 @@ a:hover { text-decoration: underline; }
 
 <h1>📦 after-2026042302 发版预览</h1>
 <div class="meta">
-🕘 历史回看模式 · 重现 <code>after-2026042302</code> 发版前的预览页 · anchor: 当时 pubspec 在 <code>2026042302</code>，紧接的下一次 bump <code>chore: bump version to 26.04.23+2026042304</code>（2026-04-23）归档了 <code>2026042302.md</code><br>当前线上：<code>2026042303</code> · 该版本：<code>after-2026042302</code><br>
-基线 commit：<code>chore(release): 2026042303 + 瘦身 win_lib_dll + 修 setup.iss 硬编码</code>（2026-04-23）<br>
-共 <strong>0</strong> 个 PR 在该版本中合入（cutoff: 2026-04-23 起）。<br>
-生成时间：2026-04-26 21:43:28 · 重新跑脚本后刷新页面即拿最新 · 顶部用户视角内容来自归档 <code>docs/release-notes/2026042302.md</code>
+🕘 历史回看模式 · 重现 <code>after-2026042302</code> 发版前的预览页 · anchor: 当时 pubspec 在 <code>2026042302</code>，紧接的下一次 bump <code>chore: bump version to 26.04.23+2026042304</code>（2026-04-23）归档了 <code>2026042302.md</code><br>当前线上：<code>2026042302</code> · 该版本：<code>after-2026042302</code><br>
+基线 commit：<code>chore(release): bump to 26.04.23+2026042302 + 归档本地发版 release notes</code>（2026-04-23）<br>
+共 <strong>6</strong> 个 PR 在该版本中合入（cutoff: 2026-04-23 起）。<br>
+生成时间：2026-04-26 21:50:46 · 重新跑脚本后刷新页面即拿最新 · 顶部用户视角内容来自归档 <code>docs/release-notes/2026042302.md</code>
 </div>
 
 
@@ -79,15 +79,18 @@ a:hover { text-decoration: underline; }
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏</h2>
-<div class="ref-hint">下面是自上次 bump 以来合入 main 的全部 0 个 PR。对照顶部 next.md，看看有没有用户感知得到、但顶部没列的；有就补到 next.md 上面去。</div>
+<div class="ref-hint">下面是自上次 bump 以来合入 main 的全部 6 个 PR。对照顶部 next.md，看看有没有用户感知得到、但顶部没列的；有就补到 next.md 上面去。</div>
 <h2>🆕 新功能</h2>
 <ul>
-  <li class="empty">无</li>
+  <li>统一 displayName 规则为 customerNames &gt; nickName &gt; aliasName <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/564">#564</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/505">#505</a>) <span class="author">— 梁晨</span></li>
+  <li>合并转发展示窗支持文本框选 + 右键复制 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/563">#563</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/528">#528</a>) <span class="author">— 梁晨</span></li>
 </ul>
 
 <h2>🐞 问题修复</h2>
 <ul>
-  <li class="empty">无</li>
+  <li>装 chat_customer 写库完整性守门员 + 本地 dump 工具（排查人设串数据） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/561">#561</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/498">#498</a>) <span class="author">— 王梓先</span></li>
+  <li>DB provider 加 auth 守卫防止红屏 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/565">#565</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/513">#513</a>) <span class="author">— 王争</span></li>
+  <li>close #525 群免打扰设置后被列表同步覆盖 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/562">#562</a> <span class="author">— 梁晨</span></li>
 </ul>
 
 <h2>✨ 体验优化</h2>
@@ -97,7 +100,7 @@ a:hover { text-decoration: underline; }
 
 <h2>🔧 其他（chore / docs / test / ...）</h2>
 <ul>
-  <li class="empty">无</li>
+  <li>diag(chat): 追踪 chat_customer 写库可疑载荷，SLS 上云定位跨会话串线 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/560">#560</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/471">#471</a>) <span class="author">— 王梓先</span></li>
 </ul>
 
 

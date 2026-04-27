@@ -28,7 +28,7 @@ a:hover { text-decoration: underline; }
 <body>
 <div class="version-switcher">
 <label>查看版本：</label>
-<select onchange="var v=this.value; if(v){location.search='?version='+encodeURIComponent(v);} else {location.href=location.pathname;}">
+<select onchange="var v=this.value; location.href = v ? (encodeURIComponent(v)+'.html') : './';">
   <option value="">📦 当前预览（下一版）</option>
   <option value="2026042602">🕘 2026042602 发版预览</option>
   <option value="2026042502">🕘 2026042502 发版预览</option>
@@ -43,8 +43,8 @@ a:hover { text-decoration: underline; }
 <div class="meta">
 当前线上：<code>2026042701</code> · 下一版（预览）：<code>2026042702</code><br>
 基线 commit：<code>chore(release): bump to 26.04.27+2026042701 + 归档 2602 release notes</code>（2026-04-26） · ⚠️ next.md 引用了 bump 之前的 PR，下方覆盖范围已扩到 <code>2026-04-26</code><br>
-共 <strong>44</strong> 个 PR 已合入 main，待下次发版携带。<br>
-生成时间：2026-04-27 15:24:49 · 重新跑脚本后刷新页面即拿最新
+共 <strong>71</strong> 个 PR 已合入 main，待下次发版携带。<br>
+生成时间：2026-04-27 22:13:06 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
@@ -76,9 +76,11 @@ a:hover { text-decoration: underline; }
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏</h2>
-<div class="ref-hint">下面是自上次 bump 以来合入 main 的全部 44 个 PR。对照顶部 next.md，看看有没有用户感知得到、但顶部没列的；有就补到 next.md 上面去。</div>
+<div class="ref-hint">下面是自上次 bump 以来合入 main 的全部 71 个 PR。对照顶部 next.md，看看有没有用户感知得到、但顶部没列的；有就补到 next.md 上面去。</div>
 <h2>🆕 新功能</h2>
 <ul>
+  <li>佰智德三管理员上班选项 — Capability 化 #521 全局策略 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/971">#971</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/964">#964</a>) <span class="author">— 房昕</span></li>
+  <li>fork plugin 加 close API + dart 侧精确销毁子窗口，治本 #677 IME race <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/938">#938</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/751">#751</a>) <span class="author">— 张拓</span></li>
   <li>筛选区对齐原型 — inline 两行 + 自定义选择 modal <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/902">#902</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/884">#884</a>) <span class="author">— 房昕</span></li>
   <li>新的朋友页面去分组 + 筛选 + 一键通过 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/859">#859</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/833">#833</a>) <span class="author">— 王梓先</span></li>
   <li>ISSUE_TAG 徽章气泡改成独立子窗口 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/858">#858</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/835">#835</a>) <span class="author">— 房昕</span></li>
@@ -90,6 +92,24 @@ a:hover { text-decoration: underline; }
 
 <h2>🐞 问题修复</h2>
 <ul>
+  <li>切企业后销售气泡刷成新企业数据 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/965">#965</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/932">#932</a>) <span class="author">— 房昕</span></li>
+  <li>AI 分析等子窗口二次点击 bring-to-front <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/957">#957</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/942">#942</a>) <span class="author">— 房昕</span></li>
+  <li>macOS dialog 内文件选择按钮失活 — NSOpenPanel.runModal 绕开 modal barrier <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/961">#961</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/927">#927</a>) <span class="author">— 陈宣宇</span></li>
+  <li>close #946 加群成员请求体改为 {wcId, userNames} <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/960">#960</a> <span class="author">— 陈宣宇</span></li>
+  <li>startAllocation 60s 超时兜底 + cancel + 独立 SLS <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/947">#947</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/920">#920</a>) <span class="author">— 房昕</span></li>
+  <li>close #936 desktop_multi_window plugin mtx_do_lock use-after-free <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/948">#948</a> <span class="author">— 梁晨</span></li>
+  <li>子窗口 entry 经 SentryInitializer 装齐异常 hook <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/950">#950</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/939">#939</a>) <span class="author">— 梁晨</span></li>
+  <li>pin API 链路切 clientId（plumbing + canPin 放开，闭合 #406） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/843">#843</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/498">#498</a>) <span class="author">— 王梓先</span></li>
+  <li>ObjectBox store 自愈用 rename + 退避重试，UI 兜底 dbLocked <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/940">#940</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/912">#912</a>) <span class="author">— 梁晨</span></li>
+  <li>搜索点击多人设客户/群人设错配 + contact 表会话主键重构 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/904">#904</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/498">#498</a>) <span class="author">— 王梓先</span></li>
+  <li>close #910 ChatBlockInput _focusBlock 跨帧 race 越界（53 次崩溃） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/934">#934</a> <span class="author">— 梁晨</span></li>
+  <li>accept 乐观翻 local + 失败 refresh 兜底 + 顶部刷新按钮 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/933">#933</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/899">#899</a>) <span class="author">— 梁晨</span></li>
+  <li>9 处 Notifier dispose-after-await 防御性补齐 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/935">#935</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/911">#911</a>) <span class="author">— 梁晨</span></li>
+  <li>下拉切版改按文件名跳转 + publish 预生成最近 3 个归档 HTML <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/926">#926</a> <span class="author">— 房昕</span></li>
+  <li>群创建上限错误透传后端 message + 对齐 SDK <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/925">#925</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/896">#896</a>) <span class="author">— 王争</span></li>
+  <li>OCR 失败统一兜底 toast + SLS 上报 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/875">#875</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/776">#776</a>) <span class="author">— 张拓</span></li>
+  <li>sentry crashpad patch 脚本加 REPLACE 前后 hash 对比防呆 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/922">#922</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/626">#626</a>) <span class="author">— 王争</span></li>
+  <li>PC 加群成员弹窗回归极简形态（双面板 + 人设号 chip） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/924">#924</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/892">#892</a>) <span class="author">— 陈聪</span></li>
   <li>多人接待标签判定口径修正 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/916">#916</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/831">#831</a>) <span class="author">— 陈宣宇</span></li>
   <li>Notifier 内 Timer + ref.read 提字段 + onDispose cancel <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/898">#898</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/878">#878</a>) <span class="author">— 梁晨</span></li>
   <li>FlutterError.onError 过滤 hardware_keyboard.dart 失同步 debug-only assert <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/907">#907</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/879">#879</a>) <span class="author">— 梁晨</span></li>
@@ -122,12 +142,19 @@ a:hover { text-decoration: underline; }
 
 <h2>✨ 体验优化</h2>
 <ul>
+  <li>chatSelectionProvider 改持 ChatCustomer 对象 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/967">#967</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/900">#900</a>) <span class="author">— 王梓先</span></li>
+  <li>抽 wrapWithLifecycle 统一 sub-window lifecycle 路由 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/943">#943</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/641">#641</a>) <span class="author">— 王争</span></li>
+  <li>渠道筛选/反查切到 clientId 主路径，wcId 兜底 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/837">#837</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/498">#498</a>) <span class="author">— 王梓先</span></li>
   <li>release-preview server 加 HEAD ETag 缓存 + inFlight 复用 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/851">#851</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/816">#816</a>) <span class="author">— 房昕</span></li>
   <li>release-preview 生成器 N+1 → 单次 GraphQL 批量 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/849">#849</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/817">#817</a>) <span class="author">— 房昕</span></li>
 </ul>
 
 <h2>🔧 其他（chore / docs / test / ...）</h2>
 <ul>
+  <li>infra(db #915): DbMigrationRegistry 框架 + M915 contact 去重清表 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/968">#968</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/915">#915</a>) <span class="author">— 王梓先</span></li>
+  <li>test(file_picker #966): macOS path 用例文件级跳过非 macOS runner <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/969">#969</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/966">#966</a>) <span class="author">— 房昕</span></li>
+  <li>test: 清理 main 上 6 个持续失败测试 + 修 customer_refresh save mock 签名 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/945">#945</a> <span class="author">— 梁晨</span></li>
+  <li>chore(chat #919): _traceWrite SLS 上报口径收紧到 msg_suspect <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/929">#929</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/919">#919</a>) <span class="author">— 房昕</span></li>
   <li>chore(tooling): 补齐发版/同步脚本的 Mac 版本 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/917">#917</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/508">#508</a>) <span class="author">— 王争</span></li>
   <li>test(release-preview #885): 加 fixture 单测锁住归档约定 + dropdown label + 基线判定 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/893">#893</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/885">#885</a>) <span class="author">— 房昕</span></li>
   <li>chore(chat #855): PR #852 review follow-ups（注释 + gotchas 补充） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/856">#856</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/855">#855</a>) <span class="author">— 房昕</span></li>

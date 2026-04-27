@@ -30,12 +30,12 @@ a:hover { text-decoration: underline; }
 <label>查看版本：</label>
 <select onchange="var v=this.value; if(v){location.search='?version='+encodeURIComponent(v);} else {location.href=location.pathname;}">
   <option value="">📦 当前预览（下一版）</option>
-  <option value="2026042602">🕘 2026042602（无后续 bump）</option>
-  <option value="2026042502">🕘 2026042601 发版预览</option>
-  <option value="2026042501">🕘 2026042502 发版预览</option>
-  <option value="2026042403">🕘 2026042501 发版预览</option>
-  <option value="2026042303">🕘 2026042303（无后续 bump）</option>
-  <option value="2026042302">🕘 2026042403 发版预览</option>
+  <option value="2026042602">🕘 2026042602 发版预览</option>
+  <option value="2026042502">🕘 2026042502 发版预览</option>
+  <option value="2026042501">🕘 2026042501 发版预览</option>
+  <option value="2026042403">🕘 2026042403 发版预览</option>
+  <option value="2026042303">🕘 2026042303 发版预览</option>
+  <option value="2026042302">🕘 2026042302 发版预览</option>
 </select>
 </div>
 
@@ -43,8 +43,8 @@ a:hover { text-decoration: underline; }
 <div class="meta">
 当前线上：<code>2026042602</code> · 下一版（预览）：<code>2026042701</code><br>
 基线 commit：<code>fix(customer-info #723): set-remark 成功后本地直写 remark + customerNames (#795)</code>（2026-04-26） · ⚠️ next.md 引用了 bump 之前的 PR，下方覆盖范围已扩到 <code>2026-04-26</code><br>
-共 <strong>24</strong> 个 PR 已合入 main，待下次发版携带。<br>
-生成时间：2026-04-27 09:37:33 · 重新跑脚本后刷新页面即拿最新
+共 <strong>28</strong> 个 PR 已合入 main，待下次发版携带。<br>
+生成时间：2026-04-27 12:14:19 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
@@ -72,7 +72,7 @@ a:hover { text-decoration: underline; }
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏</h2>
-<div class="ref-hint">下面是自上次 bump 以来合入 main 的全部 24 个 PR。对照顶部 next.md，看看有没有用户感知得到、但顶部没列的；有就补到 next.md 上面去。</div>
+<div class="ref-hint">下面是自上次 bump 以来合入 main 的全部 28 个 PR。对照顶部 next.md，看看有没有用户感知得到、但顶部没列的；有就补到 next.md 上面去。</div>
 <h2>🆕 新功能</h2>
 <ul>
   <li>新的朋友页面去分组 + 筛选 + 一键通过 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/859">#859</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/833">#833</a>) <span class="author">— 王梓先</span></li>
@@ -85,6 +85,10 @@ a:hover { text-decoration: underline; }
 
 <h2>🐞 问题修复</h2>
 <ul>
+  <li>post-frame / microtask 内 ref.read 加 mounted 守卫，根除放后台自闪退 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/880">#880</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/872">#872</a>) <span class="author">— 梁晨</span></li>
+  <li>chat_messages_provider 5 路径补 dispose-after-await 守卫 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/877">#877</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/866">#866</a>) <span class="author">— 房昕</span></li>
+  <li>托盘点退出立刻 exit(0)，删 PR #637 graceful 全套 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/841">#841</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/625">#625</a>) <span class="author">— 陈聪</span></li>
+  <li>空 link:notify 守卫上移到 ChatMessageBubble 早 return <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/834">#834</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/742">#742</a>) <span class="author">— 梁晨</span></li>
   <li>客户信息小眼睛 toggle 复制时机修正 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/867">#867</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/861">#861</a>) <span class="author">— 房昕</span></li>
   <li>_initializeFromLocal / _syncAndRefresh 补 ref.mounted 守卫 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/863">#863</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/857">#857</a>) <span class="author">— 房昕</span></li>
   <li>渠道分类下没有人设号的不再显示在二级菜单 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/865">#865</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/860">#860</a>) <span class="author">— 王梓先</span></li>

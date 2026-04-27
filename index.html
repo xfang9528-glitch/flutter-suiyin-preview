@@ -39,17 +39,18 @@ a:hover { text-decoration: underline; }
 </select>
 </div>
 
-<h1>📦 2026042701 发版预览</h1>
+<h1>📦 2026042702 发版预览</h1>
 <div class="meta">
-当前线上：<code>2026042602</code> · 下一版（预览）：<code>2026042701</code><br>
-基线 commit：<code>fix(customer-info #723): set-remark 成功后本地直写 remark + customerNames (#795)</code>（2026-04-26） · ⚠️ next.md 引用了 bump 之前的 PR，下方覆盖范围已扩到 <code>2026-04-26</code><br>
-共 <strong>28</strong> 个 PR 已合入 main，待下次发版携带。<br>
-生成时间：2026-04-27 12:14:19 · 重新跑脚本后刷新页面即拿最新
+当前线上：<code>2026042701</code> · 下一版（预览）：<code>2026042702</code><br>
+基线 commit：<code>chore(release): bump to 26.04.27+2026042701 + 归档 2602 release notes</code>（2026-04-26） · ⚠️ next.md 引用了 bump 之前的 PR，下方覆盖范围已扩到 <code>2026-04-26</code><br>
+共 <strong>29</strong> 个 PR 已合入 main，待下次发版携带。<br>
+生成时间：2026-04-27 13:09:50 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
 <h3>🆕 新功能</h3>
 <ul>
+  <li>「新的朋友」改版：去掉「待添加 / 已添加 / 已过期」分组改成按时间倒序，新增按渠道 / 状态 / 人设的筛选条 + 「一键通过」批量同意 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/859">#859</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/833">#833</a>)</li>
   <li>「发起群聊」选成员时按主人设的好友圈预过滤，避免选完才发现部分客户加不进群 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/850">#850</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/806">#806</a>)</li>
   <li>群聊里 @某人现在支持拼音搜索（输 &quot;wzx&quot; 就能找到「王梓先」），匹配按字面 / 全拼 / 首字母分档排序 — 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/844">#844</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/780">#780</a>)</li>
   <li>切换企业失败（断网 / 权限错等）时不再被踢回登录页，会留在原企业继续用 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/832">#832</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/656">#656</a>)</li>
@@ -60,6 +61,9 @@ a:hover { text-decoration: underline; }
 </ul>
 <h3>🐞 问题修复</h3>
 <ul>
+  <li>客户信息「电话 / 微信」小眼睛点击改成&quot;看一眼即复制&quot;——第一次点显示明文 + 自动复制并提示，再点一次只是隐藏，不会再覆盖剪贴板 — 房昕 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/867">#867</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/861">#861</a>)</li>
+  <li>渠道分类下没有人设号时，中间空白列直接收起把空间让给聊天区，不再显示「暂无人设号」占位 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/865">#865</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/860">#860</a>)</li>
+  <li>群聊 / 单聊底部的「转交」按钮恢复正常，点击会弹出可接待的销售选择窗口（之前会弹错的「人设接待状态」气泡） — 房昕 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/852">#852</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/839">#839</a>)</li>
   <li>看「合并转发」详情时里面的视频和文件能直接点开播放，下载有进度条 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/848">#848</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/838">#838</a>)</li>
   <li>图片预览窗口里复制图片现在能正常看到「已复制」提示 — 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/825">#825</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/791">#791</a>)</li>
   <li>通讯录里点搜索结果跳转时不再出现多余跳动 / 闪烁 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/829">#829</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/812">#812</a>)</li>
@@ -72,7 +76,7 @@ a:hover { text-decoration: underline; }
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏</h2>
-<div class="ref-hint">下面是自上次 bump 以来合入 main 的全部 28 个 PR。对照顶部 next.md，看看有没有用户感知得到、但顶部没列的；有就补到 next.md 上面去。</div>
+<div class="ref-hint">下面是自上次 bump 以来合入 main 的全部 29 个 PR。对照顶部 next.md，看看有没有用户感知得到、但顶部没列的；有就补到 next.md 上面去。</div>
 <h2>🆕 新功能</h2>
 <ul>
   <li>新的朋友页面去分组 + 筛选 + 一键通过 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/859">#859</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/833">#833</a>) <span class="author">— 王梓先</span></li>
@@ -85,6 +89,7 @@ a:hover { text-decoration: underline; }
 
 <h2>🐞 问题修复</h2>
 <ul>
+  <li>基线判定 -G version + 归档 2602 + 重置 next.md 为 2701 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/868">#868</a> <span class="author">— 房昕</span></li>
   <li>post-frame / microtask 内 ref.read 加 mounted 守卫，根除放后台自闪退 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/880">#880</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/872">#872</a>) <span class="author">— 梁晨</span></li>
   <li>chat_messages_provider 5 路径补 dispose-after-await 守卫 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/877">#877</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/866">#866</a>) <span class="author">— 房昕</span></li>
   <li>托盘点退出立刻 exit(0)，删 PR #637 graceful 全套 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/841">#841</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/625">#625</a>) <span class="author">— 陈聪</span></li>

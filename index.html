@@ -29,37 +29,28 @@ a:hover { text-decoration: underline; }
 </head>
 <body>
 <!-- 右上角「查看历史预览」下拉：
-     - 本地预览（直接打开 release-preview.html）：dart 在生成时读 PREVIEW_REPO_DIR
-       （默认 D:/CC work/flutter-suiyin-preview）下已有的 preview-*.html 文件名，
-       option value 用绝对 URL 指向 GitHub Pages，本地点击就跳过去看
+     - 顶部 `📦 <nextBuild> 发版预览` = 当前还没冻结的下一版预览（value="" 跳 ./）
+     - 历史项 `🗂 <build>` = 已发版冻结归档，文件名 `<10位build>.html`（一次发版一份）
+     - 本地预览（docs/release-preview.html）：dart 读 PREVIEW_REPO_DIR
+       （默认 D:/CC work/flutter-suiyin-preview）下已有的 `<build>.html`，option
+       value 拼绝对 URL 指向 GitHub Pages，本地点击跳过去看
      - GitHub Pages 上的 index.html：publish_preview.ps1 推送时会把 marker 之间
        的内容重写成相对路径 option（同域跳转），覆盖 dart 输出 -->
 <div class="version-switcher">
 <label>查看历史预览：</label>
 <select onchange="var v=this.value; if(v) location.href = v; else location.href = './';">
 <!-- VERSION_SWITCHER_OPTIONS_START -->
-<option value="">📦 当前预览（最新）</option>
-<option value="preview-20260429-1153.html">🕘 2026-04-29 11:53 推送</option>
-<option value="preview-20260429-1152.html">🕘 2026-04-29 11:52 推送</option>
-<option value="preview-20260429-1131.html">🕘 2026-04-29 11:31 推送</option>
-<option value="preview-20260429-1043.html">🕘 2026-04-29 10:43 推送</option>
-<option value="preview-20260429-1023.html">🕘 2026-04-29 10:23 推送</option>
-<option value="preview-20260429-1020.html">🕘 2026-04-29 10:20 推送</option>
-<option value="preview-20260429-0952.html">🕘 2026-04-29 09:52 推送</option>
-<option value="preview-20260429-0912.html">🕘 2026-04-29 09:12 推送</option>
-<option value="preview-20260429-0002.html">🕘 2026-04-29 00:02 推送</option>
-<option value="preview-20260428-2140.html">🕘 2026-04-28 21:40 推送</option>
-<option value="preview-20260428-2056.html">🕘 2026-04-28 20:56 推送</option>
-<option value="preview-20260428-1842.html">🕘 2026-04-28 18:42 推送</option>
-<option value="preview-20260428-1758.html">🕘 2026-04-28 17:58 推送</option>
-<option value="preview-20260428-1739.html">🕘 2026-04-28 17:39 推送</option>
+<option value="">📦 2026042902 发版预览</option>
 <!-- VERSION_SWITCHER_OPTIONS_END -->
 </select>
 </div>
 <h1>📦 2026042902 发版预览</h1>
 <div class="meta">
-当前版本：<code>2026042901</code>（发版时间：<span class="bump-time">04/29 10:11</span>），下一版（预览）：<code>2026042902</code><br>
-生成时间：2026-04-29 11:52:21 · 重新跑脚本后刷新页面即拿最新
+当前线上：<code>2026042901</code> · 下一版（预览）：<code>2026042902</code><br>
+基线 commit：<code>chore(release): bump to 26.04.29+2026042901 + 归档 .2901 release notes (#1097)</code>（2026-04-28）<br>
+上一次发版时间：<span class="bump-time">04/29 10:11</span> · 此线之后合入的 PR 才算下一版<br>
+共 <strong>6</strong> 个 PR 已合入 main，待下次发版携带。<br>
+生成时间：2026-04-29 12:02:53 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
@@ -72,7 +63,7 @@ a:hover { text-decoration: underline; }
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">04/29 10:11 上次发版后，合入 main 的全部 <strong>6</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">自上次 bump 后合入 main 的全部 <strong>6</strong> 个 PR，按 mergedAt desc。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
   <li><span class="merged-at">[04/29 10:17]</span>加 release_stage_{a,b}.sh 固化两步发版总流程 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1099">#1099</a> <span class="author">— 张拓</span></li>

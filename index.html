@@ -39,7 +39,7 @@ a:hover { text-decoration: underline; }
        的内容重写成相对路径 option（同域跳转），覆盖 dart 输出 -->
 <div class="version-switcher">
 <label>查看历史预览：</label>
-<select onchange="var v=this.value; if(v) location.href = v; else location.href = './';">
+<select id="version-switcher-select" onchange="var v=this.value; if(v) location.href = v; else location.href = './';">
 <!-- VERSION_SWITCHER_OPTIONS_START -->
 <option value="">📦 2026042902 发版预览</option>
 <option value="2026042901.html">🗂 2026042901</option>
@@ -47,13 +47,27 @@ a:hover { text-decoration: underline; }
 <!-- VERSION_SWITCHER_OPTIONS_END -->
 </select>
 </div>
+<script>
+// 让下拉的当前选中态跟着当前页走：在归档页（如 2026042901.html）里，自动选中 `🗂 2026042901`
+// 那项；这样点回 `📦 ... 发版预览`（value=""）时 select.value 才会发生变化，触发 onchange 跳 `./`。
+// 不做的话第一项默认选中 = "📦 ..." = ""，在归档页点它无变化、不跳转，用户回不去首页。
+(function(){
+  var sel = document.getElementById('version-switcher-select');
+  if (!sel) return;
+  var cur = location.pathname.split('/').pop();
+  if (!cur || cur === 'index.html' || cur === '') return;
+  for (var i = 0; i < sel.options.length; i++) {
+    if (sel.options[i].value === cur) { sel.selectedIndex = i; break; }
+  }
+})();
+</script>
 <h1>📦 2026042902 发版预览</h1>
 <div class="meta">
 当前线上：<code>2026042901</code> · 下一版（预览）：<code>2026042902</code><br>
 基线 commit：<code>chore(release): bump to 26.04.29+2026042901 + 归档 .2901 release notes (#1097)</code>（2026-04-28）<br>
 上一次发版时间：<span class="bump-time">04/29 10:11</span> · 此线之后合入的 PR 才算下一版<br>
 共 <strong>8</strong> 个 PR 已合入 main，待下次发版携带。<br>
-生成时间：2026-04-29 12:54:15 · 重新跑脚本后刷新页面即拿最新
+生成时间：2026-04-29 13:08:07 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>

@@ -36,7 +36,7 @@ a:hover { text-decoration: underline; }
        的内容重写成相对路径 option（同域跳转），覆盖 dart 输出 -->
 <div class="version-switcher">
 <label>查看历史预览：</label>
-<select onchange="var v=this.value; if(v) location.href = v; else location.href = './';">
+<select id="version-switcher-select" onchange="var v=this.value; if(v) location.href = v; else location.href = './';">
 <!-- VERSION_SWITCHER_OPTIONS_START -->
 <option value="">📦 2026042902 发版预览</option>
 <option value="2026042901.html">🗂 2026042901</option>
@@ -105,5 +105,17 @@ PR 归属版本由 <code>pubspec.yaml</code> 的 <code>version:</code> 行 git �
 由 <code>tool/generate_release_preview.dart</code> 自动提取；重新跑脚本后刷新页面即拿最新。<br>
 issue 链接基于 PetWebOrg/flutter-suiyin 仓。
 </div>
-</body>
+
+<script>
+// 旧归档页 patch：让下拉的当前选中态跟着当前页走（详情见 dart 模板同款注释）。
+(function(){
+  var sel = document.getElementById('version-switcher-select');
+  if (!sel) return;
+  var cur = location.pathname.split('/').pop();
+  if (!cur || cur === 'index.html' || cur === '') return;
+  for (var i = 0; i < sel.options.length; i++) {
+    if (sel.options[i].value === cur) { sel.selectedIndex = i; break; }
+  }
+})();
+</script></body>
 </html>

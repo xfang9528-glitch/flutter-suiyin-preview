@@ -66,39 +66,34 @@ a:hover { text-decoration: underline; }
 <h1>📦 2026043002 发版预览</h1>
 <div class="meta">
 当前版本：<code>2026043001</code>（发版时间：<span class="bump-time">04/30 10:29</span>），下一版（预览）：<code>2026043002</code><br>
-生成时间：2026-04-30 16:29:03 · 重新跑脚本后刷新页面即拿最新
+生成时间：2026-04-30 16:55:59 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
-
 <h3>🆕 新功能</h3>
 <ul>
-  <li>聊天记录长按进入多选后，滑动时下方会浮出「选择到这里」按钮，一键选中起点到当前位置的所有消息 — 房昕 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1237">#1237</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1211">#1211</a>)</li>
-  <li>设置里新增「快捷键」模块，可自定义发送消息、快捷截图、显示/隐藏主窗口的快捷键 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1167">#1167</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1001">#1001</a>)</li>
-</ul>
-
-<h3>✨ 体验优化</h3>
-<ul>
-  <li>申请添加朋友页面里的「备注」字段改名为「微信备注」，含义更清晰 — 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1236">#1236</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1225">#1225</a>)</li>
+  <li>电脑端多选消息：拖动滚动条时浮出「选择到这里」按钮，点一下就能从当前选中位置一键勾选到鼠标所在的消息（批量删除 / 转发更顺手） — 房昕 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1237">#1237</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1211">#1211</a>)</li>
+  <li>「申请添加朋友」页面的备注字段改名为「微信备注」，输入框提示也写清楚是给对方在微信里看的 — 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1236">#1236</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1225">#1225</a>)</li>
+  <li>新增「快捷键」设置模块：发送消息、屏幕截图、显隐主窗口都可以自定义快捷键 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1167">#1167</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1001">#1001</a>)</li>
 </ul>
 
 <h3>🐞 问题修复</h3>
 <ul>
-  <li>艺星企业部分客户列表反复刷新停不下来的问题已修复 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1227">#1227</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1155">#1155</a>)</li>
-  <li>账号无权访问某些数据时，不再反复重试请求，会直接显示「无权访问」提示 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1209">#1209</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1116">#1116</a>)</li>
-  <li>切换企业后，通讯录的筛选条件会自动重置，不再串到新企业 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1223">#1223</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1222">#1222</a>)</li>
-  <li>销售账号未绑定企业微信时显示明确引导，不再无意义反复请求 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1197">#1197</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1115">#1115</a>)</li>
-  <li>切换企业后，通讯录会自动加载新企业的数据，不需要手动刷新 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1220">#1220</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1218">#1218</a>)</li>
-  <li>底部聊天 Tab 的未读红点和数字能准确反映所有会话的未读情况，不再漏掉分页之外的未读 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1206">#1206</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/989">#989</a>)</li>
-  <li>PC 端聊天记录拖动滚动条时不会误进入多选；退出多选后保留当前阅读位置 — 房昕 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1212">#1212</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1202">#1202</a>)</li>
-  <li>查看大图时不再因加载超大原图导致卡顿或闪退 — 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1203">#1203</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1160">#1160</a>)</li>
+  <li>艺星账号下客户列表反复无限刷新、导致界面卡顿的问题已修复 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1227">#1227</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1155">#1155</a>)</li>
+  <li>销售账号没配企业微信号时（如新入职员工 / 暂未授权），现在会停止反复请求并给出明确引导，不再静默失败 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1197">#1197</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1115">#1115</a>)</li>
+  <li>切换企业后，通讯录不会自动加载、需要手动刷新才能看到新企业联系人的问题已修复 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1220">#1220</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1218">#1218</a>)</li>
+  <li>切换企业后，通讯录的筛选条件还停留在上一家公司的过滤项上的问题已修复，现在切完会自动重置 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1223">#1223</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1222">#1222</a>)</li>
+  <li>没有权限的接口现在不会再反复轮询，会停下来并展示明确的「权限不足」提示条 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1209">#1209</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1116">#1116</a>)</li>
+  <li>聊天列表底部导航的未读消息红点数字与实际未读数对不上的问题已修复 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1206">#1206</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/989">#989</a>)</li>
+  <li>电脑端拖动消息列表滚动条时不会再误进多选模式；退出多选后会停留在原来位置，不会跳到底部 — 房昕 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1212">#1212</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1202">#1202</a>)</li>
 </ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">04/30 10:29 上次发版后，合入 main 的全部 <strong>27</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">04/30 10:29 上次发版后，合入 main 的全部 <strong>30</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
+  <li><span class="merged-at">[04/30 16:45]</span>/currentSale/listAll 透传 clientId 过滤无人设权限销售 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1245">#1245</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1214">#1214</a>) <span class="author">— 陈聪</span></li>
   <li><span class="merged-at">[04/30 16:16]</span>PC 多选模式滑动浮出「选择到这里」按钮 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1237">#1237</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1211">#1211</a>) <span class="author">— 房昕</span></li>
   <li><span class="merged-at">[04/30 16:16]</span>ImageCache 高水位 dump probe 注册 API + 60s 节流 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1219">#1219</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1194">#1194</a>) <span class="author">— 梁晨</span></li>
   <li><span class="merged-at">[04/30 16:06]</span>申请添加朋友页备注字段改为「微信备注」 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1236">#1236</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1225">#1225</a>) <span class="author">— 梁晨</span></li>
@@ -109,6 +104,7 @@ a:hover { text-decoration: underline; }
 
 <h2>🐞 问题修复</h2>
 <ul>
+  <li><span class="merged-at">[04/30 16:41]</span>_resolveSpeakerPrefix post-frame 加 try/on StateError 纵深防御 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1244">#1244</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1229">#1229</a>) <span class="author">— 王争</span></li>
   <li><span class="merged-at">[04/30 15:38]</span>CustomerRefresher ID 校验止血 yestar 客户刷新死循环 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1227">#1227</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1155">#1155</a>) <span class="author">— 王争</span></li>
   <li><span class="merged-at">[04/30 15:08]</span>权限错误识别 — 停止无效轮询 + 展示提示条 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1209">#1209</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1116">#1116</a>) <span class="author">— 王争</span></li>
   <li><span class="merged-at">[04/30 14:48]</span>total_unread_provider record 类型 $NotifierProvider 不支持 .select() <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1224">#1224</a> <span class="author">— 王争</span></li>
@@ -129,6 +125,7 @@ a:hover { text-decoration: underline; }
 
 <h2>🔧 其他（chore / docs / test / ...）</h2>
 <ul>
+  <li><span class="merged-at">[04/30 16:39]</span>test(boot_logger #1184): 跨 isolate _rotateAndWriteHeader else 分支 seek 防御回归网 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1247">#1247</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1184">#1184</a>) <span class="author">— 陈聪</span></li>
   <li><span class="merged-at">[04/30 15:47]</span>test(infra #1092): skip BootLogger 跨 isolate test group <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1228">#1228</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1092">#1092</a>) <span class="author">— 陈聪</span></li>
   <li><span class="merged-at">[04/30 15:37]</span>test(chat #1217): widget test 锁住 #1202 scroll guard wiring <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1226">#1226</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1217">#1217</a>) <span class="author">— 房昕</span></li>
   <li><span class="merged-at">[04/30 14:34]</span>docs(894): suiyin-go#419/#427 标记 CLOSED — 服务号 follow-up 全闭环 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1171">#1171</a> <span class="author">— 陈宣宇</span></li>

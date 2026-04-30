@@ -41,7 +41,7 @@ a:hover { text-decoration: underline; }
 <label>查看历史预览：</label>
 <select id="version-switcher-select" onchange="var v=this.value; if(v) location.href = v; else location.href = './';">
 <!-- VERSION_SWITCHER_OPTIONS_START -->
-<option value="">📦 2026043003 发版预览</option>
+<option value="">📦 2026050101 发版预览</option>
 <option value="2026043002.html">🗂 2026043002</option>
 <option value="2026043001.html">🗂 2026043001</option>
 <option value="2026042902.html">🗂 2026042902</option>
@@ -64,28 +64,28 @@ a:hover { text-decoration: underline; }
   }
 })();
 </script>
-<h1>📦 2026043003 发版预览</h1>
+<h1>📦 2026050101 发版预览</h1>
 <div class="meta">
-当前版本：<code>2026043002</code>（发版时间：<span class="bump-time">04/30 17:30</span>），下一版（预览）：<code>2026043003</code><br>
-生成时间：2026-04-30 23:23:06 · 重新跑脚本后刷新页面即拿最新
+当前版本：<code>2026043002</code>（发版时间：<span class="bump-time">04/30 17:30</span>），下一版（预览）：<code>2026050101</code><br>
+生成时间：2026-05-01 00:07:08 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
 
 <h3>🆕 新功能</h3>
 <ul>
-  <li>全局搜索新增「功能」分组：搜索「服务号」等关键词时，命中的服务号会直接在搜索结果里展示，点「查看更多功能」可继续加载，点单条进入会话 — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1256">#1256</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1199">#1199</a>)</li>
+  <li>电脑端全局搜索新增「功能」分组：输入「服务号」等关键词可以直接搜到匹配的服务号，点开可加载更多并跳转聊天/通讯录（顺手修复跳转后通讯录里服务号头像不显示蓝 M 的问题）— 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1256">#1256</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1199">#1199</a>)</li>
 </ul>
 
 <h3>✨ 体验优化</h3>
 <ul>
-  <li>桌面端发送大图（长海报 / 高清原图等）时，应用不再卡死 5~10 秒，期间可以正常切 tab、滚动列表、操作其他界面 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1254">#1254</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1242">#1242</a>)</li>
+  <li>电脑端发大图（长海报等长边 ≥ 3000px 的图片）时，应用不再卡死 5-10 秒，期间可以正常滑动消息、切换会话 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1254">#1254</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1242">#1242</a>)</li>
 </ul>
 
 <h3>🐞 问题修复</h3>
 <ul>
-  <li>「新的朋友」面板里被对方通过或已过期的好友申请现在会及时消失 / 翻成「已添加」，不再淹没真正待处理的客户申请（销售之前因此漏掉 3 天 ticket 期内的客户）— 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1255">#1255</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1196">#1196</a>)</li>
-  <li>关闭图片预览页时偶发应用闪退的问题已修复 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1246">#1246</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1231">#1231</a>)</li>
+  <li>「新的朋友」面板里已通过 / 已过期的好友申请现在能及时翻到正确状态，不再被「伪 new」记录淹没——销售跟进客户的 3 天窗口不会被遮挡 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1255">#1255</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1196">#1196</a>)</li>
+  <li>关闭图片预览时偶现闪退已修复（来回切换不同会话的图片预览也不再崩）— 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1246">#1246</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1231">#1231</a>)</li>
 </ul>
 
 <hr class="ref-divider">

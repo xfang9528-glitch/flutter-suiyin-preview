@@ -65,40 +65,40 @@ a:hover { text-decoration: underline; }
 <h1>📦 2026043001 发版预览</h1>
 <div class="meta">
 当前版本：<code>2026042902</code>（发版时间：<span class="bump-time">04/29 13:39</span>），下一版（预览）：<code>2026043001</code><br>
-生成时间：2026-04-30 09:52:07 · 重新跑脚本后刷新页面即拿最新
+生成时间：2026-04-30 10:19:21 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
-
 <h3>🆕 新功能</h3>
 <ul>
-  <li>聊天界面 / 通讯录列表 / 群详情面板 / 头像角标都加上企微标识，一眼分清企微好友和普通微信好友 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1168">#1168</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1152">#1152</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1072">#1072</a>)</li>
-  <li>支持「服务号会话」：PC 通讯录和聊天页可以看到 / 处理服务号发来的消息 — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1169">#1169</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/894">#894</a>)</li>
+  <li>通讯录和聊天里现在支持服务号会话，可以正常看到和回复服务号消息 — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1169">#1169</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/894">#894</a>)</li>
+  <li>好友 / 群列表、聊天顶栏、群详情面板都新增了企微标识图标，一眼区分企微和微信联系人 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1152">#1152</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1072">#1072</a>)</li>
+  <li>发送话术时新增「正在发送」浮层提示，避免点了之后看不到反应 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1124">#1124</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1075">#1075</a>)</li>
 </ul>
-
 <h3>✨ 体验优化</h3>
 <ul>
-  <li>打开聊天后历史消息更快出来，减少首屏等待 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1176">#1176</a></li>
-  <li>刷新客户备注超时不再静默失败，会弹 Toast 告知 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1150">#1150</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1120">#1120</a>)</li>
-  <li>点击话术后立即显示「发送中」提示，告别点完不知道有没有点到的疑虑 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1124">#1124</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1075">#1075</a>)</li>
-  <li>权限接口异常时显示友好文案，不再露出原始 500 报错 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1145">#1145</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1117">#1117</a>)</li>
-  <li>登录过期时弹出「登录过期」提示，不再露出 401 底层报错 — 陈聪、王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1136">#1136</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1119">#1119</a>)</li>
+  <li>切换聊天时历史消息加载更快——接口一返回就立即显示，省掉中间等待 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1176">#1176</a></li>
 </ul>
-
 <h3>🐞 问题修复</h3>
 <ul>
-  <li>老客户消息先于分配通知到达时，会话不进聊天列表 / 没红点的问题已修复 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1181">#1181</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1159">#1159</a>)</li>
-  <li>客户被取消分配时未读红点会丢失的问题已修复 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1179">#1179</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1162">#1162</a>)</li>
-  <li>通知浮窗在没有消息时不再误闪 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1158">#1158</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1112">#1112</a>)</li>
-  <li>分配新客户时 P1 提示音偶尔在没有客户时也会响的问题已修复 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1163">#1163</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1013">#1013</a>)</li>
-  <li>通讯录里分配给多个人设的客户行，点选时不再连带高亮其他无关行 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1148">#1148</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1088">#1088</a>)</li>
-  <li>发朋友圈选人设号时下拉显示不全 + 表单输入框 padding 异常已修复 — 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1142">#1142</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1105">#1105</a>)</li>
-  <li>通知闪烁时点托盘图标能稳定唤起主窗口（之前偶现拉不前台） — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1135">#1135</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1108">#1108</a>)</li>
+  <li>极端情况下数据库文件被锁导致应用打不开的问题已修复，启动时会自动尝试恢复（最长约 15 秒兜底），避免一直进不去 — 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1165">#1165</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1157">#1157</a>)</li>
+  <li>企微联系人标识现在在聊天、通讯录列表、群详情面板和头像角标都能完整显示 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1168">#1168</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1188">#1188</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1190">#1190</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1072">#1072</a>)</li>
+  <li>老客户消息先于分配通知到达时，会话不进聊天列表、没有红点提示的问题已修复 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1181">#1181</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1159">#1159</a>)</li>
+  <li>取消客户分配时该会话未读消息被清空的问题已修复，未读数现在会保留 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1179">#1179</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1162">#1162</a>)</li>
+  <li>浮窗为空时仍在闪烁的问题已修复 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1158">#1158</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1112">#1112</a>)</li>
+  <li>来新消息但没有声音提示的部分场景（漏分配客户）已修复 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1163">#1163</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1013">#1013</a>)</li>
+  <li>备注刷新超时失败时新增 Toast 提示，不再静默失败 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1150">#1150</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1120">#1120</a>)</li>
+  <li>视频消息发送中点击不再误触播放，等发送完成后才能点开 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1128">#1128</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1058">#1058</a>)</li>
+  <li>通讯录里点选多人设客户时连带把其他行错误高亮的问题已修复 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1148">#1148</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1088">#1088</a>)</li>
+  <li>权限接口异常时不再显示原始报错，改为友好文案 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1145">#1145</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1117">#1117</a>)</li>
+  <li>朋友圈发布时选择人设号的下拉显示不全的问题已修复，表单输入框间距也做了优化 — 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1142">#1142</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1105">#1105</a>)</li>
+  <li>登录态过期时现在会明确提示「登录已过期」，而不是显示一串原始错误 — 陈聪、王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1136">#1136</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1119">#1119</a>)</li>
+  <li>应用闪烁时点击托盘图标无法把窗口拉到前台的问题已修复 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1135">#1135</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1108">#1108</a>)</li>
 </ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">04/29 13:39 上次发版后，合入 main 的全部 <strong>39</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">04/29 13:39 上次发版后，合入 main 的全部 <strong>40</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
   <li><span class="merged-at">[04/29 20:26]</span>服务号会话支持（PC 通讯录 + 聊天） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1169">#1169</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/894">#894</a>) <span class="author">— 陈宣宇</span></li>
@@ -110,6 +110,7 @@ a:hover { text-decoration: underline; }
 
 <h2>🐞 问题修复</h2>
 <ul>
+  <li><span class="merged-at">[04/30 10:09]</span>ObjectBox 自愈拉到 ~15.5s + fallback 空 store 兜底极端文件锁 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1165">#1165</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1157">#1157</a>) <span class="author">— 梁晨</span></li>
   <li><span class="merged-at">[04/30 09:49]</span>移除 objectbox box 重复函数定义 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1190">#1190</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1072">#1072</a>) <span class="author">— 王争</span></li>
   <li><span class="merged-at">[04/30 09:46]</span>移除 objectbox box 重复函数定义 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1188">#1188</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1072">#1072</a>) <span class="author">— 王争</span></li>
   <li><span class="merged-at">[04/30 09:35]</span>企微联系人标识完整实现（聊天+通讯录列表/面板/头像角标） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1168">#1168</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1072">#1072</a>) <span class="author">— 王争</span></li>

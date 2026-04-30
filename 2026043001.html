@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<!-- CURRENT_BUILD:2026042902 -->
+<title>下一版发版预览 · flutter-suiyin</title>
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", sans-serif; max-width: 880px; margin: 32px auto; padding: 0 24px; color: #1f2328; line-height: 1.7; background: #fafbfc; }
+h1 { border-bottom: 1px solid #d1d9e0; padding-bottom: 8px; }
+h2 { margin-top: 32px; border-bottom: 1px solid #eef0f2; padding-bottom: 4px; }
+.meta { color: #656d76; font-size: 13px; margin-bottom: 24px; }
+.meta code { background: #eef0f2; padding: 2px 6px; border-radius: 4px; }
+.empty { color: #999; font-style: italic; list-style: none; margin-left: -20px; }
+ul { padding-left: 24px; }
+li { margin: 6px 0; }
+a { color: #0969da; text-decoration: none; }
+a:hover { text-decoration: underline; }
+.author { color: #8c959f; font-size: 12px; margin-left: 4px; }
+.merged-at { color: #8c959f; font-size: 12px; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; margin-right: 4px; }
+.bump-time { color: #1f2328; font-weight: 600; }
+.foot { margin-top: 48px; padding-top: 16px; border-top: 1px solid #eef0f2; color: #8c959f; font-size: 12px; }
+.notice { background: #fff8c5; border: 1px solid #d4a72c; padding: 12px 16px; border-radius: 6px; margin: 16px 0; color: #59410a; }
+.ref-divider { border: 0; border-top: 2px dashed #d1d9e0; margin: 40px 0 16px 0; }
+.ref-heading { font-size: 20px; border-bottom: none; }
+.ref-hint { color: #656d76; font-size: 13px; margin-bottom: 16px; }
+.version-switcher { position: fixed; top: 16px; right: 24px; background: #fff; border: 1px solid #d1d9e0; border-radius: 6px; padding: 6px 10px; font-size: 13px; box-shadow: 0 2px 6px rgba(0,0,0,0.04); z-index: 100; }
+.version-switcher label { color: #656d76; margin-right: 6px; }
+.version-switcher select { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 13px; padding: 2px 4px; }
+</style>
+</head>
+<body>
+<!-- 右上角「查看历史预览」下拉：
+     - 顶部 `📦 <nextBuild> 发版预览` = 当前还没冻结的下一版预览（value="" 跳 ./）
+     - 历史项 `🗂 <build>` = 已发版冻结归档，文件名 `<10位build>.html`（一次发版一份）
+     - 本地预览（docs/release-preview.html）：dart 读 PREVIEW_REPO_DIR
+       （默认 D:/CC work/flutter-suiyin-preview）下已有的 `<build>.html`，option
+       value 拼绝对 URL 指向 GitHub Pages，本地点击跳过去看
+     - GitHub Pages 上的 index.html：publish_preview.ps1 推送时会把 marker 之间
+       的内容重写成相对路径 option（同域跳转），覆盖 dart 输出 -->
+<div class="version-switcher">
+<label>查看历史预览：</label>
+<select id="version-switcher-select" onchange="var v=this.value; if(v) location.href = v; else location.href = './';">
+<!-- VERSION_SWITCHER_OPTIONS_START -->
+<option value="">📦 2026043002 发版预览</option>
+<option value="2026043001.html">🗂 2026043001</option>
+<option value="2026042902.html">🗂 2026042902</option>
+<option value="2026042901.html">🗂 2026042901</option>
+<option value="2026042804.html">🗂 2026042804</option>
+<!-- VERSION_SWITCHER_OPTIONS_END -->
+</select>
+</div>
+<script>
+// 让下拉的当前选中态跟着当前页走：在归档页（如 2026042901.html）里，自动选中 `🗂 2026042901`
+// 那项；这样点回 `📦 ... 发版预览`（value=""）时 select.value 才会发生变化，触发 onchange 跳 `./`。
+// 不做的话第一项默认选中 = "📦 ..." = ""，在归档页点它无变化、不跳转，用户回不去首页。
+(function(){
+  var sel = document.getElementById('version-switcher-select');
+  if (!sel) return;
+  var cur = location.pathname.split('/').pop();
+  if (!cur || cur === 'index.html' || cur === '') return;
+  for (var i = 0; i < sel.options.length; i++) {
+    if (sel.options[i].value === cur) { sel.selectedIndex = i; break; }
+  }
+})();
+</script>
+<h1>📦 2026043001 发版预览</h1>
+<div class="meta">
+当前版本：<code>2026042902</code>（发版时间：<span class="bump-time">04/29 13:39</span>），下一版（预览）：<code>2026043001</code><br>
+生成时间：2026-04-30 10:27:39 · 重新跑脚本后刷新页面即拿最新
+</div>
+
+<h2>📣 本版用户感知更新</h2>
+<h3>🆕 新功能</h3>
+<ul>
+  <li>通讯录和聊天里现在支持服务号会话，可以正常看到和回复服务号消息 — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1169">#1169</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/894">#894</a>)</li>
+  <li>好友 / 群列表、聊天顶栏、群详情面板都新增了企微标识图标，一眼区分企微和微信联系人 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1152">#1152</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1072">#1072</a>)</li>
+  <li>发送话术时新增「正在发送」浮层提示，避免点了之后看不到反应 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1124">#1124</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1075">#1075</a>)</li>
+</ul>
+<h3>✨ 体验优化</h3>
+<ul>
+  <li>切换聊天时历史消息加载更快——接口一返回就立即显示，省掉中间等待 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1176">#1176</a></li>
+</ul>
+<h3>🐞 问题修复</h3>
+<ul>
+  <li>极端情况下数据库文件被锁导致应用打不开的问题已修复，启动时会自动尝试恢复（最长约 15 秒兜底），避免一直进不去 — 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1165">#1165</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1157">#1157</a>)</li>
+  <li>企微联系人标识现在在聊天、通讯录列表、群详情面板和头像角标都能完整显示 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1168">#1168</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1188">#1188</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1190">#1190</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1072">#1072</a>)</li>
+  <li>老客户消息先于分配通知到达时，会话不进聊天列表、没有红点提示的问题已修复 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1181">#1181</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1159">#1159</a>)</li>
+  <li>取消客户分配时该会话未读消息被清空的问题已修复，未读数现在会保留 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1179">#1179</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1162">#1162</a>)</li>
+  <li>浮窗为空时仍在闪烁的问题已修复 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1158">#1158</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1112">#1112</a>)</li>
+  <li>来新消息但没有声音提示的部分场景（漏分配客户）已修复 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1163">#1163</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1013">#1013</a>)</li>
+  <li>备注刷新超时失败时新增 Toast 提示，不再静默失败 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1150">#1150</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1120">#1120</a>)</li>
+  <li>视频消息发送中点击不再误触播放，等发送完成后才能点开 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1128">#1128</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1058">#1058</a>)</li>
+  <li>通讯录里点选多人设客户时连带把其他行错误高亮的问题已修复 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1148">#1148</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1088">#1088</a>)</li>
+  <li>权限接口异常时不再显示原始报错，改为友好文案 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1145">#1145</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1117">#1117</a>)</li>
+  <li>朋友圈发布时选择人设号的下拉显示不全的问题已修复，表单输入框间距也做了优化 — 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1142">#1142</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1105">#1105</a>)</li>
+  <li>登录态过期时现在会明确提示「登录已过期」，而不是显示一串原始错误 — 陈聪、王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1136">#1136</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1119">#1119</a>)</li>
+  <li>应用闪烁时点击托盘图标无法把窗口拉到前台的问题已修复 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1135">#1135</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1108">#1108</a>)</li>
+</ul>
+
+<hr class="ref-divider">
+<h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
+<div class="ref-hint">04/29 13:39 上次发版后，合入 main 的全部 <strong>40</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<h2>🆕 新功能</h2>
+<ul>
+  <li><span class="merged-at">[04/29 20:26]</span>服务号会话支持（PC 通讯录 + 聊天） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1169">#1169</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/894">#894</a>) <span class="author">— 陈宣宇</span></li>
+  <li><span class="merged-at">[04/29 17:29]</span>话术发送中 toast — 填补点击到气泡显现的渲染空白 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1124">#1124</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1075">#1075</a>) <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[04/29 16:34]</span>企微群/好友列表、聊天顶栏、群详情面板加企微图标 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1152">#1152</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1072">#1072</a>) <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[04/29 15:27]</span>归档页 meta + ref-hint 文案对齐当前预览页 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1137">#1137</a> <span class="author">— 房昕</span></li>
+  <li><span class="merged-at">[04/29 13:50]</span>下拉按 build 号归档 + 同步刷到所有归档页 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1130">#1130</a> <span class="author">— 房昕</span></li>
+</ul>
+
+<h2>🐞 问题修复</h2>
+<ul>
+  <li><span class="merged-at">[04/30 10:09]</span>ObjectBox 自愈拉到 ~15.5s + fallback 空 store 兜底极端文件锁 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1165">#1165</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1157">#1157</a>) <span class="author">— 梁晨</span></li>
+  <li><span class="merged-at">[04/30 09:49]</span>移除 objectbox box 重复函数定义 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1190">#1190</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1072">#1072</a>) <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[04/30 09:46]</span>移除 objectbox box 重复函数定义 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1188">#1188</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1072">#1072</a>) <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[04/30 09:35]</span>企微联系人标识完整实现（聊天+通讯录列表/面板/头像角标） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1168">#1168</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1072">#1072</a>) <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[04/30 07:33]</span>拿锁后显式 seek-to-EOF，消除 Windows 跨 isolate O_APPEND 竞态 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1178">#1178</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1070">#1070</a>) <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[04/30 07:23]</span>老客户消息先于分配通知到达，会话不进 chat list / 没红点 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1181">#1181</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1159">#1159</a>) <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[04/30 00:49]</span>notifyAllocation unassigned 改软删保住 unread <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1179">#1179</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1162">#1162</a>) <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[04/29 22:30]</span>浮窗状态驱动闪烁判定，让浮窗空时不再闪 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1158">#1158</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1112">#1112</a>) <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[04/29 18:16]</span>P1 声音守卫加 customer_miss 检查（按房昕诊断） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1163">#1163</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1013">#1013</a>) <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[04/29 18:01]</span>refresh-remarks 超时失败显示 Toast 提示 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1150">#1150</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1120">#1120</a>) <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[04/29 16:51]</span>closeAll 入口分流 _destroyInFlight，跨 method 守卫不重复发 IPC <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1153">#1153</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1131">#1131</a>) <span class="author">— 梁晨</span></li>
+  <li><span class="merged-at">[04/29 16:50]</span>VideoBubble sending 状态点击改 status 驱动拦截 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1128">#1128</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1058">#1058</a>) <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[04/29 15:50]</span>通讯录多人设客户行选中错误连带高亮 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1148">#1148</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1088">#1088</a>) <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[04/29 15:45]</span>permission 接口 500 时显示友好文案而非原始错误 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1145">#1145</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1117">#1117</a>) <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[04/29 15:07]</span>朋友圈选人设号下拉显示不全 + 表单输入框 padding 调优 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1142">#1142</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1105">#1105</a>) <span class="author">— 梁晨</span></li>
+  <li><span class="merged-at">[04/29 14:51]</span>401 Token 失效显示登录过期提示 + SLS 埋点补用户身份 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1136">#1136</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1119">#1119</a>) <span class="author">— 陈聪、王争</span></li>
+  <li><span class="merged-at">[04/29 14:50]</span>锚点失效加内存黑名单，终止 getNextMessage 反复报错 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1138">#1138</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1118">#1118</a>) <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[04/29 14:31]</span>闪烁时点击托盘必能拉前台 — 判定改用 !isForeground <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1135">#1135</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1108">#1108</a>) <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[04/29 14:10]</span>fetchCustomersByIds 过滤非 ObjectID 格式 id <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1134">#1134</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1114">#1114</a>) <span class="author">— 王争</span></li>
+</ul>
+
+<h2>✨ 体验优化</h2>
+<ul>
+  <li><span class="merged-at">[04/30 09:47]</span>退化为 dart+浏览器，上半区改写交给 Claude Code 定时任务 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1055">#1055</a> <span class="author">— 房昕</span></li>
+  <li><span class="merged-at">[04/30 00:07]</span>历史消息 API 一返回立刻渲染，跳过 saveAll/readLocal 来回 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1176">#1176</a> <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[04/29 18:25]</span>补 firstrender 诊断埋点 — chat 路径已 OK，真凶在 IM/Sentry <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1166">#1166</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1111">#1111</a>) <span class="author">— 陈聪</span></li>
+</ul>
+
+<h2>🔧 其他（chore / docs / test / ...）</h2>
+<ul>
+  <li><span class="merged-at">[04/30 09:45]</span>docs(release): 同步 stage A/B 流程到 local-release-build.md + 老脚本加 DEPRECATED 警告 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1189">#1189</a> <span class="author">— 张拓</span></li>
+  <li><span class="merged-at">[04/30 08:00]</span>docs(gotchas #1070): RandomAccessFile lockSync / append 跨 isolate 行为分平台沉淀 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1186">#1186</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1070">#1070</a>) <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[04/30 07:34]</span>chore(chat): PR #1176 review 反馈跟进 — assert 防误用 / 测试加强 / 删冗余守卫 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1183">#1183</a> <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[04/29 21:59]</span>revert(db #874): 回滚 personaKey 复合唯一键改动 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1174">#1174</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/874">#874</a>) <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[04/29 17:55]</span>docs(gotchas): rebase 后 build_fast 命令行爆长 (#1075 踩过) <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1164">#1164</a> <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[04/29 16:51]</span>test(infra #1042): image_compressor 加 fixture 体积守卫 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1154">#1154</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1042">#1042</a>) <span class="author">— 陈宣宇</span></li>
+  <li><span class="merged-at">[04/29 16:33]</span>chore(quality-gate #1146): 同步 sh/ps1 基线 + 上调 ANALYZE 容忍 main 漂移 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1151">#1151</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1146">#1146</a>) <span class="author">— 梁晨</span></li>
+  <li><span class="merged-at">[04/29 15:28]</span>docs(multi_window #993): macOS/Linux race 审计 — 单线程模型免疫 + 顺手降 quality gate 基线 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1144">#1144</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/993">#993</a>) <span class="author">— 梁晨</span></li>
+  <li><span class="merged-at">[04/29 15:14]</span>test(chat #1139): pc_add_friend_step3 名片模式 cancel 测试补 downloadId <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1143">#1143</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1139">#1139</a>) <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[04/29 14:53]</span>chore(chat #1018): ChatTimeFormatter 全出口零时间归一 + Go 零值守卫上移 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1140">#1140</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1018">#1018</a>) <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[04/29 13:54]</span>chore(multi_window #1062): video_view fork dispose 改 Future&lt;void&gt; + dart 链 ack 锁 + 200ms grace 提常量 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1133">#1133</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1062">#1062</a>) <span class="author">— 梁晨</span></li>
+  <li><span class="merged-at">[04/29 13:52]</span>chore(multi_window #1062): destroy/closeAll 顺序调为 disposeVideos→cleanup + 顺序鲁棒性测试 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1132">#1132</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1062">#1062</a>) <span class="author">— 梁晨</span></li>
+  <li><span class="merged-at">[04/29 13:49]</span>chore(multi_window #1062): destroy/closeAll in-flight 守卫 + pauseVideos 复用 helper <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1113">#1113</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1062">#1062</a>) <span class="author">— 梁晨</span></li>
+</ul>
+
+
+<hr class="ref-divider">
+
+<div class="foot">
+上一次发版时间：<span class="bump-time">04/29 13:39</span>（基线 commit：<code>chore(release): bump to 26.04.29+2026042902 + 归档 .2026042902 release notes (#1123)</code>）<br>
+PR 归属版本由 <code>pubspec.yaml</code> 的 <code>version:</code> 行 git 历史判定 —— bump commit 的 committedAt 是分割线。<br>
+由 <code>tool/generate_release_preview.dart</code> 自动提取；重新跑脚本后刷新页面即拿最新。<br>
+issue 链接基于 PetWebOrg/flutter-suiyin 仓。
+</div>
+</body>
+</html>

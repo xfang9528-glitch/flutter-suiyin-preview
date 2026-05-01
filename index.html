@@ -67,24 +67,21 @@ a:hover { text-decoration: underline; }
 <h1>📦 2026050101 发版预览</h1>
 <div class="meta">
 当前版本：<code>2026043002</code>（发版时间：<span class="bump-time">04/30 17:30</span>），下一版（预览）：<code>2026050101</code><br>
-生成时间：2026-05-01 09:51:02 · 重新跑脚本后刷新页面即拿最新
+生成时间：2026-05-01 11:05:43 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
 <h3>🆕 新功能</h3>
 <ul>
-<li>全局搜索新增「功能」分组：搜索框输入关键词时会直接列出匹配的服务号，点击即可进入；结果多时支持「加载更多」 — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1256">#1256</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1199">#1199</a>)</li>
-</ul>
-<h3>✨ 体验优化</h3>
-<ul>
-<li>安装新版本不再在桌面堆出多个快捷方式（此前每次升级都会留新的） — 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1263">#1263</a></li>
+  <li>全局搜索结果新增「功能」分组：搜服务号名字时直接显示对应的服务号头像和名称，点击可直接进入聊天 — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1256">#1256</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1199">#1199</a>)</li>
 </ul>
 <h3>🐞 问题修复</h3>
 <ul>
-<li>全局搜索点击客户后长时间转圈打不开聊天的问题已修复 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1261">#1261</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1235">#1235</a>)</li>
-<li>桌面端发图（尤其大图）时整个界面卡住 5-10 秒不响应的问题已修复 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1254">#1254</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1242">#1242</a>)</li>
-<li>「新的朋友」面板里已经在另一端通过的好友申请，PC 端持续显示「新」红点不消失的问题已修复 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1255">#1255</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1196">#1196</a>)</li>
-<li>关闭图片预览时偶发闪退的问题已修复 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1246">#1246</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1231">#1231</a>)</li>
+  <li>修复升级安装后桌面会累积多个「碎银」快捷方式的问题，统一装到当前用户目录，覆盖升级不再叠加 — 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1263">#1263</a></li>
+  <li>搜索后点击客户进入聊天偶尔长时间转圈打不开的问题已修复，本地有该客户记录时秒进 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1261">#1261</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1235">#1235</a>)</li>
+  <li>桌面端发大图时整个界面卡死 5-10 秒的问题已修复，压缩过程移到后台，发图期间可继续点击、切聊天、滚列表 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1254">#1254</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1242">#1242</a>)</li>
+  <li>修复「新的朋友」面板里已在手机端通过的好友申请在 PC 端长时间不消失、伪 new 红点淹没真实新申请的问题，现在 5 分钟内自动校准，重新打开面板立即刷新 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1255">#1255</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1196">#1196</a>)</li>
+  <li>修复关闭聊天里的图片预览偶尔触发闪退的问题（多图切换 / 来回切聊天预览图场景） — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1246">#1246</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1231">#1231</a>)</li>
 </ul>
 
 <hr class="ref-divider">

@@ -67,24 +67,24 @@ a:hover { text-decoration: underline; }
 <h1>📦 2026050101 发版预览</h1>
 <div class="meta">
 当前版本：<code>2026043002</code>（发版时间：<span class="bump-time">04/30 17:30</span>），下一版（预览）：<code>2026050101</code><br>
-生成时间：2026-05-01 17:16:33 · 重新跑脚本后刷新页面即拿最新
+生成时间：2026-05-01 18:12:48 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
 
 <h3>🆕 新功能</h3>
 <ul>
-  <li>加好友 / 建群 / 邀请群成员 / 发朋友圈、评论、删除朋友圈遇到「微信风控提交失败」时，会弹出解封引导：按提示去手机微信「微信团队」解封，回应用点确认后会自动重试上一步操作（不再需要找管理员去后台手动解除）— 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1265">#1265</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1205">#1205</a>)</li>
-  <li>桌面端全局搜索新增「功能」分组：搜「服务号」会直接出现对应的服务号条目（蓝 M 头像），点一下就能进会话，不必先切到通讯录找 — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1256">#1256</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1199">#1199</a>)</li>
+  <li>加好友、建群 / 邀请群成员、发朋友圈或评论时如果遇到微信账号封控，App 现在会自动弹窗提示去手机微信「微信团队」解封；解封后点确认即自动重试，不用再去管理后台手动处理 — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1265">#1265</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1205">#1205</a>)</li>
+  <li>全局搜索新增「功能」分组：直接搜服务号名字就能展开里面的内容（订阅消息等），结果多时支持「加载更多」 — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1256">#1256</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1199">#1199</a>)</li>
 </ul>
 
 <h3>🐞 问题修复</h3>
 <ul>
-  <li>升级或重新安装时桌面会累积多个应用图标（之前每升级一次都会多出一个）的问题已修复，新版本会原地覆盖、桌面只保留一个图标 — 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1263">#1263</a></li>
-  <li>在搜索结果里点击客户后长时间转圈、最终打不开会话的问题已修复：本地已有的客户秒进会话；若该客户已被分配给其他同事，会引导跳到通讯录而不是卡在加载弹窗 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1261">#1261</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1235">#1235</a>)</li>
-  <li>桌面端发送大图（比如长海报）时界面卡顿 5–10 秒、点哪都没反应的问题已修复：压缩在后台进行，期间仍能正常切换会话 / 滚动列表 / 点击操作 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1254">#1254</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1242">#1242</a>)</li>
-  <li>「新的朋友」面板长期显示已通过的伪「new」记录、新申请被旧记录淹没的问题已修复：在手机端通过申请后 PC 端 5 分钟内会自动翻成「已添加」，超过 5 天的旧记录会自动从面板淡出 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1255">#1255</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1196">#1196</a>)</li>
-  <li>关闭图片预览时偶发闪退的问题已修复 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1246">#1246</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1231">#1231</a>)</li>
+  <li>每次升级桌面会多出一个新快捷方式、旧的不会清掉的问题已修复，现在升级会替换原有快捷方式 — 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1263">#1263</a></li>
+  <li>在全局搜索里点客户结果有时长时间转圈进不去的问题已修复 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1261">#1261</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1235">#1235</a>)</li>
+  <li>桌面端发图前的图片压缩不再卡死整个界面 5-10 秒，压缩期间仍可继续操作 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1254">#1254</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1242">#1242</a>)</li>
+  <li>「新的朋友」面板里已经通过的好友申请现在会自动翻成「已添加」/ 自动消失，避免 ticket 过期窗口被伪 new 淹没漏看 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1255">#1255</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1196">#1196</a>)</li>
+  <li>关闭图片预览时偶发闪退已修复 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1246">#1246</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1231">#1231</a>)</li>
 </ul>
 
 <hr class="ref-divider">

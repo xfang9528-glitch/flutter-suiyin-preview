@@ -67,30 +67,28 @@ a:hover { text-decoration: underline; }
 <h1>📦 2026050101 发版预览</h1>
 <div class="meta">
 当前版本：<code>2026043002</code>（发版时间：<span class="bump-time">04/30 17:30</span>），下一版（预览）：<code>2026050101</code><br>
-生成时间：2026-05-01 00:07:08 · 重新跑脚本后刷新页面即拿最新
+生成时间：2026-05-01 08:37:19 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
 
 <h3>🆕 新功能</h3>
 <ul>
-  <li>电脑端全局搜索新增「功能」分组：输入「服务号」等关键词可以直接搜到匹配的服务号，点开可加载更多并跳转聊天/通讯录（顺手修复跳转后通讯录里服务号头像不显示蓝 M 的问题）— 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1256">#1256</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1199">#1199</a>)</li>
-</ul>
-
-<h3>✨ 体验优化</h3>
-<ul>
-  <li>电脑端发大图（长海报等长边 ≥ 3000px 的图片）时，应用不再卡死 5-10 秒，期间可以正常滑动消息、切换会话 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1254">#1254</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1242">#1242</a>)</li>
+  <li>PC 端全局搜索新增「功能」分组：搜「服务号」等关键词时，弹窗里会单独列出匹配到的服务号，可在线加载更多，点开直接进入聊天 — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1256">#1256</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1199">#1199</a>)</li>
 </ul>
 
 <h3>🐞 问题修复</h3>
 <ul>
-  <li>「新的朋友」面板里已通过 / 已过期的好友申请现在能及时翻到正确状态，不再被「伪 new」记录淹没——销售跟进客户的 3 天窗口不会被遮挡 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1255">#1255</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1196">#1196</a>)</li>
-  <li>关闭图片预览时偶现闪退已修复（来回切换不同会话的图片预览也不再崩）— 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1246">#1246</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1231">#1231</a>)</li>
+  <li>桌面端发送大图时界面卡住 5–10 秒、点哪都没反应的问题已修复，现在压缩在后台进行，发图过程不再卡顿 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1254">#1254</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1242">#1242</a>)</li>
+  <li>PC 端在搜索框点客户后长时间转圈、打不开聊天的问题已修复：自己名下的客户点开秒进聊天，不在自己名下的会自动跳到通讯录 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1261">#1261</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1235">#1235</a>)</li>
+  <li>「新的朋友」面板长期残留已在手机端通过的好友申请、伪未读不消失的问题已修复，状态会跟手机端同步翻成「已添加」，销售不会再被伪未读淹没漏掉真正的客户申请 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1255">#1255</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1196">#1196</a>)</li>
+  <li>查看大图后关闭预览偶尔闪退的问题已修复 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1246">#1246</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1231">#1231</a>)</li>
+  <li>多次安装 / 升级后桌面会出现多个「碎银」快捷方式累积的问题已修复，新版本现在会原地覆盖，桌面只保留一个图标 — 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1263">#1263</a></li>
 </ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">04/30 17:30 上次发版后，合入 main 的全部 <strong>6</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">04/30 17:30 上次发版后，合入 main 的全部 <strong>8</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
   <li><span class="merged-at">[04/30 23:21]</span>调试面板新增 getMessageHistory 日志独立开关 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1207">#1207</a> <span class="author">— 陈聪</span></li>
@@ -99,6 +97,8 @@ a:hover { text-decoration: underline; }
 
 <h2>🐞 问题修复</h2>
 <ul>
+  <li><span class="merged-at">[05/01 01:27]</span>锁定 per-user 安装，避免桌面快捷方式累积 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1263">#1263</a> <span class="author">— 张拓</span></li>
+  <li><span class="merged-at">[05/01 01:00]</span>搜索点击客户走 fast-path，治长时间转圈失败 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1261">#1261</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1235">#1235</a>) <span class="author">— 王梓先</span></li>
   <li><span class="merged-at">[04/30 22:55]</span>桌面端图片压缩丢进 isolate，主线程不再卡死 5-10s <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1254">#1254</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1242">#1242</a>) <span class="author">— 陈聪</span></li>
   <li><span class="merged-at">[04/30 18:44]</span>5 天保留窗口 + push 信号化翻状态 + 5min 兜底轮询 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1255">#1255</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1196">#1196</a>) <span class="author">— 王梓先</span></li>
   <li><span class="merged-at">[04/30 17:34]</span>PhotoViewController 延迟 dispose，修复关闭预览 null check crash <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1246">#1246</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1231">#1231</a>) <span class="author">— 王争</span></li>

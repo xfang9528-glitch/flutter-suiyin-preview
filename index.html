@@ -69,19 +69,14 @@ a:hover { text-decoration: underline; }
 <h1>📦 2026050202 发版预览</h1>
 <div class="meta">
 当前版本：<code>2026050201</code>（发版时间：<span class="bump-time">05/02 01:17</span>），下一版（预览）：<code>2026050202</code><br>
-生成时间：2026-05-02 11:52:43 · 重新跑脚本后刷新页面即拿最新
+生成时间：2026-05-02 12:57:55 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
-
-<h3>✨ 体验优化</h3>
-<ul>
-<li>切到通讯录 / 群发再切回聊天列表时，原本选中会话的滚动位置会闪一下错位再跳回，现在保留原状不再抖动 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1276">#1276</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1260">#1260</a>)</li>
-</ul>
-
 <h3>🐞 问题修复</h3>
 <ul>
-<li>修改客户等级时，如果保存失败或网络中断，列表里的等级会回滚到旧值，但详情页上方的等级徽章不会跟着回滚，两边显示不一致；现在徽章会跟列表同步刷新 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1275">#1275</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1274">#1274</a>)</li>
+  <li>修复在聊天列表选中某条会话后，切到通讯录 tab 再切回聊天列表，会出现滚动位置闪跳的问题——现在切回后列表滚动位置和选中态都原样保留 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1276">#1276</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1260">#1260</a>)</li>
+  <li>修复修改客户等级时，聊天列表里的等级胶囊和聊天窗口右上角 / 通讯录详情顶部的等级徽章显示不一致的问题（保存失败被回滚、或后端响应慢时尤其明显） — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1275">#1275</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1274">#1274</a>)</li>
 </ul>
 
 <hr class="ref-divider">

@@ -69,14 +69,15 @@ a:hover { text-decoration: underline; }
 <h1>📦 2026050301 发版预览</h1>
 <div class="meta">
 当前版本：<code>2026050201</code>（发版时间：<span class="bump-time">05/02 01:17</span>），下一版（预览）：<code>2026050301</code><br>
-生成时间：2026-05-03 14:19:07 · 重新跑脚本后刷新页面即拿最新
+生成时间：2026-05-03 14:21:11 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
+
 <h3>🐞 问题修复</h3>
 <ul>
-  <li>在聊天列表选中某条会话后，切到通讯录再切回，滚动位置会闪一下或跳到错的位置、选中状态也会丢——现已修复，切来切去都保持原位 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1276">#1276</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1260">#1260</a>)</li>
-  <li>在客户列表里改等级时，详情页头部的等级徽章常和列表对不上——比如保存失败回滚后头部还显示新值、或保存超时期间头部不跟着变。现已修复，头部徽章实时跟列表保持一致 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1275">#1275</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1274">#1274</a>)</li>
+<li>在 PC 端聊天列表选中一条会话后，切到通讯录或其他标签页再切回，列表的滚动位置和选中高亮现在会原样保留，不再出现先跳一下再恢复的闪烁 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1276">#1276</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1260">#1260</a>)</li>
+<li>调整客户等级时，详情页顶部的等级徽章和列表里的等级现在严格保持一致：保存失败回滚或网络超时期间，不会再出现「列表已回滚、顶部还显示新等级」的对不上 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1275">#1275</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1274">#1274</a>)</li>
 </ul>
 
 <hr class="ref-divider">

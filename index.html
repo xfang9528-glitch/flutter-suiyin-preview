@@ -41,7 +41,7 @@ a:hover { text-decoration: underline; }
 <label>查看历史预览：</label>
 <select id="version-switcher-select" onchange="var v=this.value; if(v) location.href = v; else location.href = './';">
 <!-- VERSION_SWITCHER_OPTIONS_START -->
-<option value="">📦 2026050202 发版预览</option>
+<option value="">📦 2026050301 发版预览</option>
 <option value="2026050201.html">🗂 2026050201</option>
 <option value="2026050101.html">🗂 2026050101</option>
 <option value="2026043002.html">🗂 2026043002</option>
@@ -66,22 +66,22 @@ a:hover { text-decoration: underline; }
   }
 })();
 </script>
-<h1>📦 2026050202 发版预览</h1>
+<h1>📦 2026050301 发版预览</h1>
 <div class="meta">
-当前版本：<code>2026050201</code>（发版时间：<span class="bump-time">05/02 01:17</span>），下一版（预览）：<code>2026050202</code><br>
-生成时间：2026-05-02 12:57:55 · 重新跑脚本后刷新页面即拿最新
+当前版本：<code>2026050201</code>（发版时间：<span class="bump-time">05/02 01:17</span>），下一版（预览）：<code>2026050301</code><br>
+生成时间：2026-05-03 14:19:07 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
 <h3>🐞 问题修复</h3>
 <ul>
-  <li>修复在聊天列表选中某条会话后，切到通讯录 tab 再切回聊天列表，会出现滚动位置闪跳的问题——现在切回后列表滚动位置和选中态都原样保留 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1276">#1276</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1260">#1260</a>)</li>
-  <li>修复修改客户等级时，聊天列表里的等级胶囊和聊天窗口右上角 / 通讯录详情顶部的等级徽章显示不一致的问题（保存失败被回滚、或后端响应慢时尤其明显） — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1275">#1275</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1274">#1274</a>)</li>
+  <li>在聊天列表选中某条会话后，切到通讯录再切回，滚动位置会闪一下或跳到错的位置、选中状态也会丢——现已修复，切来切去都保持原位 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1276">#1276</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1260">#1260</a>)</li>
+  <li>在客户列表里改等级时，详情页头部的等级徽章常和列表对不上——比如保存失败回滚后头部还显示新值、或保存超时期间头部不跟着变。现已修复，头部徽章实时跟列表保持一致 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1275">#1275</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1274">#1274</a>)</li>
 </ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">05/02 01:17 上次发版后，合入 main 的全部 <strong>3</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">05/02 01:17 上次发版后，合入 main 的全部 <strong>5</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
   <li class="empty">无</li>
@@ -99,6 +99,8 @@ a:hover { text-decoration: underline; }
 
 <h2>🔧 其他（chore / docs / test / ...）</h2>
 <ul>
+  <li><span class="merged-at">[05/02 21:59]</span>test(chat #1283): wechat_remark_editor 补 chatLocal.getAll() mock stub <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1284">#1284</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1283">#1283</a>) <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[05/02 19:25]</span>chore(quality-gate): dart fix 治理 681 条 lint，warnings+info 843→162 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1282">#1282</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1277">#1277</a>) <span class="author">— 王梓先</span></li>
   <li><span class="merged-at">[05/02 11:19]</span>chore(release): bump to 26.05.02+2026050201 + 归档 .2026050201 release notes <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1278">#1278</a> <span class="author">— 张拓</span></li>
 </ul>
 

@@ -71,27 +71,36 @@ a:hover { text-decoration: underline; }
 <h1>📦 2026050602 发版预览</h1>
 <div class="meta">
 当前版本：<code>2026050601</code>（发版时间：<span class="bump-time">05/06 11:05</span>），下一版（预览）：<code>2026050602</code><br>
-生成时间：2026-05-06 12:59:24 · 重新跑脚本后刷新页面即拿最新
+生成时间：2026-05-06 15:59:18 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
 
+<h3>🆕 新功能</h3>
+<ul>
+  <li>艺星：聊天里收到客户发来的图片，右键菜单新增「存为好友照片」，一键把图片存到该客户的照片资料里 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1327">#1327</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1288">#1288</a>)</li>
+</ul>
+
 <h3>🐞 问题修复</h3>
 <ul>
-  <li>Mac 端点击「选择文件 / 选择图片」后整个应用卡住、点哪都没反应的问题已修复 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1321">#1321</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1311">#1311</a>)</li>
-  <li>在图片预览里写就地文字标注、点别处提交时有概率应用闪退的问题已修复 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1319">#1319</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1310">#1310</a>)</li>
+  <li>通讯录点开某些客户时，右侧客户资料面板出现红屏报错的问题已修复，现在改为显示「暂无客户资料」空状态 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1330">#1330</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1326">#1326</a>)</li>
+  <li>macOS：聊天工具栏点「图片」/「视频」图标弹出文件选择器期间主界面卡住不响应的问题已修复 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1321">#1321</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1311">#1311</a>)</li>
+  <li>给图片预览加文字标注后关闭页面偶发崩溃的问题已修复 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1319">#1319</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1310">#1310</a>)</li>
 </ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">05/06 11:05 上次发版后，合入 main 的全部 <strong>3</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">05/06 11:05 上次发版后，合入 main 的全部 <strong>8</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
-  <li class="empty">无</li>
+  <li><span class="merged-at">[05/06 15:05]</span>客户图片消息右键追加「存为好友照片」（艺星专属） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1327">#1327</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1288">#1288</a>) <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[05/06 13:00]</span>非艺星 PC 客户面板补「录音记录」入口（占位 toast） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1322">#1322</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1295">#1295</a>) <span class="author">— 陈聪</span></li>
 </ul>
 
 <h2>🐞 问题修复</h2>
 <ul>
+  <li><span class="merged-at">[05/06 15:33]</span>labels API 失败时静默返回空状态 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1330">#1330</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1326">#1326</a>) <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[05/06 13:04]</span>File closed 异常首次即自愈 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1317">#1317</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1309">#1309</a>) <span class="author">— 王争</span></li>
   <li><span class="merged-at">[05/06 11:52]</span>NSOpenPanel runModal → begin(completionHandler:) 修 macOS AppHanging <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1321">#1321</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1311">#1311</a>) <span class="author">— 王争</span></li>
   <li><span class="merged-at">[05/06 11:39]</span>推迟 image_preview session.dispose() 到下一帧，消除 FocusManager RangeError <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1319">#1319</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1310">#1310</a>) <span class="author">— 王争</span></li>
 </ul>
@@ -103,6 +112,7 @@ a:hover { text-decoration: underline; }
 
 <h2>🔧 其他（chore / docs / test / ...）</h2>
 <ul>
+  <li><span class="merged-at">[05/06 13:05]</span>docs(sentry): 添加 2026-05-06 Sentry 5天错误分析报告 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1323">#1323</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1312">#1312</a>) <span class="author">— 王争</span></li>
   <li><span class="merged-at">[05/06 11:58]</span>chore(build): sentry-native 缓存改走 cdn2 OSS tar.gz，跳过国内 git clone <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1324">#1324</a> <span class="author">— 张拓</span></li>
 </ul>
 

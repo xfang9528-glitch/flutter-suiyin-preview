@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
-<!-- CURRENT_BUILD:2026050702 -->
+<!-- CURRENT_BUILD:2026050703 -->
 <title>下一版发版预览 · flutter-suiyin</title>
 <style>
 body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", sans-serif; max-width: 880px; margin: 32px auto; padding: 0 24px; color: #1f2328; line-height: 1.7; background: #fafbfc; }
@@ -41,7 +41,8 @@ a:hover { text-decoration: underline; }
 <label>查看历史预览：</label>
 <select id="version-switcher-select" onchange="var v=this.value; if(v) location.href = v; else location.href = './';">
 <!-- VERSION_SWITCHER_OPTIONS_START -->
-<option value="">📦 2026050703 发版预览</option>
+<option value="">📦 2026050801 发版预览</option>
+<option value="2026050703.html">🗂 2026050703</option>
 <option value="2026050702.html">🗂 2026050702</option>
 <option value="2026050701.html">🗂 2026050701</option>
 <option value="2026050601.html">🗂 2026050601</option>
@@ -70,77 +71,43 @@ a:hover { text-decoration: underline; }
   }
 })();
 </script>
-<h1>📦 2026050703 发版预览</h1>
+<h1>📦 2026050801 发版预览</h1>
 <div class="meta">
-当前版本：<code>2026050702</code>（发版时间：<span class="bump-time">05/07 14:38</span>），下一版（预览）：<code>2026050703</code><br>
-生成时间：2026-05-07 18:39:17 · 重新跑脚本后刷新页面即拿最新
+当前版本：<code>2026050703</code>（发版时间：<span class="bump-time">05/07 22:36</span>），下一版（预览）：<code>2026050801</code><br>
+生成时间：2026-05-08 00:01:08 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
-<h3>🆕 新功能</h3>
-<ul>
-  <li>转发消息选人时，1v1 客户卡片下方多显示一行副标题：所属销售（带人设号）；客户未分配销售时显示「未分配」，避免重名时选错人 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1409">#1409</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1394">#1394</a>)</li>
-  <li>PC 客户右侧资料栏新增「商品加购」面板，分页展示该客户加入购物车的商品 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1384">#1384</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1336">#1336</a>)</li>
-  <li>mobile 客户详情页上线：可查看客户基础资料和全量用户标签（只读，编辑暂走 PC） — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1387">#1387</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1279">#1279</a>)</li>
-  <li>艺星 PC：客户基础信息编辑弹窗右上角新增「编辑记录」入口，点开可看到该客户每一次资料修改的历史快照 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1398">#1398</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1345">#1345</a>)</li>
-  <li>PC 客户右侧资料栏新增「小程序分享」面板，分页展示客户接收过的小程序分享记录，带渠道标签 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1388">#1388</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1337">#1337</a>)</li>
-  <li>PC 客户右侧资料栏新增「商品浏览」面板，分页展示该客户最近浏览过的商品 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1399">#1399</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1335">#1335</a>)</li>
-  <li>PC 客户右侧资料栏新增「商品收藏」面板，分页展示该客户收藏的商品 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1379">#1379</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1338">#1338</a>)</li>
-</ul>
-<h3>✨ 体验优化</h3>
-<ul>
-  <li>商品浏览/加购/收藏/分享面板新增下拉刷新和上拉加载更多，长列表翻看更顺畅 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1422">#1422</a></li>
-  <li>商品面板列表头尾文字样式统一收敛，「没有更多了」更克制不抢眼 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1428">#1428</a></li>
-  <li>聊天里的视频号、公众号文章、商品、小程序卡片中的图片更清晰，公众号会话里的来源小图标也更省内存 — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1408">#1408</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1406">#1406</a>)</li>
-</ul>
-<h3>🐞 问题修复</h3>
-<ul>
-  <li>跨账号置顶数量不一致、点置顶切会话卡住不刷新的问题已修复 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1424">#1424</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1401">#1401</a>)</li>
-  <li>PC 销售档案气泡里「销售微信」一栏显示成 ID 而不是昵称的问题已修复，现在切回正式昵称 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1421">#1421</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1346">#1346</a>)</li>
-  <li>聊天里收到的「视频号」卡片封面改成 9:16 竖向比例，贴合视频号原视频帧形态 — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1403">#1403</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1386">#1386</a>)</li>
-</ul>
+<p>本期合入的改动为内部网络监测埋点（仅艺星 PC 启用），不影响功能与性能，用户无感知。</p>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">05/07 14:38 上次发版后，合入 main 的全部 <strong>17</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">05/07 22:36 上次发版后，合入 main 的全部 <strong>1</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
-  <li><span class="merged-at">[05/07 17:59]</span>更新 swagger SDK + 商品面板下拉刷新/上拉加载 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1422">#1422</a> <span class="author">— 王争</span></li>
-  <li><span class="merged-at">[05/07 17:57]</span>转发选人列表 1v1 客户加副标题 — 销售（人设）/未分配 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1409">#1409</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1394">#1394</a>) <span class="author">— 陈聪</span></li>
-  <li><span class="merged-at">[05/07 16:23]</span>商品加购面板 — 分页列表 + 右侧资料栏入口 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1384">#1384</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1336">#1336</a>) <span class="author">— 王争</span></li>
-  <li><span class="merged-at">[05/07 16:09]</span>mobile 客户详情页 + 用户标签全量只读 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1387">#1387</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1279">#1279</a>) <span class="author">— 陈聪</span></li>
-  <li><span class="merged-at">[05/07 16:05]</span>艺星 PC 基础信息编辑弹窗右上角「编辑记录」+ 历史弹窗 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1398">#1398</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1345">#1345</a>) <span class="author">— 王梓先</span></li>
-  <li><span class="merged-at">[05/07 15:49]</span>小程序分享面板 — 分页列表 + 渠道标签 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1388">#1388</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1337">#1337</a>) <span class="author">— 王争</span></li>
-  <li><span class="merged-at">[05/07 15:08]</span>PC 通用 - 商品浏览面板 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1399">#1399</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1335">#1335</a>) <span class="author">— 王争</span></li>
-  <li><span class="merged-at">[05/07 14:59]</span>商品收藏面板 — 分页列表 + 右侧资料栏入口 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1379">#1379</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1338">#1338</a>) <span class="author">— 王争</span></li>
-  <li><span class="merged-at">[05/07 14:48]</span>话术面板埋点 — 「发完即关」vs「连发」假设验证 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1396">#1396</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1349">#1349</a>) <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[05/07 23:51]</span>Dio 细粒度 socket 创建埋点（仅 PC + yestar） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1427">#1427</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1389">#1389</a>) <span class="author">— 王梓先</span></li>
 </ul>
 
 <h2>🐞 问题修复</h2>
 <ul>
-  <li><span class="merged-at">[05/07 18:08]</span>置顶双表自洽兜底 + chatMessages timeout — 修复跨账号置顶数量不一致 / 点击置顶卡刷新 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1424">#1424</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1401">#1401</a>) <span class="author">— 王梓先</span></li>
-  <li><span class="merged-at">[05/07 18:07]</span>商品面板 header/footer 字体 14px 浅灰 + noMore 去图标 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1428">#1428</a> <span class="author">— 王争</span></li>
-  <li><span class="merged-at">[05/07 17:50]</span>PC 销售档案气泡「销售微信」切回正式昵称 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1421">#1421</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1346">#1346</a>) <span class="author">— 王梓先</span></li>
-  <li><span class="merged-at">[05/07 15:39]</span>finder 卡片封面 9:16 竖向 — 贴合视频号原视频帧形态 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1403">#1403</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1386">#1386</a>) <span class="author">— 陈宣宇</span></li>
+  <li class="empty">无</li>
 </ul>
 
 <h2>✨ 体验优化</h2>
 <ul>
-  <li><span class="merged-at">[05/07 16:37]</span>聊天卡片气泡 5 处 cacheWidth 显式声明 — 修 PC DPR=2 糊 + 18×18 图标 770× 兜底浪费 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1408">#1408</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1406">#1406</a>) <span class="author">— 陈宣宇</span></li>
+  <li class="empty">无</li>
 </ul>
 
 <h2>🔧 其他（chore / docs / test / ...）</h2>
 <ul>
-  <li><span class="merged-at">[05/07 18:14]</span>chore(api-gen): _tagNameMap 缺中文映射时 throw 而非 fallback 撞名 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1425">#1425</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1347">#1347</a>) <span class="author">— 王梓先</span></li>
-  <li><span class="merged-at">[05/07 17:37]</span>diag(tray #1258): 第二轮 — stopFlash 上报 WM_TIMER + NIM_MODIFY 聚合统计 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1417">#1417</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1258">#1258</a>) <span class="author">— 王梓先</span></li>
-  <li><span class="merged-at">[05/07 16:58]</span>observability(chat): 撤回链路 SLS 埋点（#1352 端到端不一致前端无解，铺路 only） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1404">#1404</a> <span class="author">— 王梓先</span></li>
+  <li class="empty">无</li>
 </ul>
 
 
 <hr class="ref-divider">
 
 <div class="foot">
-上一次发版时间：<span class="bump-time">05/07 14:38</span>（基线 commit：<code>chore(release): bump to 26.05.07+2026050702 + 归档 .2026050702 release notes (#1400)</code>）<br>
+上一次发版时间：<span class="bump-time">05/07 22:36</span>（基线 commit：<code>chore(release): bump to 26.05.07+2026050703 + 归档 .2026050703 release notes (#1432)</code>）<br>
 PR 归属版本由 <code>pubspec.yaml</code> 的 <code>version:</code> 行 git 历史判定 —— bump commit 的 committedAt 是分割线。<br>
 由 <code>tool/generate_release_preview.dart</code> 自动提取；重新跑脚本后刷新页面即拿最新。<br>
 issue 链接基于 PetWebOrg/flutter-suiyin 仓。

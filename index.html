@@ -74,23 +74,32 @@ a:hover { text-decoration: underline; }
 <h1>📦 2026050801 发版预览</h1>
 <div class="meta">
 当前版本：<code>2026050703</code>（发版时间：<span class="bump-time">05/07 22:36</span>），下一版（预览）：<code>2026050801</code><br>
-生成时间：2026-05-08 09:50:22 · 重新跑脚本后刷新页面即拿最新
+生成时间：2026-05-08 11:52:41 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
-<div class="notice">本期 1 个 PR 全为内部观测埋点（Dio socket 创建细节 SLS 上报，仅 PC + yestar），用户无感知，<strong>本版无对外发版说明</strong>。详情见下方「本期所有 PR」。</div>
+<h3>✨ 体验优化</h3>
+<ul>
+  <li>撤回消息后的提示文案改为「撤回无法保证 100% 成功，请在手机微信上查验」——之前 PC 显示「撤回成功」其实不代表对方手机微信里真撤了，建议回手机微信再确认一下 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1443">#1443</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1352">#1352</a>)</li>
+</ul>
+
+<h3>🐞 问题修复</h3>
+<ul>
+  <li>视频号卡片封面改回原图自然比例，不再被强行裁成 9:16 窄条——之前 4:5 / 3:4 的封面图会被拉伸或切掉一部分，现在能看到完整原图 — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1441">#1441</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1386">#1386</a>)</li>
+</ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">05/07 22:36 上次发版后，合入 main 的全部 <strong>1</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">05/07 22:36 上次发版后，合入 main 的全部 <strong>6</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
+  <li><span class="merged-at">[05/08 11:04]</span>撤回 toast 改为引导用户去微信端核对 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1443">#1443</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1352">#1352</a>) <span class="author">— 王梓先</span></li>
   <li><span class="merged-at">[05/07 23:51]</span>Dio 细粒度 socket 创建埋点（仅 PC + yestar） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1427">#1427</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1389">#1389</a>) <span class="author">— 王梓先</span></li>
 </ul>
 
 <h2>🐞 问题修复</h2>
 <ul>
-  <li class="empty">无</li>
+  <li><span class="merged-at">[05/08 10:28]</span>finder 卡片封面去掉 9:16 强裁，改原图自然比例 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1441">#1441</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1386">#1386</a>) <span class="author">— 陈宣宇</span></li>
 </ul>
 
 <h2>✨ 体验优化</h2>
@@ -100,7 +109,9 @@ a:hover { text-decoration: underline; }
 
 <h2>🔧 其他（chore / docs / test / ...）</h2>
 <ul>
-  <li class="empty">无</li>
+  <li><span class="merged-at">[05/08 10:46]</span>chore(tooling #1359): build_fast 增量模式变更文件过多自动退到 --full <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1438">#1438</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1359">#1359</a>) <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[05/08 10:39]</span>chore(chat #1407): #1345 follow-up — 修 V1 残留注释 + gotchas 加诊断反 pattern <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1442">#1442</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1407">#1407</a>) <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[05/08 09:50]</span>chore(api): 修 sale_user_name.dart 顶部误导注释 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1434">#1434</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1423">#1423</a>) <span class="author">— 王梓先</span></li>
 </ul>
 
 

@@ -41,7 +41,7 @@ a:hover { text-decoration: underline; }
 <label>查看历史预览：</label>
 <select id="version-switcher-select" onchange="var v=this.value; if(v) location.href = v; else location.href = './';">
 <!-- VERSION_SWITCHER_OPTIONS_START -->
-<option value="">📦 2026050801 发版预览</option>
+<option value="">📦 2026050901 发版预览</option>
 <option value="2026050703.html">🗂 2026050703</option>
 <option value="2026050702.html">🗂 2026050702</option>
 <option value="2026050701.html">🗂 2026050701</option>
@@ -71,45 +71,40 @@ a:hover { text-decoration: underline; }
   }
 })();
 </script>
-<h1>📦 2026050801 发版预览</h1>
+<h1>📦 2026050901 发版预览</h1>
 <div class="meta">
-当前版本：<code>2026050703</code>（发版时间：<span class="bump-time">05/07 22:36</span>），下一版（预览）：<code>2026050801</code><br>
-生成时间：2026-05-08 18:36:46 · 重新跑脚本后刷新页面即拿最新
+当前版本：<code>2026050703</code>（发版时间：<span class="bump-time">05/07 22:36</span>），下一版（预览）：<code>2026050901</code><br>
+生成时间：2026-05-09 00:01:16 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
-
 <h3>🆕 新功能</h3>
 <ul>
-  <li>PC 客户右栏「购买记录」点订单卡片可弹出订单详情浮窗，详情里的物流单点开能看到完整物流轨迹 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1492">#1492</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1459">#1459</a>)</li>
-  <li>收到对方引用语音消息时，引用预览里显示语音转写出来的文字，不再只是「[语音]」 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1477">#1477</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1433">#1433</a>)</li>
-  <li>切换企业弹窗里的企业列表按拼音排序，更好找；顺手修复「切企业时偶尔误报『登录已过期』」 — 房昕 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1470">#1470</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1431">#1431</a>)</li>
-  <li>PC 客户右栏新增「物流信息」弹窗，展示完整物流轨迹 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1475">#1475</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1412">#1412</a>)</li>
-  <li>PC 客户右栏「用户(N)」入口可点开看该客户的所有关联人列表 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1461">#1461</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1420">#1420</a>)</li>
-  <li>话术面板顶部的 tab 现在可以长按拖动重新排序，顺序本地保存（每个号独立） — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1402">#1402</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1381">#1381</a>)</li>
-  <li>PC 客户右栏新增「订单详情」浮窗，点订单卡片可弹出 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1445">#1445</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1411">#1411</a>)</li>
-  <li>PC 客户右栏新增「购买记录」面板，支持按订单状态筛选、分页加载 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1458">#1458</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1410">#1410</a>)</li>
-  <li>消息撤回失败时的 toast 改为提示去微信端确认，避免反复点重试 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1443">#1443</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1352">#1352</a>)</li>
+  <li>客户右栏新增「购买记录」面板：可看历史订单（按状态筛选、分页加载），点订单查看商品详情，点物流单号查看快递跟踪 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1492">#1492</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1475">#1475</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1458">#1458</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1445">#1445</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1459">#1459</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1412">#1412</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1410">#1410</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1411">#1411</a>)</li>
+  <li>引用语音消息时直接显示语音的文字转写内容（之前只能看到「[语音]」标签） — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1477">#1477</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1433">#1433</a>)</li>
+  <li>切换环境弹窗里的企业列表改为按拼音排序，方便快速找到目标企业 — 房昕 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1470">#1470</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1431">#1431</a>)</li>
+  <li>客户右栏「用户(N)」入口现在可点开查看该客户关联的人员列表 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1461">#1461</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1420">#1420</a>)</li>
+  <li>话术面板顶部 tab 现在支持长按拖动调整顺序，调整后会本地保存（下次打开维持你的排序） — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1402">#1402</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1381">#1381</a>)</li>
+  <li>客户右栏「充值」行改为直接显示「总余额（¥xxx）」，替代头像列表 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1454">#1454</a></li>
 </ul>
-
 <h3>✨ 体验优化</h3>
 <ul>
-  <li>PC 客户右栏「充值记录」行改用「总余额 (¥xxx)」直观展示，替代原本的头像列表 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1454">#1454</a></li>
+  <li>撤回消息提示文案改为引导用户去微信端核对（之前文案容易让人误以为撤回失败） — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1443">#1443</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1352">#1352</a>)</li>
 </ul>
-
 <h3>🐞 问题修复</h3>
 <ul>
-  <li>艺星 PC 客户右栏：某条信息加载失败时不再把整个右栏吞掉，可单独点重试恢复 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1476">#1476</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1376">#1376</a>)</li>
-  <li>任务栏图标偶尔闪烁/灭帧的问题已修复 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1462">#1462</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1460">#1460</a>)</li>
-  <li>编辑话术目录时，如果归属/标签全空会弹 toast 拦截，避免公共话术被误改归属 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1463">#1463</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1357">#1357</a>)</li>
-  <li>客户列表二级分组整行长按 250ms 即可拖动重排，修复之前拖动失灵 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1429">#1429</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1426">#1426</a>)</li>
-  <li>群聊切换人设时保持选中态，原地完成切换，不再跳走 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1453">#1453</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1393">#1393</a>)</li>
-  <li>聊天里收到的「视频号」卡片封面按原图自然比例显示，不再强裁 — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1441">#1441</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1386">#1386</a>)</li>
+  <li>用户主动退出登录时不再误弹「登录已过期」提示 — 房昕 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1496">#1496</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1473">#1473</a>)</li>
+  <li>艺星 PC 客户右栏加载失败时不再整个面板空白，可点重试恢复显示 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1476">#1476</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1376">#1376</a>)</li>
+  <li>修复 Windows 任务栏图标偶发闪烁灭帧问题 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1462">#1462</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1460">#1460</a>)</li>
+  <li>编辑话术目录时若分类全清空，现在会给出提示拦截，避免公共话术被静默改归属 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1463">#1463</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1357">#1357</a>)</li>
+  <li>二级分组现在整行长按 250ms 即可拖动调整顺序（之前拖动失灵） — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1429">#1429</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1426">#1426</a>)</li>
+  <li>群聊切换人设后保持当前会话选中状态，不会跳走 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1453">#1453</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1393">#1393</a>)</li>
+  <li>发现页卡片封面图按原图自然比例显示，不再被强制裁剪成 9:16 — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1441">#1441</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1386">#1386</a>)</li>
 </ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">05/07 22:36 上次发版后，合入 main 的全部 <strong>27</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">05/07 22:36 上次发版后，合入 main 的全部 <strong>28</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
   <li><span class="merged-at">[05/08 18:28]</span>购买记录面板 — 订单详情 &amp; 物流弹窗接入 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1492">#1492</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1459">#1459</a>) <span class="author">— 王争</span></li>
@@ -129,6 +124,7 @@ a:hover { text-decoration: underline; }
 
 <h2>🐞 问题修复</h2>
 <ul>
+  <li><span class="merged-at">[05/08 22:36]</span>用户主动登出不再误弹「登录已过期」toast <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1496">#1496</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1473">#1473</a>) <span class="author">— 房昕</span></li>
   <li><span class="merged-at">[05/08 17:42]</span>艺星 PC 右栏失败不再吞整面板 + 重试可恢复 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1476">#1476</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1376">#1376</a>) <span class="author">— 陈聪</span></li>
   <li><span class="merged-at">[05/08 17:19]</span>闪烁灭帧用 30% alpha logo 替代全透明 HICON <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1462">#1462</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1460">#1460</a>) <span class="author">— 王梓先</span></li>
   <li><span class="merged-at">[05/08 16:27]</span>编辑话术目录全空给 toast 拦截 — 防公共话术静默改归属 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1463">#1463</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1357">#1357</a>) <span class="author">— 陈聪</span></li>

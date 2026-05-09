@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
-<!-- CURRENT_BUILD:2026050401 -->
+<!-- CURRENT_BUILD:2026050901 -->
 <title>下一版发版预览 · flutter-suiyin</title>
 <style>
 body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", sans-serif; max-width: 880px; margin: 32px auto; padding: 0 24px; color: #1f2328; line-height: 1.7; background: #fafbfc; }
@@ -73,38 +73,26 @@ a:hover { text-decoration: underline; }
   }
 })();
 </script>
-<h1>📦 2026050601 发版预览</h1>
+<h1>📦 2026050902 发版预览</h1>
 <div class="meta">
-当前版本：<code>2026050401</code>（发版时间：<span class="bump-time">05/04 11:25</span>），下一版（预览）：<code>2026050601</code><br>
-生成时间：2026-05-06 09:50:43 · 重新跑脚本后刷新页面即拿最新
+当前版本：<code>2026050901</code>（发版时间：<span class="bump-time">05/09 08:17</span>），下一版（预览）：<code>2026050902</code><br>
+生成时间：2026-05-09 09:50:35 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
-<h3>🆕 新功能</h3>
-<ul>
-  <li>PC 端进非艺星客户聊天后，右侧客户信息面板焕然一新：14 项常用入口（消费、充值、余额、卡券、朋友圈等）一眼可见；微信号 / 手机号点眼睛即可拉取明文并自动复制 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1294">#1294</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1280">#1280</a>)</li>
-</ul>
-
-<h3>🐞 问题修复</h3>
-<ul>
-  <li>登录 / 切换企业 / 冷启动后立即打开客户聊天，右侧客户信息面板偶尔会显示一大段红色错误信息撑出版面的问题已修复，现在会正常显示「加载中」，数据就绪后自动渲染 — 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1307">#1307</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1303">#1303</a>)</li>
-  <li>新分配过来的客户在聊天列表里不出现、最长要等 5 分钟才能看到的问题已修复，现在收到分配后会立即出现 — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1306">#1306</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1298">#1298</a>)</li>
-  <li>给客户设置等级标签后，标签在界面上立刻"变回原来"的问题已修复（服务器其实已正确保存，只是前端展示错了） — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1293">#1293</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1292">#1292</a>)</li>
-</ul>
+<p style="color:#656d76">本期暂无新合入 PR（上次发版 <span class="bump-time">05/09 08:17</span> 之后 main 无新 commit），等下一批 PR 合入后会在此自动汇总。</p>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">05/04 11:25 上次发版后，合入 main 的全部 <strong>5</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">05/09 08:17 上次发版后，合入 main 的全部 <strong>0</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
-  <li><span class="merged-at">[05/05 10:33]</span>非艺星 PC 客户面板 — 接合并接口 + 14 项入口 + 设计图重排 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1294">#1294</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1280">#1280</a>) <span class="author">— 陈聪</span></li>
+  <li class="empty">无</li>
 </ul>
 
 <h2>🐞 问题修复</h2>
 <ul>
-  <li><span class="merged-at">[05/06 09:25]</span>客户信息面板 db 未就绪时走 loading 不暴露 stack trace <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1307">#1307</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1303">#1303</a>) <span class="author">— 张拓</span></li>
-  <li><span class="merged-at">[05/06 01:41]</span>新分配客户不出现聊天列表 — #1155 防御漏 stripRealUserId <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1306">#1306</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1298">#1298</a>) <span class="author">— 陈宣宇</span></li>
-  <li><span class="merged-at">[05/04 21:59]</span>客户等级标签设置后立即&quot;变回去&quot; — fromJson 把 labelId 当 customerId <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1293">#1293</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1292">#1292</a>) <span class="author">— 王梓先</span></li>
+  <li class="empty">无</li>
 </ul>
 
 <h2>✨ 体验优化</h2>
@@ -114,14 +102,14 @@ a:hover { text-decoration: underline; }
 
 <h2>🔧 其他（chore / docs / test / ...）</h2>
 <ul>
-  <li><span class="merged-at">[05/05 23:38]</span>chore(chat #1299): 撤回消息→search-list 路径，仅保留分配通知兜底 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1304">#1304</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1299">#1299</a>) <span class="author">— 王梓先</span></li>
+  <li class="empty">无</li>
 </ul>
 
 
 <hr class="ref-divider">
 
 <div class="foot">
-上一次发版时间：<span class="bump-time">05/04 11:25</span>（基线 commit：<code>chore(release): bump to 26.05.04+2026050401 + 归档 .2026050401 release notes (#1291)</code>）<br>
+上一次发版时间：<span class="bump-time">05/09 08:17</span>（基线 commit：<code>chore(release): bump to 26.05.09+2026050901 + 归档 .2026050901 release notes (#1499)</code>）<br>
 PR 归属版本由 <code>pubspec.yaml</code> 的 <code>version:</code> 行 git 历史判定 —— bump commit 的 committedAt 是分割线。<br>
 由 <code>tool/generate_release_preview.dart</code> 自动提取；重新跑脚本后刷新页面即拿最新。<br>
 issue 链接基于 PetWebOrg/flutter-suiyin 仓。

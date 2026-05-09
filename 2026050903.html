@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<!-- CURRENT_BUILD:2026050902 -->
+<title>下一版发版预览 · flutter-suiyin</title>
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", sans-serif; max-width: 880px; margin: 32px auto; padding: 0 24px; color: #1f2328; line-height: 1.7; background: #fafbfc; }
+h1 { border-bottom: 1px solid #d1d9e0; padding-bottom: 8px; }
+h2 { margin-top: 32px; border-bottom: 1px solid #eef0f2; padding-bottom: 4px; }
+.meta { color: #656d76; font-size: 13px; margin-bottom: 24px; }
+.meta code { background: #eef0f2; padding: 2px 6px; border-radius: 4px; }
+.empty { color: #999; font-style: italic; list-style: none; margin-left: -20px; }
+ul { padding-left: 24px; }
+li { margin: 6px 0; }
+a { color: #0969da; text-decoration: none; }
+a:hover { text-decoration: underline; }
+.author { color: #8c959f; font-size: 12px; margin-left: 4px; }
+.merged-at { color: #8c959f; font-size: 12px; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; margin-right: 4px; }
+.bump-time { color: #1f2328; font-weight: 600; }
+.foot { margin-top: 48px; padding-top: 16px; border-top: 1px solid #eef0f2; color: #8c959f; font-size: 12px; }
+.notice { background: #fff8c5; border: 1px solid #d4a72c; padding: 12px 16px; border-radius: 6px; margin: 16px 0; color: #59410a; }
+.ref-divider { border: 0; border-top: 2px dashed #d1d9e0; margin: 40px 0 16px 0; }
+.ref-heading { font-size: 20px; border-bottom: none; }
+.ref-hint { color: #656d76; font-size: 13px; margin-bottom: 16px; }
+.version-switcher { position: fixed; top: 16px; right: 24px; background: #fff; border: 1px solid #d1d9e0; border-radius: 6px; padding: 6px 10px; font-size: 13px; box-shadow: 0 2px 6px rgba(0,0,0,0.04); z-index: 100; }
+.version-switcher label { color: #656d76; margin-right: 6px; }
+.version-switcher select { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 13px; padding: 2px 4px; }
+</style>
+</head>
+<body>
+<!-- 右上角「查看历史预览」下拉：
+     - 顶部 `📦 <nextBuild> 发版预览` = 当前还没冻结的下一版预览（value="" 跳 ./）
+     - 历史项 `🗂 <build>` = 已发版冻结归档，文件名 `<10位build>.html`（一次发版一份）
+     - 本地预览（docs/release-preview.html）：dart 读 PREVIEW_REPO_DIR
+       （默认 D:/CC work/flutter-suiyin-preview）下已有的 `<build>.html`，option
+       value 拼绝对 URL 指向 GitHub Pages，本地点击跳过去看
+     - GitHub Pages 上的 index.html：publish_preview.ps1 推送时会把 marker 之间
+       的内容重写成相对路径 option（同域跳转），覆盖 dart 输出 -->
+<div class="version-switcher">
+<label>查看历史预览：</label>
+<select id="version-switcher-select" onchange="var v=this.value; if(v) location.href = v; else location.href = './';">
+<!-- VERSION_SWITCHER_OPTIONS_START -->
+<option value="">📦 2026050904 发版预览</option>
+<option value="2026050903.html">🗂 2026050903</option>
+<option value="2026050902.html">🗂 2026050902</option>
+<option value="2026050901.html">🗂 2026050901</option>
+<option value="2026050703.html">🗂 2026050703</option>
+<option value="2026050702.html">🗂 2026050702</option>
+<option value="2026050701.html">🗂 2026050701</option>
+<option value="2026050601.html">🗂 2026050601</option>
+<option value="2026050401.html">🗂 2026050401</option>
+<option value="2026050201.html">🗂 2026050201</option>
+<option value="2026050101.html">🗂 2026050101</option>
+<option value="2026043002.html">🗂 2026043002</option>
+<option value="2026043001.html">🗂 2026043001</option>
+<option value="2026042902.html">🗂 2026042902</option>
+<option value="2026042901.html">🗂 2026042901</option>
+<option value="2026042804.html">🗂 2026042804</option>
+<!-- VERSION_SWITCHER_OPTIONS_END -->
+</select>
+</div>
+<script>
+// 让下拉的当前选中态跟着当前页走：在归档页（如 2026042901.html）里，自动选中 `🗂 2026042901`
+// 那项；这样点回 `📦 ... 发版预览`（value=""）时 select.value 才会发生变化，触发 onchange 跳 `./`。
+// 不做的话第一项默认选中 = "📦 ..." = ""，在归档页点它无变化、不跳转，用户回不去首页。
+(function(){
+  var sel = document.getElementById('version-switcher-select');
+  if (!sel) return;
+  var cur = location.pathname.split('/').pop();
+  if (!cur || cur === 'index.html' || cur === '') return;
+  for (var i = 0; i < sel.options.length; i++) {
+    if (sel.options[i].value === cur) { sel.selectedIndex = i; break; }
+  }
+})();
+</script>
+<h1>📦 2026050903 发版预览</h1>
+<div class="meta">
+当前版本：<code>2026050902</code>（发版时间：<span class="bump-time">05/09 10:59</span>），下一版（预览）：<code>2026050903</code><br>
+生成时间：2026-05-09 18:04:32 · 重新跑脚本后刷新页面即拿最新
+</div>
+
+<h2>📣 本版用户感知更新</h2>
+
+<h3>🆕 新功能</h3>
+<ul>
+<li>聊天底部新增「发送商品 / 优惠券」入口：弹出选择面板挑好后一键发送给客户（非艺星企业可用） — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1511">#1511</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1355">#1355</a>)</li>
+<li>聊天里收到的订单消息可以点订单号了，会弹出该订单的详情浮窗 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1529">#1529</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1456">#1456</a>)</li>
+<li>PC 客户右栏「用户」section 改成原地折叠展开（不再滑出独立面板），列表行可直接删除某个关联用户 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1518">#1518</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1488">#1488</a>)</li>
+<li>PC 客户右栏新增「充值记录」面板：汇总金额卡片 + 时间筛选 + 分页列表，接入真实充值数据 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1508">#1508</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1334">#1334</a>)</li>
+</ul>
+
+<h3>✨ 体验优化</h3>
+<ul>
+<li>话术预览浮层里点文本 / 图片 / 视频右侧的发送按钮，现在改成把内容填入当前会话输入框（你可以再编辑或补充其他内容），点输入框发送按钮才真正发出（之前是直接发） — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1559">#1559</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1545">#1545</a>)</li>
+</ul>
+
+<h3>🐞 问题修复</h3>
+<ul>
+<li>客户微信备注修改后，会话列表和聊天顶部的展示名会自动同步刷新（之前需要重进会话才能看到新名） — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1555">#1555</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1520">#1520</a>)</li>
+<li>PC 聊天输入框里的图片 / 视频 / 文件块，按 Backspace 等价于点删除按钮，删除更顺手 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1546">#1546</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1487">#1487</a>)</li>
+<li>群聊里其他人撤回消息时，现在能看到红色「已撤回」提示气泡了（之前完全静默） — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1519">#1519</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1490">#1490</a>)</li>
+<li>人设掉线时发出的消息原本会一直停在「发送中」状态、用户感知不到失败；现在会及时翻成红叹号 + 重试按钮 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1517">#1517</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1083">#1083</a>)</li>
+<li>群聊里有人被邀请 / 退群 / 被踢出 / 修改群名时，会话内现在会显示对应的灰底系统提示（之前完全静默） — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1515">#1515</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1521">#1521</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1489">#1489</a>)</li>
+<li>销售接待范围变化时（管理员调整 / 销售自调），通讯录会立即清空重拉，不再闪现旧人设的客户 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1507">#1507</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1340">#1340</a>)</li>
+<li>PC 发大视频时，超过 10MB 的视频强制压到 10MB 以内；压不下来直接拒发（之前会上传失败但 UI 显示已送达，客户其实没收到） — 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1500">#1500</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1450">#1450</a>)</li>
+</ul>
+
+<hr class="ref-divider">
+<h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
+<div class="ref-hint">05/09 10:59 上次发版后，合入 main 的全部 <strong>25</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<h2>🆕 新功能</h2>
+<ul>
+  <li><span class="merged-at">[05/09 18:00]</span>浮层发送按钮改为「填入输入框」 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1559">#1559</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1545">#1545</a>) <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[05/09 16:20]</span>商品/优惠券选择弹窗 + 一键发送（非艺星租户） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1511">#1511</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1355">#1355</a>) <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[05/09 15:43]</span>订单消息点击订单号弹订单详情浮窗 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1529">#1529</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1456">#1456</a>) <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[05/09 14:51]</span>PC 客户右栏「用户」section 改 inline 折叠 + 删除 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1518">#1518</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1488">#1488</a>) <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[05/09 13:40]</span>充值记录面板 — 汇总卡 + 筛选 + 分页列表 + 真实 API 接入 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1508">#1508</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1334">#1334</a>) <span class="author">— 王争</span></li>
+</ul>
+
+<h2>🐞 问题修复</h2>
+<ul>
+  <li><span class="merged-at">[05/09 18:00]</span>撤回 ImSync miss 兜底 + refresher 上报带 trigger/allocEventId <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1554">#1554</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1537">#1537</a>) <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[05/09 17:47]</span>客户微信备注刷新后会话列表 / 聊天顶部展示名同步 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1555">#1555</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1520">#1520</a>) <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[05/09 17:05]</span>PC 输入框 Backspace 等价点击媒体块删除按钮 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1546">#1546</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1487">#1487</a>) <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[05/09 15:25]</span>删 _logout / logoutActive 里 #1431/#1473 临时 wrapper <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1513">#1513</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1472">#1472</a>) <span class="author">— 房昕</span></li>
+  <li><span class="merged-at">[05/09 15:11]</span>群里他人撤回缺红色「已撤回」HUD - copyWithSendState 补 8 子类 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1519">#1519</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1490">#1490</a>) <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[05/09 14:44]</span>watchdog 超时回退后追加远端对账触发 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1517">#1517</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1083">#1083</a>) <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[05/09 14:41]</span>hotfix — elemType=9 路由前置到 *SYSTEM drop 之前 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1521">#1521</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1489">#1489</a>) <span class="author">— 陈宣宇</span></li>
+  <li><span class="merged-at">[05/09 12:57]</span>群聊系统提示按事件类型拼对齐微信文案 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1515">#1515</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1489">#1489</a>) <span class="author">— 陈宣宇</span></li>
+  <li><span class="merged-at">[05/09 11:49]</span>监听 saleProfile.wxClientIds 变化清空 ContactBox <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1507">#1507</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1340">#1340</a>) <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[05/09 11:47]</span>PC 视频未压缩 / 假成功 → 硬上限 + 拒发 + SLS 埋点 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1500">#1500</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1450">#1450</a>) <span class="author">— 张拓</span></li>
+</ul>
+
+<h2>✨ 体验优化</h2>
+<ul>
+  <li><span class="merged-at">[05/09 16:22]</span>5 panel notifier 抽 PanelPagedListNotifierMixin + 4 panel widget 用 PcPagedPanelShell <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1535">#1535</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1474">#1474</a>) <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[05/09 16:14]</span>pc_script_panel tab 高度由常量推算 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1533">#1533</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1416">#1416</a>) <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[05/09 13:31]</span>抽公共 HoverBuilder — 清 chat 区 ~52 处 hover setState <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1495">#1495</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1467">#1467</a>) <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[05/09 13:10]</span>筛选区 setState/ValueNotifier 清理 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1494">#1494</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1464">#1464</a>) <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[05/09 12:07]</span>去掉 updateSummary 的 TODO，棘轮降回 13 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1512">#1512</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1510">#1510</a>) <span class="author">— 王争</span></li>
+</ul>
+
+<h2>🔧 其他（chore / docs / test / ...）</h2>
+<ul>
+  <li><span class="merged-at">[05/09 17:11]</span>chore(script-library #1371): 老 v1 缓存目录 best-effort 一次性清理 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1531">#1531</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1371">#1371</a>) <span class="author">— 张拓</span></li>
+  <li><span class="merged-at">[05/09 16:21]</span>chore(chat #1523): handleMessageReverted 加 in-flight 去重避免连发掉线时重复打 /getMessageHistory <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1532">#1532</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1523">#1523</a>) <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[05/09 15:44]</span>chore(chat #1524): revert_refresh_1083 测试加跨模块契约守卫指引 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1530">#1530</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1524">#1524</a>) <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[05/09 15:08]</span>test(chat #1382): next_message_poller anchor 去重 3 条单测 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1525">#1525</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1382">#1382</a>) <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[05/09 12:45]</span>chore(infra): SDK 生成器剥离 swagger description 里 TODO/FIXME 前缀 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1514">#1514</a> <span class="author">— 陈宣宇</span></li>
+</ul>
+
+
+<hr class="ref-divider">
+
+<div class="foot">
+上一次发版时间：<span class="bump-time">05/09 10:59</span>（基线 commit：<code>chore(release): bump to 26.05.09+2026050902 + 归档 .2026050902 release notes (#1505)</code>）<br>
+PR 归属版本由 <code>pubspec.yaml</code> 的 <code>version:</code> 行 git 历史判定 —— bump commit 的 committedAt 是分割线。<br>
+由 <code>tool/generate_release_preview.dart</code> 自动提取；重新跑脚本后刷新页面即拿最新。<br>
+issue 链接基于 PetWebOrg/flutter-suiyin 仓。
+</div>
+</body>
+</html>

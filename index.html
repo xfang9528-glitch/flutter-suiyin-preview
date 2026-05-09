@@ -76,38 +76,59 @@ a:hover { text-decoration: underline; }
 <h1>📦 2026050903 发版预览</h1>
 <div class="meta">
 当前版本：<code>2026050902</code>（发版时间：<span class="bump-time">05/09 10:59</span>），下一版（预览）：<code>2026050903</code><br>
-生成时间：2026-05-09 11:52:03 · 重新跑脚本后刷新页面即拿最新
+生成时间：2026-05-09 15:48:36 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
+
+<h3>🆕 新功能</h3>
+<ul>
+<li>聊天里的订单消息现在可以点订单号直接弹出订单详情浮窗，不用再跳转到订单页 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1529">#1529</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1456">#1456</a>)</li>
+<li>PC 客户右栏「用户」标签从独立面板改成在原位置直接展开/折叠，少一次跳转，多份资料一屏看完 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1518">#1518</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1488">#1488</a>)</li>
+<li>PC 客户右侧资料栏新增「充值记录」面板：充值汇总卡 + 按时间/类型筛选 + 分页列表 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1508">#1508</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1334">#1334</a>)</li>
+</ul>
+
 <h3>🐞 问题修复</h3>
 <ul>
-  <li>PC 发大视频（&gt;10MB）会先自动压到 10.5MB 以内再发，压不下去直接提示发送失败；解决以前显示「发送成功」但客户那边收不到视频的问题 — 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1500">#1500</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1450">#1450</a>)</li>
-  <li>管理员重新分配「人设号」、或销售自己调整「我的接待范围」后，通讯录会立即刷新，避免短暂看到上一份的客户列表 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1507">#1507</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1340">#1340</a>)</li>
+<li>群聊里别人撤回消息后，会话内现在会正确显示红色「xxx 撤回了一条消息」提示（之前会漏掉） — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1519">#1519</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1490">#1490</a>)</li>
+<li>群聊里有人被邀请 / 退群 / 被踢出 / 修改群名时，会话内现在会显示对应的灰底系统提示（之前完全静默） — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1515">#1515</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1521">#1521</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1489">#1489</a>)</li>
+<li>切换销售微信账号后，联系人列表不会再串到上一个账号的数据 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1507">#1507</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1340">#1340</a>)</li>
+<li>PC 端发送视频前会先校验大小，超过上限会被拦下提示，避免出现「显示发送成功但对方收不到」的假成功 — 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1500">#1500</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1450">#1450</a>)</li>
 </ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">05/09 10:59 上次发版后，合入 main 的全部 <strong>2</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">05/09 10:59 上次发版后，合入 main 的全部 <strong>16</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
-  <li class="empty">无</li>
+  <li><span class="merged-at">[05/09 15:43]</span>订单消息点击订单号弹订单详情浮窗 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1529">#1529</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1456">#1456</a>) <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[05/09 14:51]</span>PC 客户右栏「用户」section 改 inline 折叠 + 删除 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1518">#1518</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1488">#1488</a>) <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[05/09 13:40]</span>充值记录面板 — 汇总卡 + 筛选 + 分页列表 + 真实 API 接入 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1508">#1508</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1334">#1334</a>) <span class="author">— 王争</span></li>
 </ul>
 
 <h2>🐞 问题修复</h2>
 <ul>
+  <li><span class="merged-at">[05/09 15:25]</span>删 _logout / logoutActive 里 #1431/#1473 临时 wrapper <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1513">#1513</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1472">#1472</a>) <span class="author">— 房昕</span></li>
+  <li><span class="merged-at">[05/09 15:11]</span>群里他人撤回缺红色「已撤回」HUD - copyWithSendState 补 8 子类 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1519">#1519</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1490">#1490</a>) <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[05/09 14:44]</span>watchdog 超时回退后追加远端对账触发 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1517">#1517</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1083">#1083</a>) <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[05/09 14:41]</span>hotfix — elemType=9 路由前置到 *SYSTEM drop 之前 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1521">#1521</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1489">#1489</a>) <span class="author">— 陈宣宇</span></li>
+  <li><span class="merged-at">[05/09 12:57]</span>群聊系统提示按事件类型拼对齐微信文案 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1515">#1515</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1489">#1489</a>) <span class="author">— 陈宣宇</span></li>
   <li><span class="merged-at">[05/09 11:49]</span>监听 saleProfile.wxClientIds 变化清空 ContactBox <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1507">#1507</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1340">#1340</a>) <span class="author">— 陈聪</span></li>
   <li><span class="merged-at">[05/09 11:47]</span>PC 视频未压缩 / 假成功 → 硬上限 + 拒发 + SLS 埋点 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1500">#1500</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1450">#1450</a>) <span class="author">— 张拓</span></li>
 </ul>
 
 <h2>✨ 体验优化</h2>
 <ul>
-  <li class="empty">无</li>
+  <li><span class="merged-at">[05/09 13:31]</span>抽公共 HoverBuilder — 清 chat 区 ~52 处 hover setState <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1495">#1495</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1467">#1467</a>) <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[05/09 13:10]</span>筛选区 setState/ValueNotifier 清理 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1494">#1494</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1464">#1464</a>) <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[05/09 12:07]</span>去掉 updateSummary 的 TODO，棘轮降回 13 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1512">#1512</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1510">#1510</a>) <span class="author">— 王争</span></li>
 </ul>
 
 <h2>🔧 其他（chore / docs / test / ...）</h2>
 <ul>
-  <li class="empty">无</li>
+  <li><span class="merged-at">[05/09 15:44]</span>chore(chat #1524): revert_refresh_1083 测试加跨模块契约守卫指引 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1530">#1530</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1524">#1524</a>) <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[05/09 15:08]</span>test(chat #1382): next_message_poller anchor 去重 3 条单测 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1525">#1525</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1382">#1382</a>) <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[05/09 12:45]</span>chore(infra): SDK 生成器剥离 swagger description 里 TODO/FIXME 前缀 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1514">#1514</a> <span class="author">— 陈宣宇</span></li>
 </ul>
 
 

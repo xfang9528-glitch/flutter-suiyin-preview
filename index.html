@@ -41,7 +41,7 @@ a:hover { text-decoration: underline; }
 <label>查看历史预览：</label>
 <select id="version-switcher-select" onchange="var v=this.value; if(v) location.href = v; else location.href = './';">
 <!-- VERSION_SWITCHER_OPTIONS_START -->
-<option value="">📦 2026050904 发版预览</option>
+<option value="">📦 2026051001 发版预览</option>
 <option value="2026050903.html">🗂 2026050903</option>
 <option value="2026050902.html">🗂 2026050902</option>
 <option value="2026050901.html">🗂 2026050901</option>
@@ -74,21 +74,27 @@ a:hover { text-decoration: underline; }
   }
 })();
 </script>
-<h1>📦 2026050904 发版预览</h1>
+<h1>📦 2026051001 发版预览</h1>
 <div class="meta">
-当前版本：<code>2026050903</code>（发版时间：<span class="bump-time">05/09 18:12</span>），下一版（预览）：<code>2026050904</code><br>
-生成时间：2026-05-09 20:27:21 · 重新跑脚本后刷新页面即拿最新
+当前版本：<code>2026050903</code>（发版时间：<span class="bump-time">05/09 18:12</span>），下一版（预览）：<code>2026051001</code><br>
+生成时间：2026-05-10 09:50:51 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
+
+<h3>✨ 体验优化</h3>
+<ul>
+  <li>物流详情弹窗里「收货人」和上方「收货地址」左侧对齐，看起来更整齐 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1565">#1565</a></li>
+</ul>
+
 <h3>🐞 问题修复</h3>
 <ul>
-  <li>群聊里别人撤回消息后，会话列表的摘要文案现在能正确显示成「张三撤回了一条消息」或「你撤回了一条消息」（之前会出现「[我] 李四撤回了一条消息」这种错乱前缀，或留下手机微信端推过来的「用户撤回了一条消息」占位文案） — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1562">#1562</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1516">#1516</a>)</li>
+  <li>群聊里有人撤回消息时，会话列表摘要不会再串错前缀（之前可能出现「[我] 李四撤回了一条消息」这种错乱）；现在自己撤回显示「你撤回了一条消息」、他人撤回显示「&lt;昵称&gt;撤回了一条消息」、撤回者昵称未知显示「撤回了一条消息」。手机微信端撤回的实时推送也不会再漏过滤了 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1562">#1562</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1516">#1516</a>)</li>
 </ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">05/09 18:12 上次发版后，合入 main 的全部 <strong>2</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">05/09 18:12 上次发版后，合入 main 的全部 <strong>3</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
   <li class="empty">无</li>
@@ -106,6 +112,7 @@ a:hover { text-decoration: underline; }
 
 <h2>🔧 其他（chore / docs / test / ...）</h2>
 <ul>
+  <li><span class="merged-at">[05/09 21:23]</span>docs(testing #1481): P3 加 debugPrint→SLS 转换条款 + 立 debugPrint 棘轮基线 800 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1576">#1576</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1481">#1481</a>) <span class="author">— 张拓</span></li>
   <li><span class="merged-at">[05/09 18:28]</span>chore(api): swagger 同步 + 物流弹窗收货人对齐 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1565">#1565</a> <span class="author">— 王争</span></li>
 </ul>
 

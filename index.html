@@ -77,41 +77,51 @@ a:hover { text-decoration: underline; }
 <h1>📦 2026051001 发版预览</h1>
 <div class="meta">
 当前版本：<code>2026050903</code>（发版时间：<span class="bump-time">05/09 18:12</span>），下一版（预览）：<code>2026051001</code><br>
-生成时间：2026-05-10 11:52:36 · 重新跑脚本后刷新页面即拿最新
+生成时间：2026-05-10 18:36:51 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
-
+<h3>🆕 新功能</h3>
+<ul>
+<li>会话列表里有还没发出去的草稿时，会话名前会显示 [草稿] 提示，跟微信一致 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1583">#1583</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1485">#1485</a>)</li>
+</ul>
 <h3>✨ 体验优化</h3>
 <ul>
-  <li>物流详情弹窗里收货人一行的图标位置调整，与上方地址行对齐更整齐 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1565">#1565</a></li>
+<li>客户详情右栏的分页列表（如商品浏览记录等）滚到底自动加载更多更稳，不会重复触发 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1584">#1584</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1541">#1541</a>)</li>
+<li>分页列表底部「加载中…」指示器不再误显示 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1582">#1582</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1540">#1540</a>)</li>
 </ul>
-
 <h3>🐞 问题修复</h3>
 <ul>
-  <li>群聊里撤回消息后，会话列表里"最近一条消息"的预览文案不再错乱 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1562">#1562</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1516">#1516</a>)</li>
+<li>上传 iPhone 拍的 HEIC 格式图片在 Windows 上现在能正常压缩转换；伪装成 jpg 的非图片文件也会被识别拦截 — 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1594">#1594</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1581">#1581</a>)</li>
+<li>群聊里撤回一条消息后，会话列表显示的最后一条消息摘要不会再错乱 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1562">#1562</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1516">#1516</a>)</li>
 </ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">05/09 18:12 上次发版后，合入 main 的全部 <strong>3</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">05/09 18:12 上次发版后，合入 main 的全部 <strong>11</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
-  <li class="empty">无</li>
+  <li><span class="merged-at">[05/10 13:39]</span>非选中草稿会话列表行加 [草稿] 高亮前缀 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1583">#1583</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1485">#1485</a>) <span class="author">— 陈聪</span></li>
 </ul>
 
 <h2>🐞 问题修复</h2>
 <ul>
+  <li><span class="merged-at">[05/10 15:57]</span>双份 ImageCompressor 合并 + Windows ImageMagick HEIC 真转 + magic bytes 探测堵假 jpg <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1594">#1594</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1581">#1581</a>) <span class="author">— 张拓</span></li>
+  <li><span class="merged-at">[05/10 14:32]</span>rebaseClient 测试补强 + save 失败时回滚 selection <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1557">#1557</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1455">#1455</a>) <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[05/10 14:01]</span>截图闪退诊断埋点 + DiagLogger race 修复 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1585">#1585</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1522">#1522</a>) <span class="author">— 陈聪</span></li>
   <li><span class="merged-at">[05/09 18:15]</span>修复群聊撤回会话列表摘要文案错乱 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1562">#1562</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1516">#1516</a>) <span class="author">— 王梓先</span></li>
 </ul>
 
 <h2>✨ 体验优化</h2>
 <ul>
-  <li class="empty">无</li>
+  <li><span class="merged-at">[05/10 13:36]</span>refresh 后剪枝 browseTimesMap 陈旧 key <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1589">#1589</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1542">#1542</a>) <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[05/10 12:45]</span>右栏分页 panel 自动加载收口 ScrollController 单触发 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1584">#1584</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1541">#1541</a>) <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[05/10 12:24]</span>PanelPagedListNotifierMixin.loadMore 升 Future&lt;bool&gt; 修 footer 假阳性 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1582">#1582</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1540">#1540</a>) <span class="author">— 陈聪</span></li>
 </ul>
 
 <h2>🔧 其他（chore / docs / test / ...）</h2>
 <ul>
+  <li><span class="merged-at">[05/10 15:19]</span>docs(release): 补全本地发版前置 prereqs + Clash schannel 修复 + SUIYIN_FORCE 用法 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1595">#1595</a> <span class="author">— 张拓</span></li>
   <li><span class="merged-at">[05/09 21:23]</span>docs(testing #1481): P3 加 debugPrint→SLS 转换条款 + 立 debugPrint 棘轮基线 800 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1576">#1576</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1481">#1481</a>) <span class="author">— 张拓</span></li>
   <li><span class="merged-at">[05/09 18:28]</span>chore(api): swagger 同步 + 物流弹窗收货人对齐 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1565">#1565</a> <span class="author">— 王争</span></li>
 </ul>

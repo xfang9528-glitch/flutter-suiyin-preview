@@ -78,21 +78,19 @@ a:hover { text-decoration: underline; }
 <h1>📦 2026051102 发版预览</h1>
 <div class="meta">
 当前版本：<code>2026051101</code>（发版时间：<span class="bump-time">05/11 10:59</span>），下一版（预览）：<code>2026051102</code><br>
-生成时间：2026-05-11 15:02:59 · 重新跑脚本后刷新页面即拿最新
+生成时间：2026-05-11 15:40:16 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
-
 <h3>✨ 体验优化</h3>
 <ul>
-  <li>客户右侧购买记录、充值记录面板的状态筛选下拉改成白底圆角气泡样式（命中行尾带 ✓ 标），跟销售记录面板的下拉样式对齐 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1630">#1630</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1615">#1615</a>)</li>
+  <li>客户右侧面板的「购买记录」「充值记录」状态筛选下拉，统一改成气泡风格（白底圆角 + 当前选中项行尾打勾），跟「成交记录」面板观感一致 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1630">#1630</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1615">#1615</a>)</li>
+  <li>充值记录面板下滑时，顶部的汇总卡和筛选栏跟着列表一起向上滚走（之前是固定在顶），看长记录时视野更大 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1625">#1625</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1616">#1616</a>)</li>
 </ul>
-
 <h3>🐞 问题修复</h3>
 <ul>
-  <li>「添加朋友」弹窗之前会列出全公司所有人设，销售可能误选别人的人设发起申请、导致客户关系归属混乱；现在只展示当前销售有权接待的人设，未配置时提示「您暂无可用人设，请联系管理员配置」 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1636">#1636</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1571">#1571</a>)</li>
-  <li>充值记录面板下滑时，「总充值金额」汇总卡和筛选栏现在会跟着列表一起滚走（原来这两块固定不动，只有列表区在滚），跟购买记录面板对齐 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1625">#1625</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1616">#1616</a>)</li>
-  <li>聊天列表「渠道分类」之前会列出全企业所有人设，点击当前销售无权接待的人设没反应、纯噪音；现在只展示当前销售可接待的人设，跟「添加朋友」弹窗一致 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1637">#1637</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1570">#1570</a>)</li>
+  <li>「添加朋友」弹窗之前会把全公司人设都列出来，销售可能误选别人的人设给客户发申请、造成客户关系归属混乱；现在只列当前销售有权使用的人设，如果暂时没有则提示「您暂无可用人设，请联系管理员配置」 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1636">#1636</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1571">#1571</a>)</li>
+  <li>聊天列表「渠道分类」的人设筛选面板之前列出全公司所有人设（点了无效，纯噪音），现在只列当前销售有权接待的人设 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1637">#1637</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1570">#1570</a>)</li>
 </ul>
 
 <hr class="ref-divider">

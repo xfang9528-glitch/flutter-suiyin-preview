@@ -78,33 +78,47 @@ a:hover { text-decoration: underline; }
 <h1>📦 2026051102 发版预览</h1>
 <div class="meta">
 当前版本：<code>2026051101</code>（发版时间：<span class="bump-time">05/11 10:59</span>），下一版（预览）：<code>2026051102</code><br>
-生成时间：2026-05-11 11:52:15 · 重新跑脚本后刷新页面即拿最新
+生成时间：2026-05-11 15:02:59 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
-<div class="notice">本版暂无新合入 PR（上次发版 05/11 10:59 后还未合入新内容）。后续合入 PR 后会在此处自动汇总改写。</div>
+
+<h3>✨ 体验优化</h3>
+<ul>
+  <li>客户右侧购买记录、充值记录面板的状态筛选下拉改成白底圆角气泡样式（命中行尾带 ✓ 标），跟销售记录面板的下拉样式对齐 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1630">#1630</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1615">#1615</a>)</li>
+</ul>
+
+<h3>🐞 问题修复</h3>
+<ul>
+  <li>「添加朋友」弹窗之前会列出全公司所有人设，销售可能误选别人的人设发起申请、导致客户关系归属混乱；现在只展示当前销售有权接待的人设，未配置时提示「您暂无可用人设，请联系管理员配置」 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1636">#1636</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1571">#1571</a>)</li>
+  <li>充值记录面板下滑时，「总充值金额」汇总卡和筛选栏现在会跟着列表一起滚走（原来这两块固定不动，只有列表区在滚），跟购买记录面板对齐 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1625">#1625</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1616">#1616</a>)</li>
+  <li>聊天列表「渠道分类」之前会列出全企业所有人设，点击当前销售无权接待的人设没反应、纯噪音；现在只展示当前销售可接待的人设，跟「添加朋友」弹窗一致 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1637">#1637</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1570">#1570</a>)</li>
+</ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">05/11 10:59 上次发版后，合入 main 的全部 <strong>0</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">05/11 10:59 上次发版后，合入 main 的全部 <strong>7</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
-  <li class="empty">无</li>
+  <li><span class="merged-at">[05/11 13:28]</span>close #1607 点话术按钮调 /scripts/{id}/usage 上报使用记录 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1632">#1632</a> <span class="author">— 梁晨</span></li>
 </ul>
 
 <h2>🐞 问题修复</h2>
 <ul>
-  <li class="empty">无</li>
+  <li><span class="merged-at">[05/11 14:44]</span>close #1615 客户右侧面板下拉统一气泡风格 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1630">#1630</a> <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[05/11 14:28]</span>添加朋友弹窗按销售 wxClientIds 过滤人设 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1636">#1636</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1571">#1571</a>) <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[05/11 14:07]</span>close #1616 充值记录面板内容区整体滚动 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1625">#1625</a> <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[05/11 13:58]</span>渠道分类按当前销售可接待人设过滤 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1637">#1637</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1570">#1570</a>) <span class="author">— 王梓先</span></li>
 </ul>
 
 <h2>✨ 体验优化</h2>
 <ul>
-  <li class="empty">无</li>
+  <li><span class="merged-at">[05/11 11:54]</span>群相关弹窗 setState 清理 — 5 dialog 抽 autoDispose Notifier <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1593">#1593</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1465">#1465</a>) <span class="author">— 陈聪</span></li>
 </ul>
 
 <h2>🔧 其他（chore / docs / test / ...）</h2>
 <ul>
-  <li class="empty">无</li>
+  <li><span class="merged-at">[05/11 12:04]</span>docs(observability #1575 #1572): SLS 写法规范 + catch-all 告警规则交付物 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1608">#1608</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1575">#1575</a>) <span class="author">— 张拓</span></li>
 </ul>
 
 

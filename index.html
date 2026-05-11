@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
-<!-- CURRENT_BUILD:2026050903 -->
+<!-- CURRENT_BUILD:2026051101 -->
 <title>下一版发版预览 · flutter-suiyin</title>
 <style>
 body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", sans-serif; max-width: 880px; margin: 32px auto; padding: 0 24px; color: #1f2328; line-height: 1.7; background: #fafbfc; }
@@ -41,7 +41,8 @@ a:hover { text-decoration: underline; }
 <label>查看历史预览：</label>
 <select id="version-switcher-select" onchange="var v=this.value; if(v) location.href = v; else location.href = './';">
 <!-- VERSION_SWITCHER_OPTIONS_START -->
-<option value="">📦 2026051101 发版预览</option>
+<option value="">📦 2026051102 发版预览</option>
+<option value="2026051101.html">🗂 2026051101</option>
 <option value="2026050903.html">🗂 2026050903</option>
 <option value="2026050902.html">🗂 2026050902</option>
 <option value="2026050901.html">🗂 2026050901</option>
@@ -74,72 +75,43 @@ a:hover { text-decoration: underline; }
   }
 })();
 </script>
-<h1>📦 2026051101 发版预览</h1>
+<h1>📦 2026051102 发版预览</h1>
 <div class="meta">
-当前版本：<code>2026050903</code>（发版时间：<span class="bump-time">05/09 18:12</span>），下一版（预览）：<code>2026051101</code><br>
-生成时间：2026-05-11 09:51:32 · 重新跑脚本后刷新页面即拿最新
+当前版本：<code>2026051101</code>（发版时间：<span class="bump-time">05/11 10:59</span>），下一版（预览）：<code>2026051102</code><br>
+生成时间：2026-05-11 11:52:15 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
-<h3>🆕 新功能</h3>
-<ul>
-  <li>会话列表里有未发送草稿且当前没停在该会话时，列表行前面显示红色 <code>[草稿]</code> 提示，跟微信一致；切回继续编辑时不再显示，「掉线」状态优先 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1583">#1583</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1485">#1485</a>)</li>
-</ul>
-
-<h3>✨ 体验优化</h3>
-<ul>
-  <li>右栏列表滚动加载更稳定：不再重复触发加载，底部也不会再出现「加载中…」一直转但其实已经没有更多内容的假象 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1584">#1584</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1582">#1582</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1541">#1541</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1540">#1540</a>)</li>
-  <li>物流详情弹窗里「收货人」和「地址」两行左侧对齐（之前因为图标差异，收货人会比地址向右偏一点）— 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1565">#1565</a></li>
-</ul>
-
-<h3>🐞 问题修复</h3>
-<ul>
-  <li>群名 / 群公告 / 群成员 / 群头像，以及自己在群里的昵称改了之后，不用退出重进群就能看到最新内容（之前要重启或重新进群才行）；「我在本群的昵称」现在可以点击直接修改 — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1601">#1601</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1483">#1483</a>)</li>
-  <li>iPhone 拍的 HEIC 图片在 Windows 端发朋友圈现在能正确压缩并发出（之前会显示成破图）；遇到 GIF 或不支持的格式会给出明确提示，不再静默失败 — 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1594">#1594</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1581">#1581</a>)</li>
-  <li>群聊里有人撤回消息时，左侧会话列表上显示的最后一条摘要文案现在显示正确（之前会出现错乱）— 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1562">#1562</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1516">#1516</a>)</li>
-</ul>
+<div class="notice">本版暂无新合入 PR（上次发版 05/11 10:59 后还未合入新内容）。后续合入 PR 后会在此处自动汇总改写。</div>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">05/09 18:12 上次发版后，合入 main 的全部 <strong>17</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">05/11 10:59 上次发版后，合入 main 的全部 <strong>0</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
-  <li><span class="merged-at">[05/10 13:39]</span>非选中草稿会话列表行加 [草稿] 高亮前缀 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1583">#1583</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1485">#1485</a>) <span class="author">— 陈聪</span></li>
+  <li class="empty">无</li>
 </ul>
 
 <h2>🐞 问题修复</h2>
 <ul>
-  <li><span class="merged-at">[05/11 09:47]</span>视频本地文件不存在分支补 SLS compress_failed reason=file_missing <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1556">#1556</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1551">#1551</a>) <span class="author">— 张拓</span></li>
-  <li><span class="merged-at">[05/10 19:37]</span>群聊全部信息实时刷新（群名/公告/成员/我的群昵称） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1601">#1601</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1483">#1483</a>) <span class="author">— 陈宣宇</span></li>
-  <li><span class="merged-at">[05/10 15:57]</span>双份 ImageCompressor 合并 + Windows ImageMagick HEIC 真转 + magic bytes 探测堵假 jpg <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1594">#1594</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1581">#1581</a>) <span class="author">— 张拓</span></li>
-  <li><span class="merged-at">[05/10 14:32]</span>rebaseClient 测试补强 + save 失败时回滚 selection <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1557">#1557</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1455">#1455</a>) <span class="author">— 陈聪</span></li>
-  <li><span class="merged-at">[05/10 14:01]</span>截图闪退诊断埋点 + DiagLogger race 修复 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1585">#1585</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1522">#1522</a>) <span class="author">— 陈聪</span></li>
-  <li><span class="merged-at">[05/09 18:15]</span>修复群聊撤回会话列表摘要文案错乱 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1562">#1562</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1516">#1516</a>) <span class="author">— 王梓先</span></li>
+  <li class="empty">无</li>
 </ul>
 
 <h2>✨ 体验优化</h2>
 <ul>
-  <li><span class="merged-at">[05/10 13:36]</span>refresh 后剪枝 browseTimesMap 陈旧 key <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1589">#1589</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1542">#1542</a>) <span class="author">— 陈聪</span></li>
-  <li><span class="merged-at">[05/10 12:45]</span>右栏分页 panel 自动加载收口 ScrollController 单触发 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1584">#1584</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1541">#1541</a>) <span class="author">— 陈聪</span></li>
-  <li><span class="merged-at">[05/10 12:24]</span>PanelPagedListNotifierMixin.loadMore 升 Future&lt;bool&gt; 修 footer 假阳性 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1582">#1582</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1540">#1540</a>) <span class="author">— 陈聪</span></li>
+  <li class="empty">无</li>
 </ul>
 
 <h2>🔧 其他（chore / docs / test / ...）</h2>
 <ul>
-  <li><span class="merged-at">[05/11 09:44]</span>test(chat #1528): NextMessagePoller 暴露 anchor 状态 getter，T3 显式化 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1592">#1592</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1528">#1528</a>) <span class="author">— 陈聪</span></li>
-  <li><span class="merged-at">[05/11 09:37]</span>docs(issue #1367): 视频压缩观测决策记录（保持现状） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1603">#1603</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1367">#1367</a>) <span class="author">— 张拓</span></li>
-  <li><span class="merged-at">[05/11 09:37]</span>chore(infra #1602): post_merge_sync 跨平台脚本 + quality_gate 基线统一读 baseline 文件 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1605">#1605</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1602">#1602</a>) <span class="author">— 张拓</span></li>
-  <li><span class="merged-at">[05/10 19:28]</span>chore(infra #1486): quality_gate.ps1 ANALYZE 基线 821 → 170 同步 sh <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1578">#1578</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1486">#1486</a>) <span class="author">— 张拓</span></li>
-  <li><span class="merged-at">[05/10 15:19]</span>docs(release): 补全本地发版前置 prereqs + Clash schannel 修复 + SUIYIN_FORCE 用法 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1595">#1595</a> <span class="author">— 张拓</span></li>
-  <li><span class="merged-at">[05/09 21:23]</span>docs(testing #1481): P3 加 debugPrint→SLS 转换条款 + 立 debugPrint 棘轮基线 800 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1576">#1576</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1481">#1481</a>) <span class="author">— 张拓</span></li>
-  <li><span class="merged-at">[05/09 18:28]</span>chore(api): swagger 同步 + 物流弹窗收货人对齐 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1565">#1565</a> <span class="author">— 王争</span></li>
+  <li class="empty">无</li>
 </ul>
 
 
 <hr class="ref-divider">
 
 <div class="foot">
-上一次发版时间：<span class="bump-time">05/09 18:12</span>（基线 commit：<code>chore(release): bump to 26.05.09+2026050903 + 归档 .2026050903 release notes (#1566)</code>）<br>
+上一次发版时间：<span class="bump-time">05/11 10:59</span>（基线 commit：<code>chore(release): bump to 26.05.11+2026051101 + 归档 .2026051101 release notes (#1621)</code>）<br>
 PR 归属版本由 <code>pubspec.yaml</code> 的 <code>version:</code> 行 git 历史判定 —— bump commit 的 committedAt 是分割线。<br>
 由 <code>tool/generate_release_preview.dart</code> 自动提取；重新跑脚本后刷新页面即拿最新。<br>
 issue 链接基于 PetWebOrg/flutter-suiyin 仓。

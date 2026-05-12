@@ -82,24 +82,19 @@ a:hover { text-decoration: underline; }
 <h1>📦 2026051203 发版预览</h1>
 <div class="meta">
 当前版本：<code>2026051202</code>（发版时间：<span class="bump-time">05/12 17:39</span>），下一版（预览）：<code>2026051203</code><br>
-生成时间：2026-05-12 18:57:40 · 重新跑脚本后刷新页面即拿最新
+生成时间：2026-05-12 23:11:58 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
-
-<h3>✨ 体验优化</h3>
-<ul>
-  <li>把窗口拉窄、或系统缩放 125% 时，群聊顶部人设栏、搜索/筛选弹窗、断网提示、「我的」页面、朋友圈详情等 14 处过长文字不会再蹦出右侧红黄相间的警告条，自动省略号截断 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1739">#1739</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1690">#1690</a>)</li>
-</ul>
-
 <h3>🐞 问题修复</h3>
 <ul>
-  <li>诚如保险企业：在客户详情里点「投保人」按钮，现在能正常弹出投保人信息面板（之前点了没反应） — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1741">#1741</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1732">#1732</a>)</li>
+<li>窄窗口或 125% 缩放下，聊天连接状态条、筛选弹窗、人设切换、搜索框、群成员名片、"我的"页等多处界面右侧文字会溢出黄黑警告条的问题已修复，长名字现在会自动截断显示 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1739">#1739</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1690">#1690</a>)</li>
+<li>诚如企业版聊天 / 通讯录页里点客户「投保人」行没反应、面板弹不出来的问题已修复 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1741">#1741</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1732">#1732</a>)</li>
 </ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">05/12 17:39 上次发版后，合入 main 的全部 <strong>4</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">05/12 17:39 上次发版后，合入 main 的全部 <strong>5</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
   <li><span class="merged-at">[05/12 17:55]</span>worktree seed cache 扩 macOS — upload_seed.sh + seed-macos-arm64 首传 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1735">#1735</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1733">#1733</a>) <span class="author">— 张拓</span></li>
@@ -113,6 +108,7 @@ a:hover { text-decoration: underline; }
 
 <h2>✨ 体验优化</h2>
 <ul>
+  <li><span class="merged-at">[05/12 21:09]</span>抽 tool/_lib_seed_common.sh — upload_seed + init_worktree 同源 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1745">#1745</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1733">#1733</a>) <span class="author">— 张拓</span></li>
   <li><span class="merged-at">[05/12 17:43]</span>image_preview_page 63 处 setState → Riverpod <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1720">#1720</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1468">#1468</a>) <span class="author">— 王争</span></li>
 </ul>
 

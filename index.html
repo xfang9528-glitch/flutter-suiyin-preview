@@ -41,7 +41,7 @@ a:hover { text-decoration: underline; }
 <label>查看历史预览：</label>
 <select id="version-switcher-select" onchange="var v=this.value; if(v) location.href = v; else location.href = './';">
 <!-- VERSION_SWITCHER_OPTIONS_START -->
-<option value="">📦 2026051403 发版预览</option>
+<option value="">📦 2026051501 发版预览</option>
 <option value="2026051402.html">🗂 2026051402</option>
 <option value="2026051401.html">🗂 2026051401</option>
 <option value="2026051301.html">🗂 2026051301</option>
@@ -82,30 +82,25 @@ a:hover { text-decoration: underline; }
   }
 })();
 </script>
-<h1>📦 2026051403 发版预览</h1>
+<h1>📦 2026051501 发版预览</h1>
 <div class="meta">
-当前版本：<code>2026051402</code>（发版时间：<span class="bump-time">05/14 17:49</span>），下一版（预览）：<code>2026051403</code><br>
-生成时间：2026-05-14 23:11:23 · 重新跑脚本后刷新页面即拿最新
+当前版本：<code>2026051402</code>（发版时间：<span class="bump-time">05/14 17:49</span>），下一版（预览）：<code>2026051501</code><br>
+生成时间：2026-05-15 10:31:01 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
-
-<h3>✨ 体验优化</h3>
-<ul>
-  <li>点「立即重启」装新版时不再黑屏 3-5 秒，全程显示蓝色火箭 + 绿色进度条直到新版起来 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1946">#1946</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1943">#1943</a>)</li>
-</ul>
-
 <h3>🐞 问题修复</h3>
 <ul>
-  <li>AI 话术任务的标签此前若引用的提示词模板被删/改名会显示残缺（只剩「(场景)」），现在标签永远完整显示「模板名 (场景)」 — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1945">#1945</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1927">#1927</a>)</li>
-  <li>截图拖选区时碰到边缘会误把整个截图窗口拉伸缩放、顶部工具栏消失的问题已修复 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1904">#1904</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1809">#1809</a>)</li>
-  <li>朋友圈滑到 200 条后误提示「没有更多了」、无法看到更早动态的问题已修复，恢复无限滚动 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1941">#1941</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1730">#1730</a>)</li>
-  <li>切换企业时旧企业的聊天消息可能错写入新企业本地数据、以及连续切换企业内存只增不减的问题已修复 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1937">#1937</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1730">#1730</a>)</li>
+  <li>非艺星租户（碎银、瑞熙、达根斯、印象酒店等）列表项不再错误显示「客户」等级标签 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1947">#1947</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1748">#1748</a>)</li>
+  <li>点「立即重启」升级到新版后等 3~5 秒的黑屏问题修复，现在能看到完整的升级过渡画面（火箭图 + 进度条），不再以为是卡死了 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1946">#1946</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1943">#1943</a>)</li>
+  <li>聊天里的 AI 任务标签现在能稳定显示完整「模板名 (场景)」，对应模板被改名 / 删除后老任务也不再退化成「(场景)」 — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1945">#1945</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1927">#1927</a>)</li>
+  <li>截图框选时，拖选区到窗口边缘不再误触发窗口缩放，顶部工具栏也不会消失 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1904">#1904</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1809">#1809</a>)</li>
+  <li>切换企业 / 退出登录时，旧企业的聊天消息不再误写入新企业的本地数据库 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1937">#1937</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1730">#1730</a>)</li>
 </ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">05/14 17:49 上次发版后，合入 main 的全部 <strong>7</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">05/14 17:49 上次发版后，合入 main 的全部 <strong>8</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
   <li><span class="merged-at">[05/14 18:32]</span>task chip 直读后端 promptName/promptSceneLabel <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1945">#1945</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1927">#1927</a>) <span class="author">— 陈宣宇</span></li>
@@ -113,6 +108,7 @@ a:hover { text-decoration: underline; }
 
 <h2>🐞 问题修复</h2>
 <ul>
+  <li><span class="merged-at">[05/15 10:01]</span>非艺星租户列表项不再渲染'客户'等级标签 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1947">#1947</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1748">#1748</a>) <span class="author">— 王梓先</span></li>
   <li><span class="merged-at">[05/14 21:25]</span>release_velopack_local.sh 去 jq 依赖 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1931">#1931</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1744">#1744</a>) <span class="author">— 王梓先</span></li>
   <li><span class="merged-at">[05/14 18:42]</span>Velopack apply 阶段保留 splash 过渡反馈 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1946">#1946</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1943">#1943</a>) <span class="author">— 王梓先</span></li>
   <li><span class="merged-at">[05/14 18:31]</span>截图选区改用 Flutter 自绘编辑器，消除窗口边框 hit-test 重叠 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1904">#1904</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1809">#1809</a>) <span class="author">— 王争</span></li>

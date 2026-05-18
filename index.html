@@ -88,31 +88,26 @@ a:hover { text-decoration: underline; }
 <h1>📦 2026051802 发版预览</h1>
 <div class="meta">
 当前版本：<code>2026051801</code>（发版时间：<span class="bump-time">05/18 11:59</span>），下一版（预览）：<code>2026051802</code><br>
-生成时间：2026-05-18 16:58:02 · 重新跑脚本后刷新页面即拿最新
+生成时间：2026-05-18 23:11:39 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
-
-<h3>🆕 新功能</h3>
-<ul>
-  <li>诚如客户标签面板里填「老客户」不用再点开弹窗一步步选了：直接在输入框打字就能搜，下面实时浮出候选，选中自动回填 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2059">#2059</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2000">#2000</a>)</li>
-</ul>
-
 <h3>✨ 体验优化</h3>
 <ul>
-  <li>客户资料里的各种面板（购买记录 / 充值记录 / 客户标签等）现在点面板外面任意地方、或按 ESC 键就能关掉，不用非得点右上角 ✕ — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2062">#2062</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1999">#1999</a>)</li>
-  <li>在会话里往上翻了大量历史消息后，离开会话会自动释放占用的内存，长时间挂着用更不容易变卡 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2004">#2004</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1968">#1968</a>)</li>
+  <li>诚如客户标签面板里标记「老客户」时，不用再点开弹窗一步步挑选——直接在输入框里输入关键词，下方就会浮出匹配的客户候选，点一下即可回填 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2059">#2059</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2000">#2000</a>)</li>
+  <li>客户资料面板里弹出的各种浮层（购买记录、充值记录、客户标签等），现在点击浮层外部任意位置或按 ESC 键就能关闭，不用每次都去找右上角的 ✕ — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2062">#2062</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1999">#1999</a>)</li>
+  <li>长时间上翻大量历史聊天记录后，应用占用的内存会在离开会话时及时释放，不再越用越卡 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2004">#2004</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1968">#1968</a>)</li>
 </ul>
-
 <h3>🐞 问题修复</h3>
 <ul>
-  <li>切换企业后再发消息一直提示「连接已断开」、怎么等都发不出去的问题已修复，现在切企业后能立即正常收发消息 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2063">#2063</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1987">#1987</a>)</li>
-  <li>聊天页顶部的「AI 等级」徽章之前不管什么等级都显示绿色，现在会按等级正确显示颜色（和左边手动等级徽章一致：A 红 / B 橙 / C 蓝 / D 灰）— 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2066">#2066</a></li>
+  <li>macOS 15 及以上系统现在能正常打开应用——此前会被系统安全机制拦截、也没有「右键打开」绕过入口（仅影响 Mac 用户）— 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2074">#2074</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2058">#2058</a>)</li>
+  <li>多次切换企业后，聊天偶尔会一直显示「连接断开」、收不到新消息的问题已修复 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2063">#2063</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1987">#1987</a>)</li>
+  <li>客户的 AI 自动评定等级徽章，颜色现在和手动设置的等级保持一致（此前两者颜色对不上）— 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2066">#2066</a></li>
 </ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">05/18 11:59 上次发版后，合入 main 的全部 <strong>7</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">05/18 11:59 上次发版后，合入 main 的全部 <strong>9</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
   <li><span class="merged-at">[05/18 15:26]</span>chengru「老客户」picker → inline 输入框 + 浮层 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2059">#2059</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2000">#2000</a>) <span class="author">— 陈聪</span></li>
@@ -121,6 +116,7 @@ a:hover { text-decoration: underline; }
 
 <h2>🐞 问题修复</h2>
 <ul>
+  <li><span class="merged-at">[05/18 18:46]</span>macOS 15+ Gatekeeper 修复 + App Sandbox + MAS 上架脚本 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2074">#2074</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2058">#2058</a>) <span class="author">— 王争</span></li>
   <li><span class="merged-at">[05/18 14:28]</span>triggerImPassiveRecovery 加 5s 全局节流，防多企业切换后 IM 永久 disconnected <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2063">#2063</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1987">#1987</a>) <span class="author">— 王争</span></li>
   <li><span class="merged-at">[05/18 14:07]</span>AI 等级徽章颜色与手动等级对齐 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2066">#2066</a> <span class="author">— 陈宣宇</span></li>
 </ul>
@@ -132,6 +128,7 @@ a:hover { text-decoration: underline; }
 
 <h2>🔧 其他（chore / docs / test / ...）</h2>
 <ul>
+  <li><span class="merged-at">[05/18 17:34]</span>tech-debt(chat #1914): 删 chat_input_draft_provider 整文件（孤儿 provider） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2073">#2073</a> <span class="author">— 陈聪</span></li>
   <li><span class="merged-at">[05/18 13:44]</span>chore(script-library #1350): PR #1329 review follow-up 收尾 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1930">#1930</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1350">#1350</a>) <span class="author">— 陈聪</span></li>
   <li><span class="merged-at">[05/18 12:07]</span>docs(release): correct 2026051801 release notes <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2061">#2061</a> <span class="author">— 张拓</span></li>
 </ul>

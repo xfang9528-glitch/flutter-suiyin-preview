@@ -41,7 +41,7 @@ a:hover { text-decoration: underline; }
 <label>查看历史预览：</label>
 <select id="version-switcher-select" onchange="var v=this.value; if(v) location.href = v; else location.href = './';">
 <!-- VERSION_SWITCHER_OPTIONS_START -->
-<option value="">📦 2026051701 发版预览</option>
+<option value="">📦 2026051801 发版预览</option>
 <option value="2026051502.html">🗂 2026051502</option>
 <option value="2026051501.html">🗂 2026051501</option>
 <option value="2026051402.html">🗂 2026051402</option>
@@ -84,33 +84,31 @@ a:hover { text-decoration: underline; }
   }
 })();
 </script>
-<h1>📦 2026051701 发版预览</h1>
+<h1>📦 2026051801 发版预览</h1>
 <div class="meta">
-当前版本：<code>2026051502</code>（发版时间：<span class="bump-time">05/15 17:49</span>），下一版（预览）：<code>2026051701</code><br>
-生成时间：2026-05-17 23:11:00 · 重新跑脚本后刷新页面即拿最新
+当前版本：<code>2026051502</code>（发版时间：<span class="bump-time">05/15 17:49</span>），下一版（预览）：<code>2026051801</code><br>
+生成时间：2026-05-18 10:31:19 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
-
 <h3>🆕 新功能</h3>
 <ul>
-  <li>通讯录和会话列表的漏斗筛选新增「好友等级」「AI 等级」「第一需求（AI）」筛选项，可以按系统自动判定的客户标签快速筛人（艺星专属） — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2011">#2011</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1969">#1969</a>)</li>
+  <li>通讯录、聊天列表的客户筛选新增「AI 标签」维度（好友等级、等级AI、第一需求），可以按系统自动识别的标签快速找客户（艺星专属）— 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2011">#2011</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1969">#1969</a>)</li>
 </ul>
-
 <h3>✨ 体验优化</h3>
 <ul>
-  <li>应用自动修复完本地数据后，不再弹「本地数据异常，已自动重新同步」这条让人误以为出问题的提示——数据其实一直是安全的，无需任何操作 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2009">#2009</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1978">#1978</a>)</li>
-  <li>PC 端把客户主动转交给同事后，该客户会立即从「微信列表」消失，不再像以前那样要等大约 1 分钟才刷新掉 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1958">#1958</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1936">#1936</a>)</li>
+  <li>在「微信列表」把客户转交给其他销售后，该客户会立刻从列表消失，不再需要等大约 1 分钟 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1958">#1958</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1936">#1936</a>)</li>
+  <li>登录时不再弹出「本地数据异常，已自动重新同步」这类看不懂、也无需操作的提示（数据已在后台自动处理好）— 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2009">#2009</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1978">#1978</a>)</li>
 </ul>
-
 <h3>🐞 问题修复</h3>
 <ul>
-  <li>修复部分艺星客户的「AI 标签」加载不出来的问题，现在客户资料里能正常看到系统自动判定的标签 — 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2027">#2027</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2021">#2021</a>)</li>
+  <li>修复部分艺星客户的 AI 标签一直加载失败、显示不出来的问题 — 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2027">#2027</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2021">#2021</a>)</li>
+  <li>收到暂不支持的系统通知消息时，不再显示成空白气泡，改为显示「[系统消息]」占位 — 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2046">#2046</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1865">#1865</a>)</li>
 </ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">05/15 17:49 上次发版后，合入 main 的全部 <strong>17</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">05/15 17:49 上次发版后，合入 main 的全部 <strong>27</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
   <li><span class="merged-at">[05/17 20:35]</span>去掉 db 自愈后的「本地数据异常」toast，改为静默 SLS 上报 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2009">#2009</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1978">#1978</a>) <span class="author">— 王梓先</span></li>
@@ -122,6 +120,12 @@ a:hover { text-decoration: underline; }
 
 <h2>🐞 问题修复</h2>
 <ul>
+  <li><span class="merged-at">[05/18 10:17]</span>harden cache self-healing paths <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2053">#2053</a> <span class="author">— 张拓</span></li>
+  <li><span class="merged-at">[05/18 03:44]</span>preserve dynamic radio raw values <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2052">#2052</a> <span class="author">— 张拓</span></li>
+  <li><span class="merged-at">[05/18 03:22]</span>mark retry refresh as modified write <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2047">#2047</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2037">#2037</a>) <span class="author">— 张拓</span></li>
+  <li><span class="merged-at">[05/18 03:05]</span>unknown system message fallback text <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2046">#2046</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1865">#1865</a>) <span class="author">— 张拓</span></li>
+  <li><span class="merged-at">[05/18 02:37]</span>prefill pdfium_dart hook cache <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2044">#2044</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1853">#1853</a>) <span class="author">— 张拓</span></li>
+  <li><span class="merged-at">[05/18 02:34]</span>prewarm pdfium native asset cache <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2043">#2043</a> <span class="author">— 张拓</span></li>
   <li><span class="merged-at">[05/16 19:50]</span>saveAll 写前过滤 pinned 表 timId <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2030">#2030</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2019">#2019</a>) <span class="author">— 张拓</span></li>
   <li><span class="merged-at">[05/16 19:24]</span>history_dup_detected SLS reporter 真阳过滤 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2035">#2035</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2017">#2017</a>) <span class="author">— 张拓</span></li>
   <li><span class="merged-at">[05/16 19:04]</span>修客户端 msg:dedup_hit 80% 假阳 — _handleModified 走 source=modified 跳过采集 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2031">#2031</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2018">#2018</a>) <span class="author">— 张拓</span></li>
@@ -137,6 +141,10 @@ a:hover { text-decoration: underline; }
 
 <h2>🔧 其他（chore / docs / test / ...）</h2>
 <ul>
+  <li><span class="merged-at">[05/18 10:07]</span>build(macos): add tool/build_dmg.sh for hdiutil DMG packaging <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2055">#2055</a> <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[05/18 09:46]</span>test(im #2039): fix 6014 throttle batch race <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2051">#2051</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2039">#2039</a>) <span class="author">— 张拓</span></li>
+  <li><span class="merged-at">[05/18 03:21]</span>docs(dynamic-labels #2028): clarify radio label persistence contract <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2048">#2048</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2028">#2028</a>) <span class="author">— 张拓</span></li>
+  <li><span class="merged-at">[05/18 02:58]</span>chore(infra): remove python from tool scripts <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2045">#2045</a> <span class="author">— 张拓</span></li>
   <li><span class="merged-at">[05/16 19:05]</span>infra(observability #2022): Sentry beforeSend 按 severity 过滤 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2033">#2033</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2022">#2022</a>) <span class="author">— 张拓</span></li>
   <li><span class="merged-at">[05/16 18:46]</span>test: 治理无意义/反模式测试 —— 删 3 改 2 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2029">#2029</a> <span class="author">— 张拓</span></li>
   <li><span class="merged-at">[05/16 18:42]</span>docs(chat #2014): aggressive_healthy_merge 是常态防线，禁止回退门禁 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2026">#2026</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2014">#2014</a>) <span class="author">— 张拓</span></li>

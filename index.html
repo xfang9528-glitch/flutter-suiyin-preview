@@ -89,37 +89,43 @@ a:hover { text-decoration: underline; }
 <h1>📦 2026051902 发版预览</h1>
 <div class="meta">
 当前版本：<code>2026051901</code>（发版时间：<span class="bump-time">05/19 11:04</span>），下一版（预览）：<code>2026051902</code><br>
-生成时间：2026-05-19 17:00:50 · 重新跑脚本后刷新页面即拿最新
+生成时间：2026-05-19 23:11:24 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
 
 <h3>🆕 新功能</h3>
 <ul>
-  <li>「关于碎银」页新增意见反馈入口，可以直接在应用里提交问题和建议 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2120">#2120</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2077">#2077</a>)</li>
-  <li>PC 端聊天输入框支持右键「剪切 / 复制 / 粘贴 / 全选」菜单，跟微信一致 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2103">#2103</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1820">#1820</a>)</li>
-  <li>（诚如企业）投保人「来源信息」的 6 个字段支持双击直接修改，不用再打开编辑弹窗 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2101">#2101</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2091">#2091</a>)</li>
+  <li>艺星右侧客户面板的朋友圈现在能直接看照片预览，标签排版也更清爽 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2136">#2136</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2127">#2127</a>)</li>
+  <li>「关于碎银」页面新增「意见反馈」入口，遇到问题可以直接在 app 里提交反馈 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2120">#2120</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2077">#2077</a>)</li>
+  <li>PC 端聊天输入框支持右键菜单（剪切 / 复制 / 粘贴 / 全选），跟微信一致 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2103">#2103</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1820">#1820</a>)</li>
+  <li>投保人「来源信息」的 6 个字段支持双击单行就地编辑，改一处不用打开整个表单 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2101">#2101</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2091">#2091</a>)</li>
 </ul>
 
 <h3>✨ 体验优化</h3>
 <ul>
-  <li>默认截图、显示 / 隐藏窗口的快捷键改为 Alt+E、Ctrl+Alt+E，不再和微信的快捷键冲突 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2111">#2111</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2102">#2102</a>)</li>
-  <li>跨天发布相邻版本时，自动更新依然走小体积增量包，不再退回下载整包 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2104">#2104</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1921">#1921</a>)</li>
+  <li>打开「转发」对话框后，搜索框会自动聚焦，可以直接打字搜联系人，不用先点一下 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2154">#2154</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2141">#2141</a>)</li>
+  <li>启动时自动清理累积的旧版本安装包（仅保留当前版本 + 一个回滚基线），避免占用的磁盘空间越来越大 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2130">#2130</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1954">#1954</a>)</li>
 </ul>
 
 <h3>🐞 问题修复</h3>
 <ul>
-  <li>Windows 上收到无法播放的视频（如 iPhone 拍的 MOV/HEVC）时，错误提示更清晰、能说明具体是哪种格式不支持 — 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2126">#2126</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2133">#2133</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2071">#2071</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1356">#1356</a>)</li>
-  <li>修复某些情况下进入会话 / 群会把还没看的消息自动标记为已读的问题 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2125">#2125</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2121">#2121</a>)</li>
-  <li>修复切换企业后立即使用全局搜索，可能搜出上一个企业残留结果的问题 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2078">#2078</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1413">#1413</a>)</li>
-  <li>修复应用在后台时，按呼出窗口快捷键要按两次才生效的问题（现在一次就弹出）— 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2114">#2114</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2069">#2069</a>)</li>
+  <li>修复「重命名分类」弹窗点「取消」会触发报错红屏的问题 — 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2137">#2137</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1803">#1803</a>)</li>
+  <li>播放 MOV / HEVC 等格式视频解码失败时，提示更准确、文字更清晰（能说明是哪种格式不支持） — 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2133">#2133</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1356">#1356</a>)、<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2126">#2126</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2071">#2071</a>)</li>
+  <li>修复某些情况下点开会话会误清掉未读消息数的问题 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2125">#2125</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2121">#2121</a>)</li>
+  <li>默认「截图」/「显示隐藏窗口」快捷键改为 Alt+E / Ctrl+Alt+E，避免和微信快捷键冲突 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2111">#2111</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2102">#2102</a>)</li>
+  <li>应用在后台时，呼出窗口的快捷键现在一次按下就生效（之前需要按两次） — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2114">#2114</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2069">#2069</a>)</li>
+  <li>修复快速切换租户时，全局搜索结果可能串到另一个租户的问题 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2078">#2078</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1413">#1413</a>)</li>
 </ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">05/19 11:04 上次发版后，合入 main 的全部 <strong>14</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">05/19 11:04 上次发版后，合入 main 的全部 <strong>24</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
+  <li><span class="merged-at">[05/19 18:27]</span>启动期清理 packages/ 老 nupkg，保留 current + 1 base <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2130">#2130</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1954">#1954</a>) <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[05/19 17:12]</span>艺星右侧面板朋友圈加照片预览 + 标签间距调整 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2136">#2136</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2127">#2127</a>) <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[05/19 17:03]</span>持久化 downloadId 到全部 26 个 ChatMessage 子类 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1974">#1974</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1940">#1940</a>) <span class="author">— 陈聪</span></li>
   <li><span class="merged-at">[05/19 15:34]</span>关于碎银页增加意见反馈弹层 + 内容安全占位 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2120">#2120</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2077">#2077</a>) <span class="author">— 王争</span></li>
   <li><span class="merged-at">[05/19 14:52]</span>PC 聊天输入框右键添加「剪切/复制/粘贴/全选」context menu <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2103">#2103</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1820">#1820</a>) <span class="author">— 王争</span></li>
   <li><span class="merged-at">[05/19 13:38]</span>chengru 投保人「来源信息」6 字段支持双击行级就地编辑 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2101">#2101</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2091">#2091</a>) <span class="author">— 陈聪</span></li>
@@ -128,6 +134,10 @@ a:hover { text-decoration: underline; }
 
 <h2>🐞 问题修复</h2>
 <ul>
+  <li><span class="merged-at">[05/19 20:09]</span>ensure_sentry_native.ps1 末尾显式 exit 0 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2156">#2156</a> <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[05/19 19:31]</span>转发对话框打开后搜索框自动 focus <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2154">#2154</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2141">#2141</a>) <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[05/19 19:23]</span>macOS App Store 合规修复 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2132">#2132</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2129">#2129</a>) <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[05/19 18:21]</span>「重命名分类」AlertDialog 点取消触发红屏 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2137">#2137</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1803">#1803</a>) <span class="author">— 梁晨</span></li>
   <li><span class="merged-at">[05/19 16:30]</span>MOV/HEVC 解码失败提示按 codec 精确化 + SLS 补环境字段 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2133">#2133</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1356">#1356</a>) <span class="author">— 梁晨</span></li>
   <li><span class="merged-at">[05/19 15:48]</span>selectByChatId 默认不清未读 + clearUnread source 透传 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2125">#2125</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2121">#2121</a>) <span class="author">— 王梓先</span></li>
   <li><span class="merged-at">[05/19 15:32]</span>Windows 视频解码错误 UI 可读性 + SLS 补字段 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2126">#2126</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2071">#2071</a>) <span class="author">— 梁晨</span></li>
@@ -145,6 +155,9 @@ a:hover { text-decoration: underline; }
 
 <h2>🔧 其他（chore / docs / test / ...）</h2>
 <ul>
+  <li><span class="merged-at">[05/19 18:52]</span>observability(#2081): route critical client logs to SLS <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2113">#2113</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2081">#2081</a>) <span class="author">— 张拓</span></li>
+  <li><span class="merged-at">[05/19 18:21]</span>chore(db): sync objectbox-model.json with DbContactEntity aiGrade/visitStatus <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2134">#2134</a> <span class="author">— 梁晨</span></li>
+  <li><span class="merged-at">[05/19 18:03]</span>test(infra #2135): quality_gate flutter test 失败时持久化 fail 摘要 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2147">#2147</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2135">#2135</a>) <span class="author">— 梁晨</span></li>
   <li><span class="merged-at">[05/19 15:33]</span>test(yx_level_selector #2098): 补 DR-027 状态机 UI 行为测试 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2119">#2119</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2098">#2098</a>) <span class="author">— 陈聪</span></li>
 </ul>
 

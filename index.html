@@ -90,32 +90,78 @@ a:hover { text-decoration: underline; }
 <h1>📦 2026052001 发版预览</h1>
 <div class="meta">
 当前版本：<code>2026051902</code>（发版时间：<span class="bump-time">05/20 01:14</span>），下一版（预览）：<code>2026052001</code><br>
-生成时间：2026-05-20 10:59:59 · 重新跑脚本后刷新页面即拿最新
+生成时间：2026-05-20 16:57:49 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
-<div class="notice">本期合入 3 个 PR，均为内部重构（InlineEditPanelMixin 状态对象化，使用方零改动）与发版文档归档，<strong>用户感知不到差异</strong>，无对外发版说明。</div>
+
+<h3>🆕 新功能</h3>
+<ul>
+  <li>添加好友时可勾选「立即执行」，跳过约 1 分钟的排队等待，几秒内发起申请（提示：勾选有封号风险） — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2204">#2204</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2165">#2165</a>)</li>
+  <li>艺星投保人面板：编辑「省市区」时如果区域数据没拉到，点击会提示「加载中请稍后」并自动重试，多次失败弹「重试 / 关闭」对话框；之前是死按钮点了完全没反应 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2183">#2183</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1828">#1828</a>)</li>
+  <li>艺星销售：客户发来的图片自动收录到「好友照片」里，不用再手动右键存图 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2160">#2160</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2080">#2080</a>)</li>
+  <li>「销售产品」弹窗新增「商城入口」Tab：列出所有店铺的首页小程序卡片，一键发给客户 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2171">#2171</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2164">#2164</a>)</li>
+</ul>
+
+<h3>✨ 体验优化</h3>
+<ul>
+  <li>艺星销售切走其他窗口再回到应用时，「新朋友」页不再每次都从头拉 20 页（导致几秒卡顿），60 秒内只会自动刷新一次，新好友请求仍然实时推送 — 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2040">#2040</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2016">#2016</a>)</li>
+  <li>启动遇到待应用的更新时不再「装完自动重启 → 又触发自愈 → 再重启」循环：现在装完直接退出，重新点桌面快捷方式即可进入新版 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2174">#2174</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1994">#1994</a>)</li>
+  <li>升级检查更稳：之前在某些版本号格式下会误判，导致提示「有新版本」但实际不需要更新，已修复 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2167">#2167</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1903">#1903</a>)</li>
+</ul>
+
+<h3>🐞 问题修复</h3>
+<ul>
+  <li>艺星群发：切换筛选条件 / 重新搜索 / 重置筛选后，之前勾选的客户会自动清空，不会被串到下一次群发名单里 — 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2200">#2200</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2189">#2189</a>)</li>
+  <li>「查看添加记录」入口移到「添加朋友」弹窗顶部，单人设账号也能看到（之前会直接跳到第 2 步搜索用户，入口被跳过） — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2202">#2202</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2153">#2153</a>)</li>
+  <li>收到陌生客户消息时主动拉一次客户列表同步，避免出现「消息已收到但本地还没这个客户」导致通知音被静默掉的情况 — 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2194">#2194</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2015">#2015</a>)</li>
+  <li>「重置应用数据」现在能彻底清空：之前最后登录企业 / UI 偏好等设置会残留，现在重置后回到全新安装状态 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2186">#2186</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2084">#2084</a>)</li>
+  <li>客户「添加时间」三处显示统一（客户右栏 + 编辑弹窗 + 投保人面板），不会再出现一处显示活跃时间、另一处空白的情况 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2169">#2169</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1830">#1830</a>)</li>
+  <li>单聊输入框上的「剪刀」按钮（截图）现在能正常使用，不再误提示「请先在聊天中打开图片预览」 — 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2172">#2172</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2161">#2161</a>)</li>
+  <li>新建话术上传的图片不再模糊，点开预览清晰度对齐聊天图片（老话术受当时压缩限制无法回灌，仅影响新建） — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2168">#2168</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2068">#2068</a>)</li>
+  <li>聊天页标题栏的「人设号」胶囊（如「1号」）从居中改为靠右，跟「···」按钮排在一起 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2173">#2173</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2148">#2148</a>)</li>
+  <li>从「通讯录」入口进群聊时，消息气泡上方现在能正常显示发送者昵称（之前只有从聊天列表入口进去才显示） — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2170">#2170</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2150">#2150</a>)</li>
+</ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">05/20 01:14 上次发版后，合入 main 的全部 <strong>3</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">05/20 01:14 上次发版后，合入 main 的全部 <strong>24</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
-  <li class="empty">无</li>
+  <li><span class="merged-at">[05/20 16:57]</span>添加好友支持「立即执行」勾选 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2204">#2204</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2165">#2165</a>) <span class="author">— 陈宣宇</span></li>
+  <li><span class="merged-at">[05/20 14:51]</span>region picker 失败 retry UX 在新 panel 下恢复 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2183">#2183</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1828">#1828</a>) <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[05/20 14:32]</span>好友发来的图片自动收录到「好友照片」 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2160">#2160</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2080">#2080</a>) <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[05/20 12:11]</span>销售产品弹窗新增「商城入口」Tab <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2171">#2171</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2164">#2164</a>) <span class="author">— 王争</span></li>
 </ul>
 
 <h2>🐞 问题修复</h2>
 <ul>
-  <li class="empty">无</li>
+  <li><span class="merged-at">[05/20 16:14]</span>clear Yestar picker selection on filter changes <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2200">#2200</a> <span class="author">— 张拓</span></li>
+  <li><span class="merged-at">[05/20 15:51]</span>添加朋友入口移到 header，单人设账号也能看添加记录 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2202">#2202</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2153">#2153</a>) <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[05/20 15:30]</span>wake allocation sync on customer miss <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2194">#2194</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2015">#2015</a>) <span class="author">— 张拓</span></li>
+  <li><span class="merged-at">[05/20 14:48]</span>降 image_compressor_serial 阈值 500→200 消除 CI 高负载 flaky <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2192">#2192</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2142">#2142</a>) <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[05/20 14:21]</span>add db and im failure telemetry <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2176">#2176</a> <span class="author">— 张拓</span></li>
+  <li><span class="merged-at">[05/20 13:55]</span>重置数据时物理删除 shared_preferences.json <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2186">#2186</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2084">#2084</a>) <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[05/20 12:01]</span>客户右栏 + 编辑弹窗「添加时间」统一走 addFriendTime <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2169">#2169</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1830">#1830</a>) <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[05/20 11:58]</span>工具栏剪刀按钮改走 ScreenshotAction，不再误触图片预览总线 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2172">#2172</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2161">#2161</a>) <span class="author">— 梁晨</span></li>
+  <li><span class="merged-at">[05/20 11:54]</span>话术图上传 2560/2MB 对齐 PhotoView 解码上限 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2168">#2168</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2068">#2068</a>) <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[05/20 11:48]</span>人设号胶囊居中 → 靠右 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2173">#2173</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2148">#2148</a>) <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[05/20 11:42]</span>通讯录入口进群聊气泡补显发送者昵称 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2170">#2170</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2150">#2150</a>) <span class="author">— 陈聪</span></li>
 </ul>
 
 <h2>✨ 体验优化</h2>
 <ul>
+  <li><span class="merged-at">[05/20 14:06]</span>抽 AutoOpenPopupMixin 收敛 5 个 popup widget autoOpen 重复 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2182">#2182</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2093">#2093</a>) <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[05/20 13:46]</span>refresh_page_slow 60/h 噪声治理（观察修复 + 阈值 + app_resume 去抖） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2040">#2040</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2016">#2016</a>) <span class="author">— 张拓</span></li>
+  <li><span class="merged-at">[05/20 12:47]</span>启动期自愈改 applyOnExit (--norestart) 斩断循环源头 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2174">#2174</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1994">#1994</a>) <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[05/20 11:12]</span>版本比较去掉「去点转 int」改语义化分段比较 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2167">#2167</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1903">#1903</a>) <span class="author">— 王梓先</span></li>
   <li><span class="merged-at">[05/20 09:48]</span>InlineEditPanelMixin 4 字段合并为 _InlineEditSession <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2159">#2159</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2095">#2095</a>) <span class="author">— 陈聪</span></li>
 </ul>
 
 <h2>🔧 其他（chore / docs / test / ...）</h2>
 <ul>
+  <li><span class="merged-at">[05/20 15:29]</span>test: replace verify-only guards for issue 1479 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2193">#2193</a> <span class="author">— 张拓</span></li>
+  <li><span class="merged-at">[05/20 13:26]</span>docs(issue-1824): record SLS reason migration check <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2184">#2184</a> <span class="author">— 张拓</span></li>
   <li><span class="merged-at">[05/20 10:09]</span>docs(release): archive 2026051901 and 2026051902 notes <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2162">#2162</a> <span class="author">— 张拓</span></li>
   <li><span class="merged-at">[05/20 01:19]</span>docs(release): update next notes for 2026051902 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2158">#2158</a> <span class="author">— 张拓</span></li>
 </ul>

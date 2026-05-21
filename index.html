@@ -92,15 +92,20 @@ a:hover { text-decoration: underline; }
 <h1>📦 2026052102 发版预览</h1>
 <div class="meta">
 当前版本：<code>2026052101</code>（发版时间：<span class="bump-time">05/21 12:36</span>），下一版（预览）：<code>2026052102</code><br>
-生成时间：2026-05-21 14:15:20 · 重新跑脚本后刷新页面即拿最新
+生成时间：2026-05-21 16:57:44 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
-<div class="meta">本期 7 个 PR 均为内部改动（埋点 / 可观测性事件、CocoaPods 构建告警清理、商品浏览次数竞态的内部一致性修复、release/docs 类杂项），用户无可感知变化，故本节为空。</div>
+<h3>🐞 问题修复</h3>
+<ul>
+  <li>转发视频后，在对方会话里右键点「复制」会报「视频地址为空」的问题已修复，现在转发过来的视频能正常复制、粘贴 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2266">#2266</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1620">#1620</a>)</li>
+  <li>在电脑端聊天消息里拖动选中文字后，右键时选中的文字不会再被取消高亮，可以直接对选中的内容操作 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2225">#2225</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2116">#2116</a>)</li>
+  <li>连续快速触发截图（如连按两次截图快捷键）不会再同时弹出两个截图选区，避免画面错乱 — 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2267">#2267</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2244">#2244</a>)</li>
+</ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">05/21 12:36 上次发版后，合入 main 的全部 <strong>7</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">05/21 12:36 上次发版后，合入 main 的全部 <strong>15</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
   <li class="empty">无</li>
@@ -108,6 +113,13 @@ a:hover { text-decoration: underline; }
 
 <h2>🐞 问题修复</h2>
 <ul>
+  <li><span class="merged-at">[05/21 16:37]</span>_handleSetReminder 用 resolveIsGroup 算 sourceIsGroup <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2263">#2263</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2177">#2177</a>) <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[05/21 16:33]</span>截图入口加 _inFlight 守卫，挡掉快连双触发 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2267">#2267</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2244">#2244</a>) <span class="author">— 梁晨</span></li>
+  <li><span class="merged-at">[05/21 16:32]</span>转发视频占位消息透传 videoUrl，修复复制报「视频地址为空」 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2266">#2266</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1620">#1620</a>) <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[05/21 15:22]</span>seed-bake 补 sentry-native + pdfium 预取 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2262">#2262</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2251">#2251</a>) <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[05/21 15:00]</span>右键气泡保留拖选选区 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2225">#2225</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2116">#2116</a>) <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[05/21 14:38]</span>bundle ffmpeg Homebrew deps as @rpath frameworks — fix launch crash #2233 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2260">#2260</a> <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[05/21 14:27]</span>qg_extract_fails_test.dart Windows 三处适配 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2256">#2256</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2155">#2155</a>) <span class="author">— 王梓先</span></li>
   <li><span class="merged-at">[05/21 13:57]</span>fetchBrowseTimes await 中 refresh 剪掉 goodsId 时不复活陈旧 entry <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2245">#2245</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1590">#1590</a>) <span class="author">— 陈聪</span></li>
   <li><span class="merged-at">[05/21 13:20]</span>avoid chat SLS page key collision <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2240">#2240</a> <span class="author">— 张拓</span></li>
   <li><span class="merged-at">[05/21 13:07]</span>add transfer observability events <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2238">#2238</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2049">#2049</a>) <span class="author">— 张拓</span></li>
@@ -116,7 +128,7 @@ a:hover { text-decoration: underline; }
 
 <h2>✨ 体验优化</h2>
 <ul>
-  <li class="empty">无</li>
+  <li><span class="merged-at">[05/21 16:23]</span>hotkey screenshot 改 handler 注册模式 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2268">#2268</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2243">#2243</a>) <span class="author">— 梁晨</span></li>
 </ul>
 
 <h2>🔧 其他（chore / docs / test / ...）</h2>

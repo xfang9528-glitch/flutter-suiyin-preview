@@ -41,7 +41,7 @@ a:hover { text-decoration: underline; }
 <label>查看历史预览：</label>
 <select id="version-switcher-select" onchange="var v=this.value; if(v) location.href = v; else location.href = './';">
 <!-- VERSION_SWITCHER_OPTIONS_START -->
-<option value="">📦 2026052102 发版预览</option>
+<option value="">📦 2026052201 发版预览</option>
 <option value="2026052101.html">🗂 2026052101</option>
 <option value="2026052001.html">🗂 2026052001</option>
 <option value="2026051902.html">🗂 2026051902</option>
@@ -89,36 +89,50 @@ a:hover { text-decoration: underline; }
   }
 })();
 </script>
-<h1>📦 2026052102 发版预览</h1>
+<h1>📦 2026052201 发版预览</h1>
 <div class="meta">
-当前版本：<code>2026052101</code>（发版时间：<span class="bump-time">05/21 12:36</span>），下一版（预览）：<code>2026052102</code><br>
-生成时间：2026-05-21 23:11:00 · 重新跑脚本后刷新页面即拿最新
+当前版本：<code>2026052101</code>（发版时间：<span class="bump-time">05/21 12:36</span>），下一版（预览）：<code>2026052201</code><br>
+生成时间：2026-05-22 10:30:32 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
+
+<h3>🆕 新功能</h3>
+<ul>
+  <li>群发好友时新增「排除规则」：可以设置排除最近若干天内联系过的好友，并选择按哪种消息来源来判断，避免对刚聊过的人重复群发 — 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2284">#2284</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2257">#2257</a>)</li>
+</ul>
+
+<h3>✨ 体验优化</h3>
+<ul>
+  <li>在聊天里往上翻很久以前的历史消息时偶发卡顿的问题已优化，滚动更顺滑 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2293">#2293</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1643">#1643</a>)</li>
+  <li>话术库里鼠标悬停快速预览大量话术时，内存占用过高导致卡顿甚至闪退的问题已优化 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2296">#2296</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2295">#2295</a>)</li>
+</ul>
+
 <h3>🐞 问题修复</h3>
 <ul>
-  <li>查看群聊客户资料时，「添加时间」一栏显示空白的问题已修复（客户右栏、编辑弹窗、投保人面板均已正常显示）— 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2292">#2292</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2181">#2181</a>)</li>
-  <li>在输入框粘贴图片时，预览的中央大图有时还显示上一张图片的问题已修复 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2271">#2271</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1801">#1801</a>)</li>
-  <li>群发、朋友圈等子窗口打开时，弹出的对话框被挡在子窗口后面看不到的问题已修复 — 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2283">#2283</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2273">#2273</a>)</li>
-  <li>在电脑端右键复制聊天文字时出现红屏报错、以及复制内容串字或选错范围的问题已修复 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2279">#2279</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2276">#2276</a>)</li>
-  <li>发送话术里的视频时，进度条显示「99% 压缩中」长时间不动的问题已修复 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2277">#2277</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2254">#2254</a>)</li>
-  <li>快速连点截图按钮会触发两次截图的问题已修复 — 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2267">#2267</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2244">#2244</a>)</li>
-  <li>转发的视频消息，复制时提示「视频地址为空」的问题已修复 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2266">#2266</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1620">#1620</a>)</li>
-  <li>右键点击聊天气泡时，之前用鼠标拖选的文字范围不会再被清空 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2225">#2225</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2116">#2116</a>)</li>
-  <li>Mac 端应用启动时闪退的问题已修复 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2260">#2260</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2233">#2233</a>)</li>
+  <li>发送话术视频时进度一直卡在「99% 压缩中」不动的问题已修复，现在能看到真实的压缩进度 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2289">#2289</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2277">#2277</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2254">#2254</a>)</li>
+  <li>在输入框粘贴图片时，中间的大图预览有时显示成上一张旧图的问题已修复 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2271">#2271</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1801">#1801</a>)</li>
+  <li>打开群发 / 朋友圈等子窗口后，弹出的提示框有时被子窗口挡住看不见的问题已修复 — 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2283">#2283</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2273">#2273</a>)</li>
+  <li>PC 端右键复制文本消息时偶发红屏报错、以及复制内容串到其他选区的问题已修复 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2279">#2279</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2276">#2276</a>)</li>
+  <li>连续快速触发截图会重复弹出两次截图的问题已修复 — 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2267">#2267</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2244">#2244</a>)</li>
+  <li>复制转发的视频消息时提示「视频地址为空」的问题已修复 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2266">#2266</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1620">#1620</a>)</li>
+  <li>在文本消息里拖选一段文字后右键，选区不再被清空 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2225">#2225</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2116">#2116</a>)</li>
+  <li>应用启动时偶发闪退的问题已修复 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2260">#2260</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2233">#2233</a>)</li>
 </ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">05/21 12:36 上次发版后，合入 main 的全部 <strong>25</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">05/21 12:36 上次发版后，合入 main 的全部 <strong>31</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
-  <li class="empty">无</li>
+  <li><span class="merged-at">[05/21 23:27]</span>群发排除规则改造（天数输入 + 排除消息来源三选一） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2284">#2284</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2257">#2257</a>) <span class="author">— 梁晨</span></li>
 </ul>
 
 <h2>🐞 问题修复</h2>
 <ul>
+  <li><span class="merged-at">[05/22 10:17]</span>群发创建页文案通顺化（排除聊天好友 / 新加好友） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2299">#2299</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2298">#2298</a>) <span class="author">— 梁晨</span></li>
+  <li><span class="merged-at">[05/22 10:16]</span>loadMore 增量发布消除深层历史滚动偶发卡顿 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2293">#2293</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1643">#1643</a>) <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[05/22 08:12]</span>Windows ffmpeg 压缩进度真实流式解析（第二轮） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2289">#2289</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2254">#2254</a>) <span class="author">— 陈聪</span></li>
   <li><span class="merged-at">[05/21 23:03]</span>customerAddFriendTimeProvider 入参用 .id <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2292">#2292</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2181">#2181</a>) <span class="author">— 陈聪</span></li>
   <li><span class="merged-at">[05/21 18:58]</span>输入框粘贴预览中央大图渲染老图 — didUpdateWidget race 守卫 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2271">#2271</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1801">#1801</a>) <span class="author">— 陈聪</span></li>
   <li><span class="merged-at">[05/21 18:03]</span>dialog 临时置顶主窗，盖过群发/朋友圈子窗 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2283">#2283</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2273">#2273</a>) <span class="author">— 梁晨</span></li>
@@ -139,6 +153,8 @@ a:hover { text-decoration: underline; }
 
 <h2>✨ 体验优化</h2>
 <ul>
+  <li><span class="merged-at">[05/22 08:13]</span>话术库 hover 浮层 OOM 优化（CancelToken + 并发上限 + tooltip 虚拟化 + 首帧超时） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2296">#2296</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2295">#2295</a>) <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[05/21 23:13]</span>loadMore 各段耗时埋点,定位上滑加载历史卡顿瓶颈 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2291">#2291</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2258">#2258</a>) <span class="author">— 王梓先</span></li>
   <li><span class="merged-at">[05/21 17:25]</span>PcDynamicRenderer 改 Stateful + memoize 派生计算 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2269">#2269</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2094">#2094</a>) <span class="author">— 陈聪</span></li>
   <li><span class="merged-at">[05/21 16:23]</span>hotkey screenshot 改 handler 注册模式 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2268">#2268</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2243">#2243</a>) <span class="author">— 梁晨</span></li>
 </ul>

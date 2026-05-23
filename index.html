@@ -41,7 +41,7 @@ a:hover { text-decoration: underline; }
 <label>查看历史预览：</label>
 <select id="version-switcher-select" onchange="var v=this.value; if(v) location.href = v; else location.href = './';">
 <!-- VERSION_SWITCHER_OPTIONS_START -->
-<option value="">📦 2026052203 发版预览</option>
+<option value="">📦 2026052301 发版预览</option>
 <option value="2026052202.html">🗂 2026052202</option>
 <option value="2026052201.html">🗂 2026052201</option>
 <option value="2026052101.html">🗂 2026052101</option>
@@ -91,36 +91,36 @@ a:hover { text-decoration: underline; }
   }
 })();
 </script>
-<h1>📦 2026052203 发版预览</h1>
+<h1>📦 2026052301 发版预览</h1>
 <div class="meta">
-当前版本：<code>2026052202</code>（发版时间：<span class="bump-time">05/22 17:32</span>），下一版（预览）：<code>2026052203</code><br>
-生成时间：2026-05-22 23:11:42 · 重新跑脚本后刷新页面即拿最新
+当前版本：<code>2026052202</code>（发版时间：<span class="bump-time">05/22 17:32</span>），下一版（预览）：<code>2026052301</code><br>
+生成时间：2026-05-23 10:31:49 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
-
 <h3>✨ 体验优化</h3>
 <ul>
-  <li>渠道分类左栏的长名称（如「渠道IP-1组」「代运营」）此前会被省略号截断看不全，现在能完整换行显示 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2350">#2350</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2324">#2324</a>)</li>
+  <li>渠道分类列表的左栏现在能完整换行显示较长的分类名称，不再被截断 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2350">#2350</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2324">#2324</a>)</li>
 </ul>
 
 <h3>🐞 问题修复</h3>
 <ul>
-  <li>修复重复双击桌面图标会打开多个程序窗口、两个窗口互相挤掉对方登录导致消息错乱的问题，现在再次启动会直接切回已打开的窗口（跟微信一致） — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2352">#2352</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2312">#2312</a>)</li>
-  <li>修复网络断开恢复、或电脑休眠唤醒后，可能出现收不到客户新消息、会话列表不置顶不更新时间的问题，现在会自动重连恢复收消息 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2349">#2349</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2241">#2241</a>)</li>
-  <li>修复部分用户升级后桌面和开始菜单快捷方式消失、版本卡在旧版的问题 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2342">#2342</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2315">#2315</a>)</li>
+  <li>长时间没收到消息时（消息漏推 / 后台静默断开），应用现在会主动探测并自动恢复连接，不用再手动重启 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2355">#2355</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2349">#2349</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2351">#2351</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2241">#2241</a>)</li>
+  <li>在 Windows 上重复双击应用图标不会再启动多个实例，会直接激活已经打开的窗口 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2352">#2352</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2312">#2312</a>)</li>
+  <li>自动更新出错时的恢复流程已修正，避免下次启动卡在更新失败、需要重装才能进入应用 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2342">#2342</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2315">#2315</a>)</li>
 </ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">05/22 17:32 上次发版后，合入 main 的全部 <strong>9</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">05/22 17:32 上次发版后，合入 main 的全部 <strong>11</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
-  <li class="empty">无</li>
+  <li><span class="merged-at">[05/22 23:51]</span>IM 假死纯接收场景主动健康探测自愈 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2355">#2355</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2351">#2351</a>) <span class="author">— 王梓先</span></li>
 </ul>
 
 <h2>🐞 问题修复</h2>
 <ul>
+  <li><span class="merged-at">[05/22 23:34]</span>build_fast 冷全量构建前预热 pdfium native asset <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2354">#2354</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2353">#2353</a>) <span class="author">— 王梓先</span></li>
   <li><span class="merged-at">[05/22 22:19]</span>恢复 Windows 单实例守卫，仅 release 启用 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2352">#2352</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2312">#2312</a>) <span class="author">— 王梓先</span></li>
   <li><span class="merged-at">[05/22 22:02]</span>IM 假死 watchdog 超时触发主动 reLogin 自愈 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2349">#2349</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2241">#2241</a>) <span class="author">— 王梓先</span></li>
   <li><span class="merged-at">[05/22 21:34]</span>渠道分类左栏长名称换行+宽度优化 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2350">#2350</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2324">#2324</a>) <span class="author">— 王梓先</span></li>

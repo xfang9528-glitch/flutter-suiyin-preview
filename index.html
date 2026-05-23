@@ -94,28 +94,33 @@ a:hover { text-decoration: underline; }
 <h1>📦 2026052301 发版预览</h1>
 <div class="meta">
 当前版本：<code>2026052202</code>（发版时间：<span class="bump-time">05/22 17:32</span>），下一版（预览）：<code>2026052301</code><br>
-生成时间：2026-05-23 16:57:36 · 重新跑脚本后刷新页面即拿最新
+生成时间：2026-05-23 23:11:29 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
+<h3>🆕 新功能</h3>
+<ul>
+  <li>艺星 PC 客户详情右侧栏新增「AI 客户画像」常驻区块，打开客户即可看到 AI 整理的客户画像摘要 — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2358">#2358</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2317">#2317</a>)</li>
+</ul>
 
 <h3>✨ 体验优化</h3>
 <ul>
-  <li>聊天页「渠道分类」左栏的长名称（「渠道IP-1组」「代运营」「自媒体」等）此前会被截断显示为省略号，现在改成自动换行完整显示，左栏宽度顺手收窄一点更紧凑 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2350">#2350</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2324">#2324</a>)</li>
+  <li>渠道分类左侧栏的长名称现在会自动换行展示完整内容，整体宽度也调整得更合理，不会再被截断成省略号 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2350">#2350</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2324">#2324</a>)</li>
 </ul>
 
 <h3>🐞 问题修复</h3>
 <ul>
-  <li>修复部分客户反馈的「升级后桌面 / 开始菜单的随音快捷方式不见了、版本号卡住不动」问题：原因是后台自动升级在某些场景下错把增量补丁包当成完整安装包来打，导致安装目录损坏；现在自动升级只走完整包，不再使用增量补丁，从根上避免这种损坏 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2342">#2342</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2315">#2315</a>)</li>
-  <li>修复销售偶尔「收不到客户新消息、左侧会话列表不置顶、红点不刷新」的问题：背景是 IM 长连接「假死」（看起来在线但实际收不到推送）。本版加入两层自愈——发消息送达超时、以及纯接收场景下的链路健康主动探测，任一发现异常会立刻重新登录 IM 恢复收消息 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2349">#2349</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2355">#2355</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2241">#2241</a>)</li>
-  <li>修复连续双击桌面快捷方式会启动两个随音、互相把对方的 IM 登录踢下线、消息看着进了 A 窗口但只有 B 窗口真在收的问题。现在正式版（用户拿到的安装包）再次启动时会自动激活已经打开的窗口，禁止多开 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2352">#2352</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2312">#2312</a>)</li>
+  <li>聊天长时间挂机后偶发的「假死」（消息既收不到也发不出、看起来一切正常）现在会自动探测并恢复，不需要手动重启应用 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2349">#2349</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2355">#2355</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2241">#2241</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2351">#2351</a>)</li>
+  <li>正式版恢复「同时只能开一个窗口」的限制：再次点桌面图标会直接激活已打开的窗口，避免重复开多份导致消息混乱 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2352">#2352</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2312">#2312</a>)</li>
+  <li>应用启动时若检测到上次自动更新没装干净，现在会用完整安装包自我修复，不再出现反复闪退或装完打不开的情况 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2342">#2342</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2315">#2315</a>)</li>
 </ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">05/22 17:32 上次发版后，合入 main 的全部 <strong>11</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">05/22 17:32 上次发版后，合入 main 的全部 <strong>15</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
+  <li><span class="merged-at">[05/23 18:47]</span>yestar PC 客户右侧栏接入 AI 客户画像常驻区块 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2358">#2358</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2317">#2317</a>) <span class="author">— 陈宣宇</span></li>
   <li><span class="merged-at">[05/22 23:51]</span>IM 假死纯接收场景主动健康探测自愈 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2355">#2355</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2351">#2351</a>) <span class="author">— 王梓先</span></li>
 </ul>
 
@@ -135,6 +140,9 @@ a:hover { text-decoration: underline; }
 
 <h2>🔧 其他（chore / docs / test / ...）</h2>
 <ul>
+  <li><span class="merged-at">[05/23 20:20]</span>Harden preview release note attribution stripping <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2361">#2361</a> <span class="author">— 张拓</span></li>
+  <li><span class="merged-at">[05/23 19:51]</span>Disable Velopack delta package generation <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2360">#2360</a> <span class="author">— 张拓</span></li>
+  <li><span class="merged-at">[05/23 18:35]</span>Read beta update manifest from CDN <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2359">#2359</a> <span class="author">— 张拓</span></li>
   <li><span class="merged-at">[05/22 20:25]</span>Use public beta update manifest URL <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2348">#2348</a> <span class="author">— 张拓</span></li>
   <li><span class="merged-at">[05/22 20:21]</span>Add beta update manifest channel <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2347">#2347</a> <span class="author">— 张拓</span></li>
   <li><span class="merged-at">[05/22 18:05]</span>chore(chat #2333): delivery SLS 埋点防御性增强 + schema 维度补全 + Notifier 测试 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2340">#2340</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2333">#2333</a>) <span class="author">— 王争</span></li>

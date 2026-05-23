@@ -94,20 +94,21 @@ a:hover { text-decoration: underline; }
 <h1>📦 2026052301 发版预览</h1>
 <div class="meta">
 当前版本：<code>2026052202</code>（发版时间：<span class="bump-time">05/22 17:32</span>），下一版（预览）：<code>2026052301</code><br>
-生成时间：2026-05-23 10:31:49 · 重新跑脚本后刷新页面即拿最新
+生成时间：2026-05-23 16:57:36 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
+
 <h3>✨ 体验优化</h3>
 <ul>
-  <li>渠道分类列表的左栏现在能完整换行显示较长的分类名称，不再被截断 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2350">#2350</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2324">#2324</a>)</li>
+  <li>聊天页「渠道分类」左栏的长名称（「渠道IP-1组」「代运营」「自媒体」等）此前会被截断显示为省略号，现在改成自动换行完整显示，左栏宽度顺手收窄一点更紧凑 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2350">#2350</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2324">#2324</a>)</li>
 </ul>
 
 <h3>🐞 问题修复</h3>
 <ul>
-  <li>长时间没收到消息时（消息漏推 / 后台静默断开），应用现在会主动探测并自动恢复连接，不用再手动重启 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2355">#2355</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2349">#2349</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2351">#2351</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2241">#2241</a>)</li>
-  <li>在 Windows 上重复双击应用图标不会再启动多个实例，会直接激活已经打开的窗口 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2352">#2352</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2312">#2312</a>)</li>
-  <li>自动更新出错时的恢复流程已修正，避免下次启动卡在更新失败、需要重装才能进入应用 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2342">#2342</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2315">#2315</a>)</li>
+  <li>修复部分客户反馈的「升级后桌面 / 开始菜单的随音快捷方式不见了、版本号卡住不动」问题：原因是后台自动升级在某些场景下错把增量补丁包当成完整安装包来打，导致安装目录损坏；现在自动升级只走完整包，不再使用增量补丁，从根上避免这种损坏 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2342">#2342</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2315">#2315</a>)</li>
+  <li>修复销售偶尔「收不到客户新消息、左侧会话列表不置顶、红点不刷新」的问题：背景是 IM 长连接「假死」（看起来在线但实际收不到推送）。本版加入两层自愈——发消息送达超时、以及纯接收场景下的链路健康主动探测，任一发现异常会立刻重新登录 IM 恢复收消息 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2349">#2349</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2355">#2355</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2241">#2241</a>)</li>
+  <li>修复连续双击桌面快捷方式会启动两个随音、互相把对方的 IM 登录踢下线、消息看着进了 A 窗口但只有 B 窗口真在收的问题。现在正式版（用户拿到的安装包）再次启动时会自动激活已经打开的窗口，禁止多开 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2352">#2352</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2312">#2312</a>)</li>
 </ul>
 
 <hr class="ref-divider">

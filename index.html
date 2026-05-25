@@ -95,29 +95,29 @@ a:hover { text-decoration: underline; }
 <h1>📦 2026052503 发版预览</h1>
 <div class="meta">
 当前版本：<code>2026052502</code>（发版时间：<span class="bump-time">05/25 14:31</span>），下一版（预览）：<code>2026052503</code><br>
-生成时间：2026-05-25 21:50:35 · 重新跑脚本后刷新页面即拿最新
+生成时间：2026-05-25 23:11:44 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
 
 <h3>🆕 新功能</h3>
 <ul>
-  <li>发朋友圈选发布账号时，按住 Shift 点第一个账号再点最后一个，中间所有账号自动全选（跟资源管理器选文件一样） — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2428">#2428</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2414">#2414</a>)</li>
-  <li>新支持「厚全鸡蛋」企业入驻使用，并可在客户档案里编辑「食客」标签 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2427">#2427</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2399">#2399</a>)</li>
-  <li>左侧筛选栏的人设号列表现在按拼音 A→Z 排序，找人更快 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2419">#2419</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2392">#2392</a>)</li>
-  <li>群发管理页：非超管账号下「新增群发 / 编辑 / 删除 / 立即发送」按钮变灰，鼠标悬停会提示需要超管权限才能操作 — 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2413">#2413</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2405">#2405</a>)</li>
+  <li>朋友圈发布的「发布账号」选号支持 Shift + 单击范围连选（跟群发选号、Windows 文件管理器同款交互） — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2428">#2428</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2414">#2414</a>)</li>
+  <li>厚全鸡蛋租户上线，支持食客标签编辑面板 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2427">#2427</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2399">#2399</a>)</li>
+  <li>左侧筛选栏每个渠道下的人设号按拼音首字母 A→Z 排序，跟前面渠道的排序一致，找号更顺手 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2419">#2419</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2392">#2392</a>)</li>
+  <li>群发管理页的「暂停 / 继续 / 取消 / 删除」4 个按钮，非超管账号下灰显示并禁用，悬停提示「仅管理员可X群发任务」 — 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2413">#2413</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2405">#2405</a>)</li>
 </ul>
 
 <h3>🐞 问题修复</h3>
 <ul>
-  <li>短时间内收到大量新消息时，聊天列表频繁刷新、界面卡顿的问题已修复（500ms 内的多次更新会合并成一次刷新） — 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2432">#2432</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2422">#2422</a>)</li>
-  <li>把客户发的图片「存为好友照片」或「自动收录」时，现在保存的是原图（之前会保存成模糊的缩略图） — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2431">#2431</a></li>
-  <li>群发管理→资料库现在可以使用「视频号」类型的素材了 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2426">#2426</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2376">#2376</a>)</li>
+  <li>慢网络恢复后聊天列表反复刷新、导致首页卡顿甚至点哪都没反应的问题已修复 — 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2435">#2435</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2434">#2434</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2432">#2432</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2421">#2421</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2420">#2420</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2422">#2422</a>)</li>
+  <li>从微信收到的图片，「存为好友照片」/ 自动收录到照片墙，现在保存的是高清原图而不是模糊缩略图 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2431">#2431</a></li>
+  <li>群发资料库现在能选「视频号」内容（之前只支持图文 / 视频 / 文章；直播和笔记仍不支持） — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2426">#2426</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2376">#2376</a>)</li>
 </ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">05/25 14:31 上次发版后，合入 main 的全部 <strong>16</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">05/25 14:31 上次发版后，合入 main 的全部 <strong>18</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
   <li><span class="merged-at">[05/25 18:54]</span>朋友圈发布账号选择器开启 Shift 范围连选 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2428">#2428</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2414">#2414</a>) <span class="author">— 王争</span></li>
@@ -129,6 +129,7 @@ a:hover { text-decoration: underline; }
 
 <h2>🐞 问题修复</h2>
 <ul>
+  <li><span class="merged-at">[05/25 21:52]</span>batch customer change refreshes <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2435">#2435</a> <span class="author">— 张拓</span></li>
   <li><span class="merged-at">[05/25 21:47]</span>init_worktree 自动补齐 codegen <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2439">#2439</a> <span class="author">— 张拓</span></li>
   <li><span class="merged-at">[05/25 19:28]</span>coalesce chat list stream bursts <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2432">#2432</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2422">#2422</a>) <span class="author">— 张拓</span></li>
   <li><span class="merged-at">[05/25 18:58]</span>存为好友照片 / 自动收录始终保存原图而非缩略图 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2431">#2431</a> <span class="author">— 王争</span></li>
@@ -137,6 +138,7 @@ a:hover { text-decoration: underline; }
 
 <h2>✨ 体验优化</h2>
 <ul>
+  <li><span class="merged-at">[05/25 22:13]</span>skip duplicate chat list snapshots <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2434">#2434</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2420">#2420</a>) <span class="author">— 张拓</span></li>
   <li><span class="merged-at">[05/25 19:58]</span>improve friend request slow refresh telemetry <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2433">#2433</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2423">#2423</a>) <span class="author">— 张拓</span></li>
 </ul>
 

@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
-<!-- CURRENT_BUILD:2026052202 -->
+<!-- CURRENT_BUILD:2026052502 -->
 <title>下一版发版预览 · flutter-suiyin</title>
 <style>
 body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", sans-serif; max-width: 880px; margin: 32px auto; padding: 0 24px; color: #1f2328; line-height: 1.7; background: #fafbfc; }
@@ -41,7 +41,8 @@ a:hover { text-decoration: underline; }
 <label>查看历史预览：</label>
 <select id="version-switcher-select" onchange="var v=this.value; if(v) location.href = v; else location.href = './';">
 <!-- VERSION_SWITCHER_OPTIONS_START -->
-<option value="">📦 2026052501 发版预览</option>
+<option value="">📦 2026052503 发版预览</option>
+<option value="2026052502.html">🗂 2026052502</option>
 <option value="2026052202.html">🗂 2026052202</option>
 <option value="2026052201.html">🗂 2026052201</option>
 <option value="2026052101.html">🗂 2026052101</option>
@@ -91,98 +92,55 @@ a:hover { text-decoration: underline; }
   }
 })();
 </script>
-<h1>📦 2026052501 发版预览</h1>
+<h1>📦 2026052503 发版预览</h1>
 <div class="meta">
-当前版本：<code>2026052202</code>（发版时间：<span class="bump-time">05/22 17:32</span>），下一版（预览）：<code>2026052501</code><br>
-生成时间：2026-05-25 13:36:09 · 重新跑脚本后刷新页面即拿最新
+当前版本：<code>2026052502</code>（发版时间：<span class="bump-time">05/25 14:31</span>），下一版（预览）：<code>2026052503</code><br>
+生成时间：2026-05-25 16:57:09 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
 
 <h3>🆕 新功能</h3>
 <ul>
-  <li>聊天页右上角「搜索聊天记录」打开的搜索窗口，右侧匹配消息现在支持鼠标拖选 + Ctrl+C 复制 — 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2395">#2395</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2343">#2343</a>)</li>
-  <li>「话术库」点开二级分类后，会自动滚到上次选中的那条话术，不用再手动翻找 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2369">#2369</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1650">#1650</a>)</li>
-  <li>艺星 PC 客户右侧栏新增「AI 客户画像」常驻区块，无需手动展开即可查看 — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2358">#2358</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2317">#2317</a>)</li>
+  <li>群发管理页的「暂停 / 继续 / 取消 / 删除」4 个写操作按钮，现在只有超管账号能点；非超管账号下按钮自动灰化，鼠标悬停会提示「仅管理员可<动作>群发任务」 — 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2413">#2413</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2405">#2405</a>)</li>
 </ul>
 
 <h3>✨ 体验优化</h3>
 <ul>
-  <li>聊天记录上滑加载更早的消息更流畅，消除卡顿停顿 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2364">#2364</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2258">#2258</a>)</li>
-  <li>「渠道列表」按拼音 + 同前缀编号自然排序（如「渠道 2、渠道 10」按数字顺序而非字符顺序），找渠道更顺手 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2373">#2373</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2372">#2372</a>)</li>
-  <li>朋友圈视频预览解析失败时给出明确提示并冷却，不再反复转圈重试 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2346">#2346</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2313">#2313</a>)</li>
-  <li>「渠道分类」左栏长名称现在会自动换行完整显示，不再被截断 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2350">#2350</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2324">#2324</a>)</li>
-</ul>
-
-<h3>🐞 问题修复</h3>
-<ul>
-  <li>编辑客户基础信息后点保存，第一次报「保存失败」、之后再点显示成功但重开 panel 字段仍是旧值的问题已修复（艺星销售高频反馈） — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2403">#2403</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2386">#2386</a>)</li>
-  <li>IM 消息一直收不到新内容（对方已经发出、本机却看不到）的「假死」问题已修复：应用会主动检测连接异常并自动恢复 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2355">#2355</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2349">#2349</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2351">#2351</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2241">#2241</a>)</li>
-  <li>「话术库」展开二级分类后再拖动该分组导致客户端闪退的问题已规避：展开状态下该分组的拖动手柄会隐藏，想调整顺序请先折叠再拖 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2366">#2366</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2356">#2356</a>)</li>
-  <li>同一台电脑重复打开客户端时，新实例会自动激活已有窗口，避免多个窗口同时运行造成数据冲突（仅 release 版本生效） — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2352">#2352</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2312">#2312</a>)</li>
-  <li>自动升级偶发失败的问题修复：启动自愈现在只走完整安装包恢复，不再因 delta 包损坏而升级失败 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2342">#2342</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2315">#2315</a>)</li>
+  <li>左侧筛选栏每个渠道下的人设号列表，现在按拼音首字母 A→Z 排序（含「【A】」等分组前缀），翻找指定人设号更快 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2419">#2419</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2392">#2392</a>)</li>
 </ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">05/22 17:32 上次发版后，合入 main 的全部 <strong>36</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">05/25 14:31 上次发版后，合入 main 的全部 <strong>5</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
-  <li><span class="merged-at">[05/25 11:44]</span>搜索弹窗右侧消息支持拖选 + Ctrl+C 复制 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2395">#2395</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2343">#2343</a>) <span class="author">— 梁晨</span></li>
-  <li><span class="merged-at">[05/24 23:23]</span>二级展开下也滚到上次选中话术 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2369">#2369</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1650">#1650</a>) <span class="author">— 陈聪</span></li>
-  <li><span class="merged-at">[05/24 06:54]</span>视频解析失败 cooldown + 路径 A 持久遮罩 + path B SLS 补齐 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2346">#2346</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2313">#2313</a>) <span class="author">— 陈聪</span></li>
-  <li><span class="merged-at">[05/23 18:47]</span>yestar PC 客户右侧栏接入 AI 客户画像常驻区块 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2358">#2358</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2317">#2317</a>) <span class="author">— 陈宣宇</span></li>
-  <li><span class="merged-at">[05/22 23:51]</span>IM 假死纯接收场景主动健康探测自愈 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2355">#2355</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2351">#2351</a>) <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[05/25 16:30]</span>左侧筛选栏人设号按拼音首字母排序 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2419">#2419</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2392">#2392</a>) <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[05/25 15:58]</span>跨级移动后端契约层（DR-029 第 1 步） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2415">#2415</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2301">#2301</a>) <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[05/25 15:15]</span>群发管理 4 个写按钮按超管角色 disabled + tooltip <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2413">#2413</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2405">#2405</a>) <span class="author">— 梁晨</span></li>
 </ul>
 
 <h2>🐞 问题修复</h2>
 <ul>
-  <li><span class="merged-at">[05/25 13:21]</span>dialog/panel family key 分裂导致保存后 UI 不刷新 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2403">#2403</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2386">#2386</a>) <span class="author">— 王梓先</span></li>
-  <li><span class="merged-at">[05/24 19:21]</span>渠道列表按拼音 + 同前缀编号自然排序 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2373">#2373</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2372">#2372</a>) <span class="author">— 王梓先</span></li>
-  <li><span class="merged-at">[05/24 07:49]</span>展开二级 header 不可拖（回避未知崩溃路径） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2366">#2366</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2356">#2356</a>) <span class="author">— 陈聪</span></li>
-  <li><span class="merged-at">[05/22 23:34]</span>build_fast 冷全量构建前预热 pdfium native asset <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2354">#2354</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2353">#2353</a>) <span class="author">— 王梓先</span></li>
-  <li><span class="merged-at">[05/22 22:19]</span>恢复 Windows 单实例守卫，仅 release 启用 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2352">#2352</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2312">#2312</a>) <span class="author">— 王梓先</span></li>
-  <li><span class="merged-at">[05/22 22:02]</span>IM 假死 watchdog 超时触发主动 reLogin 自愈 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2349">#2349</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2241">#2241</a>) <span class="author">— 王梓先</span></li>
-  <li><span class="merged-at">[05/22 21:34]</span>渠道分类左栏长名称换行+宽度优化 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2350">#2350</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2324">#2324</a>) <span class="author">— 王梓先</span></li>
-  <li><span class="merged-at">[05/22 18:05]</span>启动自愈只 apply full 包，绝不 apply delta <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2342">#2342</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2315">#2315</a>) <span class="author">— 王梓先</span></li>
+  <li class="empty">无</li>
 </ul>
 
 <h2>✨ 体验优化</h2>
 <ul>
-  <li><span class="merged-at">[05/25 08:11]</span>抽 kPreviewMaxDecodeExtent 公共 const + gotchas 点名移动端 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2385">#2385</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2175">#2175</a>) <span class="author">— 陈聪</span></li>
-  <li><span class="merged-at">[05/24 23:17]</span>抽 DynamicFieldKind enum 统一 mixin/renderer 字典 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2379">#2379</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2092">#2092</a>) <span class="author">— 陈聪</span></li>
-  <li><span class="merged-at">[05/24 19:21]</span>loadMore 缓存优先 fast-publish,消掉上滑卡顿长尾 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2364">#2364</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2258">#2258</a>) <span class="author">— 王梓先</span></li>
+  <li class="empty">无</li>
 </ul>
 
 <h2>🔧 其他（chore / docs / test / ...）</h2>
 <ul>
-  <li><span class="merged-at">[05/25 11:21]</span>docs: correct 2026052501 release notes <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2398">#2398</a> <span class="author">— 张拓</span></li>
-  <li><span class="merged-at">[05/25 11:11]</span>chore: guard velopack json upload fallback <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2397">#2397</a> <span class="author">— 张拓</span></li>
-  <li><span class="merged-at">[05/25 11:09]</span>docs: archive 2026052501 release notes <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2396">#2396</a> <span class="author">— 张拓</span></li>
-  <li><span class="merged-at">[05/25 10:19]</span>chore(qg #2152): extractor 失败保留 raw json + 文档对齐 mktemp 命名 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2388">#2388</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2152">#2152</a>) <span class="author">— 梁晨</span></li>
-  <li><span class="merged-at">[05/25 07:26]</span>docs(chat #1692): retry wxRiskBlocked 死代码兜底澄清 + 契约守卫 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2384">#2384</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1692">#1692</a>) <span class="author">— 陈聪</span></li>
-  <li><span class="merged-at">[05/25 07:21]</span>observability(chat #1364): history_dup_detected 上报收紧到 senders ≥2 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2378">#2378</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1364">#1364</a>) <span class="author">— 陈聪</span></li>
-  <li><span class="merged-at">[05/24 22:43]</span>test(chat): 同步 pc_chat_filter_widget test 期望值到 PR #2324 新值 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2377">#2377</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2365">#2365</a>) <span class="author">— 王梓先</span></li>
-  <li><span class="merged-at">[05/24 21:01]</span>Guard Velopack releases against skipped Flutter builds <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2375">#2375</a> <span class="author">— 张拓</span></li>
-  <li><span class="merged-at">[05/24 15:43]</span>Add 2026052401 release notes <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2374">#2374</a> <span class="author">— 张拓</span></li>
-  <li><span class="merged-at">[05/24 11:22]</span>Archive Velopack release notes from preview releases <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2371">#2371</a> <span class="author">— 张拓</span></li>
-  <li><span class="merged-at">[05/24 11:17]</span>Add 2026052301 release notes <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2370">#2370</a> <span class="author">— 张拓</span></li>
-  <li><span class="merged-at">[05/24 03:02]</span>Add SLS profiling for Windows jank triage <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2345">#2345</a> <span class="author">— 张拓</span></li>
-  <li><span class="merged-at">[05/23 20:20]</span>Harden preview release note attribution stripping <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2361">#2361</a> <span class="author">— 张拓</span></li>
-  <li><span class="merged-at">[05/23 19:51]</span>Disable Velopack delta package generation <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2360">#2360</a> <span class="author">— 张拓</span></li>
-  <li><span class="merged-at">[05/23 18:35]</span>Read beta update manifest from CDN <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2359">#2359</a> <span class="author">— 张拓</span></li>
-  <li><span class="merged-at">[05/22 20:25]</span>Use public beta update manifest URL <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2348">#2348</a> <span class="author">— 张拓</span></li>
-  <li><span class="merged-at">[05/22 20:21]</span>Add beta update manifest channel <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2347">#2347</a> <span class="author">— 张拓</span></li>
-  <li><span class="merged-at">[05/22 18:05]</span>chore(chat #2333): delivery SLS 埋点防御性增强 + schema 维度补全 + Notifier 测试 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2340">#2340</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2333">#2333</a>) <span class="author">— 王争</span></li>
-  <li><span class="merged-at">[05/22 17:38]</span>chore(chat): delivery_sls_extras 用 LinkForwardDesc 常量替换硬编码 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2338">#2338</a> <span class="author">— 王争</span></li>
-  <li><span class="merged-at">[05/22 17:32]</span>chore(release): publish 2026052202 Velopack package <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2339">#2339</a> <span class="author">— 张拓</span></li>
+  <li><span class="merged-at">[05/25 14:50]</span>test(enterprise #2131): 抽 assertCustomerSlotCoherent helper 强制 supports/build 同步 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2408">#2408</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2131">#2131</a>) <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[05/25 14:38]</span>test(chat #2368): selection_test 显式 override channelPersonaProvider 消除 SP 噪声 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2409">#2409</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2368">#2368</a>) <span class="author">— 陈聪</span></li>
 </ul>
 
 
 <hr class="ref-divider">
 
 <div class="foot">
-上一次发版时间：<span class="bump-time">05/22 17:32</span>（基线 commit：<code>chore(release): publish 2026052202 Velopack package</code>）<br>
+上一次发版时间：<span class="bump-time">05/25 14:31</span>（基线 commit：<code>chore: prepare 2026052502 release (#2411)</code>）<br>
 PR 归属版本由 <code>pubspec.yaml</code> 的 <code>version:</code> 行 git 历史判定 —— bump commit 的 committedAt 是分割线。<br>
 由 <code>tool/generate_release_preview.dart</code> 自动提取；重新跑脚本后刷新页面即拿最新。<br>
 issue 链接基于 PetWebOrg/flutter-suiyin 仓。

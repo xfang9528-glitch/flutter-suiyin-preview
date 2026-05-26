@@ -96,18 +96,25 @@ a:hover { text-decoration: underline; }
 <h1>📦 2026052602 发版预览</h1>
 <div class="meta">
 当前版本：<code>2026052601</code>（发版时间：<span class="bump-time">05/26 11:03</span>），下一版（预览）：<code>2026052602</code><br>
-生成时间：2026-05-26 11:28:41 · 重新跑脚本后刷新页面即拿最新
+生成时间：2026-05-26 16:57:26 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
-<div class="notice">⏳ 上一版 <code>2026052601</code> 于 05/26 11:03 发版，截至本次预览生成（11:28），暂无合入 main 的新 PR。下一版（<code>2026052602</code>）等新内容合入后会自动出现在这里。</div>
+<h3>🆕 新功能</h3>
+<ul>
+  <li>客户信息栏「渠道」字段：在还没录入卡号前可以手动改了；一个销售同时接待来自不同渠道的客户时，能先把渠道改正确再录卡号（录入卡号后自动锁回只读，避免覆盖系统权威值）— 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2462">#2462</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2412">#2412</a>)</li>
+  <li>话术管理面板支持跨大类拖动整理：可以把一条话术从一个大类拖到另一个大类，也可以把一整个二级分组整体搬到别的大类下；拖到大类标签上「散装」并入，拖到分组头则合并到该组 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2460">#2460</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2416">#2416</a>)</li>
+  <li>群发任务新增「来源标签」字段：不再局限于「营销 / 留存」两个固定选项，可以填任意文字（如「问候」「活动」「老客户回访」等）；输入框下拉里会列出之前填过的历史值；任务列表新增「来源标签」徽章列 + 顶部按来源筛选 — 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2451">#2451</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2424">#2424</a>)</li>
+</ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">05/26 11:03 上次发版后，合入 main 的全部 <strong>0</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">05/26 11:03 上次发版后，合入 main 的全部 <strong>7</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
-  <li class="empty">无</li>
+  <li><span class="merged-at">[05/26 16:31]</span>录入卡号前允许编辑「渠道」字段 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2462">#2462</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2412">#2412</a>) <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[05/26 16:06]</span>DR-029 widget 跨级拖拽 UX <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2460">#2460</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2416">#2416</a>) <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[05/26 15:27]</span>群发对接 task_source 自由文本 + 拉历史候选 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2451">#2451</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2424">#2424</a>) <span class="author">— 梁晨</span></li>
 </ul>
 
 <h2>🐞 问题修复</h2>
@@ -117,12 +124,14 @@ a:hover { text-decoration: underline; }
 
 <h2>✨ 体验优化</h2>
 <ul>
-  <li class="empty">无</li>
+  <li><span class="merged-at">[05/26 14:13]</span>把 dynamic_component 提到 lib/components/shared/ 收口跨 feature import 债务 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2452">#2452</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2381">#2381</a>) <span class="author">— 陈聪</span></li>
 </ul>
 
 <h2>🔧 其他（chore / docs / test / ...）</h2>
 <ul>
-  <li class="empty">无</li>
+  <li><span class="merged-at">[05/26 14:45]</span>test(video #2454): WindowsVideoCompressor integration test 3 条 polish <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2457">#2457</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2454">#2454</a>) <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[05/26 14:08]</span>tech-debt(crrm #2389): _saveEdit + _oldCustomerRow EasyLoading → AppToast <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2455">#2455</a> <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[05/26 13:47]</span>test(video #2430): WindowsVideoCompressor integration test 覆盖 cancelToken / killAllActive 接线 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2453">#2453</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2430">#2430</a>) <span class="author">— 陈聪</span></li>
 </ul>
 
 

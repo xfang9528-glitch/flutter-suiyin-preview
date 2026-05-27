@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
-<!-- CURRENT_BUILD:2026052701 -->
+<!-- CURRENT_BUILD:2026052702 -->
 <title>下一版发版预览 · flutter-suiyin</title>
 <style>
 body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", sans-serif; max-width: 880px; margin: 32px auto; padding: 0 24px; color: #1f2328; line-height: 1.7; background: #fafbfc; }
@@ -41,7 +41,8 @@ a:hover { text-decoration: underline; }
 <label>查看历史预览：</label>
 <select id="version-switcher-select" onchange="var v=this.value; if(v) location.href = v; else location.href = './';">
 <!-- VERSION_SWITCHER_OPTIONS_START -->
-<option value="">📦 2026052702 发版预览</option>
+<option value="">📦 2026052703 发版预览</option>
+<option value="2026052702.html">🗂 2026052702</option>
 <option value="2026052701.html">🗂 2026052701</option>
 <option value="2026052601.html">🗂 2026052601</option>
 <option value="2026052502.html">🗂 2026052502</option>
@@ -94,42 +95,34 @@ a:hover { text-decoration: underline; }
   }
 })();
 </script>
-<h1>📦 2026052702 发版预览</h1>
+<h1>📦 2026052703 发版预览</h1>
 <div class="meta">
-当前版本：<code>2026052701</code>（发版时间：<span class="bump-time">05/27 10:53</span>），下一版（预览）：<code>2026052702</code><br>
-生成时间：2026-05-27 16:57:20 · 重新跑脚本后刷新页面即拿最新
+当前版本：<code>2026052702</code>（发版时间：<span class="bump-time">05/27 19:45</span>），下一版（预览）：<code>2026052703</code><br>
+生成时间：2026-05-27 21:36:46 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
 <h3>🆕 新功能</h3>
 <ul>
-  <li>「逐条转发」补齐了位置、话术、视频号、直播号、小程序这几类消息——之前长按只能转发文字/图片/视频，现在这几类也能转给好友（接收方点开和原消息体验一致） — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2481">#2481</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2264">#2264</a>)</li>
-  <li>艺星专属：群发新增「好友选择器」，4 步过滤可按客户最近沟通时间、销售最近沟通时间、互/不互动状态精准筛人；群发列表「所在账号」列改显示人设名称（之前是 wxid 原始 ID 看不懂） — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2482">#2482</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2334">#2334</a>)</li>
-</ul>
-<h3>✨ 体验优化</h3>
-<ul>
-  <li>发布朋友圈弹窗：去掉底部多余空白，「发表」按钮紧贴内容；Windows 端小屏（23 寸）可拖动标题栏把弹窗移到合适位置 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2502">#2502</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2499">#2499</a>)</li>
+<li>群发好友选择器升级（艺星）：4 步流程更精准地圈出群发对象，新增「按客户聊过 / 销售聊过 / 互相聊过的天数」三维度排除好友；同时群发表格「所在账号」列改为显示人设名称，不再显示 <code>wxid_xxx</code> 这种内部 ID — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2482">#2482</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2334">#2334</a>)</li>
+<li>「逐条转发」补齐缺口：位置、话术、视频号 / 直播号、小程序消息现在都能直接转发出去，转发场景不再有"这种类型转不了"的盲区 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2481">#2481</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2264">#2264</a>)</li>
 </ul>
 <h3>🐞 问题修复</h3>
 <ul>
-  <li>通讯录切到具体渠道（如「自媒体」「代运营」）后，「新的朋友」入口红点、中栏列表、右侧「新好友统计」三处都按该渠道下的人设范围筛选；切回「全渠道」恢复全量 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2500">#2500</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2459">#2459</a>)</li>
-  <li>添加话术弹窗：「添加多选话术」按钮之前只能把消息追加到编辑器末尾，现在按点击的光标位置插入；按钮挪到工具栏最末并改成绿色字体/边框，与原型一致 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2490">#2490</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2450">#2450</a>)</li>
+<li>「添加话术」弹窗里点「添加多选话术」现在能插入到光标指定位置，之前只能追加到末尾（同时按钮改为绿色字体 + 绿色边框，更显眼） — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2490">#2490</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2450">#2450</a>)</li>
 </ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">05/27 10:53 上次发版后，合入 main 的全部 <strong>7</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">05/27 19:45 上次发版后，合入 main 的全部 <strong>1</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
-  <li><span class="merged-at">[05/27 14:40]</span>群发好友选择器 + 来源标签 + 新统计字段 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2482">#2482</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2334">#2334</a>) <span class="author">— 王争</span></li>
-  <li><span class="merged-at">[05/27 14:02]</span>补全逐条转发缺口 — location/script/finder/miniProgram <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2481">#2481</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2264">#2264</a>) <span class="author">— 王争</span></li>
+  <li class="empty">无</li>
 </ul>
 
 <h2>🐞 问题修复</h2>
 <ul>
-  <li><span class="merged-at">[05/27 16:37]</span>删除底部多余间距 + Windows 标题栏支持拖动 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2502">#2502</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2499">#2499</a>) <span class="author">— 王争</span></li>
-  <li><span class="merged-at">[05/27 15:25]</span>通讯录切渠道分类后新好友列表 + 统计按渠道筛选 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2500">#2500</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2459">#2459</a>) <span class="author">— 王梓先</span></li>
-  <li><span class="merged-at">[05/27 11:30]</span>多选话术插入指定位置（anchor 机制 + 工具栏对齐原型） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2490">#2490</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2450">#2450</a>) <span class="author">— 王梓先</span></li>
+  <li class="empty">无</li>
 </ul>
 
 <h2>✨ 体验优化</h2>
@@ -139,15 +132,14 @@ a:hover { text-decoration: underline; }
 
 <h2>🔧 其他（chore / docs / test / ...）</h2>
 <ul>
-  <li><span class="merged-at">[05/27 13:50]</span>tech-debt(crrm #2478): _saveEdit 外层加 catch 兜底未知异常路径 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2489">#2489</a> <span class="author">— 陈聪</span></li>
-  <li><span class="merged-at">[05/27 10:53]</span>chore(release): prepare 2026052701 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2487">#2487</a> <span class="author">— 张拓</span></li>
+  <li><span class="merged-at">[05/27 19:45]</span>chore(release): prepare 2026052702 package <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2519">#2519</a> <span class="author">— 张拓</span></li>
 </ul>
 
 
 <hr class="ref-divider">
 
 <div class="foot">
-上一次发版时间：<span class="bump-time">05/27 10:53</span>（基线 commit：<code>chore(release): prepare 2026052701</code>）<br>
+上一次发版时间：<span class="bump-time">05/27 19:45</span>（基线 commit：<code>chore(release): prepare 2026052702 package</code>）<br>
 PR 归属版本由 <code>pubspec.yaml</code> 的 <code>version:</code> 行 git 历史判定 —— bump commit 的 committedAt 是分割线。<br>
 由 <code>tool/generate_release_preview.dart</code> 自动提取；重新跑脚本后刷新页面即拿最新。<br>
 issue 链接基于 PetWebOrg/flutter-suiyin 仓。

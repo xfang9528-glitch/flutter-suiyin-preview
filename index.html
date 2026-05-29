@@ -100,28 +100,28 @@ a:hover { text-decoration: underline; }
 <h1>📦 2026052901 发版预览</h1>
 <div class="meta">
 当前版本：<code>2026052802</code>（发版时间：<span class="bump-time">05/28 17:28</span>），下一版（预览）：<code>2026052901</code><br>
-生成时间：2026-05-29 10:03:25 · 重新跑脚本后刷新页面即拿最新
+生成时间：2026-05-29 10:30:22 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
 
 <h3>🆕 新功能</h3>
 <ul>
-<li>（厚全鸡蛋）聊天和通讯录详情页右上角新增客户等级选择，可直接给客户打 1~5 星或标记为未评级 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2506">#2506</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2491">#2491</a>)</li>
-<li>（艺星）手机端聊天主页顶部新增分类标签，可横向滑动在多个分类间快速切换会话 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2524">#2524</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2521">#2521</a>)</li>
+  <li>艺星客户聊天右侧的客户信息栏和编辑弹窗按最新设计重做：头像更大并带性别标识，新增年龄、照片墙等信息；聊天标题双击即可就地修改备注名，改完聊天列表、标题、信息栏三处同步更新 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2536">#2536</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2493">#2493</a>)</li>
+  <li>客户聊天页顶部新增客户星级评定，可以直接给客户打 1~5 星或标记为未评级 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2506">#2506</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2491">#2491</a>)</li>
+  <li>手机端聊天主页改版：艺星顶部可横滑切换分类标签快速筛选会话，其他企业保持原有列表 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2524">#2524</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2521">#2521</a>)</li>
 </ul>
 
 <h3>✨ 体验优化</h3>
 <ul>
-<li>群发选好友时「排除条件」更好用了：填多个排除条件（如某等级、多少天没联系）时，只要命中其中任意一个就会被排除，圈人更符合直觉 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2540">#2540</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2533">#2533</a>)</li>
-<li>（艺星）右侧客户信息栏和资料编辑弹窗界面优化：头像带性别角标、AI 标签展示、聊天标题就地编辑、字段一键复制等，对齐最新设计稿 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2536">#2536</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2493">#2493</a>)</li>
+  <li>群发好友筛选第 2 步的「排除」条件改为并集逻辑：只要命中任意一个排除条件就会被排除（原来需同时满足所有条件才排除），圈选范围更符合预期 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2540">#2540</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2533">#2533</a>)</li>
 </ul>
 
 <h3>🐞 问题修复</h3>
 <ul>
-<li>修复从微信复制图文消息粘贴到输入框时图片丢失、只剩文字的问题；同时把输入框里的图片+文字复制到微信 / 钉钉等也不再丢图 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2556">#2556</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2516">#2516</a>)</li>
-<li>修复 Android 端启动时卡在白屏、打不开应用的问题 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2544">#2544</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2518">#2518</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2515">#2515</a>)</li>
-<li>修复刚登录进群发创建页时「来源标签」下拉偶发加载不出来、只显示预设几项的问题 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2542">#2542</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2534">#2534</a>)</li>
+  <li>从微信复制图文消息粘贴进来只剩文字、图片丢失的问题已修复；同时输入框里的图片+文字现在能一键整体复制 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2556">#2556</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2516">#2516</a>)</li>
+  <li>Android 端启动卡在白屏的问题已修复 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2544">#2544</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2518">#2518</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2515">#2515</a>)</li>
+  <li>冷启动登录后进入群发创建页，「来源标签」下拉为空或只剩少数几项的问题已修复，现在能完整加载全部来源 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2542">#2542</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2534">#2534</a>)</li>
 </ul>
 
 <hr class="ref-divider">

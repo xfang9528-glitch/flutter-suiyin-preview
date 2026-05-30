@@ -41,7 +41,7 @@ a:hover { text-decoration: underline; }
 <label>查看历史预览：</label>
 <select id="version-switcher-select" onchange="var v=this.value; if(v) location.href = v; else location.href = './';">
 <!-- VERSION_SWITCHER_OPTIONS_START -->
-<option value="">📦 2026052903 发版预览</option>
+<option value="">📦 2026053001 发版预览</option>
 <option value="2026052902.html">🗂 2026052902</option>
 <option value="2026052901.html">🗂 2026052901</option>
 <option value="2026052802.html">🗂 2026052802</option>
@@ -99,18 +99,21 @@ a:hover { text-decoration: underline; }
   }
 })();
 </script>
-<h1>📦 2026052903 发版预览</h1>
+<h1>📦 2026053001 发版预览</h1>
 <div class="meta">
-当前版本：<code>2026052902</code>（发版时间：<span class="bump-time">05/29 17:38</span>），下一版（预览）：<code>2026052903</code><br>
-生成时间：2026-05-29 23:01:36 · 重新跑脚本后刷新页面即拿最新
+当前版本：<code>2026052902</code>（发版时间：<span class="bump-time">05/29 17:38</span>），下一版（预览）：<code>2026053001</code><br>
+生成时间：2026-05-30 10:38:18 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
 <h3>🆕 新功能</h3>
 <ul>
-  <li>艺星客户资料的「第一需求」现在优先展示 AI 分析出的结果，没有 AI 结果时自动显示销售手动填写的需求；同时去掉了原来的「医美史(AI)」那一行。— 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2602">#2602</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2591">#2591</a>)</li>
-  <li>艺星超管在 PC 通讯录页新增「改派记录」入口：可查看客户专属销售的改派明细，按修改人、归属人、时间、好友多维度筛选，勾选后按批次批量撤回改派，还能把当前筛选结果一键导出成 Excel 表格。— 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2597">#2597</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2565">#2565</a>)</li>
-  <li>艺星超管在 PC 通讯录页新增「归属改派」功能：圈选一批客户后统一指定专属销售，一次性批量设置客户归属。— 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2574">#2574</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2541">#2541</a>)</li>
+  <li>超管在通讯录页新增「改派记录」入口，可查看客户跨批次的改派明细，支持按修改人 / 归属人 / 时间 / 好友多维筛选，勾选后按批次批量撤回改派，还能把当前筛选结果一键导出成 Excel 表格 — 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2597">#2597</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2565">#2565</a>)</li>
+  <li>艺星超管在通讯录页新增「归属改派」入口：圈选一批客户后统一指定专属销售，一次性批量设置好友归属 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2574">#2574</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2541">#2541</a>)</li>
+</ul>
+<h3>✨ 体验优化</h3>
+<ul>
+  <li>客户资料栏「第一需求」字段优化：有 AI 分析结果时显示蓝字可点（点开看历史对话），没有 AI 结果但销售手动填过时改为显示填入的内容，都为空则显示「—」；同时移除了「医美史(AI)」一行 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2602">#2602</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2591">#2591</a>)</li>
 </ul>
 
 <hr class="ref-divider">

@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
-<!-- CURRENT_BUILD:2026051101 -->
+<!-- CURRENT_BUILD:2026052902 -->
 <title>下一版发版预览 · flutter-suiyin</title>
 <style>
 body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", sans-serif; max-width: 880px; margin: 32px auto; padding: 0 24px; color: #1f2328; line-height: 1.7; background: #fafbfc; }
@@ -100,65 +100,54 @@ a:hover { text-decoration: underline; }
   }
 })();
 </script>
-<h1>📦 2026051102 发版预览</h1>
+<h1>📦 2026053001 发版预览</h1>
 <div class="meta">
-当前版本：<code>2026051101</code>（发版时间：<span class="bump-time">05/11 10:59</span>），下一版（预览）：<code>2026051102</code><br>
-生成时间：2026-05-11 16:57:42 · 重新跑脚本后刷新页面即拿最新
+当前版本：<code>2026052902</code>（发版时间：<span class="bump-time">05/29 17:38</span>），下一版（预览）：<code>2026053001</code><br>
+生成时间：2026-05-30 10:38:18 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
-<h3>🐞 问题修复</h3>
+<h3>🆕 新功能</h3>
 <ul>
-  <li>新分配到的客户不会再等 5 分钟才出现在销售列表里，分到马上能看到 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1641">#1641</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/881">#881</a>)</li>
-  <li>「添加朋友」走「网络查找手机/QQ号」入口时，QQ 号、9-10 位短号、12 位以上长号都能正常搜索（之前点进去搜索框是空的） — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1645">#1645</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1547">#1547</a>)</li>
-  <li>客户右侧资料「商品浏览」点小眼睛后气泡正常显示浏览时间列表，不再一直转圈 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1623">#1623</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1614">#1614</a>)</li>
-  <li>客户右侧面板的动态区现在能完整展示后端配置的所有项，不再被前端白名单悄悄过滤掉 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1646">#1646</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1538">#1538</a>)</li>
-  <li>「添加朋友」弹窗只列出当前销售自己有权使用的人设，不再混入全公司其他人的人设（避免误用别人的号发起申请） — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1636">#1636</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1571">#1571</a>)</li>
-  <li>聊天列表「渠道分类」的人设面板只显示当前销售有权接待的人设，不再列出全企业的所有人设 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1637">#1637</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1570">#1570</a>)</li>
+  <li>超管在通讯录页新增「改派记录」入口，可查看客户跨批次的改派明细，支持按修改人 / 归属人 / 时间 / 好友多维筛选，勾选后按批次批量撤回改派，还能把当前筛选结果一键导出成 Excel 表格 — 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2597">#2597</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2565">#2565</a>)</li>
+  <li>艺星超管在通讯录页新增「归属改派」入口：圈选一批客户后统一指定专属销售，一次性批量设置好友归属 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2574">#2574</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2541">#2541</a>)</li>
 </ul>
-
 <h3>✨ 体验优化</h3>
 <ul>
-  <li>客户右侧「购买记录 / 充值记录」面板的状态筛选下拉换成统一的气泡风格（白底圆角 + 当前项末尾 ✓ 标），跟其它筛选下拉一致 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1630">#1630</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1615">#1615</a>)</li>
-  <li>客户充值记录面板支持整体滚动：下滑时汇总卡和筛选栏跟着一起滚走，列表能用更大空间显示 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1625">#1625</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1616">#1616</a>)</li>
+  <li>客户资料栏「第一需求」字段优化：有 AI 分析结果时显示蓝字可点（点开看历史对话），没有 AI 结果但销售手动填过时改为显示填入的内容，都为空则显示「—」；同时移除了「医美史(AI)」一行 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2602">#2602</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2591">#2591</a>)</li>
 </ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">05/11 10:59 上次发版后，合入 main 的全部 <strong>12</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">05/29 17:38 上次发版后，合入 main 的全部 <strong>6</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
-  <li><span class="merged-at">[05/11 16:14]</span>Windows 启动失败诊断脚本 + 中文 Event Log 兼容 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1644">#1644</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1619">#1619</a>) <span class="author">— 王梓先</span></li>
-  <li><span class="merged-at">[05/11 13:28]</span>close #1607 点话术按钮调 /scripts/{id}/usage 上报使用记录 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1632">#1632</a> <span class="author">— 梁晨</span></li>
+  <li><span class="merged-at">[05/29 21:48]</span>客户信息栏第一需求 AI 优先 / 否则回退填入值 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2602">#2602</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2591">#2591</a>) <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[05/29 21:25]</span>batch-exclusive 改派记录列表 + 多维筛选 + 批量回撤 + 导出 Excel <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2597">#2597</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2565">#2565</a>) <span class="author">— 梁晨</span></li>
+  <li><span class="merged-at">[05/29 18:50]</span>手机端版本检测改读 CDN 静态 JSON <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2600">#2600</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2583">#2583</a>) <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[05/29 18:08]</span>好友归属（专属销售）批量设置 PC 端（艺星超管） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2574">#2574</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2541">#2541</a>) <span class="author">— 王争</span></li>
 </ul>
 
 <h2>🐞 问题修复</h2>
 <ul>
-  <li><span class="merged-at">[05/11 16:30]</span>删 fetchCustomersByIds 的 onlyCurrAlloc 参数 — 修分配上屏退化到 5min 心跳 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1641">#1641</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/881">#881</a>) <span class="author">— 王梓先</span></li>
-  <li><span class="merged-at">[05/11 16:29]</span>添加朋友主搜索词不再被严格正则卡掉 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1645">#1645</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1547">#1547</a>) <span class="author">— 王梓先</span></li>
-  <li><span class="merged-at">[05/11 16:26]</span>close #1614 商品浏览小眼睛气泡刷不出数据 — 删过时 shop_id 早返守卫 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1623">#1623</a> <span class="author">— 王争</span></li>
-  <li><span class="merged-at">[05/11 16:22]</span>右侧面板动态区全量展示 API 返回项 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1646">#1646</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1538">#1538</a>) <span class="author">— 王争</span></li>
-  <li><span class="merged-at">[05/11 14:44]</span>close #1615 客户右侧面板下拉统一气泡风格 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1630">#1630</a> <span class="author">— 王争</span></li>
-  <li><span class="merged-at">[05/11 14:28]</span>添加朋友弹窗按销售 wxClientIds 过滤人设 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1636">#1636</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1571">#1571</a>) <span class="author">— 王梓先</span></li>
-  <li><span class="merged-at">[05/11 14:07]</span>close #1616 充值记录面板内容区整体滚动 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1625">#1625</a> <span class="author">— 王争</span></li>
-  <li><span class="merged-at">[05/11 13:58]</span>渠道分类按当前销售可接待人设过滤 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1637">#1637</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1570">#1570</a>) <span class="author">— 王梓先</span></li>
+  <li class="empty">无</li>
 </ul>
 
 <h2>✨ 体验优化</h2>
 <ul>
-  <li><span class="merged-at">[05/11 11:54]</span>群相关弹窗 setState 清理 — 5 dialog 抽 autoDispose Notifier <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1593">#1593</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1465">#1465</a>) <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[05/29 21:44]</span>改派记录导出改走生成 SDK <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2603">#2603</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2592">#2592</a>) <span class="author">— 梁晨</span></li>
 </ul>
 
 <h2>🔧 其他（chore / docs / test / ...）</h2>
 <ul>
-  <li><span class="merged-at">[05/11 12:04]</span>docs(observability #1575 #1572): SLS 写法规范 + catch-all 告警规则交付物 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1608">#1608</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1575">#1575</a>) <span class="author">— 张拓</span></li>
+  <li><span class="merged-at">[05/29 17:46]</span>docs(release): archive 2026052902 notes <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2596">#2596</a> <span class="author">— 张拓</span></li>
 </ul>
 
 
 <hr class="ref-divider">
 
 <div class="foot">
-上一次发版时间：<span class="bump-time">05/11 10:59</span>（基线 commit：<code>chore(release): bump to 26.05.11+2026051101 + 归档 .2026051101 release notes (#1621)</code>）<br>
+上一次发版时间：<span class="bump-time">05/29 17:38</span>（基线 commit：<code>chore(release): prepare 2026052902 (#2594)</code>）<br>
 PR 归属版本由 <code>pubspec.yaml</code> 的 <code>version:</code> 行 git 历史判定 —— bump commit 的 committedAt 是分割线。<br>
 由 <code>tool/generate_release_preview.dart</code> 自动提取；重新跑脚本后刷新页面即拿最新。<br>
 issue 链接基于 PetWebOrg/flutter-suiyin 仓。

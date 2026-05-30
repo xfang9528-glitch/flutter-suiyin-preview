@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
-<!-- CURRENT_BUILD:2026052902 -->
+<!-- CURRENT_BUILD:2026053001 -->
 <title>下一版发版预览 · flutter-suiyin</title>
 <style>
 body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", sans-serif; max-width: 880px; margin: 32px auto; padding: 0 24px; color: #1f2328; line-height: 1.7; background: #fafbfc; }
@@ -41,7 +41,8 @@ a:hover { text-decoration: underline; }
 <label>查看历史预览：</label>
 <select id="version-switcher-select" onchange="var v=this.value; if(v) location.href = v; else location.href = './';">
 <!-- VERSION_SWITCHER_OPTIONS_START -->
-<option value="">📦 2026053001 发版预览</option>
+<option value="">📦 2026053002 发版预览</option>
+<option value="2026053001.html">🗂 2026053001</option>
 <option value="2026052902.html">🗂 2026052902</option>
 <option value="2026052901.html">🗂 2026052901</option>
 <option value="2026052802.html">🗂 2026052802</option>
@@ -99,32 +100,21 @@ a:hover { text-decoration: underline; }
   }
 })();
 </script>
-<h1>📦 2026053001 发版预览</h1>
+<h1>📦 2026053002 发版预览</h1>
 <div class="meta">
-当前版本：<code>2026052902</code>（发版时间：<span class="bump-time">05/29 17:38</span>），下一版（预览）：<code>2026053001</code><br>
-生成时间：2026-05-30 10:38:18 · 重新跑脚本后刷新页面即拿最新
+当前版本：<code>2026053001</code>（发版时间：<span class="bump-time">05/30 10:51</span>），下一版（预览）：<code>2026053002</code><br>
+生成时间：2026-05-30 16:59:52 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
-<h3>🆕 新功能</h3>
-<ul>
-  <li>超管在通讯录页新增「改派记录」入口，可查看客户跨批次的改派明细，支持按修改人 / 归属人 / 时间 / 好友多维筛选，勾选后按批次批量撤回改派，还能把当前筛选结果一键导出成 Excel 表格 — 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2597">#2597</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2565">#2565</a>)</li>
-  <li>艺星超管在通讯录页新增「归属改派」入口：圈选一批客户后统一指定专属销售，一次性批量设置好友归属 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2574">#2574</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2541">#2541</a>)</li>
-</ul>
-<h3>✨ 体验优化</h3>
-<ul>
-  <li>客户资料栏「第一需求」字段优化：有 AI 分析结果时显示蓝字可点（点开看历史对话），没有 AI 结果但销售手动填过时改为显示填入的内容，都为空则显示「—」；同时移除了「医美史(AI)」一行 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2602">#2602</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2591">#2591</a>)</li>
-</ul>
+<div class="notice">本期暂无用户感知更新 —— 上一版 2026053001 于 05/30 10:51 发布后，新一期仅合入 1 个发版归档 PR（无用户可见改动）。后续有功能 / 修复合入 main 后，此处会在下次刷新时自动更新。</div>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">05/29 17:38 上次发版后，合入 main 的全部 <strong>6</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">05/30 10:51 上次发版后，合入 main 的全部 <strong>1</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
-  <li><span class="merged-at">[05/29 21:48]</span>客户信息栏第一需求 AI 优先 / 否则回退填入值 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2602">#2602</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2591">#2591</a>) <span class="author">— 王梓先</span></li>
-  <li><span class="merged-at">[05/29 21:25]</span>batch-exclusive 改派记录列表 + 多维筛选 + 批量回撤 + 导出 Excel <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2597">#2597</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2565">#2565</a>) <span class="author">— 梁晨</span></li>
-  <li><span class="merged-at">[05/29 18:50]</span>手机端版本检测改读 CDN 静态 JSON <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2600">#2600</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2583">#2583</a>) <span class="author">— 王梓先</span></li>
-  <li><span class="merged-at">[05/29 18:08]</span>好友归属（专属销售）批量设置 PC 端（艺星超管） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2574">#2574</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2541">#2541</a>) <span class="author">— 王争</span></li>
+  <li class="empty">无</li>
 </ul>
 
 <h2>🐞 问题修复</h2>
@@ -134,19 +124,19 @@ a:hover { text-decoration: underline; }
 
 <h2>✨ 体验优化</h2>
 <ul>
-  <li><span class="merged-at">[05/29 21:44]</span>改派记录导出改走生成 SDK <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2603">#2603</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2592">#2592</a>) <span class="author">— 梁晨</span></li>
+  <li class="empty">无</li>
 </ul>
 
 <h2>🔧 其他（chore / docs / test / ...）</h2>
 <ul>
-  <li><span class="merged-at">[05/29 17:46]</span>docs(release): archive 2026052902 notes <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2596">#2596</a> <span class="author">— 张拓</span></li>
+  <li><span class="merged-at">[05/30 11:00]</span>docs(release): archive 2026053001 notes <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2608">#2608</a> <span class="author">— 张拓</span></li>
 </ul>
 
 
 <hr class="ref-divider">
 
 <div class="foot">
-上一次发版时间：<span class="bump-time">05/29 17:38</span>（基线 commit：<code>chore(release): prepare 2026052902 (#2594)</code>）<br>
+上一次发版时间：<span class="bump-time">05/30 10:51</span>（基线 commit：<code>chore(release): prepare 2026053001 (#2607)</code>）<br>
 PR 归属版本由 <code>pubspec.yaml</code> 的 <code>version:</code> 行 git 历史判定 —— bump commit 的 committedAt 是分割线。<br>
 由 <code>tool/generate_release_preview.dart</code> 自动提取；重新跑脚本后刷新页面即拿最新。<br>
 issue 链接基于 PetWebOrg/flutter-suiyin 仓。

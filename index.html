@@ -106,25 +106,24 @@ a:hover { text-decoration: underline; }
 <h1>📦 2026060202 发版预览</h1>
 <div class="meta">
 当前版本：<code>2026060201</code>（发版时间：<span class="bump-time">06/02 11:57</span>），下一版（预览）：<code>2026060202</code><br>
-生成时间：2026-06-02 21:58:37 · 重新跑脚本后刷新页面即拿最新
+生成时间：2026-06-02 23:07:23 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
-
 <h3>🆕 新功能</h3>
 <ul>
-  <li>手机端聊天里点「+」新增「资料库」入口，可以挑选公众号、视频号、小程序、直播、笔记、文件等内容直接发给对方（跟电脑端一致）。 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2701">#2701</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2695">#2695</a>)</li>
-  <li>手机端新增「朋友圈」：可以刷看好友动态（图文 / 视频）、点赞、评论、进详情页，跟微信朋友圈一样。 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2708">#2708</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2689">#2689</a>)</li>
-  <li>现在能正常接收并显示「微信团队」推送的消息（安全提醒、登录通知等），带专属头像。 — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2704">#2704</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2687">#2687</a>)</li>
-  <li>（艺星）电脑端客户列表的漏斗筛选条件全面补齐，跟设计稿一致。 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2709">#2709</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2670">#2670</a>)</li>
+  <li>聊天输入框「+」菜单新增「资料库」，可以浏览并发送公众号、视频号、小程序、直播、笔记、文件等内容，跟 PC 端一致 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2701">#2701</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2695">#2695</a>)</li>
+  <li>手机端新增「朋友圈」：可以刷朋友圈动态、点进单条看详情 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2708">#2708</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2689">#2689</a>)</li>
+  <li>（艺星）PC 端通讯录和聊天的筛选条件全面对齐最新设计：新增「到院状态」「仅看未回复」「接待中销售」等维度，等级、第一需求改用 AI 自动判定 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2709">#2709</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2670">#2670</a>)</li>
+  <li>现在能正常显示微信「团队通知」类型的消息 — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2704">#2704</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2687">#2687</a>)</li>
 </ul>
 
 <h3>🐞 问题修复</h3>
 <ul>
-  <li>给微信好友改备注时，现在能精确写回对应人设名下，不会串到别的账号。 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2703">#2703</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2648">#2648</a>)</li>
-  <li>发送较大的视频时，压缩后仍超出大小限制的，以前会直接发不出去，现在会自动改用其他方式上传，确保能发送成功。 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2684">#2684</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2654">#2654</a>)</li>
-  <li>部分手机拍摄的视频（HEVC 格式）以前在电脑端打不开或黑屏，现在点「修复视频」会自动转换后正常播放。 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2694">#2694</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2514">#2514</a>)</li>
-  <li>电脑端「回访」修复：回访详情按日期筛选、逾期状态判断更准确，点客户能正确跳转到通讯录。 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2672">#2672</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2440">#2440</a>)</li>
+  <li>给客户修改微信备注时，现在能按对应人设（账号）准确保存，不会串到其他人设 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2703">#2703</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2648">#2648</a>)</li>
+  <li>发送 iPhone 拍摄的视频（HEVC 格式）时会自动转码，不再发不出去；打开应用商店跳转时偶发卡住的问题也已修复 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2694">#2694</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2514">#2514</a>)</li>
+  <li>发送较大的视频时，压缩后仍超过限制的会自动改用其他通道发送，不再直接提示发送失败 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2684">#2684</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2654">#2654</a>)</li>
+  <li>PC 端回访修复：详情页能按日期正确筛选、逾期状态判断准确、可正常跳转到通讯录 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2672">#2672</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2440">#2440</a>)</li>
 </ul>
 
 <hr class="ref-divider">

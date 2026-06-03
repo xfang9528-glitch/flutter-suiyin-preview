@@ -107,26 +107,38 @@ a:hover { text-decoration: underline; }
 <h1>📦 2026060302 发版预览</h1>
 <div class="meta">
 当前版本：<code>2026060301</code>（发版时间：<span class="bump-time">06/03 13:50</span>），下一版（预览）：<code>2026060302</code><br>
-生成时间：2026-06-03 14:13:41 · 重新跑脚本后刷新页面即拿最新
+生成时间：2026-06-03 16:57:42 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
 <h3>🆕 新功能</h3>
 <ul>
-  <li>在客户详情页点「朋友圈」入口，就能看到这个客户发的朋友圈：按日期排好的时间线，图片、九宫格、视频、链接卡片都能正常显示；点开某一条还能看详情、点赞、评论、回复，跟微信朋友圈一样 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2728">#2728</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2693">#2693</a>)</li>
+  <li>移动端新增「我的朋友圈」：手机上也能查看自己发布的朋友圈了，按日期分组浏览，点开每条能看到收到的点赞和评论，不想保留的还能直接删除 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2729">#2729</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2692">#2692</a>)</li>
+  <li>移动端新增「客户朋友圈」：在客户详情页点「朋友圈」，就能在手机上查看这位客户发布的朋友圈动态，支持点赞、评论、回复 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2728">#2728</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2693">#2693</a>)</li>
+</ul>
+<h3>✨ 体验优化</h3>
+<ul>
+  <li>手机端通讯录页面整体改版，对齐最新设计稿：头像更大、列表更清爽（去掉行间分隔线、加大间距），筛选入口移到顶栏，看着更舒服 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2741">#2741</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2726">#2726</a>)</li>
+</ul>
+<h3>🐞 问题修复</h3>
+<ul>
+  <li>艺星「选择好友」弹窗筛选客户时，偶尔因网络中断导致名单加载失败，现在会自动重试恢复 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2743">#2743</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2731">#2731</a>)</li>
 </ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">06/03 13:50 上次发版后，合入 main 的全部 <strong>2</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">06/03 13:50 上次发版后，合入 main 的全部 <strong>8</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
+  <li><span class="merged-at">[06/03 15:15]</span>手机端通讯录页按企业分岛对齐设计稿 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2741">#2741</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2726">#2726</a>) <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[06/03 14:33]</span>移动端「我的朋友圈」（列表+详情+删除） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2729">#2729</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2692">#2692</a>) <span class="author">— 王争</span></li>
   <li><span class="merged-at">[06/03 13:58]</span>客户朋友圈（移动端） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2728">#2728</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2693">#2693</a>) <span class="author">— 王争</span></li>
 </ul>
 
 <h2>🐞 问题修复</h2>
 <ul>
-  <li class="empty">无</li>
+  <li><span class="merged-at">[06/03 15:30]</span>艺星选人弹窗 Step1 search-list 连接中断自动重试 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2743">#2743</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2731">#2731</a>) <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[06/03 15:04]</span>bash 3.2 多字节字符变量插值崩溃 → 自动 exec Homebrew bash ≥ 4 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2739">#2739</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2718">#2718</a>) <span class="author">— 王争</span></li>
 </ul>
 
 <h2>✨ 体验优化</h2>
@@ -136,6 +148,8 @@ a:hover { text-decoration: underline; }
 
 <h2>🔧 其他（chore / docs / test / ...）</h2>
 <ul>
+  <li><span class="merged-at">[06/03 16:48]</span>test(moments-mobile): 修裸 MaterialApp → noSplashTheme，解 full gate 阻塞 (#2746 #2747) <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2748">#2748</a> <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[06/03 15:24]</span>diag(chat): IME composing 状态 SLS 诊断，定位偶发打不出空格 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2740">#2740</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2624">#2624</a>) <span class="author">— 王梓先</span></li>
   <li><span class="merged-at">[06/03 13:58]</span>docs(release): archive 2026060301 notes <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2733">#2733</a> <span class="author">— 张拓</span></li>
 </ul>
 

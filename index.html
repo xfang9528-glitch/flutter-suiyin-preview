@@ -110,28 +110,27 @@ a:hover { text-decoration: underline; }
 <h1>📦 2026060502 发版预览</h1>
 <div class="meta">
 当前版本：<code>2026060501</code>（发版时间：<span class="bump-time">06/05 17:51</span>），下一版（预览）：<code>2026060502</code><br>
-生成时间：2026-06-05 22:16:50 · 重新跑脚本后刷新页面即拿最新
+生成时间：2026-06-05 23:03:14 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
-
 <h3>🆕 新功能</h3>
 <ul>
-  <li>手机端现在也能发起群聊：聊天列表右上角「+」→「发起群聊」，先选一个群主人设，再勾选要拉进群的联系人（至少 2 人），跟微信建群一样两步搞定 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2822">#2822</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2637">#2637</a>)</li>
-  <li>电脑端客户详情的「购买记录」新增「手动添加」：可一次批量录入多条购买记录（商品、单价、数量、销售、订单号、标签、分佣等）；还能勾选多条记录「一键反馈」批量提交（目前仅瑞熙等企业可见） — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2881">#2881</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2446">#2446</a>)</li>
+  <li>手机端现在可以发起群聊了：先选一个群主身份，再搜索、勾选要拉进群的好友，确认即可建群（跟微信新建群聊的流程一致）— 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2822">#2822</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2637">#2637</a>)</li>
+  <li>电脑端客户详情的购买记录里新增「手动添加」：可一次批量录入多条购买记录，还能勾选多条记录一键批量反馈 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2881">#2881</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2446">#2446</a>)</li>
 </ul>
-
 <h3>🐞 问题修复</h3>
 <ul>
-  <li>修复手机端收到微信新消息后，聊天列表不提示、消息摘要不更新的问题（以前要重开应用才看得到新消息）；同时修复进入某个会话再退出后，后续新消息偶尔不再计未读红点的问题 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2887">#2887</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2872">#2872</a>)</li>
-  <li>修复安卓「碎银私域」从旧版本升级时报「安装失败(-7)／签名不同」、必须先卸载才能装的问题（本次过渡版仍需卸载一次，之后升级不再需要卸载） — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2886">#2886</a></li>
+  <li>修复手机端经常收不到实时消息的问题：现在微信发来新消息后，会话列表会立即提示、消息摘要会更新，底部「聊天」tab 也会显示未读消息数角标（之前这些在手机端都不刷新，只有电脑端正常）— 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2887">#2887</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2888">#2888</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2872">#2872</a>)</li>
+  <li>修复部分安卓用户从旧版本升级时提示「安装失败(-7)、与已安装应用签名不同」、必须先卸载才能安装的问题（本次过渡版仍需卸载一次，之后升级不再需要）— 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2886">#2886</a></li>
 </ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">06/05 17:51 上次发版后，合入 main 的全部 <strong>7</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">06/05 17:51 上次发版后，合入 main 的全部 <strong>8</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
+  <li><span class="merged-at">[06/05 22:25]</span>移动端底部聊天 tab 未读角标 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2888">#2888</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2872">#2872</a>) <span class="author">— 王梓先</span></li>
   <li><span class="merged-at">[06/05 19:21]</span>好友朋友圈入口行高 70px + 测试 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2882">#2882</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2827">#2827</a>) <span class="author">— 王争</span></li>
   <li><span class="merged-at">[06/05 19:19]</span>移动端发起群聊两步流程 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2822">#2822</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2637">#2637</a>) <span class="author">— 王争</span></li>
   <li><span class="merged-at">[06/05 19:03]</span>PC 购买记录手动录入 + 一键反馈 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2881">#2881</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2446">#2446</a>) <span class="author">— 王争</span></li>

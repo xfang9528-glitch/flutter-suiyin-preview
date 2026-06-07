@@ -41,7 +41,7 @@ a:hover { text-decoration: underline; }
 <label>查看历史预览：</label>
 <select id="version-switcher-select" onchange="var v=this.value; if(v) location.href = v; else location.href = './';">
 <!-- VERSION_SWITCHER_OPTIONS_START -->
-<option value="">📦 2026060701 发版预览</option>
+<option value="">📦 2026060801 发版预览</option>
 <option value="2026060501.html">🗂 2026060501</option>
 <option value="2026060402.html">🗂 2026060402</option>
 <option value="2026060401.html">🗂 2026060401</option>
@@ -107,31 +107,34 @@ a:hover { text-decoration: underline; }
   }
 })();
 </script>
-<h1>📦 2026060701 发版预览</h1>
+<h1>📦 2026060801 发版预览</h1>
 <div class="meta">
-当前版本：<code>2026060501</code>（发版时间：<span class="bump-time">06/05 17:51</span>），下一版（预览）：<code>2026060701</code><br>
-生成时间：2026-06-07 16:57:06 · 重新跑脚本后刷新页面即拿最新
+当前版本：<code>2026060501</code>（发版时间：<span class="bump-time">06/05 17:51</span>），下一版（预览）：<code>2026060801</code><br>
+生成时间：2026-06-08 03:30:45 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
 <h3>🆕 新功能</h3>
 <ul>
-  <li>手机版聊天 tab 现在会显示未读消息红点角标，一眼就能看到哪个会话有新消息（跟微信一样）— 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2888">#2888</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2872">#2872</a>)</li>
-  <li>手机版支持发起群聊：先选群主人设，再搜索勾选联系人（至少 2 人）即可确认建群，跟微信发起群聊的两步操作一致 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2822">#2822</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2637">#2637</a>)</li>
-  <li>电脑端客户的购买记录支持「手动添加」录入，还能勾选多条记录一键批量反馈（瑞熙等企业）— 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2881">#2881</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2446">#2446</a>)</li>
+  <li>销售端新增「语音变声」开关：在设置面板的「变声器开关」里集中管理每个人设，绑定了变声模型的人设发语音可走变声、关掉则走原声 — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2885">#2885</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2908">#2908</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2834">#2834</a>)</li>
+  <li>手机端底部「聊天」tab 现在会显示未读消息数角标，跟微信一样一眼看到有几条没读 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2888">#2888</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2872">#2872</a>)</li>
+  <li>手机端可以发起群聊了：先选群主人设、再多选联系人确认建群（不足 2 人不能建，选到跨人设的联系人会先弹确认） — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2822">#2822</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2637">#2637</a>)</li>
+  <li>PC 客户详情新增「手动添加购买记录」：可批量录入商品、单价、数量、销售、订单号等，并能勾选多条一键提交反馈 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2881">#2881</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2446">#2446</a>)</li>
 </ul>
 <h3>🐞 问题修复</h3>
 <ul>
-  <li>手机版有时收不到实时新消息、要退出会话重进才看到的问题已修复 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2887">#2887</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2872">#2872</a>)</li>
-  <li>安卓版打开应用卡在白屏、启动不起来的问题已修复 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2891">#2891</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2890">#2890</a>)</li>
-  <li>安卓版安装时报错（-7）装不上的问题已修复 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2886">#2886</a></li>
+  <li>修复安卓版启动卡在白屏、打不开的问题 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2891">#2891</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2890">#2890</a>)</li>
+  <li>修复手机端有时收不到实时新消息的问题：之前在较慢的手机上冷启动偶尔登录不上，导致微信来新消息后手机端不弹提示、会话列表摘要和红点也不更新，要重开应用才看到 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2887">#2887</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2872">#2872</a>)</li>
+  <li>修复安卓版安装失败（报错 -7）的问题 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2886">#2886</a></li>
 </ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">06/05 17:51 上次发版后，合入 main 的全部 <strong>14</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">06/05 17:51 上次发版后，合入 main 的全部 <strong>17</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
+  <li><span class="merged-at">[06/08 00:13]</span>变声开关移至设置面板「变声器开关」tab（对齐设计稿，#2907） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2908">#2908</a> <span class="author">— 陈宣宇</span></li>
+  <li><span class="merged-at">[06/07 22:05]</span>销售端按人设变声开关 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2885">#2885</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2834">#2834</a>) <span class="author">— 陈宣宇</span></li>
   <li><span class="merged-at">[06/05 22:25]</span>移动端底部聊天 tab 未读角标 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2888">#2888</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2872">#2872</a>) <span class="author">— 王梓先</span></li>
   <li><span class="merged-at">[06/05 19:21]</span>好友朋友圈入口行高 70px + 测试 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2882">#2882</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2827">#2827</a>) <span class="author">— 王争</span></li>
   <li><span class="merged-at">[06/05 19:19]</span>移动端发起群聊两步流程 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2822">#2822</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2637">#2637</a>) <span class="author">— 王争</span></li>
@@ -140,6 +143,7 @@ a:hover { text-decoration: underline; }
 
 <h2>🐞 问题修复</h2>
 <ul>
+  <li><span class="merged-at">[06/07 18:01]</span>close #2898 classify long frame gaps <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2901">#2901</a> <span class="author">— 张拓</span></li>
   <li><span class="merged-at">[06/07 16:40]</span>close #2899 backfill new friend unread <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2903">#2903</a> <span class="author">— 张拓</span></li>
   <li><span class="merged-at">[06/07 16:37]</span>dedupe outgoing publish snapshots <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2902">#2902</a> <span class="author">— 张拓</span></li>
   <li><span class="merged-at">[06/07 15:51]</span>close #2897 dedupe outgoing DB watcher <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2900">#2900</a> <span class="author">— 张拓</span></li>

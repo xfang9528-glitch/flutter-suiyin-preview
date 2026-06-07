@@ -41,7 +41,7 @@ a:hover { text-decoration: underline; }
 <label>查看历史预览：</label>
 <select id="version-switcher-select" onchange="var v=this.value; if(v) location.href = v; else location.href = './';">
 <!-- VERSION_SWITCHER_OPTIONS_START -->
-<option value="">📦 2026060601 发版预览</option>
+<option value="">📦 2026060701 发版预览</option>
 <option value="2026060501.html">🗂 2026060501</option>
 <option value="2026060402.html">🗂 2026060402</option>
 <option value="2026060401.html">🗂 2026060401</option>
@@ -107,24 +107,23 @@ a:hover { text-decoration: underline; }
   }
 })();
 </script>
-<h1>📦 2026060601 发版预览</h1>
+<h1>📦 2026060701 发版预览</h1>
 <div class="meta">
-当前版本：<code>2026060501</code>（发版时间：<span class="bump-time">06/05 17:51</span>），下一版（预览）：<code>2026060601</code><br>
-生成时间：2026-06-06 23:01:48 · 重新跑脚本后刷新页面即拿最新
+当前版本：<code>2026060501</code>（发版时间：<span class="bump-time">06/05 17:51</span>），下一版（预览）：<code>2026060701</code><br>
+生成时间：2026-06-07 10:30:24 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
 <h3>🆕 新功能</h3>
 <ul>
-  <li>手机端底部「聊天」tab 现在会显示未读消息数角标，收到新消息实时刷新（跟微信一样）— 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2888">#2888</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2872">#2872</a>)</li>
-  <li>手机端可以发起群聊了：先选群主人设，再搜索、多选联系人建群（跟微信发起群聊的两步流程一致）— 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2822">#2822</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2637">#2637</a>)</li>
-  <li>PC 端客户详情新增「手动添加购买记录」，支持批量录入并一键反馈（目前对部分企业开放）— 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2881">#2881</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2446">#2446</a>)</li>
+<li>手机端发起群聊改成两步：先选群主身份，再搜索勾选联系人（至少 2 人）确认建群，建群更清晰顺手 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2822">#2822</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2637">#2637</a>)</li>
+<li>电脑端客户详情页新增「手动添加购买记录」，可一次批量录入多条订单信息，并支持勾选多条记录一键提交反馈（部分企业开放）— 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2881">#2881</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2446">#2446</a>)</li>
 </ul>
 <h3>🐞 问题修复</h3>
 <ul>
-  <li>手机端正式版启动时卡在白屏、打不开的问题已修复 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2891">#2891</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2890">#2890</a>)</li>
-  <li>手机端微信收到新消息后，会话列表不提示、消息摘要不更新（PC 正常）的问题已修复，现在能实时收到 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2887">#2887</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2872">#2872</a>)</li>
-  <li>安卓安装时提示安装失败（-7）的问题已修复 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2886">#2886</a></li>
+<li>安卓正式版启动时卡在白屏、打不开的问题已修复 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2891">#2891</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2890">#2890</a>)</li>
+<li>手机端收到新消息后没有任何提醒的问题已修复：现在能实时收到消息、会话列表实时刷新，底部「聊天」入口也会显示未读数字角标（跟微信一样）— 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2888">#2888</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2887">#2887</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2872">#2872</a>)</li>
+<li>安卓正式版安装失败的问题已修复 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2886">#2886</a></li>
 </ul>
 
 <hr class="ref-divider">

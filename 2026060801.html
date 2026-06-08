@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
-<!-- CURRENT_BUILD:2026053101 -->
+<!-- CURRENT_BUILD:2026060501 -->
 <title>下一版发版预览 · flutter-suiyin</title>
 <style>
 body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", sans-serif; max-width: 880px; margin: 32px auto; padding: 0 24px; color: #1f2328; line-height: 1.7; background: #fafbfc; }
@@ -108,70 +108,70 @@ a:hover { text-decoration: underline; }
   }
 })();
 </script>
-<h1>📦 2026060101 发版预览</h1>
+<h1>📦 2026060801 发版预览</h1>
 <div class="meta">
-当前版本：<code>2026053101</code>（发版时间：<span class="bump-time">05/31 22:11</span>），下一版（预览）：<code>2026060101</code><br>
-生成时间：2026-06-01 16:57:55 · 重新跑脚本后刷新页面即拿最新
+当前版本：<code>2026060501</code>（发版时间：<span class="bump-time">06/05 17:51</span>），下一版（预览）：<code>2026060801</code><br>
+生成时间：2026-06-08 10:31:16 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
 <h3>🆕 新功能</h3>
 <ul>
-  <li>手机 App 里可以浏览资料库的文件列表了，点 PDF 直接在应用内预览，其他类型文件用系统关联应用打开 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2651">#2651</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2586">#2586</a>)</li>
-  <li>PC 端聊天可以发语音消息了：点输入框工具栏的麦克风，或按住右 Alt 键说话，松开即发，跟微信桌面端一样 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2639">#2639</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2539">#2539</a>)</li>
-  <li>订单详情里的快递单号可以点击了，点一下直接弹出物流轨迹 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2638">#2638</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2633">#2633</a>)</li>
-  <li>通讯录顶栏的客户昵称支持双击就地改名了，跟聊天页一致 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2621">#2621</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2615">#2615</a>)</li>
-  <li>（艺星）PC 端「创建群发 / 资源改派」共用的「选择用户」弹窗，筛选维度对齐了最新原型：新增多个筛选项、部分维度改名、结果列表统一展示，并支持分页和批量排除 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2645">#2645</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2614">#2614</a>)</li>
-</ul>
-
-<h3>✨ 体验优化</h3>
-<ul>
-  <li>（艺星）编辑客户资料时，性别为空的默认预选「女」，少点一步 — 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2640">#2640</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2632">#2632</a>)</li>
+  <li>销售端现在可以按人设单独开关「变声器」，开关统一收进设置面板的「变声器开关」标签页 — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2885">#2885</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2908">#2908</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2834">#2834</a>)</li>
+  <li>移动端底部「聊天」标签现在会显示未读消息数角标，跟微信一样一眼看到有没有新消息 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2888">#2888</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2872">#2872</a>)</li>
+  <li>移动端发起群聊改成两步流程（先勾选成员、再创建群），操作跟微信一致 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2822">#2822</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2637">#2637</a>)</li>
+  <li>PC 端支持手动录入客户的购买记录，并可一键反馈 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2881">#2881</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2446">#2446</a>)</li>
 </ul>
 
 <h3>🐞 问题修复</h3>
 <ul>
-  <li>发朋友圈选人设时，刚在后台上线的人设号现在立刻就能选了（以前要重启客户端才会刷新）— 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2627">#2627</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2593">#2593</a>)</li>
-  <li>切换人设时，之前往上翻看累积的几十上百条聊天历史会突然清空消失的问题已修复 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2622">#2622</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2492">#2492</a>)</li>
+  <li>修复部分手机启动时卡在白屏、打不开应用的问题 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2891">#2891</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2890">#2890</a>)</li>
+  <li>移动端现在能实时收到新消息：修复登录冷启动时偶发收不到消息、以及退出会话后新消息不计未读红点的问题 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2887">#2887</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2872">#2872</a>)</li>
+  <li>修复安卓安装时失败（报错 -7）装不上的问题 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2886">#2886</a></li>
 </ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">05/31 22:11 上次发版后，合入 main 的全部 <strong>13</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">06/05 17:51 上次发版后，合入 main 的全部 <strong>17</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
-  <li><span class="merged-at">[06/01 16:44]</span>资料库文件列表 + PDF 预览 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2651">#2651</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2586">#2586</a>) <span class="author">— 陈聪</span></li>
-  <li><span class="merged-at">[06/01 16:20]</span>艺星 PC 选择用户筛选维度对齐原型 + 结果表统一 + 分页/直接完成 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2645">#2645</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2614">#2614</a>) <span class="author">— 王争</span></li>
-  <li><span class="merged-at">[06/01 16:18]</span>艺星客户资料性别编辑空值默认预选女 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2640">#2640</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2632">#2632</a>) <span class="author">— 梁晨</span></li>
-  <li><span class="merged-at">[06/01 15:29]</span>快递单号可点击弹出物流轨迹 #2633 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2638">#2638</a> <span class="author">— 王争</span></li>
-  <li><span class="merged-at">[06/01 15:24]</span>PC 端聊天发送语音消息（点击麦克风 / 按住右 Alt） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2639">#2639</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2539">#2539</a>) <span class="author">— 王梓先</span></li>
-  <li><span class="merged-at">[06/01 11:26]</span>通讯录顶栏客户昵称支持双击就地改名（对齐聊天 tab） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2621">#2621</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2615">#2615</a>) <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[06/08 00:13]</span>变声开关移至设置面板「变声器开关」tab（对齐设计稿，#2907） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2908">#2908</a> <span class="author">— 陈宣宇</span></li>
+  <li><span class="merged-at">[06/07 22:05]</span>销售端按人设变声开关 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2885">#2885</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2834">#2834</a>) <span class="author">— 陈宣宇</span></li>
+  <li><span class="merged-at">[06/05 22:25]</span>移动端底部聊天 tab 未读角标 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2888">#2888</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2872">#2872</a>) <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[06/05 19:21]</span>好友朋友圈入口行高 70px + 测试 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2882">#2882</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2827">#2827</a>) <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[06/05 19:19]</span>移动端发起群聊两步流程 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2822">#2822</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2637">#2637</a>) <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[06/05 19:03]</span>PC 购买记录手动录入 + 一键反馈 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2881">#2881</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2446">#2446</a>) <span class="author">— 王争</span></li>
 </ul>
 
 <h2>🐞 问题修复</h2>
 <ul>
-  <li><span class="merged-at">[06/01 15:04]</span>商品选择器切店铺竞态守卫（前端防御，主因在后端 suiyin-go#1148） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2626">#2626</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2620">#2620</a>) <span class="author">— 王争</span></li>
-  <li><span class="merged-at">[06/01 14:47]</span>改派明细导出文件名带时间戳，避免多次导出互相覆盖 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2630">#2630</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2629">#2629</a>) <span class="author">— 梁晨</span></li>
-  <li><span class="merged-at">[06/01 13:59]</span>选人设面板每次打开重拉在线状态 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2627">#2627</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2593">#2593</a>) <span class="author">— 王争</span></li>
-  <li><span class="merged-at">[06/01 11:28]</span>persona controller 抖动→null 不再清空会话历史 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2622">#2622</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2492">#2492</a>) <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[06/07 18:01]</span>close #2898 classify long frame gaps <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2901">#2901</a> <span class="author">— 张拓</span></li>
+  <li><span class="merged-at">[06/07 16:40]</span>close #2899 backfill new friend unread <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2903">#2903</a> <span class="author">— 张拓</span></li>
+  <li><span class="merged-at">[06/07 16:37]</span>dedupe outgoing publish snapshots <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2902">#2902</a> <span class="author">— 张拓</span></li>
+  <li><span class="merged-at">[06/07 15:51]</span>close #2897 dedupe outgoing DB watcher <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2900">#2900</a> <span class="author">— 张拓</span></li>
+  <li><span class="merged-at">[06/07 13:48]</span>close #2893 split long_frame observability <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2894">#2894</a> <span class="author">— 张拓</span></li>
+  <li><span class="merged-at">[06/05 23:30]</span>release 关 R8 混淆，修启动卡白屏 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2891">#2891</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2890">#2890</a>) <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[06/05 22:11]</span>移动端实时收消息 — IM 登录竞态 + 退出会话清 selection <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2887">#2887</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2872">#2872</a>) <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[06/05 22:10]</span>release 复用老项目正式签名 key.jks，修安装失败(-7) <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2886">#2886</a> <span class="author">— 陈聪</span></li>
 </ul>
 
 <h2>✨ 体验优化</h2>
 <ul>
-  <li><span class="merged-at">[06/01 14:50]</span>GroupPersonaController reload 期间不要把 selected 抖到 null <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2634">#2634</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2623">#2623</a>) <span class="author">— 王梓先</span></li>
+  <li class="empty">无</li>
 </ul>
 
 <h2>🔧 其他（chore / docs / test / ...）</h2>
 <ul>
-  <li><span class="merged-at">[06/01 07:15]</span>chore(infra #2557): 重打 windows seed + 修 upload_seed.ps1 bsdtar/排序根因 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2590">#2590</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2557">#2557</a>) <span class="author">— 陈聪</span></li>
-  <li><span class="merged-at">[05/31 22:20]</span>docs(release): archive 2026053101 notes <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2617">#2617</a> <span class="author">— 张拓</span></li>
+  <li><span class="merged-at">[06/07 16:46]</span>revert: withdraw #2903 new friend unread backfill <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2904">#2904</a> <span class="author">— 张拓</span></li>
+  <li><span class="merged-at">[06/05 18:06]</span>docs(release): archive 2026060501 notes <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2880">#2880</a> <span class="author">— 张拓</span></li>
+  <li><span class="merged-at">[06/05 17:54]</span>chore(infra): refresh Windows seed cache <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2879">#2879</a> <span class="author">— 张拓</span></li>
 </ul>
 
 
 <hr class="ref-divider">
 
 <div class="foot">
-上一次发版时间：<span class="bump-time">05/31 22:11</span>（基线 commit：<code>chore(release): prepare 2026053101 (#2616)</code>）<br>
+上一次发版时间：<span class="bump-time">06/05 17:51</span>（基线 commit：<code>chore(release): bump to 2026060501</code>）<br>
 PR 归属版本由 <code>pubspec.yaml</code> 的 <code>version:</code> 行 git 历史判定 —— bump commit 的 committedAt 是分割线。<br>
 由 <code>tool/generate_release_preview.dart</code> 自动提取；重新跑脚本后刷新页面即拿最新。<br>
 issue 链接基于 PetWebOrg/flutter-suiyin 仓。

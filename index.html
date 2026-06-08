@@ -111,28 +111,55 @@ a:hover { text-decoration: underline; }
 <h1>📦 2026060802 发版预览</h1>
 <div class="meta">
 当前版本：<code>2026060801</code>（发版时间：<span class="bump-time">06/08 10:36</span>），下一版（预览）：<code>2026060802</code><br>
-生成时间：2026-06-08 11:28:14 · 重新跑脚本后刷新页面即拿最新
+生成时间：2026-06-08 16:57:00 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
 <h3>🆕 新功能</h3>
 <ul>
-  <li>朋友圈筛选面板新增「全选 / 取消全选」按钮，可以一键勾选或清空全部账号，不用再一个个点；顶部漏斗图标也换成更清晰的样式 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2916">#2916</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2910">#2910</a>)</li>
-  <li>手机端「我的」页面点击「可接待」数字，可以打开列表查看当前账号名下全部可接待的人设号 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2909">#2909</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2564">#2564</a>)</li>
+  <li>Windows 端遇到无法直接播放的视频会自动转码后正常播放，不再弹出错误卡片 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2967">#2967</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2930">#2930</a>)</li>
+  <li>会话名称前新增「复制 / 刷新」按钮；单击标题不再误触复制名称 — 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2959">#2959</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2950">#2950</a>)</li>
+  <li>移动端新增独立「通知设置」页，可单独开关各类消息通知 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2922">#2922</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2912">#2912</a>)</li>
+  <li>移动端新增「可接待人设号」列表页，可查看和管理自己能接待的人设号 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2909">#2909</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2918">#2918</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2564">#2564</a>)</li>
+  <li>移动端新增「存储管理」页，可查看并清理应用占用的存储空间 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2918">#2918</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2911">#2911</a>)</li>
+  <li>通讯录筛选弹窗新增「专属客户」快捷筛选，「仅看未回」也改为一键开关的标签，筛选更顺手 — 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2945">#2945</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2914">#2914</a>)</li>
+  <li>朋友圈支持按账号筛选，可一键全选 / 取消全选，入口改为更清晰的漏斗图标 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2916">#2916</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2910">#2910</a>)</li>
+</ul>
+<h3>✨ 体验优化</h3>
+<ul>
+  <li>移动端聊天页顶栏改为白底深色字，视觉更清爽统一 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2966">#2966</a></li>
+  <li>客户资料的人设号信息展示优化：仅在被多个人设号添加时才显示入口，备注更简洁（无备注时直接显示客户昵称） — 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2920">#2920</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2892">#2892</a>)</li>
+</ul>
+<h3>🐞 问题修复</h3>
+<ul>
+  <li>群发任务「第二步排除」按客户最近咨询 / 成交时间筛选时，排除条件现在能正确生效 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2951">#2951</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2924">#2924</a>)</li>
+  <li>修复输入框偶发打不出空格的问题 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2947">#2947</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2624">#2624</a>)</li>
+  <li>修复 PC 端偶发收不到新消息（接收通道假死）的问题，现在会自动重连恢复，必要时给出提示 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2925">#2925</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2899">#2899</a>)</li>
+  <li>修复部分聊天图片因路径含特殊字符而显示不出来 / 丢失的问题 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2919">#2919</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2750">#2750</a>)</li>
 </ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">06/08 10:36 上次发版后，合入 main 的全部 <strong>3</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">06/08 10:36 上次发版后，合入 main 的全部 <strong>15</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
+  <li><span class="merged-at">[06/08 16:24]</span>Windows HEVC 解码失败自动触发转码，不再弹错误卡片 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2967">#2967</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2930">#2930</a>) <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[06/08 16:21]</span>会话标题栏去单击复制，名称前置「复制/刷新」功能键 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2959">#2959</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2950">#2950</a>) <span class="author">— 梁晨</span></li>
+  <li><span class="merged-at">[06/08 16:15]</span>移动端「通知设置」独立页 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2922">#2922</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2912">#2912</a>) <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[06/08 15:49]</span>移动端人设列表页 + 存储管理页（#2564 / #2911） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2918">#2918</a> <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[06/08 14:52]</span>通讯录筛选弹窗加「专属客户」快捷筛选 +「仅看未回」改 chip <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2945">#2945</a> <span class="author">— 梁晨</span></li>
+  <li><span class="merged-at">[06/08 11:45]</span>人设号区块仅多人设显示/备注去前缀/空备注回退昵称 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2920">#2920</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2892">#2892</a>) <span class="author">— 梁晨</span></li>
   <li><span class="merged-at">[06/08 11:20]</span>朋友圈按账号筛选 全选/取消全选 + 漏斗图标 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2916">#2916</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2910">#2910</a>) <span class="author">— 王争</span></li>
   <li><span class="merged-at">[06/08 10:38]</span>移动端「可接待人设号」列表页 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2909">#2909</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2564">#2564</a>) <span class="author">— 王争</span></li>
 </ul>
 
 <h2>🐞 问题修复</h2>
 <ul>
-  <li class="empty">无</li>
+  <li><span class="merged-at">[06/08 16:01]</span>移动端聊天页顶栏改为白底深色字（对齐设计稿） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2966">#2966</a> <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[06/08 15:31]</span>修正群发好友筛选第二步排除的 field 字段名 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2951">#2951</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2924">#2924</a>) <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[06/08 15:04]</span>失焦时清空残留 IME composing 区间，修复偶发打不出空格 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2947">#2947</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2624">#2624</a>) <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[06/08 14:06]</span>PC 接收通道假死三级自愈（软→硬重连→提示） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2925">#2925</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2899">#2899</a>) <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[06/08 11:47]</span>img src 撇号路径被截断致图丢失 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2919">#2919</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2750">#2750</a>) <span class="author">— 王梓先</span></li>
 </ul>
 
 <h2>✨ 体验优化</h2>
@@ -142,6 +169,7 @@ a:hover { text-decoration: underline; }
 
 <h2>🔧 其他（chore / docs / test / ...）</h2>
 <ul>
+  <li><span class="merged-at">[06/08 15:00]</span>docs(gotchas): 沉淀 #2914 踩坑 — 通讯录筛选三处同步点 + lock 构建噪音 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2949">#2949</a> <span class="author">— 梁晨</span></li>
   <li><span class="merged-at">[06/08 10:54]</span>docs(release): archive 2026060801 notes <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2917">#2917</a> <span class="author">— 张拓</span></li>
 </ul>
 

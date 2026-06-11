@@ -114,29 +114,42 @@ a:hover { text-decoration: underline; }
 <h1>📦 2026061102 发版预览</h1>
 <div class="meta">
 当前版本：<code>2026061101</code>（发版时间：<span class="bump-time">06/11 11:09</span>），下一版（预览）：<code>2026061102</code><br>
-生成时间：2026-06-11 14:46:31 · 重新跑脚本后刷新页面即拿最新
+生成时间：2026-06-11 16:58:10 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
 <h3>🆕 新功能</h3>
 <ul>
-  <li>好友信息页新增「充值记录」入口，点进去能看到这位客户的全部充值明细：金额、是否赠送、支付方式、店铺、时间和充值单号，支持下拉刷新和上拉加载更多 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3117">#3117</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2936">#2936</a>)</li>
-  <li>「设置」→「账号注销」现在会先进入注销须知页，清楚说明注销后聊天记录、客户关系、业务数据会被删除以及 14 天冷静期，确认后才会注销（满足 iOS 上架合规要求） — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3103">#3103</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2948">#2948</a>)</li>
-  <li>电脑端朋友圈评论/回复输入框旁新增「AI」按钮，点一下会按预设方向生成几条评论候选，选中哪条就直接以当前人设发出去，不合适还能「换一批」 — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3124">#3124</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3090">#3090</a>)</li>
-  <li>手机端编辑「客户标签」时，可以像电脑端一样新增标签组（如「+ 添加车辆」）和删除整组标签 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3118">#3118</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3112">#3112</a>)</li>
-  <li>移动端好友信息页和「关于碎银」页新增投诉/意见反馈入口，可填写理由和内容后提交 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3102">#3102</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2928">#2928</a>)</li>
+  <li>群发管理新增按标题搜索，顶部操作栏也重新排布，历史群发记录更好找 — 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3163">#3163</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3144">#3144</a>)</li>
+  <li>聊天里收到的订单消息，现在能点物流单号直接查看快递进度 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3107">#3107</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3078">#3078</a>)</li>
+  <li>移动端「快速备注」改为整页展示，并新增「备注 / 回访」双 Tab，记录和回访一处搞定 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3158">#3158</a></li>
+  <li>移动端客户标签的来源信息支持双击查看、编辑态直接修改（与电脑端一致） — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3147">#3147</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3121">#3121</a>)</li>
+  <li>移动端新增「充值记录」入口和列表页，可在手机上查看客户充值明细 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3117">#3117</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2936">#2936</a>)</li>
+  <li>移动端新增「账号注销须知」页面 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3103">#3103</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2948">#2948</a>)</li>
+  <li>朋友圈评论 / 回复时新增 AI 建议按钮（电脑端），点选建议即可直接发出 — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3124">#3124</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3090">#3090</a>)</li>
+  <li>手机端动态标签新增加号按钮，并支持删除整组标签 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3118">#3118</a></li>
+  <li>移动端好友信息页和「关于碎银」页新增投诉入口 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3102">#3102</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2928">#2928</a>)</li>
 </ul>
 <h3>🐞 问题修复</h3>
 <ul>
-  <li>修复电脑端折扣券显示错误：原本会显示成「¥8折」，现在正确显示「8折」（满减券仍显示金额） — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3101">#3101</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3075">#3075</a>)</li>
-  <li>修复「我的朋友圈」回复时发错账号的问题：多账号发布的圈子里回复评论，现在会固定以「被回复评论所属的人设」发送，不会因为切换下拉而串到别的账号 — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3135">#3135</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3125">#3125</a>)</li>
+  <li>移动端从通讯录进入的聊天页 / 只读页，顶栏补回了「...」更多按钮 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3154">#3154</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3070">#3070</a>)</li>
+  <li>修复全量同步时，新分配给你的客户可能被误删消失的问题 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3146">#3146</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3127">#3127</a>)</li>
+  <li>资料库上传视频现在会自动压缩，超过 10MB 的大视频不再被拒绝上传 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3142">#3142</a></li>
+  <li>朋友圈回复评论时，账号会自动锁定为被回复人对应的人设，选择器也换成更清晰的锁定徽章 — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3135">#3135</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3125">#3125</a>)、<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3137">#3137</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3136">#3136</a>)</li>
+  <li>修复人设号弹层在备注为空时会错误显示其他客户数据的问题，现在会回退显示该条对应的微信昵称 — 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3162">#3162</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3159">#3159</a>)</li>
+  <li>修复折扣券在电脑端颜色 / 标识显示错误的问题 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3101">#3101</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3075">#3075</a>)</li>
 </ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">06/11 11:09 上次发版后，合入 main 的全部 <strong>11</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">06/11 11:09 上次发版后，合入 main 的全部 <strong>24</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
+  <li><span class="merged-at">[06/11 16:55]</span>群发管理加标题搜索 + 顶部栏重排 + 分页 limit 修复 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3163">#3163</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3144">#3144</a>) <span class="author">— 梁晨</span></li>
+  <li><span class="merged-at">[06/11 16:52]</span>聊天订单气泡接入物流单号点击查看 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3107">#3107</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3078">#3078</a>) <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[06/11 16:21]</span>移动端快速备注整页 + 备注/回访 双 Tab <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3158">#3158</a> <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[06/11 16:12]</span>customer_miss 诊断探针 + 上下文埋点，定死前端竞态 vs 后端 drift <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3152">#3152</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2895">#2895</a>) <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[06/11 16:07]</span>移动端客户标签来源信息支持双击 / 编辑态编辑（对齐 PC） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3147">#3147</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3121">#3121</a>) <span class="author">— 陈聪</span></li>
   <li><span class="merged-at">[06/11 14:35]</span>移动端充值记录入口及列表页 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3117">#3117</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2936">#2936</a>) <span class="author">— 王争</span></li>
   <li><span class="merged-at">[06/11 14:05]</span>移动端账号注销须知页（iOS App Store 合规） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3103">#3103</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2948">#2948</a>) <span class="author">— 王争</span></li>
   <li><span class="merged-at">[06/11 13:20]</span>朋友圈评论/回复 AI 建议按钮（仅 PC，选中即发） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3124">#3124</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3090">#3090</a>) <span class="author">— 陈宣宇</span></li>
@@ -147,6 +160,12 @@ a:hover { text-decoration: underline; }
 
 <h2>🐞 问题修复</h2>
 <ul>
+  <li><span class="merged-at">[06/11 16:53]</span>移动端通讯录入口聊天/只读页顶栏补「...」更多按钮 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3154">#3154</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3070">#3070</a>) <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[06/11 16:35]</span>analyze_decode_fail SLS 查询改全文检索 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3155">#3155</a> <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[06/11 16:33]</span>人设号弹层空备注回退本条微信昵称,不再串到别条数据 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3162">#3162</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3159">#3159</a>) <span class="author">— 梁晨</span></li>
+  <li><span class="merged-at">[06/11 15:45]</span>全量同步过期快照误删新分配客户 + 心跳锚点分离 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3146">#3146</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3127">#3127</a>) <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[06/11 15:15]</span>资料库上传视频补压缩，防 &gt;10MB 原片直传被后端入库拒 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3142">#3142</a> <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[06/11 15:00]</span>回复模式人设选择器换锁定徽章 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3137">#3137</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3136">#3136</a>) <span class="author">— 陈宣宇</span></li>
   <li><span class="merged-at">[06/11 14:40]</span>我的朋友圈回复模式账号锁定为被回复评论的人设 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3135">#3135</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3125">#3125</a>) <span class="author">— 陈宣宇</span></li>
 </ul>
 
@@ -158,6 +177,8 @@ a:hover { text-decoration: underline; }
 
 <h2>🔧 其他（chore / docs / test / ...）</h2>
 <ul>
+  <li><span class="merged-at">[06/11 16:01]</span>test(chat): PC 工作群 tab 红点跨 tab 实时守卫 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3150">#3150</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3108">#3108</a>) <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[06/11 14:53]</span>chore(#3130): 须知页继续按钮埋点独立 buttonId <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3134">#3134</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3130">#3130</a>) <span class="author">— 王争</span></li>
   <li><span class="merged-at">[06/11 14:08]</span>test(#3104): MaterialApp 补 noSplashTheme，恢复 no_splash 守卫绿态 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3128">#3128</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3104">#3104</a>) <span class="author">— 陈宣宇</span></li>
   <li><span class="merged-at">[06/11 11:20]</span>docs(release): archive 2026061101 notes <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3113">#3113</a> <span class="author">— 张拓</span></li>
 </ul>

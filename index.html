@@ -114,24 +114,22 @@ a:hover { text-decoration: underline; }
 <h1>📦 2026061102 发版预览</h1>
 <div class="meta">
 当前版本：<code>2026061101</code>（发版时间：<span class="bump-time">06/11 11:09</span>），下一版（预览）：<code>2026061102</code><br>
-生成时间：2026-06-11 14:42:15 · 重新跑脚本后刷新页面即拿最新
+生成时间：2026-06-11 14:46:31 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
-
 <h3>🆕 新功能</h3>
 <ul>
-  <li>手机端「好友信息」页新增「充值记录」入口，点进去能查看客户的每一笔充值：金额、赠送、支付方式、所属店铺和时间，支持下拉刷新和上拉加载更多 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3117">#3117</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2936">#2936</a>)</li>
-  <li>手机端「设置 → 账号注销」改为先进入注销须知页：清楚告知聊天记录永久删除、解除微信客户关系、14 天冷静期等内容，确认「我已了解」并二次确认后才真正注销 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3103">#3103</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2948">#2948</a>)</li>
-  <li>电脑端朋友圈的评论 / 回复输入框旁新增绿色「AI」按钮：点一下就按预设方向生成几条评论建议，选中哪条就以当前人设直接发出，不满意可点「都不合适，换一批」 — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3124">#3124</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3090">#3090</a>)</li>
-  <li>手机端编辑客户标签时，可以新增标签组、删除标签组（跟电脑端保持一致） — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3118">#3118</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3112">#3112</a>)</li>
-  <li>手机端「好友信息」页和「关于碎银」页新增投诉 / 意见反馈入口，可填写理由提交反馈 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3102">#3102</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2928">#2928</a>)</li>
+  <li>好友信息页新增「充值记录」入口，点进去能看到这位客户的全部充值明细：金额、是否赠送、支付方式、店铺、时间和充值单号，支持下拉刷新和上拉加载更多 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3117">#3117</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2936">#2936</a>)</li>
+  <li>「设置」→「账号注销」现在会先进入注销须知页，清楚说明注销后聊天记录、客户关系、业务数据会被删除以及 14 天冷静期，确认后才会注销（满足 iOS 上架合规要求） — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3103">#3103</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2948">#2948</a>)</li>
+  <li>电脑端朋友圈评论/回复输入框旁新增「AI」按钮，点一下会按预设方向生成几条评论候选，选中哪条就直接以当前人设发出去，不合适还能「换一批」 — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3124">#3124</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3090">#3090</a>)</li>
+  <li>手机端编辑「客户标签」时，可以像电脑端一样新增标签组（如「+ 添加车辆」）和删除整组标签 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3118">#3118</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3112">#3112</a>)</li>
+  <li>移动端好友信息页和「关于碎银」页新增投诉/意见反馈入口，可填写理由和内容后提交 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3102">#3102</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2928">#2928</a>)</li>
 </ul>
-
 <h3>🐞 问题修复</h3>
 <ul>
-  <li>在「我的朋友圈」回复别人评论时，如果中途切换过人设，回复会错误地落到别的账号名下——现已修正为始终以被回复评论所在的账号回复 — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3135">#3135</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3125">#3125</a>)</li>
-  <li>电脑端优惠券遇到折扣券时，金额位置会错误显示成「¥8折」，现已正确显示为「8折」 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3101">#3101</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3075">#3075</a>)</li>
+  <li>修复电脑端折扣券显示错误：原本会显示成「¥8折」，现在正确显示「8折」（满减券仍显示金额） — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3101">#3101</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3075">#3075</a>)</li>
+  <li>修复「我的朋友圈」回复时发错账号的问题：多账号发布的圈子里回复评论，现在会固定以「被回复评论所属的人设」发送，不会因为切换下拉而串到别的账号 — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3135">#3135</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3125">#3125</a>)</li>
 </ul>
 
 <hr class="ref-divider">

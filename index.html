@@ -41,7 +41,7 @@ a:hover { text-decoration: underline; }
 <label>查看历史预览：</label>
 <select id="version-switcher-select" onchange="var v=this.value; if(v) location.href = v; else location.href = './';">
 <!-- VERSION_SWITCHER_OPTIONS_START -->
-<option value="">📦 2026061103 发版预览</option>
+<option value="">📦 2026061201 发版预览</option>
 <option value="2026061102.html">🗂 2026061102</option>
 <option value="2026061101.html">🗂 2026061101</option>
 <option value="2026061001.html">🗂 2026061001</option>
@@ -112,28 +112,29 @@ a:hover { text-decoration: underline; }
   }
 })();
 </script>
-<h1>📦 2026061103 发版预览</h1>
+<h1>📦 2026061201 发版预览</h1>
 <div class="meta">
-当前版本：<code>2026061102</code>（发版时间：<span class="bump-time">06/11 17:10</span>），下一版（预览）：<code>2026061103</code><br>
-生成时间：2026-06-11 23:19:55 · 重新跑脚本后刷新页面即拿最新
+当前版本：<code>2026061102</code>（发版时间：<span class="bump-time">06/11 17:10</span>），下一版（预览）：<code>2026061201</code><br>
+生成时间：2026-06-12 09:46:51 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
 <h3>🆕 新功能</h3>
 <ul>
-  <li>手机聊天列表顶部新增筛选漏斗，可「只看未读」或按单聊 / 群聊类型快速筛选会话 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3188">#3188</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3131">#3131</a>、<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3138">#3138</a>)</li>
-  <li>手机通讯录筛选升级，可按可接待人设号、负责销售、添加时间、聊天状态、是否未回复等多个维度组合筛客户，筛选面板也从弹窗改成顶部下拉，操作更顺手 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3184">#3184</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2956">#2956</a>、<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2963">#2963</a>、<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3033">#3033</a>、<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3139">#3139</a>)</li>
-  <li>手机聊天里「按住说话」改成跟微信一样的全屏录音浮层：松手发送、上滑到左侧取消、上滑到右侧转文字，录音时还有实时波形动画 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3126">#3126</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3119">#3119</a>)</li>
+  <li>移动端聊天列表新增筛选入口，可按多个条件快速筛出想找的会话，筛选面板直接展开在当前页、不用跳转 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3188">#3188</a></li>
+  <li>移动端通讯录新增高级筛选，可同时按三个维度组合筛选联系人，筛选面板内嵌在页面里直接用 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3184">#3184</a></li>
+  <li>移动端聊天支持「按住说话」发语音：按住时弹出全屏录音浮层，上滑可取消发送，跟微信一样 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3126">#3126</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3119">#3119</a>)</li>
 </ul>
-
 <h3>🐞 问题修复</h3>
 <ul>
-  <li>切换企业后，群发页面的筛选输入框还残留上一个企业筛选词的问题已修复 — 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3171">#3171</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3144">#3144</a>)</li>
+  <li>安卓上发朋友圈时点「视频」没反应、还连累图片也选不了的问题已修复 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3190">#3190</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3186">#3186</a>)</li>
+  <li>取消分配的群聊此前仍残留在列表里、还能看到并发送消息（鬼影群），现已正确隐藏 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3193">#3193</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3153">#3153</a>)</li>
+  <li>切换企业后，群发页的筛选输入框还残留着上一个企业的筛选词的问题已修复 — 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3171">#3171</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3144">#3144</a>)</li>
 </ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">06/11 17:10 上次发版后，合入 main 的全部 <strong>5</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">06/11 17:10 上次发版后，合入 main 的全部 <strong>7</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
   <li><span class="merged-at">[06/11 18:36]</span>非艺星移动端聊天页筛选漏斗 + 面板内联化 (#3131 #3138) <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3188">#3188</a> <span class="author">— 王梓先</span></li>
@@ -143,6 +144,8 @@ a:hover { text-decoration: underline; }
 
 <h2>🐞 问题修复</h2>
 <ul>
+  <li><span class="merged-at">[06/12 09:16]</span>安卓发朋友圈点视频无反应且连累图片 — picker 异常兜底 + 互斥守卫 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3190">#3190</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3186">#3186</a>) <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[06/12 00:00]</span>群聊取消分配软删 customerId 后缀 miss，鬼影群可见可发 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3193">#3193</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3153">#3153</a>) <span class="author">— 王梓先</span></li>
   <li><span class="merged-at">[06/11 17:12]</span>切企业后群发筛选输入框残留旧筛选词 (#3144 回归) <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3171">#3171</a> <span class="author">— 梁晨</span></li>
 </ul>
 

@@ -116,29 +116,43 @@ a:hover { text-decoration: underline; }
 <h1>📦 2026061203 发版预览</h1>
 <div class="meta">
 当前版本：<code>2026061202</code>（发版时间：<span class="bump-time">06/12 17:36</span>），下一版（预览）：<code>2026061203</code><br>
-生成时间：2026-06-12 18:11:42 · 重新跑脚本后刷新页面即拿最新
+生成时间：2026-06-12 21:05:11 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
+
+<h3>🆕 新功能</h3>
+<ul>
+  <li>艺星移动端：好友信息页新增「录音记录」入口，可直接查看与该好友的通话录音 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3260">#3260</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3180">#3180</a>)</li>
+</ul>
+
 <h3>✨ 体验优化</h3>
 <ul>
-  <li>「可接待人设号」列表现在显示每个号的真实微信头像，并分两行展示——上面是微信昵称、下面是人设名称，一眼就能对上是哪个号 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3256">#3256</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3251">#3251</a>)</li>
+  <li>朋友圈往下翻很多内容后，点进详情或切走再回来，列表会停在原来的位置，不用从头重新翻 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3249">#3249</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3227">#3227</a>)</li>
+  <li>「可接待人设号」列表现在显示真实微信头像，昵称和人设名分两行展示，更容易辨认 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3256">#3256</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3251">#3251</a>)</li>
+  <li>聊天里很长的消息气泡不再越过对方头像，排版更整齐 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3253">#3253</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3252">#3252</a>)</li>
 </ul>
+
 <h3>🐞 问题修复</h3>
 <ul>
-  <li>手机上收到的长消息，气泡不再撑到屏幕边缘、越过对方头像，跟微信一样始终给对方头像留出一列 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3253">#3253</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3252">#3252</a>)</li>
+  <li>修复电脑端在登录凭据过期后，重启应用连不上、长时间收不到新消息（消息断流）的问题，现在会自动重连恢复 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3265">#3265</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3257">#3257</a>)</li>
+  <li>修复点「接受群邀请」一直失败、提示「请检查网络后重试」的问题；群邀请卡片现在能正确显示群名和封面，接受后重进会话也不会再退回未接受状态 — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3264">#3264</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3197">#3197</a>)</li>
 </ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">06/12 17:36 上次发版后，合入 main 的全部 <strong>3</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">06/12 17:36 上次发版后，合入 main 的全部 <strong>8</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
+  <li><span class="merged-at">[06/12 18:21]</span>朋友圈翻页后离开再回来保持滚动位置 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3249">#3249</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3227">#3227</a>) <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[06/12 18:19]</span>艺星移动端好友信息页加录音记录入口 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3260">#3260</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3180">#3180</a>) <span class="author">— 王梓先</span></li>
   <li><span class="merged-at">[06/12 17:59]</span>可接待人设号列表补真实微信头像 + 昵称/人设名两行样式 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3256">#3256</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3251">#3251</a>) <span class="author">— 陈聪</span></li>
 </ul>
 
 <h2>🐞 问题修复</h2>
 <ul>
+  <li><span class="merged-at">[06/12 20:48]</span>TIM sig 过期启动自愈 + watchdog 接入三级升级链，修 PC 接收断流 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3265">#3265</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3257">#3257</a>) <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[06/12 18:51]</span>群邀请接受改传后端 ObjectID + payload 契约对齐 + 状态持久化 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3264">#3264</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3197">#3197</a>) <span class="author">— 陈宣宇</span></li>
   <li><span class="merged-at">[06/12 17:39]</span>气泡最大宽度预留对侧头像列，长消息不再越过对方头像 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3253">#3253</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3252">#3252</a>) <span class="author">— 陈聪</span></li>
 </ul>
 
@@ -149,6 +163,7 @@ a:hover { text-decoration: underline; }
 
 <h2>🔧 其他（chore / docs / test / ...）</h2>
 <ul>
+  <li><span class="merged-at">[06/12 19:42]</span>docs: close #3202 记忆路由简化(feedback本地/其余双写) + AGENTS单源生成 + 索引审计 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3215">#3215</a> <span class="author">— 张拓</span></li>
   <li><span class="merged-at">[06/12 17:53]</span>docs(release): archive 2026061202 notes <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3259">#3259</a> <span class="author">— 张拓</span></li>
 </ul>
 

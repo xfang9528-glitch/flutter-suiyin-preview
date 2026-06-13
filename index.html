@@ -116,32 +116,37 @@ a:hover { text-decoration: underline; }
 <h1>📦 2026061301 发版预览</h1>
 <div class="meta">
 当前版本：<code>2026061202</code>（发版时间：<span class="bump-time">06/12 17:36</span>），下一版（预览）：<code>2026061301</code><br>
-生成时间：2026-06-13 10:32:18 · 重新跑脚本后刷新页面即拿最新
+生成时间：2026-06-13 16:57:49 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
+
 <h3>🆕 新功能</h3>
 <ul>
-  <li>手机端聊天的「+」扩展面板新增「录音」：点开后弹出录音窗口和悬浮球，录完自动上传发出 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3267">#3267</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3079">#3079</a>)</li>
-  <li>艺星版手机端好友资料页新增「录音记录」入口，可直接查看与该好友的录音记录 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3260">#3260</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3180">#3180</a>)</li>
-  <li>「可接待人设号」列表现在显示真实微信头像，并按「昵称 / 人设名」两行展示，更容易辨认 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3256">#3256</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3251">#3251</a>)</li>
+  <li>移动端聊天的「+」扩展面板新增「录音」：边录边有悬浮球提示，录完自动上传发送 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3267">#3267</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3079">#3079</a>)</li>
+  <li>艺星移动端好友信息页新增「录音记录」入口，可直接查看与该好友的录音 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3260">#3260</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3180">#3180</a>)</li>
+  <li>艺星群聊里出现手机号时，号码后自动标注是否重单（红「重单」/ 绿「不重」并显示时间），不用再手动去系统查 — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3272">#3272</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3262">#3262</a>)</li>
 </ul>
+
 <h3>✨ 体验优化</h3>
 <ul>
-  <li>浏览朋友圈翻了几页后离开，再回来时能停在原来的位置，不用重新往下翻 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3249">#3249</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3227">#3227</a>)</li>
+  <li>朋友圈往下翻了几页后切去别处，再回到朋友圈会停在原来的位置，不用重新往下翻 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3249">#3249</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3227">#3227</a>)</li>
+  <li>「可接待人设号」列表补上真实微信头像，昵称和人设名分两行显示，更好辨认 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3256">#3256</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3251">#3251</a>)</li>
 </ul>
+
 <h3>🐞 问题修复</h3>
 <ul>
-  <li>电脑端有时会收不到新消息（接收断流）的问题已修复：登录凭证过期时会自动恢复连接 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3265">#3265</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3257">#3257</a>)</li>
-  <li>接受群聊邀请现在能正确入群，邀请状态也会正确保留，不会重复出现 — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3264">#3264</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3197">#3197</a>)</li>
-  <li>聊天里很长的消息气泡不会再越过对方头像，显示更整齐 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3253">#3253</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3252">#3252</a>)</li>
+  <li>修复电脑端有时突然收不到新消息、要重启才恢复的问题 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3265">#3265</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3257">#3257</a>)</li>
+  <li>修复点「接受群聊邀请」一直提示失败、邀请卡片群名和封面空白的问题；接受后状态会正确保存，重进会话不再变回「接受邀请」 — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3264">#3264</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3197">#3197</a>)</li>
+  <li>修复较长消息的气泡会越过、盖住对方头像的显示问题 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3253">#3253</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3252">#3252</a>)</li>
 </ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">06/12 17:36 上次发版后，合入 main 的全部 <strong>9</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">06/12 17:36 上次发版后，合入 main 的全部 <strong>10</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
+  <li><span class="merged-at">[06/13 14:13]</span>yestar 群聊手机号重单标注——渲染时实时查重（对接 suiyin-go#1463） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3272">#3272</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3262">#3262</a>) <span class="author">— 陈宣宇</span></li>
   <li><span class="merged-at">[06/13 06:33]</span>移动端扩展面板「录音」——弹窗+悬浮球+自动上传 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3267">#3267</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3079">#3079</a>) <span class="author">— 王梓先</span></li>
   <li><span class="merged-at">[06/12 18:21]</span>朋友圈翻页后离开再回来保持滚动位置 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3249">#3249</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3227">#3227</a>) <span class="author">— 王争</span></li>
   <li><span class="merged-at">[06/12 18:19]</span>艺星移动端好友信息页加录音记录入口 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3260">#3260</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3180">#3180</a>) <span class="author">— 王梓先</span></li>

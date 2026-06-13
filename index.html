@@ -116,27 +116,25 @@ a:hover { text-decoration: underline; }
 <h1>📦 2026061301 发版预览</h1>
 <div class="meta">
 当前版本：<code>2026061202</code>（发版时间：<span class="bump-time">06/12 17:36</span>），下一版（预览）：<code>2026061301</code><br>
-生成时间：2026-06-13 09:51:34 · 重新跑脚本后刷新页面即拿最新
+生成时间：2026-06-13 10:32:18 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
 <h3>🆕 新功能</h3>
 <ul>
-  <li>聊天扩展面板新增「录音」：可以边录边看时长和波形，支持暂停/继续；收起后会变成贴在右侧、可拖动的悬浮球，切到别的页面也不会中断录音，录完自动上传到「好友信息 - 录音记录」 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3267">#3267</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3079">#3079</a>)</li>
-  <li>艺星版好友信息页新增「录音记录」入口 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3260">#3260</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3180">#3180</a>)</li>
+  <li>手机端聊天的「+」扩展面板新增「录音」：点开后弹出录音窗口和悬浮球，录完自动上传发出 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3267">#3267</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3079">#3079</a>)</li>
+  <li>艺星版手机端好友资料页新增「录音记录」入口，可直接查看与该好友的录音记录 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3260">#3260</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3180">#3180</a>)</li>
+  <li>「可接待人设号」列表现在显示真实微信头像，并按「昵称 / 人设名」两行展示，更容易辨认 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3256">#3256</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3251">#3251</a>)</li>
 </ul>
-
 <h3>✨ 体验优化</h3>
 <ul>
-  <li>朋友圈往下翻看后切去别的页面，再回来时会停在原来的位置，不用重新往下翻 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3249">#3249</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3227">#3227</a>)</li>
-  <li>选择接待人设号时，列表显示真实微信头像，昵称和人设名分两行展示，更好辨认 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3256">#3256</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3251">#3251</a>)</li>
+  <li>浏览朋友圈翻了几页后离开，再回来时能停在原来的位置，不用重新往下翻 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3249">#3249</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3227">#3227</a>)</li>
 </ul>
-
 <h3>🐞 问题修复</h3>
 <ul>
-  <li>电脑端有时突然收不到新消息（消息断流）的问题已修复，登录凭证过期时会自动恢复，不用重启 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3265">#3265</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3257">#3257</a>)</li>
-  <li>接受群聊邀请一直失败、以及群邀请卡片不显示群名和封面图的问题已修复；接受后重新进入会话不再变回未接受状态 — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3264">#3264</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3197">#3197</a>)</li>
-  <li>较长的消息气泡不再越过对方头像，会话显示更整齐 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3253">#3253</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3252">#3252</a>)</li>
+  <li>电脑端有时会收不到新消息（接收断流）的问题已修复：登录凭证过期时会自动恢复连接 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3265">#3265</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3257">#3257</a>)</li>
+  <li>接受群聊邀请现在能正确入群，邀请状态也会正确保留，不会重复出现 — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3264">#3264</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3197">#3197</a>)</li>
+  <li>聊天里很长的消息气泡不会再越过对方头像，显示更整齐 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3253">#3253</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3252">#3252</a>)</li>
 </ul>
 
 <hr class="ref-divider">

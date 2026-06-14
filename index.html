@@ -41,7 +41,7 @@ a:hover { text-decoration: underline; }
 <label>查看历史预览：</label>
 <select id="version-switcher-select" onchange="var v=this.value; if(v) location.href = v; else location.href = './';">
 <!-- VERSION_SWITCHER_OPTIONS_START -->
-<option value="">📦 2026061302 发版预览</option>
+<option value="">📦 2026061401 发版预览</option>
 <option value="2026061301.html">🗂 2026061301</option>
 <option value="2026061202.html">🗂 2026061202</option>
 <option value="2026061102.html">🗂 2026061102</option>
@@ -114,26 +114,37 @@ a:hover { text-decoration: underline; }
   }
 })();
 </script>
-<h1>📦 2026061302 发版预览</h1>
+<h1>📦 2026061401 发版预览</h1>
 <div class="meta">
-当前版本：<code>2026061301</code>（发版时间：<span class="bump-time">06/13 22:36</span>），下一版（预览）：<code>2026061302</code><br>
-生成时间：2026-06-13 23:02:23 · 重新跑脚本后刷新页面即拿最新
+当前版本：<code>2026061301</code>（发版时间：<span class="bump-time">06/13 22:36</span>），下一版（预览）：<code>2026061401</code><br>
+生成时间：2026-06-14 10:30:51 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
-<div class="notice">本期暂无用户可感知的更新（仅一条发版归档的内部维护改动）。</div>
+<h3>🆕 新功能</h3>
+<ul>
+  <li>录音上传时多了一个悬浮球，能实时看到上传进度、随时点掉终止；同时录两段会自动排队上传，不会互相覆盖 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3269">#3269</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3187">#3187</a>)</li>
+  <li>录音上传的悬浮球现在在任意页面都看得到——切到别的聊天或别的页面，也能随时盯进度、随手终止 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3270">#3270</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3216">#3216</a>)</li>
+  <li>一段录音还在进行时，扩展面板里的「录音」按钮会自动置灰，避免误开第二段把当前这段冲掉 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3268">#3268</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3176">#3176</a>)</li>
+</ul>
+<h3>🐞 问题修复</h3>
+<ul>
+  <li>手机录音过程中切到后台或锁屏，录音不再被系统掐断，录完的文件也更完整 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3276">#3276</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3220">#3220</a>)</li>
+</ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">06/13 22:36 上次发版后，合入 main 的全部 <strong>1</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">06/13 22:36 上次发版后，合入 main 的全部 <strong>5</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
-  <li class="empty">无</li>
+  <li><span class="merged-at">[06/13 23:49]</span>录音/上传悬浮球提升为全局——所有页面可见 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3270">#3270</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3216">#3216</a>) <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[06/13 23:37]</span>录音上传可看进度可终止——上传悬浮球+双会话排队 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3269">#3269</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3187">#3187</a>) <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[06/13 23:17]</span>录音会话进行中禁点扩展面板「录音」 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3268">#3268</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3176">#3176</a>) <span class="author">— 王梓先</span></li>
 </ul>
 
 <h2>🐞 问题修复</h2>
 <ul>
-  <li class="empty">无</li>
+  <li><span class="merged-at">[06/14 00:13]</span>录音切后台被掐断防护——前台服务+状态流主防线+文件完整性校验 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3276">#3276</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3220">#3220</a>) <span class="author">— 王梓先</span></li>
 </ul>
 
 <h2>✨ 体验优化</h2>

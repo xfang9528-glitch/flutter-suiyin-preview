@@ -117,19 +117,21 @@ a:hover { text-decoration: underline; }
 <h1>📦 2026061401 发版预览</h1>
 <div class="meta">
 当前版本：<code>2026061301</code>（发版时间：<span class="bump-time">06/13 22:36</span>），下一版（预览）：<code>2026061401</code><br>
-生成时间：2026-06-14 10:30:51 · 重新跑脚本后刷新页面即拿最新
+生成时间：2026-06-14 16:57:24 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
+
 <h3>🆕 新功能</h3>
 <ul>
-  <li>录音上传时多了一个悬浮球，能实时看到上传进度、随时点掉终止；同时录两段会自动排队上传，不会互相覆盖 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3269">#3269</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3187">#3187</a>)</li>
-  <li>录音上传的悬浮球现在在任意页面都看得到——切到别的聊天或别的页面，也能随时盯进度、随手终止 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3270">#3270</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3216">#3216</a>)</li>
-  <li>一段录音还在进行时，扩展面板里的「录音」按钮会自动置灰，避免误开第二段把当前这段冲掉 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3268">#3268</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3176">#3176</a>)</li>
+  <li>录音、上传过程中右侧的悬浮球升级为全局显示——切到会话列表、通讯录、「我的」等任何页面都能看到当前进度，点一下就回到录音 / 上传弹窗，不会一离开聊天页就找不到 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3270">#3270</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3216">#3216</a>)</li>
+  <li>录音上传时可以实时看到进度条、时长和百分比，随时点「结束」中止上传（录音会保留，可在录音记录里重传）；上传途中还能再开一段新录音，前一条传完会自动接着传下一条 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3269">#3269</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3187">#3187</a>)</li>
+  <li>正在录音时再点扩展面板里的「录音」会被拦截并提示「录音进行中，请先结束当前录音」，避免在别的会话误开录音、把录音错挂到别人名下 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3268">#3268</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3176">#3176</a>)</li>
 </ul>
+
 <h3>🐞 问题修复</h3>
 <ul>
-  <li>手机录音过程中切到后台或锁屏，录音不再被系统掐断，录完的文件也更完整 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3276">#3276</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3220">#3220</a>)</li>
+  <li>修复长时间录音切到后台 / 锁屏会被系统中断、导致「录了 19 分钟实际只存下 2 分多钟、文件还损坏」的问题：现在后台录音不再被掐断，损坏或时长不实的录音也不会再上传 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3276">#3276</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3220">#3220</a>)</li>
 </ul>
 
 <hr class="ref-divider">

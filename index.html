@@ -117,28 +117,35 @@ a:hover { text-decoration: underline; }
 <h1>📦 2026061501 发版预览</h1>
 <div class="meta">
 当前版本：<code>2026061301</code>（发版时间：<span class="bump-time">06/13 22:36</span>），下一版（预览）：<code>2026061501</code><br>
-生成时间：2026-06-15 10:30:18 · 重新跑脚本后刷新页面即拿最新
+生成时间：2026-06-15 14:30:41 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
 
 <h3>🆕 新功能</h3>
 <ul>
-  <li>录音上传时的悬浮球现在所有页面都能看到——切到会话列表、通讯录、「我的」等任意页面，右侧都能随时拖动、点开查看进度 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3270">#3270</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3216">#3216</a>)</li>
-  <li>录音上传时能看到真实进度条和百分比，随时可以「结束」中止上传（已录内容会保留在录音记录里，可重新上传）；上传的同时还能再开一段新录音，停止后自动排队接着传 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3269">#3269</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3187">#3187</a>)</li>
-  <li>一段录音还在进行时，扩展面板里的「录音」按钮会自动置灰，避免在别的会话里误开第二段录音、把内容挂错客户 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3268">#3268</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3176">#3176</a>)</li>
+  <li>AI 给出的评论建议现在分成两个按钮——可以先「填入」输入框再改改，也可以「直接发送」一键发出 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3284">#3284</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3225">#3225</a>)</li>
+  <li>录音上传新增悬浮球：上传时能实时看到进度、随时终止，悬浮球在所有页面都看得到，切到别的页面也不会丢，多个录音会自动排队上传 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3270">#3270</a>、<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3269">#3269</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3216">#3216</a>、<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3187">#3187</a>)</li>
+</ul>
+
+<h3>✨ 体验优化</h3>
+<ul>
+  <li>一个录音还在进行时，扩展面板里的「录音」按钮会暂时禁用，避免误开第二个录音 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3268">#3268</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3176">#3176</a>)</li>
 </ul>
 
 <h3>🐞 问题修复</h3>
 <ul>
-  <li>修复录音过程中切到后台（最小化 / 锁屏）被系统中断、导致一段长录音只录到开头一小段且文件损坏却仍上传成功的问题；现在后台也能稳定录音，上传前会校验文件完整，损坏的不会再传出去 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3276">#3276</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3220">#3220</a>)</li>
+  <li>登录后锁屏时不会再弹出无意义的系统通知（内部的分配提醒推送）— 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3287">#3287</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3049">#3049</a>)</li>
+  <li>切换企业后，PC 端聊天输入框上方的工具栏现在会正确刷新，不会再显示上一个企业的功能按钮 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3291">#3291</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2989">#2989</a>)</li>
+  <li>录音过程中切到后台、锁屏或切去别的 App，录音不会再被中断，录音文件也不会损坏 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3276">#3276</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3220">#3220</a>)</li>
 </ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">06/13 22:36 上次发版后，合入 main 的全部 <strong>5</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">06/13 22:36 上次发版后，合入 main 的全部 <strong>9</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
+  <li><span class="merged-at">[06/15 11:18]</span>AI 评论候选拆分「填入」与「直接发送」两种交互 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3284">#3284</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3225">#3225</a>) <span class="author">— 王争</span></li>
   <li><span class="merged-at">[06/13 23:49]</span>录音/上传悬浮球提升为全局——所有页面可见 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3270">#3270</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3216">#3216</a>) <span class="author">— 王梓先</span></li>
   <li><span class="merged-at">[06/13 23:37]</span>录音上传可看进度可终止——上传悬浮球+双会话排队 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3269">#3269</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3187">#3187</a>) <span class="author">— 王梓先</span></li>
   <li><span class="merged-at">[06/13 23:17]</span>录音会话进行中禁点扩展面板「录音」 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3268">#3268</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3176">#3176</a>) <span class="author">— 王梓先</span></li>
@@ -146,6 +153,8 @@ a:hover { text-decoration: underline; }
 
 <h2>🐞 问题修复</h2>
 <ul>
+  <li><span class="merged-at">[06/15 13:45]</span>登录后抑制分配通知离线推送，避免锁屏弹 msg:alloc <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3287">#3287</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3049">#3049</a>) <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[06/15 13:39]</span>PC 输入工具栏响应式订阅企业 capability，消除切企业 stale <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3291">#3291</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2989">#2989</a>) <span class="author">— 陈聪</span></li>
   <li><span class="merged-at">[06/14 00:13]</span>录音切后台被掐断防护——前台服务+状态流主防线+文件完整性校验 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3276">#3276</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3220">#3220</a>) <span class="author">— 王梓先</span></li>
 </ul>
 
@@ -156,6 +165,7 @@ a:hover { text-decoration: underline; }
 
 <h2>🔧 其他（chore / docs / test / ...）</h2>
 <ul>
+  <li><span class="merged-at">[06/15 11:04]</span>chore(revisits #3250): follow-up nits — shared category color + loadMore bool <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3285">#3285</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3250">#3250</a>) <span class="author">— 王争</span></li>
   <li><span class="merged-at">[06/13 22:47]</span>docs(release): archive 2026061301 notes <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3274">#3274</a> <span class="author">— 张拓</span></li>
 </ul>
 

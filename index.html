@@ -117,37 +117,44 @@ a:hover { text-decoration: underline; }
 <h1>📦 2026061501 发版预览</h1>
 <div class="meta">
 当前版本：<code>2026061301</code>（发版时间：<span class="bump-time">06/13 22:36</span>），下一版（预览）：<code>2026061501</code><br>
-生成时间：2026-06-15 16:43:03 · 重新跑脚本后刷新页面即拿最新
+生成时间：2026-06-15 16:57:03 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
+
 <h3>🆕 新功能</h3>
 <ul>
-  <li>群发消息的筛选条件新增渠道账号明细，按渠道分组展示每个账号昵称，挑选发送对象更清楚 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3304">#3304</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3300">#3300</a>)</li>
-  <li>AI 推荐评论拆分为「填入」和「直接发送」：想改就点文字填入输入框再编辑，不改可点「直接发送」一键发出 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3284">#3284</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3225">#3225</a>)</li>
-  <li>录音和文件上传新增全局悬浮球：切到任何页面都能看到正在进行的录音/上传进度并随时终止，多个任务自动排队处理 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3270">#3270</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3269">#3269</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3216">#3216</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3187">#3187</a>)</li>
+  <li>没有小程序商城的企业，现在也能在聊天里直接挑选商品发给客户 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3297">#3297</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3224">#3224</a>)</li>
+  <li>给带图片或视频的朋友圈点 AI 评论时，可以先补充图片/视频内容的描述，让 AI 生成的评论更贴合 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3318">#3318</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3281">#3281</a>)</li>
+  <li>群发选人时，渠道分组下会显示每个渠道账号的昵称，方便精准挑客户 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3304">#3304</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3300">#3300</a>)</li>
+  <li>AI 评论候选支持「填入输入框再改」和「直接发送」两种方式 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3284">#3284</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3225">#3225</a>)</li>
+  <li>录音/上传悬浮球升级为全局——切到任何页面都能看到，随时回到录音或查看上传进度 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3270">#3270</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3216">#3216</a>)</li>
+  <li>录音上传新增进度显示和「终止」按钮，还能同时排队处理两个会话 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3269">#3269</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3187">#3187</a>)</li>
 </ul>
+
 <h3>✨ 体验优化</h3>
 <ul>
-  <li>群消息的查重标注现在显示更快、不卡顿 — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3305">#3305</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3289">#3289</a>)</li>
-  <li>手机端「我的」页面移除「资料库」入口；「切换企业」仅在拥有多个企业账号时才显示 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3306">#3306</a></li>
-  <li>一段录音进行中时，扩展面板的「录音」按钮会暂时禁用，避免误开第二段录音 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3268">#3268</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3176">#3176</a>)</li>
+  <li>移动端「我的」页面移除了用不上的「资料库」入口；「切换企业」按钮只对加入了多个企业的账号显示 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3306">#3306</a></li>
+  <li>正在录音时，扩展面板里的「录音」按钮会自动置灰，避免误触重复开录 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3268">#3268</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3176">#3176</a>)</li>
 </ul>
+
 <h3>🐞 问题修复</h3>
 <ul>
-  <li>搜索已重新分配给你的客户时，偶尔错误显示「发起聊天」（像是没分配过）的问题已修复 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3319">#3319</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2927">#2927</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3001">#3001</a>)</li>
-  <li>按住快捷键说话时，如果刚按下就立刻松开，不再产生一条多余的「幽灵」空语音 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3313">#3313</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3120">#3120</a>)</li>
-  <li>同时发送多个视频（尤其同名或较大的视频）时，因临时文件冲突可能导致压缩失败的问题已修复 — 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2905">#2905</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2721">#2721</a>)</li>
-  <li>登录后不再因「客户分配」通知收到锁屏离线推送弹窗 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3287">#3287</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3049">#3049</a>)</li>
-  <li>电脑端切换企业后，聊天输入框上方的工具栏会立即按新企业刷新，不再停留在上一个企业的按钮配置 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3291">#3291</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2989">#2989</a>)</li>
-  <li>手机录音时切到后台或锁屏，录音不再被系统中断，保证录音文件完整 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3276">#3276</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3220">#3220</a>)</li>
+  <li>重新分配过来的客户，在搜索里被错误显示成「发起聊天」（其实已经是好友）的问题已修复 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3319">#3319</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2927">#2927</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3001">#3001</a>)</li>
+  <li>按住右 Alt 说话、很快松手时会留下一段「幽灵录音」的问题已修复 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3313">#3313</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3120">#3120</a>)</li>
+  <li>同时发送多个视频时，因临时文件相互覆盖导致视频损坏或发送失败的问题已修复 — 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2905">#2905</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2721">#2721</a>)</li>
+  <li>手机锁屏时不再弹出「分配通知 / msg:alloc」这类内部推送 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3287">#3287</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3049">#3049</a>)</li>
+  <li>切换企业后，聊天输入栏的功能按钮现在会按当前企业正确刷新，不再残留上一个企业的按钮 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3291">#3291</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2989">#2989</a>)</li>
+  <li>录音时切到后台不再被系统中断，长时间录音不会再出现只录到一小段或文件损坏的情况 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3276">#3276</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3220">#3220</a>)</li>
 </ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">06/13 22:36 上次发版后，合入 main 的全部 <strong>16</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">06/13 22:36 上次发版后，合入 main 的全部 <strong>18</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
+  <li><span class="merged-at">[06/15 16:50]</span>聊天面板接入自由商品库（无小程序商城企业） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3297">#3297</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3224">#3224</a>) <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[06/15 16:45]</span>mobile AI 评论新增媒体内容描述步骤 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3318">#3318</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3281">#3281</a>) <span class="author">— 王争</span></li>
   <li><span class="merged-at">[06/15 15:28]</span>群发筛选条件补渠道账号明细展示（渠道分组 - 账号昵称） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3304">#3304</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3300">#3300</a>) <span class="author">— 王争</span></li>
   <li><span class="merged-at">[06/15 11:18]</span>AI 评论候选拆分「填入」与「直接发送」两种交互 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3284">#3284</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3225">#3225</a>) <span class="author">— 王争</span></li>
   <li><span class="merged-at">[06/13 23:49]</span>录音/上传悬浮球提升为全局——所有页面可见 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3270">#3270</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3216">#3216</a>) <span class="author">— 王梓先</span></li>

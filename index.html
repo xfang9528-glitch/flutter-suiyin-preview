@@ -41,7 +41,7 @@ a:hover { text-decoration: underline; }
 <label>查看历史预览：</label>
 <select id="version-switcher-select" onchange="var v=this.value; if(v) location.href = v; else location.href = './';">
 <!-- VERSION_SWITCHER_OPTIONS_START -->
-<option value="">📦 2026061401 发版预览</option>
+<option value="">📦 2026061501 发版预览</option>
 <option value="2026061301.html">🗂 2026061301</option>
 <option value="2026061202.html">🗂 2026061202</option>
 <option value="2026061102.html">🗂 2026061102</option>
@@ -114,24 +114,24 @@ a:hover { text-decoration: underline; }
   }
 })();
 </script>
-<h1>📦 2026061401 发版预览</h1>
+<h1>📦 2026061501 发版预览</h1>
 <div class="meta">
-当前版本：<code>2026061301</code>（发版时间：<span class="bump-time">06/13 22:36</span>），下一版（预览）：<code>2026061401</code><br>
-生成时间：2026-06-14 23:01:29 · 重新跑脚本后刷新页面即拿最新
+当前版本：<code>2026061301</code>（发版时间：<span class="bump-time">06/13 22:36</span>），下一版（预览）：<code>2026061501</code><br>
+生成时间：2026-06-15 10:30:18 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
 
 <h3>🆕 新功能</h3>
 <ul>
-  <li>录音、上传时右侧会出现一个悬浮球，切到会话列表、通讯录、「我的」等任意页面都能看到，可以拖动位置，点一下就回到录音/上传弹窗 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3270">#3270</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3216">#3216</a>)</li>
-  <li>上传录音时能看到真实进度条和百分比，也能随时点「结束」中止上传（已录内容会保留在录音记录里可重传）；上传过程中还能接着开始新录音，停止后会自动排队接力上传 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3269">#3269</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3187">#3187</a>)</li>
-  <li>一段录音还没结束时，再点扩展面板里的「录音」会被拦截并提示「录音进行中，请先结束当前录音」，避免在别的客户会话里误开录音、把录音挂到错误的客户名下 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3268">#3268</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3176">#3176</a>)</li>
+  <li>录音上传时的悬浮球现在所有页面都能看到——切到会话列表、通讯录、「我的」等任意页面，右侧都能随时拖动、点开查看进度 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3270">#3270</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3216">#3216</a>)</li>
+  <li>录音上传时能看到真实进度条和百分比，随时可以「结束」中止上传（已录内容会保留在录音记录里，可重新上传）；上传的同时还能再开一段新录音，停止后自动排队接着传 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3269">#3269</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3187">#3187</a>)</li>
+  <li>一段录音还在进行时，扩展面板里的「录音」按钮会自动置灰，避免在别的会话里误开第二段录音、把内容挂错客户 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3268">#3268</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3176">#3176</a>)</li>
 </ul>
 
 <h3>🐞 问题修复</h3>
 <ul>
-  <li>修复了录音时切到后台或锁屏一段时间后，录音被系统掐断、最后只录到很短一段且文件损坏却仍上传成功的问题；现在长时间后台录音也能完整保存，损坏的录音不会再被上传 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3276">#3276</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3220">#3220</a>)</li>
+  <li>修复录音过程中切到后台（最小化 / 锁屏）被系统中断、导致一段长录音只录到开头一小段且文件损坏却仍上传成功的问题；现在后台也能稳定录音，上传前会校验文件完整，损坏的不会再传出去 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3276">#3276</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3220">#3220</a>)</li>
 </ul>
 
 <hr class="ref-divider">

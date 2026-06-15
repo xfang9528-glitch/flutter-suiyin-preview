@@ -118,33 +118,48 @@ a:hover { text-decoration: underline; }
 <h1>📦 2026061502 发版预览</h1>
 <div class="meta">
 当前版本：<code>2026061501</code>（发版时间：<span class="bump-time">06/15 16:57</span>），下一版（预览）：<code>2026061502</code><br>
-生成时间：2026-06-15 17:50:36 · 重新跑脚本后刷新页面即拿最新
+生成时间：2026-06-15 21:04:29 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
 
 <h3>🆕 新功能</h3>
 <ul>
-  <li>新增「扫码核销」：核销员扫一扫小程序自提订单上的核销码，先预览订单和自提人信息，确认无误后一键核销，还能接着扫下一单连续核销 — 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3302">#3302</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3236">#3236</a>)</li>
-  <li>新增扫微信二维码加好友：扫一扫对方的微信好友二维码，选好用哪个人设打招呼后直接进入申请页（对方已是好友会提示一下），整个过程跟微信扫码加好友一致 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3221">#3221</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3219">#3219</a>)</li>
+  <li>（艺星）PC 客户面板新增「录音记录」入口，可直接查看与客户的通话录音 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3342">#3342</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3239">#3239</a>)</li>
+  <li>PC 端 AI 评论现在能识别图片、语音等非文字消息，收到这类消息也会给出评论建议 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3330">#3330</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3281">#3281</a>)</li>
+  <li>支持扫码核销自提订单 — 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3302">#3302</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3236">#3236</a>)</li>
+  <li>扫一扫微信好友二维码就能直接添加好友 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3221">#3221</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3219">#3219</a>)</li>
+</ul>
+
+<h3>✨ 体验优化</h3>
+<ul>
+  <li>对方语音消息加载时的转圈图标改为深色，在白色气泡上看得更清楚 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3336">#3336</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3247">#3247</a>)</li>
 </ul>
 
 <h3>🐞 问题修复</h3>
 <ul>
-  <li>修复部分账号（聊天列表为空、只在通讯录加客户的拉新号）在电脑端漏斗筛选和通讯录里「第一需求(AI)」下拉为空、选不出选项的问题 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3328">#3328</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3298">#3298</a>)</li>
+  <li>「我的」页现在显示真实的销售微信和师傅信息，不再是占位内容 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3339">#3339</a></li>
+  <li>未开通小程序商城时，打开商品选择器不再误报「加载失败」 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3333">#3333</a></li>
+  <li>部分账号（聊天会话为空的拉新号）在漏斗筛选和通讯录里「第一需求(AI)」下拉空白、选不到选项的问题已修复 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3328">#3328</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3298">#3298</a>)</li>
 </ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">06/15 16:57 上次发版后，合入 main 的全部 <strong>7</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">06/15 16:57 上次发版后，合入 main 的全部 <strong>13</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
+  <li><span class="merged-at">[06/15 20:38]</span>艺星 PC 客户面板补「录音记录」入口 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3342">#3342</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3239">#3239</a>) <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[06/15 17:59]</span>PC 端补全 AI 评论媒体描述 + 扩展非文字内容触发范围 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3330">#3330</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3281">#3281</a>) <span class="author">— 王争</span></li>
   <li><span class="merged-at">[06/15 17:37]</span>扫码核销(自提订单)对接 niushop <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3302">#3302</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3236">#3236</a>) <span class="author">— 梁晨</span></li>
   <li><span class="merged-at">[06/15 17:31]</span>扫微信好友二维码添加好友 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3221">#3221</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3219">#3219</a>) <span class="author">— 王争</span></li>
 </ul>
 
 <h2>🐞 问题修复</h2>
 <ul>
+  <li><span class="merged-at">[06/15 18:16]</span>「我的」页销售微信/师傅改接 saleProfileProvider，不再写死占位 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3339">#3339</a> <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[06/15 18:16]</span>对方语音气泡 loading spinner 白底低对比改深色 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3336">#3336</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3247">#3247</a>) <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[06/15 18:14]</span>pdfium_dart 0.2.5 预热路径对齐 hook leaf 格式 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3335">#3335</a> <span class="author">— 梁晨</span></li>
+  <li><span class="merged-at">[06/15 18:10]</span>商品选择器无小程序商城时不再显示加载失败 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3333">#3333</a> <span class="author">— 王争</span></li>
   <li><span class="merged-at">[06/15 17:33]</span>漏斗第一需求(AI)选项拉取去掉聊天列表门控 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3328">#3328</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3298">#3298</a>) <span class="author">— 王梓先</span></li>
 </ul>
 

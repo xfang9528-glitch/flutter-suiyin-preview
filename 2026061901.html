@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
-<!-- CURRENT_BUILD:2026051202 -->
+<!-- CURRENT_BUILD:2026061802 -->
 <title>下一版发版预览 · flutter-suiyin</title>
 <style>
 body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", sans-serif; max-width: 880px; margin: 32px auto; padding: 0 24px; color: #1f2328; line-height: 1.7; background: #fafbfc; }
@@ -121,58 +121,58 @@ a:hover { text-decoration: underline; }
   }
 })();
 </script>
-<h1>📦 2026051301 发版预览</h1>
+<h1>📦 2026061901 发版预览</h1>
 <div class="meta">
-当前版本：<code>2026051202</code>（发版时间：<span class="bump-time">05/12 17:39</span>），下一版（预览）：<code>2026051301</code><br>
-生成时间：2026-05-13 10:30:27 · 重新跑脚本后刷新页面即拿最新
+当前版本：<code>2026061802</code>（发版时间：<span class="bump-time">06/18 17:48</span>），下一版（预览）：<code>2026061901</code><br>
+生成时间：2026-06-19 00:36:26 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
-<h3>✨ 体验优化</h3>
+<h3>🆕 新功能</h3>
 <ul>
-  <li>艺星企业客户右侧信息栏按最新设计重排：6 对字段左右对齐；「第一需求(AI) / 第二需求(AI) / 地区(AI) / 医美史(AI)」点击后统一弹历次气泡（与「等级气泡」一致）；删除「最近需求(AI)」字段；「地区」恢复显示城市/区县名称（之前显示一串编号） — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1756">#1756</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1737">#1737</a>)</li>
+  <li>自己发出去的语音消息，现在也会自动显示出文字转写（跟收到别人语音时一样），不用再切走再切回来等它慢慢出现 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3570">#3570</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2660">#2660</a>)</li>
+  <li>手机端录音如果上传失败，现在可以直接点「重新上传」，不用删掉重录 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3565">#3565</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3389">#3389</a>)</li>
 </ul>
 <h3>🐞 问题修复</h3>
 <ul>
-  <li>在 Windows 上打开「投保人」「客户信息编辑」等用到地区选择的入口时界面卡几秒、甚至触发系统红屏的问题已解决（地区数据改为启动时预加载到本地，进入选择器无需再等网络） — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1747">#1747</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1742">#1742</a>)</li>
-  <li>不同分辨率 / 字体缩放下多个页面右侧出现的红黄报错条已修复（共 14 处，主要集中在话术筛选区域） — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1739">#1739</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1690">#1690</a>)</li>
-  <li>诚如保险 PC 端点击客户信息中的「投保人」一行无响应已修复，现在能正常打开编辑面板 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1741">#1741</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1732">#1732</a>)</li>
+  <li>在微信群里发消息有时会一直转圈、最后变成红色感叹号发不出去（手速快、群人设还没加载完时容易出现）的问题已修复 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3571">#3571</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3448">#3448</a>)</li>
+  <li>部分图片、视频（如转发里嵌套的媒体）加载不出来的问题已修复 — 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3562">#3562</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3457">#3457</a>)</li>
 </ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">05/12 17:39 上次发版后，合入 main 的全部 <strong>9</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">06/18 17:48 上次发版后，合入 main 的全部 <strong>9</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
-  <li><span class="merged-at">[05/12 17:55]</span>worktree seed cache 扩 macOS — upload_seed.sh + seed-macos-arm64 首传 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1735">#1735</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1733">#1733</a>) <span class="author">— 张拓</span></li>
+  <li><span class="merged-at">[06/18 23:36]</span>自发语音发送后延迟刷新历史、自动显示 ASR 转写 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3570">#3570</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2660">#2660</a>) <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[06/18 21:02]</span>移动端录音「上传失败 → 重新上传」 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3565">#3565</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3389">#3389</a>) <span class="author">— 王梓先</span></li>
 </ul>
 
 <h2>🐞 问题修复</h2>
 <ul>
-  <li><span class="merged-at">[05/12 18:26]</span>RenderFlex overflow 集中治理 — 14 处窄窗口右侧溢出 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1739">#1739</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1690">#1690</a>) <span class="author">— 王争</span></li>
-  <li><span class="merged-at">[05/12 18:08]</span>pc_home_page 补 crrm 投保人面板 Stack 派发 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1741">#1741</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1732">#1732</a>) <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[06/19 00:22]</span>群发人设未加载完时回落 customer.clientId 兜底注入 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3571">#3571</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3448">#3448</a>) <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[06/18 19:11]</span>preserve nested media gateway keys <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3562">#3562</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3457">#3457</a>) <span class="author">— 张拓</span></li>
+  <li><span class="merged-at">[06/18 18:36]</span>SDK 生成器对 POST bytes 接口正确生成 postBytes + data <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3557">#3557</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3555">#3555</a>) <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[06/18 18:13]</span>ai_reply 加入 _knownNonTaskScenes 降级兜底集合 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3558">#3558</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3556">#3556</a>) <span class="author">— 王争</span></li>
 </ul>
 
 <h2>✨ 体验优化</h2>
 <ul>
-  <li><span class="merged-at">[05/13 10:29]</span>PcPagedPanelShell 改闭包接口去 misc.dart 依赖 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1757">#1757</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1544">#1544</a>) <span class="author">— 陈聪</span></li>
-  <li><span class="merged-at">[05/13 09:45]</span>右侧信息栏按 PRD 2026-05-12 §6.7 重排 + 修 region 显示 code <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1756">#1756</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1737">#1737</a>) <span class="author">— 陈宣宇</span></li>
-  <li><span class="merged-at">[05/13 09:40]</span>close #1414 ScriptPanel 4 处 state 重建改 copyWith <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1740">#1740</a> <span class="author">— 陈聪</span></li>
-  <li><span class="merged-at">[05/13 00:01]</span>region 数据本地 DB 持久化 + 启动预加载 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1747">#1747</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1742">#1742</a>) <span class="author">— 陈聪</span></li>
-  <li><span class="merged-at">[05/12 21:09]</span>抽 tool/_lib_seed_common.sh — upload_seed + init_worktree 同源 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1745">#1745</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1733">#1733</a>) <span class="author">— 张拓</span></li>
-  <li><span class="merged-at">[05/12 17:43]</span>image_preview_page 63 处 setState → Riverpod <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1720">#1720</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1468">#1468</a>) <span class="author">— 王争</span></li>
+  <li class="empty">无</li>
 </ul>
 
 <h2>🔧 其他（chore / docs / test / ...）</h2>
 <ul>
-  <li class="empty">无</li>
+  <li><span class="merged-at">[06/18 21:06]</span>chore(chat): 撤掉 #3278 多人设临时诊断埋点 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3566">#3566</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3278">#3278</a>) <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[06/18 19:22]</span>docs(release): archive 2026061802 notes <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3564">#3564</a> <span class="author">— 张拓</span></li>
+  <li><span class="merged-at">[06/18 19:14]</span>docs(release): prepare 2026061802 notes <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3563">#3563</a> <span class="author">— 张拓</span></li>
 </ul>
 
 
 <hr class="ref-divider">
 
 <div class="foot">
-上一次发版时间：<span class="bump-time">05/12 17:39</span>（基线 commit：<code>chore(release): bump to 26.05.12+2026051202 + 归档 .2026051202 release notes (#1738)</code>）<br>
+上一次发版时间：<span class="bump-time">06/18 17:48</span>（基线 commit：<code>v26.06.18+2026061802 feat(moments #3537): 朋友圈评论输入框优化 — 换行/PC样式/键盘行为 (#3550)</code>）<br>
 PR 归属版本由 <code>pubspec.yaml</code> 的 <code>version:</code> 行 git 历史判定 —— bump commit 的 committedAt 是分割线。<br>
 由 <code>tool/generate_release_preview.dart</code> 自动提取；重新跑脚本后刷新页面即拿最新。<br>
 issue 链接基于 PetWebOrg/flutter-suiyin 仓。

@@ -41,7 +41,7 @@ a:hover { text-decoration: underline; }
 <label>查看历史预览：</label>
 <select id="version-switcher-select" onchange="var v=this.value; if(v) location.href = v; else location.href = './';">
 <!-- VERSION_SWITCHER_OPTIONS_START -->
-<option value="">📦 2026062002 发版预览</option>
+<option value="">📦 2026062101 发版预览</option>
 <option value="2026062001.html">🗂 2026062001</option>
 <option value="2026061901.html">🗂 2026061901</option>
 <option value="2026061802.html">🗂 2026061802</option>
@@ -122,18 +122,22 @@ a:hover { text-decoration: underline; }
   }
 })();
 </script>
-<h1>📦 2026062002 发版预览</h1>
+<h1>📦 2026062101 发版预览</h1>
 <div class="meta">
-当前版本：<code>2026062001</code>（发版时间：<span class="bump-time">06/20 14:24</span>），下一版（预览）：<code>2026062002</code><br>
-生成时间：2026-06-20 23:01:48 · 重新跑脚本后刷新页面即拿最新
+当前版本：<code>2026062001</code>（发版时间：<span class="bump-time">06/20 14:24</span>），下一版（预览）：<code>2026062101</code><br>
+生成时间：2026-06-21 10:31:23 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
-<div class="notice">本期暂无用户可感知的更新：自上次发版以来仅合入 2 个发版流程文档维护 PR（归档 / 清理上一版发版说明），不涉及功能、修复或体验变化。</div>
+<h3>🐞 问题修复</h3>
+<ul>
+  <li>修复部分销售会误把同事正在接待的客户抢过来的问题；同时「发起聊天」「转交」按钮现在始终显示，遇到没权限接待的客户时点击会弹出提示说明原因（之前是直接把按钮隐藏） <span class="author">— 陈聪</span> <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3617">#3617</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2671">#2671</a>)</li>
+  <li>修复打开聊天会话刷新历史记录时，偶尔会把已经加载出来的部分消息藏起来、导致中间一段对话看不到的问题 <span class="author">— 张拓</span> <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3595">#3595</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3593">#3593</a>)</li>
+</ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">06/20 14:24 上次发版后，合入 main 的全部 <strong>2</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">06/20 14:24 上次发版后，合入 main 的全部 <strong>4</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
   <li class="empty">无</li>
@@ -141,7 +145,7 @@ a:hover { text-decoration: underline; }
 
 <h2>🐞 问题修复</h2>
 <ul>
-  <li class="empty">无</li>
+  <li><span class="merged-at">[06/21 02:07]</span>接待门控字段对齐 + 按钮恒显示·点击 toast 拦截（closes #3615 #3616） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3617">#3617</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2671">#2671</a>) <span class="author">— 陈聪</span></li>
 </ul>
 
 <h2>✨ 体验优化</h2>
@@ -151,6 +155,7 @@ a:hover { text-decoration: underline; }
 
 <h2>🔧 其他（chore / docs / test / ...）</h2>
 <ul>
+  <li><span class="merged-at">[06/21 01:36]</span>[codex] Fix chat history refresh hiding loaded messages <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3595">#3595</a> <span class="author">— 张拓</span></li>
   <li><span class="merged-at">[06/20 14:37]</span>docs(release): clean 2026062001 notes <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3613">#3613</a> <span class="author">— 张拓</span></li>
   <li><span class="merged-at">[06/20 14:33]</span>docs(release): archive 2026062001 notes <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3612">#3612</a> <span class="author">— 张拓</span></li>
 </ul>

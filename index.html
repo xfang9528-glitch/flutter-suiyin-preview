@@ -128,32 +128,39 @@ a:hover { text-decoration: underline; }
 <h1>📦 2026062302 发版预览</h1>
 <div class="meta">
 当前版本：<code>2026062301</code>（发版时间：<span class="bump-time">06/23 11:05</span>），下一版（预览）：<code>2026062302</code><br>
-生成时间：2026-06-23 15:17:27 · 重新跑脚本后刷新页面即拿最新
+生成时间：2026-06-23 15:49:13 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
+
 <h3>🆕 新功能</h3>
 <ul>
-  <li>电脑端现在可以把每条录音转成文字记录（按销售 / 客户分左右气泡，带时间戳），还能对录音做一键 AI 分析总结；设置页可注册本人声纹，用来在录音里区分谁在说话 — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3679">#3679</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3661">#3661</a>)</li>
-  <li>安卓版支持应用内升级：可以主动检查新版本，先在后台下载好再提示安装，不用再跳到外面下载安装包 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3699">#3699</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3629">#3629</a>)</li>
-  <li>朋友圈回复某条评论时，会把被回复的原评论内容一并引用显示，看回复时不用再往上翻找对方说了什么 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3673">#3673</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3581">#3581</a>)</li>
-  <li>群发「选择好友」名单里新增「电话」列（中间四位打码，如 138****8888），选人时能直接看到联系电话 — 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3692">#3692</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3636">#3636</a>)</li>
+  <li>朋友圈回复评论时，会显示被回复的那条原评论内容（跟微信的引用回复一样）；原评论已删除时显示「原评论已删除」 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3673">#3673</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3581">#3581</a>)</li>
+  <li>PC 端新增录音功能：录音自动转成文字记录，并由 AI 分析整理，还能注册声纹来区分不同说话人 — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3679">#3679</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3661">#3661</a>)</li>
+  <li>安卓版支持在 app 内直接检查更新，先后台下载好再提示安装，不用再去应用商店 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3699">#3699</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3629">#3629</a>)</li>
+  <li>群发选择好友时，名单里新增「电话」列，号码中间四位用 **** 遮挡保护隐私 — 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3692">#3692</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3636">#3636</a>)</li>
 </ul>
+
 <h3>✨ 体验优化</h3>
 <ul>
-  <li>朋友圈按人设筛选后，每条动态下的评论和点赞也会跟着只显示所选人设的内容，不再混进其他人设的互动 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3697">#3697</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3580">#3580</a>)</li>
-  <li>「关于」页版本号手机端和电脑端统一成「版本 (构建号)」格式（如 26.06.22 (2026062202)），方便确认自己装的是哪一次构建 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3695">#3695</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3678">#3678</a>)</li>
+  <li>通讯录顶部统计栏「好友 N」文案改为「会话数 N」，更贴合实际含义（艺星） — 李建林 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3628">#3628</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3561">#3561</a>)</li>
+  <li>朋友圈筛选人设后，评论和点赞也只显示所选人设的内容（之前筛选只过滤动态、评论仍是全量） — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3697">#3697</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3580">#3580</a>)</li>
+  <li>版本号展示补充当日构建次数，移动端与 PC 端格式统一 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3695">#3695</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3678">#3678</a>)</li>
 </ul>
+
 <h3>🐞 问题修复</h3>
 <ul>
-  <li>手机端消息头像下方也会显示发送来源的平台图标（安卓 / iOS 等）；并修复了 Mac 端发出的消息、对方看不到 Mac 图标的问题 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3686">#3686</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3567">#3567</a>)</li>
+  <li>修复萌爪专家会话里发消息 100% 失败的问题，现在能正常发送 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3707">#3707</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3672">#3672</a>)</li>
+  <li>手机端消息气泡头像下方现在会显示发送来源的平台图标（安卓 / iOS / Mac 等）；并修复 Mac 端发出的消息对方看不到图标的问题 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3686">#3686</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3567">#3567</a>)</li>
 </ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">06/23 11:05 上次发版后，合入 main 的全部 <strong>8</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">06/23 11:05 上次发版后，合入 main 的全部 <strong>11</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
+  <li><span class="merged-at">[06/23 15:35]</span>安卓发版脚本（按 ABI 打包 + 上传 OSS + 更新 latest.json） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3714">#3714</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3704">#3704</a>) <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[06/23 15:25]</span>通讯录统计栏「好友 N」文案改为「会话数 N」（艺星） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3628">#3628</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3561">#3561</a>) <span class="author">— 李建林</span></li>
   <li><span class="merged-at">[06/23 15:10]</span>回复评论时显示被引用的原评论内容 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3673">#3673</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3581">#3581</a>) <span class="author">— 王争</span></li>
   <li><span class="merged-at">[06/23 14:56]</span>PC 录音文字记录 + AI分析 + 声纹注册 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3679">#3679</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3661">#3661</a>) <span class="author">— 陈宣宇</span></li>
   <li><span class="merged-at">[06/23 14:22]</span>安卓 app 内升级（OSS + 先下载再提示 + 主动检查）(#3629 #3677) <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3699">#3699</a> <span class="author">— 王梓先</span></li>
@@ -164,6 +171,7 @@ a:hover { text-decoration: underline; }
 
 <h2>🐞 问题修复</h2>
 <ul>
+  <li><span class="merged-at">[06/23 15:48]</span>萌爪专家会话发消息 100% 失败 — _resolveTargetCustomer 加 expert 兜底 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3707">#3707</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3672">#3672</a>) <span class="author">— 陈聪</span></li>
   <li><span class="merged-at">[06/23 11:37]</span>mobile 消息气泡头像下方显示发送来源平台图标 + 修 Mac 图标 bug <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3686">#3686</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3567">#3567</a>) <span class="author">— 王争</span></li>
 </ul>
 

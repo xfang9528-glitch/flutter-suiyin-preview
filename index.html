@@ -129,21 +129,28 @@ a:hover { text-decoration: underline; }
 <h1>📦 2026062401 发版预览</h1>
 <div class="meta">
 当前版本：<code>2026062303</code>（发版时间：<span class="bump-time">06/23 17:34</span>），下一版（预览）：<code>2026062401</code><br>
-生成时间：2026-06-24 10:50:36 · 重新跑脚本后刷新页面即拿最新
+生成时间：2026-06-24 12:00:14 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
+
+<h3>✨ 体验优化</h3>
+<ul>
+  <li>话术分类折叠起来时，分类标题右侧会显示该分类下的话术条数（如「基础证书 (3)」），不用展开也能一眼看到数量 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3737">#3737</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3736">#3736</a>)</li>
+</ul>
+
 <h3>🐞 问题修复</h3>
 <ul>
-  <li>话术库里折叠某个四级分类时，分类标题上现在会显示该分类下的话术条数，不用展开也知道里面有多少条 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3737">#3737</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3736">#3736</a>)</li>
-  <li>手机端值班菜单之前只有「上班」、缺了「下班」，现在上班、下班都能正常切换 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3725">#3725</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3718">#3718</a>)</li>
-  <li>自己发送失败的消息之前会错误地显示在左边（看起来像是别人发来的），现在统一显示在右边 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3729">#3729</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3620">#3620</a>)</li>
-  <li>再次打开客户信息面板时会自动刷新成最新资料，修复了有时还显示旧数据的问题 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3727">#3727</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3674">#3674</a>)</li>
+  <li>群聊 / 好友列表里，分配给自己的客户偶尔会莫名消失几秒、过一会儿又自己出现的问题已修复（重新分配客户后的短暂数据闪动不再被误删） — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3744">#3744</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3645">#3645</a>)</li>
+  <li>聊天里多选消息添加为话术时，微信公众号图文海报的图片下载失败、提示「媒体处理失败，已跳过」的问题已修复，现在能正常保存入库 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3740">#3740</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3698">#3698</a>)</li>
+  <li>手机上艺星管理员的值班菜单多出「上班」、且下班后看不到「下班」选项的问题已修复，现在与电脑端规则一致（管理员不显示「上班」） — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3725">#3725</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3718">#3718</a>)</li>
+  <li>群聊里自己转发失败的卡片消息（公众号文章等）会错误地显示在左侧（像别人发来的），现已统一靠右显示 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3729">#3729</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3620">#3620</a>)</li>
+  <li>再次打开客户信息 / 好友信息面板时会自动拉取最新资料，修复了后台更新客户资料后面板仍显示旧内容的问题 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3727">#3727</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3674">#3674</a>)</li>
 </ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">06/23 17:34 上次发版后，合入 main 的全部 <strong>8</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">06/23 17:34 上次发版后，合入 main 的全部 <strong>10</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
   <li><span class="merged-at">[06/23 17:36]</span>mute toggle 补 SLS 埋点定位升级后免打扰复发 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3728">#3728</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3687">#3687</a>) <span class="author">— 王梓先</span></li>
@@ -151,6 +158,8 @@ a:hover { text-decoration: underline; }
 
 <h2>🐞 问题修复</h2>
 <ul>
+  <li><span class="merged-at">[06/24 11:44]</span>删除去抖取代失效的 recent_assign 锚点，friend+group 通吃 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3744">#3744</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3645">#3645</a>) <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[06/24 11:33]</span>聊天多选添加话术时微信图文海报图片下载失败 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3740">#3740</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3698">#3698</a>) <span class="author">— 王争</span></li>
   <li><span class="merged-at">[06/24 10:42]</span>话术四级分类 header 折叠态显示总数徽章 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3737">#3737</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3736">#3736</a>) <span class="author">— 王争</span></li>
   <li><span class="merged-at">[06/24 07:30]</span>移动端艺星管理员值班菜单多「上班」缺「下班」 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3725">#3725</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3718">#3718</a>) <span class="author">— 陈聪</span></li>
   <li><span class="merged-at">[06/23 18:07]</span>自己发送失败的消息错误渲染在左侧 — 失败态恒为本端自发，统一靠右 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3729">#3729</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3620">#3620</a>) <span class="author">— 王梓先</span></li>

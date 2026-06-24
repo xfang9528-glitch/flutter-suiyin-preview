@@ -130,25 +130,29 @@ a:hover { text-decoration: underline; }
 <h1>📦 2026062402 发版预览</h1>
 <div class="meta">
 当前版本：<code>2026062401</code>（发版时间：<span class="bump-time">06/24 16:14</span>），下一版（预览）：<code>2026062402</code><br>
-生成时间：2026-06-24 22:06:50 · 重新跑脚本后刷新页面即拿最新
+生成时间：2026-06-24 23:01:17 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
 
 <h3>🆕 新功能</h3>
 <ul>
-  <li>手机端录音卡片新增播放、转文字、删除等快捷操作，并能点开查看完整的文字记录（与电脑端一致） — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3806">#3806</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3391">#3391</a>)</li>
-  <li>手机端发朋友圈选择账号时，账号分组默认折叠、并支持搜索，账号多时找起来更快（向电脑端看齐） — 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3782">#3782</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3719">#3719</a>)</li>
-  <li>手机端长按话术后，「发送」改为先把内容填进输入框，可以再编辑确认后再发，避免误发 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3738">#3738</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3730">#3730</a>)</li>
+  <li>手机端语音消息卡片新增快捷操作栏，并支持把录音转成文字、查看文字记录（跟电脑端 v4.11 一致） — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3806">#3806</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3391">#3391</a>)</li>
+</ul>
+
+<h3>✨ 体验优化</h3>
+<ul>
+  <li>手机端发布动态选择发布账号时，账号列表默认按分组折叠、并支持搜索，账号多时更好找（跟电脑端一致） — 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3782">#3782</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3719">#3719</a>)</li>
+  <li>手机端长按话术选「发送」，现在改为先把内容填进输入框（可再编辑后手动发出），不再一点就直接发出去 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3738">#3738</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3730">#3730</a>)</li>
 </ul>
 
 <h3>🐞 问题修复</h3>
 <ul>
-  <li>修复转发「位置」消息后，重发时会退回成普通位置、丢失转发关系的问题 — 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3794">#3794</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3793">#3793</a>)</li>
-  <li>手机端带搜索框的弹窗（如选图、选资源）弹出键盘时，底部「确定」按钮不再被键盘挡住 — 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3792">#3792</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3795">#3795</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3789">#3789</a>)</li>
-  <li>添加老客户时，候选名单现在显示客户昵称，不再是一串看不懂的编号，更好辨认 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3779">#3779</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3765">#3765</a>)</li>
-  <li>朋友圈互动（点赞、评论）列表现在跟随当前选择的账号筛选，只看当前账号的互动 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3778">#3778</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3741">#3741</a>)</li>
-  <li>修复 Mac 上上传的录音时长显示为「—」的问题，现在能正常显示时长 — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3783">#3783</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3661">#3661</a>)</li>
+  <li>转发「位置」消息后，再次重发或重启应用后再发，位置不再丢失、能正常作为转发内容发出 — 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3794">#3794</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3793">#3793</a>)</li>
+  <li>手机端带搜索框的选择面板（选发布账号、选 link 资源）弹出键盘时，「确定」按钮和底部列表不再被键盘挡住 — 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3792">#3792</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3795">#3795</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3789">#3789</a>)</li>
+  <li>选「老客户」时，候选列表现在显示客户昵称，不再是一串看不懂的 ID — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3779">#3779</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3765">#3765</a>)</li>
+  <li>按账号筛选后，点开朋友圈互动（铃铛）列表只显示所选账号的互动消息，跟角标数量对得上 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3778">#3778</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3741">#3741</a>)</li>
+  <li>macOS 上上传录音后，时长不再显示「—」，能正常显示录音时长 — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3783">#3783</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3661">#3661</a>)</li>
 </ul>
 
 <hr class="ref-divider">

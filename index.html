@@ -132,29 +132,38 @@ a:hover { text-decoration: underline; }
 <h1>📦 2026062502 发版预览</h1>
 <div class="meta">
 当前版本：<code>2026062501</code>（发版时间：<span class="bump-time">06/25 12:13</span>），下一版（预览）：<code>2026062502</code><br>
-生成时间：2026-06-25 14:14:48 · 重新跑脚本后刷新页面即拿最新
+生成时间：2026-06-25 16:57:22 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
+
 <h3>🆕 新功能</h3>
 <ul>
-  <li>转发消息选「发送给」时，搜索结果会标出每个会话的接待状态：自己接待的可直接勾选，别人正在接待的会置灰，避免误转发；群聊里若有多个人设号，还能切换用哪个身份转发出去 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3831">#3831</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3630">#3630</a>)</li>
-  <li>朋友圈正文现在可以复制了：电脑端鼠标悬浮会显示「复制」按钮，手机端长按选中即可复制；电脑端点朋友圈头像还能直接打开和对方的聊天窗口 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3791">#3791</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3689">#3689</a>)</li>
+  <li>手机端也能注册声纹了：在「我的 → 声纹注册」里照着提示朗读一段话，就能录音、试听并完成注册（此前只有电脑端支持） — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3847">#3847</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3760">#3760</a>)</li>
+  <li>朋友圈的文字内容现在可以复制；电脑端点朋友圈里的头像，可以直接打开和这个人的对话 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3791">#3791</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3689">#3689</a>)</li>
+  <li>转发消息选「发送给」时，会按你的接待范围区分：自己接待的会话可直接转发，别人正在接待的会标出接待人并防止误转；转发到群时还能选择用哪个身份发出 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3831">#3831</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3630">#3630</a>)</li>
 </ul>
+
 <h3>✨ 体验优化</h3>
 <ul>
-  <li>消息发送失败时，现在会弹出能看懂的原因（如「@的成员暂不在群内，去掉@后可重发」「你已不在该群」），不再只剩一个红叹号让人摸不着头脑 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3825">#3825</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3484">#3484</a>)</li>
+  <li>打开表情面板后，输入框旁的「➕」会变成「发送」按钮，选完表情可以直接点发送（跟微信一致） — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3839">#3839</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3743">#3743</a>)</li>
+  <li>给客户发第一条消息失败时，会弹出能看懂的失败原因，不再只有一个看不出原因的红色叹号 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3825">#3825</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3484">#3484</a>)</li>
 </ul>
+
 <h3>🐞 问题修复</h3>
 <ul>
-  <li>在设置里注册过声纹后，重新打开应用「试听」按钮消失的问题已修复 — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3832">#3832</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3822">#3822</a>)</li>
+  <li>刚打开应用进入声纹设置时，已注册声纹的「试听」不会再偶尔消失 — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3832">#3832</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3822">#3822</a>)</li>
+  <li>把消息转发到自己不在的群时，会给出友好提示，不再显示一串错误码 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3838">#3838</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3721">#3721</a>)</li>
+  <li>预约失败时只显示能看懂的提示文字，不再露出一串系统内部的错误信息 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3383">#3383</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3295">#3295</a>)</li>
 </ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">06/25 12:13 上次发版后，合入 main 的全部 <strong>4</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">06/25 12:13 上次发版后，合入 main 的全部 <strong>11</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
+  <li><span class="merged-at">[06/25 16:56]</span>移动端声纹注册补齐 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3847">#3847</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3760">#3760</a>) <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[06/25 16:27]</span>表情面板展开时隐藏➕显示「发送」按钮 #3743 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3839">#3839</a> <span class="author">— 王争</span></li>
   <li><span class="merged-at">[06/25 14:11]</span>首发消息发送失败补可读 toast（替代「红叹号无原因」） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3825">#3825</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3484">#3484</a>) <span class="author">— 陈聪</span></li>
   <li><span class="merged-at">[06/25 14:09]</span>转发「发送给」搜索按接待范围隔离 + 群选人设/切换转发身份（DR-063） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3831">#3831</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3630">#3630</a>) <span class="author">— 王梓先</span></li>
   <li><span class="merged-at">[06/25 13:54]</span>朋友圈正文复制 + PC 头像点击打开对话 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3791">#3791</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3689">#3689</a>) <span class="author">— 王争</span></li>
@@ -163,7 +172,9 @@ a:hover { text-decoration: underline; }
 
 <h2>🐞 问题修复</h2>
 <ul>
-  <li class="empty">无</li>
+  <li><span class="merged-at">[06/25 15:27]</span>修 #3825 引入的 main 破损 — SendMessage fake reportFinalFailure + _reportSendFailure 空catch <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3843">#3843</a> <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[06/25 15:06]</span>转发到非成员群报 10007 翻成友好提示 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3838">#3838</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3721">#3721</a>) <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[06/25 15:04]</span>预约失败只显示人话 message，不泄漏 AppError 包装串 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3383">#3383</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3295">#3295</a>) <span class="author">— 陈聪</span></li>
 </ul>
 
 <h2>✨ 体验优化</h2>
@@ -173,7 +184,8 @@ a:hover { text-decoration: underline; }
 
 <h2>🔧 其他（chore / docs / test / ...）</h2>
 <ul>
-  <li class="empty">无</li>
+  <li><span class="merged-at">[06/25 15:46]</span>chore(moments #3827): PR #3791 review follow-ups <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3842">#3842</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3827">#3827</a>) <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[06/25 14:57]</span>docs(contacts): 更正录音列表页陈旧注释（#3235） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3837">#3837</a> <span class="author">— 王梓先</span></li>
 </ul>
 
 

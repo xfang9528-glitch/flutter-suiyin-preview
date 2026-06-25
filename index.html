@@ -131,28 +131,24 @@ a:hover { text-decoration: underline; }
 <h1>📦 2026062503 发版预览</h1>
 <div class="meta">
 当前版本：<code>2026062502</code>（发版时间：<span class="bump-time">06/25 00:12</span>），下一版（预览）：<code>2026062503</code><br>
-生成时间：2026-06-25 11:16:39 · 重新跑脚本后刷新页面即拿最新
+生成时间：2026-06-25 11:23:58 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
-
 <h3>🆕 新功能</h3>
 <ul>
-  <li>手机端双击底部「聊天」，可以跳到下一条没看过的会话（和电脑端一样），快速翻看未读消息 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3823">#3823</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3776">#3776</a>)</li>
+  <li>手机端在「聊天」tab 上双击，可快速跳到下一条有未读消息的会话，连续双击依次定位，不用再手动翻找 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3823">#3823</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3776">#3776</a>)</li>
 </ul>
-
 <h3>✨ 体验优化</h3>
 <ul>
-  <li>群消息重发失败时，会用大白话提示原因（比如「@的成员暂不在群内，去掉@后可重发」「你已不在该群」），不再是看不懂的报错 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3818">#3818</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3585">#3585</a>)</li>
-  <li>（艺星）群里的「重单查重」结果改成独立卡片展示，手机号、是否重单、查询/创建时间一目了然 — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3816">#3816</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3702">#3702</a>)</li>
+  <li>艺星群里的「重单查重」结果改成独立卡片展示：每个手机号单独一行，重单标红、未重标绿，并标注创建 / 查询时间，比以前夹在消息正文里更清楚 — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3816">#3816</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3702">#3702</a>)</li>
 </ul>
-
 <h3>🐞 问题修复</h3>
 <ul>
-  <li>朋友圈切换筛选条件时，列表偶尔混入上一个筛选内容的问题已修复 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3798">#3798</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3759">#3759</a>)</li>
-  <li>声纹注册时偶尔没采到声音却提示「录音完成」、试听又放不出声的问题已修复；现在采空会提示重新录制，试听也加了播放状态反馈 — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3817">#3817</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3661">#3661</a>)</li>
-  <li>在外联群 / 镜像群里 @ 客户发消息一直红叹号、发不出去的问题已修复 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3815">#3815</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1716">#1716</a>)</li>
-  <li>手机端「客户标签」详情页补齐了历史昵称、快速备注、原微信备注、微信账号（之前只有部分门店能看到） — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3802">#3802</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3780">#3780</a>)</li>
+  <li>修复在外联群 / 镜像群里 @ 客户时消息一直发不出去（红叹号）的问题，现在 @ 能正常发送，手动点「重发」也能成功 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3815">#3815</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1716">#1716</a>)</li>
+  <li>修复电脑端声纹注册时「试听」没有声音的问题：以前偶尔会把没录上的空录音当成功，现在会自动识别并提示重新录制，试听按钮也加了播放状态反馈 — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3817">#3817</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3661">#3661</a>)</li>
+  <li>手机端（非艺星）客户标签详情页补齐了「历史昵称 / 快速备注 / 原微信备注 / 微信账号」几项信息，之前这几项不显示 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3802">#3802</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3780">#3780</a>)</li>
+  <li>修复朋友圈切换筛选条件时，列表里偶尔混进上一个筛选残留内容的问题 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3798">#3798</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3759">#3759</a>)</li>
 </ul>
 
 <hr class="ref-divider">

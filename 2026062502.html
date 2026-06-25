@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
-<!-- CURRENT_BUILD:2026062401 -->
+<!-- CURRENT_BUILD:2026062501 -->
 <title>下一版发版预览 · flutter-suiyin</title>
 <style>
 body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", sans-serif; max-width: 880px; margin: 32px auto; padding: 0 24px; color: #1f2328; line-height: 1.7; background: #fafbfc; }
@@ -41,7 +41,7 @@ a:hover { text-decoration: underline; }
 <label>查看历史预览：</label>
 <select id="version-switcher-select" onchange="var v=this.value; if(v) location.href = v; else location.href = './';">
 <!-- VERSION_SWITCHER_OPTIONS_START -->
-<option value="">📦 2026062502 发版预览</option>
+<option value="">📦 2026062503 发版预览</option>
 <option value="2026062502.html">🗂 2026062502</option>
 <option value="2026062501.html">🗂 2026062501</option>
 <option value="2026062401.html">🗂 2026062401</option>
@@ -129,51 +129,54 @@ a:hover { text-decoration: underline; }
   }
 })();
 </script>
-<h1>📦 2026062402 发版预览</h1>
+<h1>📦 2026062502 发版预览</h1>
 <div class="meta">
-当前版本：<code>2026062401</code>（发版时间：<span class="bump-time">06/24 16:14</span>），下一版（预览）：<code>2026062402</code><br>
-生成时间：2026-06-24 23:44:00 · 重新跑脚本后刷新页面即拿最新
+当前版本：<code>2026062501</code>（发版时间：<span class="bump-time">06/25 12:13</span>），下一版（预览）：<code>2026062502</code><br>
+生成时间：2026-06-25 17:13:52 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
+
 <h3>🆕 新功能</h3>
 <ul>
-  <li>手机端客户档案的录音记录卡片新增「文字记录 / AI分析 / 删除」操作栏，点「文字记录」可查看录音转写出的对话气泡，点「AI分析」可看 AI 总结（与电脑端一致）。— 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3806">#3806</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3391">#3391</a>)</li>
-  <li>手机端发动态选择发布账号时，账号分组默认折叠、顶部新增搜索框，账号多也能快速找到要发的号（与电脑端一致）。— 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3782">#3782</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3719">#3719</a>)</li>
-  <li>手机端话术列表里长按「发送」，不再直接发出，而是把话术文字填进聊天输入框，方便先编辑再发；单击「发送」仍直接发出。— 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3738">#3738</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3730">#3730</a>)</li>
+  <li>手机端现在也能注册声纹了（之前只有电脑端有）：在「我的」里点「声纹注册」，按提示朗读一段话即可完成。 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3847">#3847</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3760">#3760</a>)</li>
+  <li>转发消息选「发送给」时，搜索结果会标出每个会话的人设号和接待状态：自己正在接待的可以直接选，别人在接待的会置灰避免误转发；群聊还能切换用哪个身份转发出去。 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3831">#3831</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3630">#3630</a>)</li>
+  <li>朋友圈的文字内容现在可以复制了；电脑端点客户头像可直接打开和 TA 的对话。 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3791">#3791</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3689">#3689</a>)</li>
 </ul>
+
+<h3>✨ 体验优化</h3>
+<ul>
+  <li>聊天时打开表情面板，输入框旁的「＋」会自动收起、换成「发送」按钮，发表情少点一步。 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3839">#3839</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3743">#3743</a>)</li>
+</ul>
+
 <h3>🐞 问题修复</h3>
 <ul>
-  <li>修复安卓版「关于碎银」里版本号显示错位，以及约 20 天来安卓一直收不到升级提示的问题。— 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3813">#3813</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3812">#3812</a>)</li>
-  <li>手机端带搜索框的弹层（选发布账号、选链接资源等）弹出键盘时，底部「确定」按钮和列表不再被键盘遮挡。— 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3792">#3792</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3795">#3795</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3789">#3789</a>)</li>
-  <li>选择老客户时，候选列表现在显示客户昵称，不再是一串看不懂的 ID。— 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3779">#3779</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3765">#3765</a>)</li>
-  <li>朋友圈互动列表现在会跟随所选账号筛选，只显示当前账号的互动。— 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3778">#3778</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3741">#3741</a>)</li>
-  <li>修复在 macOS 上上传的录音时长显示为「—」的问题。— 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3783">#3783</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3661">#3661</a>)</li>
+  <li>在通讯录里查看只读的聊天记录时，右键 / 长按消息不再显示「引用 / 多选 / 撤回」这些点了没反应的菜单项。 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3852">#3852</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3835">#3835</a>)</li>
+  <li>把消息转发到自己不在的群时，现在会给出能看懂的友好提示，不再弹一串错误码。 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3838">#3838</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3721">#3721</a>)</li>
+  <li>预约失败时只显示一句能看懂的提示，不再带出一长串内部报错信息。 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3383">#3383</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3295">#3295</a>)</li>
+  <li>给陌生人发的第一条消息如果发送失败，现在会用文字说明失败原因，不再只是一个红色叹号让人摸不着头脑。 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3825">#3825</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3484">#3484</a>)</li>
+  <li>注册过声纹后重新打开应用，声纹的「试听」按钮不再消失。 — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3832">#3832</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3822">#3822</a>)</li>
 </ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">06/24 16:14 上次发版后，合入 main 的全部 <strong>15</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">06/25 12:13 上次发版后，合入 main 的全部 <strong>12</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
-  <li><span class="merged-at">[06/24 18:45]</span>移动端录音卡片三键操作栏 + 文字记录子页（对齐 PC v4.11） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3806">#3806</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3391">#3391</a>) <span class="author">— 王梓先</span></li>
-  <li><span class="merged-at">[06/24 16:29]</span>移动端发布账号选择向 PC 靠齐——分组默认折叠 + 搜索 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3782">#3782</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3719">#3719</a>) <span class="author">— 梁晨</span></li>
-  <li><span class="merged-at">[06/24 16:17]</span>手机端长按话术「发送」改为填入输入框不直发 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3738">#3738</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3730">#3730</a>) <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[06/25 16:56]</span>移动端声纹注册补齐 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3847">#3847</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3760">#3760</a>) <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[06/25 16:27]</span>表情面板展开时隐藏➕显示「发送」按钮 #3743 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3839">#3839</a> <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[06/25 14:11]</span>首发消息发送失败补可读 toast（替代「红叹号无原因」） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3825">#3825</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3484">#3484</a>) <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[06/25 14:09]</span>转发「发送给」搜索按接待范围隔离 + 群选人设/切换转发身份（DR-063） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3831">#3831</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3630">#3630</a>) <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[06/25 13:54]</span>朋友圈正文复制 + PC 头像点击打开对话 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3791">#3791</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3689">#3689</a>) <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[06/25 13:43]</span>voiceprint 状态改读 sales/self，冷启动试听不再消失 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3832">#3832</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3822">#3822</a>) <span class="author">— 陈宣宇</span></li>
 </ul>
 
 <h2>🐞 问题修复</h2>
 <ul>
-  <li><span class="merged-at">[06/24 23:16]</span>改打单 arm64 包根治 versionCode 偏移，修版本号显示错位 + 升级静默失灵 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3813">#3813</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3812">#3812</a>) <span class="author">— 王梓先</span></li>
-  <li><span class="merged-at">[06/24 19:05]</span>buildNumber 加合法日期校验，挡住 2026064401 这类错位日期上线 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3808">#3808</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3807">#3807</a>) <span class="author">— 王梓先</span></li>
-  <li><span class="merged-at">[06/24 19:00]</span>安卓发版 stage A 注入 SLS AccessKey，避免发出 SLS 盲包 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3803">#3803</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3801">#3801</a>) <span class="author">— 王梓先</span></li>
-  <li><span class="merged-at">[06/24 17:51]</span>init_worktree 预建 test asset bundle，修全新 worktree 全量 gate 稳定红 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3769">#3769</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3307">#3307</a>) <span class="author">— 陈聪</span></li>
-  <li><span class="merged-at">[06/24 17:17]</span>link:location 转发位置 linkForwardImMsgId 在发送链路被重建覆盖 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3794">#3794</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3793">#3793</a>) <span class="author">— 梁晨</span></li>
-  <li><span class="merged-at">[06/24 17:17]</span>link 资源选择 sheet 键盘感知（补 #3792 遗漏） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3795">#3795</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3789">#3789</a>) <span class="author">— 梁晨</span></li>
-  <li><span class="merged-at">[06/24 16:53]</span>移动端带搜索框 sheet 弹键盘时「确定」按钮不再被遮挡 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3792">#3792</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3789">#3789</a>) <span class="author">— 梁晨</span></li>
-  <li><span class="merged-at">[06/24 16:52]</span>老客户候选列表改用专用搜索接口，显示 nickName 而非复合 ID <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3779">#3779</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3765">#3765</a>) <span class="author">— 王争</span></li>
-  <li><span class="merged-at">[06/24 16:37]</span>朋友圈互动列表随账号筛选过滤 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3778">#3778</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3741">#3741</a>) <span class="author">— 王争</span></li>
-  <li><span class="merged-at">[06/24 16:32]</span>上传录音时长兜底改跨平台，修 macOS 仍显示「—」 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3783">#3783</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3661">#3661</a>) <span class="author">— 陈宣宇</span></li>
-  <li><span class="merged-at">[06/24 16:27]</span>修 Windows「立即安装」apply_fired 埋点因 exit(0) 早于 SLS flush 而丢失 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3786">#3786</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3733">#3733</a>) <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[06/25 17:06]</span>通讯录只读视图气泡菜单收敛 引用/多选/撤回 死入口 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3852">#3852</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3835">#3835</a>) <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[06/25 15:27]</span>修 #3825 引入的 main 破损 — SendMessage fake reportFinalFailure + _reportSendFailure 空catch <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3843">#3843</a> <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[06/25 15:06]</span>转发到非成员群报 10007 翻成友好提示 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3838">#3838</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3721">#3721</a>) <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[06/25 15:04]</span>预约失败只显示人话 message，不泄漏 AppError 包装串 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3383">#3383</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3295">#3295</a>) <span class="author">— 陈聪</span></li>
 </ul>
 
 <h2>✨ 体验优化</h2>
@@ -183,14 +186,15 @@ a:hover { text-decoration: underline; }
 
 <h2>🔧 其他（chore / docs / test / ...）</h2>
 <ul>
-  <li><span class="merged-at">[06/24 17:09]</span>test(script_library): 为 #3777 预拉 dispose 守卫补回归测试 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3788">#3788</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3773">#3773</a>) <span class="author">— 梁晨</span></li>
+  <li><span class="merged-at">[06/25 15:46]</span>chore(moments #3827): PR #3791 review follow-ups <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3842">#3842</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3827">#3827</a>) <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[06/25 14:57]</span>docs(contacts): 更正录音列表页陈旧注释（#3235） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3837">#3837</a> <span class="author">— 王梓先</span></li>
 </ul>
 
 
 <hr class="ref-divider">
 
 <div class="foot">
-上一次发版时间：<span class="bump-time">06/24 16:14</span>（基线 commit：<code>chore(release): bump Windows build 2026062401</code>）<br>
+上一次发版时间：<span class="bump-time">06/25 12:13</span>（基线 commit：<code>chore(release): bump Windows build 2026062501</code>）<br>
 PR 归属版本由 <code>pubspec.yaml</code> 的 <code>version:</code> 行 git 历史判定 —— bump commit 的 committedAt 是分割线。<br>
 由 <code>tool/generate_release_preview.dart</code> 自动提取；重新跑脚本后刷新页面即拿最新。<br>
 issue 链接基于 PetWebOrg/flutter-suiyin 仓。

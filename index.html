@@ -134,26 +134,34 @@ a:hover { text-decoration: underline; }
 <h1>📦 2026062602 发版预览</h1>
 <div class="meta">
 当前版本：<code>2026062601</code>（发版时间：<span class="bump-time">06/26 13:33</span>），下一版（预览）：<code>2026062602</code><br>
-生成时间：2026-06-26 15:25:36 · 重新跑脚本后刷新页面即拿最新
+生成时间：2026-06-26 16:59:25 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
 <h3>🆕 新功能</h3>
 <ul>
-  <li>朋友圈有人给你点赞或评论时，手机底部「朋友圈」会出现红色未读提醒，进入朋友圈后自动消除（跟微信朋友圈小红点一致） — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3883">#3883</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3856">#3856</a>)</li>
-  <li>电脑端通讯录、搜索结果、客户资料页现在会给「已删除 / 拉黑 / 虚拟」客户打上状态标签，并且不能再向这类客户发起聊天（仍可查看资料、做交付和转交） — 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3888">#3888</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3828">#3828</a>)</li>
+  <li>新增好友管理能力：可以删除好友、拉黑、给好友打状态标签，对已删除 / 拉黑的好友会限制发起聊天（PC 端、手机端都支持）— 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3888">#3888</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3828">#3828</a>)、<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3903">#3903</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3889">#3889</a>)</li>
+  <li>朋友圈有新的赞或评论时，底部「朋友圈」入口会显示红点提醒，跟微信一样不漏掉互动 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3883">#3883</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3856">#3856</a>)</li>
+  <li>「录音记录」里每条录音现在会显示录制时的地点，方便回看时知道在哪儿录的 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3896">#3896</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3800">#3800</a>)</li>
+</ul>
+<h3>✨ 体验优化</h3>
+<ul>
+  <li>「公共话术」现在只有管理员才能添加和编辑，普通成员不会再误改大家共用的话术 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3886">#3886</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3860">#3860</a>)</li>
 </ul>
 <h3>🐞 问题修复</h3>
 <ul>
-  <li>公共话术现在只有管理员才能添加和编辑，普通成员的添加入口会置灰并提示无权限 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3886">#3886</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3860">#3860</a>)</li>
-  <li>视频播放完毕后会停在最后一帧，不再自动从头循环播放 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3891">#3891</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3857">#3857</a>)</li>
+  <li>重新录制声纹后，试听时还会播放旧声音的问题已修复，现在听到的就是最新录的 — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3912">#3912</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3904">#3904</a>)</li>
+  <li>登录页和设置页里的《用户协议》《隐私政策》打不开的问题已修复，现在能正常打开查看 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3900">#3900</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3881">#3881</a>)</li>
+  <li>视频播放到结尾后现在会自动停止，不再无限循环重播 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3891">#3891</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3857">#3857</a>)</li>
 </ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">06/26 13:33 上次发版后，合入 main 的全部 <strong>5</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">06/26 13:33 上次发版后，合入 main 的全部 <strong>10</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
+  <li><span class="merged-at">[06/26 16:21]</span>录音创建上报设备经纬度，地址由后端 regeo 反查 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3896">#3896</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3800">#3800</a>) <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[06/26 15:56]</span>移动端好友删除/拉黑/虚拟状态标签 + 发起聊天限制 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3903">#3903</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3889">#3889</a>) <span class="author">— 梁晨</span></li>
   <li><span class="merged-at">[06/26 14:46]</span>移动端底部导航栏「朋友圈」tab 显示未读互动角标 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3883">#3883</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3856">#3856</a>) <span class="author">— 王争</span></li>
   <li><span class="merged-at">[06/26 14:34]</span>issue 模板 + meta-lint 增加「平台」维度 + 自动记录代码仓 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3895">#3895</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3894">#3894</a>) <span class="author">— 房昕</span></li>
   <li><span class="merged-at">[06/26 13:57]</span>好友删除/拉黑/虚拟状态标签 + 发起聊天限制（PC 端） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3888">#3888</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3828">#3828</a>) <span class="author">— 梁晨</span></li>
@@ -161,13 +169,15 @@ a:hover { text-decoration: underline; }
 
 <h2>🐞 问题修复</h2>
 <ul>
+  <li><span class="merged-at">[06/26 16:49]</span>声纹重新注册后试听仍放旧声音 — 音频缓存 key 加 URL 指纹 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3912">#3912</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3904">#3904</a>) <span class="author">— 陈宣宇</span></li>
+  <li><span class="merged-at">[06/26 16:03]</span>隐私政策/用户协议 URL 换用 cdn2 新路径 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3900">#3900</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3881">#3881</a>) <span class="author">— 王争</span></li>
   <li><span class="merged-at">[06/26 15:18]</span>公共话术入口仅管理员可见 + 权限守卫测试 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3886">#3886</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3860">#3860</a>) <span class="author">— 王争</span></li>
   <li><span class="merged-at">[06/26 13:56]</span>视频播放完毕后停止而非循环播放 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3891">#3891</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3857">#3857</a>) <span class="author">— 王争</span></li>
 </ul>
 
 <h2>✨ 体验优化</h2>
 <ul>
-  <li class="empty">无</li>
+  <li><span class="merged-at">[06/26 15:56]</span>拆 yestar_mass_send_picker_dialog 解 MAX_FILE_LINES 棘轮（3227→2777，基线收回 2966） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3901">#3901</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3836">#3836</a>) <span class="author">— 梁晨</span></li>
 </ul>
 
 <h2>🔧 其他（chore / docs / test / ...）</h2>

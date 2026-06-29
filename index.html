@@ -136,23 +136,31 @@ a:hover { text-decoration: underline; }
 <h1>📦 2026062902 发版预览</h1>
 <div class="meta">
 当前版本：<code>2026062901</code>（发版时间：<span class="bump-time">06/29 17:03</span>），下一版（预览）：<code>2026062902</code><br>
-生成时间：2026-06-29 18:06:11 · 重新跑脚本后刷新页面即拿最新
+生成时间：2026-06-29 22:36:44 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
+
+<h3>✨ 体验优化</h3>
+<ul>
+  <li>深圳、成都艺星的聊天输入栏去掉了「快速备注」入口，工具栏更精简 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4003">#4003</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3994">#3994</a>)</li>
+  <li>朋友圈互动通知（铃铛）现在会标出是哪个人设收到的，同一条朋友圈下多个人设的通知不再混在一起；「我发布的动态」详情页只展示你有权限的人设分组 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3971">#3971</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3939">#3939</a>)</li>
+  <li>给朋友圈点赞时，如果当前选中的人设没有权限被自动切走，会弹提示告诉你已切到哪个人设 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3996">#3996</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3987">#3987</a>)</li>
+</ul>
+
 <h3>🐞 问题修复</h3>
 <ul>
-  <li>群聊里别人发的、标着「发送失败」的消息，之前会被错误地显示到自己这一侧（绿色气泡），现在会正确显示在对方一侧 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3991">#3991</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3949">#3949</a>)</li>
-  <li>切换企业后，右侧客户信息栏的标签有时会显示成另一个企业的内容、或加载失败后退回一份对不上的默认标签，现在会正确加载当前企业的标签，加载失败时也会明确提示并支持重试 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3973">#3973</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3963">#3963</a>)</li>
-  <li>朋友圈的点赞/评论通知现在会标明是哪个人设收到的，同一条朋友圈下多个人设的通知不再混在一起；「我发布的动态」详情页只展示你有权限的人设分组，避免评论、点赞误用到没权限的人设 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3971">#3971</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3939">#3939</a>)</li>
+  <li>群聊里选中自己的人设查看时，别人发的、标着「发送失败」的消息会被错误地放到你自己一侧（右边），现已修复——他人的消息正确显示在左边 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3991">#3991</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3949">#3949</a>)</li>
+  <li>切换环境后，右侧客户信息栏的标签列表偶尔会显示成上一个环境的旧标签，现已修复为显示当前环境的真实标签；万一加载失败也会给出「重试」按钮，不再退回误导的默认列表 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3973">#3973</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3963">#3963</a>)</li>
 </ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">06/29 17:03 上次发版后，合入 main 的全部 <strong>5</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">06/29 17:03 上次发版后，合入 main 的全部 <strong>8</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
-  <li class="empty">无</li>
+  <li><span class="merged-at">[06/29 18:41]</span>pass1/2 失败把 ffmpeg stderr 尾部并入 video_compress:fail SLS <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4007">#4007</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3986">#3986</a>) <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[06/29 18:18]</span>深圳/成都艺星移除快速备注工具栏入口 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4003">#4003</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3994">#3994</a>) <span class="author">— 王争</span></li>
 </ul>
 
 <h2>🐞 问题修复</h2>
@@ -171,7 +179,7 @@ a:hover { text-decoration: underline; }
 
 <h2>🔧 其他（chore / docs / test / ...）</h2>
 <ul>
-  <li class="empty">无</li>
+  <li><span class="merged-at">[06/29 18:13]</span>chore(moments #3987): 静默切账号 toast + 过滤谓词统一 + fromNotViewJson <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3996">#3996</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3987">#3987</a>) <span class="author">— 王争</span></li>
 </ul>
 
 

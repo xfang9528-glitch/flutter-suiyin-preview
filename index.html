@@ -139,18 +139,23 @@ a:hover { text-decoration: underline; }
 <h1>📦 2026070103 发版预览</h1>
 <div class="meta">
 当前版本：<code>2026070102</code>（发版时间：<span class="bump-time">07/01 21:34</span>），下一版（预览）：<code>2026070103</code><br>
-生成时间：2026-07-01 22:05:15 · 重新跑脚本后刷新页面即拿最新
+生成时间：2026-07-01 22:48:28 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
 <h3>🆕 新功能</h3>
 <ul>
-  <li>PC 聊天发送栏新增「AI 回复」按钮：可以先让 AI 根据最近聊天内容生成回复草稿，再选择填入输入框或直接发送；涉及报价的回复会提示需要人工核对。 — 王争 #4097 (#3979)</li>
+  <li>PC 聊天发送栏新增「AI 回复」按钮，灰度用户可以一键生成回复草稿，并选择填入输入框或直接发送。 — 王争 #4097 (#3979)</li>
+</ul>
+
+<h3>🐞 问题修复</h3>
+<ul>
+  <li>PC 端发送较大的视频时，不再因为视频压缩失败而一直提示「上传失败」；超过 10MB 的视频也能正常压缩后发送。 — 王争 #4130 (#3986)</li>
 </ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">07/01 21:34 上次发版后，合入 main 的全部 <strong>2</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">07/01 21:34 上次发版后，合入 main 的全部 <strong>3</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
   <li><span class="merged-at">[07/01 21:42]</span>PC 发送栏新增「AI 回复」按钮 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4097">#4097</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3979">#3979</a>) <span class="author">— 王争</span></li>
@@ -158,7 +163,7 @@ a:hover { text-decoration: underline; }
 
 <h2>🐞 问题修复</h2>
 <ul>
-  <li class="empty">无</li>
+  <li><span class="merged-at">[07/01 22:15]</span>视频压缩 pass1 用 null muxer 丢弃输出（修新版 ffmpeg 8.x -f mp4 NUL 100% 失败） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4130">#4130</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3986">#3986</a>) <span class="author">— 王争</span></li>
 </ul>
 
 <h2>✨ 体验优化</h2>

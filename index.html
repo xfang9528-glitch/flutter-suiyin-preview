@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
-<!-- CURRENT_BUILD:2026070101 -->
+<!-- CURRENT_BUILD:2026070102 -->
 <title>下一版发版预览 · flutter-suiyin</title>
 <style>
 body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", sans-serif; max-width: 880px; margin: 32px auto; padding: 0 24px; color: #1f2328; line-height: 1.7; background: #fafbfc; }
@@ -41,7 +41,8 @@ a:hover { text-decoration: underline; }
 <label>查看历史预览：</label>
 <select id="version-switcher-select" onchange="var v=this.value; if(v) location.href = v; else location.href = './';">
 <!-- VERSION_SWITCHER_OPTIONS_START -->
-<option value="">📦 2026070102 发版预览</option>
+<option value="">📦 2026070103 发版预览</option>
+<option value="2026070102.html">🗂 2026070102</option>
 <option value="2026070101.html">🗂 2026070101</option>
 <option value="2026063002.html">🗂 2026063002</option>
 <option value="2026062901.html">🗂 2026062901</option>
@@ -135,36 +136,29 @@ a:hover { text-decoration: underline; }
   }
 })();
 </script>
-<h1>📦 2026070102 发版预览</h1>
+<h1>📦 2026070103 发版预览</h1>
 <div class="meta">
-当前版本：<code>2026070101</code>（发版时间：<span class="bump-time">07/01 17:46</span>），下一版（预览）：<code>2026070102</code><br>
-生成时间：2026-07-01 21:35:05 · 重新跑脚本后刷新页面即拿最新
+当前版本：<code>2026070102</code>（发版时间：<span class="bump-time">07/01 21:34</span>），下一版（预览）：<code>2026070103</code><br>
+生成时间：2026-07-01 22:05:15 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
-<h3>🐞 问题修复</h3>
+<h3>🆕 新功能</h3>
 <ul>
-  <li>部分用户下载新版后版本号一直不变、反复提示更新的问题已修复，应用会自动处理卡住的更新进程并继续完成升级。 — 王梓先 #4112 (#4101)</li>
-  <li>企微群修改群名或头像时，不再出现两条重复的系统提示。 — 陈宣宇 #4124 (#4087)</li>
-  <li>个微群改名、拉人或踢人后，左侧会话名、群详情和成员人数会自动刷新，不用再手动点“刷新群”。 — 陈宣宇 #4119 (#4110)</li>
-  <li>艺星预约里选择“不精准”保存后，不再又显示成“精准”；新建、编辑和详情展示都会保持一致。 — 陈聪、Cursor #4116 (#4115)</li>
+  <li>PC 聊天发送栏新增「AI 回复」按钮：可以先让 AI 根据最近聊天内容生成回复草稿，再选择填入输入框或直接发送；涉及报价的回复会提示需要人工核对。 — 王争 #4097 (#3979)</li>
 </ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">07/01 17:46 上次发版后，合入 main 的全部 <strong>9</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">07/01 21:34 上次发版后，合入 main 的全部 <strong>2</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
-  <li><span class="merged-at">[07/01 20:56]</span>macOS 多屏抓全屏 + 屏幕录制权限（epic #3879 M1） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4107">#4107</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4045">#4045</a>) <span class="author">— 王争</span></li>
-  <li><span class="merged-at">[07/01 18:27]</span>子窗口开窗链 BootLogger + SLS 观测 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4120">#4120</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4114">#4114</a>) <span class="author">— 梁晨、Cursor</span></li>
+  <li><span class="merged-at">[07/01 21:42]</span>PC 发送栏新增「AI 回复」按钮 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4097">#4097</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3979">#3979</a>) <span class="author">— 王争</span></li>
 </ul>
 
 <h2>🐞 问题修复</h2>
 <ul>
-  <li><span class="merged-at">[07/01 21:22]</span>Update.exe ENOENT + SelfHealGuard 永久 skip 双重致升级卡死 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4112">#4112</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4101">#4101</a>) <span class="author">— 王梓先</span></li>
-  <li><span class="merged-at">[07/01 19:25]</span>企微群改群名/头像系统通知去重 — 精准 drop 与后端 notify 重复的 GroupTips <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4124">#4124</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4087">#4087</a>) <span class="author">— 陈宣宇</span></li>
-  <li><span class="merged-at">[07/01 18:08]</span>个微群 link:notify 到达触发群信息刷新（面板/成员实时更新） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4119">#4119</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4110">#4110</a>) <span class="author">— 陈宣宇</span></li>
-  <li><span class="merged-at">[07/01 17:56]</span>艺星预约 is_accurate 字段名修正 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4116">#4116</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4115">#4115</a>) <span class="author">— 陈聪、Cursor</span></li>
+  <li class="empty">无</li>
 </ul>
 
 <h2>✨ 体验优化</h2>
@@ -174,16 +168,14 @@ a:hover { text-decoration: underline; }
 
 <h2>🔧 其他（chore / docs / test / ...）</h2>
 <ul>
-  <li><span class="merged-at">[07/01 21:34]</span>chore(release): bump Windows build 2026070102 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4128">#4128</a> <span class="author">— 王梓先</span></li>
-  <li><span class="merged-at">[07/01 18:49]</span>test(chat): 补 chatCustomerLocalDatasourceProvider override 修 loadMore 测试运行时失败 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4123">#4123</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4113">#4113</a>) <span class="author">— 王梓先</span></li>
-  <li><span class="merged-at">[07/01 18:05]</span>docs(release): archive android 2026070101 notes <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4118">#4118</a> <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[07/01 21:47]</span>docs(release): archive 2026070102 notes <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4129">#4129</a> <span class="author">— 王梓先</span></li>
 </ul>
 
 
 <hr class="ref-divider">
 
 <div class="foot">
-上一次发版时间：<span class="bump-time">07/01 17:46</span>（基线 commit：<code>chore(release): bump Windows build 2026070101</code>）<br>
+上一次发版时间：<span class="bump-time">07/01 21:34</span>（基线 commit：<code>chore(release): bump Windows build 2026070102</code>）<br>
 PR 归属版本由 <code>pubspec.yaml</code> 的 <code>version:</code> 行 git 历史判定 —— bump commit 的 committedAt 是分割线。<br>
 由 <code>tool/generate_release_preview.dart</code> 自动提取；重新跑脚本后刷新页面即拿最新。<br>
 issue 链接基于 PetWebOrg/flutter-suiyin 仓。

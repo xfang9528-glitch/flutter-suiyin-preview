@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
-<!-- CURRENT_BUILD:2026051501 -->
+<!-- CURRENT_BUILD:2026062901 -->
 <title>下一版发版预览 · flutter-suiyin</title>
 <style>
 body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", sans-serif; max-width: 880px; margin: 32px auto; padding: 0 24px; color: #1f2328; line-height: 1.7; background: #fafbfc; }
@@ -134,46 +134,42 @@ a:hover { text-decoration: underline; }
   }
 })();
 </script>
-<h1>📦 2026051502 发版预览</h1>
+<h1>📦 2026062902 发版预览</h1>
 <div class="meta">
-当前版本：<code>2026051501</code>（发版时间：<span class="bump-time">05/15 11:33</span>），下一版（预览）：<code>2026051502</code><br>
-生成时间：2026-05-15 16:57:10 · 重新跑脚本后刷新页面即拿最新
+当前版本：<code>2026062901</code>（发版时间：<span class="bump-time">06/29 17:03</span>），下一版（预览）：<code>2026062902</code><br>
+生成时间：2026-06-29 23:01:17 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
-<h3>🆕 新功能</h3>
+
+<h3>✨ 体验优化</h3>
 <ul>
-  <li>瑞熙酒店租户的客户标签、茶客 / 食客 / 房客信息现在可以在 App 里直接编辑保存了 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1933">#1933</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1907">#1907</a>)</li>
+  <li>朋友圈互动通知现在会标明是哪个人设收到的，同一条朋友圈被多个人设互动时不再混淆；「我发布的动态」详情页也只显示你有权限的人设分组，不会再对没有权限的人设误点赞 / 评论 <span class="author">— 王争</span> <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3971">#3971</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3939">#3939</a>)</li>
+  <li>深圳 / 成都艺星的聊天输入工具栏移除了「快速备注」入口 <span class="author">— 王争</span> <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4003">#4003</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3994">#3994</a>)</li>
 </ul>
 
 <h3>🐞 问题修复</h3>
 <ul>
-  <li>诚如租户编辑投保人销售时，选完销售姓名后页面不更新、要再次打开才看到新值的问题已修复 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1995">#1995</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1990">#1990</a>)</li>
-  <li>通讯录查看联系人历史图片时，右键不再出现已失效的「存为好友照片」菜单；聊天里执行该操作失败时也会给出更清晰的提示（找不到客户记录 / 客户 ID 缺失） — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1962">#1962</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1949">#1949</a>)</li>
-  <li>非艺星租户的聊天 / 通讯录筛选弹窗去掉了艺星专属维度（等级、状态、第一需求、项目）；切换租户后筛选条件会自动清空，不再带着旧条件继续过滤新企业的列表 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1986">#1986</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1805">#1805</a>)</li>
-  <li>诚如租户编辑投保人「来源信息」保存失败的问题已修复 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1989">#1989</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1988">#1988</a>)</li>
-  <li>客户已被同事接待时，再次在通讯录点「发起聊天」会正确走「管理员转交」流程，接待记录里能正确显示来源同事，不再误标为「未分配池主动发起」 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1961">#1961</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1938">#1938</a>)</li>
-  <li>聊天里上拉加载历史，翻到一半弹「没有更多消息」但 admin 后台明明还能看到更早消息的问题已修复——现在能一直翻到真正最早的那条 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1959">#1959</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1761">#1761</a>)</li>
-  <li>朋友圈「谁可以看 / 不给谁看」弹框搜索好友时，输入手机号、昵称、备注都返回「暂无朋友」的问题已修复 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1953">#1953</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1935">#1935</a>)</li>
+  <li>群聊里别人「发送失败」的消息会被错误地显示在你自己这一侧（右边的绿色气泡），现已修正，只有你自己发的消息才显示在右侧 <span class="author">— 王梓先</span> <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3991">#3991</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3949">#3949</a>)</li>
+  <li>切换企业 / 环境后，右侧客户信息栏的标签有时会加载失败、转而显示一份不属于当前企业的旧标签造成误导；现已修复，标签会正确加载，失败时也会显示「重试」而不是错误内容 <span class="author">— 王争</span> <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3973">#3973</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3963">#3963</a>)</li>
 </ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">05/15 11:33 上次发版后，合入 main 的全部 <strong>10</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">06/29 17:03 上次发版后，合入 main 的全部 <strong>8</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
-  <li><span class="merged-at">[05/15 15:48]</span>瑞熙酒店动态标签接入（客户 + 茶/食/房客） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1933">#1933</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1907">#1907</a>) <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[06/29 18:41]</span>pass1/2 失败把 ffmpeg stderr 尾部并入 video_compress:fail SLS <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4007">#4007</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3986">#3986</a>) <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[06/29 18:18]</span>深圳/成都艺星移除快速备注工具栏入口 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4003">#4003</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3994">#3994</a>) <span class="author">— 王争</span></li>
 </ul>
 
 <h2>🐞 问题修复</h2>
 <ul>
-  <li><span class="merged-at">[05/15 16:52]</span>chengru 销售 picker option.value 改用 name（不是 id） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1995">#1995</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1990">#1990</a>) <span class="author">— 陈聪</span></li>
-  <li><span class="merged-at">[05/15 16:47]</span>通讯录 readOnly 视图禁止「存为好友照片」+ 错误文案分级 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1962">#1962</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1949">#1949</a>) <span class="author">— 王争</span></li>
-  <li><span class="merged-at">[05/15 16:44]</span>非艺星租户筛选弹窗收敛通用维度 + 切租户清空漏斗 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1986">#1986</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1805">#1805</a>) <span class="author">— 王梓先</span></li>
-  <li><span class="merged-at">[05/15 16:34]</span>chengru 来源信息保存失败——绕 SDK 直接 PUT raw map <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1989">#1989</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1988">#1988</a>) <span class="author">— 陈聪</span></li>
-  <li><span class="merged-at">[05/15 16:19]</span>已分配给他人时调 changeAllocation 而非 startAllocation <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1961">#1961</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1938">#1938</a>) <span class="author">— 王争</span></li>
-  <li><span class="merged-at">[05/15 15:53]</span>上拉历史 hasMore 判据从 length&gt;=pageSize 改为 isNotEmpty <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1959">#1959</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1761">#1761</a>) <span class="author">— 王梓先</span></li>
-  <li><span class="merged-at">[05/15 15:01]</span>搜索好友补传 isFriend+type，修复搜索无结果 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1953">#1953</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1935">#1935</a>) <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[06/29 17:48]</span>群内他人「发送失败」消息不再误判靠右 — #3620 failed→isMe 收口 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3991">#3991</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3949">#3949</a>) <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[06/29 17:48]</span>发消息失败告警改用投递回执 status=3,只盯「没分配给你」 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3997">#3997</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3995">#3995</a>) <span class="author">— 张拓</span></li>
+  <li><span class="merged-at">[06/29 17:27]</span>切环境后右侧客户标签拉取失败→退回误导 fallback <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3973">#3973</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3963">#3963</a>) <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[06/29 17:14]</span>发消息失败告警改用「用户重试/硬失败」口径 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3990">#3990</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3988">#3988</a>) <span class="author">— 张拓</span></li>
+  <li><span class="merged-at">[06/29 17:11]</span>朋友圈互动通知按人设区分 + 详情页无权限分组隐藏 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3971">#3971</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3939">#3939</a>) <span class="author">— 王争</span></li>
 </ul>
 
 <h2>✨ 体验优化</h2>
@@ -183,15 +179,14 @@ a:hover { text-decoration: underline; }
 
 <h2>🔧 其他（chore / docs / test / ...）</h2>
 <ul>
-  <li><span class="merged-at">[05/15 12:03]</span>chore(release): bump to 26.05.15+2026051501 + 归档 .2026051501 release notes <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1967">#1967</a> <span class="author">— 张拓</span></li>
-  <li><span class="merged-at">[05/15 11:33]</span>chore(release): bump to 26.05.15+2026051501 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1965">#1965</a> <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[06/29 18:13]</span>chore(moments #3987): 静默切账号 toast + 过滤谓词统一 + fromNotViewJson <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3996">#3996</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3987">#3987</a>) <span class="author">— 王争</span></li>
 </ul>
 
 
 <hr class="ref-divider">
 
 <div class="foot">
-上一次发版时间：<span class="bump-time">05/15 11:33</span>（基线 commit：<code>chore(release): bump to 26.05.15+2026051501</code>）<br>
+上一次发版时间：<span class="bump-time">06/29 17:03</span>（基线 commit：<code>chore(release): bump Windows build 2026062901</code>）<br>
 PR 归属版本由 <code>pubspec.yaml</code> 的 <code>version:</code> 行 git 历史判定 —— bump commit 的 committedAt 是分割线。<br>
 由 <code>tool/generate_release_preview.dart</code> 自动提取；重新跑脚本后刷新页面即拿最新。<br>
 issue 链接基于 PetWebOrg/flutter-suiyin 仓。

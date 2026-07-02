@@ -141,15 +141,24 @@ a:hover { text-decoration: underline; }
 <h1>📦 2026070202 发版预览</h1>
 <div class="meta">
 当前版本：<code>2026070201</code>（发版时间：<span class="bump-time">07/02 12:33</span>），下一版（预览）：<code>2026070202</code><br>
-生成时间：2026-07-02 14:41:24 · 重新跑脚本后刷新页面即拿最新
+生成时间：2026-07-02 16:54:46 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
-<div class="notice">本次 PC 端暂无需要展示给用户的更新；底部的移动端修复已按 PC Pages 口径过滤。</div>
+<h3>✨ 体验优化</h3>
+<ul>
+  <li>新朋友「一键通过」会默认筛到待添加客户，人数也按实际待处理数量显示；通过前必须选好销售人设，避免误操作。 — 梁晨、Cursor #4164 (#4154)</li>
+  <li>macOS 截图时，截图浮层弹出不再明显抖一下，操作更稳定。 — 王争 #4170 (#4158)</li>
+</ul>
+
+<h3>🐞 问题修复</h3>
+<ul>
+  <li>编辑话术时，如果图片压缩图还没生成，也会回退显示原图，不再只看到灰色占位框。 — 王争 #4155 (#4150)</li>
+</ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">07/02 12:33 上次发版后，合入 main 的全部 <strong>3</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">07/02 12:33 上次发版后，合入 main 的全部 <strong>8</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
   <li class="empty">无</li>
@@ -157,6 +166,10 @@ a:hover { text-decoration: underline; }
 
 <h2>🐞 问题修复</h2>
 <ul>
+  <li><span class="merged-at">[07/02 16:12]</span>PC 编辑话术弹窗图片回退原图 content，修空串 compressUrl 只剩灰框占位 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4155">#4155</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4150">#4150</a>) <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[07/02 15:52]</span>移动端更新弹窗「重试下载」无反应 + 取消重下进度条闪速叠加 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4179">#4179</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4153">#4153</a>) <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[07/02 15:32]</span>消除 macOS 原生截图 overlay 弹出抖动 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4170">#4170</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4158">#4158</a>) <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[07/02 15:01]</span>一键通过计数用 stats，默认待添加且人设必选 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4164">#4164</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4154">#4154</a>) <span class="author">— 梁晨、Cursor</span></li>
   <li><span class="merged-at">[07/02 13:50]</span>移动端聊天详情页点头像进客户信息为空 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4168">#4168</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3948">#3948</a>) <span class="author">— 王梓先</span></li>
 </ul>
 
@@ -167,6 +180,7 @@ a:hover { text-decoration: underline; }
 
 <h2>🔧 其他（chore / docs / test / ...）</h2>
 <ul>
+  <li><span class="merged-at">[07/02 14:51]</span>test(friend_request #4171): 用 pumpEventQueue 消除 sales/self reuse 单测偶发红 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4173">#4173</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4171">#4171</a>) <span class="author">— 王争</span></li>
   <li><span class="merged-at">[07/02 13:50]</span>chore(chat #4071): 提取共享 ReceptionTag 组件，收敛 6 处重复接待销售标签 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4157">#4157</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4071">#4071</a>) <span class="author">— 王争</span></li>
   <li><span class="merged-at">[07/02 12:40]</span>docs(release): archive 2026070201 notes <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4167">#4167</a> <span class="author">— 王梓先</span></li>
 </ul>

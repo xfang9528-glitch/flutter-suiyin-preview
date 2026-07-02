@@ -141,31 +141,50 @@ a:hover { text-decoration: underline; }
 <h1>📦 2026070202 发版预览</h1>
 <div class="meta">
 当前版本：<code>2026070201</code>（发版时间：<span class="bump-time">07/02 12:33</span>），下一版（预览）：<code>2026070202</code><br>
-生成时间：2026-07-02 16:54:46 · 重新跑脚本后刷新页面即拿最新
+生成时间：2026-07-02 20:26:26 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
+<h3>🆕 新功能</h3>
+<ul>
+  <li>新的朋友筛选人设时，可以按分组一次多选账号，账号数量也会正确显示，批量处理好友申请更省事。 — 梁晨、Cursor #4186 (#4177)</li>
+  <li>升级提醒可以按企业显示不同内容，不同企业看到的更新提示会更贴近自己的版本安排。 — 王梓先 #4181 (#3644)</li>
+  <li>截图选择窗口时，靠近窗口边缘会自动吸附并高亮，截取指定窗口更顺手。 — 王争 #4174 (#4047)</li>
+</ul>
+
 <h3>✨ 体验优化</h3>
 <ul>
-  <li>新朋友「一键通过」会默认筛到待添加客户，人数也按实际待处理数量显示；通过前必须选好销售人设，避免误操作。 — 梁晨、Cursor #4164 (#4154)</li>
-  <li>macOS 截图时，截图浮层弹出不再明显抖一下，操作更稳定。 — 王争 #4170 (#4158)</li>
+  <li>macOS 截图浮层弹出时的抖动已消除，截图界面打开更稳。 — 王争 #4170 (#4158)</li>
 </ul>
 
 <h3>🐞 问题修复</h3>
 <ul>
-  <li>编辑话术时，如果图片压缩图还没生成，也会回退显示原图，不再只看到灰色占位框。 — 王争 #4155 (#4150)</li>
+  <li>点击“立即安装”后，不再因为旧升级进程占用文件导致应用退出后没有完成更新、也没有自动重启。 — 王梓先 #4199 (#4160)</li>
+  <li>收到表情消息时会显示清晰原图，不再只看到模糊缩略图。 — 王争 #4190 (#4183)</li>
+  <li>从群成员等入口打开客户聊天时，如果当前人设缺少客户 ID，会明确提示而不是误进到其他人设的客户。 — 陈聪 #4195 (#4035)</li>
+  <li>顶栏全局搜索现在输入一个汉字也能查，不用再多输一个字才触发搜索。 — 梁晨、Cursor #4188 (#4176)</li>
+  <li>编辑话术时，图片不再因为压缩图地址为空只显示灰色占位，能正常回退显示原图。 — 王争 #4155 (#4150)</li>
+  <li>“新的朋友”里一键通过的数量会按实际待添加人数计算，并要求先选人设，避免批量通过时选错账号。 — 梁晨、Cursor #4164 (#4154)</li>
 </ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">07/02 12:33 上次发版后，合入 main 的全部 <strong>8</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">07/02 12:33 上次发版后，合入 main 的全部 <strong>18</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
-  <li class="empty">无</li>
+  <li><span class="merged-at">[07/02 17:59]</span>新的朋友人设筛选改用分组多选并修复账号数量对齐 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4186">#4186</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4177">#4177</a>) <span class="author">— 梁晨、Cursor</span></li>
+  <li><span class="merged-at">[07/02 17:31]</span>升级提示支持按企业差异化（纯前端方案，#3644） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4181">#4181</a> <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[07/02 17:02]</span>窗口自动吸附高亮（截图原生重做 M3） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4174">#4174</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4047">#4047</a>) <span class="author">— 王争</span></li>
 </ul>
 
 <h2>🐞 问题修复</h2>
 <ul>
+  <li><span class="merged-at">[07/02 19:41]</span>reduce recruit qr setState ratchet <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4194">#4194</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3965">#3965</a>) <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[07/02 18:39]</span>「立即安装」按钮 apply 前接入 CrashpadHandlerCleaner <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4199">#4199</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4160">#4160</a>) <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[07/02 18:07]</span>refresher.id_mismatch 补 returnedRecords，修 SLS List 打平成 &quot;[]&quot; 丢错客户证据 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4197">#4197</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1155">#1155</a>) <span class="author">— 张拓</span></li>
+  <li><span class="merged-at">[07/02 17:59]</span>收到的表情气泡渲染原图 url，不再显示模糊缩略图 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4190">#4190</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4183">#4183</a>) <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[07/02 17:53]</span>block opening customer when clientId is missing <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4195">#4195</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4035">#4035</a>) <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[07/02 17:26]</span>单汉字可触发全局搜索 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4188">#4188</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4176">#4176</a>) <span class="author">— 梁晨、Cursor</span></li>
   <li><span class="merged-at">[07/02 16:12]</span>PC 编辑话术弹窗图片回退原图 content，修空串 compressUrl 只剩灰框占位 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4155">#4155</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4150">#4150</a>) <span class="author">— 王争</span></li>
   <li><span class="merged-at">[07/02 15:52]</span>移动端更新弹窗「重试下载」无反应 + 取消重下进度条闪速叠加 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4179">#4179</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4153">#4153</a>) <span class="author">— 王梓先</span></li>
   <li><span class="merged-at">[07/02 15:32]</span>消除 macOS 原生截图 overlay 弹出抖动 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4170">#4170</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4158">#4158</a>) <span class="author">— 王争</span></li>
@@ -180,6 +199,7 @@ a:hover { text-decoration: underline; }
 
 <h2>🔧 其他（chore / docs / test / ...）</h2>
 <ul>
+  <li><span class="merged-at">[07/02 17:44]</span>docs(release): archive android 2026070201 notes <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4193">#4193</a> <span class="author">— 王梓先</span></li>
   <li><span class="merged-at">[07/02 14:51]</span>test(friend_request #4171): 用 pumpEventQueue 消除 sales/self reuse 单测偶发红 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4173">#4173</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4171">#4171</a>) <span class="author">— 王争</span></li>
   <li><span class="merged-at">[07/02 13:50]</span>chore(chat #4071): 提取共享 ReceptionTag 组件，收敛 6 处重复接待销售标签 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4157">#4157</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4071">#4071</a>) <span class="author">— 王争</span></li>
   <li><span class="merged-at">[07/02 12:40]</span>docs(release): archive 2026070201 notes <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4167">#4167</a> <span class="author">— 王梓先</span></li>

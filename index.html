@@ -141,29 +141,30 @@ a:hover { text-decoration: underline; }
 <h1>📦 2026070202 发版预览</h1>
 <div class="meta">
 当前版本：<code>2026070201</code>（发版时间：<span class="bump-time">07/02 12:33</span>），下一版（预览）：<code>2026070202</code><br>
-生成时间：2026-07-02 22:45:16 · 重新跑脚本后刷新页面即拿最新
+生成时间：2026-07-02 23:04:34 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
 <h3>🆕 新功能</h3>
 <ul>
-  <li>截图窗口贴近屏幕边缘时会自动吸附，并高亮提示可停靠的位置，截完图后整理窗口更顺手。 — 王争 #4174 (#4047)</li>
+  <li>新的朋友列表支持按人设分组多选筛选，并修正每个账号的人数统计；处理好友申请时更容易按销售人设定位。 — 梁晨、Cursor <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4186">#4186</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4177">#4177</a>)</li>
+  <li>升级提示可以按企业单独配置，不同企业后续能看到更贴合自己的升级提醒。 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4181">#4181</a></li>
+  <li>截图时拖动窗口靠近边缘会自动吸附，并用高亮提示吸附位置，对齐窗口更直观。 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4174">#4174</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4047">#4047</a>)</li>
 </ul>
 
 <h3>✨ 体验优化</h3>
 <ul>
-  <li>「新的朋友」现在可以按分组多选人设筛选，账号数量也会跟着筛选条件正确显示。 — 梁晨、Cursor #4186 (#4177)</li>
-  <li>macOS 截图浮层弹出时不再明显抖动，截图过程更稳定。 — 王争 #4170 (#4158)</li>
+  <li>macOS 截图浮层弹出时更稳定，不再出现明显抖动。 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4170">#4170</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4158">#4158</a>)</li>
 </ul>
 
 <h3>🐞 问题修复</h3>
 <ul>
-  <li>升级弹窗里点「立即安装」后，不再因为残留进程占用文件而安装失败、应用退出后也没重启回来。 — 王梓先 #4199 (#4160)</li>
-  <li>收到的表情消息会显示清晰原图，不再只看到模糊缩略图。 — 王争 #4190 (#4183)</li>
-  <li>全局搜索现在输入 1 个汉字也能正常搜索，不用再多输一个字才能触发结果。 — 梁晨、Cursor #4188 (#4176)</li>
-  <li>PC 编辑话术弹窗里的图片不再因为压缩图地址为空只显示灰色占位。 — 王争 #4155 (#4150)</li>
-  <li>从客户或群成员入口发起聊天时，如果当前人设缺少客户 ID，会直接提示原因，不再误用其他人设继续打开。 — 陈聪 #4195 (#4035)</li>
-  <li>「新的朋友」一键通过数量会按真实待添加数显示，滚动加载更多后数量不再越变越多；进入页面也会默认看待添加请求并要求先选人设。 — 梁晨、Cursor #4164 (#4154)</li>
+  <li>点击“立即安装”升级时，会先清理旧的崩溃处理进程，减少安装被占用卡住或失败的情况。 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4199">#4199</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4160">#4160</a>)</li>
+  <li>聊天里收到的表情会显示原图，不再只显示模糊缩略图。 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4190">#4190</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4183">#4183</a>)</li>
+  <li>客户资料缺少必要信息时，点击入口不会再打开一个空白或错误的客户详情页。 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4195">#4195</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4035">#4035</a>)</li>
+  <li>全局搜索现在输入单个汉字也能触发搜索，不必再多输一个字。 — 梁晨、Cursor <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4188">#4188</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4176">#4176</a>)</li>
+  <li>编辑话术时，图片没有压缩图也会回退显示原图，不再只剩灰色占位框。 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4155">#4155</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4150">#4150</a>)</li>
+  <li>一键通过好友申请的人数统计更准确，并默认只处理待添加申请；未选择人设时会先提醒，避免误操作。 — 梁晨、Cursor <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4164">#4164</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4154">#4154</a>)</li>
 </ul>
 
 <hr class="ref-divider">

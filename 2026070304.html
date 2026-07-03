@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
-<!-- CURRENT_BUILD:2026050201 -->
+<!-- CURRENT_BUILD:2026070303 -->
 <title>下一版发版预览 · flutter-suiyin</title>
 <style>
 body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", sans-serif; max-width: 880px; margin: 32px auto; padding: 0 24px; color: #1f2328; line-height: 1.7; background: #fafbfc; }
@@ -141,49 +141,57 @@ a:hover { text-decoration: underline; }
   }
 })();
 </script>
-<h1>📦 2026050301 发版预览</h1>
+<h1>📦 2026070304 发版预览</h1>
 <div class="meta">
-当前版本：<code>2026050201</code>（发版时间：<span class="bump-time">05/02 01:17</span>），下一版（预览）：<code>2026050301</code><br>
-生成时间：2026-05-03 18:35:37 · 重新跑脚本后刷新页面即拿最新
+当前版本：<code>2026070303</code>（发版时间：<span class="bump-time">07/03 15:22</span>），下一版（预览）：<code>2026070304</code><br>
+生成时间：2026-07-03 16:55:01 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
+<h3>🆕 新功能</h3>
+<ul>
+  <li>Windows 截图时，鼠标悬停到窗口上会自动高亮整个窗口，单击即可选中；需要手动框选时仍可直接拖拽选择。 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4240">#4240</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4050">#4050</a>)</li>
+</ul>
+
 <h3>🐞 问题修复</h3>
 <ul>
-  <li>在聊天列表选中某条会话后，切到通讯录再切回聊天，列表会抖动闪烁、滚动位置错乱的问题已修复，现在切走再切回保持原位 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1276">#1276</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1260">#1260</a>)</li>
-  <li>修改客户等级时，聊天列表里的等级胶囊和聊天窗口右上角的等级标签会显示不一致（保存失败回滚或后端响应慢时尤其明显，两处一个新值一个旧值）的问题已修复，现在两处会同步显示同一个值 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1275">#1275</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1274">#1274</a>)</li>
+  <li>微信人设掉线后重新登录时，扫码二维码现在能正常显示，不会再卡在“二维码加载失败”。 — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4257">#4257</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4253">#4253</a>)</li>
+  <li>萌爪环境的动态标签省市区选择器现在能正常展示省、市、区选项。 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4244">#4244</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4230">#4230</a>)</li>
+  <li>双击聊天或通讯录标题栏编辑客户备注时，点击输入框内调整光标不会再误触发保存退出。 — 梁晨、Cursor <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4237">#4237</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4196">#4196</a>)</li>
 </ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">05/02 01:17 上次发版后，合入 main 的全部 <strong>5</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">07/03 15:22 上次发版后，合入 main 的全部 <strong>7</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
-  <li class="empty">无</li>
+  <li><span class="merged-at">[07/03 16:47]</span>Windows 悬停窗口自动吸附高亮（截图原生重做 W3） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4240">#4240</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4050">#4050</a>) <span class="author">— 王争</span></li>
 </ul>
 
 <h2>🐞 问题修复</h2>
 <ul>
-  <li><span class="merged-at">[05/02 11:05]</span>chat 列表选中后切 tab 再切回 scroll 闪烁 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1276">#1276</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1260">#1260</a>) <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[07/03 16:24]</span>PC 微信人设重登二维码支持 data:image base64 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4257">#4257</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4253">#4253</a>) <span class="author">— 陈宣宇</span></li>
+  <li><span class="merged-at">[07/03 16:13]</span>close #4230 修复萌爪省市区动态标签无选项 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4244">#4244</a> <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[07/03 16:13]</span>移动端群聊点群友头像进好友信息页恢复「发起聊天」入口 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4246">#4246</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4178">#4178</a>) <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[07/03 15:30]</span>标题栏备注编辑框内点击不再误触发保存 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4237">#4237</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4196">#4196</a>) <span class="author">— 梁晨、Cursor</span></li>
 </ul>
 
 <h2>✨ 体验优化</h2>
 <ul>
-  <li><span class="merged-at">[05/02 11:05]</span>等级徽章 header 改用 list 透传的 customer <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1275">#1275</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1274">#1274</a>) <span class="author">— 王梓先</span></li>
+  <li class="empty">无</li>
 </ul>
 
 <h2>🔧 其他（chore / docs / test / ...）</h2>
 <ul>
-  <li><span class="merged-at">[05/02 21:59]</span>test(chat #1283): wechat_remark_editor 补 chatLocal.getAll() mock stub <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1284">#1284</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1283">#1283</a>) <span class="author">— 王梓先</span></li>
-  <li><span class="merged-at">[05/02 19:25]</span>chore(quality-gate): dart fix 治理 681 条 lint，warnings+info 843→162 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1282">#1282</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1277">#1277</a>) <span class="author">— 王梓先</span></li>
-  <li><span class="merged-at">[05/02 11:19]</span>chore(release): bump to 26.05.02+2026050201 + 归档 .2026050201 release notes <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1278">#1278</a> <span class="author">— 张拓</span></li>
+  <li><span class="merged-at">[07/03 16:30]</span>test(chat #4099): seq 后守卫审计刷新 + 补 atType/atMe 全量刷新路径保留守卫 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4223">#4223</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4099">#4099</a>) <span class="author">— 张拓</span></li>
+  <li><span class="merged-at">[07/03 15:39]</span>docs(release): archive 2026070303 notes <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4255">#4255</a> <span class="author">— 王梓先</span></li>
 </ul>
 
 
 <hr class="ref-divider">
 
 <div class="foot">
-上一次发版时间：<span class="bump-time">05/02 01:17</span>（基线 commit：<code>fix(chat #1262): TIM 成功即绿勾，msg:delivery 不来时 watchdog 回退 sending (#1272)</code>）<br>
+上一次发版时间：<span class="bump-time">07/03 15:22</span>（基线 commit：<code>chore(release): bump Windows build 2026070303</code>）<br>
 PR 归属版本由 <code>pubspec.yaml</code> 的 <code>version:</code> 行 git 历史判定 —— bump commit 的 committedAt 是分割线。<br>
 由 <code>tool/generate_release_preview.dart</code> 自动提取；重新跑脚本后刷新页面即拿最新。<br>
 issue 链接基于 PetWebOrg/flutter-suiyin 仓。

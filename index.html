@@ -145,37 +145,40 @@ a:hover { text-decoration: underline; }
 <h1>📦 2026070402 发版预览</h1>
 <div class="meta">
 当前版本：<code>2026070401</code>（发版时间：<span class="bump-time">07/04 11:14</span>），下一版（预览）：<code>2026070402</code><br>
-生成时间：2026-07-04 17:55:13 · 重新跑脚本后刷新页面即拿最新
+生成时间：2026-07-04 18:05:35 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
 <h3>🆕 新功能</h3>
 <ul>
-  <li>PC 端收到微信群二维码图片时，可以直接右键「识别图中二维码」，识别后选择人设发起进群，不用再绕到手机处理。 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4316">#4316</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3532">#3532</a>)</li>
-  <li>服务通知里新增「所有提醒」入口，可以集中查看还没到提醒时间的微信提醒，并从提醒卡片跳回原消息。 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4235">#4235</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4037">#4037</a>)</li>
+  <li>群发选人现在可以按企微标签、微信标签筛选或排除客户，比如先排除「内部」标签客户再发群发，减少误发。 — 陈宣宇 #4334 (#4294)</li>
+  <li>服务通知里新增「所有提醒」入口，PC 端可以在弹窗里一次查看还没到提醒时间的微信提醒。 — 王争 #4235 (#4037)</li>
+  <li>PC 端收到微信群二维码图片后，可以直接识别二维码并选择人设发起进群，不用再借助手机扫码。 — 王梓先 #4316 (#3532)</li>
 </ul>
 
 <h3>✨ 体验优化</h3>
 <ul>
-  <li>聊天里的图片、视频等媒体消息现在可以直接拖到输入框里复用发送，跟拖本地文件一样走发送前校验。 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4331">#4331</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4315">#4315</a>)</li>
-  <li>打开过很多会话后，聊天页不再因为后台会话持续刷新而越用越卡；长时间使用时打字和切会话会更稳。 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4314">#4314</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4333">#4333</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4299">#4299</a>/<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4300">#4300</a>/<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4301">#4301</a>)</li>
+  <li>长时间打开很多会话后，聊天窗口越用越卡、CPU 和内存持续上涨的问题已收敛，后台会话不再反复做无用刷新。 — 王梓先 #4333, #4314 (#4301, #4299, #4300)</li>
+  <li>PC 聊天里可以把已有图片、视频等媒体消息直接拖到输入框再次发送，转发素材更顺手。 — 陈聪 #4331 (#4315)</li>
 </ul>
 
 <h3>🐞 问题修复</h3>
 <ul>
-  <li>从 PC 全局搜索进入群聊后，@ 成员时能正常拿到群成员列表，不再出现选不到人的情况。 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4338">#4338</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4317">#4317</a>)</li>
-  <li>茶馆、餐厅、租户等通用用户标签现在点开能正常显示详情面板，不会点了没反应。 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4311">#4311</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4209">#4209</a>)</li>
-  <li>专家转发后会留在原来的专家会话里，不会被聊天列表刷新带走或关掉当前来源会话。 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4324">#4324</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4297">#4297</a>)</li>
-  <li>多人设聊天列表里的备注和人设号不再串成同一个人，切换群聊人设后标题和备注会跟随新人设显示。 — 梁晨、Cursor <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4266">#4266</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4259">#4259</a>)</li>
-  <li>PC 聊天列表顶部搜索框点一次就能输入文字，不再出现光标进去了但打不进字。 — 梁晨、Cursor <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4310">#4310</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4309">#4309</a>)</li>
-  <li>会诊记录里的消息会按真实时间顺序展示，不再因为接口返回顺序混乱导致上下文倒序或插错位置。 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4303">#4303</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4148">#4148</a>)</li>
+  <li>PC 全局搜索打开群聊后，@ 成员列表可能加载不出来的问题已修复。 — 陈聪 #4338 (#4317)</li>
+  <li>部分企业点击客户标签后详情面板打不开的问题已修复，茶饮、餐饮、租户用户标签都能正常查看详情。 — 陈聪 #4311 (#4209)</li>
+  <li>专家转发后会话会跳离原来的专家来源会话，现在转发完成后会继续停留在原会话。 — 陈聪 #4324 (#4297)</li>
+  <li>聊天列表里客户备注和人设号可能串到不匹配的人设上，现在切换人设后会显示对应的人设备注。 — 梁晨、Cursor #4266 (#4259, #3937)</li>
+  <li>PC 聊天列表顶部搜索框点开后打不进字的问题已修复。 — 梁晨、Cursor #4310 (#4309)</li>
+  <li>咨询记录里的消息顺序现在按时间正确排列，避免打开记录时看到前后颠倒或乱序的对话。 — 陈聪 #4303 (#4148)</li>
 </ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">07/04 11:14 上次发版后，合入 main 的全部 <strong>18</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">07/04 11:14 上次发版后，合入 main 的全部 <strong>20</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
+  <li><span class="merged-at">[07/04 18:02]</span>截图标注原生文字工具（内联编辑 + IME + 字号）（截图原生重做 T3） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4341">#4341</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4213">#4213</a>) <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[07/04 17:56]</span>群发选人支持企微/微信标签筛选与排除 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4334">#4334</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4294">#4294</a>) <span class="author">— 陈宣宇</span></li>
   <li><span class="merged-at">[07/04 16:11]</span>Windows 截图标注 基础图形工具（矩形/圆/箭头/直线）+ 共享参数条 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4318">#4318</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4268">#4268</a>) <span class="author">— 王争、kite365</span></li>
   <li><span class="merged-at">[07/04 15:13]</span>服务通知加「所有提醒」入口 + pending 提醒查看页（PC+移动） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4235">#4235</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4037">#4037</a>) <span class="author">— 王争</span></li>
   <li><span class="merged-at">[07/04 14:47]</span>截图标注原生画笔工具 + 工具栏视觉打磨 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4326">#4326</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4212">#4212</a>) <span class="author">— 王争</span></li>

@@ -2,6 +2,8 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
+
+<!-- PREVIEW_PUBLISH_STAMP:20260705165706 -->
 <!-- CURRENT_BUILD:2026070501 -->
 <title>下一版发版预览 · flutter-suiyin</title>
 <style>
@@ -34,8 +36,8 @@ a:hover { text-decoration: underline; }
      - 历史项 `🗂 <build>` = 已发版冻结归档，文件名 `<10位build>.html`（一次发版一份）
      - 本地预览（docs/release-preview.html）：dart 读 PREVIEW_REPO_DIR
        （默认 D:/CC work/flutter-suiyin-preview）下已有的 `<build>.html`，option
-       value 拼绝对 URL 指向 GitHub Pages，本地点击跳过去看
-     - GitHub Pages 上的 index.html：publish_preview.ps1 推送时会把 marker 之间
+       value 拼绝对 URL 指向 Cloudflare Pages，本地点击跳过去看
+     - Cloudflare Pages 上的 index.html：publish_preview.ps1 推送时会把 marker 之间
        的内容重写成相对路径 option（同域跳转），覆盖 dart 输出 -->
 <div class="version-switcher">
 <label>查看历史预览：</label>
@@ -146,28 +148,38 @@ a:hover { text-decoration: underline; }
 <h1>📦 2026070502 发版预览</h1>
 <div class="meta">
 当前版本：<code>2026070501</code>（发版时间：<span class="bump-time">07/05 03:09</span>），下一版（预览）：<code>2026070502</code><br>
-生成时间：2026-07-05 15:01:40 · 重新跑脚本后刷新页面即拿最新
+生成时间：2026-07-05 16:55:58 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
+<h3>🆕 新功能</h3>
+<ul>
+  <li>艺星话术面板新增「快捷」页，可以把常用话术绑定到 F1-F12；聊天时按对应按键就能直接发送，不用反复打开话术列表查找。 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4372">#4372</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4308">#4308</a>)</li>
+  <li>Windows 截图标注新增文字工具：可以在截图上直接输入文字、调整字号，中文输入法和导出图片都能正常保留文字内容。 — 王争、kite365 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4346">#4346</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4270">#4270</a>)</li>
+</ul>
+
 <h3>✨ 体验优化</h3>
 <ul>
-  <li>图片和视频预览窗口会记住上次拖到的位置，重启应用后再打开也不会每次都回到屏幕中央。 — 王梓先 #4357 (#4329)</li>
-  <li>接待客户很多时，同步接待中列表会少做整表扫描，启动和刷新时更不容易卡顿。 — 梁晨、Cursor #4358 (#4344)</li>
+  <li>图片和视频预览窗口会记住上次拖到的位置，重启应用后再打开也不会每次都回到屏幕中央。 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4357">#4357</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4329">#4329</a>)</li>
+  <li>接待客户很多时，同步接待中列表会少做整表扫描，启动和刷新时更不容易卡顿。 — 梁晨、Cursor <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4358">#4358</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4344">#4344</a>)</li>
 </ul>
 
 <h3>🐞 问题修复</h3>
 <ul>
-  <li>修复接待中列表全量同步时，已离开接待的客户可能被置顶列表重新带回来的问题，避免列表里出现不该继续接待的客户。 — 张拓 #4361 (#4328)</li>
-  <li>修复萌爪专家目录刷新或网络异常时，专家会话可能短暂混进普通会话列表、未读红点也可能丢失的问题。 — 陈聪 #3873 (#3869)</li>
-  <li>yestar / yestar-sz 管理员现在能在值班菜单里看到真实状态，并可从「上班」或「离开」切到「下班」，避免误以为离线却仍在参与客户分配。 — 张拓 #4312 (#4304)</li>
+  <li>拖入较大或异常的视频时，聊天输入框不再一直卡在生成缩略图；超时后会自动停止，也可以用退格或 Delete 删除视频重新选择。 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4371">#4371</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4350">#4350</a>)</li>
+  <li>「新的朋友」一键通过运行中切到其他 Tab，完成后仍会弹出结果提醒，不用回到原页面才能看到处理结果。 — 梁晨、Cursor <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4369">#4369</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4319">#4319</a>)</li>
+  <li>修复接待中列表全量同步时，已离开接待的客户可能被置顶列表重新带回来的问题，避免列表里出现不该继续接待的客户。 — 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4361">#4361</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4328">#4328</a>)</li>
+  <li>修复萌爪专家目录刷新或网络异常时，专家会话可能短暂混进普通会话列表、未读红点也可能丢失的问题。 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3873">#3873</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3869">#3869</a>)</li>
+  <li>yestar / yestar-sz 管理员现在能在值班菜单里看到真实状态，并可从「上班」或「离开」切到「下班」，避免误以为离线却仍在参与客户分配。 — 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4312">#4312</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4304">#4304</a>)</li>
 </ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">07/05 03:09 上次发版后，合入 main 的全部 <strong>11</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">07/05 03:09 上次发版后，合入 main 的全部 <strong>17</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
+  <li><span class="merged-at">[07/05 15:57]</span>话术面板「快捷」tab + F1-F12 绑定发送（艺星） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4372">#4372</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4308">#4308</a>) <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[07/05 15:16]</span>截图标注 下载/保存到本地（截图原生重做 T5） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4363">#4363</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4215">#4215</a>) <span class="author">— 王争</span></li>
   <li><span class="merged-at">[07/05 11:50]</span>一键通过补 batch 会话 SLS 埋点 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4356">#4356</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4282">#4282</a>) <span class="author">— 梁晨</span></li>
   <li><span class="merged-at">[07/05 11:38]</span>Windows 截图标注 文字工具（内联编辑 + IME + 字号） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4346">#4346</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4270">#4270</a>) <span class="author">— 王争、kite365</span></li>
   <li><span class="merged-at">[07/05 11:27]</span>PC 图片/视频预览窗位置跨重启记忆 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4357">#4357</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4329">#4329</a>) <span class="author">— 王梓先</span></li>
@@ -176,6 +188,9 @@ a:hover { text-decoration: underline; }
 
 <h2>🐞 问题修复</h2>
 <ul>
+  <li><span class="merged-at">[07/05 16:48]</span>Fix mobile select-to-here range button <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4377">#4377</a> <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[07/05 16:40]</span>timeout cancellable input video thumbnails <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4371">#4371</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4350">#4350</a>) <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[07/05 16:25]</span>一键通过切 Tab 后仍弹出完成提醒 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4369">#4369</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4319">#4319</a>) <span class="author">— 梁晨、Cursor</span></li>
   <li><span class="merged-at">[07/05 14:25]</span>guard merger relay dispose path <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4359">#4359</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3358">#3358</a>) <span class="author">— 陈聪</span></li>
   <li><span class="merged-at">[07/05 14:13]</span>专家目录 loading/error 不塌空 expertTimIds — 防删/剔除韧性 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3873">#3873</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3869">#3869</a>) <span class="author">— 陈聪</span></li>
   <li><span class="merged-at">[07/05 13:07]</span>allocation snapshot 全量同步改用 base+overlay 语义 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4361">#4361</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4328">#4328</a>) <span class="author">— 张拓</span></li>
@@ -190,6 +205,7 @@ a:hover { text-decoration: underline; }
 
 <h2>🔧 其他（chore / docs / test / ...）</h2>
 <ul>
+  <li><span class="merged-at">[07/05 16:10]</span>obs(observability): PC 主窗口内存哨兵埋点 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4374">#4374</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4365">#4365</a>) <span class="author">— 王梓先</span></li>
   <li><span class="merged-at">[07/05 11:18]</span>test(chat): #4347 修 #4259 follow-up 合入的存量红测试（6 文件） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4354">#4354</a> <span class="author">— 王争</span></li>
 </ul>
 

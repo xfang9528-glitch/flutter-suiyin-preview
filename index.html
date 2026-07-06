@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 
-<!-- PREVIEW_PUBLISH_STAMP:20260706202046 -->
+<!-- PREVIEW_PUBLISH_STAMP:20260706222110 -->
 <!-- CURRENT_BUILD:2026070601 -->
 <title>下一版发版预览 · flutter-suiyin</title>
 <style>
@@ -150,32 +150,42 @@ a:hover { text-decoration: underline; }
 <h1>📦 2026070602 发版预览</h1>
 <div class="meta">
 当前版本：<code>2026070601</code>（发版时间：<span class="bump-time">07/06 11:21</span>），下一版（预览）：<code>2026070602</code><br>
-生成时间：2026-07-06 20:19:12 · 重新跑脚本后刷新页面即拿最新
+生成时间：2026-07-06 22:19:11 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
 <h3>🆕 新功能</h3>
 <ul>
-  <li>深圳艺星的话术可以一次复制到多个部门，「部门话术」也能在筛选里直接切换查看。— 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4416">#4416</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4405">#4405</a>)</li>
-  <li>截图标注正式可用：截图后可以直接画重点，并把标注后的图片分享或转发给同事和客户。— 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4411">#4411</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4407">#4407</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4217">#4217</a>)</li>
-  <li>「新的朋友」现在能单独查看添加失败的记录，并清楚看到每条申请最终是成功还是失败。— 梁晨、Cursor <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4408">#4408</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4264">#4264</a>)</li>
-  <li>企微标签筛选现在按标签名称识别，后台调整标签后，前台筛选仍能稳定对应到正确标签。— 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4417">#4417</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4414">#4414</a>)</li>
+  <li>发送 Word、Excel、PDF、压缩包等敏感文件时，现在会直接发给客户，不再先进入素材库，减少文件被无关人设号看到的风险；上传进度也会正常显示。 — 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4448">#4448</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4224">#4224</a>)</li>
+  <li>强制更新如果自动安装卡住，可以点「手动升级」下载完整安装包继续更新，不会再被强更弹窗拦住。 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4453">#4453</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4413">#4413</a>)</li>
+  <li>深圳艺星话术支持「复制到部门」多选，也可以直接新建「部门话术」，公共话术和部门话术维护更方便。 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4416">#4416</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4405">#4405</a>)</li>
+  <li>截图标注工具正式启用新版原生工具栏，并新增「分享/转发」：标注完可以直接选择客户、群、专家或我的微信发送。 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4411">#4411</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4407">#4407</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4217">#4217</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4400">#4400</a>)</li>
+  <li>「新的朋友」新增失败列表，添加失败的申请会从待添加里移出，并显示失败原因和失败时间。 — 梁晨、Cursor <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4408">#4408</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4264">#4264</a>)</li>
 </ul>
+
 <h3>✨ 体验优化</h3>
 <ul>
-  <li>聊天里连续出现很多图片时，图片气泡会错峰加载，减少界面卡顿和输入迟滞。— 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4445">#4445</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4366">#4366</a>)</li>
-  <li>微信扫码登录的提示文案更准确，按指引操作时更不容易走错。— 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4437">#4437</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4432">#4432</a>)</li>
+  <li>打开同事转发来的专家消息时，会走合并转发样式，并显示专家头像，识别目标更直观。 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4427">#4427</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3848">#3848</a>)</li>
+  <li>聊天里连续出现多张图片时，图片加载会错峰启动，输入和滚动不容易被图片渲染拖卡。 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4445">#4445</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4366">#4366</a>)</li>
+  <li>查看聊天历史时，回到底部按钮和消息高亮变化更轻量，减少整块消息列表反复刷新。 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4421">#4421</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4385">#4385</a>)</li>
 </ul>
+
 <h3>🐞 问题修复</h3>
 <ul>
-  <li>查看聊天记录时，回到底部按钮和定位高亮切换更稳，不会带着整段消息列表反复刷新。— 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4421">#4421</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4385">#4385</a>)</li>
+  <li>艺星销售把消息转发给未分配客户时，不会再把客户误分配到自己名下。 — 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4305">#4305</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4260">#4260</a>)</li>
+  <li>生产安装版双击桌面图标却看不到窗口的问题已修复；窗口被隐藏时再次启动会唤回已有窗口，也能避免升级一直卡住。 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4454">#4454</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4262">#4262</a>)</li>
+  <li>客户标签面板里点下拉选项不会再顺手关掉整个面板；来源信息也不会在同步或跨端编辑后被冲空、显示旧值。 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4446">#4446</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4428">#4428</a>)</li>
+  <li>专家消息现在能正常进入未读和会话预览，客户同步也不会把专家会话行误删。 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4422">#4422</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3848">#3848</a>)</li>
 </ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">07/06 11:21 上次发版后，合入 main 的全部 <strong>16</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">07/06 11:21 上次发版后，合入 main 的全部 <strong>22</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
+  <li><span class="merged-at">[07/06 22:13]</span>批量转发在 cloudCustomData 携带 batchForward 批次标识 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4305">#4305</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4260">#4260</a>) <span class="author">— 张拓</span></li>
+  <li><span class="merged-at">[07/06 22:12]</span>敏感文件类型直发、不入素材库 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4448">#4448</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4224">#4224</a>) <span class="author">— 张拓</span></li>
+  <li><span class="merged-at">[07/06 21:30]</span>强更弹窗「手动升级」下载安装包兜底 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4453">#4453</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4413">#4413</a>) <span class="author">— 王梓先</span></li>
   <li><span class="merged-at">[07/06 16:41]</span>移动端购买记录加「手动录入」+「一键反馈」（对齐 PC #2446） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4419">#4419</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4296">#4296</a>) <span class="author">— 王争</span></li>
   <li><span class="merged-at">[07/06 15:54]</span>深圳艺星话术「复制到部门」多选 +「部门话术」radio <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4416">#4416</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4405">#4405</a>) <span class="author">— 王争</span></li>
   <li><span class="merged-at">[07/06 15:18]</span>截图标注「分享/转发」（epic #3879 T7）+ 正式开启原生标注 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4411">#4411</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4217">#4217</a>) <span class="author">— 王争</span></li>
@@ -186,6 +196,9 @@ a:hover { text-decoration: underline; }
 
 <h2>🐞 问题修复</h2>
 <ul>
+  <li><span class="merged-at">[07/06 21:54]</span>单实例守卫激活已有窗口三层失效修复 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4454">#4454</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4262">#4262</a>) <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[07/06 20:36]</span>FileMessage 持久化 sourceDesc，修 delivery 回执埋点误判 original_send <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4450">#4450</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4449">#4449</a>) <span class="author">— 张拓</span></li>
+  <li><span class="merged-at">[07/06 20:29]</span>客户标签面板下拉气泡误关闭 + 来源信息同步问题 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4446">#4446</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4428">#4428</a>) <span class="author">— 王争</span></li>
   <li><span class="merged-at">[07/06 18:04]</span>修正微信扫码登录指引文案 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4437">#4437</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4432">#4432</a>) <span class="author">— 陈聪</span></li>
   <li><span class="merged-at">[07/06 16:34]</span>remove duplicate default clause breaking build_runner <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4430">#4430</a> <span class="author">— 张拓</span></li>
   <li><span class="merged-at">[07/06 15:53]</span>route expert forwards through merge and show avatars <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4427">#4427</a> <span class="author">— 陈聪</span></li>

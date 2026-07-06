@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 
-<!-- PREVIEW_PUBLISH_STAMP:20260706115924 -->
+<!-- PREVIEW_PUBLISH_STAMP:20260706140239 -->
 <!-- CURRENT_BUILD:2026070601 -->
 <title>下一版发版预览 · flutter-suiyin</title>
 <style>
@@ -150,17 +150,28 @@ a:hover { text-decoration: underline; }
 <h1>📦 2026070602 发版预览</h1>
 <div class="meta">
 当前版本：<code>2026070601</code>（发版时间：<span class="bump-time">07/06 11:21</span>），下一版（预览）：<code>2026070602</code><br>
-生成时间：2026-07-06 11:58:39 · 重新跑脚本后刷新页面即拿最新
+生成时间：2026-07-06 14:01:25 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
+<h3>🆕 新功能</h3>
+<ul>
+  <li>截图后默认进入新的标注工具栏，矩形、圆形、箭头、直线、画笔、马赛克、文字、撤销、保存和置顶都能直接使用；暂未开放的按钮也不会再显示。 — 王争 #4407 (#4400)</li>
+  <li>「新的朋友」新增失败列表：添加失败的申请会从待添加里移出，并显示失败原因和失败时间，方便后续处理。 — 梁晨、Cursor #4408 (#4264)</li>
+</ul>
+<h3>🐞 问题修复</h3>
+<ul>
+  <li>群发时用企微标签筛选客户，同名标签现在会覆盖所有对应人设，不再只命中其中一个人设导致漏发。 — 陈宣宇 #4417 (#4414)</li>
+</ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">07/06 11:21 上次发版后，合入 main 的全部 <strong>1</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">07/06 11:21 上次发版后，合入 main 的全部 <strong>4</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
-  <li class="empty">无</li>
+  <li><span class="merged-at">[07/06 13:52]</span>截图工具栏对齐原型 + 开启原生标注 + 隐藏未实现工具（Win/macOS #4400） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4407">#4407</a> <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[07/06 12:32]</span>新的朋友增加失败 Tab 与终态展示 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4408">#4408</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4264">#4264</a>) <span class="author">— 梁晨、Cursor</span></li>
+  <li><span class="merged-at">[07/06 12:07]</span>企微标签筛选 labelId→name 迁移（配合 suiyin-go#2248） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4417">#4417</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4414">#4414</a>) <span class="author">— 陈宣宇</span></li>
 </ul>
 
 <h2>🐞 问题修复</h2>

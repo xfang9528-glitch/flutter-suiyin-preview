@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 
-<!-- PREVIEW_PUBLISH_STAMP:20260706103111 -->
+<!-- PREVIEW_PUBLISH_STAMP:20260706112310 -->
 <!-- CURRENT_BUILD:2026070502 -->
 <title>下一版发版预览 · flutter-suiyin</title>
 <style>
@@ -149,27 +149,28 @@ a:hover { text-decoration: underline; }
 <h1>📦 2026070601 发版预览</h1>
 <div class="meta">
 当前版本：<code>2026070502</code>（发版时间：<span class="bump-time">07/05 23:38</span>），下一版（预览）：<code>2026070601</code><br>
-生成时间：2026-07-06 10:29:58 · 重新跑脚本后刷新页面即拿最新
+生成时间：2026-07-06 11:22:20 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
 <h3>🆕 新功能</h3>
 <ul>
-  <li>截图后现在会直接进入原生标注模式，Windows 和 Mac 都可以使用矩形、画笔、文字、马赛克和贴图置顶等工具完成标注。 — 王争 #4401 (#4397, #3879)</li>
-  <li>咨询记录现在可以转发：支持逐条转发、全部转发，也可以把可用消息合并转发给其他会话。 — 陈聪 #4392 (#4146)</li>
+  <li>截图后会直接进入新的原生标注工具栏，矩形、圆形、箭头、直线、画笔、马赛克、文字、撤销、下载、钉图都能直接使用；工具栏也只保留已经可用的按钮。 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4403">#4403</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4401">#4401</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4398">#4398</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3879">#3879</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4397">#4397</a>)</li>
+  <li>客户详情面板新增「原始标签」：企微客户展示原企微标签，微信客户展示原微信标签，方便直接核对客户原有分类。 — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4390">#4390</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4373">#4373</a>)</li>
+  <li>咨询记录现在支持转发：可以逐条转发、全部转发，也可以把可用消息合并转发出去；语音记录支持逐条转发。 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4392">#4392</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4146">#4146</a>)</li>
 </ul>
-
 <h3>🐞 问题修复</h3>
 <ul>
-  <li>转发给自己接待的客户时，不会再被误判成“已被他人接待”而置灰，自己负责的客户可以正常选择并发送。 — 王梓先 #4404 (#4376)</li>
+  <li>转发给客户时，自己正在接待的客户不再被误判成「他人接待」而置灰，仍可正常选择并发送。 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4404">#4404</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4376">#4376</a>)</li>
 </ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">07/05 23:38 上次发版后，合入 main 的全部 <strong>5</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">07/05 23:38 上次发版后，合入 main 的全部 <strong>9</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
-  <li class="empty">无</li>
+  <li><span class="merged-at">[07/06 11:04]</span>默认开启原生标注 + 双平台工具栏收敛 + DPI/GDI 审查修复（WT0–WT6 follow-up） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4403">#4403</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4398">#4398</a>) <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[07/06 11:02]</span>客户详情面板按客户类型展示原始标签（企微/微信二选一） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4390">#4390</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4373">#4373</a>) <span class="author">— 陈宣宇</span></li>
 </ul>
 
 <h2>🐞 问题修复</h2>
@@ -185,6 +186,8 @@ a:hover { text-decoration: underline; }
 
 <h2>🔧 其他（chore / docs / test / ...）</h2>
 <ul>
+  <li><span class="merged-at">[07/06 11:21]</span>chore(release): bump Windows build 2026070601 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4410">#4410</a> <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[07/06 11:16]</span>obs(chat): TIM conv.unreadCount 影子对比埋点——多端未读同步方案可靠性判定 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4409">#4409</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3761">#3761</a>) <span class="author">— 王梓先</span></li>
   <li><span class="merged-at">[07/06 07:25]</span>[codex] 支持咨询记录转发 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4392">#4392</a> <span class="author">— 陈聪</span></li>
   <li><span class="merged-at">[07/05 23:58]</span>chore(infra): 更新 seed_key (seed-windows-x64=ad654726cfb0) <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4396">#4396</a> <span class="author">— 王梓先</span></li>
   <li><span class="merged-at">[07/05 23:49]</span>docs(release): archive 2026070502 notes <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4395">#4395</a> <span class="author">— 王梓先</span></li>

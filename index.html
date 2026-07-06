@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 
-<!-- PREVIEW_PUBLISH_STAMP:20260706160257 -->
+<!-- PREVIEW_PUBLISH_STAMP:20260706171859 -->
 <!-- CURRENT_BUILD:2026070601 -->
 <title>下一版发版预览 · flutter-suiyin</title>
 <style>
@@ -150,28 +150,30 @@ a:hover { text-decoration: underline; }
 <h1>📦 2026070602 发版预览</h1>
 <div class="meta">
 当前版本：<code>2026070601</code>（发版时间：<span class="bump-time">07/06 11:21</span>），下一版（预览）：<code>2026070602</code><br>
-生成时间：2026-07-06 16:01:23 · 重新跑脚本后刷新页面即拿最新
+生成时间：2026-07-06 16:58:37 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
 <h3>🆕 新功能</h3>
 <ul>
-  <li>深圳艺星的话术库新增「部门话术」：创建公共话术时可以同时复制到多个部门，也可以直接创建只给指定部门使用的话术。 — 王争 #4416 (#4405)</li>
-  <li>截图后会直接进入新的标注工具栏，已支持画线、箭头、马赛克、文字、置顶等常用操作；标注完成后也可以直接分享/转发给客户、群、专家或自己的微信。 — 王争 #4411, #4407 (#4217, #4400)</li>
-  <li>「新的朋友」新增失败列表：添加失败的好友申请会从待添加里移出，并显示失败原因和失败时间，后续处理更清楚。 — 梁晨、Cursor #4408 (#4264)</li>
+  <li>深圳艺星的话术库现在支持把公共话术一键复制到多个部门，也可以直接新建「部门话术」，不同部门维护自己的常用话术更方便。— 王争 #4416 (#4405)</li>
+  <li>截图后会直接进入新的标注工具栏，已实现的画线、置顶、保存、完成等工具更清晰；标注完还可以直接转发给客户、群、专家或自己的微信。— 王争 #4411, #4407 (#4217, #4400)</li>
+  <li>「新的朋友」新增失败 Tab，添加失败的好友申请会移出待添加列表，并展示失败原因和失败时间。— 梁晨、Cursor #4408 (#4264)</li>
+  <li>群发选择企微标签时，跨多个人设的同名标签现在会一起命中，避免只发到其中一个人设导致漏发。— 陈宣宇 #4417 (#4414)</li>
 </ul>
 
 <h3>🐞 问题修复</h3>
 <ul>
-  <li>群发按企微标签筛选时，同名标签会按名称一起匹配，不再因为不同人设下标签 ID 不同而漏掉客户。 — 陈宣宇 #4417 (#4414)</li>
-  <li>专家消息现在能正常显示未读和会话预览，转发给专家时也能走合并转发流程，并在选择列表里显示专家头像。 — 陈聪 #4427, #4422 (#3848)</li>
+  <li>转发消息给专家时，现在会走合并转发流程，专家头像也能在转发选择器里正常显示。— 陈聪 #4427</li>
+  <li>专家回复消息现在会正常进入未读角标和会话摘要，也不会被客户同步误删导致列表里看不到。— 陈聪 #4422 (#3848)</li>
 </ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">07/06 11:21 上次发版后，合入 main 的全部 <strong>9</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">07/06 11:21 上次发版后，合入 main 的全部 <strong>11</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
+  <li><span class="merged-at">[07/06 16:41]</span>移动端购买记录加「手动录入」+「一键反馈」（对齐 PC #2446） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4419">#4419</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4296">#4296</a>) <span class="author">— 王争</span></li>
   <li><span class="merged-at">[07/06 15:54]</span>深圳艺星话术「复制到部门」多选 +「部门话术」radio <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4416">#4416</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4405">#4405</a>) <span class="author">— 王争</span></li>
   <li><span class="merged-at">[07/06 15:18]</span>截图标注「分享/转发」（epic #3879 T7）+ 正式开启原生标注 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4411">#4411</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4217">#4217</a>) <span class="author">— 王争</span></li>
   <li><span class="merged-at">[07/06 13:52]</span>截图工具栏对齐原型 + 开启原生标注 + 隐藏未实现工具（Win/macOS #4400） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4407">#4407</a> <span class="author">— 王争</span></li>
@@ -181,6 +183,7 @@ a:hover { text-decoration: underline; }
 
 <h2>🐞 问题修复</h2>
 <ul>
+  <li><span class="merged-at">[07/06 16:34]</span>remove duplicate default clause breaking build_runner <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4430">#4430</a> <span class="author">— 张拓</span></li>
   <li><span class="merged-at">[07/06 15:53]</span>route expert forwards through merge and show avatars <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4427">#4427</a> <span class="author">— 陈聪</span></li>
   <li><span class="merged-at">[07/06 15:21]</span>专家消息未读与预览修复 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4422">#4422</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3848">#3848</a>) <span class="author">— 陈聪</span></li>
 </ul>

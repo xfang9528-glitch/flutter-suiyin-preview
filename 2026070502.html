@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+
+<!-- PREVIEW_PUBLISH_STAMP:20260705230538 -->
+<!-- CURRENT_BUILD:2026070501 -->
+<title>下一版发版预览 · flutter-suiyin</title>
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", sans-serif; max-width: 880px; margin: 32px auto; padding: 0 24px; color: #1f2328; line-height: 1.7; background: #fafbfc; }
+h1 { border-bottom: 1px solid #d1d9e0; padding-bottom: 8px; }
+h2 { margin-top: 32px; border-bottom: 1px solid #eef0f2; padding-bottom: 4px; }
+.meta { color: #656d76; font-size: 13px; margin-bottom: 24px; }
+.meta code { background: #eef0f2; padding: 2px 6px; border-radius: 4px; }
+.empty { color: #999; font-style: italic; list-style: none; margin-left: -20px; }
+ul { padding-left: 24px; }
+li { margin: 6px 0; }
+a { color: #0969da; text-decoration: none; }
+a:hover { text-decoration: underline; }
+.author { color: #8c959f; font-size: 12px; margin-left: 4px; }
+.merged-at { color: #8c959f; font-size: 12px; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; margin-right: 4px; }
+.bump-time { color: #1f2328; font-weight: 600; }
+.foot { margin-top: 48px; padding-top: 16px; border-top: 1px solid #eef0f2; color: #8c959f; font-size: 12px; }
+.notice { background: #fff8c5; border: 1px solid #d4a72c; padding: 12px 16px; border-radius: 6px; margin: 16px 0; color: #59410a; }
+.ref-divider { border: 0; border-top: 2px dashed #d1d9e0; margin: 40px 0 16px 0; }
+.ref-heading { font-size: 20px; border-bottom: none; }
+.ref-hint { color: #656d76; font-size: 13px; margin-bottom: 16px; }
+.version-switcher { position: fixed; top: 16px; right: 24px; background: #fff; border: 1px solid #d1d9e0; border-radius: 6px; padding: 6px 10px; font-size: 13px; box-shadow: 0 2px 6px rgba(0,0,0,0.04); z-index: 100; }
+.version-switcher label { color: #656d76; margin-right: 6px; }
+.version-switcher select { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 13px; padding: 2px 4px; }
+</style>
+</head>
+<body>
+<!-- 右上角「查看历史预览」下拉：
+     - 顶部 `📦 <nextBuild> 发版预览` = 当前还没冻结的下一版预览（value="" 跳 ./）
+     - 历史项 `🗂 <build>` = 已发版冻结归档，文件名 `<10位build>.html`（一次发版一份）
+     - 本地预览（docs/release-preview.html）：dart 读 PREVIEW_REPO_DIR
+       （默认 D:/CC work/flutter-suiyin-preview）下已有的 `<build>.html`，option
+       value 拼绝对 URL 指向 Cloudflare Pages，本地点击跳过去看
+     - Cloudflare Pages 上的 index.html：publish_preview.ps1 推送时会把 marker 之间
+       的内容重写成相对路径 option（同域跳转），覆盖 dart 输出 -->
+<div class="version-switcher">
+<label>查看历史预览：</label>
+<select id="version-switcher-select" onchange="var v=this.value; if(v) location.href = v; else location.href = './';">
+<!-- VERSION_SWITCHER_OPTIONS_START -->
+<option value="">📦 2026070601 发版预览</option>
+<option value="2026070502.html">🗂 2026070502</option>
+<option value="2026070501.html">🗂 2026070501</option>
+<option value="2026070401.html">🗂 2026070401</option>
+<option value="2026070304.html">🗂 2026070304</option>
+<option value="2026070303.html">🗂 2026070303</option>
+<option value="2026070301.html">🗂 2026070301</option>
+<option value="2026070201.html">🗂 2026070201</option>
+<option value="2026070103.html">🗂 2026070103</option>
+<option value="2026070102.html">🗂 2026070102</option>
+<option value="2026070101.html">🗂 2026070101</option>
+<option value="2026063002.html">🗂 2026063002</option>
+<option value="2026062901.html">🗂 2026062901</option>
+<option value="2026062701.html">🗂 2026062701</option>
+<option value="2026062601.html">🗂 2026062601</option>
+<option value="2026062503.html">🗂 2026062503</option>
+<option value="2026062502.html">🗂 2026062502</option>
+<option value="2026062501.html">🗂 2026062501</option>
+<option value="2026062401.html">🗂 2026062401</option>
+<option value="2026062303.html">🗂 2026062303</option>
+<option value="2026062301.html">🗂 2026062301</option>
+<option value="2026062202.html">🗂 2026062202</option>
+<option value="2026062201.html">🗂 2026062201</option>
+<option value="2026062001.html">🗂 2026062001</option>
+<option value="2026061901.html">🗂 2026061901</option>
+<option value="2026061802.html">🗂 2026061802</option>
+<option value="2026061801.html">🗂 2026061801</option>
+<option value="2026061701.html">🗂 2026061701</option>
+<option value="2026061602.html">🗂 2026061602</option>
+<option value="2026061601.html">🗂 2026061601</option>
+<option value="2026061501.html">🗂 2026061501</option>
+<option value="2026061301.html">🗂 2026061301</option>
+<option value="2026061202.html">🗂 2026061202</option>
+<option value="2026061102.html">🗂 2026061102</option>
+<option value="2026061101.html">🗂 2026061101</option>
+<option value="2026061001.html">🗂 2026061001</option>
+<option value="2026060901.html">🗂 2026060901</option>
+<option value="2026060801.html">🗂 2026060801</option>
+<option value="2026060501.html">🗂 2026060501</option>
+<option value="2026060402.html">🗂 2026060402</option>
+<option value="2026060401.html">🗂 2026060401</option>
+<option value="2026060301.html">🗂 2026060301</option>
+<option value="2026060201.html">🗂 2026060201</option>
+<option value="2026060101.html">🗂 2026060101</option>
+<option value="2026053101.html">🗂 2026053101</option>
+<option value="2026053001.html">🗂 2026053001</option>
+<option value="2026052902.html">🗂 2026052902</option>
+<option value="2026052901.html">🗂 2026052901</option>
+<option value="2026052802.html">🗂 2026052802</option>
+<option value="2026052801.html">🗂 2026052801</option>
+<option value="2026052702.html">🗂 2026052702</option>
+<option value="2026052701.html">🗂 2026052701</option>
+<option value="2026052601.html">🗂 2026052601</option>
+<option value="2026052502.html">🗂 2026052502</option>
+<option value="2026052202.html">🗂 2026052202</option>
+<option value="2026052201.html">🗂 2026052201</option>
+<option value="2026052101.html">🗂 2026052101</option>
+<option value="2026052001.html">🗂 2026052001</option>
+<option value="2026051902.html">🗂 2026051902</option>
+<option value="2026051901.html">🗂 2026051901</option>
+<option value="2026051801.html">🗂 2026051801</option>
+<option value="2026051502.html">🗂 2026051502</option>
+<option value="2026051501.html">🗂 2026051501</option>
+<option value="2026051402.html">🗂 2026051402</option>
+<option value="2026051401.html">🗂 2026051401</option>
+<option value="2026051301.html">🗂 2026051301</option>
+<option value="2026051202.html">🗂 2026051202</option>
+<option value="2026051201.html">🗂 2026051201</option>
+<option value="2026051103.html">🗂 2026051103</option>
+<option value="2026051102.html">🗂 2026051102</option>
+<option value="2026051101.html">🗂 2026051101</option>
+<option value="2026050903.html">🗂 2026050903</option>
+<option value="2026050902.html">🗂 2026050902</option>
+<option value="2026050901.html">🗂 2026050901</option>
+<option value="2026050703.html">🗂 2026050703</option>
+<option value="2026050702.html">🗂 2026050702</option>
+<option value="2026050701.html">🗂 2026050701</option>
+<option value="2026050601.html">🗂 2026050601</option>
+<option value="2026050401.html">🗂 2026050401</option>
+<option value="2026050201.html">🗂 2026050201</option>
+<option value="2026050101.html">🗂 2026050101</option>
+<option value="2026043002.html">🗂 2026043002</option>
+<option value="2026043001.html">🗂 2026043001</option>
+<option value="2026042902.html">🗂 2026042902</option>
+<option value="2026042901.html">🗂 2026042901</option>
+<option value="2026042804.html">🗂 2026042804</option>
+<!-- VERSION_SWITCHER_OPTIONS_END -->
+</select>
+</div>
+<script>
+// 让下拉的当前选中态跟着当前页走：在归档页（如 2026042901.html）里，自动选中 `🗂 2026042901`
+// 那项；这样点回 `📦 ... 发版预览`（value=""）时 select.value 才会发生变化，触发 onchange 跳 `./`。
+// 不做的话第一项默认选中 = "📦 ..." = ""，在归档页点它无变化、不跳转，用户回不去首页。
+(function(){
+  var sel = document.getElementById('version-switcher-select');
+  if (!sel) return;
+  var cur = location.pathname.split('/').pop();
+  if (!cur || cur === 'index.html' || cur === '') return;
+  for (var i = 0; i < sel.options.length; i++) {
+    if (sel.options[i].value === cur) { sel.selectedIndex = i; break; }
+  }
+})();
+</script>
+<h1>📦 2026070502 发版预览</h1>
+<div class="meta">
+当前版本：<code>2026070501</code>（发版时间：<span class="bump-time">07/05 03:09</span>），下一版（预览）：<code>2026070502</code><br>
+生成时间：2026-07-05 23:04:36 · 重新跑脚本后刷新页面即拿最新
+</div>
+
+<h2>📣 本版用户感知更新</h2>
+<h3>🆕 新功能</h3>
+<ul>
+  <li>截图后可以把图片「钉」在桌面最上层，方便一边看图一边对照聊天或资料；新版 Windows 截图也已支持同样能力 — 王争、kite365 #4388 (#4273)、王争 #4381 (#4216)</li>
+  <li>截图标注支持把处理后的图片下载或保存到本地；新版 Windows 截图也已支持同样能力 — 王争 #4386 (#4272)、#4363 (#4215)</li>
+  <li>截图标注新增马赛克工具，可以直接遮住图片里的敏感信息；新版 Windows 截图也已支持同样能力 — 王争 #4370 (#4271)、#4348 (#4214)</li>
+  <li>艺星的话术面板新增「快捷」页，常用话术可以绑定 F1-F12，一键发送更快 — 王梓先 #4372 (#4308)</li>
+  <li>新版 Windows 截图标注支持直接加文字，中文输入、内联编辑和字号调整都能正常使用 — 王争、kite365 #4346 (#4270)</li>
+</ul>
+<h3>✨ 体验优化</h3>
+<ul>
+  <li>标签下拉框支持关键词搜索、命中高亮和拼音排序，标签多的时候更容易找到要选的项 — 陈宣宇 #4382 (#4375)</li>
+  <li>PC 图片/视频预览窗会记住上次位置，重启后不用每次重新拖到顺手的位置 — 王梓先 #4357 (#4329)</li>
+  <li>会话分配全量同步更稳，避免同步时把已有会话状态临时冲掉 — 梁晨、Cursor #4358 (#4344)</li>
+</ul>
+<h3>🐞 问题修复</h3>
+<ul>
+  <li>发送输入框里的视频生成缩略图超时后会自动收尾，避免一直卡在处理中 — 陈聪 #4371 (#4350)</li>
+  <li>「一键通过」切到其他标签页后，不会再弹出上一页的完成提醒 — 梁晨、Cursor #4369 (#4319)</li>
+  <li>专家目录加载失败或刷新异常时，不会把已有专家列表直接清空 — 陈聪 #3873 (#3869)</li>
+  <li>会话分配全量同步时，不会误删本地仍然有效的会话分配记录 — 张拓 #4361 (#4328)</li>
+  <li>管理员禁用上班状态后，用户仍可正常选择下班；「我的」页面也会显示真实状态 — 张拓 #4312 (#4304)</li>
+</ul>
+
+<hr class="ref-divider">
+<h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
+<div class="ref-hint">07/05 03:09 上次发版后，合入 main 的全部 <strong>25</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<h2>🆕 新功能</h2>
+<ul>
+  <li><span class="merged-at">[07/05 21:28]</span>截图标注 贴图置顶（钉图到桌面）（截图原生重做 WT6） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4388">#4388</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4273">#4273</a>) <span class="author">— 王争、kite365</span></li>
+  <li><span class="merged-at">[07/05 18:57]</span>Windows 截图标注 下载/保存到本地（截图原生重做 WT5） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4386">#4386</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4272">#4272</a>) <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[07/05 18:29]</span>截图标注 贴图置顶（钉图到桌面）（截图原生重做 T6） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4381">#4381</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4216">#4216</a>) <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[07/05 17:57]</span>标签下拉关键词搜索 + 命中高亮 + 拼音排序 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4382">#4382</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4375">#4375</a>) <span class="author">— 陈宣宇</span></li>
+  <li><span class="merged-at">[07/05 17:10]</span>Windows 截图标注 马赛克工具（截图原生重做 WT4） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4370">#4370</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4271">#4271</a>) <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[07/05 15:57]</span>话术面板「快捷」tab + F1-F12 绑定发送（艺星） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4372">#4372</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4308">#4308</a>) <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[07/05 15:16]</span>截图标注 下载/保存到本地（截图原生重做 T5） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4363">#4363</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4215">#4215</a>) <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[07/05 11:50]</span>一键通过补 batch 会话 SLS 埋点 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4356">#4356</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4282">#4282</a>) <span class="author">— 梁晨</span></li>
+  <li><span class="merged-at">[07/05 11:38]</span>Windows 截图标注 文字工具（内联编辑 + IME + 字号） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4346">#4346</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4270">#4270</a>) <span class="author">— 王争、kite365</span></li>
+  <li><span class="merged-at">[07/05 11:27]</span>PC 图片/视频预览窗位置跨重启记忆 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4357">#4357</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4329">#4329</a>) <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[07/05 10:25]</span>close #4214 截图标注 马赛克工具（截图原生重做 T4） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4348">#4348</a> <span class="author">— 王争</span></li>
+</ul>
+
+<h2>🐞 问题修复</h2>
+<ul>
+  <li><span class="merged-at">[07/05 17:52]</span>localize mobile chat info switch refresh <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4384">#4384</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4383">#4383</a>) <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[07/05 16:48]</span>Fix mobile select-to-here range button <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4377">#4377</a> <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[07/05 16:40]</span>timeout cancellable input video thumbnails <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4371">#4371</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4350">#4350</a>) <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[07/05 16:25]</span>一键通过切 Tab 后仍弹出完成提醒 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4369">#4369</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4319">#4319</a>) <span class="author">— 梁晨、Cursor</span></li>
+  <li><span class="merged-at">[07/05 14:25]</span>guard merger relay dispose path <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4359">#4359</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3358">#3358</a>) <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[07/05 14:13]</span>专家目录 loading/error 不塌空 expertTimIds — 防删/剔除韧性 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3873">#3873</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3869">#3869</a>) <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[07/05 13:07]</span>allocation snapshot 全量同步改用 base+overlay 语义 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4361">#4361</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4328">#4328</a>) <span class="author">— 张拓</span></li>
+  <li><span class="merged-at">[07/05 10:18]</span>管理员禁上班时下班选项恒可见，我的页展示真实状态 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4312">#4312</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4304">#4304</a>) <span class="author">— 张拓</span></li>
+</ul>
+
+<h2>✨ 体验优化</h2>
+<ul>
+  <li><span class="merged-at">[07/05 14:09]</span>#4349 截图标注参数条/样式应用 if-else 分发链收成 per-tool 能力表 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4355">#4355</a> <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[07/05 11:43]</span>_syncFull snapshot merge 按 timId 子集查本地行 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4358">#4358</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4344">#4344</a>) <span class="author">— 梁晨、Cursor</span></li>
+</ul>
+
+<h2>🔧 其他（chore / docs / test / ...）</h2>
+<ul>
+  <li><span class="merged-at">[07/05 20:23]</span>chore(chat): 撤除 #4329 预览窗位置的排错诊断日志 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4360">#4360</a> <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[07/05 19:02]</span>test(chat): 修复 main 全量门禁存量红（healPersonaDisplayOnConversationOpen mock 缺 stub + 2 处独立回归） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4378">#4378</a> <span class="author">— 张拓</span></li>
+  <li><span class="merged-at">[07/05 16:10]</span>obs(observability): PC 主窗口内存哨兵埋点 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4374">#4374</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4365">#4365</a>) <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[07/05 11:18]</span>test(chat): #4347 修 #4259 follow-up 合入的存量红测试（6 文件） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4354">#4354</a> <span class="author">— 王争</span></li>
+</ul>
+
+
+<hr class="ref-divider">
+
+<div class="foot">
+上一次发版时间：<span class="bump-time">07/05 03:09</span>（基线 commit：<code>chore(release): bump Windows build 2026070501</code>）<br>
+PR 归属版本由 <code>pubspec.yaml</code> 的 <code>version:</code> 行 git 历史判定 —— bump commit 的 committedAt 是分割线。<br>
+由 <code>tool/generate_release_preview.dart</code> 自动提取；重新跑脚本后刷新页面即拿最新。<br>
+issue 链接基于 PetWebOrg/flutter-suiyin 仓。
+</div>
+</body>
+</html>

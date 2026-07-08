@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 
-<!-- PREVIEW_PUBLISH_STAMP:20260708165640 -->
+<!-- PREVIEW_PUBLISH_STAMP:20260708165904 -->
 <!-- CURRENT_BUILD:2026070801 -->
 <title>下一版发版预览 · flutter-suiyin</title>
 <style>
@@ -153,25 +153,21 @@ a:hover { text-decoration: underline; }
 <h1>📦 2026070802 发版预览</h1>
 <div class="meta">
 当前版本：<code>2026070801</code>（发版时间：<span class="bump-time">07/08 07:15</span>），下一版（预览）：<code>2026070802</code><br>
-生成时间：2026-07-08 16:55:20 · 重新跑脚本后刷新页面即拿最新
+生成时间：2026-07-08 16:57:46 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
 <h3>🆕 新功能</h3>
 <ul>
-  <li>收到客户语音时，可以先看到语音消息；语音处理完成后会自动补上「转文字」结果，点播放也会等音频准备好后再播放。— 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4525">#4525</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3631">#3631</a>)</li>
-  <li>macOS 截图工具支持直接从截图选区里提取文字，识别出的文字可以框选复制。— 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4529">#4529</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4218">#4218</a>)</li>
-</ul>
-
-<h3>✨ 体验优化</h3>
-<ul>
-  <li>深圳艺星的话术部门页现在可以按分类浏览、拖动调整部门话术顺序；从部门页新增话术时，也会默认进入部门话术模式。— 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4534">#4534</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4493">#4493</a>)</li>
+  <li>聊天里的语音消息支持先收到、点播时再加载；语音转文字结果处理完成后会自动补到气泡里。— 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4525">#4525</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3631">#3631</a>)</li>
+  <li>截图标注里新增文字提取：选中截图区域后可直接识别文字，并在原位置框选复制。— 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4529">#4529</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4218">#4218</a>)</li>
 </ul>
 
 <h3>🐞 问题修复</h3>
 <ul>
-  <li>关闭窗口或切换页面时，聊天输入框的语音快捷键不再偶发报错影响操作。— 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4544">#4544</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4465">#4465</a>)</li>
-  <li>macOS 截图标注里，已插入的文字和标注现在可以正常删除，双击文字可重新编辑，画笔和马赛克快速绘制也更跟手。— 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4532">#4532</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4489">#4489</a>)</li>
+  <li>修复 PC 聊天输入区全局语音热键在窗口关闭或页面切换时可能触发崩溃的问题。— 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4544">#4544</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4465">#4465</a>)</li>
+  <li>深圳艺星话术库的「复制到部门」更清楚：编辑时可选择复制到部门或保留原话术，部门话术也能按分类浏览和拖动排序。— 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4534">#4534</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4493">#4493</a>)</li>
+  <li>macOS 截图标注修复了文字删不掉、双击不能编辑、选中后 Delete 失效，以及画笔和马赛克快速绘制不跟手的问题。— 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4532">#4532</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4489">#4489</a>)</li>
 </ul>
 
 <hr class="ref-divider">

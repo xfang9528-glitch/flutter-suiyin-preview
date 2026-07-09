@@ -151,29 +151,31 @@ a:hover { text-decoration: underline; }
 <h1>📦 2026070901 发版预览</h1>
 <div class="meta">
 当前版本：<code>2026070801</code>（发版时间：<span class="bump-time">07/08 07:15</span>），下一版（预览）：<code>2026070901</code><br>
-生成时间：2026-07-09 10:17:54 · 重新跑脚本后刷新页面即拿最新
+生成时间：2026-07-09 10:29:24 · 重新跑脚本后刷新页面即拿最新
 </div>
 
-<h2>🆕 新功能</h2>
+<h2>📣 本版用户感知更新</h2>
+<h3>🆕 新功能</h3>
 <ul>
-  <li>服务通知会话补齐右键操作：可以直接置顶、标记已读/未读、免打扰或关闭；详情里的提醒卡片也按新样式显示头像、标题和时间分隔。 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4498">#4498</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4161">#4161</a>)</li>
-  <li>萌爪的咨询标签面板按新设计调整：信息卡、字段字号、咨询记录弹窗和添加咨询流程都更贴近当前 PC 样式，咨询记录里也能直接合并转发。 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4458">#4458</a></li>
-  <li>Windows 截图标注完成后，可以直接点「转发/分享」把带标注的截图发给客户或同事。 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4436">#4436</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4274">#4274</a>)</li>
+  <li>截图标注里可以直接提取选区文字了：Windows 和 macOS 都支持识别截图中的文字，并可复制识别结果。 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4539">#4539</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4529">#4529</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4275">#4275</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4218">#4218</a>)</li>
+  <li>客户发来的语音消息会在音频就绪后正常播放，转文字结果也会在识别完成后自动显示。 — 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4525">#4525</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3631">#3631</a>)</li>
 </ul>
-<h2>✨ 体验优化</h2>
+<h3>✨ 体验优化</h3>
 <ul>
-  <li>点开大图 / 视频预览时立即显示加载提示，首次打开不再像卡住没反应。 — 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4562">#4562</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3559">#3559</a>)</li>
-  <li>客户信息面板里打开日期或地区选择器时，面板不会再误判为点到外面而自动收起，选择时更稳。 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4499">#4499</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4474">#4474</a>)</li>
-  <li>搜索聊天记录打开子窗口后，右侧详情标题会带上当前客户名，避免把「这个客户的命中数」误看成全局搜索结果丢了。 — 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4477">#4477</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3114">#3114</a>)</li>
-  <li>截图标注更顺手：选中文字或图形后可按 Del 删除，双击文字可重新编辑，画笔和马赛克快速涂抹时也更平滑。 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4435">#4435</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4431">#4431</a>)</li>
-  <li>Windows 自动更新后会自动清理旧安装包，避免本地 packages 目录越积越大、长期占用好几 GB 磁盘空间。 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4484">#4484</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4425">#4425</a>)</li>
+  <li>聊天已读逻辑更接近微信：正在看的会话来新消息会先显示未读，切走、切回或窗口重新获得焦点时再自动清掉，托盘也不会对着当前会话误闪。 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4575">#4575</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4546">#4546</a>)</li>
+  <li>新的朋友添加失败时不再显示看不懂的错误原文；能重试的失败会直接给出「重试」入口。 — 梁晨、Cursor <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4556">#4556</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4543">#4543</a>)</li>
+  <li>深圳艺星的话术「复制到部门」流程更清楚：部门话术可按分类浏览、拖动排序，从部门页添加时也会默认选中部门话术。 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4534">#4534</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4493">#4493</a>)</li>
+  <li>点开大图或视频预览时会立即显示「打开中」，首次打开不再像卡住没反应。 — 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4562">#4562</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3559">#3559</a>)</li>
+  <li>macOS 截图标注更顺手：选中文字或图形后可按 Del 删除，双击文字可重新编辑，画笔和马赛克快速涂抹时也更平滑。 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4532">#4532</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4489">#4489</a>)</li>
 </ul>
-<h2>🐞 问题修复</h2>
+<h3>🐞 问题修复</h3>
 <ul>
-  <li>新客户消息先到时，会话现在会更快出现在列表里，不再出现「有消息提醒但找不到这个会话」的等待。 — 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4483">#4483</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4470">#4470</a>)</li>
-  <li>F1 绑定快捷话术时，搜索私有话术现在能正常找到对应内容，「私有」筛选也会按实际来源显示。 — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4479">#4479</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4420">#4420</a>)</li>
-  <li>修复 IM 看起来在线但收不到实时消息、只能重启应用才恢复的问题；恢复后也会补拉假死期间的会话内容。 — 梁晨、Cursor <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4485">#4485</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4471">#4471</a>)</li>
-  <li>退出聊天页时偶发闪退的问题已修复。 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4476">#4476</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4464">#4464</a>)</li>
+  <li>群名改完后，左侧会话列表和标题卡会及时显示新群名，不再继续显示旧名字。 — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4554">#4554</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4463">#4463</a>)</li>
+  <li>快捷话术里的视频发送后不再因为链接失效而 404，视频话术可以正常发给客户。 — 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4571">#4571</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4399">#4399</a>)</li>
+  <li>有未读消息时托盘会正常闪烁提醒，不再漏掉后台或当前选中会话里的新消息。 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4572">#4572</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4438">#4438</a>)</li>
+  <li>切换企业时如果图片或视频预览窗口还在打开，不会再复用到旧企业窗口，避免看到或下载到旧企业内容。 — 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4570">#4570</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4563">#4563</a>)</li>
+  <li>手机微信直发的消息同步到电脑端后，不会再误显示成发送失败的红色状态。 — 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4550">#4550</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4536">#4536</a>)</li>
+  <li>关闭聊天窗口或切换页面时触发语音快捷键，不会再偶发报错影响语音输入。 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4544">#4544</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4465">#4465</a>)</li>
 </ul>
 
 

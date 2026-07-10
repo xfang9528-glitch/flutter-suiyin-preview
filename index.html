@@ -154,24 +154,33 @@ a:hover { text-decoration: underline; }
 <h1>📦 2026071003 发版预览</h1>
 <div class="meta">
 当前版本：<code>2026071002</code>（发版时间：<span class="bump-time">07/10 11:30</span>），下一版（预览）：<code>2026071003</code><br>
-生成时间：2026-07-10 17:00:16 · 重新跑脚本后刷新页面即拿最新
+生成时间：2026-07-10 18:18:40 · 重新跑脚本后刷新页面即拿最新
 </div>
 
-<h2>🆕 新功能</h2>
+<h2>📣 本版用户感知更新</h2>
+<h3>🆕 新功能</h3>
 <ul>
-  <li>话术库支持上传 Excel 批量导入话术，按模板填好分类、关键词和话术内容后即可一次性导入公共话术。 — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4645">#4645</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4555">#4555</a>)</li>
+  <li>话术库支持上传 Excel 批量导入话术，按模板填好分类、关键词和话术内容后即可一次性导入公共话术。 — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4645">#4645</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4555">#4555</a>)</li>
 </ul>
-<h2>🐞 问题修复</h2>
+<h3>✨ 体验优化</h3>
 <ul>
-  <li>群聊切换不同人设后，历史消息现在会按当前人设正确显示在左侧或右侧，不再把自己和对方的位置看反。 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4653">#4653</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4520">#4520</a>)</li>
-  <li>群置顶消息不再在聊天中露出一串群 ID 和数字，聊天记录更干净。 — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4621">#4621</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4617">#4617</a>)</li>
-  <li>从搜索或聊天跳到通讯录客户后，列表里的接待人会保持正确，不再把已分配客户错显示成「未接待」。 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4638">#4638</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4473">#4473</a>)</li>
+  <li>发布朋友圈选择可见范围时，大量标签和好友的加载更快；未选择账号时也会直接跳过多余加载。 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4647">#4647</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4607">#4607</a>)</li>
+</ul>
+<h3>🐞 问题修复</h3>
+<ul>
+  <li>设置提醒后，服务通知里的提醒卡片会正常显示客户头像，不再退回占位头像。 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4655">#4655</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4630">#4630</a>)</li>
+  <li>批量通过好友申请遇到网络超时或临时失败时，会自动重试，减少手动重新操作。 — 梁晨、Cursor <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4657">#4657</a> (<a href="https://github.com/PetWebOrg/suiyin-go/issues/2340">suiyin-go#2340</a>)</li>
+  <li>会话列表会保留并补回最后一条消息摘要，不再出现大量会话标题下方空白、看不出最近聊了什么。 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4658">#4658</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4526">#4526</a>)</li>
+  <li>群聊切换不同人设后，历史消息现在会按当前人设正确显示在左侧或右侧，不再把自己和对方的位置看反。 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4653">#4653</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4520">#4520</a>)</li>
+  <li>快速关闭或切换视频时不再因为播放器还在加载而闪退。 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4648">#4648</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4633">#4633</a>)</li>
+  <li>群置顶消息不再在聊天中露出一串群 ID 和数字，聊天记录更干净。 — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4621">#4621</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4617">#4617</a>)</li>
+  <li>从搜索或聊天跳到通讯录客户后，列表里的接待人会保持正确，不再把已分配客户错显示成「未接待」。 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4638">#4638</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4473">#4473</a>)</li>
 </ul>
 
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">07/10 11:30 上次发版后，合入 main 的全部 <strong>10</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">07/10 11:30 上次发版后，合入 main 的全部 <strong>16</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
   <li><span class="merged-at">[07/10 14:43]</span>话术库支持上传 Excel 批量导入话术 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4645">#4645</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4555">#4555</a>) <span class="author">— 陈宣宇</span></li>
@@ -179,6 +188,10 @@ a:hover { text-decoration: underline; }
 
 <h2>🐞 问题修复</h2>
 <ul>
+  <li><span class="merged-at">[07/10 18:10]</span>补回设置提醒服务通知卡片头像丢失的 sourceAvatarUrl <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4655">#4655</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4630">#4630</a>) <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[07/10 18:03]</span>一键通过 timeout 自动重试 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4657">#4657</a> <span class="author">— 梁晨、Cursor</span></li>
+  <li><span class="merged-at">[07/10 17:54]</span>guard router state tracking <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4654">#4654</a> <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[07/10 17:48]</span>会话摘要被非文本/极简行洗空或彻底缺失 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4658">#4658</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4526">#4526</a>) <span class="author">— 王梓先</span></li>
   <li><span class="merged-at">[07/10 16:31]</span>群聊消息左右按当前人设渲染时现算，修复历史消息切人设不翻 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4653">#4653</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4520">#4520</a>) <span class="author">— 王梓先</span></li>
   <li><span class="merged-at">[07/10 15:42]</span>loadEnd() 异步任务在 close() 竞态下强解包崩溃加固 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4648">#4648</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4633">#4633</a>) <span class="author">— 王争</span></li>
   <li><span class="merged-at">[07/10 14:41]</span>群置顶 sysmsg 标签剥离残渣不再裸露成 chatroom id（#4502 变种） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4621">#4621</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4617">#4617</a>) <span class="author">— 陈宣宇</span></li>
@@ -188,11 +201,12 @@ a:hover { text-decoration: underline; }
 
 <h2>✨ 体验优化</h2>
 <ul>
-  <li class="empty">无</li>
+  <li><span class="merged-at">[07/10 17:01]</span>可见范围解析清理 — 空账号短路/并发分页/删死字段 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4647">#4647</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4607">#4607</a>) <span class="author">— 王争</span></li>
 </ul>
 
 <h2>🔧 其他（chore / docs / test / ...）</h2>
 <ul>
+  <li><span class="merged-at">[07/10 17:46]</span>docs(release): archive 2026071002 mobile notes <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4659">#4659</a> <span class="author">— 王梓先</span></li>
   <li><span class="merged-at">[07/10 15:54]</span>test(chat #4601): 消除粘贴图压缩宽度守卫测试的 flaky <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4652">#4652</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4601">#4601</a>) <span class="author">— 陈宣宇</span></li>
   <li><span class="merged-at">[07/10 15:47]</span>test: 修复 #4555 全量 gate 暴露的 4 个 pre-existing 红（test-only） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4639">#4639</a> <span class="author">— 陈宣宇</span></li>
   <li><span class="merged-at">[07/10 14:12]</span>修复移动端聊天视频点击预览 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4631">#4631</a> <span class="author">— 陈聪</span></li>

@@ -154,29 +154,28 @@ a:hover { text-decoration: underline; }
 <h1>📦 2026071003 发版预览</h1>
 <div class="meta">
 当前版本：<code>2026071002</code>（发版时间：<span class="bump-time">07/10 11:30</span>），下一版（预览）：<code>2026071003</code><br>
-生成时间：2026-07-10 22:46:34 · 重新跑脚本后刷新页面即拿最新
+生成时间：2026-07-10 23:06:06 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
 <h3>🆕 新功能</h3>
 <ul>
-  <li>新消息到达时，任务栏提醒现在跟微信一样：无论窗口是否在前台都会闪几秒，后台收到消息后会停在高亮状态，点开后自动消失。 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4661">#4661</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4574">#4574</a>)</li>
   <li>话术库支持上传 Excel 批量导入话术，按模板填好分类、关键词和话术内容后即可一次性导入公共话术。 — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4645">#4645</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4555">#4555</a>)</li>
 </ul>
 <h3>✨ 体验优化</h3>
 <ul>
-  <li>发朋友圈选择「谁可以看 / 不给谁看」时，微信标签好友较多的情况会解析得更快，空账号也不会多等一次无效加载。 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4647">#4647</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4607">#4607</a>)</li>
+  <li>新消息来时，任务栏会像微信一样闪几秒并保持高亮提醒；即使窗口已经在前台，也不会漏掉其他会话的新消息。 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4661">#4661</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4574">#4574</a>)</li>
+  <li>朋友圈可见范围选择加载更快，未选账号时也不会多等一次无效加载。 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4647">#4647</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4607">#4607</a>)</li>
 </ul>
 <h3>🐞 问题修复</h3>
 <ul>
-  <li>点引用的视频消息时，不再提示「视频地址不可用」；从引用跳回原消息的位置也更准确。 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4665">#4665</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4600">#4600</a>)</li>
-  <li>从搜索结果里的聊天记录进入多销售群时，会回到自己的群人设，不再误切到别人发消息时使用的人设。 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4664">#4664</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4612">#4612</a>)</li>
-  <li>群聊里他人人设发送失败的消息会显示在对方一侧，不再被误认为是自己发的。 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4660">#4660</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4627">#4627</a>)</li>
-  <li>设置提醒后，服务通知卡片会正常显示客户头像，不再退回成占位图。 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4655">#4655</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4630">#4630</a>)</li>
-  <li>批量「一键通过」好友申请时，遇到临时超时会自动重试，减少手动重复处理。 — 梁晨、Cursor <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4657">#4657</a></li>
-  <li>会话列表的最后一条消息摘要会保留真实内容，不再被系统消息或分配事件洗成空白。 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4658">#4658</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4526">#4526</a>)</li>
+  <li>引用的视频消息现在可以正常点开播放；从引用定位到原消息时，长会话里的位置也更准确。 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4665">#4665</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4600">#4600</a>)</li>
+  <li>从搜索结果里的聊天记录进入多销售群时，会回到自己的人设，不再误切到别人的人设。 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4664">#4664</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4612">#4612</a>)</li>
+  <li>群聊里别人人设发送失败的消息会显示在对方一侧，不再误显示成自己发出的消息。 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4660">#4660</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4627">#4627</a>)</li>
+  <li>设置提醒后的服务通知卡片会正常显示客户头像，不再只显示占位头像。 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4655">#4655</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4630">#4630</a>)</li>
+  <li>批量一键通过好友申请遇到临时超时会自动重试，减少需要手动再点一次的情况。 — 梁晨、Cursor <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4657">#4657</a> (suiyin-go<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2340">#2340</a>)</li>
+  <li>会话列表的最后一条消息摘要不再被系统消息或分配事件洗空，新分配客户也能正常看到摘要。 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4658">#4658</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4526">#4526</a>)</li>
   <li>群聊切换不同人设后，历史消息现在会按当前人设正确显示在左侧或右侧，不再把自己和对方的位置看反。 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4653">#4653</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4520">#4520</a>)</li>
-  <li>视频预览关闭或切换很快时，不再因为加载中的视频信息被清理而偶发崩溃。 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4648">#4648</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4633">#4633</a>)</li>
   <li>群置顶消息不再在聊天中露出一串群 ID 和数字，聊天记录更干净。 — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4621">#4621</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4617">#4617</a>)</li>
   <li>从搜索或聊天跳到通讯录客户后，列表里的接待人会保持正确，不再把已分配客户错显示成「未接待」。 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4638">#4638</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4473">#4473</a>)</li>
 </ul>

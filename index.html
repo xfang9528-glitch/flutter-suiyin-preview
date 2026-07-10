@@ -154,40 +154,48 @@ a:hover { text-decoration: underline; }
 <h1>📦 2026071003 发版预览</h1>
 <div class="meta">
 当前版本：<code>2026071002</code>（发版时间：<span class="bump-time">07/10 11:30</span>），下一版（预览）：<code>2026071003</code><br>
-生成时间：2026-07-10 18:18:40 · 重新跑脚本后刷新页面即拿最新
+生成时间：2026-07-10 22:46:34 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
 <h3>🆕 新功能</h3>
 <ul>
-  <li>话术库支持上传 Excel 批量导入话术，按模板填好分类、关键词和话术内容后即可一次性导入公共话术。 — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4645">#4645</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4555">#4555</a>)</li>
+  <li>新消息到达时，任务栏提醒现在跟微信一样：无论窗口是否在前台都会闪几秒，后台收到消息后会停在高亮状态，点开后自动消失。 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4661">#4661</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4574">#4574</a>)</li>
+  <li>话术库支持上传 Excel 批量导入话术，按模板填好分类、关键词和话术内容后即可一次性导入公共话术。 — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4645">#4645</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4555">#4555</a>)</li>
 </ul>
 <h3>✨ 体验优化</h3>
 <ul>
-  <li>发布朋友圈选择可见范围时，大量标签和好友的加载更快；未选择账号时也会直接跳过多余加载。 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4647">#4647</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4607">#4607</a>)</li>
+  <li>发朋友圈选择「谁可以看 / 不给谁看」时，微信标签好友较多的情况会解析得更快，空账号也不会多等一次无效加载。 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4647">#4647</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4607">#4607</a>)</li>
 </ul>
 <h3>🐞 问题修复</h3>
 <ul>
-  <li>设置提醒后，服务通知里的提醒卡片会正常显示客户头像，不再退回占位头像。 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4655">#4655</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4630">#4630</a>)</li>
-  <li>批量通过好友申请遇到网络超时或临时失败时，会自动重试，减少手动重新操作。 — 梁晨、Cursor <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4657">#4657</a> (<a href="https://github.com/PetWebOrg/suiyin-go/issues/2340">suiyin-go#2340</a>)</li>
-  <li>会话列表会保留并补回最后一条消息摘要，不再出现大量会话标题下方空白、看不出最近聊了什么。 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4658">#4658</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4526">#4526</a>)</li>
-  <li>群聊切换不同人设后，历史消息现在会按当前人设正确显示在左侧或右侧，不再把自己和对方的位置看反。 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4653">#4653</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4520">#4520</a>)</li>
-  <li>快速关闭或切换视频时不再因为播放器还在加载而闪退。 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4648">#4648</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4633">#4633</a>)</li>
-  <li>群置顶消息不再在聊天中露出一串群 ID 和数字，聊天记录更干净。 — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4621">#4621</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4617">#4617</a>)</li>
-  <li>从搜索或聊天跳到通讯录客户后，列表里的接待人会保持正确，不再把已分配客户错显示成「未接待」。 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4638">#4638</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4473">#4473</a>)</li>
+  <li>点引用的视频消息时，不再提示「视频地址不可用」；从引用跳回原消息的位置也更准确。 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4665">#4665</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4600">#4600</a>)</li>
+  <li>从搜索结果里的聊天记录进入多销售群时，会回到自己的群人设，不再误切到别人发消息时使用的人设。 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4664">#4664</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4612">#4612</a>)</li>
+  <li>群聊里他人人设发送失败的消息会显示在对方一侧，不再被误认为是自己发的。 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4660">#4660</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4627">#4627</a>)</li>
+  <li>设置提醒后，服务通知卡片会正常显示客户头像，不再退回成占位图。 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4655">#4655</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4630">#4630</a>)</li>
+  <li>批量「一键通过」好友申请时，遇到临时超时会自动重试，减少手动重复处理。 — 梁晨、Cursor <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4657">#4657</a></li>
+  <li>会话列表的最后一条消息摘要会保留真实内容，不再被系统消息或分配事件洗成空白。 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4658">#4658</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4526">#4526</a>)</li>
+  <li>群聊切换不同人设后，历史消息现在会按当前人设正确显示在左侧或右侧，不再把自己和对方的位置看反。 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4653">#4653</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4520">#4520</a>)</li>
+  <li>视频预览关闭或切换很快时，不再因为加载中的视频信息被清理而偶发崩溃。 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4648">#4648</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4633">#4633</a>)</li>
+  <li>群置顶消息不再在聊天中露出一串群 ID 和数字，聊天记录更干净。 — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4621">#4621</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4617">#4617</a>)</li>
+  <li>从搜索或聊天跳到通讯录客户后，列表里的接待人会保持正确，不再把已分配客户错显示成「未接待」。 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4638">#4638</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4473">#4473</a>)</li>
 </ul>
 
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">07/10 11:30 上次发版后，合入 main 的全部 <strong>16</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">07/10 11:30 上次发版后，合入 main 的全部 <strong>20</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
+  <li><span class="merged-at">[07/10 22:37]</span>新消息任务栏闪烁对齐微信——去焦点门 + 定次数闪保持高亮 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4661">#4661</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4574">#4574</a>) <span class="author">— 王梓先</span></li>
   <li><span class="merged-at">[07/10 14:43]</span>话术库支持上传 Excel 批量导入话术 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4645">#4645</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4555">#4555</a>) <span class="author">— 陈宣宇</span></li>
 </ul>
 
 <h2>🐞 问题修复</h2>
 <ul>
+  <li><span class="merged-at">[07/10 22:41]</span>引用视频「视频地址不可用」补 downloadId 回源 + 定位实测邻居校准 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4665">#4665</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4600">#4600</a>) <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[07/10 22:34]</span>搜索经聊天记录进群不再落到不属于自己的人设 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4664">#4664</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4612">#4612</a>) <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[07/10 19:22]</span>群内他人人设的失败消息（丢 clientId）不再误渲染到当前人设右侧 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4660">#4660</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4627">#4627</a>) <span class="author">— 王梓先</span></li>
   <li><span class="merged-at">[07/10 18:10]</span>补回设置提醒服务通知卡片头像丢失的 sourceAvatarUrl <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4655">#4655</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4630">#4630</a>) <span class="author">— 王争</span></li>
   <li><span class="merged-at">[07/10 18:03]</span>一键通过 timeout 自动重试 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4657">#4657</a> <span class="author">— 梁晨、Cursor</span></li>
   <li><span class="merged-at">[07/10 17:54]</span>guard router state tracking <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4654">#4654</a> <span class="author">— 陈聪</span></li>

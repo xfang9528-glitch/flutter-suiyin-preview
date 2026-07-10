@@ -154,24 +154,40 @@ a:hover { text-decoration: underline; }
 <h1>📦 2026071003 发版预览</h1>
 <div class="meta">
 当前版本：<code>2026071002</code>（发版时间：<span class="bump-time">07/10 11:30</span>），下一版（预览）：<code>2026071003</code><br>
-生成时间：2026-07-10 11:43:58 · 重新跑脚本后刷新页面即拿最新
+生成时间：2026-07-10 16:57:15 · 重新跑脚本后刷新页面即拿最新
 </div>
 
-<h2>📣 本版用户感知更新</h2>
-<div class="notice">本期暂无新的 PC 用户感知更新。</div>
+<h2>🆕 新功能</h2>
+<ul>
+  <li>话术库支持上传 Excel 批量导入话术，按模板填好分类、关键词和话术内容后即可一次性导入公共话术。 — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4645">#4645</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4555">#4555</a>)</li>
+</ul>
+<h2>✨ 体验优化</h2>
+<ul>
+  <li>点开大图 / 视频预览时立即显示加载提示，首次打开不再像卡住没反应。</li>
+</ul>
+<h2>🐞 问题修复</h2>
+<ul>
+  <li>群聊切换不同人设后，历史消息现在会按当前人设正确显示在左侧或右侧，不再把自己和对方的位置看反。 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4653">#4653</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4520">#4520</a>)</li>
+  <li>群置顶消息不再在聊天中露出一串群 ID 和数字，聊天记录更干净。 — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4621">#4621</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4617">#4617</a>)</li>
+  <li>从搜索或聊天跳到通讯录客户后，列表里的接待人会保持正确，不再把已分配客户错显示成「未接待」。 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4638">#4638</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4473">#4473</a>)</li>
+</ul>
 
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">07/10 11:30 上次发版后，合入 main 的全部 <strong>0</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">07/10 11:30 上次发版后，合入 main 的全部 <strong>10</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
-  <li class="empty">无</li>
+  <li><span class="merged-at">[07/10 14:43]</span>话术库支持上传 Excel 批量导入话术 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4645">#4645</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4555">#4555</a>) <span class="author">— 陈宣宇</span></li>
 </ul>
 
 <h2>🐞 问题修复</h2>
 <ul>
-  <li class="empty">无</li>
+  <li><span class="merged-at">[07/10 16:31]</span>群聊消息左右按当前人设渲染时现算，修复历史消息切人设不翻 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4653">#4653</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4520">#4520</a>) <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[07/10 15:42]</span>loadEnd() 异步任务在 close() 竞态下强解包崩溃加固 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4648">#4648</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4633">#4633</a>) <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[07/10 14:41]</span>群置顶 sysmsg 标签剥离残渣不再裸露成 chatroom id（#4502 变种） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4621">#4621</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4617">#4617</a>) <span class="author">— 陈宣宇</span></li>
+  <li><span class="merged-at">[07/10 14:40]</span>close mobile panels before voice recording <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4610">#4610</a> <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[07/10 12:30]</span>跳转 Contact 回填接待人，修通讯录列表错显「未接待」 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4638">#4638</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4473">#4473</a>) <span class="author">— 王梓先</span></li>
 </ul>
 
 <h2>✨ 体验优化</h2>
@@ -181,7 +197,10 @@ a:hover { text-decoration: underline; }
 
 <h2>🔧 其他（chore / docs / test / ...）</h2>
 <ul>
-  <li class="empty">无</li>
+  <li><span class="merged-at">[07/10 15:54]</span>test(chat #4601): 消除粘贴图压缩宽度守卫测试的 flaky <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4652">#4652</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4601">#4601</a>) <span class="author">— 陈宣宇</span></li>
+  <li><span class="merged-at">[07/10 15:47]</span>test: 修复 #4555 全量 gate 暴露的 4 个 pre-existing 红（test-only） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4639">#4639</a> <span class="author">— 陈宣宇</span></li>
+  <li><span class="merged-at">[07/10 14:12]</span>修复移动端聊天视频点击预览 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4631">#4631</a> <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[07/10 14:01]</span>test(chat #4597): dispose_ref_read_guard_test 覆盖范围补 2 处同款 idiom <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4637">#4637</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4597">#4597</a>) <span class="author">— 王争</span></li>
 </ul>
 
 

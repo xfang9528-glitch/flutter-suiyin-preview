@@ -153,10 +153,29 @@ a:hover { text-decoration: underline; }
 <h1>📦 2026071002 发版预览</h1>
 <div class="meta">
 当前版本：<code>2026071001</code>（发版时间：<span class="bump-time">07/10 02:25</span>），下一版（预览）：<code>2026071002</code><br>
-生成时间：2026-07-10 10:06:05 · 重新跑脚本后刷新页面即拿最新
+生成时间：2026-07-10 10:29:23 · 重新跑脚本后刷新页面即拿最新
 </div>
 
-<h2>📣 本版用户感知更新</h2>
+<h2>🆕 新功能</h2>
+<ul>
+  <li>置顶会话超过 5 个时，会像微信 PC 一样默认收起，只露出前 5 个；需要时可一键展开或收起。 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4622">#4622</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4598">#4598</a>)</li>
+  <li>发朋友圈选择「谁可见 / 谁不可见」时，「标签」现在使用微信里的真实标签，选择范围和微信客户端保持一致。 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4609">#4609</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4582">#4582</a>)</li>
+</ul>
+<h2>✨ 体验优化</h2>
+<ul>
+  <li>设置「截图」和「显示/隐藏窗口」快捷键时，会拦截裸字母、数字、F 键等容易误触的组合，并提示改用「功能键 + 字母」。 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4593">#4593</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4586">#4586</a>)</li>
+</ul>
+<h2>🐞 问题修复</h2>
+<ul>
+  <li>PC 聊天窗口顶部客户名称进入编辑后，单击文字内部现在会继续编辑并移动光标，不会误退出编辑状态。 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4611">#4611</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4585">#4585</a>)</li>
+  <li>PC 端发送图片、截图或粘贴图片时，接收方查看不再因为压缩过度而明显模糊。 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4615">#4615</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4601">#4601</a>)</li>
+  <li>客户被重新分配到新人设后，聊天列表会及时出现新的人设会话；已删除的旧人设记录也不会再挤在列表里干扰查看。 — 梁晨、Cursor <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4608">#4608</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4478">#4478</a>)</li>
+  <li>从搜索结果进入群预览后，顶部人设会和搜索命中的人设保持一致；切筛选或刷新后中间栏不再空白。 — 梁晨、Cursor <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4594">#4594</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4590">#4590</a>)</li>
+  <li>群通知、人设上下线这类不会产生新会话内容的系统消息，不再触发无消息的提示音。 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4605">#4605</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4588">#4588</a>)</li>
+  <li>进入「新的朋友」时会默认选中当前可见的所有人设，待添加好友列表不再因为没选人设而空白。 — 梁晨、Cursor <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4602">#4602</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4599">#4599</a>)</li>
+  <li>修复聊天记录视图关闭时可能触发的崩溃回归，减少切换会话或关闭页面时的闪退。 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4596">#4596</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4464">#4464</a>)</li>
+  <li>从搜索结果点进群聊时，现在会优先进入对应人设，不再落到离线人设；群聊顶部的人设胶囊也会稳定显示并可切换。 — 梁晨、Cursor <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4583">#4583</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4538">#4538</a>)</li>
+</ul>
 
 
 <hr class="ref-divider">

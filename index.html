@@ -41,7 +41,7 @@ a:hover { text-decoration: underline; }
 <label>查看历史预览：</label>
 <select id="version-switcher-select" onchange="var v=this.value; if(v) location.href = v; else location.href = './';">
 <!-- VERSION_SWITCHER_OPTIONS_START -->
-<option value="">📦 2026071101 发版预览</option>
+<option value="">📦 2026071201 发版预览</option>
 <option value="2026071002.html">🗂 2026071002</option>
 <option value="2026071001.html">🗂 2026071001</option>
 <option value="2026070901.html">🗂 2026070901</option>
@@ -151,10 +151,10 @@ a:hover { text-decoration: underline; }
   }
 })();
 </script>
-<h1>📦 2026071101 发版预览</h1>
+<h1>📦 2026071201 发版预览</h1>
 <div class="meta">
-当前版本：<code>2026071002</code>（发版时间：<span class="bump-time">07/10 11:30</span>），下一版（预览）：<code>2026071101</code><br>
-生成时间：2026-07-11 23:05:22 · 重新跑脚本后刷新页面即拿最新
+当前版本：<code>2026071002</code>（发版时间：<span class="bump-time">07/10 11:30</span>），下一版（预览）：<code>2026071201</code><br>
+生成时间：2026-07-12 09:33:07 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>🆕 新功能</h2>
@@ -176,6 +176,7 @@ a:hover { text-decoration: underline; }
   <li>批量一键通过好友申请遇到临时超时会自动重试，减少需要手动再点一次的情况。 — 梁晨、Cursor <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4657">#4657</a> (suiyin-go<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2340">#2340</a>)</li>
   <li>会话列表的最后一条消息摘要不再被系统消息或分配事件洗空，新分配客户也能正常看到摘要。 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4658">#4658</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4526">#4526</a>)</li>
   <li>群聊切换不同人设后，历史消息现在会按当前人设正确显示在左侧或右侧，不再把自己和对方的位置看反。 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4653">#4653</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4520">#4520</a>)</li>
+  <li>关闭视频预览时，应用不再因为后台加载还没结束而偶发闪退。 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4648">#4648</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4633">#4633</a>)</li>
   <li>群置顶消息不再在聊天中露出一串群 ID 和数字，聊天记录更干净。 — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4621">#4621</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4617">#4617</a>)</li>
   <li>从搜索或聊天跳到通讯录客户后，列表里的接待人会保持正确，不再把已分配客户错显示成「未接待」。 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4638">#4638</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4473">#4473</a>)</li>
 </ul>

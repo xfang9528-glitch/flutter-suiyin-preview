@@ -157,22 +157,37 @@ a:hover { text-decoration: underline; }
 <h1>📦 2026071402 发版预览</h1>
 <div class="meta">
 当前版本：<code>2026071401</code>（发版时间：<span class="bump-time">07/14 12:22</span>），下一版（预览）：<code>2026071402</code><br>
-生成时间：2026-07-14 13:58:45 · 重新跑脚本后刷新页面即拿最新
+生成时间：2026-07-14 16:52:16 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
+<h3>🆕 新功能</h3>
+<ul>
+  <li>北京艺星企业环境已接入，登录后会使用与成都总部一致的功能配置。— 王争 #4780 (#4535)</li>
+  <li>收到客户分配通知后，点击通知可以直接打开对应客户会话，不再停在系统通知账号。— 王争 #4650 (#4578)</li>
+</ul>
+
+<h3>🐞 问题修复</h3>
+<ul>
+  <li>清空客户备注或人设展示名后，列表和会话不会再被旧名字自动盖回。— 梁晨、Cursor #4771 (#4719)</li>
+  <li>发布朋友圈选择可见范围时，「谁可以看」和「不给谁看」会分别记住选择，来回切换不再互相串选。— 王争 #4734 (#4716)</li>
+  <li>消息接收异常横幅点击重新连接后，现在会显示进行中、成功、失败或重复点击提示，不再像没反应。— 王梓先 #4783 (#4735)</li>
+</ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">07/14 12:22 上次发版后，合入 main 的全部 <strong>1</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">07/14 12:22 上次发版后，合入 main 的全部 <strong>9</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
-  <li class="empty">无</li>
+  <li><span class="merged-at">[07/14 15:51]</span>人设 remark/customerNames/msg:alloc 对齐后端空串权威 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4771">#4771</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4719">#4719</a>) <span class="author">— 梁晨、Cursor</span></li>
+  <li><span class="merged-at">[07/14 15:14]</span>注册北京艺星 yestar-bj alias 对齐成都总部 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4780">#4780</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4535">#4535</a>) <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[07/14 14:36]</span>分配通知点击优先读 ext.timId 直达客户会话 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4650">#4650</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4578">#4578</a>) <span class="author">— 王争</span></li>
 </ul>
 
 <h2>🐞 问题修复</h2>
 <ul>
-  <li class="empty">无</li>
+  <li><span class="merged-at">[07/14 16:12]</span>可见范围选择器 partial/exclude 模式各自独立记忆选择，切换不再串选覆盖 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4734">#4734</a> <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[07/14 15:36]</span>修复IM断连兜底横幅点击无反馈（销售点击后能及时看到进度和结果，不再毫无反应） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4783">#4783</a> <span class="author">— 王梓先</span></li>
 </ul>
 
 <h2>✨ 体验优化</h2>
@@ -182,6 +197,9 @@ a:hover { text-decoration: underline; }
 
 <h2>🔧 其他（chore / docs / test / ...）</h2>
 <ul>
+  <li><span class="merged-at">[07/14 16:40]</span>test: close #4777 加速完整测试并清理过期诊断 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4787">#4787</a> <span class="author">— 张拓</span></li>
+  <li><span class="merged-at">[07/14 15:57]</span>ci: 迁移剩余 workflow 到自建 self-hosted runner <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4784">#4784</a> <span class="author">— 张拓</span></li>
+  <li><span class="merged-at">[07/14 14:56]</span>chore(hooks): add DR-072 self-check reminder for gh issue create <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4779">#4779</a> <span class="author">— 张拓</span></li>
   <li><span class="merged-at">[07/14 12:57]</span>test: close #4742 合并低负载测试入口 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4768">#4768</a> <span class="author">— 张拓</span></li>
 </ul>
 

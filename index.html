@@ -41,7 +41,7 @@ a:hover { text-decoration: underline; }
 <label>查看历史预览：</label>
 <select id="version-switcher-select" onchange="var v=this.value; if(v) location.href = v; else location.href = './';">
 <!-- VERSION_SWITCHER_OPTIONS_START -->
-<option value="">📦 2026071302 发版预览</option>
+<option value="">📦 2026071401 发版预览</option>
 <option value="2026071301.html">🗂 2026071301</option>
 <option value="2026071201.html">🗂 2026071201</option>
 <option value="2026071002.html">🗂 2026071002</option>
@@ -153,14 +153,15 @@ a:hover { text-decoration: underline; }
   }
 })();
 </script>
-<h1>📦 2026071302 发版预览</h1>
+<h1>📦 2026071401 发版预览</h1>
 <div class="meta">
-当前版本：<code>2026071301</code>（发版时间：<span class="bump-time">07/13 17:50</span>），下一版（预览）：<code>2026071302</code><br>
-生成时间：2026-07-13 23:04:49 · 重新跑脚本后刷新页面即拿最新
+当前版本：<code>2026071301</code>（发版时间：<span class="bump-time">07/13 17:50</span>），下一版（预览）：<code>2026071401</code><br>
+生成时间：2026-07-14 09:56:37 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>🐞 问题修复</h2>
 <ul>
+  <li>切换群接待人设后，新人设名下的群现在能及时出现在列表里，不再出现群列表空白、看不到也回复不了客户消息的情况。 — 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4737">#4737</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4700">#4700</a>)</li>
   <li>快速切换聊天会话或右侧面板时，应用不再因为文本选区刷新而闪退，聊天界面更稳定。 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4720">#4720</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4466">#4466</a>)</li>
   <li>朋友圈选择「谁可以看 / 不给谁看」时，使用大人数微信标签也能正常发布，不再被 1200 人上限卡住。 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4714">#4714</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4706">#4706</a>)</li>
 </ul>
@@ -168,7 +169,7 @@ a:hover { text-decoration: underline; }
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">07/13 17:50 上次发版后，合入 main 的全部 <strong>7</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">07/13 17:50 上次发版后，合入 main 的全部 <strong>9</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
   <li><span class="merged-at">[07/13 18:11]</span>close #4707 prev/nextMsgId 断链检测并 history 回补 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4713">#4713</a> <span class="author">— 梁晨、Cursor</span></li>
@@ -176,6 +177,7 @@ a:hover { text-decoration: underline; }
 
 <h2>🐞 问题修复</h2>
 <ul>
+  <li><span class="merged-at">[07/14 00:37]</span>切人设后群永久不可见——快照推进 cursor 前 reconcile + 周期性全量兜底 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4737">#4737</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4700">#4700</a>) <span class="author">— 张拓</span></li>
   <li><span class="merged-at">[07/13 22:54]</span>保留缺项分配并分轮提醒（工程师会知道缺什么且不会突然失去负责人） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4717">#4717</a> <span class="author">— 房昕</span></li>
   <li><span class="merged-at">[07/13 17:56]</span>isolate volatile chat selection regions <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4720">#4720</a> <span class="author">— 陈聪</span></li>
   <li><span class="merged-at">[07/13 17:52]</span>keep mobile purchase picker above keyboard <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4683">#4683</a> <span class="author">— 陈聪</span></li>
@@ -189,6 +191,7 @@ a:hover { text-decoration: underline; }
 
 <h2>🔧 其他（chore / docs / test / ...）</h2>
 <ul>
+  <li><span class="merged-at">[07/14 03:39]</span>test: 合并 Flutter 测试入口并清理低价值用例 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4741">#4741</a> <span class="author">— 张拓</span></li>
   <li><span class="merged-at">[07/13 18:43]</span>revert: 从 main 撤回 #4713（改合入 lc_chat_page） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4729">#4729</a> <span class="author">— 梁晨</span></li>
 </ul>
 

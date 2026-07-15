@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
-<!-- CURRENT_BUILD:2026050901 -->
+<!-- CURRENT_BUILD:2026071501 -->
 <title>下一版发版预览 · flutter-suiyin</title>
 <style>
 body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", sans-serif; max-width: 880px; margin: 32px auto; padding: 0 24px; color: #1f2328; line-height: 1.7; background: #fafbfc; }
@@ -156,43 +156,63 @@ a:hover { text-decoration: underline; }
   }
 })();
 </script>
-<h1>📦 2026050902 发版预览</h1>
+<h1>📦 2026071502 发版预览</h1>
 <div class="meta">
-当前版本：<code>2026050901</code>（发版时间：<span class="bump-time">05/09 08:17</span>），下一版（预览）：<code>2026050902</code><br>
-生成时间：2026-05-09 09:50:35 · 重新跑脚本后刷新页面即拿最新
+当前版本：<code>2026071501</code>（发版时间：<span class="bump-time">07/15 11:18</span>），下一版（预览）：<code>2026071502</code><br>
+生成时间：2026-07-15 17:53:25 · 重新跑脚本后刷新页面即拿最新
 </div>
 
-<h2>📣 本版用户感知更新</h2>
-<p style="color:#656d76">本期暂无新合入 PR（上次发版 <span class="bump-time">05/09 08:17</span> 之后 main 无新 commit），等下一批 PR 合入后会在此自动汇总。</p>
+<h2>🆕 新功能</h2>
+<ul>
+  <li>手动刷新客户资料时，会只更新当前人设的备注和展示名；同一客户的其他人设不会被串改。 — 梁晨、Cursor <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4786">#4786</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4711">#4711</a>)</li>
+</ul>
+<h2>✨ 体验优化</h2>
+<ul>
+  <li>AI 分析详情改为主窗口内浮窗，查看任务不再额外弹出独立窗口，占用更少、切换也更稳。 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4810">#4810</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4759">#4759</a>)</li>
+</ul>
+<h2>🐞 问题修复</h2>
+<ul>
+  <li>免打扰会话会继续记录真实未读数，取消免打扰后不再只显示 1 条，而是显示这段时间实际积压的未读消息数。 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4828">#4828</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4794">#4794</a>)</li>
+  <li>切换企业或退出登录后，主窗口里的浮窗会自动关闭，不再看到上一家企业残留的客户分析内容。 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4824">#4824</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4813">#4813</a>)</li>
+  <li>从全局搜索打开非当前销售接待的会话时，会进入通讯录只读页，不再把别人的会话加进自己的聊天列表。 — 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4820">#4820</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4733">#4733</a>)</li>
+  <li>进入群聊后会自动同步微信群成员，@ 人时不再出现成员列表为空。 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4815">#4815</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4679">#4679</a>)</li>
+</ul>
+
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">05/09 08:17 上次发版后，合入 main 的全部 <strong>0</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">07/15 11:18 上次发版后，合入 main 的全部 <strong>10</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
-  <li class="empty">无</li>
+  <li><span class="merged-at">[07/15 15:13]</span>手动刷新改走 refresh-remark 按人设写回 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4786">#4786</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4711">#4711</a>) <span class="author">— 梁晨、Cursor</span></li>
+  <li><span class="merged-at">[07/15 14:58]</span>close #3288 群聊记录支持按成员筛选 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4775">#4775</a> <span class="author">— 陈聪</span></li>
 </ul>
 
 <h2>🐞 问题修复</h2>
 <ul>
-  <li class="empty">无</li>
+  <li><span class="merged-at">[07/15 17:50]</span>免打扰会话本地照常累计真实未读，取消免打扰显示真实积压数 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4828">#4828</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4794">#4794</a>) <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[07/15 16:52]</span>移动端话术库列表 tile 新增话术正文摘要预览（销售在列表直接看到话术内容，不用逐条点编辑确认） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4811">#4811</a> <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[07/15 16:47]</span>PC 浮窗随切企业/登出自动销毁（销售切换企业后不再看到上一家企业残留的客户分析内容） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4824">#4824</a> <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[07/15 15:31]</span>吞掉 InkWell 焦点高亮竞态查已失活祖先的框架报错 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4821">#4821</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4641">#4641</a>) <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[07/15 14:59]</span>搜索非当前接待会话不再加入聊天列表 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4820">#4820</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4733">#4733</a>) <span class="author">— 梁晨</span></li>
+  <li><span class="merged-at">[07/15 14:51]</span>进群自动同步微信群成员，@ 不再取不到成员列表 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4815">#4815</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4679">#4679</a>) <span class="author">— 王梓先</span></li>
 </ul>
 
 <h2>✨ 体验优化</h2>
 <ul>
-  <li class="empty">无</li>
+  <li><span class="merged-at">[07/15 13:53]</span>迁移 AI 分析子窗口到主窗口 in-app 浮窗（销售用 AI 分析不再弹独立窗口占内存） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4810">#4810</a> <span class="author">— 王争</span></li>
 </ul>
 
 <h2>🔧 其他（chore / docs / test / ...）</h2>
 <ul>
-  <li class="empty">无</li>
+  <li><span class="merged-at">[07/15 11:28]</span>docs(release): archive 2026071501 notes <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4808">#4808</a> <span class="author">— 王梓先</span></li>
 </ul>
 
 
 <hr class="ref-divider">
 
 <div class="foot">
-上一次发版时间：<span class="bump-time">05/09 08:17</span>（基线 commit：<code>chore(release): bump to 26.05.09+2026050901 + 归档 .2026050901 release notes (#1499)</code>）<br>
+上一次发版时间：<span class="bump-time">07/15 11:18</span>（基线 commit：<code>chore(release): bump Windows build 2026071501</code>）<br>
 PR 归属版本由 <code>pubspec.yaml</code> 的 <code>version:</code> 行 git 历史判定 —— bump commit 的 committedAt 是分割线。<br>
 由 <code>tool/generate_release_preview.dart</code> 自动提取；重新跑脚本后刷新页面即拿最新。<br>
 issue 链接基于 PetWebOrg/flutter-suiyin 仓。

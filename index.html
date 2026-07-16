@@ -160,32 +160,32 @@ a:hover { text-decoration: underline; }
 <h1>📦 2026071602 发版预览</h1>
 <div class="meta">
 当前版本：<code>2026071601</code>（发版时间：<span class="bump-time">07/16 12:05</span>），下一版（预览）：<code>2026071602</code><br>
-生成时间：2026-07-16 17:25:23 · 重新跑脚本后刷新页面即拿最新
+生成时间：2026-07-16 18:02:32 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
 <h3>🆕 新功能</h3>
 <ul>
-  <li>下班前如果还有正在接待的单聊或群聊，系统会逐个提醒处理；可以选择关闭、转交或保留，避免带着未处理客户直接下班。 — 陈聪 #4875 (#4781)</li>
-  <li>聊天里收发 ZIP、RAR、EXE 等非文档文件时，文件卡片会显示病毒风险提醒；常见 Word、Excel、PPT、PDF 文档不受影响。 — 王梓先 #4858 (#4805)</li>
-  <li>资料库和相册打开后默认先看「我的」，分类顺序调整为「我的 → 常用 → 全部」，销售找自己常用素材更快。 — 王梓先 #4865 (#4838)</li>
+  <li>下班前如果还有客户正在接待，系统会逐个提醒处理，可选择关闭、转交或暂时保留，避免漏掉还在服务中的单聊和群聊。 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4875">#4875</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4781">#4781</a>)</li>
+  <li>收发 ZIP、RAR、EXE 等非文档文件时，文件卡片下方会提示可能有病毒风险；常见文档、表格、PPT、PDF 不会打扰。 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4858">#4858</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4805">#4805</a>)</li>
+  <li>打开资料库 / 相册时默认先看「我的」资料，分类顺序也调整为「我的、常用、全部」，销售找自己常用素材更快。 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4865">#4865</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4838">#4838</a>)</li>
 </ul>
-
 <h3>✨ 体验优化</h3>
 <ul>
-  <li>AI 回复没有生成可发送草稿时，会自动展开「思路」，直接告诉你为什么无需回复；有草稿时仍保持默认收起。 — 张拓 #4861 (#4860)</li>
+  <li>关闭图片预览窗口后会及时释放大图占用的内存，连续翻客户图片后软件不容易越用越卡、必须中途重启。 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4881">#4881</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4859">#4859</a>)</li>
+  <li>AI 回复没有生成草稿时，会自动展开「思路」说明，让销售直接看到为什么这条消息暂时不需要回复。 — 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4861">#4861</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4860">#4860</a>)</li>
 </ul>
-
 <h3>🐞 问题修复</h3>
 <ul>
-  <li>同一个客户绑定多个人设时，接待记录现在只展示当前人设的记录，不会串到其他人设的数据。 — 梁晨 #4874 (#4848)</li>
-  <li>发朋友圈评论时如果人设被微信限制，系统现在会弹出解封引导，不再只给一句看不懂的失败提示。 — 王争 #4873 (#4863)</li>
-  <li>发朋友圈失败时会显示后端返回的具体原因，例如「人数超过上限，请缩小范围」，销售可以据此调整可见范围后重试。 — 王争 #4864 (#4817)</li>
+  <li>打开个别会话时一直显示「暂无消息」、但从通讯录进入又能看到聊天记录的问题已修复；下次进入会话会重新拉回历史消息。 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4878">#4878</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4825">#4825</a>)</li>
+  <li>从公共话术复制到部门后，删除部门话术会连带把公共话术删掉或让公共话术消失的问题已拦截；复制失败时会明确提示，不再误导用户继续删除。 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4880">#4880</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4827">#4827</a>)</li>
+  <li>查看同一客户的接待记录时，会按当前人设展示对应记录，不再串到其他人设的接待历史。 — 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4874">#4874</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4848">#4848</a>)</li>
+  <li>人设被微信封控时评论客户朋友圈，会弹出解封引导并自动重试，不再只看到一句看不懂的错误提示。 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4873">#4873</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4863">#4863</a>)</li>
 </ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">07/16 12:05 上次发版后，合入 main 的全部 <strong>12</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">07/16 12:05 上次发版后，合入 main 的全部 <strong>15</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
   <li><span class="merged-at">[07/16 16:38]</span>下班前逐个处理接待中客户 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4875">#4875</a> <span class="author">— 陈聪</span></li>
@@ -195,6 +195,8 @@ a:hover { text-decoration: underline; }
 
 <h2>🐞 问题修复</h2>
 <ul>
+  <li><span class="merged-at">[07/16 17:56]</span>会话首载本地读抛错不再卡死「暂无消息」 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4878">#4878</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4825">#4825</a>) <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[07/16 17:56]</span>复制到部门检测后端 upsert 碰撞并还原公共话术（删部门话术后公共话术仍完整保留） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4880">#4880</a> <span class="author">— 王争</span></li>
   <li><span class="merged-at">[07/16 16:46]</span>接待记录按当前人设展示 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4874">#4874</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4848">#4848</a>) <span class="author">— 梁晨</span></li>
   <li><span class="merged-at">[07/16 16:35]</span>_catch 收敛到 AppError.fromDioException，接回 40301 封控识别，修复解封引导永不触发 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4873">#4873</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4863">#4863</a>) <span class="author">— 王争</span></li>
   <li><span class="merged-at">[07/16 16:20]</span>发版说明按平台各自基线算 + completeness 门禁 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4871">#4871</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4841">#4841</a>) <span class="author">— 王梓先</span></li>
@@ -205,6 +207,7 @@ a:hover { text-decoration: underline; }
 
 <h2>✨ 体验优化</h2>
 <ul>
+  <li><span class="merged-at">[07/16 17:37]</span>图片预览关闭清子窗口 imageCache，释放常驻 GPU 纹理 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4881">#4881</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4859">#4859</a>) <span class="author">— 王争</span></li>
   <li><span class="merged-at">[07/16 13:54]</span>route_paths customer 家族 48 处 /home/customer 前缀收口到 customerDetail 派生（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4853">#4853</a> <span class="author">— 王争</span></li>
 </ul>
 

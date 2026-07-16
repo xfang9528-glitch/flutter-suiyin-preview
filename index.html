@@ -41,7 +41,7 @@ a:hover { text-decoration: underline; }
 <label>查看历史预览：</label>
 <select id="version-switcher-select" onchange="var v=this.value; if(v) location.href = v; else location.href = './';">
 <!-- VERSION_SWITCHER_OPTIONS_START -->
-<option value="">📦 2026071503 发版预览</option>
+<option value="">📦 2026071601 发版预览</option>
 <option value="2026071502.html">🗂 2026071502</option>
 <option value="2026071501.html">🗂 2026071501</option>
 <option value="2026071401.html">🗂 2026071401</option>
@@ -156,14 +156,15 @@ a:hover { text-decoration: underline; }
   }
 })();
 </script>
-<h1>📦 2026071503 发版预览</h1>
+<h1>📦 2026071601 发版预览</h1>
 <div class="meta">
-当前版本：<code>2026071502</code>（发版时间：<span class="bump-time">07/15 18:28</span>），下一版（预览）：<code>2026071503</code><br>
-生成时间：2026-07-15 23:03:51 · 重新跑脚本后刷新页面即拿最新
+当前版本：<code>2026071502</code>（发版时间：<span class="bump-time">07/15 18:28</span>），下一版（预览）：<code>2026071601</code><br>
+生成时间：2026-07-16 10:28:11 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>🐞 问题修复</h2>
 <ul>
+  <li>同一客户挂在多个接待人设下时，聊天列表刷新备注只会更新对应人设的那一行，不再把备注或展示名串到其他人设。 — 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4844">#4844</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4819">#4819</a>)</li>
   <li>群聊里手动切换人设后，群成员列表和成员卡会按当前人设刷新，不再沿用上一个人设的信息。 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4547">#4547</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4519">#4519</a>)</li>
   <li>分配账号弹层的标题和「取消 / 确定」按钮不再挤在一起，弹层顶部显示更清楚。 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4836">#4836</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4800">#4800</a>)</li>
 </ul>
@@ -171,7 +172,7 @@ a:hover { text-decoration: underline; }
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">07/15 18:28 上次发版后，合入 main 的全部 <strong>4</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">07/15 18:28 上次发版后，合入 main 的全部 <strong>5</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
   <li class="empty">无</li>
@@ -179,6 +180,7 @@ a:hover { text-decoration: underline; }
 
 <h2>🐞 问题修复</h2>
 <ul>
+  <li><span class="merged-at">[07/16 08:49]</span>按人设刷新客户备注 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4844">#4844</a> <span class="author">— 梁晨</span></li>
   <li><span class="merged-at">[07/15 21:34]</span>sync group persona wcId <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4547">#4547</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4519">#4519</a>) <span class="author">— 陈聪</span></li>
   <li><span class="merged-at">[07/15 18:39]</span>分配账号弹层顶栏撑满宽度，取消/确定不再叠到标题上 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4836">#4836</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4800">#4800</a>) <span class="author">— 王梓先</span></li>
 </ul>

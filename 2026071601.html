@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
-<!-- CURRENT_BUILD:2026043002 -->
+<!-- CURRENT_BUILD:2026071502 -->
 <title>下一版发版预览 · flutter-suiyin</title>
 <style>
 body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", sans-serif; max-width: 880px; margin: 32px auto; padding: 0 24px; color: #1f2328; line-height: 1.7; background: #fafbfc; }
@@ -157,46 +157,33 @@ a:hover { text-decoration: underline; }
   }
 })();
 </script>
-<h1>📦 2026050101 发版预览</h1>
+<h1>📦 2026071601 发版预览</h1>
 <div class="meta">
-当前版本：<code>2026043002</code>（发版时间：<span class="bump-time">04/30 17:30</span>），下一版（预览）：<code>2026050101</code><br>
-生成时间：2026-05-01 18:12:48 · 重新跑脚本后刷新页面即拿最新
+当前版本：<code>2026071502</code>（发版时间：<span class="bump-time">07/15 18:28</span>），下一版（预览）：<code>2026071601</code><br>
+生成时间：2026-07-16 10:28:11 · 重新跑脚本后刷新页面即拿最新
 </div>
 
-<h2>📣 本版用户感知更新</h2>
-
-<h3>🆕 新功能</h3>
+<h2>🐞 问题修复</h2>
 <ul>
-  <li>加好友、建群 / 邀请群成员、发朋友圈或评论时如果遇到微信账号封控，App 现在会自动弹窗提示去手机微信「微信团队」解封；解封后点确认即自动重试，不用再去管理后台手动处理 — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1265">#1265</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1205">#1205</a>)</li>
-  <li>全局搜索新增「功能」分组：直接搜服务号名字就能展开里面的内容（订阅消息等），结果多时支持「加载更多」 — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1256">#1256</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1199">#1199</a>)</li>
+  <li>同一客户挂在多个接待人设下时，聊天列表刷新备注只会更新对应人设的那一行，不再把备注或展示名串到其他人设。 — 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4844">#4844</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4819">#4819</a>)</li>
+  <li>群聊里手动切换人设后，群成员列表和成员卡会按当前人设刷新，不再沿用上一个人设的信息。 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4547">#4547</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4519">#4519</a>)</li>
+  <li>分配账号弹层的标题和「取消 / 确定」按钮不再挤在一起，弹层顶部显示更清楚。 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4836">#4836</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4800">#4800</a>)</li>
 </ul>
 
-<h3>🐞 问题修复</h3>
-<ul>
-  <li>每次升级桌面会多出一个新快捷方式、旧的不会清掉的问题已修复，现在升级会替换原有快捷方式 — 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1263">#1263</a></li>
-  <li>在全局搜索里点客户结果有时长时间转圈进不去的问题已修复 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1261">#1261</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1235">#1235</a>)</li>
-  <li>桌面端发图前的图片压缩不再卡死整个界面 5-10 秒，压缩期间仍可继续操作 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1254">#1254</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1242">#1242</a>)</li>
-  <li>「新的朋友」面板里已经通过的好友申请现在会自动翻成「已添加」/ 自动消失，避免 ticket 过期窗口被伪 new 淹没漏看 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1255">#1255</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1196">#1196</a>)</li>
-  <li>关闭图片预览时偶发闪退已修复 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1246">#1246</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1231">#1231</a>)</li>
-</ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">04/30 17:30 上次发版后，合入 main 的全部 <strong>10</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">07/15 18:28 上次发版后，合入 main 的全部 <strong>5</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
-  <li><span class="merged-at">[05/01 13:51]</span>WxRiskGuard 通用封控解除引导 + 7 场景接入 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1265">#1265</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1205">#1205</a>) <span class="author">— 陈宣宇</span></li>
-  <li><span class="merged-at">[04/30 23:21]</span>调试面板新增 getMessageHistory 日志独立开关 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1207">#1207</a> <span class="author">— 陈聪</span></li>
-  <li><span class="merged-at">[04/30 17:41]</span>全局搜索增加「功能」分组 — 服务号内联展示 + 加载更多 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1256">#1256</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1199">#1199</a>) <span class="author">— 陈宣宇</span></li>
+  <li class="empty">无</li>
 </ul>
 
 <h2>🐞 问题修复</h2>
 <ul>
-  <li><span class="merged-at">[05/01 01:27]</span>锁定 per-user 安装，避免桌面快捷方式累积 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1263">#1263</a> <span class="author">— 张拓</span></li>
-  <li><span class="merged-at">[05/01 01:00]</span>搜索点击客户走 fast-path，治长时间转圈失败 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1261">#1261</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1235">#1235</a>) <span class="author">— 王梓先</span></li>
-  <li><span class="merged-at">[04/30 22:55]</span>桌面端图片压缩丢进 isolate，主线程不再卡死 5-10s <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1254">#1254</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1242">#1242</a>) <span class="author">— 陈聪</span></li>
-  <li><span class="merged-at">[04/30 18:44]</span>5 天保留窗口 + push 信号化翻状态 + 5min 兜底轮询 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1255">#1255</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1196">#1196</a>) <span class="author">— 王梓先</span></li>
-  <li><span class="merged-at">[04/30 17:34]</span>PhotoViewController 延迟 dispose，修复关闭预览 null check crash <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1246">#1246</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1231">#1231</a>) <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[07/16 08:49]</span>按人设刷新客户备注 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4844">#4844</a> <span class="author">— 梁晨</span></li>
+  <li><span class="merged-at">[07/15 21:34]</span>sync group persona wcId <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4547">#4547</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4519">#4519</a>) <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[07/15 18:39]</span>分配账号弹层顶栏撑满宽度，取消/确定不再叠到标题上 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4836">#4836</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4800">#4800</a>) <span class="author">— 王梓先</span></li>
 </ul>
 
 <h2>✨ 体验优化</h2>
@@ -206,15 +193,15 @@ a:hover { text-decoration: underline; }
 
 <h2>🔧 其他（chore / docs / test / ...）</h2>
 <ul>
-  <li><span class="merged-at">[05/01 14:00]</span>chore(chat #1257): PR #1256 follow-up — 4 项搜索功能分组治理 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1266">#1266</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1257">#1257</a>) <span class="author">— 陈宣宇</span></li>
-  <li><span class="merged-at">[04/30 21:40]</span>chore(release): bump to 26.04.30+2026043002 + 归档 .2026043002 release notes <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1253">#1253</a> <span class="author">— 张拓</span></li>
+  <li><span class="merged-at">[07/15 18:37]</span>docs(release): archive 2026071502 notes <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4839">#4839</a> <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[07/15 18:28]</span>chore(release): bump Windows build 2026071502 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4835">#4835</a> <span class="author">— 王梓先</span></li>
 </ul>
 
 
 <hr class="ref-divider">
 
 <div class="foot">
-上一次发版时间：<span class="bump-time">04/30 17:30</span>（基线 commit：<code>更新版本号/更新准则必须要要求cc基于最新main分支创建</code>）<br>
+上一次发版时间：<span class="bump-time">07/15 18:28</span>（基线 commit：<code>chore(release): bump Windows build 2026071502</code>）<br>
 PR 归属版本由 <code>pubspec.yaml</code> 的 <code>version:</code> 行 git 历史判定 —— bump commit 的 committedAt 是分割线。<br>
 由 <code>tool/generate_release_preview.dart</code> 自动提取；重新跑脚本后刷新页面即拿最新。<br>
 issue 链接基于 PetWebOrg/flutter-suiyin 仓。

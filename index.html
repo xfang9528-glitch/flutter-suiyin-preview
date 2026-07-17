@@ -41,7 +41,7 @@ a:hover { text-decoration: underline; }
 <label>查看历史预览：</label>
 <select id="version-switcher-select" onchange="var v=this.value; if(v) location.href = v; else location.href = './';">
 <!-- VERSION_SWITCHER_OPTIONS_START -->
-<option value="">📦 2026071603 发版预览</option>
+<option value="">📦 2026071701 发版预览</option>
 <option value="2026071602.html">🗂 2026071602</option>
 <option value="2026071601.html">🗂 2026071601</option>
 <option value="2026071502.html">🗂 2026071502</option>
@@ -158,18 +158,27 @@ a:hover { text-decoration: underline; }
   }
 })();
 </script>
-<h1>📦 2026071603 发版预览</h1>
+<h1>📦 2026071701 发版预览</h1>
 <div class="meta">
-当前版本：<code>2026071602</code>（发版时间：<span class="bump-time">07/16 18:03</span>），下一版（预览）：<code>2026071603</code><br>
-生成时间：2026-07-16 23:01:38 · 重新跑脚本后刷新页面即拿最新
+当前版本：<code>2026071602</code>（发版时间：<span class="bump-time">07/16 18:03</span>），下一版（预览）：<code>2026071701</code><br>
+生成时间：2026-07-17 10:29:07 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
-<div class="notice">本次 PC 端暂无需要写给用户的可感知更新。</div>
+<h3>🆕 新功能</h3>
+<ul>
+  <li>通讯录只读会话里的消息现在可以直接多选，支持逐条转发、合并转发和添加到话术，不用先发起聊天或接手客户。 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4894">#4894</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4672">#4672</a>)</li>
+  <li>通讯录底部新增「分配记录」入口，可以直接查看客户接待/转交记录，查看过程不会触发发起聊天或改变接待关系；弹窗也按「分配记录」重新整理了标题和表格样式。 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4897">#4897</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4896">#4896</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4672">#4672</a>)</li>
+</ul>
+
+<h3>🐞 问题修复</h3>
+<ul>
+  <li>群发第二步「执行排除」请求失败时，现在只显示清楚的中文提示和重试按钮，不再把整段英文报错直接展示给销售，也不用退出流程重来。 — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4890">#4890</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4814">#4814</a>)</li>
+</ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">07/16 18:03 上次发版后，合入 main 的全部 <strong>4</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">07/16 18:03 上次发版后，合入 main 的全部 <strong>9</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
   <li><span class="merged-at">[07/16 21:26]</span>close #4675 APP 只读会话支持实时跟进与派生操作 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4869">#4869</a> <span class="author">— 陈聪</span></li>
@@ -177,7 +186,11 @@ a:hover { text-decoration: underline; }
 
 <h2>🐞 问题修复</h2>
 <ul>
-  <li class="empty">无</li>
+  <li><span class="merged-at">[07/17 09:43]</span>修复群发第二步「执行排除」请求失败时 UI 裸露 DioException 原文（销售排除失败时只看到一句中文提示和重试按钮，不再看到整段英文报错） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4890">#4890</a> <span class="author">— 陈宣宇</span></li>
+  <li><span class="merged-at">[07/17 09:20]</span>align mobile allocation history UI <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4898">#4898</a> <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[07/17 08:15]</span>align PC allocation history dialog <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4897">#4897</a> <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[07/17 00:27]</span>show PC allocation history action <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4896">#4896</a> <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[07/16 23:48]</span>enable PC readonly chat multi-select actions <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4894">#4894</a> <span class="author">— 陈聪</span></li>
 </ul>
 
 <h2>✨ 体验优化</h2>

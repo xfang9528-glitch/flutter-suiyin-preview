@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
-<!-- CURRENT_BUILD:2026071701 -->
+<!-- CURRENT_BUILD:2026071703 -->
 <title>下一版发版预览 · flutter-suiyin</title>
 <style>
 body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", sans-serif; max-width: 880px; margin: 32px auto; padding: 0 24px; color: #1f2328; line-height: 1.7; background: #fafbfc; }
@@ -41,7 +41,8 @@ a:hover { text-decoration: underline; }
 <label>查看历史预览：</label>
 <select id="version-switcher-select" onchange="var v=this.value; if(v) location.href = v; else location.href = './';">
 <!-- VERSION_SWITCHER_OPTIONS_START -->
-<option value="">📦 2026071702 发版预览</option>
+<option value="">📦 2026071704 发版预览</option>
+<option value="2026071703.html">🗂 2026071703</option>
 <option value="2026071701.html">🗂 2026071701</option>
 <option value="2026071602.html">🗂 2026071602</option>
 <option value="2026071601.html">🗂 2026071601</option>
@@ -159,36 +160,26 @@ a:hover { text-decoration: underline; }
   }
 })();
 </script>
-<h1>📦 2026071702 发版预览</h1>
+<h1>📦 2026071704 发版预览</h1>
 <div class="meta">
-当前版本：<code>2026071701</code>（发版时间：<span class="bump-time">07/17 11:13</span>），下一版（预览）：<code>2026071702</code><br>
-生成时间：2026-07-17 16:53:50 · 重新跑脚本后刷新页面即拿最新
+当前版本：<code>2026071703</code>（发版时间：<span class="bump-time">07/17 18:28</span>），下一版（预览）：<code>2026071704</code><br>
+生成时间：2026-07-17 18:51:49 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
-<h3>🐞 问题修复</h3>
-<ul>
-  <li>销售在电脑和手机之间切换上下班状态后，另一端会及时跟着更新，不会再显示已上班却收不到自动分配客户。 — 张拓 #4933 (#4850)</li>
-  <li>登出或切换账号时，图片预览、朋友圈、朋友圈里打开的视频/图片窗口都会一起关闭并释放内存，不再越用越卡到只能重启软件。 — 王争 #4912 (#4902), #4903 (#4840)</li>
-</ul>
+<div class="notice">本轮暂无 PC 端用户感知更新。</div>
+
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">07/17 11:13 上次发版后，合入 main 的全部 <strong>18</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">07/17 18:28 上次发版后，合入 main 的全部 <strong>0</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
-  <li><span class="merged-at">[07/17 16:25]</span>发起聊天 customerId 空守卫加诊断埋点 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4929">#4929</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4816">#4816</a>) <span class="author">— 王梓先</span></li>
-  <li><span class="merged-at">[07/17 13:17]</span>重打同名 tag 前自动清掉旧 draft release（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4919">#4919</a> <span class="author">— 张拓</span></li>
-  <li><span class="merged-at">[07/17 12:04]</span>@ 成员搜不到时上报数据侧指纹，定位「群里很多人 @ 不到」 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4911">#4911</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4877">#4877</a>) <span class="author">— 王梓先</span></li>
+  <li class="empty">无</li>
 </ul>
 
 <h2>🐞 问题修复</h2>
 <ul>
-  <li><span class="merged-at">[07/17 16:29]</span>接入 TIM duty 信令 + IM 重连补拉，修跨端值班状态不同步（销售在一端切了上下班，另一端会跟着变，不会再显示成上班却收不到自动分配的客户） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4933">#4933</a> <span class="author">— 张拓</span></li>
-  <li><span class="merged-at">[07/17 15:30]</span>子窗口收到 lifecycle:destroy 时先回收自己 isolate 打开的孙窗口 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4912">#4912</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4902">#4902</a>) <span class="author">— 王争</span></li>
-  <li><span class="merged-at">[07/17 12:40]</span>close #4837 移除移动端重复添加时间 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4913">#4913</a> <span class="author">— 陈聪</span></li>
-  <li><span class="merged-at">[07/17 11:52]</span>draft release body 用 -F 而不是 -f 传 @file（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4910">#4910</a> <span class="author">— 张拓</span></li>
-  <li><span class="merged-at">[07/17 11:47]</span>登出批量回收子窗口引擎（SubWindowCloser.destroyAll） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4903">#4903</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4840">#4840</a>) <span class="author">— 王争</span></li>
-  <li><span class="merged-at">[07/17 11:43]</span>draft release 创建时去掉非法 target_commitish（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4908">#4908</a> <span class="author">— 张拓</span></li>
+  <li class="empty">无</li>
 </ul>
 
 <h2>✨ 体验优化</h2>
@@ -198,22 +189,14 @@ a:hover { text-decoration: underline; }
 
 <h2>🔧 其他（chore / docs / test / ...）</h2>
 <ul>
-  <li><span class="merged-at">[07/17 16:24]</span>docs(im): 「收不到消息」排查手册 —— 先查分配关系的三步铁律，推翻 zombie 误判 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4070">#4070</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3938">#3938</a>) <span class="author">— 王梓先</span></li>
-  <li><span class="merged-at">[07/17 16:19]</span>chore(test): @ 成员埋点测试改用 wrapWithNoSplash 修复 main 全量 test 红（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4932">#4932</a> <span class="author">— 王梓先</span></li>
-  <li><span class="merged-at">[07/17 15:29]</span>chore: add screenshots for issue #4833 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4834">#4834</a> <span class="author">— 梁晨</span></li>
-  <li><span class="merged-at">[07/17 15:28]</span>chore: add screenshot for issue #4925 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4927">#4927</a> <span class="author">— 梁晨、Cursor</span></li>
-  <li><span class="merged-at">[07/17 12:47]</span>docs(observability): 补 SLS logstore 15 天 TTL 坑 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4916">#4916</a> <span class="author">— 张拓</span></li>
-  <li><span class="merged-at">[07/17 12:41]</span>diag(chat #4469): 群邀请卡片撤回场景加实时链路 SLS 埋点 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4914">#4914</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4469">#4469</a>) <span class="author">— 张拓</span></li>
-  <li><span class="merged-at">[07/17 11:38]</span>build(release): 新增按平台 tag 生成 draft Release 更新说明初稿的 workflow（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4907">#4907</a> <span class="author">— 张拓</span></li>
-  <li><span class="merged-at">[07/17 11:24]</span>docs(release): archive 2026071701 notes <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4906">#4906</a> <span class="author">— 王梓先</span></li>
-  <li><span class="merged-at">[07/17 11:13]</span>chore(release): bump Windows build 2026071701 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4904">#4904</a> <span class="author">— 王梓先</span></li>
+  <li class="empty">无</li>
 </ul>
 
 
 <hr class="ref-divider">
 
 <div class="foot">
-上一次发版时间：<span class="bump-time">07/17 11:13</span>（基线 commit：<code>chore(release): bump Windows build 2026071701</code>）<br>
+上一次发版时间：<span class="bump-time">07/17 18:28</span>（基线 commit：<code>chore(release): 移动端发版 android 2026071703 (#4949)</code>）<br>
 PR 归属版本由 <code>pubspec.yaml</code> 的 <code>version:</code> 行 git 历史判定 —— bump commit 的 committedAt 是分割线。<br>
 由 <code>tool/generate_release_preview.dart</code> 自动提取；重新跑脚本后刷新页面即拿最新。<br>
 issue 链接基于 PetWebOrg/flutter-suiyin 仓。

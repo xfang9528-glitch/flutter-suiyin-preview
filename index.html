@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
-<!-- CURRENT_BUILD:2026071703 -->
+<!-- CURRENT_BUILD:2026072001 -->
 <title>下一版发版预览 · flutter-suiyin</title>
 <style>
 body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", sans-serif; max-width: 880px; margin: 32px auto; padding: 0 24px; color: #1f2328; line-height: 1.7; background: #fafbfc; }
@@ -41,7 +41,8 @@ a:hover { text-decoration: underline; }
 <label>查看历史预览：</label>
 <select id="version-switcher-select" onchange="var v=this.value; if(v) location.href = v; else location.href = './';">
 <!-- VERSION_SWITCHER_OPTIONS_START -->
-<option value="">📦 2026072001 发版预览</option>
+<option value="">📦 2026072002 发版预览</option>
+<option value="2026072001.html">🗂 2026072001</option>
 <option value="2026071703.html">🗂 2026071703</option>
 <option value="2026071701.html">🗂 2026071701</option>
 <option value="2026071602.html">🗂 2026071602</option>
@@ -160,54 +161,34 @@ a:hover { text-decoration: underline; }
   }
 })();
 </script>
-<h1>📦 2026072001 发版预览</h1>
+<h1>📦 2026072002 发版预览</h1>
 <div class="meta">
-当前版本：<code>2026071703</code>（发版时间：<span class="bump-time">07/17 18:28</span>），下一版（预览）：<code>2026072001</code><br>
-生成时间：2026-07-20 10:42:06 · 重新跑脚本后刷新页面即拿最新
+当前版本：<code>2026072001</code>（发版时间：<span class="bump-time">07/20 11:20</span>），下一版（预览）：<code>2026072002</code><br>
+生成时间：2026-07-20 13:53:05 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
-<h3>🆕 新功能</h3>
-<ul>
-  <li>群聊里多个号同时接待时，点「关闭聊天」现在可以选择只结束某一个人设，其他号会继续接待这个群；也可以一键全部结束 — 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4964">#4964</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4922">#4922</a>)</li>
-  <li>锦帛 PC 客户信息里新增「衣客信息」后，现在可以直接点开新增条目查看详情，不会再点了没反应 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4968">#4968</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4967">#4967</a>)</li>
-  <li>PC 群聊里点击任意已建档群成员，现在好友和非好友名片都能直接看到系统已有卡号，无卡号时不显示空行 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4895">#4895</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4876">#4876</a>)</li>
-</ul>
-
 <h3>✨ 体验优化</h3>
 <ul>
-  <li>群聊列表现在会区分自己不同人设发出的最后一条消息，例如显示「我·测试1-2」，销售不用再猜刚才是哪一个号在群里说话 — 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4960">#4960</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4920">#4920</a>)</li>
+  <li>长期粘贴图片、截图发消息后，系统会自动清理过期临时文件，电脑空间不再越用越少 — 王争 #5002 (#4989)</li>
 </ul>
-
 <h3>🐞 问题修复</h3>
 <ul>
-  <li>销售自己关闭群聊全部人设时，不会再弹出像是被别人转交、踢出或还要继续接待的矛盾提示 — 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4973">#4973</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4965">#4965</a>)</li>
-  <li>销售名下多个群聊人设被连续结束接待时，群会立即从接待中列表消失，不再留下点进去也发不出消息的空壳会话 — 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4972">#4972</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4970">#4970</a>)</li>
-  <li>打开群聊历史消息时，同一条消息不会再因为记录格式不同显示成两条重复气泡 — 梁晨、Cursor <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4955">#4955</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4946">#4946</a>)</li>
-  <li>群里另一个人设被结束接待时，正在打开的会话不会再被误关，输入到一半的内容和聊天位置都能保住 — 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4962">#4962</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4921">#4921</a>)</li>
-  <li>同一个销售在群里切换发言人设时，不会再自动结束其他人设的接待，多个号可以继续同时接待同一个群 — 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4958">#4958</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4918">#4918</a>)</li>
-  <li>PC 客户资料里的「客户标签」面板现在能正常打开和编辑，不再因为重复字段红屏 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4951">#4951</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4950">#4950</a>)</li>
+  <li>通过群名片添加好友时，只能选择自己有权限的人设，不会再误用其他销售的账号发申请 — 陈宣宇 #5008 (#4990)</li>
 </ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">07/17 18:28 上次发版后，合入 main 的全部 <strong>14</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">07/20 11:20 上次发版后，合入 main 的全部 <strong>8</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
-  <li><span class="merged-at">[07/19 11:28]</span>群聊「关闭聊天」支持选择结束哪个人设（销售能直接选择只让一个人设退出群聊，其他人设继续接待） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4964">#4964</a> <span class="author">— 张拓</span></li>
-  <li><span class="merged-at">[07/18 19:39]</span>群会话摘要按发言人设细分「我」前缀，区分自己的多个人设（销售在列表里能看出这条摘要是自己哪个号发的） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4960">#4960</a> <span class="author">— 张拓</span></li>
-  <li><span class="merged-at">[07/17 19:19]</span>群成员名片统一展示系统卡号 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4895">#4895</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4876">#4876</a>) <span class="author">— 陈聪</span></li>
+  <li class="empty">无</li>
 </ul>
 
 <h2>🐞 问题修复</h2>
 <ul>
-  <li><span class="merged-at">[07/20 10:14]</span>主动关闭群聊全部人设时按「谁发起的」抑制矛盾退出提示（销售自己点关闭时不再看到像是被别人踢出或还要继续接待的文案） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4973">#4973</a> <span class="author">— 张拓</span></li>
-  <li><span class="merged-at">[07/20 10:13]</span>群聊连续 unassigned 时按执行时刻的行状态软删，不再用入队快照的 clientId（销售名下人设被连续结束后，群立即从接待中列表消失，不留发不出消息的空壳记录） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4972">#4972</a> <span class="author">— 张拓</span></li>
-  <li><span class="merged-at">[07/20 09:48]</span>修复群消息历史 objectid×groupComposite 双写双气泡 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4955">#4955</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4946">#4946</a>) <span class="author">— 梁晨、Cursor</span></li>
-  <li><span class="merged-at">[07/19 01:16]</span>close #4967 锦帛新增用户可打开衣客详情 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4968">#4968</a> <span class="author">— 陈聪</span></li>
-  <li><span class="merged-at">[07/18 19:33]</span>群聊部分人设被结束接待时不再误关会话窗口（销售正在群里打字，别的人设被结束接待不会打断当前输入） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4962">#4962</a> <span class="author">— 张拓</span></li>
-  <li><span class="merged-at">[07/18 18:16]</span>移除群聊切人设的 end-others 调用，收敛 ChatCustomer.clientId 为本地选中人设（销售在群里换人设发言后，原人设仍能继续接待该群） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4958">#4958</a> <span class="author">— 张拓</span></li>
-  <li><span class="merged-at">[07/17 19:19]</span>避免客户标签空 id 触发重复 Key 红屏 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4951">#4951</a> <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[07/20 13:44]</span>群名片添加好友按接待权限选人设、不再透传越权 wcId（通过群名片添加好友只能用自己有权限的人设，不会再误用其他销售的账号） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5008">#5008</a> <span class="author">— 陈宣宇</span></li>
+  <li><span class="merged-at">[07/20 11:41]</span>close #4687 安全验证页等待 UA 后再加载 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4879">#4879</a> <span class="author">— 陈聪</span></li>
 </ul>
 
 <h2>✨ 体验优化</h2>
@@ -217,17 +198,19 @@ a:hover { text-decoration: underline; }
 
 <h2>🔧 其他（chore / docs / test / ...）</h2>
 <ul>
-  <li><span class="merged-at">[07/20 10:35]</span>docs(gotchas): 两 PR 改同文件时合并前预演合并态——git 零冲突是最危险的情形（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4988">#4988</a> <span class="author">— 张拓</span></li>
-  <li><span class="merged-at">[07/20 10:13]</span>docs(gotchas): 补测试替身假绿第三形态——省掉副作用同样抹平交界面（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4971">#4971</a> <span class="author">— 张拓</span></li>
-  <li><span class="merged-at">[07/20 09:52]</span>obs(chat): 未读一致性采样埋点——以本地为基准 + 漂移检测 + 分歧取证 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4957">#4957</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4926">#4926</a>) <span class="author">— 王梓先</span></li>
-  <li><span class="merged-at">[07/18 18:15]</span>test(chat): 补 inline_edit_panel_mixin_test.dart 的 noSplashTheme（issue #1606） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4959">#4959</a> <span class="author">— 张拓</span></li>
+  <li><span class="merged-at">[07/20 13:51]</span>chore(release): 给移动端发版 stage A 加产物 ABI/体积断言，拦截静默胖包 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5004">#5004</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4948">#4948</a>) <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[07/20 13:34]</span>test(screenshot): 修复截图临时文件清理用例满载假红——deadline 轮询替代单帧等待 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5007">#5007</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4998">#4998</a>) <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[07/20 13:26]</span>test(chat): close #5001 补回 #4946 双气泡回归测试的宿主 import 并恢复 phase3 门禁 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5003">#5003</a> <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[07/20 13:16]</span>chore(chat): 增加粘贴缓存的过期回收机制（长期发图后不再莫名占满磁盘空间） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5002">#5002</a> <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[07/20 11:37]</span>chore(infra): refresh Windows seed dependencies for #4751 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4812">#4812</a> <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[07/20 11:30]</span>docs(release): archive 2026072001 notes <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4999">#4999</a> <span class="author">— 王梓先</span></li>
 </ul>
 
 
 <hr class="ref-divider">
 
 <div class="foot">
-上一次发版时间：<span class="bump-time">07/17 18:28</span>（基线 commit：<code>chore(release): 移动端发版 android 2026071703 (#4949)</code>）<br>
+上一次发版时间：<span class="bump-time">07/20 11:20</span>（基线 commit：<code>chore(release): bump Windows build 2026072001</code>）<br>
 PR 归属版本由 <code>pubspec.yaml</code> 的 <code>version:</code> 行 git 历史判定 —— bump commit 的 committedAt 是分割线。<br>
 由 <code>tool/generate_release_preview.dart</code> 自动提取；重新跑脚本后刷新页面即拿最新。<br>
 issue 链接基于 PetWebOrg/flutter-suiyin 仓。

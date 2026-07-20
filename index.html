@@ -164,37 +164,49 @@ a:hover { text-decoration: underline; }
 <h1>📦 2026072002 发版预览</h1>
 <div class="meta">
 当前版本：<code>2026072001</code>（发版时间：<span class="bump-time">07/20 11:20</span>），下一版（预览）：<code>2026072002</code><br>
-生成时间：2026-07-20 16:51:41 · 重新跑脚本后刷新页面即拿最新
+生成时间：2026-07-20 18:19:50 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
 <h3>🆕 新功能</h3>
 <ul>
-  <li>销售在「我的朋友圈」点完发布后，新朋友圈会立刻出现在列表顶部并显示发布状态，不用等几秒才知道有没有发出去。 — 王争 #5019 (#4935)</li>
+  <li>微信提醒支持 PC 和手机 APP 同步：电脑上设置的提醒，到点后手机也能收到服务通知；已读、取消和到期状态也会在两端保持一致。— 王争 #4981 (#4368)</li>
+  <li>发布朋友圈后，「我的朋友圈」列表会立刻在顶部显示这条动态的发布状态；网络慢时不用再猜是否点成功，失败也会明确显示。— 王争 #5019 (#4935)</li>
 </ul>
 
 <h3>✨ 体验优化</h3>
 <ul>
-  <li>长期粘贴图片、截图发消息后，系统会自动清理过期临时文件，电脑空间不再越用越少。 — 王争 #5002 (#4989)</li>
+  <li>长期在电脑端粘贴、发送大量图片后，碎银会自动清理过期的粘贴缓存，避免电脑空间被无感占满。— 王争 #5002 (#4989)</li>
+  <li>修改客户等级时，只有服务端确认保存成功才会保留新等级；如果保存异常，界面会恢复到服务端确认的值，避免显示假成功。— 梁晨 #5040 (#5022)</li>
 </ul>
 
 <h3>🐞 问题修复</h3>
 <ul>
-  <li>销售在朋友圈里不再看到自己无权限账号发布的内容，点开客户头像等路径也会按权限正确过滤。 — 王争 #5020 (#4996)</li>
-  <li>通过群名片添加好友时，只能选择自己有权限的人设，不会再误用其他销售的账号发申请。 — 陈宣宇 #5008 (#4990)</li>
+  <li>关闭客户信息面板、切换页面或切企业时，桌面端不再因为关闭回调晚到而崩溃。— 陈聪 #5049 (#4977)</li>
+  <li>Windows 电脑从剪贴板粘贴图片后，现在能正常发送出去，不再因为图片格式错误导致发送失败。— 王争 #5042, #5046</li>
+  <li>销售在别处给群新增自持人设后，本端关闭旧人设不会再连带让这个群从会话里消失。— 张拓 #5038 (#4966)</li>
+  <li>查看朋友圈时会按账号权限过滤，销售不再看到自己无权限账号发布的朋友圈。— 王争 #5020 (#4996)</li>
+  <li>通过群名片添加好友时，只能选择自己有权限的人设，不会再误用其他销售的账号发起好友申请。— 陈宣宇 #5008 (#4990)</li>
 </ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">07/20 11:20 上次发版后，合入 main 的全部 <strong>13</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">07/20 11:20 上次发版后，合入 main 的全部 <strong>20</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
+  <li><span class="merged-at">[07/20 17:04]</span>微信提醒接入后端实现 PC↔APP 跨端同步 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4981">#4981</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4368">#4368</a>) <span class="author">— 王争</span></li>
   <li><span class="merged-at">[07/20 16:17]</span>朋友圈发布瞬间插入本地乐观条目到列表顶部（#4935） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5019">#5019</a> <span class="author">— 王争</span></li>
   <li><span class="merged-at">[07/20 16:10]</span>离线推送注册埋点补记腾讯错误码+设备厂商机型，让「注册失败」可诊断 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5029">#5029</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4993">#4993</a>) <span class="author">— 王梓先</span></li>
 </ul>
 
 <h2>🐞 问题修复</h2>
 <ul>
+  <li><span class="merged-at">[07/20 18:12]</span>#4977 客户信息面板关闭不再因失效 WidgetRef 崩溃 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5049">#5049</a> <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[07/20 18:06]</span>裸 DIB 补回 BITMAPFILEHEADER（Windows 粘贴的图能正常发出去，不再报图片格式错误） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5046">#5046</a> <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[07/20 18:05]</span>refs #5022 客户等级保存增加回读确认与取证日志 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5040">#5040</a> <span class="author">— 梁晨</span></li>
+  <li><span class="merged-at">[07/20 17:34]</span>粘贴落盘前把剪贴板字节真正编码成 PNG（销售粘贴的图能正常发出去，不再报图片格式错误） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5042">#5042</a> <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[07/20 17:20]</span>close #4966 群人设候选补充新增自持人设的刷新机制（销售在别处为群新增自持人设后，本端关闭旧人设不会连累这个群一起消失） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5038">#5038</a> <span class="author">— 张拓</span></li>
+  <li><span class="merged-at">[07/20 17:20]</span>修复 customer_info 内联编辑用例的 test_material_app 相对导入层级（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5036">#5036</a> <span class="author">— 张拓</span></li>
   <li><span class="merged-at">[07/20 15:56]</span>修复朋友圈两条查看路径缺失 isChat 权限过滤（销售不再看到无权限账号发布的朋友圈） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5020">#5020</a> <span class="author">— 王争</span></li>
   <li><span class="merged-at">[07/20 13:44]</span>群名片添加好友按接待权限选人设、不再透传越权 wcId（通过群名片添加好友只能用自己有权限的人设，不会再误用其他销售的账号） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5008">#5008</a> <span class="author">— 陈宣宇</span></li>
   <li><span class="merged-at">[07/20 11:41]</span>close #4687 安全验证页等待 UA 后再加载 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4879">#4879</a> <span class="author">— 陈聪</span></li>

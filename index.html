@@ -207,25 +207,42 @@ a:hover { text-decoration: underline; }
 <h1>📦 2026072201 发版预览</h1>
 <div class="meta">
 当前版本：<code>2026072101</code>（发版时间：<span class="bump-time">07/21 18:52</span>），下一版（预览）：<code>2026072201</code><br>
-生成时间：2026-07-22 10:26:30 · 重新跑脚本后刷新页面即拿最新
+生成时间：2026-07-22 17:19:28 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
 <h3>🆕 新功能</h3>
 <ul>
-  <li>朋友圈发布失败后，可以在失败条目上直接点「重试」，用原来的文字、图片和可见范围重新发布，不用回发布页重填一遍 — 王争 #5096 (#5018)</li>
-  <li>艺星客户等级改判后，等级徽章和 AI 分析会保持一致，并能在菜单里查看谁在什么时候手动改判过 — 陈宣宇 #5116 (#5094)</li>
+  <li>销售可以按医生工作号单独开关接待：关掉某个号后不再自动分配新客户，手上正在聊的客户仍可继续收尾和搜索 — 张拓 #5123 (#4928)</li>
+  <li>新好友申请可以点「忽略」移出待处理，并同步清掉通讯录提醒角标 — 王梓先 #5136 (#5055)</li>
+  <li>服务通知现在会显示成提醒卡片和统一的橘红喇叭头像，不再出现「暂不支持的消息类型」或蓝色占位头像 — 王争 #5128 (#5072)</li>
+  <li>朋友圈发布失败后可以直接点「重试」，按原内容重新发布，不用重新打字选图 — 王争 #5096 (#5018)</li>
+  <li>艺星客户分类改判后，分类徽章和 AI 分析口径保持一致，并可查看谁在什么时候手动改判过 — 陈宣宇 #5116 (#5094)</li>
+  <li>聊天消息支持鼠标悬停查看具体收发时间，列表不会因为时间出现而上下跳动 — 陈聪 #5103 (#5053)</li>
 </ul>
+
 <h3>✨ 体验优化</h3>
 <ul>
-  <li>PC 聊天里把鼠标悬停到普通消息上，就能直接看到这条消息的具体收发时间，消息列表也不会因为时间显示而上下跳动 — 陈聪 #5103 (#5053)</li>
+  <li>同一客户的动态标签在 PC 和移动端各入口展示规则更一致，减少不同页面看到字段不一样的情况 — 陈聪 #5110 (#4978)</li>
+</ul>
+
+<h3>🐞 问题修复</h3>
+<ul>
+  <li>AI 判为「内部」的会话不再混进「客户消息」，搜索结果跳转和聊天头部分类也保持一致 — 王梓先 #5154 (#5043)</li>
+  <li>客户备注补拉失败不再反复弹出中央黑色提示，避免打断接待操作 — 王争 #5133 (#5112)</li>
+  <li>从话术面板发送带图片的话术后，图片会立刻正常显示在当前聊天页 — 王梓先 #5137 (#4938)</li>
+  <li>群会话消息先到、本地还没建会话时，发送消息不再报「找不到目标会话」 — 王争 #5124 (#5124)</li>
 </ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">07/21 18:52 上次发版后，合入 main 的全部 <strong>8</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">07/21 18:52 上次发版后，合入 main 的全部 <strong>19</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
+  <li><span class="merged-at">[07/22 15:08]</span>新好友申请支持本地忽略并同步清除待处理提醒 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5136">#5136</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5055">#5055</a>) <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[07/22 14:51]</span>#5072 服务端「服务通知」会话解析提醒卡片 + 统一橘红喇叭头像（销售不再看到「[暂不支持的消息类型]」和蓝色占位） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5128">#5128</a> <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[07/22 14:04]</span>#5109 群成员发起聊天空 timId 诊断埋点 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5127">#5127</a> <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[07/22 11:31]</span>#4928 销售逐工作号接待开关+跨端同步+搜索按接待范围收敛（销售可关掉某医生工作号不再被自动分配新客户，手上在聊的客户不受影响、仍能搜到收尾） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5123">#5123</a> <span class="author">— 张拓</span></li>
   <li><span class="merged-at">[07/22 10:01]</span>refs #5018 朋友圈发布失败条目一键重试（销售用原内容直接重发，不用重打字选图） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5096">#5096</a> <span class="author">— 王争</span></li>
   <li><span class="merged-at">[07/22 09:44]</span>改判分类改走 AI 标签写入端点、统一 userLevel 字段并展示手动改判记录 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5116">#5116</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5094">#5094</a>) <span class="author">— 陈宣宇</span></li>
   <li><span class="merged-at">[07/22 09:18]</span>发版预览跟随系统深浅色 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5122">#5122</a> <span class="author">— 房昕</span></li>
@@ -234,17 +251,23 @@ a:hover { text-decoration: underline; }
 
 <h2>🐞 问题修复</h2>
 <ul>
+  <li><span class="merged-at">[07/22 16:41]</span>#5043 客户消息分类统一用 AI 字段 aiGrade（含通讯录请求 + 头部选择器） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5154">#5154</a> <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[07/22 16:32]</span>客户备注补拉失败静默处理，不再弹中央 toast <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5133">#5133</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5112">#5112</a>) <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[07/22 15:22]</span>#4938 对账窗口锚点取最旧公共消息，修话术图片发完聊天页不回显 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5137">#5137</a> <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[07/22 11:39]</span>群会话缺本地行时按群 objectid 快拉回捞，修发消息报「找不到目标会话」 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5124">#5124</a> <span class="author">— 王争</span></li>
   <li><span class="merged-at">[07/22 10:05]</span>close #5071 隐私同意前禁止移动端敏感能力初始化 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5092">#5092</a> <span class="author">— 陈聪</span></li>
   <li><span class="merged-at">[07/21 21:52]</span>close #5088 窄屏近聊天底部按钮文字完整显示 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5098">#5098</a> <span class="author">— 陈聪</span></li>
 </ul>
 
 <h2>✨ 体验优化</h2>
 <ul>
-  <li class="empty">无</li>
+  <li><span class="merged-at">[07/22 13:54]</span>close #4978 统一跨端动态标签 schema 规则 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5110">#5110</a> <span class="author">— 陈聪</span></li>
 </ul>
 
 <h2>🔧 其他（chore / docs / test / ...）</h2>
 <ul>
+  <li><span class="merged-at">[07/22 16:56]</span>build(release): VC++ redist DLL 拷贝改硬断言，杜绝静默漏 DLL 打出崩溃包（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5157">#5157</a> <span class="author">— 张拓</span></li>
+  <li><span class="merged-at">[07/22 16:40]</span>build(release): 发版更新日志去掉 (#PR)/[#issue] 编号，只留用户可读文案（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5155">#5155</a> <span class="author">— 张拓</span></li>
   <li><span class="merged-at">[07/22 09:35]</span>chore(quality): gate PR Dart files over 800 lines <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5121">#5121</a> <span class="author">— 陈聪</span></li>
   <li><span class="merged-at">[07/21 19:23]</span>docs(release): archive 2026072101 notes <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5115">#5115</a> <span class="author">— 王梓先</span></li>
 </ul>

@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
-<!-- CURRENT_BUILD:2026072202 -->
+<!-- CURRENT_BUILD:2026072301 -->
 <title>下一版发版预览 · flutter-suiyin</title>
 <style>
 :root {
@@ -82,7 +82,8 @@ a:hover { text-decoration: underline; }
 <label>查看历史预览：</label>
 <select id="version-switcher-select" onchange="var v=this.value; if(v) location.href = v; else location.href = './';">
 <!-- VERSION_SWITCHER_OPTIONS_START -->
-<option value="">📦 2026072301 发版预览</option>
+<option value="">📦 2026072302 发版预览</option>
+<option value="2026072301.html">🗂 2026072301</option>
 <option value="2026072202.html">🗂 2026072202</option>
 <option value="2026072201.html">🗂 2026072201</option>
 <option value="2026072101.html">🗂 2026072101</option>
@@ -206,23 +207,17 @@ a:hover { text-decoration: underline; }
   }
 })();
 </script>
-<h1>📦 2026072301 发版预览</h1>
+<h1>📦 2026072302 发版预览</h1>
 <div class="meta">
-当前版本：<code>2026072202</code>（发版时间：<span class="bump-time">07/22 18:24</span>），下一版（预览）：<code>2026072301</code><br>
-生成时间：2026-07-23 11:46:02 · 重新跑脚本后刷新页面即拿最新
+当前版本：<code>2026072301</code>（发版时间：<span class="bump-time">07/23 12:00</span>），下一版（预览）：<code>2026072302</code><br>
+生成时间：2026-07-23 14:25:54 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
-<h3>🐞 问题修复</h3>
-<ul>
-<li>升级后客户列表大面积变空的问题已修复；工作群、客户消息等列表会在升级后自动恢复，不需要重登或清缓存 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5194">#5194</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5187">#5187</a>)</li>
-<li>PC「添加好友」子窗口里第一需求下拉为空、开发人没有默认选中自己的问题已修复；提交成功和已是好友的提示也会正常显示在主窗口 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5190">#5190</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5184">#5184</a>)</li>
-<li>会话列表里重复出现两条「服务通知」的问题已修复；现在提醒红点会集中在同一条服务通知里，点进去也能正常查看提醒卡片和原会话 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5139">#5139</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5129">#5129</a>)</li>
-</ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">07/22 18:24 上次发版后，合入 main 的全部 <strong>8</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">07/23 12:00 上次发版后，合入 main 的全部 <strong>3</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
   <li class="empty">无</li>
@@ -230,29 +225,25 @@ a:hover { text-decoration: underline; }
 
 <h2>🐞 问题修复</h2>
 <ul>
-  <li><span class="merged-at">[07/23 11:39]</span>#5187 补 chat_customer aiGrade 列 backfill 迁移，修复升级后客户列表大面积变空 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5194">#5194</a> <span class="author">— 王梓先</span></li>
-  <li><span class="merged-at">[07/23 11:01]</span>修复 PC 添加好友子窗口第一需求下拉为空并补充开发人默认值（销售能直接选中第一需求项，开发人不再需要每次手动找自己） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5190">#5190</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5184">#5184</a>) <span class="author">— 王争</span></li>
-  <li><span class="merged-at">[07/23 10:25]</span>#5182 修 main 上 11 条常红测试，恢复全量 flutter test 全绿（交付时不再撞到与自己无关的红） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5186">#5186</a> <span class="author">— 王争</span></li>
-  <li><span class="merged-at">[07/23 10:13]</span>降回 main 上超基线的 14 个 debugPrint，恢复 quality_gate.sh 在 main 自身可通过 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5185">#5185</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5175">#5175</a>) <span class="author">— 王争</span></li>
-  <li><span class="merged-at">[07/22 21:40]</span>统一动态组件渲染 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5159">#5159</a> <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[07/23 14:11]</span>close #5176 保留 addComponent 子字段 schema 并修复空态 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5180">#5180</a> <span class="author">— 陈聪</span></li>
 </ul>
 
 <h2>✨ 体验优化</h2>
 <ul>
-  <li><span class="merged-at">[07/23 10:36]</span>close #4980 抽取移动端动态标签编辑状态机 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5130">#5130</a> <span class="author">— 陈聪</span></li>
+  <li class="empty">无</li>
 </ul>
 
 <h2>🔧 其他（chore / docs / test / ...）</h2>
 <ul>
-  <li><span class="merged-at">[07/23 09:43]</span>chore(chat): #5129 下线本地合成「服务通知」会话，收敛到服务端 type=reminder 会话（销售会话列表不再出现两条「服务通知」） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5139">#5139</a> <span class="author">— 王争</span></li>
-  <li><span class="merged-at">[07/22 18:50]</span>docs(release): archive 2026072202 notes <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5174">#5174</a> <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[07/23 13:47]</span>obs(chat): 未读一致性埋点追加 TIM 未读升/降的触发消息与多端来源字段 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5199">#5199</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5140">#5140</a>) <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[07/23 12:24]</span>docs(release): archive 2026072301 notes <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5198">#5198</a> <span class="author">— 王梓先</span></li>
 </ul>
 
 
 <hr class="ref-divider">
 
 <div class="foot">
-上一次发版时间：<span class="bump-time">07/22 18:24</span>（基线 commit：<code>chore(release): bump Windows build 2026072202 (#5171)</code>）<br>
+上一次发版时间：<span class="bump-time">07/23 12:00</span>（基线 commit：<code>chore(release): bump Windows build 2026072301 (#5197)</code>）<br>
 PR 归属版本由 <code>pubspec.yaml</code> 的 <code>version:</code> 行 git 历史判定 —— bump commit 的 committedAt 是分割线。<br>
 由 <code>tool/generate_release_preview.dart</code> 自动提取；重新跑脚本后刷新页面即拿最新。<br>
 issue 链接基于 PetWebOrg/flutter-suiyin 仓。

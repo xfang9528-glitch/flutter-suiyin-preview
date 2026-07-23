@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
-<!-- CURRENT_BUILD:2026072301 -->
+<!-- CURRENT_BUILD:2026072302 -->
 <title>下一版发版预览 · flutter-suiyin</title>
 <style>
 :root {
@@ -82,7 +82,8 @@ a:hover { text-decoration: underline; }
 <label>查看历史预览：</label>
 <select id="version-switcher-select" onchange="var v=this.value; if(v) location.href = v; else location.href = './';">
 <!-- VERSION_SWITCHER_OPTIONS_START -->
-<option value="">📦 2026072302 发版预览</option>
+<option value="">📦 2026072303 发版预览</option>
+<option value="2026072302.html">🗂 2026072302</option>
 <option value="2026072301.html">🗂 2026072301</option>
 <option value="2026072202.html">🗂 2026072202</option>
 <option value="2026072201.html">🗂 2026072201</option>
@@ -207,21 +208,23 @@ a:hover { text-decoration: underline; }
   }
 })();
 </script>
-<h1>📦 2026072302 发版预览</h1>
+<h1>📦 2026072303 发版预览</h1>
 <div class="meta">
-当前版本：<code>2026072301</code>（发版时间：<span class="bump-time">07/23 12:00</span>），下一版（预览）：<code>2026072302</code><br>
-生成时间：2026-07-23 15:12:22 · 重新跑脚本后刷新页面即拿最新
+当前版本：<code>2026072302</code>（发版时间：<span class="bump-time">07/23 15:18</span>），下一版（预览）：<code>2026072303</code><br>
+生成时间：2026-07-23 16:54:16 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
 <h3>🐞 问题修复</h3>
 <ul>
-  <li>会话开启免打扰后，关闭再重新发起仍会保留正确状态；群聊切换人设时，免打扰图标也会跟随当前人设同步更新 — 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5021">#5021</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5005">#5005</a>)</li>
+  <li>从通讯录转发聊天记录时，会保留原聊天记录的人设发送，不会被目标客户当前接待人设覆盖 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5218">#5218</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5087">#5087</a>)</li>
+  <li>群搜索接口异常时，仍能正常搜到联系人、聊天记录和功能项，不会因为群结果出错导致整个搜索空白 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5214">#5214</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5183">#5183</a>)</li>
+  <li>「我的朋友圈」状态文字悬停或点击后，会正常弹出各人设发送明细；明细过多时可滚动查看，失败原因也不再显示看不懂的原始报文 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5196">#5196</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5193">#5193</a>)</li>
 </ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">07/23 12:00 上次发版后，合入 main 的全部 <strong>4</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">07/23 15:18 上次发版后，合入 main 的全部 <strong>5</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
   <li class="empty">无</li>
@@ -229,8 +232,10 @@ a:hover { text-decoration: underline; }
 
 <h2>🐞 问题修复</h2>
 <ul>
-  <li><span class="merged-at">[07/23 14:59]</span>按人设保持并同步免打扰状态（关闭重开及群人设切换后状态不再丢失） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5021">#5021</a> <span class="author">— 梁晨</span></li>
-  <li><span class="merged-at">[07/23 14:11]</span>close #5176 保留 addComponent 子字段 schema 并修复空态 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5180">#5180</a> <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[07/23 16:47]</span>转发消息保留来源人设 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5218">#5218</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5087">#5087</a>) <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[07/23 16:37]</span>align persona refresher stubs <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5216">#5216</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5210">#5210</a>) <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[07/23 16:22]</span>群页拉齐失败时降级而非拖垮整个搜索（群接口故障时销售仍能搜到联系人和聊天记录） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5214">#5214</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5183">#5183</a>) <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[07/23 15:26]</span>朋友圈状态浮层限高可滚动 + 越界自适应，失败原因不再 dump 微信原生 JSON <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5196">#5196</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5193">#5193</a>) <span class="author">— 王争</span></li>
 </ul>
 
 <h2>✨ 体验优化</h2>
@@ -240,15 +245,14 @@ a:hover { text-decoration: underline; }
 
 <h2>🔧 其他（chore / docs / test / ...）</h2>
 <ul>
-  <li><span class="merged-at">[07/23 13:47]</span>obs(chat): 未读一致性埋点追加 TIM 未读升/降的触发消息与多端来源字段 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5199">#5199</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5140">#5140</a>) <span class="author">— 王梓先</span></li>
-  <li><span class="merged-at">[07/23 12:24]</span>docs(release): archive 2026072301 notes <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5198">#5198</a> <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[07/23 15:41]</span>docs(release): archive 2026072302 notes <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5212">#5212</a> <span class="author">— 王梓先</span></li>
 </ul>
 
 
 <hr class="ref-divider">
 
 <div class="foot">
-上一次发版时间：<span class="bump-time">07/23 12:00</span>（基线 commit：<code>chore(release): bump Windows build 2026072301 (#5197)</code>）<br>
+上一次发版时间：<span class="bump-time">07/23 15:18</span>（基线 commit：<code>chore(release): bump Windows build 2026072302 (#5209)</code>）<br>
 PR 归属版本由 <code>pubspec.yaml</code> 的 <code>version:</code> 行 git 历史判定 —— bump commit 的 committedAt 是分割线。<br>
 由 <code>tool/generate_release_preview.dart</code> 自动提取；重新跑脚本后刷新页面即拿最新。<br>
 issue 链接基于 PetWebOrg/flutter-suiyin 仓。

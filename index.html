@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
-<!-- CURRENT_BUILD:2026072402 -->
+<!-- CURRENT_BUILD:2026072403 -->
 <title>下一版发版预览 · flutter-suiyin</title>
 <style>
 :root {
@@ -82,7 +82,8 @@ a:hover { text-decoration: underline; }
 <label>查看历史预览：</label>
 <select id="version-switcher-select" onchange="var v=this.value; if(v) location.href = v; else location.href = './';">
 <!-- VERSION_SWITCHER_OPTIONS_START -->
-<option value="">📦 2026072403 发版预览</option>
+<option value="">📦 2026072404 发版预览</option>
+<option value="2026072403.html">🗂 2026072403</option>
 <option value="2026072402.html">🗂 2026072402</option>
 <option value="2026072401.html">🗂 2026072401</option>
 <option value="2026072302.html">🗂 2026072302</option>
@@ -210,30 +211,25 @@ a:hover { text-decoration: underline; }
   }
 })();
 </script>
-<h1>📦 2026072403 发版预览</h1>
+<h1>📦 2026072404 发版预览</h1>
 <div class="meta">
-当前版本：<code>2026072402</code>（发版时间：<span class="bump-time">07/24 17:02</span>），下一版（预览）：<code>2026072403</code><br>
-生成时间：2026-07-24 18:12:20 · 重新跑脚本后刷新页面即拿最新
+当前版本：<code>2026072403</code>（发版时间：<span class="bump-time">07/24 18:41</span>），下一版（预览）：<code>2026072404</code><br>
+生成时间：2026-07-24 23:04:24 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
-<h3>✨ 体验优化</h3>
+<h3>🆕 新功能</h3>
 <ul>
-  <li>聊天搜索定位和历史翻页更稳定，长时间翻记录、多会话切换不容易卡住或跳屏 — 梁晨、Cursor、王争、王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5245">#5245</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5059">#5059</a>)</li>
-  <li>查看历史消息时，新消息进来不会把当前位置强行拉到底；自己发送消息仍会自动回到底部 — 梁晨、Cursor、王争、王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5245">#5245</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5059">#5059</a>)</li>
-</ul>
-
-<h3>🐞 问题修复</h3>
-<ul>
-  <li>修复消息已发到客户微信但 PC 气泡长期转圈的问题，销售能及时确认发送结果 — 梁晨、Cursor、王争、王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5245">#5245</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5172">#5172</a>)</li>
+  <li>「新的朋友」里不需要通过的添加申请现在可以直接忽略，忽略后会显示「已忽略」并同步清掉待处理提醒 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5264">#5264</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5075">#5075</a>)</li>
 </ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">07/24 17:02 上次发版后，合入 main 的全部 <strong>2</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">07/24 18:41 上次发版后，合入 main 的全部 <strong>5</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
-  <li class="empty">无</li>
+  <li><span class="merged-at">[07/24 21:19]</span>接入服务端忽略终态 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5264">#5264</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5075">#5075</a>) <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[07/24 19:22]</span>朋友圈发布页全部按钮接入 SLS 点击日志 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5263">#5263</a> <span class="author">— 陈聪</span></li>
 </ul>
 
 <h2>🐞 问题修复</h2>
@@ -243,19 +239,20 @@ a:hover { text-decoration: underline; }
 
 <h2>✨ 体验优化</h2>
 <ul>
-  <li><span class="merged-at">[07/24 18:03]</span>合并聊天页面重构与消息窗口优化 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5245">#5245</a> <span class="author">— 梁晨、Cursor、王争、王梓先</span></li>
+  <li><span class="merged-at">[07/24 20:16]</span>收敛保存 Repository 边界 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5265">#5265</a> <span class="author">— 陈聪</span></li>
 </ul>
 
 <h2>🔧 其他（chore / docs / test / ...）</h2>
 <ul>
-  <li><span class="merged-at">[07/24 17:15]</span>docs(release): archive 2026072402 notes <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5258">#5258</a> <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[07/24 22:24]</span>test: close #5224 修复 latest main Phase 3 基线 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5268">#5268</a> <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[07/24 19:02]</span>docs(release): archive 2026072403 notes <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5262">#5262</a> <span class="author">— 王梓先</span></li>
 </ul>
 
 
 <hr class="ref-divider">
 
 <div class="foot">
-上一次发版时间：<span class="bump-time">07/24 17:02</span>（基线 commit：<code>chore(release): bump Windows build 2026072402 (#5257)</code>）<br>
+上一次发版时间：<span class="bump-time">07/24 18:41</span>（基线 commit：<code>chore(release): bump Windows build 2026072403 (#5261)</code>）<br>
 PR 归属版本由 <code>pubspec.yaml</code> 的 <code>version:</code> 行 git 历史判定 —— bump commit 的 committedAt 是分割线。<br>
 由 <code>tool/generate_release_preview.dart</code> 自动提取；重新跑脚本后刷新页面即拿最新。<br>
 issue 链接基于 PetWebOrg/flutter-suiyin 仓。

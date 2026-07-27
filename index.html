@@ -214,24 +214,25 @@ a:hover { text-decoration: underline; }
 <h1>📦 2026072701 发版预览</h1>
 <div class="meta">
 当前版本：<code>2026072403</code>（发版时间：<span class="bump-time">07/24 18:41</span>），下一版（预览）：<code>2026072701</code><br>
-生成时间：2026-07-27 10:28:51 · 重新跑脚本后刷新页面即拿最新
+生成时间：2026-07-27 13:46:37 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
-<h3>🆕 新功能</h3>
+<h2>🆕 新功能</h2>
 <ul>
-  <li>广州艺星销售现在看到的界面布局和功能入口与深圳艺星一致，可直接按深圳艺星的操作步骤使用 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5278">#5278</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5277">#5277</a>)</li>
-  <li>「新的朋友」里不需要通过的添加申请现在可以直接忽略，忽略后会显示「已忽略」并同步清掉待处理提醒 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5264">#5264</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5075">#5075</a>)</li>
+  <li>广州艺星销售现在看到的界面布局和功能入口与深圳艺星一致，可直接按深圳艺星的操作步骤使用 <span class="author">— 王争</span> <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5278">#5278</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5277">#5277</a>)</li>
+  <li>「新的朋友」里不需要通过的添加申请现在可以直接忽略，忽略后会显示「已忽略」并同步清掉待处理提醒 <span class="author">— 陈聪</span> <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5264">#5264</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5075">#5075</a>)</li>
 </ul>
 
-<h3>🐞 问题修复</h3>
+<h2>🐞 问题修复</h2>
 <ul>
-  <li>修复聊天页回归问题：点开有未读的会话不再卡死转圈，发完消息后也能正常向上翻看历史记录 — 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5280">#5280</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5266">#5266</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5267">#5267</a>)</li>
+  <li>群聊里没有头像的销售消息现在会显示发送者真名后两字，不再把群头像或登录人的头像错挂到别人消息上 <span class="author">— 王梓先</span> <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5298">#5298</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5173">#5173</a>)</li>
+  <li>修复聊天页回归问题：点开有未读的会话不再卡死转圈，发完消息后也能正常向上翻看历史记录 <span class="author">— 张拓</span> <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5280">#5280</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5266">#5266</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5267">#5267</a>)</li>
 </ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">07/24 18:41 上次发版后，合入 main 的全部 <strong>10</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">07/24 18:41 上次发版后，合入 main 的全部 <strong>14</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
   <li><span class="merged-at">[07/26 10:37]</span>注册广州艺星 yestar-gz 并沿用深圳艺星配置（广州艺星销售可直接按深圳艺星的操作步骤使用） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5278">#5278</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5277">#5277</a>) <span class="author">— 王争</span></li>
@@ -241,6 +242,10 @@ a:hover { text-decoration: underline; }
 
 <h2>🐞 问题修复</h2>
 <ul>
+  <li><span class="merged-at">[07/27 13:36]</span>群消息发送者头像用实际发送者真名后两字，不再张冠李戴 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5298">#5298</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5173">#5173</a>) <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[07/27 13:32]</span>close #5234 防止 iOS 视频纹理销毁时闪退 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5300">#5300</a> <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[07/27 11:42]</span>#5109 未接待群成员空 timId 用 wxid 兜底定位好友（销售点已加好友的聊天不再打不开） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5287">#5287</a> <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[07/27 11:09]</span>close #5048 迁移 moments 关键错误日志并恢复 ratchet <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5293">#5293</a> <span class="author">— 陈聪</span></li>
   <li><span class="merged-at">[07/26 14:10]</span>CDN 读取加重试，一次瞬时抖动不再废掉整趟发版（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5282">#5282</a> <span class="author">— 张拓</span></li>
 </ul>
 

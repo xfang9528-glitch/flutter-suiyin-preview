@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
-<!-- CURRENT_BUILD:2026072701 -->
+<!-- CURRENT_BUILD:2026072403 -->
 <title>下一版发版预览 · flutter-suiyin</title>
 <style>
 :root {
@@ -82,7 +82,7 @@ a:hover { text-decoration: underline; }
 <label>查看历史预览：</label>
 <select id="version-switcher-select" onchange="var v=this.value; if(v) location.href = v; else location.href = './';">
 <!-- VERSION_SWITCHER_OPTIONS_START -->
-<option value="">📦 2026072702 发版预览</option>
+<option value="">📦 2026072801 发版预览</option>
 <option value="2026072701.html">🗂 2026072701</option>
 <option value="2026072403.html">🗂 2026072403</option>
 <option value="2026072402.html">🗂 2026072402</option>
@@ -212,37 +212,50 @@ a:hover { text-decoration: underline; }
   }
 })();
 </script>
-<h1>📦 2026072702 发版预览</h1>
+<h1>📦 2026072801 发版预览</h1>
 <div class="meta">
-当前版本：<code>2026072701</code>（发版时间：<span class="bump-time">07/27 17:36</span>），下一版（预览）：<code>2026072702</code><br>
-生成时间：2026-07-27 23:53:52 · 重新跑脚本后刷新页面即拿最新
+当前版本：<code>2026072403</code>（发版时间：<span class="bump-time">07/24 18:41</span>），下一版（预览）：<code>2026072801</code><br>
+生成时间：2026-07-28 10:30:41 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
-<h3>🆕 新功能</h3>
+<h3>&#127381; 新功能</h3>
 <ul>
-  <li>独立聊天窗口现在支持拖出、双击和右键三种打开方式，还能自由缩放、置顶、最小化和最大化，常用会话可以固定在手边处理 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5311">#5311</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5308">#5308</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5145">#5145</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5146">#5146</a>)</li>
-  <li>Windows 上收到 HEVC 编码的视频时，可以直接播放，不再需要等整段视频转码后才能看 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5270">#5270</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5242">#5242</a>)</li>
+  <li>独立聊天窗口现在支持拖出、双击和右键三种打开方式，能直接收发消息，还能自由缩放、置顶、最小化和最大化，常用会话可以固定在手边处理 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5311">#5311</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5308">#5308</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5295">#5295</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5145">#5145</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5146">#5146</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5144">#5144</a>)</li>
+  <li>Windows 上收到 HEVC 编码的视频时，可以直接播放，不再需要等整段视频转码后才能看 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5270">#5270</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5242">#5242</a>)</li>
+  <li>广州艺星销售现在可以按深圳艺星的界面和操作方式使用碎银 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5278">#5278</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5277">#5277</a>)</li>
+  <li>忽略好友申请后，刷新、换设备或其他销售操作也不会再把它恢复成待添加，列表和角标会保持一致 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5264">#5264</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5075">#5075</a>)</li>
 </ul>
 <h3>✨ 体验优化</h3>
 <ul>
-  <li>多个独立聊天窗口同时打开时，截图、图片预览和话术面板会跟随当前窗口，不会串到别的聊天窗口 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5312">#5312</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5148">#5148</a>)</li>
+  <li>多个独立聊天窗口同时打开时，截图、图片预览和话术面板会跟随当前窗口，不会串到别的聊天窗口 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5312">#5312</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5148">#5148</a>)</li>
 </ul>
-<h3>🐞 问题修复</h3>
+<h3>&#128030; 问题修复</h3>
 <ul>
-  <li>Windows 复制聊天里的图片、视频或文件后，现在可以直接粘贴到桌面、文件夹或其他应用，不再提示成功却粘不出来 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5330">#5330</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5302">#5302</a>)</li>
-  <li>群成员已经是好友时，列表不再误显示「添加好友」 — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5317">#5317</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5303">#5303</a>)</li>
-  <li>刚分配来的会话现在会显示最新一条消息和正确的发言人，不再出现时间是新的、摘要却停在旧消息上的错位 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5322">#5322</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5125">#5125</a>)</li>
+  <li>Windows 复制聊天里的图片、视频或文件后，现在可以直接粘贴到桌面、文件夹或其他应用，不再提示成功却粘不出来 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5330">#5330</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5302">#5302</a>)</li>
+  <li>群成员已经是好友时，列表不再误显示「添加好友」 — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5317">#5317</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5303">#5303</a>)</li>
+  <li>刚分配来的会话现在会显示最新一条消息和正确的发言人，不再出现时间是新的、摘要却停在旧消息上的错位 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5322">#5322</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5125">#5125</a>)</li>
+  <li>切换企业后，渠道筛选侧栏和渠道分类会跟着切到当前企业，不会残留上一个企业的渠道 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5304">#5304</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4923">#4923</a>)</li>
+  <li>群成员添加好友失败时会直接提示原因，不再点了没反应 — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5299">#5299</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5286">#5286</a>)</li>
+  <li>切换企业或退出登录后，已打开的独立聊天窗口不会再显示上一个企业的客户消息 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5289">#5289</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5143">#5143</a>)</li>
+  <li>群消息头像会显示实际发送者的名字头像，不再把不同销售或人设显示成同一个群头像 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5298">#5298</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5173">#5173</a>)</li>
+  <li>从未接待群成员资料里发起聊天时，已是好友的聊天现在可以正常打开 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5287">#5287</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5109">#5109</a>)</li>
+  <li>点开有未读的会话不再卡死转圈，发消息后也可以正常上翻查看历史消息 — 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5280">#5280</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5266">#5266</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5267">#5267</a>)</li>
 </ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">07/27 17:36 上次 PC 发版后，合入 main 的全部 <strong>9</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">07/24 18:41 上次发版后，合入 main 的全部 <strong>28</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
   <li><span class="merged-at">[07/27 18:40]</span>实现独立聊天窗口的八向缩放与置顶最小化最大化（销售可随时调整每个聊天窗口大小并置顶常用会话，松手即定不会像被按住） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5311">#5311</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5145">#5145</a>) <span class="author">— 王争</span></li>
   <li><span class="merged-at">[07/27 18:37]</span>Windows 内置 libmpv 实时播放 HEVC <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5270">#5270</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5242">#5242</a>) <span class="author">— 陈聪</span></li>
   <li><span class="merged-at">[07/27 18:35]</span>#5146 新增会话拖出与快速双击打开独立聊天窗口的入口（销售可直接把会话拖到主窗口外开出独立聊天窗口，不用再回列表反复切换） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5308">#5308</a> <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[07/27 16:08]</span>接入独立聊天窗口的 IM 收发路由（销售在独立聊天窗口能直接发消息收回复，同一条消息不会重复显示两条） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5295">#5295</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5144">#5144</a>) <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[07/27 14:43]</span>切企业/登出收敛独立聊天窗口 store 记账 + 残留观测（销售切企业或退出登录后，已开的聊天窗口不会再显示上一个企业的客户消息） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5289">#5289</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5143">#5143</a>) <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[07/26 10:37]</span>注册广州艺星 yestar-gz 并沿用深圳艺星配置（广州艺星销售可直接按深圳艺星的操作步骤使用） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5278">#5278</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5277">#5277</a>) <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[07/24 21:19]</span>接入服务端忽略终态 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5264">#5264</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5075">#5075</a>) <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[07/24 19:22]</span>朋友圈发布页全部按钮接入 SLS 点击日志 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5263">#5263</a> <span class="author">— 陈聪</span></li>
 </ul>
 
 <h2>🐞 问题修复</h2>
@@ -250,25 +263,40 @@ a:hover { text-decoration: underline; }
   <li><span class="merged-at">[07/27 22:20]</span>修复 Windows 复制媒体无法粘贴为文件 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5330">#5330</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5302">#5302</a>) <span class="author">— 陈聪</span></li>
   <li><span class="merged-at">[07/27 18:26]</span>群成员好友状态显示统一用选中人设 wcId，多人设群不再「已是好友仍显示添加」（#5303） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5317">#5317</a> <span class="author">— 陈宣宇</span></li>
   <li><span class="merged-at">[07/27 18:25]</span>#5125 会话摘要跟随时间 + 回填同步发言人（刚分配来的会话摘要/发言人正确显示） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5322">#5322</a> <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[07/27 15:28]</span>切企业后渠道筛选侧栏与渠道分类不再停在上一个企业 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5304">#5304</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4923">#4923</a>) <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[07/27 14:57]</span>群成员「添加好友」失败时把后端错误提示给用户（销售能看到「已经是好友」等原因，不再点了没反应） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5299">#5299</a> <span class="author">— 陈宣宇</span></li>
+  <li><span class="merged-at">[07/27 13:36]</span>群消息发送者头像用实际发送者真名后两字，不再张冠李戴 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5298">#5298</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5173">#5173</a>) <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[07/27 13:32]</span>close #5234 防止 iOS 视频纹理销毁时闪退 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5300">#5300</a> <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[07/27 11:42]</span>#5109 未接待群成员空 timId 用 wxid 兜底定位好友（销售点已加好友的聊天不再打不开） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5287">#5287</a> <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[07/27 11:09]</span>close #5048 迁移 moments 关键错误日志并恢复 ratchet <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5293">#5293</a> <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[07/26 14:10]</span>CDN 读取加重试，一次瞬时抖动不再废掉整趟发版（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5282">#5282</a> <span class="author">— 张拓</span></li>
 </ul>
 
 <h2>✨ 体验优化</h2>
 <ul>
   <li><span class="merged-at">[07/27 18:25]</span>#5148 新增按 windowId 分域的聊天状态机制（销售在多个聊天窗口之间操作互不干扰，不会串到别的窗口） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5312">#5312</a> <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[07/24 20:16]</span>收敛保存 Repository 边界 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5265">#5265</a> <span class="author">— 陈聪</span></li>
 </ul>
 
 <h2>🔧 其他（chore / docs / test / ...）</h2>
 <ul>
   <li><span class="merged-at">[07/27 18:24]</span>test(chat #5324): 独立聊天窗口 2 个测试补 noSplashTheme，修 #1606 全量 gate 红 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5326">#5326</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5324">#5324</a>) <span class="author">— 王争</span></li>
   <li><span class="merged-at">[07/27 18:16]</span>ci: CI 配额守卫自身迁到自建 runner，断开「配额挂→全组织 PR 全 BLOCKED」自锁链路（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5328">#5328</a> <span class="author">— Erio</span></li>
+  <li><span class="merged-at">[07/27 16:35]</span>test(db): 加 DbChatCustomer 索引列 backfill 守卫，钉住 #2923/#5187 复发家族 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5307">#5307</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5189">#5189</a>) <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[07/26 14:39]</span>docs(readme): 首页加 PC 发版操作流程 + Release PC workflow 直达链接（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5283">#5283</a> <span class="author">— 张拓</span></li>
+  <li><span class="merged-at">[07/26 12:21]</span>revert(chat): 撤回 #5245 聊天页重构（销售不再遇到点开未读会话卡死、发消息后翻不了历史） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5280">#5280</a> <span class="author">— 张拓</span></li>
+  <li><span class="merged-at">[07/26 11:29]</span>chore(release): bump Windows build 2026072601 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5279">#5279</a> <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[07/24 22:24]</span>test: close #5224 修复 latest main Phase 3 基线 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5268">#5268</a> <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[07/24 19:02]</span>docs(release): archive 2026072403 notes <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5262">#5262</a> <span class="author">— 王梓先</span></li>
 </ul>
+
 
 <hr class="ref-divider">
 
 <div class="foot">
-上一次 PC 发版时间：<span class="bump-time">07/27 17:36</span>（基线 commit：<code>chore(release): bump Windows build 2026072701</code>）<br>
-PR 归属版本由 PC 发版 commit/归档分支判定；main 的 <code>docs/release-notes/pc</code> 可能滞后于已发布分支。<br>
-由 <code>tool/generate_release_preview.dart</code> 自动提取后按 PC 已发基线校正；重新跑脚本后刷新页面即拿最新。<br>
+上一次发版时间：<span class="bump-time">07/24 18:41</span>（基线 commit：<code>chore(release): bump Windows build 2026072403 (#5261)</code>）<br>
+PR 归属版本由 <code>pubspec.yaml</code> 的 <code>version:</code> 行 git 历史判定 —— bump commit 的 committedAt 是分割线。<br>
+由 <code>tool/generate_release_preview.dart</code> 自动提取；重新跑脚本后刷新页面即拿最新。<br>
 issue 链接基于 PetWebOrg/flutter-suiyin 仓。
 </div>
 </body>

@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
-<!-- CURRENT_BUILD:2026072902 -->
+<!-- CURRENT_BUILD:2026073001 -->
 <title>下一版发版预览 · flutter-suiyin</title>
 <style>
 :root {
@@ -83,6 +83,7 @@ a:hover { text-decoration: underline; }
 <select id="version-switcher-select" onchange="var v=this.value; if(v) location.href = v; else location.href = './';">
 <!-- VERSION_SWITCHER_OPTIONS_START -->
 <option value="">📦 2026073002 发版预览</option>
+<option value="2026073001.html">🗂 2026073001</option>
 <option value="2026072902.html">🗂 2026072902</option>
 <option value="2026072901.html">🗂 2026072901</option>
 <option value="2026072801.html">🗂 2026072801</option>
@@ -217,32 +218,18 @@ a:hover { text-decoration: underline; }
 </script>
 <h1>📦 2026073002 发版预览</h1>
 <div class="meta">
-当前版本：<code>2026072902</code>（发版时间：<span class="bump-time">07/29 17:07</span>），下一版（预览）：<code>2026073002</code><br>
-生成时间：2026-07-30 11:41:14 · 重新跑脚本后刷新页面即拿最新
+当前版本：<code>2026073001</code>（发版时间：<span class="bump-time">07/30 10:16</span>），下一版（预览）：<code>2026073002</code><br>
+生成时间：2026-07-30 12:56:14 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
-<h2>🆕 新功能</h2>
 <ul>
-  <li>销售搜索或添加好友时，如果微信号需要先完成安全验证，会明确提示到手机微信处理后再重试，不会只显示笼统的搜索失败 — 陈宣宇 #5470 (#5401)</li>
-  <li>客户生日为空时，在资料里填写合法身份证号会自动带出生日；已有生日不会被覆盖，身份证填错也不会保存错误生日 — 陈聪 #5413 (#5256, #5453)</li>
-  <li>艺星和佰智德三的销售在独立聊天窗口里，也能看到各自主窗口已有的客户资料、聊天头部和相关入口，不会缺项或多出不该有的入口 — 王争 #5419 (#5153)</li>
-</ul>
-
-<h2>🐞 问题修复</h2>
-<ul>
-  <li>独立聊天窗口打开超时后，如果窗口稍后才创建成功，会被正确接管和复用，不会再次点击同一客户就开出两个窗口互抢消息和已读 — 王争 #5441 (#5421)</li>
-  <li>本地数据自愈重建后，消息列表「内部」tab 会主动重新同步接待中的内部会话，不会再空等半小时才恢复 — 王梓先 #5461 (#5416)</li>
-  <li>修复部分 Windows 正式包缺少视频播放组件的问题，现场视频能正常打开播放，缺件包会在发布前被拦住 — 陈聪 #5467 (#5443)</li>
-  <li>「更新已就绪」弹窗的本次更新内容不会再混入 gh 报错文本 — 王梓先 #5465 (#5445)</li>
-  <li>搜索结果里的客户分类会和聊天头部、资料卡保持一致，不会再一处显示「客户」、另一处显示「内部」 — 陈宣宇 #5452 (#5428)</li>
-  <li>销售在手机微信用自己的人设发群消息后，PC 接待列表会正确显示「我」或对应人设，不会再误显示成「同事」 — 张拓 #5361 (#4961)</li>
-  <li>运营设置强制升级后，PC 各条发版通道（包括周四强制升级场次）都会保留并透传这条规则，落后版本的销售会正常收到强制升级提示 — 王梓先 #5440, #5437 (#5439, #5418)</li>
+  <li class="empty">暂无新的用户感知更新。</li>
 </ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">07/29 17:07 上次发版后，合入 main 的全部 <strong>21</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">当前版本已按客户端可见的 2026073001 校正；因 2026073001 归档仍在归档分支等待并回 main，下方暂保留生成器宽窗口中的全部 <strong>22</strong> 个 PR 供对照，已进入 2026073001 历史更新的内容不再重复放入上半区。</div>
 <h2>🆕 新功能</h2>
 <ul>
   <li><span class="merged-at">[07/30 10:31]</span>搜索/加好友命中「需安全验证」风控(40302)弹明确提示 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5470">#5470</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5401">#5401</a>) <span class="author">— 陈宣宇</span></li>
@@ -253,6 +240,7 @@ a:hover { text-decoration: underline; }
 
 <h2>🐞 问题修复</h2>
 <ul>
+  <li><span class="merged-at">[07/30 11:55]</span>unify search and quote positioning <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5477">#5477</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4663">#4663</a>) <span class="author">— 梁晨</span></li>
   <li><span class="merged-at">[07/30 11:08]</span>close #5421 独立聊天窗口超时晚到后补齐记账 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5441">#5441</a> <span class="author">— 王争</span></li>
   <li><span class="merged-at">[07/30 09:58]</span>修复消息列表「内部」tab 查不到接待中的内部会话 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5461">#5461</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5416">#5416</a>) <span class="author">— 王梓先</span></li>
   <li><span class="merged-at">[07/30 09:55]</span>close #5443 阻断 Windows 媒体运行时缺件包 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5467">#5467</a> <span class="author">— 陈聪</span></li>
@@ -284,7 +272,7 @@ a:hover { text-decoration: underline; }
 <hr class="ref-divider">
 
 <div class="foot">
-上一次发版时间：<span class="bump-time">07/29 17:07</span>（基线 commit：<code>chore(release): bump Windows build 2026072902 (#5435)</code>）<br>
+上一次发版时间：<span class="bump-time">07/30 10:16</span>（基线 commit：<code>chore(release): bump Windows build 2026073001 (#5471)</code>）<br>
 PR 归属版本由 <code>pubspec.yaml</code> 的 <code>version:</code> 行 git 历史判定 —— bump commit 的 committedAt 是分割线。<br>
 由 <code>tool/generate_release_preview.dart</code> 自动提取；重新跑脚本后刷新页面即拿最新。<br>
 issue 链接基于 PetWebOrg/flutter-suiyin 仓。

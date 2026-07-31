@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
-<!-- CURRENT_BUILD:2026073101 -->
+<!-- CURRENT_BUILD:2026073002 -->
 <title>下一版发版预览 · flutter-suiyin</title>
 <style>
 :root {
@@ -82,7 +82,7 @@ a:hover { text-decoration: underline; }
 <label>查看历史预览：</label>
 <select id="version-switcher-select" onchange="var v=this.value; if(v) location.href = v; else location.href = './';">
 <!-- VERSION_SWITCHER_OPTIONS_START -->
-<option value="">📦 2026073102 发版预览</option>
+<option value="">📦 2026073003 发版预览</option>
 <option value="2026073101.html">🗂 2026073101</option>
 <option value="2026073002.html">🗂 2026073002</option>
 <option value="2026073001.html">🗂 2026073001</option>
@@ -218,51 +218,60 @@ a:hover { text-decoration: underline; }
   }
 })();
 </script>
-<h1>📦 2026073102 发版预览</h1>
+<h1>📦 2026073003 发版预览</h1>
 <div class="meta">
-当前版本：<code>2026073101</code>（发版时间：<span class="bump-time">07/31 10:22</span>），下一版（预览）：<code>2026073102</code><br>
-生成时间：2026-07-31 17:11:08 · 重新跑脚本后刷新页面即拿最新
+当前版本：<code>2026073002</code>（发版时间：<span class="bump-time">07/30 17:29</span>），下一版（预览）：<code>2026073003</code><br>
+生成时间：2026-07-31 18:50:23 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
 <h3>🆕 新功能</h3>
 <ul>
-<li>艺星客户右栏、聊天列表和通讯录里会显示「到店状态」，可按门店配置直接编辑，也能在聊天筛选里按到店状态筛客户 — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5525">#5525</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5466">#5466</a>)</li>
+  <li>艺星客户右栏、聊天列表和通讯录里会显示「到店状态」，可按门店配置直接编辑，也能在聊天筛选里按到店状态筛客户 — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5525">#5525</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5466">#5466</a>)</li>
+  <li>群聊输入 <code>@</code> 后可以用上下键选择成员、回车确认、Esc 关闭，长列表也会自动跟随高亮项滚动 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5528">#5528</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5050">#5050</a>)</li>
 </ul>
-
 <h3>✨ 体验优化</h3>
 <ul>
-<li>搜索客户消息时，「联系人与群聊」结果会更快出现，命中群很多时也不用一直等转圈；需要更多群结果时再点“查看更多”加载 — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5565">#5565</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5542">#5542</a>)</li>
-<li>独立聊天窗口现在更接近主窗口：可以右键消息、修改客户等级、实时看到新消息，快速备注、转交、话术、接待记录、打赏和 <code>@</code> 搜索也能正常使用 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5553">#5553</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5543">#5543</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5538">#5538</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5537">#5537</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5532">#5532</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5531">#5531</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5386">#5386</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5385">#5385</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5387">#5387</a>)</li>
-<li>长会话停在底部时，新消息和布局刷新不再反复空跳，滚动位置更稳 — 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5550">#5550</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5291">#5291</a>)</li>
-<li>点开搜索到的聊天记录预览时，会直接定位到命中的那条消息，并保留上下文，不再跳到列表开头 — 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5546">#5546</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5260">#5260</a>)</li>
-<li>点击很久以前的引用消息时，会尽量从服务端历史里找回原消息并定位，不再轻易提示“原消息已不可用” — 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5507">#5507</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5486">#5486</a>)</li>
+  <li>收藏或取消收藏话术时，按钮会立刻响应；网络失败时再回滚并提示重试，不用点完后等接口转圈 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5559">#5559</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5520">#5520</a>)</li>
+  <li>搜索客户消息时，「联系人与群聊」结果会更快出现，命中群很多时也不用一直等转圈；需要更多群结果时再点“查看更多”加载 — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5565">#5565</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5542">#5542</a>)</li>
+  <li>独立聊天窗口现在更接近主窗口：可以右键消息、修改客户等级、实时看到新消息，快速备注、转交、话术、接待记录、打赏和 <code>@</code> 搜索也能正常使用 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5553">#5553</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5543">#5543</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5538">#5538</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5537">#5537</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5532">#5532</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5531">#5531</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5386">#5386</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5385">#5385</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5387">#5387</a>)</li>
+  <li>长会话停在底部时，新消息和布局刷新不再反复空跳，滚动位置更稳 — 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5550">#5550</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5291">#5291</a>)</li>
+  <li>点开搜索到的聊天记录预览时，会直接定位到命中的那条消息，并保留上下文，不再跳到列表开头 — 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5546">#5546</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5260">#5260</a>)</li>
+  <li>点击很久以前的引用消息时，会尽量从服务端历史里找回原消息并定位，不再轻易提示“原消息已不可用” — 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5507">#5507</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5486">#5486</a>)</li>
 </ul>
-
 <h3>🐞 问题修复</h3>
 <ul>
-<li>双击编辑聊天标题时，输入框会回填当前完整名称，修改时也不会把 A 会话的标题误写到 B 会话 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5547">#5547</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5523">#5523</a>)</li>
-<li>引用消息的原文很短、会话里又有重复文字时，点击引用也能定位到真正那条原文，不再跳到附近相同内容 — 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5560">#5560</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5486">#5486</a>)</li>
-<li>Windows 剪贴板被其他程序短暂占用时，聊天框粘贴会自动重试；持续占用时给出提示，不再直接崩溃 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5535">#5535</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5379">#5379</a>)</li>
-<li>多企业销售打开应用后，「切换企业」入口偶发消失、只能重启恢复的问题已修复 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5555">#5555</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5499">#5499</a>)</li>
-<li>PC 添加好友窗口里的打招呼语会在退出重进后继续保留，不再丢失上次填写的内容 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5548">#5548</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5534">#5534</a>)</li>
-<li>客户资料里的多选标签可以正常勾选并保存，不会因为点选项就把右侧客户面板关掉 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5545">#5545</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5512">#5512</a>)</li>
-<li>在一句话中间输入 <code>@</code> 也能正常唤起选人，不会把光标右侧已有文字误当成搜索词 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5544">#5544</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5290">#5290</a>)</li>
+  <li>独立聊天窗口里编辑并保存话术后，面板列表会马上显示新内容，不再提示保存成功但仍看到旧话术 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5570">#5570</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5556">#5556</a>)</li>
+  <li>网络短暂闪断时，顶部断连提示不再反复闪烁；真正持续断线时仍会稳定提醒 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5562">#5562</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5054">#5054</a>)</li>
+  <li>从「消息提醒」跳到未分配客户会话时，会自动接待并切到正确会话，不再打开后发不出消息 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5551">#5551</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5513">#5513</a>)</li>
+  <li>转发给跨号接待的客户失败时，会明确告诉你该切到哪个接待号再转发；多选失败也会逐个点名 — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5567">#5567</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5524">#5524</a>)</li>
+  <li>双击编辑聊天标题时，输入框会回填当前完整名称，修改时也不会把 A 会话的标题误写到 B 会话 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5547">#5547</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5523">#5523</a>)</li>
+  <li>引用消息的原文很短、会话里又有重复文字时，点击引用也能定位到真正那条原文，不再跳到附近相同内容 — 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5560">#5560</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5486">#5486</a>)</li>
+  <li>Windows 剪贴板被其他程序短暂占用时，聊天框粘贴会自动重试；持续占用时给出提示，不再直接崩溃 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5535">#5535</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5379">#5379</a>)</li>
+  <li>多企业销售打开应用后，「切换企业」入口偶发消失、只能重启恢复的问题已修复 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5555">#5555</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5499">#5499</a>)</li>
+  <li>PC 添加好友窗口里的打招呼语会在退出重进后继续保留，不再丢失上次填写的内容 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5548">#5548</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5534">#5534</a>)</li>
+  <li>客户资料里的多选标签可以正常勾选并保存，不会因为点选项就把右侧客户面板关掉 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5545">#5545</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5512">#5512</a>)</li>
+  <li>在一句话中间输入 <code>@</code> 也能正常唤起选人，不会把光标右侧已有文字误当成搜索词 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5544">#5544</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5290">#5290</a>)</li>
+  <li>重输身份证后，生日会按新身份证重新带出并保存；真正手填过的生日仍不会被覆盖 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5522">#5522</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5256">#5256</a>)</li>
 </ul>
-
-<hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">07/31 10:22 上次发版后，合入 main 的全部 <strong>22</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">07/30 17:29 上次发版后，合入 main 的全部 <strong>34</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
   <li><span class="merged-at">[07/31 16:59]</span>群搜索改懒加载、解除对联系人首屏 loading 的阻塞（搜索时联系人与群聊结果不再一直转圈、更快出来） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5565">#5565</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5542">#5542</a>) <span class="author">— 陈宣宇</span></li>
   <li><span class="merged-at">[07/31 14:31]</span>新增独立聊天子窗口的窗口级会话读取链（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5543">#5543</a> <span class="author">— 王争</span></li>
   <li><span class="merged-at">[07/31 11:22]</span>close #5385 独立聊天子窗口内容区整块换成主窗口聊天视图（销售在拖出的小窗里能像主窗口一样右键消息、看等级、滚动条不再被缩放热区压住） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5537">#5537</a> <span class="author">— 王争</span></li>
   <li><span class="merged-at">[07/31 11:11]</span>客户到店状态同源展示、编辑与筛选（SPEC-YESTAR-PC-003@1.0.0） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5525">#5525</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5466">#5466</a>) <span class="author">— 陈宣宇</span></li>
+  <li><span class="merged-at">[07/31 08:19]</span>PC 群聊 @ 面板支持键盘循环选择 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5528">#5528</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5050">#5050</a>) <span class="author">— 陈聪</span></li>
 </ul>
 
 <h2>🐞 问题修复</h2>
 <ul>
+  <li><span class="merged-at">[07/31 18:39]</span>独立聊天子窗口内保存话术后面板列表不刷新（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5570">#5570</a> <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[07/31 18:18]</span>断连横幅去抖，消除 login 假成功导致的闪烁 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5562">#5562</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5054">#5054</a>) <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[07/31 17:35]</span>修复提醒跳转会话时未分配客户无法发送消息 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5551">#5551</a> <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[07/31 17:27]</span>转发跨号目标失败时给可操作提示，多选逐个点名接待号 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5567">#5567</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5524">#5524</a>) <span class="author">— 陈宣宇</span></li>
+  <li><span class="merged-at">[07/31 17:21]</span>收藏话术乐观更新，点击立即响应（销售在 PC 和手机上收藏话术时点下去立刻生效，不用停下来等） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5559">#5559</a> <span class="author">— 王争</span></li>
   <li><span class="merged-at">[07/31 16:39]</span>close #5523 PC 聊天标题编辑回填完整名称 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5547">#5547</a> <span class="author">— 陈聪</span></li>
   <li><span class="merged-at">[07/31 16:30]</span>重复短文本引用不再跳错原文 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5560">#5560</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5486">#5486</a>) <span class="author">— 梁晨</span></li>
   <li><span class="merged-at">[07/31 16:23]</span>close #5426 移动端消息时间不再遮挡相邻气泡 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5451">#5451</a> <span class="author">— 陈聪</span></li>
@@ -278,6 +287,8 @@ a:hover { text-decoration: underline; }
   <li><span class="merged-at">[07/31 11:14]</span>引用旧消息可从远端历史回填并定位 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5507">#5507</a> <span class="author">— 梁晨</span></li>
   <li><span class="merged-at">[07/31 10:32]</span>修正话术面板在独立聊天子窗口读取企业域名的来源 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5532">#5532</a> <span class="author">— 王争</span></li>
   <li><span class="merged-at">[07/31 10:22]</span>补 customer_label_page 缺失的 _onChangedText，修复移动端客户标签库整库编译失败 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5527">#5527</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5526">#5526</a>) <span class="author">— 陈宣宇</span></li>
+  <li><span class="merged-at">[07/31 10:11]</span>补回客户标签页身份证联动方法并修复 @ 面板测试编译（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5530">#5530</a> <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[07/30 23:00]</span>修复身份证重输后生日不联动 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5522">#5522</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5256">#5256</a>) <span class="author">— 陈聪</span></li>
 </ul>
 
 <h2>✨ 体验优化</h2>
@@ -287,15 +298,19 @@ a:hover { text-decoration: underline; }
 
 <h2>🔧 其他（chore / docs / test / ...）</h2>
 <ul>
+  <li><span class="merged-at">[07/31 17:58]</span>chore(release): 归档安卓 2026073101 发版说明（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5571">#5571</a> <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[07/31 17:56]</span>chore(gate): debugPrint 门禁前移写入点 + 首批清理 debug 工具存量 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5558">#5558</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5518">#5518</a>) <span class="author">— 王梓先</span></li>
   <li><span class="merged-at">[07/31 15:17]</span>chore(android): 固化 Flutter migrator 写入的 AGP 9 兼容 flag（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5447">#5447</a> <span class="author">— 王梓先</span></li>
   <li><span class="merged-at">[07/31 14:36]</span>test(chat): close #5358 修掉被误当失败的 ProviderException 噪音栈，并补回 by-id 人设自愈的零覆盖分支（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5552">#5552</a> <span class="author">— 张拓</span></li>
+  <li><span class="merged-at">[07/30 18:34]</span>chore(release): 归档安卓 2026073002 发版说明（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5521">#5521</a> <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[07/30 17:51]</span>docs(release): archive 2026073002 notes <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5519">#5519</a> <span class="author">— 王梓先</span></li>
 </ul>
 
 
 <hr class="ref-divider">
 
 <div class="foot">
-上一次发版时间：<span class="bump-time">07/31 10:22</span>（基线 commit：<code>chore(release): bump Windows build 2026073101</code>；客户端已可见，发版分支 <code>origin/chore/release-pc-2026073101</code> 尚未并回 main）<br>
+上一次发版时间：<span class="bump-time">07/30 17:29</span>（基线 commit：<code>chore(release): bump Windows build 2026073002 (#5517)</code>）<br>
 PR 归属版本由 <code>pubspec.yaml</code> 的 <code>version:</code> 行 git 历史判定 —— bump commit 的 committedAt 是分割线。<br>
 由 <code>tool/generate_release_preview.dart</code> 自动提取；重新跑脚本后刷新页面即拿最新。<br>
 issue 链接基于 PetWebOrg/flutter-suiyin 仓。

@@ -226,37 +226,37 @@ a:hover { text-decoration: underline; }
 <h1>📦 2026080404 发版预览</h1>
 <div class="meta">
 当前版本：<code>2026080403</code>（发版时间：<span class="bump-time">08/04 21:14</span>），下一版（预览）：<code>2026080404</code><br>
-生成时间：2026-08-05 16:58:20 · 重新跑脚本后刷新页面即拿最新
+生成时间：2026-08-05 17:47:39 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
-<h3>🆕 新功能</h3>
+<h2>🆕 新功能</h2>
 <ul>
-  <li>录音 AI 分析详情新增「重新分析」按钮，主管模板或词库更新后，不用重新上传录音就能重新生成分析报告。— 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5767">#5767</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5754">#5754</a>)</li>
-  <li>群发记录表格新增「删除数」，能直接看到好友被删除导致的失败人数；各状态任务的「导出」入口也统一放到操作列末尾。— 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5745">#5745</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5736">#5736</a>)</li>
-  <li>朋友圈「我的」列表新增状态筛选，可以按待发布、发布中、已发布、失败、已取消快速查看对应内容。— 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5730">#5730</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5569">#5569</a>)</li>
+  <li>录音 AI 分析详情新增「重新分析」按钮，主管模板或词库更新后，不用重新上传录音就能重新生成分析报告。— 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5767">#5767</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5754">#5754</a>)</li>
+  <li>群发记录表格新增「删除数」，能直接看到好友被删除导致的失败人数；各状态任务的「导出」入口也统一放到操作列末尾。— 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5745">#5745</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5736">#5736</a>)</li>
+  <li>朋友圈「我的」列表新增状态筛选，可以按待发布、发布中、已发布、失败、已取消快速查看对应内容。— 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5730">#5730</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5569">#5569</a>)</li>
 </ul>
-
-<h3>✨ 体验优化</h3>
+<h2>✨ 体验优化</h2>
 <ul>
-  <li>主管查看咨询录音转写时，会优先显示已纠错的医美术语；没有纠错结果时仍正常显示原转写，不会空白。— 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5739">#5739</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5721">#5721</a>)</li>
-  <li>批量发送图片或视频时，压缩任务会自动排队并优先处理图片，避免多个大文件互相抢资源导致发送卡在几分钟。— 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5731">#5731</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5381">#5381</a>)</li>
+  <li>主管查看咨询录音转写时，会优先显示已纠错的医美术语；没有纠错结果时仍正常显示原转写，不会空白。— 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5739">#5739</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5721">#5721</a>)</li>
+  <li>批量发送图片或视频时，压缩任务会自动排队并优先处理图片，避免多个大文件互相抢资源导致发送卡在几分钟。— 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5731">#5731</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5381">#5381</a>)</li>
 </ul>
-
-<h3>🐞 问题修复</h3>
+<h2>🐞 问题修复</h2>
 <ul>
-  <li>录音功能的麦克风列表不再因为某个设备异常就整体拿不到；反复开始、停止、销毁录音时也不再容易卡住界面。— 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5753">#5753</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5751">#5751</a>)</li>
-  <li>发送较大的视频时，会先压缩到更适合聊天和朋友圈发送的大小；压缩失败或仍超限时会给出明确提示，也可以正常取消。— 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5682">#5682</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5670">#5670</a>)</li>
-  <li>「未回」筛选现在按最后一条消息是否需要销售回复来判断：离线期间收到的消息、点开看过但还没回的会话都不会漏掉。— 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5752">#5752</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5615">#5615</a>)</li>
-  <li>消息发送失败后点击「重发」，如果仍然超时会恢复成可重试的失败状态，不再一直转圈或误导重复发送。— 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5649">#5649</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5620">#5620</a>)</li>
-  <li>切换租户或退出登录后，再进入聊天使用录音功能不再闪退。— 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5697">#5697</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5672">#5672</a>)</li>
-  <li>从切企业入口回到登录页时，会自动选中刚才要切换的企业，不再被初始化流程覆盖成未选中。— 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5724">#5724</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5126">#5126</a>)</li>
-  <li>客户信息栏里的「预约管理」加载失败时，现在会立刻显示失败原因和「重试」按钮，不再长时间转圈。— 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5700">#5700</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5689">#5689</a>)</li>
+  <li>子窗口右上角的置顶、最小化、最大化、关闭按钮现在有悬停高亮和完整点击热区，关闭独立聊天窗口不再需要反复点。— 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5744">#5744</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5728">#5728</a>)</li>
+  <li>从 PC 聊天输入区粘贴图片或发送视频时，压缩、上传和发送回执会连续显示进度；失败后恢复可重试状态，不再让人误以为没发出去而重复点击。— 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5769">#5769</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5711">#5711</a>)</li>
+  <li>录音功能的麦克风列表不再因为某个设备异常就整体拿不到；反复开始、停止、销毁录音时也不再容易卡住界面。— 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5753">#5753</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5751">#5751</a>)</li>
+  <li>发送较大的视频时，会先压缩到更适合聊天和朋友圈发送的大小；压缩失败或仍超限时会给出明确提示，也可以正常取消。— 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5682">#5682</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5670">#5670</a>)</li>
+  <li>「未回」筛选现在按最后一条消息是否需要销售回复来判断：离线期间收到的消息、点开看过但还没回的会话都不会漏掉。— 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5752">#5752</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5615">#5615</a>)</li>
+  <li>消息发送失败后点击「重发」，如果仍然超时会恢复成可重试的失败状态，不再一直转圈或误导重复发送。— 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5649">#5649</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5620">#5620</a>)</li>
+  <li>切换租户或退出登录后，再进入聊天使用录音功能不再闪退。— 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5697">#5697</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5672">#5672</a>)</li>
+  <li>从切企业入口回到登录页时，会自动选中刚才要切换的企业，不再被初始化流程覆盖成未选中。— 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5724">#5724</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5126">#5126</a>)</li>
+  <li>客户信息栏里的「预约管理」加载失败时，现在会立刻显示失败原因和「重试」按钮，不再长时间转圈。— 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5700">#5700</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5689">#5689</a>)</li>
 </ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">08/04 21:14 上次发版后，合入 main 的全部 <strong>27</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">08/04 21:14 上次发版后，合入 main 的全部 <strong>32</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
   <li><span class="merged-at">[08/05 16:51]</span>AI分析详情弹窗新增「重新分析」按钮（主管模板/词库更新后不用重传录音即可重出分析报告） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5767">#5767</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5754">#5754</a>) <span class="author">— 陈宣宇</span></li>
@@ -268,6 +268,10 @@ a:hover { text-decoration: underline; }
 
 <h2>🐞 问题修复</h2>
 <ul>
+  <li><span class="merged-at">[08/05 17:37]</span>hook 预筛归一化 Windows 反斜杠路径 + DR-072 提醒去 jq 依赖（Windows 上写违规代码当回合就被拦住，不再静默放行） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5747">#5747</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5740">#5740</a>) <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[08/05 17:25]</span>修复子窗口标题栏关闭/最小化按钮点击热区过小且缺 hover（子窗口关闭按钮点一次就关，不用反复点） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5744">#5744</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5728">#5728</a>) <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[08/05 17:23]</span>修复 video registration 聚合用例缺 main 宿主，解除 phase3 入口图审计 fail-closed（卡死全员 planner） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5776">#5776</a> <span class="author">— 陈宣宇</span></li>
+  <li><span class="merged-at">[08/05 17:21]</span>close #5711 修复图片和视频发送反馈 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5769">#5769</a> <span class="author">— 梁晨</span></li>
   <li><span class="merged-at">[08/05 15:53]</span>录音插件设备枚举与主线程回调分发 4 处缺陷（麦克风列表不再因单个设备异常而整体拿不到） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5753">#5753</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5751">#5751</a>) <span class="author">— 王争</span></li>
   <li><span class="merged-at">[08/05 14:27]</span>完善 #5670 大视频压缩与 CDN fallback <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5682">#5682</a> <span class="author">— 梁晨</span></li>
   <li><span class="merged-at">[08/05 14:22]</span>chat_dual_host_message_render runner 改独立 stem，修 phase3_verify_plan 在 main 上全员失败（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5756">#5756</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5750">#5750</a>) <span class="author">— 王梓先</span></li>
@@ -291,6 +295,7 @@ a:hover { text-decoration: underline; }
 
 <h2>🔧 其他（chore / docs / test / ...）</h2>
 <ul>
+  <li><span class="merged-at">[08/05 17:10]</span>docs(e2e): ROADMAP v2.4 人设对方案解锁入站断言（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5774">#5774</a> <span class="author">— 王梓先</span></li>
   <li><span class="merged-at">[08/05 15:47]</span>docs(e2e): 看板搬家至 GitHub Project，STATUS.md 改指针（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5763">#5763</a> <span class="author">— 王梓先</span></li>
   <li><span class="merged-at">[08/05 15:29]</span>docs(e2e): 看板补录王争已声明的认领（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5760">#5760</a> <span class="author">— 王梓先</span></li>
   <li><span class="merged-at">[08/05 15:27]</span>docs(e2e): claim X1 B1 C2 journeys <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5673">#5673</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5645">#5645</a>) <span class="author">— 陈聪</span></li>

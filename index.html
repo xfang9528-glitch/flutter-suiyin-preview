@@ -227,7 +227,7 @@ a:hover { text-decoration: underline; }
 <h1>📦 2026080502 发版预览</h1>
 <div class="meta">
 当前版本：<code>2026080501</code>（发版时间：<span class="bump-time">08/05 17:37</span>），下一版（预览）：<code>2026080502</code><br>
-生成时间：2026-08-06 15:17:54 · 重新跑脚本后刷新页面即拿最新
+生成时间：2026-08-06 17:09:14 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
@@ -238,6 +238,9 @@ a:hover { text-decoration: underline; }
 
 <h3>🐞 问题修复</h3>
 <ul>
+  <li>连续打开多张图片预览、同时使用独立聊天窗口时，预览缓存不再被写坏；已损坏的缓存会自动重建，不再导致预览窗口闪退。— 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5829">#5829</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5789">#5789</a>)</li>
+  <li>切换企业或账号后，渠道分组、需求等级选项和分配状态会按当前身份重新读取，不再串到上一个身份的数据。— 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5815">#5815</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5704">#5704</a>)</li>
+  <li>新增预约时如果配置加载失败，会立即显示失败原因并提供「重试」，不再长时间停在转圈界面。— 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5785">#5785</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5729">#5729</a>)</li>
   <li>强制升级现在不会再被之前点过的「稍后」拦住；安装失败时弹窗会留在原地，方便继续手动升级。— 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5770">#5770</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5566">#5566</a>)</li>
   <li>消息长时间收不到投递结果时，会明确变成发送失败并显示重试入口，不再一直停在发送中。— 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5782">#5782</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5759">#5759</a>)</li>
   <li>手动录入购买记录时，如果订单号已经存在，会明确提示重复并保留已填写内容，方便核对后处理。— 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5768">#5768</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5603">#5603</a>)</li>
@@ -251,9 +254,10 @@ a:hover { text-decoration: underline; }
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">08/05 17:37 上次发版后，合入 main 的全部 <strong>23</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">08/05 17:37 上次发版后，合入 main 的全部 <strong>30</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
+  <li><span class="merged-at">[08/06 16:57]</span>SP key 按账号 scope 收口，切企业不再串读全局键 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5815">#5815</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5704">#5704</a>) <span class="author">— 王梓先</span></li>
   <li><span class="merged-at">[08/06 11:00]</span>陌生码结果弹窗提供手动指定核销/登录验证入口（销售可自行选择按核销或按登录验证处理扫到的陌生码） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5810">#5810</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5773">#5773</a>) <span class="author">— 王争</span></li>
   <li><span class="merged-at">[08/06 09:54]</span>扫一扫统一自动识别二维码类型并分流到加好友/扫码验证/核销（销售扫任意码不用先分辨类型） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5758">#5758</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5714">#5714</a>) <span class="author">— 王争</span></li>
   <li><span class="merged-at">[08/06 09:54]</span>新增 AppPaths 统一落盘入口与双 scope 模型 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5787">#5787</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5703">#5703</a>) <span class="author">— 王梓先</span></li>
@@ -261,6 +265,9 @@ a:hover { text-decoration: underline; }
 
 <h2>🐞 问题修复</h2>
 <ul>
+  <li><span class="merged-at">[08/06 17:05]</span>close #5789 多子窗口并发预览不再写坏媒体缓存索引 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5829">#5829</a> <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[08/06 15:59]</span>返回扫一扫后同一张码不再自动重走上一条链路（销售能看完错误原因再改试） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5816">#5816</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5813">#5813</a>) <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[08/06 15:19]</span>新增预约配置失败立即显示原因并支持重试 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5785">#5785</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5729">#5729</a>) <span class="author">— 王争</span></li>
   <li><span class="merged-at">[08/06 15:08]</span>close #5735 修复跨平台 Claude hooks <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5746">#5746</a> <span class="author">— 陈聪</span></li>
   <li><span class="merged-at">[08/06 15:03]</span>iOS 注册角标 channel + 回前台强制重算（销售把消息读完后桌面图标未读数字会跟着消失） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5772">#5772</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5683">#5683</a>) <span class="author">— 王争</span></li>
   <li><span class="merged-at">[08/06 14:16]</span>强更线已置位但老用户卡旧版——defer 短路缺强更豁免 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5770">#5770</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5566">#5566</a>) <span class="author">— 王梓先</span></li>
@@ -283,6 +290,9 @@ a:hover { text-decoration: underline; }
 
 <h2>🔧 其他（chore / docs / test / ...）</h2>
 <ul>
+  <li><span class="merged-at">[08/06 16:02]</span>tech-debt: close #5417 收紧企业主题样式来源门禁 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5820">#5820</a> <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[08/06 15:42]</span>test(e2e): B2 会话列表渲染忠实与收敛后限定范围相等用例 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5824">#5824</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5822">#5822</a>) <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[08/06 15:21]</span>test(e2e): cover search-to-chat composite landing <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5681">#5681</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5676">#5676</a>) <span class="author">— 陈聪</span></li>
   <li><span class="merged-at">[08/06 10:34]</span>test: close #5765 增加真实入口图回归守卫 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5809">#5809</a> <span class="author">— 陈聪</span></li>
   <li><span class="merged-at">[08/06 10:05]</span>docs(e2e): oracle 三补——不一致是线索/排序双维度/复刻企业参数（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5805">#5805</a> <span class="author">— 王梓先</span></li>
   <li><span class="merged-at">[08/06 10:02]</span>docs(e2e): 收敛后断言升级为限定范围相等（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5804">#5804</a> <span class="author">— 王梓先</span></li>

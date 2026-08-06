@@ -227,26 +227,31 @@ a:hover { text-decoration: underline; }
 <h1>📦 2026080502 发版预览</h1>
 <div class="meta">
 当前版本：<code>2026080501</code>（发版时间：<span class="bump-time">08/05 17:37</span>），下一版（预览）：<code>2026080502</code><br>
-生成时间：2026-08-05 23:09:19 · 重新跑脚本后刷新页面即拿最新
+生成时间：2026-08-06 10:34:44 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
 <h3>🐞 问题修复</h3>
 <ul>
+  <li>清理缓存时，图片和视频缓存现在会被正确统计并删除，释放空间后页面显示的占用大小会同步刷新。— 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5801">#5801</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5434">#5434</a>)</li>
+  <li>AI 分析详情浮窗里点「重新分析」时，确认框现在能正常点到；分析跑完后报告会自动刷新，不需要退出重进。— 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5786">#5786</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5754">#5754</a>)</li>
   <li>Windows 从资源管理器拖图片到聊天输入框后，应用不再卡死；图片会正常进入待发送区，不需要再右键托盘才能恢复。— 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5771">#5771</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5749">#5749</a>)</li>
 </ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">08/05 17:37 上次发版后，合入 main 的全部 <strong>3</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">08/05 17:37 上次发版后，合入 main 的全部 <strong>11</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
-  <li class="empty">无</li>
+  <li><span class="merged-at">[08/06 09:54]</span>扫一扫统一自动识别二维码类型并分流到加好友/扫码验证/核销（销售扫任意码不用先分辨类型） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5758">#5758</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5714">#5714</a>) <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[08/06 09:54]</span>新增 AppPaths 统一落盘入口与双 scope 模型 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5787">#5787</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5703">#5703</a>) <span class="author">— 王梓先</span></li>
 </ul>
 
 <h2>🐞 问题修复</h2>
 <ul>
-  <li><span class="merged-at">[08/05 17:53]</span>close #5749 Windows 拖图片进聊天输入框不再卡死 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5771">#5771</a> <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[08/06 09:46]</span>close #5434 repair media cache cleanup <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5801">#5801</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5434">#5434</a>) <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[08/06 09:41]</span>AI详情浮窗内「重新分析」确认框点得动 + 报告跑完自动刷新（无需退出重进） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5786">#5786</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5754">#5754</a>) <span class="author">— 陈宣宇</span></li>
+  <li><span class="merged-at">[08/05 17:53]</span>close #5749 Windows 拖图片进聊天输入框不再卡死 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5771">#5771</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5749">#5749</a>) <span class="author">— 陈聪</span></li>
 </ul>
 
 <h2>✨ 体验优化</h2>
@@ -256,6 +261,10 @@ a:hover { text-decoration: underline; }
 
 <h2>🔧 其他（chore / docs / test / ...）</h2>
 <ul>
+  <li><span class="merged-at">[08/06 10:05]</span>docs(e2e): oracle 三补——不一致是线索/排序双维度/复刻企业参数（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5805">#5805</a> <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[08/06 10:02]</span>docs(e2e): 收敛后断言升级为限定范围相等（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5804">#5804</a> <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[08/06 10:01]</span>chore(infra): 忽略 media_kit_video 的 pod 构建产物，防止再被误提交（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5802">#5802</a> <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[08/06 09:59]</span>docs(e2e): 差分对照物分层原则（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5803">#5803</a> <span class="author">— 王梓先</span></li>
   <li><span class="merged-at">[08/05 19:02]</span>test(e2e): C3 消息类型渲染冒烟——duty→发起聊天→渲染扫描全链路，5×绿 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5783">#5783</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5775">#5775</a>) <span class="author">— 王梓先</span></li>
   <li><span class="merged-at">[08/05 18:13]</span>docs(sdd): SDD 规格层 + SPEC-INFRA-STORAGE 存储治理总纲与宪法条款 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5764">#5764</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5702">#5702</a>) <span class="author">— 王梓先</span></li>
 </ul>

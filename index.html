@@ -229,13 +229,12 @@ a:hover { text-decoration: underline; }
 <h1>📦 2026080702 发版预览</h1>
 <div class="meta">
 当前版本：<code>2026080701</code>（发版时间：<span class="bump-time">08/07 17:11</span>），下一版（预览）：<code>2026080702</code><br>
-生成时间：2026-08-08 23:11:38 · 重新跑脚本后刷新页面即拿最新
+生成时间：2026-08-09 12:48:47 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
-<h3>🐞 问题修复</h3>
+<h2>🐞 问题修复</h2>
 <ul>
-  <li>同时打开多个图片预览或独立聊天窗口查看图片、视频时，已缓存的媒体不会再被其他窗口覆盖记录，后续打开不再因此重复下载。— kitesky <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5891">#5891</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5890">#5890</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5849">#5849</a>)</li>
   <li>切换通讯录、聊天页或账号后，正在接待的群聊不会再被隐藏筛选条件挡住，可以直接在会话列表里继续打开。— 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5869">#5869</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5573">#5573</a>)</li>
   <li>从聊天搜索打开非本人接待客户时，加载弹窗不会再残留遮挡页面，可以正常进入通讯录并发起聊天。— 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5889">#5889</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5404">#5404</a>)</li>
   <li>聊天记录搜索的日期筛选弹层在窗口较矮或系统文字放大时，也能完整看到「取消」和「确定」按钮。— 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5864">#5864</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5825">#5825</a>)</li>
@@ -256,12 +255,12 @@ a:hover { text-decoration: underline; }
 <ul>
   <li><span class="merged-at">[08/07 21:27]</span>complete bounded-lock review hardening <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5891">#5891</a> <span class="author">— 王争</span></li>
   <li><span class="merged-at">[08/07 20:32]</span>harden lock timeout fallback <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5890">#5890</a> <span class="author">— 王争</span></li>
-  <li><span class="merged-at">[08/07 19:59]</span>close #5573 prevent hidden work filters from hiding chats <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5869">#5869</a> <span class="author">— 张拓</span></li>
+  <li><span class="merged-at">[08/07 19:59]</span>close #5573 prevent hidden work filters from hiding chats <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5869">#5869</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5573">#5573</a>) <span class="author">— 张拓</span></li>
   <li><span class="merged-at">[08/07 19:49]</span>修复搜索打开客户时 loading 弹窗残留 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5889">#5889</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5404">#5404</a>) <span class="author">— 张拓</span></li>
-  <li><span class="merged-at">[08/07 19:40]</span>修复聊天搜索日期筛选浮层底部溢出（PC 销售能完整看到取消和确定按钮） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5864">#5864</a> <span class="author">— 王争</span></li>
-  <li><span class="merged-at">[08/07 19:13]</span>close #5625 置顶超时展示可读中文提示 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5868">#5868</a> <span class="author">— 张拓</span></li>
+  <li><span class="merged-at">[08/07 19:40]</span>修复聊天搜索日期筛选浮层底部溢出（PC 销售能完整看到取消和确定按钮） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5864">#5864</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5825">#5825</a>) <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[08/07 19:13]</span>close #5625 置顶超时展示可读中文提示 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5868">#5868</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5625">#5625</a>) <span class="author">— 张拓</span></li>
   <li><span class="merged-at">[08/07 18:24]</span>recover empty message windows <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5879">#5879</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5646">#5646</a>) <span class="author">— 张拓</span></li>
-  <li><span class="merged-at">[08/07 18:11]</span>关闭人设不触发下班交班 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5880">#5880</a> <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[08/07 18:11]</span>关闭人设不触发下班交班 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5880">#5880</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5874">#5874</a>) <span class="author">— 陈聪</span></li>
 </ul>
 
 <h2>✨ 体验优化</h2>

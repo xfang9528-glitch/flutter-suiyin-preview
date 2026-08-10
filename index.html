@@ -229,24 +229,41 @@ a:hover { text-decoration: underline; }
 </script>
 <h1>📦 2026080902 发版预览</h1>
 <div class="meta">
-当前版本：<code>2026080901</code>（发版时间：<span class="bump-time">08/09 16:35</span>），下一版（预览）：<code>2026080902</code><br>
-生成时间：2026-08-10 10:33:53 · 重新跑脚本后刷新页面即拿最新
+当前版本：<code>2026080901</code>（发版时间：<span class="bump-time">08/07 21:27</span>），下一版（预览）：<code>2026080902</code><br>
+生成时间：2026-08-10 14:45:19 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
-<div class="notice">本期暂无新的 PC 端用户感知更新。</div>
+<h3>🆕 新功能</h3>
+<ul>
+  <li>朋友圈互动通知现在拆成「点赞」和「评论」两个入口：销售可以分开查看，点开点赞不会把评论提醒一起清掉。— 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5835">#5835</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5742">#5742</a>)</li>
+</ul>
+<h3>🐞 问题修复</h3>
+<ul>
+  <li>点「清理缓存」现在会完整清掉图片、视频、临时文件和安装包缓存；存储页显示的占用也会更接近实际，不再出现清了但空间没降的情况。— 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5916">#5916</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5706">#5706</a>)</li>
+  <li>人设需要重新登录或二次验证时，提示文案已改成当前可用的「手机 APP 扫一扫」步骤，不再显示已经下线的旧入口。— 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5917">#5917</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5900">#5900</a>)</li>
+  <li>主窗口缩到较窄时，会话头部不再出现红色溢出警告；复制、刷新和更多操作仍能正常使用。— 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5895">#5895</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5799">#5799</a>)</li>
+  <li>转发消息时，搜索结果会按当前可接待的人设范围展示；选择目标后会保留你选中的客户和人设，不再被来源会话的人设覆盖。— 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5855">#5855</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5807">#5807</a>)</li>
+</ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">08/09 16:35 上次发版后，合入 main 的全部 <strong>1</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">08/07 21:27 上次发版后，合入 main 的全部 <strong>11</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
-  <li class="empty">无</li>
+  <li><span class="merged-at">[08/10 10:56]</span>朋友圈互动通知拆成点赞/评论两个入口（销售可以分开查看，看点赞不会把评论提醒一起消掉） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5835">#5835</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5742">#5742</a>) <span class="author">— 王争</span></li>
 </ul>
 
 <h2>🐞 问题修复</h2>
 <ul>
-  <li class="empty">无</li>
+  <li><span class="merged-at">[08/10 14:42]</span>清理缓存覆盖全部缓存目录并补齐存储统计缺失的临时目录（销售点清理后占用真正下降，存储页显示的占用不再小于实际） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5916">#5916</a> <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[08/10 14:40]</span>close #5900 修正人设重登二次验证指引 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5917">#5917</a> <span class="author">— 梁晨</span></li>
+  <li><span class="merged-at">[08/10 14:10]</span>Windows 产物门禁按 generated_plugins.cmake 校验全部插件 DLL <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5893">#5893</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5885">#5885</a>) <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[08/10 14:10]</span>取消分配后退出移动端聊天页 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5856">#5856</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5806">#5806</a>) <span class="author">— 梁晨</span></li>
+  <li><span class="merged-at">[08/10 13:28]</span>add privacy-safe IME stall diagnostics <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5908">#5908</a> <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[08/10 12:47]</span>#5798 补齐 iOS 首页卡顿归因上下文 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5904">#5904</a> <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[08/10 11:46]</span>close #5799 修复窄窗口会话头部溢出 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5895">#5895</a> <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[08/10 11:17]</span>close #5807 转发按有效接待范围搜索并保留选中人设 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5855">#5855</a> <span class="author">— 梁晨</span></li>
 </ul>
 
 <h2>✨ 体验优化</h2>
@@ -256,6 +273,7 @@ a:hover { text-decoration: underline; }
 
 <h2>🔧 其他（chore / docs / test / ...）</h2>
 <ul>
+  <li><span class="merged-at">[08/10 14:32]</span>test(e2e): cover C2 chat history switch dedup <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5906">#5906</a> <span class="author">— 陈聪</span></li>
   <li><span class="merged-at">[08/10 10:07]</span>test(chat): close #5576 固化程序化输入按钮状态 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5667">#5667</a> <span class="author">— 陈聪</span></li>
 </ul>
 
@@ -263,7 +281,7 @@ a:hover { text-decoration: underline; }
 <hr class="ref-divider">
 
 <div class="foot">
-上一次发版时间：<span class="bump-time">08/09 16:35</span>（基线 commit：<code>PC baseline override 2026080901: fix(cache): harden bounded lock fallback (#5849) (#5891)</code>）<br>
+上一次发版时间：<span class="bump-time">08/07 21:27</span>（基线 commit：<code>PC baseline override 2026080901: fix(cache): harden bounded lock fallback (#5849) (#5891)</code>）<br>
 PR 归属版本由 <code>pubspec.yaml</code> 的 <code>version:</code> 行 git 历史判定 —— bump commit 的 committedAt 是分割线。<br>
 由 <code>tool/generate_release_preview.dart</code> 自动提取；重新跑脚本后刷新页面即拿最新。<br>
 issue 链接基于 PetWebOrg/flutter-suiyin 仓。

@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
-<!-- CURRENT_BUILD:2026080701 -->
+<!-- CURRENT_BUILD:2026081001 -->
 <title>下一版发版预览 · flutter-suiyin</title>
 <style>
 :root {
@@ -229,63 +229,82 @@ a:hover { text-decoration: underline; }
   }
 })();
 </script>
-<h1>📦 2026080702 发版预览</h1>
+<h1>📦 2026081101 发版预览</h1>
 <div class="meta">
-当前版本：<code>2026080701</code>（发版时间：<span class="bump-time">08/07 17:11</span>），下一版（预览）：<code>2026080702</code><br>
-生成时间：2026-08-09 12:48:47 · 重新跑脚本后刷新页面即拿最新
+当前版本：<code>2026081001</code>（发版时间：<span class="bump-time">08/10 16:45</span>），下一版（预览）：<code>2026081101</code><br>
+生成时间：2026-08-11 17:00:50 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
-<h2>🐞 问题修复</h2>
-<ul>
-  <li>切换通讯录、聊天页或账号后，正在接待的群聊不会再被隐藏筛选条件挡住，可以直接在会话列表里继续打开。— 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5869">#5869</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5573">#5573</a>)</li>
-  <li>从聊天搜索打开非本人接待客户时，加载弹窗不会再残留遮挡页面，可以正常进入通讯录并发起聊天。— 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5889">#5889</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5404">#5404</a>)</li>
-  <li>聊天记录搜索的日期筛选弹层在窗口较矮或系统文字放大时，也能完整看到「取消」和「确定」按钮。— 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5864">#5864</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5825">#5825</a>)</li>
-  <li>置顶失败时会显示可读的中文提示，开关也会自动回到正确状态，方便直接重试。— 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5868">#5868</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5625">#5625</a>)</li>
-  <li>打开已有聊天记录的会话时，消息区不会再误显示为空；如果本地加载失败，会显示可重试入口。— 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5879">#5879</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5646">#5646</a>)</li>
-  <li>在 PC 首页关闭某个可接待人设时，不会再误触发下班交班流程。— 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5880">#5880</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5874">#5874</a>)</li>
-</ul>
-
-<hr class="ref-divider">
-<h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">08/07 17:11 上次发版后，合入 main 的全部 <strong>15</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
-  <li class="empty">无</li>
-</ul>
-
-<h2>🐞 问题修复</h2>
-<ul>
-  <li><span class="merged-at">[08/07 21:27]</span>complete bounded-lock review hardening <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5891">#5891</a> <span class="author">— 王争</span></li>
-  <li><span class="merged-at">[08/07 20:32]</span>harden lock timeout fallback <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5890">#5890</a> <span class="author">— 王争</span></li>
-  <li><span class="merged-at">[08/07 19:59]</span>close #5573 prevent hidden work filters from hiding chats <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5869">#5869</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5573">#5573</a>) <span class="author">— 张拓</span></li>
-  <li><span class="merged-at">[08/07 19:49]</span>修复搜索打开客户时 loading 弹窗残留 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5889">#5889</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5404">#5404</a>) <span class="author">— 张拓</span></li>
-  <li><span class="merged-at">[08/07 19:40]</span>修复聊天搜索日期筛选浮层底部溢出（PC 销售能完整看到取消和确定按钮） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5864">#5864</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5825">#5825</a>) <span class="author">— 王争</span></li>
-  <li><span class="merged-at">[08/07 19:13]</span>close #5625 置顶超时展示可读中文提示 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5868">#5868</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5625">#5625</a>) <span class="author">— 张拓</span></li>
-  <li><span class="merged-at">[08/07 18:24]</span>recover empty message windows <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5879">#5879</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5646">#5646</a>) <span class="author">— 张拓</span></li>
-  <li><span class="merged-at">[08/07 18:11]</span>关闭人设不触发下班交班 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5880">#5880</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5874">#5874</a>) <span class="author">— 陈聪</span></li>
+  <li>杭州艺星 PC 端在好友资料和群内好友资料里新增“把他推荐给朋友”，可选择同人设好友发送名片推荐。— 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5959">#5959</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5923">#5923</a>)</li>
+  <li>客户资料里的头像现在可以点击放大预览，看不清头像时无需再跳到其他页面。— 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5937">#5937</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5928">#5928</a>)</li>
+  <li>视频压缩、升级安装包等临时文件会在下次启动时自动清理，长期使用不再持续占用电脑磁盘空间。— 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5943">#5943</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5707">#5707</a>)</li>
 </ul>
 
 <h2>✨ 体验优化</h2>
 <ul>
-  <li><span class="merged-at">[08/07 17:33]</span>decouple mobile contacts capabilities <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5881">#5881</a> <span class="author">— 陈聪</span></li>
+  <li>从会话列表拖出独立聊天窗口时，整张会话卡片都能起拖，首拖、快速拖和连续拖的响应更稳定。— 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5963">#5963</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5967">#5967</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5926">#5926</a>)</li>
+  <li>拖出独立聊天窗口后会立刻显示“正在打开”，打开失败时可直接重试并提供取证码，不再像点了没反应。— 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5939">#5939</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5927">#5927</a>)</li>
+</ul>
+
+<h2>🐞 问题修复</h2>
+<ul>
+  <li>AI 分析面板切换客户或关闭后，旧模板弹层不会再把内容写到另一个客户上，也不会引发面板异常。— 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5983">#5983</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5976">#5976</a>)</li>
+  <li>“新的朋友”列表的状态、人设、日期筛选改为服务端实时筛选，不同销售看到的筛选结果不再因为本地缓存页数不同而不一致。— 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5974">#5974</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5931">#5931</a>)</li>
+  <li>从搜索结果打开客户时，聊天顶部的客户等级会立即刷新，不用重新发起聊天才能看到最新等级。— 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5968">#5968</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5936">#5936</a>)</li>
+  <li>快速切换聊天、切换布局或恢复阅读位置时，聊天窗口不再因为滚动位置交接而崩溃，消息定位也更稳定。— 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5947">#5947</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5796">#5796</a>)</li>
+  <li>断线重连后，已经收到过的同一条消息不再重复弹系统通知，避免旧消息被当成新消息反复提醒。— 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5945">#5945</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5854">#5854</a>)</li>
+  <li>反复打开预览、聊天搜索、独立聊天、合并转发和朋友圈子窗口时，客户端不再因为跨窗口拖拽或关闭竞态而整体闪退。— 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5919">#5919</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5897">#5897</a>)</li>
+</ul>
+
+<hr class="ref-divider">
+<h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
+<div class="ref-hint">08/10 16:45 上次发版后，合入 main 的全部 <strong>22</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<h2>🆕 新功能</h2>
+<ul>
+  <li><span class="merged-at">[08/11 13:37]</span>close #5923 杭州艺星 PC 支持好友名片推荐 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5959">#5959</a> <span class="author">— 陈宣宇</span></li>
+  <li><span class="merged-at">[08/11 11:19]</span>preview customer avatar from PC info <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5937">#5937</a> <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[08/10 19:36]</span>临时文件按运行会话归属，启动时自动回收上次遗留（销售无需手动清理，长期使用不再持续占用磁盘） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5943">#5943</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5707">#5707</a>) <span class="author">— 王梓先</span></li>
+</ul>
+
+<h2>🐞 问题修复</h2>
+<ul>
+  <li><span class="merged-at">[08/11 16:35]</span>close #5976 修复 PC AI 模板弹层生命周期 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5983">#5983</a> <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[08/11 16:30]</span>新的朋友列表改为服务端筛选 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5974">#5974</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5931">#5931</a>) <span class="author">— 梁晨</span></li>
+  <li><span class="merged-at">[08/11 15:40]</span>close #5936 搜索打开客户后刷新顶部等级 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5968">#5968</a> <span class="author">— 梁晨</span></li>
+  <li><span class="merged-at">[08/11 13:33]</span>close #5796 修复聊天滚动与阅读锚点崩溃 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5947">#5947</a> <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[08/11 12:32]</span>补齐 #5963 独立聊天拖拽审查缺口 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5967">#5967</a> <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[08/11 11:37]</span>close #5926 修复独立聊天窗口拖拽不灵敏 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5963">#5963</a> <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[08/11 11:05]</span>增加独立窗口打开反馈 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5939">#5939</a> <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[08/10 21:00]</span>close #5854 重投消息不再重复弹系统通知 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5945">#5945</a> <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[08/10 17:14]</span>close #5897 修复 Windows 子窗口原生生命周期崩溃 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5919">#5919</a> <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[08/10 17:12]</span>发版前 fail-closed 上传 Sentry 原生符号 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5933">#5933</a> <span class="author">— 王争</span></li>
+</ul>
+
+<h2>✨ 体验优化</h2>
+<ul>
+  <li><span class="merged-at">[08/11 16:28]</span>unify video compression entrypoint <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5195">#5195</a> <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[08/11 07:06]</span>ObjectBox 目录接入统一存储入口，撤回换手机号与目录迁移（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5948">#5948</a> <span class="author">— 王梓先</span></li>
 </ul>
 
 <h2>🔧 其他（chore / docs / test / ...）</h2>
 <ul>
-  <li><span class="merged-at">[08/07 20:05]</span>docs(sdd): 项目宪法接进 Phase 1 硬门禁与 subagent 缺口表（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5887">#5887</a> <span class="author">— 张拓</span></li>
-  <li><span class="merged-at">[08/07 19:19]</span>chore(e2e): 新增发版前 E2E 一键通测入口脚本 e2e_release_check <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5882">#5882</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5015">#5015</a>) <span class="author">— 王梓先</span></li>
-  <li><span class="merged-at">[08/07 18:54]</span>chore(release): 重置 next-mobile.md 为空模板，防旧条目重复发给用户（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5888">#5888</a> <span class="author">— 王梓先</span></li>
-  <li><span class="merged-at">[08/07 18:45]</span>ci(release-pc): 撤回 GitHub Actions 定时发版，改回本地 Routine 直接打包 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5886">#5886</a> <span class="author">— 王梓先</span></li>
-  <li><span class="merged-at">[08/07 18:44]</span>chore(tool #5827): post_merge_sync 收敛为单份 Node 实现（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5870">#5870</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5827">#5827</a>) <span class="author">— 张拓</span></li>
-  <li><span class="merged-at">[08/07 17:42]</span>test(e2e): B1 会话列表全量同步防删 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5845">#5845</a> <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[08/11 15:40]</span>test(e2e): C1 发送文本消息 + C11 人设对对端接收冒烟 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5975">#5975</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5014">#5014</a>) <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[08/11 14:15]</span>docs(e2e): 交付验收连跑 5 次降为 3 次（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5972">#5972</a> <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[08/11 14:11]</span>test(e2e): 新增 B5 会话列表筛选漏斗差分旅程用例（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5966">#5966</a> <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[08/11 11:11]</span>docs(sdd): SPEC-INFRA-STORAGE 新增存储根可指定条款（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5883">#5883</a> <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[08/11 10:38]</span>docs(gotchas): PowerShell 裸调 bash 命中 WSL 存根导致门禁假 FAIL <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5840">#5840</a> <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[08/11 10:30]</span>test: close #5938 修复 clientId 契约测试门禁 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5940">#5940</a> <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[08/10 20:35]</span>test(e2e): 新增 F2 通讯录筛选漏斗差分旅程用例 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5944">#5944</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5934">#5934</a>) <span class="author">— 王梓先</span></li>
 </ul>
 
 
 <hr class="ref-divider">
 
 <div class="foot">
-上一次发版时间：<span class="bump-time">08/07 17:11</span>（基线 commit：<code>PC baseline override 2026080701: chore(e2e): J1 子窗口可控性 spike——drive 分组解锁生命周期白盒，UIA3 黑盒实证 (#5871)</code>）<br>
+上一次发版时间：<span class="bump-time">08/10 16:45</span>（基线 commit：<code>PC baseline override 2026081001: fix(chat): 修复脏 clientId 导致会话历史加载失败 (#5910)</code>）<br>
 PR 归属版本由 <code>pubspec.yaml</code> 的 <code>version:</code> 行 git 历史判定 —— bump commit 的 committedAt 是分割线。<br>
 由 <code>tool/generate_release_preview.dart</code> 自动提取；重新跑脚本后刷新页面即拿最新。<br>
 issue 链接基于 PetWebOrg/flutter-suiyin 仓。

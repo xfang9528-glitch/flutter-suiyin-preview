@@ -233,23 +233,33 @@ a:hover { text-decoration: underline; }
 <h1>📦 2026081202 发版预览</h1>
 <div class="meta">
 当前版本：<code>2026081201</code>（发版时间：<span class="bump-time">08/12 17:39</span>），下一版（预览）：<code>2026081202</code><br>
-生成时间：2026-08-12 18:24:14 · 重新跑脚本后刷新页面即拿最新
+生成时间：2026-08-12 23:10:05 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
-<div class="notice">本期暂无新的 PC 端用户感知更新。</div>
+<h3>🆕 新功能</h3>
+<ul>
+  <li>停用可接待人设号前，可以一键把当前剩余接待转交出去；转交失败时会保留未处理客户，不会误把人设号停掉 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6087">#6087</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6086">#6086</a>)</li>
+</ul>
+
+<h3>🐞 问题修复</h3>
+<ul>
+  <li>从通讯录、聊天资料页或群成员里推荐名片时，会按当前正在使用的人设发送，不再误报人设已切换或用错发送人设 — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6080">#6080</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6059">#6059</a>)</li>
+</ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">08/12 17:39 上次发版后，合入 main 的全部 <strong>1</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">08/12 17:39 上次发版后，合入 main 的全部 <strong>5</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
+  <li><span class="merged-at">[08/12 22:40]</span>可接待人设号停接前支持一键转交 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6087">#6087</a> <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[08/12 18:47]</span>close #5987 落地微信 PC 密度与布局 token <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6075">#6075</a> <span class="author">— 王争</span></li>
   <li><span class="merged-at">[08/12 17:58]</span>close #5986 新增微信语义颜色 Token <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6078">#6078</a> <span class="author">— 王争</span></li>
 </ul>
 
 <h2>🐞 问题修复</h2>
 <ul>
-  <li class="empty">无</li>
+  <li><span class="merged-at">[08/12 19:05]</span>名片推荐与当前发送人设保持一致 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6080">#6080</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6059">#6059</a>) <span class="author">— 陈宣宇</span></li>
 </ul>
 
 <h2>✨ 体验优化</h2>
@@ -259,7 +269,7 @@ a:hover { text-decoration: underline; }
 
 <h2>🔧 其他（chore / docs / test / ...）</h2>
 <ul>
-  <li class="empty">无</li>
+  <li><span class="merged-at">[08/12 21:22]</span>test(e2e): C13 消息类型收发矩阵阶段 1——表情/图片/引用/撤回 MT-01~06 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6073">#6073</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6021">#6021</a>) <span class="author">— 王梓先</span></li>
 </ul>
 
 
@@ -273,4 +283,3 @@ issue 链接基于 PetWebOrg/flutter-suiyin 仓。
 </div>
 </body>
 </html>
-

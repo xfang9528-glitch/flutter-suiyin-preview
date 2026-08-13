@@ -234,15 +234,32 @@ a:hover { text-decoration: underline; }
 <h1>📦 2026081301 发版预览</h1>
 <div class="meta">
 当前版本：<code>2026081202</code>（发版时间：<span class="bump-time">08/12 23:20</span>），下一版（预览）：<code>2026081301</code><br>
-生成时间：2026-08-13 10:34:06 · 重新跑脚本后刷新页面即拿最新
+生成时间：2026-08-13 15:13:23 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
-<div class="notice">本期暂无新的 PC 端用户感知更新。</div>
+<h3>🆕 新功能</h3>
+<ul>
+  <li>推荐名片给未接待好友时，会先建立接收会话、发送名片并自动跳到聊天，不再停在原弹窗里。— 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6093">#6093</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6092">#6092</a>)</li>
+</ul>
+
+<h3>✨ 体验优化</h3>
+<ul>
+  <li>图片、视频、PDF 等 PC 子窗口会跟随当前企业主题显示，切换企业后不再出现默认配色或旧企业颜色。— 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6117">#6117</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5990">#5990</a>)</li>
+  <li>PC 按钮的键盘焦点和局部背景显示更稳定，使用键盘操作或悬停、按下按钮时状态更清楚。— 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6124">#6124</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6110">#6110</a>), <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6109">#6109</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6102">#6102</a>)</li>
+  <li>好友申请相关弹窗会跟随当前企业主题刷新，不再停留在旧企业配色。— 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6128">#6128</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6107">#6107</a>)</li>
+  <li>会话内“查找聊天记录”弹窗背景与当前企业主题保持一致。— 陈聪、梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5964">#5964</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5932">#5932</a>)</li>
+</ul>
+
+<h3>🐞 问题修复</h3>
+<ul>
+  <li>自己撤回的文本消息仍可右键复制，方便找回刚撤回的内容。— 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6125">#6125</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6099">#6099</a>)</li>
+  <li>选择数据存储位置时，映射网络盘会直接提示“不支持网络位置”，避免把数据放到不稳定的网络盘。— 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6115">#6115</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6026">#6026</a>)</li>
+</ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">08/12 23:20 上次发版后，合入 main 的全部 <strong>2</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">08/12 23:20 上次发版后，合入 main 的全部 <strong>17</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
   <li><span class="merged-at">[08/13 10:12]</span>add stateless PC ThemeData factory <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6090">#6090</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5988">#5988</a>) <span class="author">— 王争</span></li>
@@ -251,7 +268,15 @@ a:hover { text-decoration: underline; }
 
 <h2>🐞 问题修复</h2>
 <ul>
-  <li class="empty">无</li>
+  <li><span class="merged-at">[08/13 14:30]</span>unify business subwindow enterprise themes <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6117">#6117</a> <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[08/13 14:10]</span>存储位置试写校验拒绝映射网络盘（选择映射盘时直接提示不支持网络位置） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6115">#6115</a> <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[08/13 13:58]</span>修复 PC 弹窗企业主题响应 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6128">#6128</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6107">#6107</a>) <span class="author">— 陈宣宇</span></li>
+  <li><span class="merged-at">[08/13 13:54]</span>contact mapper 独立入口避开 same_stem 冲突（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6104">#6104</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6101">#6101</a>) <span class="author">— 陈宣宇</span></li>
+  <li><span class="merged-at">[08/13 13:34]</span>close #6110 修复 PC filled button 动态焦点与局部背景 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6124">#6124</a> <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[08/13 13:22]</span>PC 撤回自己文本消息后可复制 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6125">#6125</a> <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[08/13 11:42]</span>close #6102 补齐 PC 主题焦点态语义 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6109">#6109</a> <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[08/13 11:26]</span>修复会话内查找聊天记录弹窗主题背景 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5964">#5964</a> <span class="author">— 陈聪、梁晨</span></li>
+  <li><span class="merged-at">[08/13 10:47]</span>close #6092 名片推荐建立接收会话后发送并跳转 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6093">#6093</a> <span class="author">— 陈宣宇</span></li>
 </ul>
 
 <h2>✨ 体验优化</h2>
@@ -261,7 +286,12 @@ a:hover { text-decoration: underline; }
 
 <h2>🔧 其他（chore / docs / test / ...）</h2>
 <ul>
-  <li class="empty">无</li>
+  <li><span class="merged-at">[08/13 15:10]</span>chore(script-library): 收口话术库字号到 AppFontSizes <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6132">#6132</a> <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[08/13 14:24]</span>docs(tray): 补 trayFlashDecision 的 source 哨兵解读 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6133">#6133</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6041">#6041</a>) <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[08/13 14:05]</span>test: close #6091 更新通讯录选择隔离源码守卫 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6100">#6100</a> <span class="author">— 陈宣宇</span></li>
+  <li><span class="merged-at">[08/13 14:02]</span>test(enterprise): add repository dependency ratchets <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5878">#5878</a> <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[08/13 13:47]</span>test(customer_info): 补回名片推荐入口守卫缺失的当前选中态 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6120">#6120</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6098">#6098</a>) <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[08/13 13:41]</span>test(chat): 补齐移动端加好友 fake 缺失的 StartChatUseCase 新增参数 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6123">#6123</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6113">#6113</a>) <span class="author">— 王梓先</span></li>
 </ul>
 
 

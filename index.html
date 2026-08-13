@@ -82,7 +82,7 @@ a:hover { text-decoration: underline; }
 <label>查看历史预览：</label>
 <select id="version-switcher-select" onchange="var v=this.value; if(v) location.href = v; else location.href = './';">
 <!-- VERSION_SWITCHER_OPTIONS_START -->
-<option value="">📦 2026081302 发版预览</option>
+<option value="">📦 2026081401 发版预览</option>
 <option value="2026081301.html">🗂 2026081301</option>
 <option value="2026081202.html">🗂 2026081202</option>
 <option value="2026081201.html">🗂 2026081201</option>
@@ -232,13 +232,18 @@ a:hover { text-decoration: underline; }
   }
 })();
 </script>
-<h1>📦 2026081302 发版预览</h1>
+<h1>📦 2026081401 发版预览</h1>
 <div class="meta">
-当前版本：<code>2026081301</code>（发版时间：<span class="bump-time">08/13 18:19</span>），下一版（预览）：<code>2026081302</code><br>
-生成时间：2026-08-13 23:11:38 · 重新跑脚本后刷新页面即拿最新
+当前版本：<code>2026081301</code>（发版时间：<span class="bump-time">08/13 18:19</span>），下一版（预览）：<code>2026081401</code><br>
+生成时间：2026-08-14 07:55:16 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
+<h3>🆕 新功能</h3>
+<ul>
+  <li>客户详情里新增「聊天质检」工作台，可以按客户和人设发起质检、查看评分结果、亮点、问题和改进建议，切换客户或人设时结果不会串到一起。— 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6166">#6166</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6153">#6153</a>)</li>
+</ul>
+
 <h3>✨ 体验优化</h3>
 <ul>
   <li>PC 主窗口会跟随当前企业主题刷新，切换企业或账号后不再残留上一家企业的颜色；桌面端也会固定使用亮色主题。— 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6118">#6118</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5989">#5989</a>)</li>
@@ -246,14 +251,16 @@ a:hover { text-decoration: underline; }
 
 <h3>🐞 问题修复</h3>
 <ul>
-  <li>快速切换会话或消息同步失败时，聊天区不再偶发把刚收到的消息刷掉或重复显示。— 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6143">#6143</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5941">#5941</a>), <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6143">#6143</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6028">#6028</a>)</li>
+  <li>快速切换会话或消息同步失败时，聊天区不再偶发把刚收到的消息刷掉或重复显示。— 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6143">#6143</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5941">#5941</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6028">#6028</a>)</li>
 </ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">08/13 18:19 上次发版后，合入 main 的全部 <strong>5</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">08/13 18:19 上次发版后，合入 main 的全部 <strong>7</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
+  <li><span class="merged-at">[08/14 02:27]</span>close #6153 客户聊天质检独立工作台 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6166">#6166</a> <span class="author">— 陈宣宇</span></li>
+  <li><span class="merged-at">[08/13 23:21]</span>rebaseline generated SDK for chat quality <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6163">#6163</a> <span class="author">— 陈宣宇</span></li>
   <li><span class="merged-at">[08/13 18:43]</span>close #5989 接入 PC 主窗口企业主题并固定亮色 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6118">#6118</a> <span class="author">— 王争</span></li>
 </ul>
 
@@ -285,4 +292,3 @@ issue 链接基于 PetWebOrg/flutter-suiyin 仓。
 </div>
 </body>
 </html>
-

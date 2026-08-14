@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
-<!-- CURRENT_BUILD:2026081301 -->
+<!-- CURRENT_BUILD:2026081401 -->
 <title>下一版发版预览 · flutter-suiyin</title>
 <style>
 :root {
@@ -82,7 +82,8 @@ a:hover { text-decoration: underline; }
 <label>查看历史预览：</label>
 <select id="version-switcher-select" onchange="var v=this.value; if(v) location.href = v; else location.href = './';">
 <!-- VERSION_SWITCHER_OPTIONS_START -->
-<option value="">📦 2026081401 发版预览</option>
+<option value="">📦 2026081402 发版预览</option>
+<option value="2026081401.html">🗂 2026081401</option>
 <option value="2026081301.html">🗂 2026081301</option>
 <option value="2026081202.html">🗂 2026081202</option>
 <option value="2026081201.html">🗂 2026081201</option>
@@ -232,66 +233,57 @@ a:hover { text-decoration: underline; }
   }
 })();
 </script>
-<h1>📦 2026081401 发版预览</h1>
+<h1>📦 2026081402 发版预览</h1>
 <div class="meta">
-当前版本：<code>2026081301</code>（发版时间：<span class="bump-time">08/13 18:19</span>），下一版（预览）：<code>2026081401</code><br>
-生成时间：2026-08-14 11:27:00 · 重新跑脚本后刷新页面即拿最新
+当前版本：<code>2026081401</code>（发版时间：<span class="bump-time">08/14 11:28</span>），下一版（预览）：<code>2026081402</code><br>
+生成时间：2026-08-14 14:29:29 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
 <h3>🆕 新功能</h3>
 <ul>
-  <li>客户详情里新增「聊天质检」工作台，可以按客户和人设发起质检、查看评分结果、亮点、问题和改进建议，切换客户或人设时结果不会串到一起。— 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6166">#6166</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6153">#6153</a>)</li>
+<li>英文文字消息和英文语音转文字现在可以手动翻译成中文；PC 端右键消息即可翻译，译文会显示在原消息旁边，重新打开聊天记录后仍能看到。— 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6164">#6164</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5912">#5912</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5913">#5913</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5914">#5914</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6182">#6182</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6186">#6186</a>)</li>
 </ul>
-
-<h3>✨ 体验优化</h3>
-<ul>
-  <li>发送图片时不再显示虚假的百分比动画；等待压缩、正在压缩和上传进度会按真实处理阶段展示，多张图片一起发送时也不会互相串状态。— 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6106">#6106</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5924">#5924</a>)</li>
-  <li>PC 主窗口会跟随当前企业主题刷新，切换企业或账号后不再残留上一家企业的颜色；桌面端也会固定使用亮色主题。— 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6118">#6118</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5989">#5989</a>)</li>
-</ul>
-
 <h3>🐞 问题修复</h3>
 <ul>
-  <li>快速切换会话或消息同步失败时，聊天区不再偶发把刚收到的消息刷掉或重复显示。— 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6143">#6143</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5941">#5941</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6028">#6028</a>)</li>
+<li>批量改派记录里的长人设号现在会自动换行完整显示，不再被截断；只有真正显示不全的单元格才会在悬停时弹出完整内容。— 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6187">#6187</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6156">#6156</a>)</li>
+<li>登出或快速切换账号后，登录页和聊天/联系人列表不再残留上一家企业的主题颜色。— 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6179">#6179</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6126">#6126</a>)</li>
+<li>客户资料里的头像现在可以正常点开预览，并优先显示高清头像，不再只能看到缩略图。— 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6188">#6188</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6139">#6139</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6131">#6131</a>)</li>
 </ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">08/13 18:19 上次发版后，合入 main 的全部 <strong>12</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">08/14 11:28 上次发版后，合入 main 的全部 <strong>9</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
-  <li><span class="merged-at">[08/14 02:27]</span>close #6153 客户聊天质检独立工作台 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6166">#6166</a> <span class="author">— 陈宣宇</span></li>
-  <li><span class="merged-at">[08/13 23:21]</span>rebaseline generated SDK for chat quality <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6163">#6163</a> <span class="author">— 陈宣宇</span></li>
-  <li><span class="merged-at">[08/13 18:43]</span>close #5989 接入 PC 主窗口企业主题并固定亮色 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6118">#6118</a> <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[08/14 13:16]</span>完成 PC/App 英文消息手动翻译 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6164">#6164</a> <span class="author">— 陈宣宇</span></li>
 </ul>
 
 <h2>🐞 问题修复</h2>
 <ul>
-  <li><span class="merged-at">[08/14 11:23]</span>#5924 图片发送展示真实处理阶段 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6106">#6106</a> <span class="author">— 梁晨</span></li>
-  <li><span class="merged-at">[08/14 10:45]</span>移除 SessionNamespace.readScoped 的 legacy 全局 key 回退 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6158">#6158</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6085">#6085</a>) <span class="author">— 王梓先</span></li>
-  <li><span class="merged-at">[08/13 22:22]</span>close #5941 and #6028 reconcile lifecycle gaps <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6143">#6143</a> <span class="author">— 陈宣宇</span></li>
+  <li><span class="merged-at">[08/14 14:25]</span>close #6156 改派记录人设号完整换行展示 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6187">#6187</a> <span class="author">— 梁晨</span></li>
+  <li><span class="merged-at">[08/14 14:13]</span>close #6126 修复 PC 登出主题残留与列表选中颜色 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6179">#6179</a> <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[08/14 13:45]</span>客户资料头像预览优先使用高清图 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6188">#6188</a> <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[08/14 12:59]</span>keep closed reception personas visible <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6185">#6185</a> <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[08/14 12:19]</span>restore customer avatar preview <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6139">#6139</a> <span class="author">— 陈聪</span></li>
 </ul>
 
 <h2>✨ 体验优化</h2>
 <ul>
-  <li class="empty">无</li>
+  <li><span class="merged-at">[08/14 13:25]</span>接入企业语义字号主题 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6108">#6108</a> <span class="author">— 梁晨</span></li>
 </ul>
 
 <h2>🔧 其他（chore / docs / test / ...）</h2>
 <ul>
-  <li><span class="merged-at">[08/14 10:25]</span>test(chat): 修正聊天筛选企业能力 fixture（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6171">#6171</a> <span class="author">— 陈宣宇</span></li>
-  <li><span class="merged-at">[08/14 10:09]</span>chore(e2e): 通测跑批合并编译与启动开销，一轮 1295s → 483~778s <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6165">#6165</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6135">#6135</a>) <span class="author">— 王梓先</span></li>
-  <li><span class="merged-at">[08/14 10:08]</span>docs(storage): 修正 AC-008 证据指针与 plan 退休清单裁定，并补一致性守卫 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6157">#6157</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6084">#6084</a>) <span class="author">— 王梓先</span></li>
-  <li><span class="merged-at">[08/13 22:23]</span>test(objectbox): close #5942 isolate 50k window gate <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6144">#6144</a> <span class="author">— 陈宣宇</span></li>
-  <li><span class="merged-at">[08/13 22:16]</span>test(jbfs): 注入当前企业模块 fixture（#6161） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6162">#6162</a> <span class="author">— 陈宣宇</span></li>
-  <li><span class="merged-at">[08/13 21:41]</span>test(multi-window): 修正拖拽预创建 readiness fixture <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6160">#6160</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6159">#6159</a>) <span class="author">— 陈宣宇</span></li>
+  <li><span class="merged-at">[08/14 14:04]</span>test: cover PC moments feed window launcher <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6190">#6190</a> <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[08/14 13:55]</span>chore: 移除已迁出的 WinForms Widget 测试启动器源码 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6189">#6189</a> <span class="author">— 陈聪</span></li>
 </ul>
 
 
 <hr class="ref-divider">
 
 <div class="foot">
-上一次发版时间：<span class="bump-time">08/13 18:19</span>（基线 commit：<code>PC baseline override 2026081301: ci(release-pc): 钉死 Flutter 3.44.9，修复 stable 漂移导致 PC 发版打包全挂 (#6155)</code>）<br>
+上一次发版时间：<span class="bump-time">08/14 11:28</span>（基线 commit：<code>PC baseline override 2026081401: test(chat): 修正移动搜索企业 fixture (#6176) (#6175)</code>）<br>
 PR 归属版本由 <code>pubspec.yaml</code> 的 <code>version:</code> 行 git 历史判定 —— bump commit 的 committedAt 是分割线。<br>
 由 <code>tool/generate_release_preview.dart</code> 自动提取；重新跑脚本后刷新页面即拿最新。<br>
 issue 链接基于 PetWebOrg/flutter-suiyin 仓。

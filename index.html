@@ -82,7 +82,7 @@ a:hover { text-decoration: underline; }
 <label>查看历史预览：</label>
 <select id="version-switcher-select" onchange="var v=this.value; if(v) location.href = v; else location.href = './';">
 <!-- VERSION_SWITCHER_OPTIONS_START -->
-<option value="">📦 2026081602 发版预览</option>
+<option value="">📦 2026081701 发版预览</option>
 <option value="2026081601.html">🗂 2026081601</option>
 <option value="2026081402.html">🗂 2026081402</option>
 <option value="2026081401.html">🗂 2026081401</option>
@@ -235,18 +235,21 @@ a:hover { text-decoration: underline; }
   }
 })();
 </script>
-<h1>📦 2026081602 发版预览</h1>
+<h1>📦 2026081701 发版预览</h1>
 <div class="meta">
-当前版本：<code>2026081601</code>（发版时间：<span class="bump-time">08/16 15:00</span>），下一版（预览）：<code>2026081602</code><br>
-生成时间：2026-08-16 23:09:30 · 重新跑脚本后刷新页面即拿最新
+当前版本：<code>2026081601</code>（发版时间：<span class="bump-time">08/16 15:00</span>），下一版（预览）：<code>2026081701</code><br>
+生成时间：2026-08-17 10:35:17 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
-<div class="notice">本期暂无新的 PC 端用户感知更新。</div>
+<h3>🐞 问题修复</h3>
+<ul>
+  <li>从聊天列表拖出会话打开独立聊天窗口时，现在会立即显示清晰的拖拽反馈，松手后稳定打开且不会重复开窗 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6178">#6178</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6167">#6167</a>)</li>
+</ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">08/16 15:00 上次发版后，合入 main 的全部 <strong>1</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">08/16 15:00 上次发版后，合入 main 的全部 <strong>3</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
   <li class="empty">无</li>
@@ -254,6 +257,7 @@ a:hover { text-decoration: underline; }
 
 <h2>🐞 问题修复</h2>
 <ul>
+  <li><span class="merged-at">[08/17 10:02]</span>修复独立聊天拖出无响应并恢复深绿色选中态 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6178">#6178</a> <span class="author">— 王争</span></li>
   <li><span class="merged-at">[08/16 17:09]</span>修复 PC 发版 workflow 的两处硬失败（发版重新能打出包） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6231">#6231</a> <span class="author">— 王梓先</span></li>
 </ul>
 
@@ -264,7 +268,7 @@ a:hover { text-decoration: underline; }
 
 <h2>🔧 其他（chore / docs / test / ...）</h2>
 <ul>
-  <li class="empty">无</li>
+  <li><span class="merged-at">[08/17 10:17]</span>chore: 删除并忽略 .codebuddy <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6234">#6234</a> <span class="author">— 梁晨</span></li>
 </ul>
 
 

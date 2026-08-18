@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
-<!-- CURRENT_BUILD:2026081701 -->
+<!-- CURRENT_BUILD:2026081801 -->
 <title>下一版发版预览 · flutter-suiyin</title>
 <style>
 :root {
@@ -82,7 +82,8 @@ a:hover { text-decoration: underline; }
 <label>查看历史预览：</label>
 <select id="version-switcher-select" onchange="var v=this.value; if(v) location.href = v; else location.href = './';">
 <!-- VERSION_SWITCHER_OPTIONS_START -->
-<option value="">📦 2026081801 发版预览</option>
+<option value="">📦 2026081802 发版预览</option>
+<option value="2026081801.html">🗂 2026081801</option>
 <option value="2026081701.html">🗂 2026081701</option>
 <option value="2026081601.html">🗂 2026081601</option>
 <option value="2026081402.html">🗂 2026081402</option>
@@ -236,81 +237,43 @@ a:hover { text-decoration: underline; }
   }
 })();
 </script>
-<h1>📦 2026081801 发版预览</h1>
+<h1>📦 2026081802 发版预览</h1>
 <div class="meta">
-当前版本：<code>2026081701</code>（发版时间：<span class="bump-time">08/17 16:56</span>），下一版（预览）：<code>2026081801</code><br>
-生成时间：2026-08-18 18:26:01 · 重新跑脚本后刷新页面即拿最新
+当前版本：<code>2026081801</code>（发版时间：<span class="bump-time">08/18 16:48</span>），下一版（预览）：<code>2026081802</code><br>
+生成时间：2026-08-18 19:31:06 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
-<h3>🆕 新功能</h3>
-<ul>
-  <li>当前会话现在可以直接发送个人名片，可选择好友名片并附上一段留言；名片失败时不会误发留言，已发送的名片也不会重复发送。— 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6278">#6278</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6247">#6247</a>)</li>
-  <li>个微聊天消息新增“收藏”入口，支持把图片、视频、文件、链接等常用消息保存到“我的”资料库；过期或不支持的消息会自动隐藏收藏入口。— 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6295">#6295</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6094">#6094</a>)</li>
-  <li>PC 群发现在支持按标签选择收件人；可搜索标签、失败后重试，并与手动选择好友互斥，避免同一群发里混用两套收件范围。— 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6289">#6289</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5505">#5505</a>)</li>
-</ul>
-<h3>✨ 体验优化</h3>
-<ul>
-  <li>PC 会话列表的选中、悬停、未读和发送状态更清楚；发送中、发送失败、草稿和新消息摘要会按优先级展示，键盘上下选择会话也更稳定。— 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6265">#6265</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5995">#5995</a>)</li>
-</ul>
-<h3>🐞 问题修复</h3>
-<ul>
-  <li>查看历史聊天里的视频时，播放器现在会按当前看到的消息范围切换前后视频；不再跳到最新页，也不会只剩当前这一个视频。— 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6298">#6298</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6254">#6254</a>)</li>
-  <li>聊天列表搜索现在支持只输入一个英文字母；用姓名或备注首字母就能搜到会话，不必再多输一个字符。— 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6274">#6274</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6266">#6266</a>)</li>
-  <li>PC 端发语音启动失败时，现在会显示具体原因、处理建议和取证码；遇到录音残留占用时也会自动恢复，不再误导去检查麦克风权限。— 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6282">#6282</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6232">#6232</a>)</li>
-  <li>在图片预览里编辑文字时，现在可以直接拖动新加或已选中的文字；轻微点击抖动不会误移动，提交后位置也不会跳回原处。— 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6268">#6268</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6249">#6249</a>)</li>
-  <li>刷新群成员后，人数和成员列表会自动收敛到最新结果；旧的异步响应不再把新人数覆盖回去。— 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6269">#6269</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6250">#6250</a>)</li>
-</ul>
+<div class="notice">本期暂无新的 PC 端用户感知更新。</div>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">08/17 16:56 上次发版后，合入 main 的全部 <strong>25</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">08/18 16:48 上次发版后，合入 main 的全部 <strong>2</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
-  <li><span class="merged-at">[08/18 15:10]</span>对齐 PC 会话行与未读状态 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6265">#6265</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5995">#5995</a>) <span class="author">— 王争</span></li>
-  <li><span class="merged-at">[08/18 14:00]</span>支持专家消息折叠项置顶并保持首位 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6293">#6293</a> <span class="author">— 陈聪</span></li>
-  <li><span class="merged-at">[08/18 13:54]</span>close #6247 支持当前会话发送个人名片 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6278">#6278</a> <span class="author">— 陈宣宇</span></li>
-  <li><span class="merged-at">[08/18 13:45]</span>close #6094 收藏个微聊天消息 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6295">#6295</a> <span class="author">— 陈宣宇</span></li>
-  <li><span class="merged-at">[08/18 13:45]</span>close #5505 PC 群发支持标签收件人 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6289">#6289</a> <span class="author">— 梁晨</span></li>
-  <li><span class="merged-at">[08/18 11:31]</span>APP 支持发送个人名片 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6267">#6267</a> <span class="author">— 陈聪</span></li>
+  <li class="empty">无</li>
 </ul>
 
 <h2>🐞 问题修复</h2>
 <ul>
   <li><span class="merged-at">[08/18 17:09]</span>close #6305 恢复 main P3 回归测试门禁 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6311">#6311</a> <span class="author">— 王争</span></li>
-  <li><span class="merged-at">[08/18 16:48]</span>refs #6285 补齐话术视频全链路耗时埋点 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6307">#6307</a> <span class="author">— 梁晨</span></li>
-  <li><span class="merged-at">[08/18 16:43]</span>close #6299 修复空会话列表漏掉专家消息段 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6306">#6306</a> <span class="author">— 王争</span></li>
-  <li><span class="merged-at">[08/18 16:03]</span>历史视频预览使用当前活动消息窗口 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6298">#6298</a> <span class="author">— 王争</span></li>
-  <li><span class="merged-at">[08/18 13:11]</span>统一发送占位 ID 生成 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6294">#6294</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6288">#6288</a>) <span class="author">— 陈聪</span></li>
-  <li><span class="merged-at">[08/18 11:55]</span>补齐卡片转发后输入卡顿的可归因观测 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6263">#6263</a> <span class="author">— 王争</span></li>
-  <li><span class="merged-at">[08/18 11:50]</span>close #6277 restore PC design token guard <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6291">#6291</a> <span class="author">— 王争</span></li>
-  <li><span class="merged-at">[08/18 10:58]</span>preserve IME verification across internal refocus <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6283">#6283</a> <span class="author">— 陈聪</span></li>
-  <li><span class="merged-at">[08/18 10:50]</span>串跑里没人读的结果必须点名并整轮判红 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6286">#6286</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6169">#6169</a>) <span class="author">— 王梓先</span></li>
-  <li><span class="merged-at">[08/18 10:28]</span>close #6266 支持单字母搜索 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6274">#6274</a> <span class="author">— 王争</span></li>
-  <li><span class="merged-at">[08/17 23:47]</span>录音启动失败改为结构化分类并接入 SLS，PC 不再谎报麦克风权限 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6282">#6282</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6232">#6232</a>) <span class="author">— 王梓先</span></li>
-  <li><span class="merged-at">[08/17 18:42]</span>#6257 补齐 Windows native crash 资源上下文 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6275">#6275</a> <span class="author">— 陈聪</span></li>
-  <li><span class="merged-at">[08/17 18:08]</span>修复图片预览编辑文字拖动 #6249 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6268">#6268</a> <span class="author">— 王争</span></li>
-  <li><span class="merged-at">[08/17 17:44]</span>close #6250 收敛群成员异步快照 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6269">#6269</a> <span class="author">— 王争</span></li>
-  <li><span class="merged-at">[08/17 17:07]</span>修复可接待人设详情混入其他销售账号 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6264">#6264</a> <span class="author">— 陈聪</span></li>
 </ul>
 
 <h2>✨ 体验优化</h2>
 <ul>
-  <li><span class="merged-at">[08/18 09:58]</span>收口 customerByChatIdProvider 裸用点并为新增读点加写入时门禁 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6284">#6284</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6121">#6121</a>) <span class="author">— 王梓先</span></li>
+  <li class="empty">无</li>
 </ul>
 
 <h2>🔧 其他（chore / docs / test / ...）</h2>
 <ul>
   <li><span class="merged-at">[08/18 18:01]</span>test(e2e): 新增建群拉人踢人旅程用例并以其触发群系统提示断言（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6308">#6308</a> <span class="author">— 王梓先</span></li>
-  <li><span class="merged-at">[08/18 16:28]</span>chore(e2e): 归档 2026-08-18 通测报告 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6304">#6304</a> <span class="author">— 王梓先</span></li>
-  <li><span class="merged-at">[08/18 14:21]</span>chore(tool): PC design token 生产接入守卫前移到写入点 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6296">#6296</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6281">#6281</a>) <span class="author">— 王梓先</span></li>
 </ul>
 
 
 <hr class="ref-divider">
 
 <div class="foot">
-上一次发版时间：<span class="bump-time">08/17 16:56</span>（基线 commit：<code>PC baseline override 2026081701: fix(chat): 会话列表第二行三段独立截断，人设名不再挤掉消息摘要 (#6221)</code>）<br>
+上一次发版时间：<span class="bump-time">08/18 16:48</span>（基线 commit：<code>PC baseline override 2026081801: fix(script-library): 补齐视频发送耗时埋点 (#6285) (#6307)</code>）<br>
 PR 归属版本由 <code>pubspec.yaml</code> 的 <code>version:</code> 行 git 历史判定 —— bump commit 的 committedAt 是分割线。<br>
 由 <code>tool/generate_release_preview.dart</code> 自动提取；重新跑脚本后刷新页面即拿最新。<br>
 issue 链接基于 PetWebOrg/flutter-suiyin 仓。

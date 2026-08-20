@@ -82,7 +82,7 @@ a:hover { text-decoration: underline; }
 <label>查看历史预览：</label>
 <select id="version-switcher-select" onchange="var v=this.value; if(v) location.href = v; else location.href = './';">
 <!-- VERSION_SWITCHER_OPTIONS_START -->
-<option value="">📦 2026081903 发版预览</option>
+<option value="">📦 2026082001 发版预览</option>
 <option value="2026081902.html">🗂 2026081902</option>
 <option value="2026081901.html">🗂 2026081901</option>
 <option value="2026081802.html">🗂 2026081802</option>
@@ -240,18 +240,21 @@ a:hover { text-decoration: underline; }
   }
 })();
 </script>
-<h1>📦 2026081903 发版预览</h1>
+<h1>📦 2026082001 发版预览</h1>
 <div class="meta">
-当前版本：<code>2026081902</code>（发版时间：<span class="bump-time">08/19 20:29</span>），下一版（预览）：<code>2026081903</code><br>
-生成时间：2026-08-19 23:09:56 · 重新跑脚本后刷新页面即拿最新
+当前版本：<code>2026081902</code>（发版时间：<span class="bump-time">08/19 20:29</span>），下一版（预览）：<code>2026082001</code><br>
+生成时间：2026-08-20 10:33:10 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
-<div class="notice">本期暂无新的 PC 端用户感知更新。</div>
+<h3>🐞 问题修复</h3>
+<ul>
+<li>头像气泡里的「可接待人设号」数字现在只数真正能用的号；建号时扫码没走完的空壳号仍留在列表里，但会灰掉并标「未登录」，还会告诉你有几个号要找管理员改绑。不会再出现「说能接待 2 个号、通讯录里只有 1 个号的人」。— 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6370">#6370</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6271">#6271</a>)</li>
+</ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">08/19 20:29 上次发版后，合入 main 的全部 <strong>0</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">08/19 20:29 上次发版后，合入 main 的全部 <strong>2</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
   <li class="empty">无</li>
@@ -259,7 +262,7 @@ a:hover { text-decoration: underline; }
 
 <h2>🐞 问题修复</h2>
 <ul>
-  <li class="empty">无</li>
+  <li><span class="merged-at">[08/20 04:39]</span>可接待人设列表屏蔽未登录成功的空壳工作号 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6370">#6370</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6271">#6271</a>) <span class="author">— 张拓</span></li>
 </ul>
 
 <h2>✨ 体验优化</h2>
@@ -269,7 +272,7 @@ a:hover { text-decoration: underline; }
 
 <h2>🔧 其他（chore / docs / test / ...）</h2>
 <ul>
-  <li class="empty">无</li>
+  <li><span class="merged-at">[08/20 04:38]</span>chore(tooling): untrack .claude/settings.local.json（个人配置不再进版本库） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6373">#6373</a> <span class="author">— 张拓</span></li>
 </ul>
 
 

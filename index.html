@@ -82,7 +82,7 @@ a:hover { text-decoration: underline; }
 <label>查看历史预览：</label>
 <select id="version-switcher-select" onchange="var v=this.value; if(v) location.href = v; else location.href = './';">
 <!-- VERSION_SWITCHER_OPTIONS_START -->
-<option value="">📦 2026082002 发版预览</option>
+<option value="">📦 2026082101 发版预览</option>
 <option value="2026082001.html">🗂 2026082001</option>
 <option value="2026081902.html">🗂 2026081902</option>
 <option value="2026081901.html">🗂 2026081901</option>
@@ -241,21 +241,22 @@ a:hover { text-decoration: underline; }
   }
 })();
 </script>
-<h1>📦 2026082002 发版预览</h1>
+<h1>📦 2026082101 发版预览</h1>
 <div class="meta">
-当前版本：<code>2026082001</code>（发版时间：<span class="bump-time">08/20 16:55</span>），下一版（预览）：<code>2026082002</code><br>
-生成时间：2026-08-20 23:10:55 · 重新跑脚本后刷新页面即拿最新
+当前版本：<code>2026082001</code>（发版时间：<span class="bump-time">08/20 16:55</span>），下一版（预览）：<code>2026082101</code><br>
+生成时间：2026-08-21 10:34:44 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
 <h3>🐞 问题修复</h3>
 <ul>
+  <li>打开聊天会话时，如果消息记录本来就是完整的，不会再误显示「部分历史消息未加载」和无意义的重试入口。— 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6414">#6414</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6403">#6403</a>)</li>
   <li>Windows PC 打开图片预览、视频播放、加好友、聊天搜索、独立聊天等子窗口后，不会再因为系统辅助功能访问而随机整体闪退，接待中的会话不再被打断。— 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6416">#6416</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6389">#6389</a>)</li>
 </ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">08/20 16:55 上次发版后，合入 main 的全部 <strong>4</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">08/20 16:55 上次发版后，合入 main 的全部 <strong>6</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
   <li class="empty">无</li>
@@ -263,6 +264,8 @@ a:hover { text-decoration: underline; }
 
 <h2>🐞 问题修复</h2>
 <ul>
+  <li><span class="merged-at">[08/21 09:50]</span>close #6403 修复历史消息 ID 连续性误判 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6414">#6414</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6403">#6403</a>) <span class="author">— 梁晨</span></li>
+  <li><span class="merged-at">[08/21 00:35]</span>建单后补一条可执行的 AC 补正提醒（#6366） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6374">#6374</a> <span class="author">— 张拓</span></li>
   <li><span class="merged-at">[08/20 18:38]</span>补齐 desktop_multi_window 插件目标的 Release UIA 宏定义，让 #6326 早期守卫真正编入正式包 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6416">#6416</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6389">#6389</a>) <span class="author">— 王梓先</span></li>
   <li><span class="merged-at">[08/20 18:21]</span>mobile album upload opens gallery for #6386 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6415">#6415</a> <span class="author">— 陈聪</span></li>
 </ul>
@@ -274,6 +277,7 @@ a:hover { text-decoration: underline; }
 
 <h2>🔧 其他（chore / docs / test / ...）</h2>
 <ul>
+  <li><span class="merged-at">[08/20 23:29]</span>test(e2e): 新增 E6 群成员卡片契约差分旅程 MC-01~MC-07 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6421">#6421</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5958">#5958</a>) <span class="author">— 王梓先</span></li>
   <li><span class="merged-at">[08/20 17:20]</span>test(e2e): 新增 I1 群发列表差分旅程用例 MS-01~MS-07 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6392">#6392</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5955">#5955</a>) <span class="author">— 王梓先</span></li>
 </ul>
 
@@ -288,4 +292,3 @@ issue 链接基于 PetWebOrg/flutter-suiyin 仓。
 </div>
 </body>
 </html>
-

@@ -245,29 +245,29 @@ a:hover { text-decoration: underline; }
 <h1>📦 2026082102 发版预览</h1>
 <div class="meta">
 当前版本：<code>2026082101</code>（发版时间：<span class="bump-time">08/21 16:36</span>），下一版（预览）：<code>2026082102</code><br>
-生成时间：2026-08-21 20:41:59 · 重新跑脚本后刷新页面即拿最新
+生成时间：2026-08-21 23:07:27 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
 <h3>🆕 新功能</h3>
 <ul>
-  <li>批量改派选择同一客户的多个所在账号时，现在会按销售勾选的具体账号提交；升级期间也能继续正常改派，不会生成重复批次。— 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6456">#6456</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6451">#6451</a>)</li>
+<li>批量改派选择同一客户的多个所在账号时，现在会按销售勾选的具体账号提交；升级期间也能继续正常改派，不会生成重复批次。— 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6456">#6456</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6451">#6451</a>)</li>
 </ul>
 
 <h3>✨ 体验优化</h3>
 <ul>
-  <li>PC「设置 → 关于」里的菜单、帮助入口和版权文案已统一为碎银品牌，不再残留艺星字样。— 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6459">#6459</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6448">#6448</a>)</li>
+<li>PC「设置 → 关于」里的菜单、帮助入口和版权文案已统一为碎银品牌，不再残留艺星字样。— 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6459">#6459</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6448">#6448</a>)</li>
 </ul>
 
 <h3>🐞 问题修复</h3>
 <ul>
-  <li>Windows PC 聊天输入遇到「只打出拼音字母、没有中文候选」时，会更稳地识别并恢复；正常切微信、切会话或回到输入框时不会误触发恢复流程打断输入。— 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6458">#6458</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6442">#6442</a>)</li>
-  <li>引用很早之前的聊天消息时，只要原消息仍存在且有权限查看，就会先显示原文摘要并支持定位，不会再误报「原消息不可用」。— 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6460">#6460</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6449">#6449</a>)</li>
+<li>Windows PC 聊天输入遇到「只打出拼音字母、没有中文候选」时，会更稳地识别并恢复；正常切微信、切会话或回到输入框时不会误触发恢复流程打断输入。— 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6458">#6458</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6442">#6442</a>)</li>
+<li>引用很早之前的聊天消息时，只要原消息仍存在且有权限查看，就会先显示原文摘要并支持定位，不会再误报「原消息不可用」。— 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6460">#6460</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6449">#6449</a>)</li>
 </ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">08/21 16:36 上次发版后，合入 main 的全部 <strong>7</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">08/21 16:36 上次发版后，合入 main 的全部 <strong>10</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
   <li><span class="merged-at">[08/21 18:07]</span>透传业务请求与响应头 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6440">#6440</a> <span class="author">— 梁晨</span></li>
@@ -276,6 +276,7 @@ a:hover { text-decoration: underline; }
 
 <h2>🐞 问题修复</h2>
 <ul>
+  <li><span class="merged-at">[08/21 21:38]</span>补齐 _FakeHttpClient.post 的 headers 参数，恢复 9 个 runner / 98 条哑用例 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6475">#6475</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6472">#6472</a>) <span class="author">— 王梓先</span></li>
   <li><span class="merged-at">[08/21 18:39]</span>log all message send failures to SLS <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6463">#6463</a> <span class="author">— 梁晨</span></li>
   <li><span class="merged-at">[08/21 18:12]</span>fail closed Windows IME recovery permit <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6458">#6458</a> <span class="author">— 陈聪</span></li>
   <li><span class="merged-at">[08/21 17:36]</span>close #6449 修复跨消息窗口引用误判不可用 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6460">#6460</a> <span class="author">— 梁晨</span></li>
@@ -289,6 +290,8 @@ a:hover { text-decoration: underline; }
 
 <h2>🔧 其他（chore / docs / test / ...）</h2>
 <ul>
+  <li><span class="merged-at">[08/21 21:44]</span>chore(e2e): 按旅程拆分 E2E 标识常量文件以消除并行旅程的固定冲突点 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6461">#6461</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6428">#6428</a>) <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[08/21 21:09]</span>test(e2e): 新增 C7 转发旅程双侧收发用例，含发送人设身份守卫 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6471">#6471</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6462">#6462</a>) <span class="author">— 王梓先</span></li>
   <li><span class="merged-at">[08/21 18:16]</span>test(e2e): 新增话术创建与发送闭环旅程用例 SC-01~SC-05 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6433">#6433</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6066">#6066</a>) <span class="author">— 王梓先</span></li>
 </ul>
 

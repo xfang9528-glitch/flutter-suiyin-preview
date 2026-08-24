@@ -82,7 +82,7 @@ a:hover { text-decoration: underline; }
 <label>查看历史预览：</label>
 <select id="version-switcher-select" onchange="var v=this.value; if(v) location.href = v; else location.href = './';">
 <!-- VERSION_SWITCHER_OPTIONS_START -->
-<option value="">📦 2026082301 发版预览</option>
+<option value="">📦 2026082401 发版预览</option>
 <option value="2026082202.html">🗂 2026082202</option>
 <option value="2026082102.html">🗂 2026082102</option>
 <option value="2026082101.html">🗂 2026082101</option>
@@ -244,18 +244,21 @@ a:hover { text-decoration: underline; }
   }
 })();
 </script>
-<h1>📦 2026082301 发版预览</h1>
+<h1>📦 2026082401 发版预览</h1>
 <div class="meta">
-当前版本：<code>2026082202</code>（发版时间：<span class="bump-time">08/22 20:55</span>），下一版（预览）：<code>2026082301</code><br>
-生成时间：2026-08-23 23:07:46 · 重新跑脚本后刷新页面即拿最新
+当前版本：<code>2026082202</code>（发版时间：<span class="bump-time">08/22 20:55</span>），下一版（预览）：<code>2026082401</code><br>
+生成时间：2026-08-24 10:35:20 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
-<div class="notice">本期暂无新的 PC 端用户感知更新。</div>
+<h3>🐞 问题修复</h3>
+<ul>
+  <li>Windows 上拖拽会话子窗口后，再关闭或切换窗口时偶发闪退的问题已修复；销售正常使用 PC 客户端时不会再因为这类异常中断工作。— 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6466">#6466</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6464">#6464</a>)</li>
+</ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">08/22 20:55 上次发版后，合入 main 的全部 <strong>0</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">08/22 20:55 上次发版后，合入 main 的全部 <strong>1</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
   <li class="empty">无</li>
@@ -263,7 +266,7 @@ a:hover { text-decoration: underline; }
 
 <h2>🐞 问题修复</h2>
 <ul>
-  <li class="empty">无</li>
+  <li><span class="merged-at">[08/24 10:10]</span>close #6464 修复 Windows OLE 拖拽残留端点闪退 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6466">#6466</a> <span class="author">— 王争</span></li>
 </ul>
 
 <h2>✨ 体验优化</h2>

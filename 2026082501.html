@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<!-- CURRENT_BUILD:2026082401 -->
+<title>下一版发版预览 · flutter-suiyin</title>
+<style>
+:root {
+  color-scheme: light dark;
+  --page-background: #fafbfc;
+  --text-primary: #1f2328;
+  --text-secondary: #656d76;
+  --text-tertiary: #8c959f;
+  --text-empty: #999;
+  --border-strong: #d1d9e0;
+  --border-subtle: #eef0f2;
+  --code-background: #eef0f2;
+  --link: #0969da;
+  --notice-background: #fff8c5;
+  --notice-border: #d4a72c;
+  --notice-text: #59410a;
+  --control-background: #fff;
+  --control-border: #d1d9e0;
+  --control-shadow: rgba(0, 0, 0, 0.04);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --page-background: #0d1117;
+    --text-primary: #e6edf3;
+    --text-secondary: #8b949e;
+    --text-tertiary: #7d8590;
+    --text-empty: #8b949e;
+    --border-strong: #30363d;
+    --border-subtle: #21262d;
+    --code-background: #161b22;
+    --link: #58a6ff;
+    --notice-background: #2d2400;
+    --notice-border: #9e6a03;
+    --notice-text: #e3b341;
+    --control-background: #161b22;
+    --control-border: #30363d;
+    --control-shadow: rgba(0, 0, 0, 0.35);
+  }
+}
+
+html { background: var(--page-background); }
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", sans-serif; max-width: 880px; margin: 32px auto; padding: 0 24px; color: var(--text-primary); line-height: 1.7; background: var(--page-background); }
+h1 { border-bottom: 1px solid var(--border-strong); padding-bottom: 8px; }
+h2 { margin-top: 32px; border-bottom: 1px solid var(--border-subtle); padding-bottom: 4px; }
+.meta { color: var(--text-secondary); font-size: 13px; margin-bottom: 24px; }
+.meta code { background: var(--code-background); padding: 2px 6px; border-radius: 4px; }
+.empty { color: var(--text-empty); font-style: italic; list-style: none; margin-left: -20px; }
+ul { padding-left: 24px; }
+li { margin: 6px 0; }
+a { color: var(--link); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.author { color: var(--text-tertiary); font-size: 12px; margin-left: 4px; }
+.merged-at { color: var(--text-tertiary); font-size: 12px; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; margin-right: 4px; }
+.bump-time { color: var(--text-primary); font-weight: 600; }
+.foot { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--border-subtle); color: var(--text-tertiary); font-size: 12px; }
+.notice { background: var(--notice-background); border: 1px solid var(--notice-border); padding: 12px 16px; border-radius: 6px; margin: 16px 0; color: var(--notice-text); }
+.ref-divider { border: 0; border-top: 2px dashed var(--border-strong); margin: 40px 0 16px 0; }
+.ref-heading { font-size: 20px; border-bottom: none; }
+.ref-hint { color: var(--text-secondary); font-size: 13px; margin-bottom: 16px; }
+.version-switcher { position: fixed; top: 16px; right: 24px; background: var(--control-background); border: 1px solid var(--control-border); border-radius: 6px; padding: 6px 10px; font-size: 13px; box-shadow: 0 2px 6px var(--control-shadow); z-index: 100; }
+.version-switcher label { color: var(--text-secondary); margin-right: 6px; }
+.version-switcher select { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 13px; padding: 2px 4px; color: var(--text-primary); background: var(--control-background); border: 1px solid var(--control-border); border-radius: 4px; }
+
+</style>
+</head>
+<body>
+<!-- 右上角「查看历史预览」下拉：
+     - 顶部 `📦 <nextBuild> 发版预览` = 当前还没冻结的下一版预览（value="" 跳 ./）
+     - 历史项 `🗂 <build>` = 已发版冻结归档，文件名 `<10位build>.html`（一次发版一份）
+     - 本地预览（docs/release-preview.html）：dart 读 PREVIEW_REPO_DIR
+       （默认 D:/CC work/flutter-suiyin-preview）下已有的 `<build>.html`，option
+       value 拼绝对 URL 指向 GitHub Pages，本地点击跳过去看
+     - GitHub Pages 上的 index.html：publish_preview.ps1 推送时会把 marker 之间
+       的内容重写成相对路径 option（同域跳转），覆盖 dart 输出 -->
+<div class="version-switcher">
+<label>查看历史预览：</label>
+<select id="version-switcher-select" onchange="var v=this.value; if(v) location.href = v; else location.href = './';">
+<!-- VERSION_SWITCHER_OPTIONS_START -->
+<option value="">📦 2026082502 发版预览</option>
+<option value="2026082501.html">🗂 2026082501</option>
+<option value="2026082401.html">🗂 2026082401</option>
+<option value="2026082202.html">🗂 2026082202</option>
+<option value="2026082102.html">🗂 2026082102</option>
+<option value="2026082101.html">🗂 2026082101</option>
+<option value="2026082001.html">🗂 2026082001</option>
+<option value="2026081902.html">🗂 2026081902</option>
+<option value="2026081901.html">🗂 2026081901</option>
+<option value="2026081802.html">🗂 2026081802</option>
+<option value="2026081801.html">🗂 2026081801</option>
+<option value="2026081701.html">🗂 2026081701</option>
+<option value="2026081601.html">🗂 2026081601</option>
+<option value="2026081402.html">🗂 2026081402</option>
+<option value="2026081401.html">🗂 2026081401</option>
+<option value="2026081301.html">🗂 2026081301</option>
+<option value="2026081202.html">🗂 2026081202</option>
+<option value="2026081201.html">🗂 2026081201</option>
+<option value="2026081102.html">🗂 2026081102</option>
+<option value="2026081001.html">🗂 2026081001</option>
+<option value="2026080901.html">🗂 2026080901</option>
+<option value="2026080701.html">🗂 2026080701</option>
+<option value="2026080602.html">🗂 2026080602</option>
+<option value="2026080501.html">🗂 2026080501</option>
+<option value="2026080403.html">🗂 2026080403</option>
+<option value="2026080401.html">🗂 2026080401</option>
+<option value="2026080301.html">🗂 2026080301</option>
+<option value="2026080101.html">🗂 2026080101</option>
+<option value="2026073102.html">🗂 2026073102</option>
+<option value="2026073101.html">🗂 2026073101</option>
+<option value="2026073002.html">🗂 2026073002</option>
+<option value="2026073001.html">🗂 2026073001</option>
+<option value="2026072902.html">🗂 2026072902</option>
+<option value="2026072901.html">🗂 2026072901</option>
+<option value="2026072801.html">🗂 2026072801</option>
+<option value="2026072701.html">🗂 2026072701</option>
+<option value="2026072403.html">🗂 2026072403</option>
+<option value="2026072402.html">🗂 2026072402</option>
+<option value="2026072401.html">🗂 2026072401</option>
+<option value="2026072302.html">🗂 2026072302</option>
+<option value="2026072301.html">🗂 2026072301</option>
+<option value="2026072202.html">🗂 2026072202</option>
+<option value="2026072201.html">🗂 2026072201</option>
+<option value="2026072101.html">🗂 2026072101</option>
+<option value="2026072003.html">🗂 2026072003</option>
+<option value="2026072001.html">🗂 2026072001</option>
+<option value="2026071703.html">🗂 2026071703</option>
+<option value="2026071701.html">🗂 2026071701</option>
+<option value="2026071602.html">🗂 2026071602</option>
+<option value="2026071601.html">🗂 2026071601</option>
+<option value="2026071502.html">🗂 2026071502</option>
+<option value="2026071501.html">🗂 2026071501</option>
+<option value="2026071401.html">🗂 2026071401</option>
+<option value="2026071301.html">🗂 2026071301</option>
+<option value="2026071201.html">🗂 2026071201</option>
+<option value="2026071002.html">🗂 2026071002</option>
+<option value="2026071001.html">🗂 2026071001</option>
+<option value="2026070901.html">🗂 2026070901</option>
+<option value="2026070801.html">🗂 2026070801</option>
+<option value="2026070701.html">🗂 2026070701</option>
+<option value="2026070602.html">🗂 2026070602</option>
+<option value="2026070601.html">🗂 2026070601</option>
+<option value="2026070502.html">🗂 2026070502</option>
+<option value="2026070501.html">🗂 2026070501</option>
+<option value="2026070401.html">🗂 2026070401</option>
+<option value="2026070304.html">🗂 2026070304</option>
+<option value="2026070303.html">🗂 2026070303</option>
+<option value="2026070301.html">🗂 2026070301</option>
+<option value="2026070201.html">🗂 2026070201</option>
+<option value="2026070103.html">🗂 2026070103</option>
+<option value="2026070102.html">🗂 2026070102</option>
+<option value="2026070101.html">🗂 2026070101</option>
+<option value="2026063002.html">🗂 2026063002</option>
+<option value="2026062901.html">🗂 2026062901</option>
+<option value="2026062701.html">🗂 2026062701</option>
+<option value="2026062601.html">🗂 2026062601</option>
+<option value="2026062503.html">🗂 2026062503</option>
+<option value="2026062502.html">🗂 2026062502</option>
+<option value="2026062501.html">🗂 2026062501</option>
+<option value="2026062401.html">🗂 2026062401</option>
+<option value="2026062303.html">🗂 2026062303</option>
+<option value="2026062301.html">🗂 2026062301</option>
+<option value="2026062202.html">🗂 2026062202</option>
+<option value="2026062201.html">🗂 2026062201</option>
+<option value="2026062001.html">🗂 2026062001</option>
+<option value="2026061901.html">🗂 2026061901</option>
+<option value="2026061802.html">🗂 2026061802</option>
+<option value="2026061801.html">🗂 2026061801</option>
+<option value="2026061701.html">🗂 2026061701</option>
+<option value="2026061602.html">🗂 2026061602</option>
+<option value="2026061601.html">🗂 2026061601</option>
+<option value="2026061501.html">🗂 2026061501</option>
+<option value="2026061301.html">🗂 2026061301</option>
+<option value="2026061202.html">🗂 2026061202</option>
+<option value="2026061102.html">🗂 2026061102</option>
+<option value="2026061101.html">🗂 2026061101</option>
+<option value="2026061001.html">🗂 2026061001</option>
+<option value="2026060901.html">🗂 2026060901</option>
+<option value="2026060801.html">🗂 2026060801</option>
+<option value="2026060501.html">🗂 2026060501</option>
+<option value="2026060402.html">🗂 2026060402</option>
+<option value="2026060401.html">🗂 2026060401</option>
+<option value="2026060301.html">🗂 2026060301</option>
+<option value="2026060201.html">🗂 2026060201</option>
+<option value="2026060101.html">🗂 2026060101</option>
+<option value="2026053101.html">🗂 2026053101</option>
+<option value="2026053001.html">🗂 2026053001</option>
+<option value="2026052902.html">🗂 2026052902</option>
+<option value="2026052901.html">🗂 2026052901</option>
+<option value="2026052802.html">🗂 2026052802</option>
+<option value="2026052801.html">🗂 2026052801</option>
+<option value="2026052702.html">🗂 2026052702</option>
+<option value="2026052701.html">🗂 2026052701</option>
+<option value="2026052601.html">🗂 2026052601</option>
+<option value="2026052502.html">🗂 2026052502</option>
+<option value="2026052202.html">🗂 2026052202</option>
+<option value="2026052201.html">🗂 2026052201</option>
+<option value="2026052101.html">🗂 2026052101</option>
+<option value="2026052001.html">🗂 2026052001</option>
+<option value="2026051902.html">🗂 2026051902</option>
+<option value="2026051901.html">🗂 2026051901</option>
+<option value="2026051801.html">🗂 2026051801</option>
+<option value="2026051502.html">🗂 2026051502</option>
+<option value="2026051501.html">🗂 2026051501</option>
+<option value="2026051402.html">🗂 2026051402</option>
+<option value="2026051401.html">🗂 2026051401</option>
+<option value="2026051301.html">🗂 2026051301</option>
+<option value="2026051202.html">🗂 2026051202</option>
+<option value="2026051201.html">🗂 2026051201</option>
+<option value="2026051103.html">🗂 2026051103</option>
+<option value="2026051102.html">🗂 2026051102</option>
+<option value="2026051101.html">🗂 2026051101</option>
+<option value="2026050903.html">🗂 2026050903</option>
+<option value="2026050902.html">🗂 2026050902</option>
+<option value="2026050901.html">🗂 2026050901</option>
+<option value="2026050703.html">🗂 2026050703</option>
+<option value="2026050702.html">🗂 2026050702</option>
+<option value="2026050701.html">🗂 2026050701</option>
+<option value="2026050601.html">🗂 2026050601</option>
+<option value="2026050401.html">🗂 2026050401</option>
+<option value="2026050201.html">🗂 2026050201</option>
+<option value="2026050101.html">🗂 2026050101</option>
+<option value="2026043002.html">🗂 2026043002</option>
+<option value="2026043001.html">🗂 2026043001</option>
+<option value="2026042902.html">🗂 2026042902</option>
+<option value="2026042901.html">🗂 2026042901</option>
+<option value="2026042804.html">🗂 2026042804</option>
+<!-- VERSION_SWITCHER_OPTIONS_END -->
+</select>
+</div>
+<script>
+// 让下拉的当前选中态跟着当前页走：在归档页（如 2026042901.html）里，自动选中 `🗂 2026042901`
+// 那项；这样点回 `📦 ... 发版预览`（value=""）时 select.value 才会发生变化，触发 onchange 跳 `./`。
+// 不做的话第一项默认选中 = "📦 ..." = ""，在归档页点它无变化、不跳转，用户回不去首页。
+(function(){
+  var sel = document.getElementById('version-switcher-select');
+  if (!sel) return;
+  var cur = location.pathname.split('/').pop();
+  if (!cur || cur === 'index.html' || cur === '') return;
+  for (var i = 0; i < sel.options.length; i++) {
+    if (sel.options[i].value === cur) { sel.selectedIndex = i; break; }
+  }
+})();
+</script>
+<h1>📦 2026082501 发版预览</h1>
+<div class="meta">
+当前版本：<code>2026082401</code>（发版时间：<span class="bump-time">08/24 17:46</span>），下一版（预览）：<code>2026082501</code><br>
+生成时间：2026-08-25 22:29:59 · 重新跑脚本后刷新页面即拿最新
+</div>
+
+<h2>📣 本版用户感知更新</h2>
+<h3>🆕 新功能</h3>
+<ul>
+  <li>内部客户即使正在由其他销售接待，也可以从名片选择器直接发送名片；普通他销客户仍会置灰保护。— 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6581">#6581</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6556">#6556</a>)</li>
+  <li>资料库现在支持按标题搜索，PC 和 App 都能更快找到需要的素材。— 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6531">#6531</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6402">#6402</a>)</li>
+</ul>
+<h3>✨ 体验优化</h3>
+<ul>
+  <li>PC 聊天里的置顶、免打扰、转发、截图、语音、收藏等操作，加载中、成功和失败提示统一成窗口内反馈；失败后可直接重试。— 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6544">#6544</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6356">#6356</a>)</li>
+  <li>PC 客户资料里的资料、照片、备注、标签、购买记录、录音转写、AI 分析等操作，会显示更清楚的进度、失败原因和重试入口。— 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6541">#6541</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6357">#6357</a>)</li>
+  <li>PC 预约、客户计划、咨询标签和回访入口遇到加载或保存失败时，会保留原内容并显示中文原因和重试按钮。— 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6533">#6533</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6353">#6353</a>)</li>
+  <li>加好友记录里的“已申请”状态改为“等待验证”，更贴近实际处理进度。— 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6555">#6555</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6553">#6553</a>)</li>
+  <li>PC 开关关闭时的轨道和描边更清楚，白底界面里不容易再误以为开关不可用。— 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6538">#6538</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6513">#6513</a>)</li>
+  <li>一键下班或批量转接大量客户时，会逐条显示处理进度，不再停在初始数量上像卡住一样。— 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6193">#6193</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6016">#6016</a>)</li>
+  <li>资料库笔记会显示剩余可用天数，过期笔记不再出现在资料库和常用素材里。— 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6521">#6521</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6500">#6500</a>)</li>
+</ul>
+<h3>🐞 问题修复</h3>
+<ul>
+  <li>“新的朋友”面板新增人设后，会自动把新人设纳入默认筛选，不再出现统计卡有待添加数量、列表却为空。— 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6578">#6578</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6499">#6499</a>)</li>
+  <li>正在接待列表里的 AI 客户等级会随本地列表同步刷新，不再停留在空值或旧等级。— 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6573">#6573</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6519">#6519</a>)</li>
+  <li>群聊文字消息发送失败后，切换人设再点重试，也会继续用原来那个人设发送。— 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6557">#6557</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6546">#6546</a>)</li>
+  <li>好友申请失败时，会恢复后端给出的失败原因和可重试状态，不再把能重试的申请显示成普通失败。— 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6559">#6559</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6547">#6547</a>)</li>
+  <li>点击可复制文字后马上切走或关闭相关界面，不会再因为晚到的鼠标抬起事件导致崩溃。— 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6537">#6537</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6535">#6535</a>)</li>
+  <li>通讯录按账号筛选时，不再混入其他账号名下的客户。— 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6548">#6548</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6507">#6507</a>)</li>
+  <li>「未聊」分组不再混入已经聊过的会话；销售或客户发出真实消息后，会话会立刻退出「未聊」。— 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6525">#6525</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6508">#6508</a>)</li>
+  <li>已聚焦输入框时切换会话，中文输入法会重新接上，不再出现上屏异常。— 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6522">#6522</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6487">#6487</a>)</li>
+  <li>微信重登窗口关闭、切企业或切账号后，旧的重试结果不会再误删当前提示或写到新账号上。— 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6502">#6502</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6483">#6483</a>)</li>
+</ul>
+
+<hr class="ref-divider">
+<h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
+<div class="ref-hint">08/24 17:46 上次发版后，合入 main 的全部 <strong>33</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<h2>🆕 新功能</h2>
+<ul>
+  <li><span class="merged-at">[08/25 19:06]</span>内部他销客户无分配直发名片 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6581">#6581</a> <span class="author">— 陈宣宇</span></li>
+  <li><span class="merged-at">[08/25 14:04]</span>close #6550 add Windows release promotion gate <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6552">#6552</a> <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[08/24 21:09]</span>close #6402 支持 PC 与 APP 资料库标题检索（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6531">#6531</a> <span class="author">— 陈宣宇</span></li>
+</ul>
+
+<h2>🐞 问题修复</h2>
+<ul>
+  <li><span class="merged-at">[08/25 18:21]</span>修复 main 上 8 条 pre-existing 稳定红断言（#6011 token 迁移与守卫漂移漏同步） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6580">#6580</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6566">#6566</a>) <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[08/25 18:11]</span>#6499 人设默认全选自动跟随可见人设集合 + 进面板校准快照 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6578">#6578</a> <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[08/25 17:31]</span>同步正在接待列表的 AI 客户等级 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6573">#6573</a> <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[08/25 15:46]</span>close #6546 群文字重试保留原发送人设 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6557">#6557</a> <span class="author">— 梁晨</span></li>
+  <li><span class="merged-at">[08/25 15:46]</span>加深 PcSwitch 关闭态轨道使其在白底可辨（#6513） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6538">#6538</a> <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[08/25 15:16]</span>修复列表链路 failCode/retryable 全链丢失，失败申请恢复后端重试标记 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6559">#6559</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6547">#6547</a>) <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[08/25 14:19]</span>修复点击复制组件卸载后 PointerUp 崩溃 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6537">#6537</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6535">#6535</a>) <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[08/25 14:09]</span>通讯录按账号筛选不再混入其他账号的客户 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6548">#6548</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6507">#6507</a>) <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[08/25 11:38]</span>honor notification sound and vibration settings <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6540">#6540</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6454">#6454</a>) <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[08/24 21:27]</span>「未聊」分组不再混入已聊会话，收发消息当场退出 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6525">#6525</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6508">#6508</a>) <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[08/24 20:22]</span>close #6523 对齐微信重登登录视图测试契约（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6529">#6529</a> <span class="author">— 陈宣宇</span></li>
+  <li><span class="merged-at">[08/24 19:31]</span>close #6520 恢复 HttpClient 测试桩 headers 参数（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6528">#6528</a> <span class="author">— 陈宣宇</span></li>
+  <li><span class="merged-at">[08/24 19:19]</span>close #6500 展示资料库笔记剩余期限并隐藏过期笔记 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6521">#6521</a> <span class="author">— 陈宣宇</span></li>
+  <li><span class="merged-at">[08/24 18:33]</span>重连会话切换后的 IME 输入上下文 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6522">#6522</a> <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[08/24 18:10]</span>修复微信重登旧重试回调生命周期泄漏 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6502">#6502</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6483">#6483</a>) <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[08/24 18:03]</span>show handoff progress and confirm persona stop <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6193">#6193</a> <span class="author">— 陈聪</span></li>
+</ul>
+
+<h2>✨ 体验优化</h2>
+<ul>
+  <li><span class="merged-at">[08/25 18:31]</span>close #6356 迁移 PC 聊天反馈 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6544">#6544</a> <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[08/25 17:21]</span>close #6357 统一 PC 客户资料操作反馈 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6541">#6541</a> <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[08/25 10:54]</span>close #6353 统一 PC 预约计划咨询与回访反馈 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6533">#6533</a> <span class="author">— 王争</span></li>
+</ul>
+
+<h2>🔧 其他（chore / docs / test / ...）</h2>
+<ul>
+  <li><span class="merged-at">[08/25 21:43]</span>test(observability): 让 IME 阶梯与人设气泡用例接回真实链路，修复 main 上 12 条无主稳定红 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6576">#6576</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6473">#6473</a>) <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[08/25 15:55]</span>chore: ignore local OMX state <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6563">#6563</a> <span class="author">— 梁晨</span></li>
+  <li><span class="merged-at">[08/25 15:33]</span>docs(release): archive Android 2026082501 notes <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6561">#6561</a> <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[08/25 14:59]</span>chore(chat): 添加记录状态文案改为等待验证 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6555">#6555</a> <span class="author">— 陈宣宇</span></li>
+  <li><span class="merged-at">[08/25 14:56]</span>docs(release): include latest mobile fixes <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6558">#6558</a> <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[08/25 13:55]</span>test(e2e): 新增独立聊天窗拆窗与拆窗后主窗行为的 drive 旅程用例 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6542">#6542</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6534">#6534</a>) <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[08/25 13:54]</span>test: close #6012 新增 PC 无障碍 DPI 与视觉回归门禁 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6524">#6524</a> <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[08/25 13:39]</span>docs(release): restore mobile release archives <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6549">#6549</a> <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[08/25 12:06]</span>chore(release): Android 2026082501 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6545">#6545</a> <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[08/25 07:25]</span>test(e2e): 新增子窗口 E2E-IPC 灰盒探针基建与打样用例 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6532">#6532</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6046">#6046</a>) <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[08/24 18:56]</span>chore(test): #6375 批次0——测试入口棘轮+孤儿cases守卫接入四端gate，附全名diff/成本报表工具（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6422">#6422</a> <span class="author">— 王梓先、陈聪</span></li>
+</ul>
+
+
+<hr class="ref-divider">
+
+<div class="foot">
+上一次发版时间：<span class="bump-time">08/24 17:46</span>（基线 commit：<code>PC baseline override 2026082401: fix(chat/windows): 防止图片文字拖动晚到事件访问已卸载上下文 (#6506)</code>）<br>
+PR 归属版本由 <code>pubspec.yaml</code> 的 <code>version:</code> 行 git 历史判定 —— bump commit 的 committedAt 是分割线。<br>
+由 <code>tool/generate_release_preview.dart</code> 自动提取；重新跑脚本后刷新页面即拿最新。<br>
+issue 链接基于 PetWebOrg/flutter-suiyin 仓。
+</div>
+</body>
+</html>
+

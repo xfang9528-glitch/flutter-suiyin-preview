@@ -2,30 +2,71 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
-<!-- CURRENT_BUILD:2026072003 -->
+<!-- CURRENT_BUILD:2026082601 -->
 <title>下一版发版预览 · flutter-suiyin</title>
 <style>
-body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", sans-serif; max-width: 880px; margin: 32px auto; padding: 0 24px; color: #1f2328; line-height: 1.7; background: #fafbfc; }
-h1 { border-bottom: 1px solid #d1d9e0; padding-bottom: 8px; }
-h2 { margin-top: 32px; border-bottom: 1px solid #eef0f2; padding-bottom: 4px; }
-.meta { color: #656d76; font-size: 13px; margin-bottom: 24px; }
-.meta code { background: #eef0f2; padding: 2px 6px; border-radius: 4px; }
-.empty { color: #999; font-style: italic; list-style: none; margin-left: -20px; }
+:root {
+  color-scheme: light dark;
+  --page-background: #fafbfc;
+  --text-primary: #1f2328;
+  --text-secondary: #656d76;
+  --text-tertiary: #8c959f;
+  --text-empty: #999;
+  --border-strong: #d1d9e0;
+  --border-subtle: #eef0f2;
+  --code-background: #eef0f2;
+  --link: #0969da;
+  --notice-background: #fff8c5;
+  --notice-border: #d4a72c;
+  --notice-text: #59410a;
+  --control-background: #fff;
+  --control-border: #d1d9e0;
+  --control-shadow: rgba(0, 0, 0, 0.04);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --page-background: #0d1117;
+    --text-primary: #e6edf3;
+    --text-secondary: #8b949e;
+    --text-tertiary: #7d8590;
+    --text-empty: #8b949e;
+    --border-strong: #30363d;
+    --border-subtle: #21262d;
+    --code-background: #161b22;
+    --link: #58a6ff;
+    --notice-background: #2d2400;
+    --notice-border: #9e6a03;
+    --notice-text: #e3b341;
+    --control-background: #161b22;
+    --control-border: #30363d;
+    --control-shadow: rgba(0, 0, 0, 0.35);
+  }
+}
+
+html { background: var(--page-background); }
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", sans-serif; max-width: 880px; margin: 32px auto; padding: 0 24px; color: var(--text-primary); line-height: 1.7; background: var(--page-background); }
+h1 { border-bottom: 1px solid var(--border-strong); padding-bottom: 8px; }
+h2 { margin-top: 32px; border-bottom: 1px solid var(--border-subtle); padding-bottom: 4px; }
+.meta { color: var(--text-secondary); font-size: 13px; margin-bottom: 24px; }
+.meta code { background: var(--code-background); padding: 2px 6px; border-radius: 4px; }
+.empty { color: var(--text-empty); font-style: italic; list-style: none; margin-left: -20px; }
 ul { padding-left: 24px; }
 li { margin: 6px 0; }
-a { color: #0969da; text-decoration: none; }
+a { color: var(--link); text-decoration: none; }
 a:hover { text-decoration: underline; }
-.author { color: #8c959f; font-size: 12px; margin-left: 4px; }
-.merged-at { color: #8c959f; font-size: 12px; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; margin-right: 4px; }
-.bump-time { color: #1f2328; font-weight: 600; }
-.foot { margin-top: 48px; padding-top: 16px; border-top: 1px solid #eef0f2; color: #8c959f; font-size: 12px; }
-.notice { background: #fff8c5; border: 1px solid #d4a72c; padding: 12px 16px; border-radius: 6px; margin: 16px 0; color: #59410a; }
-.ref-divider { border: 0; border-top: 2px dashed #d1d9e0; margin: 40px 0 16px 0; }
+.author { color: var(--text-tertiary); font-size: 12px; margin-left: 4px; }
+.merged-at { color: var(--text-tertiary); font-size: 12px; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; margin-right: 4px; }
+.bump-time { color: var(--text-primary); font-weight: 600; }
+.foot { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--border-subtle); color: var(--text-tertiary); font-size: 12px; }
+.notice { background: var(--notice-background); border: 1px solid var(--notice-border); padding: 12px 16px; border-radius: 6px; margin: 16px 0; color: var(--notice-text); }
+.ref-divider { border: 0; border-top: 2px dashed var(--border-strong); margin: 40px 0 16px 0; }
 .ref-heading { font-size: 20px; border-bottom: none; }
-.ref-hint { color: #656d76; font-size: 13px; margin-bottom: 16px; }
-.version-switcher { position: fixed; top: 16px; right: 24px; background: #fff; border: 1px solid #d1d9e0; border-radius: 6px; padding: 6px 10px; font-size: 13px; box-shadow: 0 2px 6px rgba(0,0,0,0.04); z-index: 100; }
-.version-switcher label { color: #656d76; margin-right: 6px; }
-.version-switcher select { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 13px; padding: 2px 4px; }
+.ref-hint { color: var(--text-secondary); font-size: 13px; margin-bottom: 16px; }
+.version-switcher { position: fixed; top: 16px; right: 24px; background: var(--control-background); border: 1px solid var(--control-border); border-radius: 6px; padding: 6px 10px; font-size: 13px; box-shadow: 0 2px 6px var(--control-shadow); z-index: 100; }
+.version-switcher label { color: var(--text-secondary); margin-right: 6px; }
+.version-switcher select { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 13px; padding: 2px 4px; color: var(--text-primary); background: var(--control-background); border: 1px solid var(--control-border); border-radius: 4px; }
+
 </style>
 </head>
 <body>
@@ -207,74 +248,68 @@ a:hover { text-decoration: underline; }
   }
 })();
 </script>
-<h1>📦 2026072101 发版预览</h1>
+<h1>📦 2026082701 发版预览</h1>
 <div class="meta">
-当前版本：<code>2026072003</code>（发版时间：<span class="bump-time">07/20 21:20</span>），下一版（预览）：<code>2026072101</code><br>
-生成时间：2026-07-21 17:19:16 · 重新跑脚本后刷新页面即拿最新
+当前版本：<code>2026082601</code>（发版时间：<span class="bump-time">08/26 17:16</span>），下一版（预览）：<code>2026082701</code><br>
+生成时间：2026-08-27 16:11:11 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
+<h3>🆕 新功能</h3>
+<ul>
+  <li>话术资料库现在支持添加和发送更多素材类型，包括公众号、视频号、小程序、直播、笔记、位置和文件；失效素材会在发送前提示，避免发错或发不出去。— 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6662">#6662</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6364">#6364</a>)</li>
+</ul>
 <h3>✨ 体验优化</h3>
 <ul>
-  <li>图片预览里按 Ctrl+C 可以直接复制当前图片；在输入框右键菜单里也能稳定看到「粘贴」入口 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5052">#5052</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5025">#5025</a>)</li>
+  <li>从聊天里多选消息添加到话术时，选过的分类和内容草稿会自动保留；点空白关闭后再打开，不用重新选择和填写。— 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6622">#6622</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6582">#6582</a>)</li>
 </ul>
 <h3>🐞 问题修复</h3>
 <ul>
-  <li>有新顾客添加人设为好友时，左侧「通讯录」现在会实时冒出新增角标，销售不用点进去才知道有新申请 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5097">#5097</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5044">#5044</a>)</li>
-  <li>切换聊天或关闭客户侧边栏时会先清理选中的文字，不会再因为文本选区残留导致应用偶发闪退 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5045">#5045</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5010">#5010</a>)</li>
-  <li>退出应用时会主动清理已打开的子窗口，不会再因为窗口销毁异常导致闪退 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5078">#5078</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5067">#5067</a>)</li>
-  <li>群里的「拍一拍」现在会像系统提示一样居中显示，不会再带着头像跑到自己消息一侧 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5076">#5076</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5033">#5033</a>)</li>
-  <li>从通讯录进入会话设置消息提醒时，不会再因为账号信息缺失而保存失败 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5069">#5069</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5039">#5039</a>)</li>
+  <li>添加好友记录会准确区分「等待验证」「已通过」「失败」等状态，并用不同颜色提示，避免把仍在等待的申请误看成已经处理或通过。— 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6650">#6650</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6639">#6639</a>)</li>
+  <li>在聊天里取消选择视频或图片后，输入区不会继续等待到超时；从剪贴板粘贴本地图片路径也会更稳。— 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6646">#6646</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6643">#6643</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6644">#6644</a>)</li>
+  <li>Windows 中文输入法在切换聊天时会清理旧输入框的残留连接，减少旧会话输入状态干扰当前聊天的情况。— 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6633">#6633</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6575">#6575</a>)</li>
+  <li>聊天里遇到无效的本地图片时，会显示错误占位，不再因为继续交给系统解码而触发应用崩溃。— 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6642">#6642</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6447">#6447</a>)</li>
 </ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">07/20 21:20 上次发版后，合入 main 的全部 <strong>24</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">08/26 17:16 上次发版后，合入 main 的全部 <strong>14</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
-  <li><span class="merged-at">[07/21 16:18]</span>close #4900 合并转发出口业务埋点 + delivery relayCompose 独立分桶 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5100">#5100</a> <span class="author">— 王梓先</span></li>
-  <li><span class="merged-at">[07/21 13:36]</span>图片预览 Ctrl+C 复制当前图片，输入框右键恒显示「粘贴」 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5052">#5052</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5025">#5025</a>) <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[08/27 15:44]</span>close #6364 话术资料库支持全类型素材 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6662">#6662</a> <span class="author">— 王争</span></li>
 </ul>
 
 <h2>🐞 问题修复</h2>
 <ul>
-  <li><span class="merged-at">[07/21 17:14]</span>release-pc generate 补 pull-requests/issues read 权限，修更新说明空掉（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5107">#5107</a> <span class="author">— 张拓</span></li>
-  <li><span class="merged-at">[07/21 15:31]</span>refs #4994 「我的朋友圈」详情页正文接入长按复制 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5068">#5068</a> <span class="author">— 王争</span></li>
-  <li><span class="merged-at">[07/21 15:04]</span>#5044 好友申请 push 被 _handleSystemSignal 吞掉，左侧导航「通讯录」角标不实时刷新 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5097">#5097</a> <span class="author">— 王梓先</span></li>
-  <li><span class="merged-at">[07/21 14:13]</span>close #5010 切换聊天前安全清理 PC 文本选区 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5045">#5045</a> <span class="author">— 陈聪</span></li>
-  <li><span class="merged-at">[07/21 13:52]</span>tmp-verify 把 .NET 10 装进 ~/.dotnet 修 vpk 找不到运行时（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5091">#5091</a> <span class="author">— 张拓</span></li>
-  <li><span class="merged-at">[07/21 13:24]</span>tmp-verify 装 .NET 10 修 vpk pack 起不来（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5089">#5089</a> <span class="author">— 张拓</span></li>
-  <li><span class="merged-at">[07/21 12:55]</span>tmp-verify 静默 &lt;experimental/coroutine&gt; 废弃硬错误，绕过 VS 18 2026 拒编（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5085">#5085</a> <span class="author">— 张拓</span></li>
-  <li><span class="merged-at">[07/21 12:05]</span>tmp-verify 打包跳过 ObjectBox 本机缓存步骤，绕开 VS 生成器硬编码冲突（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5084">#5084</a> <span class="author">— 张拓</span></li>
-  <li><span class="merged-at">[07/21 11:46]</span>给两个 velopack 发版脚本补 UTF-8 BOM，修 PowerShell 5.1 读中文乱码致解析崩（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5083">#5083</a> <span class="author">— 张拓</span></li>
-  <li><span class="merged-at">[07/21 11:39]</span>quota-guard 评论在 bash -e 下发不出来（set +e）+ errexit 回归测试 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5082">#5082</a> <span class="author">— 张拓</span></li>
-  <li><span class="merged-at">[07/21 11:29]</span>进程退出前主动销毁子窗口，根治 NtUserDestroyWindow 野指针 AV <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5078">#5078</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5067">#5067</a>) <span class="author">— 王争</span></li>
-  <li><span class="merged-at">[07/21 10:44]</span>拍一拍消息前置走居中分派、不再带头像渲染在自己一侧 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5076">#5076</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5033">#5033</a>) <span class="author">— 王梓先</span></li>
-  <li><span class="merged-at">[07/21 10:08]</span>#5039 通讯录入口设消息提醒不再因 wcId 缺失被后端拒（从通讯录进会话也能正常设提醒） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5069">#5069</a> <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[08/27 14:52]</span>close #6582 多选添加话术关闭后保留选择 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6622">#6622</a> <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[08/27 13:32]</span>增强朋友圈 Windows 原生崩溃诊断 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6554">#6554</a> <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[08/27 11:49]</span>close #6623 repair P3 baseline failures <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6630">#6630</a> <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[08/27 04:17]</span>close #6639 统一添加好友记录状态与颜色 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6650">#6650</a> <span class="author">— 陈宣宇</span></li>
+  <li><span class="merged-at">[08/27 00:57]</span>close #6643 #6644 恢复 Windows IME 与主干测试门禁 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6646">#6646</a> <span class="author">— 陈宣宇</span></li>
+  <li><span class="merged-at">[08/26 19:16]</span>close #6575 关联 Windows IME 输入代际 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6633">#6633</a> <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[08/26 18:08]</span>修复无效本地图片触发原生解码崩溃 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6642">#6642</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6447">#6447</a>) <span class="author">— 陈聪</span></li>
 </ul>
 
 <h2>✨ 体验优化</h2>
 <ul>
-  <li><span class="merged-at">[07/21 14:45]</span>close #4976 将 ChatCustomer 写事务移出 iOS 主线程 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5031">#5031</a> <span class="author">— 陈聪</span></li>
-  <li><span class="merged-at">[07/21 13:20]</span>extract outgoing message reconciler <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5034">#5034</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5017">#5017</a>) <span class="author">— 陈聪</span></li>
+  <li class="empty">无</li>
 </ul>
 
 <h2>🔧 其他（chore / docs / test / ...）</h2>
 <ul>
-  <li><span class="merged-at">[07/21 17:10]</span>build(release): PC 发版收敛成一个 workflow（release-pc），打包+发布一次跑完，退役 PC 探针/翻牌（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5106">#5106</a> <span class="author">— 张拓</span></li>
-  <li><span class="merged-at">[07/21 17:07]</span>docs(gotchas): 记录本机让 objectbox 真库单测真跑的方法（install.sh + git exclude）（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5105">#5105</a> <span class="author">— 王争</span></li>
-  <li><span class="merged-at">[07/21 14:27]</span>chore(ios): iOS/macOS release 打包注入 SLS AK dart-define，修复 Apple 双端云日志整体不上报（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5037">#5037</a> <span class="author">— 王争</span></li>
-  <li><span class="merged-at">[07/21 11:21]</span>ci: quota-guard 失败时在 PR 自动评论（比日志 annotation 显眼） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5081">#5081</a> <span class="author">— 张拓</span></li>
-  <li><span class="merged-at">[07/21 10:52]</span>ci: 新增 CI 配额守卫，拦截「改动 workflow 且引入非自建 runner」的 PR（保护 GitHub Actions 配额不被托管 runner 偷吃） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5077">#5077</a> <span class="author">— 张拓</span></li>
-  <li><span class="merged-at">[07/21 10:32]</span>build(release): 发版版本号改为 tag 名驱动，打 tag 不再需要先 bump+commit pubspec（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5074">#5074</a> <span class="author">— 张拓</span></li>
-  <li><span class="merged-at">[07/21 10:03]</span>build(release): 新增发版翻牌 workflow，探针确认包到货后才发布 latest/changelog JSON（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5070">#5070</a> <span class="author">— 张拓</span></li>
+  <li><span class="merged-at">[08/27 14:25]</span>test(e2e): B5 筛选漏斗补重置回基线断言与交付登记 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6668">#6668</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6655">#6655</a>) <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[08/27 13:49]</span>test(e2e): B1 会话列表全量同步防删补字段完好断言与交付登记 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6665">#6665</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6654">#6654</a>) <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[08/27 11:27]</span>test(e2e): 为成都艺星租户新增 E2E 收件人白名单硬门 + CAP 区 13 条重判 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6624">#6624</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6599">#6599</a>) <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[08/27 10:43]</span>docs(quality-gate): 批处理全量门禁与 gate-runner 槽位规约入仓 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6645">#6645</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6628">#6628</a>) <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[08/27 09:49]</span>test(e2e): X1 搜索点击流转补活跃会话 fixture 并首次跑通 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6651">#6651</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6627">#6627</a>) <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[08/27 04:11]</span>test: close #6648 修复图片气泡测试固定超时 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6649">#6649</a> <span class="author">— 陈宣宇</span></li>
 </ul>
 
 
 <hr class="ref-divider">
 
 <div class="foot">
-上一次发版时间：<span class="bump-time">07/20 21:20</span>（基线 commit：<code>chore(release): 移动端发版 android 2026072003 (#5058)</code>）<br>
+上一次发版时间：<span class="bump-time">08/26 17:16</span>（基线 commit：<code>PC baseline override 2026082601: test(pc): split focus assertions below size limit (#6636) (#6638)</code>）<br>
 PR 归属版本由 <code>pubspec.yaml</code> 的 <code>version:</code> 行 git 历史判定 —— bump commit 的 committedAt 是分割线。<br>
 由 <code>tool/generate_release_preview.dart</code> 自动提取；重新跑脚本后刷新页面即拿最新。<br>
 issue 链接基于 PetWebOrg/flutter-suiyin 仓。

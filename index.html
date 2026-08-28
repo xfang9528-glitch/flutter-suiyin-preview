@@ -251,28 +251,41 @@ a:hover { text-decoration: underline; }
 <h1>📦 2026082801 发版预览</h1>
 <div class="meta">
 当前版本：<code>2026082701</code>（发版时间：<span class="bump-time">08/27 16:52</span>），下一版（预览）：<code>2026082801</code><br>
-生成时间：2026-08-28 10:47:57 · 重新跑脚本后刷新页面即拿最新
+生成时间：2026-08-28 17:01:10 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
 <h3>🐞 问题修复</h3>
 <ul>
+  <li>拖动 PC 聊天输入区调整高度时，切换会话或关闭窗口后不会再因为迟到的鼠标事件闪退。— 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6693">#6693</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6606">#6606</a>)</li>
+  <li>在艺星客户详情里打开或关闭客户等级菜单时，连续点击、切换客户或保存失败不会再触发闪退。— 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6708">#6708</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6609">#6609</a>)</li>
+  <li>在群里 @ 成员时，发送出去的名字现在优先使用群昵称或微信昵称，不会再把发送手机里私有的旧备注广播给全群。— 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6712">#6712</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6675">#6675</a>)</li>
+  <li>在聊天里粘贴或拖入大图片时，窗口不会再被卡住；切换会话、账号或企业后，迟到的粘贴结果也不会误发到当前聊天。— 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6691">#6691</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6634">#6634</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6605">#6605</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6680">#6680</a>)</li>
+  <li>安装失败时，弹窗会直接显示安装程序返回的真实原因和日志路径，不再误判成磁盘空间不足。— 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6705">#6705</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6683">#6683</a>)</li>
+  <li>朋友圈红点和互动角标遇到临时服务错误时，会保留上一次成功的数字，服务恢复后再自动更新。— 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6687">#6687</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6671">#6671</a>)</li>
   <li>手动把会话标为未读时，会话列表现在显示数字角标；点进会话读完后，数字也会正常消失，不用再手动标为已读。— 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6696">#6696</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6653">#6653</a>)</li>
   <li>鼠标悬停查看艺星会话列表或通讯录里的长名称时，列表刷新、切换或滚动不会再触发异常；长名称仍可悬停显示完整内容。— 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6699">#6699</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6684">#6684</a>)</li>
   <li>在朋友圈子窗口里添加公众号、视频号或小程序资料时，列表不会再因为企业信息没取到而显示为空；失败时也会给出原因和重试入口。— 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6676">#6676</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6661">#6661</a>)</li>
-  <li>在聊天里粘贴或拖入大图片时，窗口不会再被卡住；切换会话、账号或企业后，迟到的粘贴结果也不会误发到当前聊天。— 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6634">#6634</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6605">#6605</a>)</li>
 </ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">08/27 16:52 上次发版后，合入 main 的全部 <strong>10</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">08/27 16:52 上次发版后，合入 main 的全部 <strong>19</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
+  <li><span class="merged-at">[08/28 13:38]</span>close #6476 新增主 isolate 冻结旁路探针 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6686">#6686</a> <span class="author">— 王争</span></li>
   <li><span class="merged-at">[08/27 20:10]</span>艺星 APP 好友信息增加微信昵称与复制入口 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6694">#6694</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6378">#6378</a>) <span class="author">— 王梓先</span></li>
 </ul>
 
 <h2>🐞 问题修复</h2>
 <ul>
+  <li><span class="merged-at">[08/28 16:51]</span>修复输入区拖高后的迟到指针崩溃 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6693">#6693</a> <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[08/28 16:23]</span>修复客户等级菜单重复关闭崩溃 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6708">#6708</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6609">#6609</a>) <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[08/28 15:30]</span>群 @ 可见名改用群内昵称，不再广播发送手机的旧备注 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6712">#6712</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6675">#6675</a>) <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[08/28 15:23]</span>补齐 #6605 媒体入口竞态与有界诊断 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6691">#6691</a> <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[08/28 14:21]</span>close #6467 修复子窗口 SLS 埋点静默丢失 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6688">#6688</a> <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[08/28 13:29]</span>安装失败弹窗不再猜测原因，改报 velopack 原话 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6705">#6705</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6683">#6683</a>) <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[08/28 12:44]</span>back off notViewSns after 5xx <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6687">#6687</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6671">#6671</a>) <span class="author">— 陈聪</span></li>
   <li><span class="merged-at">[08/28 10:34]</span>手动标记未读改出数字角标而非小红点 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6696">#6696</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6653">#6653</a>) <span class="author">— 王梓先</span></li>
   <li><span class="merged-at">[08/28 10:13]</span>close #6684 修复动态列表 Tooltip 生命周期异常 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6699">#6699</a> <span class="author">— 王争</span></li>
   <li><span class="merged-at">[08/28 10:04]</span>修复 main 全量测试 23 条稳定失败 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6700">#6700</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6689">#6689</a>) <span class="author">— 王争</span></li>
@@ -287,6 +300,7 @@ a:hover { text-decoration: underline; }
 
 <h2>🔧 其他（chore / docs / test / ...）</h2>
 <ul>
+  <li><span class="merged-at">[08/28 11:18]</span>test(e2e): 公共话术双账号权限边界旅程 SC-06/08/09 + A5 换账号 helper <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6698">#6698</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6667">#6667</a>) <span class="author">— 王梓先</span></li>
   <li><span class="merged-at">[08/28 10:22]</span>test(e2e): 资料库添加与全类型发送收发旅程 ML-01~ML-07 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6702">#6702</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6067">#6067</a>) <span class="author">— 王梓先</span></li>
   <li><span class="merged-at">[08/27 19:18]</span>test(e2e): 话术管理增删改与公共私有归属差分旅程 SM-01~SM-05 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6690">#6690</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6666">#6666</a>) <span class="author">— 王梓先</span></li>
   <li><span class="merged-at">[08/27 18:41]</span>test(e2e): C11 入站分边与反向通道自发分边旅程用例 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6685">#6685</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6660">#6660</a>) <span class="author">— 王梓先</span></li>
@@ -297,7 +311,7 @@ a:hover { text-decoration: underline; }
 <hr class="ref-divider">
 
 <div class="foot">
-上一次发版时间：<span class="bump-time">08/27 16:52</span>（基线 commit：<code>PC baseline override 2026082701 at 88260bed38bd0e7853c6bd36d4c468dd2ed9addc</code>）<br>
+上一次发版时间：<span class="bump-time">08/27 16:52</span>（基线 commit：<code>PC baseline override 2026082701: Merge pull request #6669 from PetWebOrg/fix/6588-uia-guard</code>）<br>
 PR 归属版本由 <code>pubspec.yaml</code> 的 <code>version:</code> 行 git 历史判定 —— bump commit 的 committedAt 是分割线。<br>
 由 <code>tool/generate_release_preview.dart</code> 自动提取；重新跑脚本后刷新页面即拿最新。<br>
 issue 链接基于 PetWebOrg/flutter-suiyin 仓。

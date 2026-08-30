@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
-<!-- CURRENT_BUILD:2026082801 -->
+<!-- CURRENT_BUILD:2026083001 -->
 <title>下一版发版预览 · flutter-suiyin</title>
 <style>
 :root {
@@ -82,7 +82,8 @@ a:hover { text-decoration: underline; }
 <label>查看历史预览：</label>
 <select id="version-switcher-select" onchange="var v=this.value; if(v) location.href = v; else location.href = './';">
 <!-- VERSION_SWITCHER_OPTIONS_START -->
-<option value="">📦 2026082901 发版预览</option>
+<option value="">📦 2026083002 发版预览</option>
+<option value="2026083001.html">🗂 2026083001</option>
 <option value="2026082801.html">🗂 2026082801</option>
 <option value="2026082701.html">🗂 2026082701</option>
 <option value="2026082601.html">🗂 2026082601</option>
@@ -249,25 +250,18 @@ a:hover { text-decoration: underline; }
   }
 })();
 </script>
-<h1>📦 2026082901 发版预览</h1>
+<h1>📦 2026083002 发版预览</h1>
 <div class="meta">
-当前版本：<code>2026082801</code>（发版时间：<span class="bump-time">08/28 16:51</span>），下一版（预览）：<code>2026082901</code><br>
-生成时间：2026-08-29 10:34:43 · 重新跑脚本后刷新页面即拿最新
+当前版本：<code>2026083001</code>（发版时间：<span class="bump-time">08/30 00:23</span>），下一版（预览）：<code>2026083002</code><br>
+生成时间：2026-08-30 10:11:30 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
-<h3>🐞 问题修复</h3>
-<ul>
-  <li>切换企业成功后，界面不会再一直停在转圈状态；失败时也会留在当前页面，方便直接重试。— 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6722">#6722</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6716">#6716</a>)</li>
-  <li>新消息先被本地回补过时，仍会正常响铃和计入提醒，不会再被误判成重复消息而静默吞掉。— 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6718">#6718</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6709">#6709</a>)</li>
-  <li>PC 主聊天页右侧客户信息栏恢复左右拖动调宽，调整后的宽度会在切换客户或重新进入时保留。— 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6724">#6724</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6710">#6710</a>)</li>
-  <li>保存话术失败时会直接显示后端返回的真实原因；连续点击保存也不会重复创建同一条话术。— 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6717">#6717</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6703">#6703</a>)</li>
-  <li>艺星公共朋友圈子窗口恢复左侧「渠道 → 人设」筛选，非艺星窗口仍保留原来的顶部筛选入口。— 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6715">#6715</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6713">#6713</a>)</li>
-</ul>
+<div class="notice">本期暂无新的 PC 端用户感知更新。</div>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">08/28 16:51 上次发版后，合入 main 的全部 <strong>14</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">08/30 00:23 上次发版后，合入 main 的全部 <strong>0</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
   <li class="empty">无</li>
@@ -275,16 +269,7 @@ a:hover { text-decoration: underline; }
 
 <h2>🐞 问题修复</h2>
 <ul>
-  <li><span class="merged-at">[08/29 09:24]</span>close #6732 修复移动我的页开通日期 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6740">#6740</a> <span class="author">— 陈聪</span></li>
-  <li><span class="merged-at">[08/28 22:11]</span>close #6711 修正 IME incident generation 聚合 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6729">#6729</a> <span class="author">— 陈聪</span></li>
-  <li><span class="merged-at">[08/28 21:27]</span>补齐主窗口生命周期与退出分类观测 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6260">#6260</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6238">#6238</a>) <span class="author">— 陈聪</span></li>
-  <li><span class="merged-at">[08/28 21:22]</span>tag-release-notes 改用 PR 关联识别合并 PR，不再解析 commit 标题尾括号 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6728">#6728</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6719">#6719</a>) <span class="author">— 王梓先</span></li>
-  <li><span class="merged-at">[08/28 21:11]</span>修复切换企业成功后卡在转圈 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6722">#6722</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6716">#6716</a>) <span class="author">— 王争</span></li>
-  <li><span class="merged-at">[08/28 19:31]</span>撞已有行不再单独判成重投，新消息的提醒不再被吞 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6718">#6718</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6709">#6709</a>) <span class="author">— 王梓先</span></li>
-  <li><span class="merged-at">[08/28 19:27]</span>恢复客户信息栏拖拽调宽 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6724">#6724</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6710">#6710</a>) <span class="author">— 陈聪</span></li>
-  <li><span class="merged-at">[08/28 19:21]</span>suppress invalid has-updates polling <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6725">#6725</a> <span class="author">— 陈聪</span></li>
-  <li><span class="merged-at">[08/28 17:56]</span>保存话术失败带出后端真实原因并加保存并发闸（销售看得到失败原因、连点不再重复建话术） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6717">#6717</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6703">#6703</a>) <span class="author">— 王梓先</span></li>
-  <li><span class="merged-at">[08/28 17:29]</span>close #6713 恢复艺星公共朋友圈吸附侧栏筛选 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6715">#6715</a> <span class="author">— 王争</span></li>
+  <li class="empty">无</li>
 </ul>
 
 <h2>✨ 体验优化</h2>
@@ -294,17 +279,14 @@ a:hover { text-decoration: underline; }
 
 <h2>🔧 其他（chore / docs / test / ...）</h2>
 <ul>
-  <li><span class="merged-at">[08/29 10:24]</span>docs(release): archive Android 2026082901 notes <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6742">#6742</a> <span class="author">— 陈聪</span></li>
-  <li><span class="merged-at">[08/29 09:54]</span>chore(release): Android 2026082901 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6741">#6741</a> <span class="author">— 陈聪</span></li>
-  <li><span class="merged-at">[08/28 23:26]</span>chore(observability): 补齐 Windows IME 原生恢复的闪退因果闭环 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6727">#6727</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6679">#6679</a>) <span class="author">— 陈聪</span></li>
-  <li><span class="merged-at">[08/28 17:24]</span>test(e2e): guard chat switch history dedup <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5894">#5894</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5674">#5674</a>) <span class="author">— 陈聪</span></li>
+  <li class="empty">无</li>
 </ul>
 
 
 <hr class="ref-divider">
 
 <div class="foot">
-上一次发版时间：<span class="bump-time">08/28 16:51</span>（基线 commit：<code>PC baseline override 2026082801: acc70c244d7d91f8502d1cfb5c8e25f9a07adacc</code>）<br>
+上一次发版时间：<span class="bump-time">08/30 00:23</span>（基线 commit：<code>PC baseline override 2026083001: fix: close #6756 修复 Windows IME 窗口级 owner 生命周期 (#6757)</code>）<br>
 PR 归属版本由 <code>pubspec.yaml</code> 的 <code>version:</code> 行 git 历史判定 —— bump commit 的 committedAt 是分割线。<br>
 由 <code>tool/generate_release_preview.dart</code> 自动提取；重新跑脚本后刷新页面即拿最新。<br>
 issue 链接基于 PetWebOrg/flutter-suiyin 仓。

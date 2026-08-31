@@ -82,7 +82,7 @@ a:hover { text-decoration: underline; }
 <label>查看历史预览：</label>
 <select id="version-switcher-select" onchange="var v=this.value; if(v) location.href = v; else location.href = './';">
 <!-- VERSION_SWITCHER_OPTIONS_START -->
-<option value="">📦 2026083002 发版预览</option>
+<option value="">📦 2026083101 发版预览</option>
 <option value="2026083001.html">🗂 2026083001</option>
 <option value="2026082801.html">🗂 2026082801</option>
 <option value="2026082701.html">🗂 2026082701</option>
@@ -250,26 +250,40 @@ a:hover { text-decoration: underline; }
   }
 })();
 </script>
-<h1>📦 2026083002 发版预览</h1>
+<h1>📦 2026083101 发版预览</h1>
 <div class="meta">
-当前版本：<code>2026083001</code>（发版时间：<span class="bump-time">08/30 00:23</span>），下一版（预览）：<code>2026083002</code><br>
-生成时间：2026-08-30 16:57:57 · 重新跑脚本后刷新页面即拿最新
+当前版本：<code>2026083001</code>（发版时间：<span class="bump-time">08/30 00:23</span>），下一版（预览）：<code>2026083101</code><br>
+生成时间：2026-08-31 10:34:14 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
-<div class="notice">本期暂无新的 PC 端用户感知更新。</div>
+<h3>🆕 新功能</h3>
+<ul>
+  <li>在好友资料页可以直接把当前好友推荐给另一个好友，选择接收聊天并确认后发送个人名片，不用先切换聊天。— 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6714">#6714</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6387">#6387</a>)</li>
+</ul>
+
+<h3>✨ 体验优化</h3>
+<ul>
+  <li>广州艺星话术库「部门」分类现在优先显示简洁分类名；鼠标悬停仍可查看完整部门列表。— 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6765">#6765</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6761">#6761</a>)</li>
+</ul>
+
+<h3>🐞 问题修复</h3>
+<ul>
+  <li>成都艺星长时间接待后从卡顿恢复时，不再重复触发消息轮询导致界面继续变慢。— 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6763">#6763</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6762">#6762</a>)</li>
+</ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">08/30 00:23 上次发版后，合入 main 的全部 <strong>0</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">08/30 00:23 上次发版后，合入 main 的全部 <strong>3</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
-  <li class="empty">无</li>
+  <li><span class="merged-at">[08/31 10:20]</span>好友资料页支持推荐名片 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6714">#6714</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6387">#6387</a>) <span class="author">— 王争</span></li>
 </ul>
 
 <h2>🐞 问题修复</h2>
 <ul>
-  <li class="empty">无</li>
+  <li><span class="merged-at">[08/31 09:48]</span>close #6762 合并卡顿后的补跑轮询 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6763">#6763</a> <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[08/30 23:30]</span>close #6761 广州艺星话术分类隐藏部门徽标 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6765">#6765</a> <span class="author">— 王争</span></li>
 </ul>
 
 <h2>✨ 体验优化</h2>
@@ -286,7 +300,7 @@ a:hover { text-decoration: underline; }
 <hr class="ref-divider">
 
 <div class="foot">
-上一次发版时间：<span class="bump-time">08/30 00:23</span>（基线 commit：<code>PC baseline override 2026083001: fix: close #6756 修复 Windows IME 窗口级 owner 生命周期 (#6757)</code>）<br>
+上一次发版时间：<span class="bump-time">08/30 00:23</span>（基线 commit：<code>PC baseline override 2026083001 at c2c675bf81c8dbe17e36c4372c58f6d8a5c6d52e</code>）<br>
 PR 归属版本由 <code>pubspec.yaml</code> 的 <code>version:</code> 行 git 历史判定 —— bump commit 的 committedAt 是分割线。<br>
 由 <code>tool/generate_release_preview.dart</code> 自动提取；重新跑脚本后刷新页面即拿最新。<br>
 issue 链接基于 PetWebOrg/flutter-suiyin 仓。

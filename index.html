@@ -255,16 +255,21 @@ a:hover { text-decoration: underline; }
 <h1>📦 2026090101 发版预览</h1>
 <div class="meta">
 当前版本：<code>2026083102</code>（发版时间：<span class="bump-time">08/31 16:58</span>），下一版（预览）：<code>2026090101</code><br>
-生成时间：2026-09-01 12:06:13 · 重新跑脚本后刷新页面即拿最新
+生成时间：2026-09-01 16:04:45 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
 <h3>🆕 新功能</h3>
 <ul>
+  <li>艺星群发第一步的「第一需求(AI)」和「第二需求(AI)」支持一次勾选多个条件，筛客户时不用反复切换筛选。— 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6790">#6790</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6785">#6785</a>)</li>
+  <li>成都艺星预约详情里可以直接预览并发送预约确认图，地址、时间和品牌样式会按最新预约信息生成。— 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6839">#6839</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6774">#6774</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6838">#6838</a>)</li>
   <li>朋友圈页面打开时会先显示本地封面图；接口加载慢或失败时也不会整页空白，并保留刷新和重试入口。— 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6802">#6802</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6792">#6792</a>)</li>
 </ul>
 <h3>🐞 问题修复</h3>
 <ul>
+  <li>视频上传遇到断网、DNS 或超时时，会提示检查网络后重试，不再误报成文件大小超过限制。— 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6850">#6850</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6840">#6840</a>)</li>
+  <li>聊天记录被补回或更新时，会保留原有的前后文位置；查看历史消息时不再容易断在错误位置。— 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6776">#6776</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6419">#6419</a>)</li>
+  <li>销售发起或接手客户后，会使用完整客户身份进入会话，不再因为身份缺失跳到错误人设。— 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6817">#6817</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6745">#6745</a>)</li>
   <li>顶部搜索浮层关闭时，晚到的点击或 Esc 回调不再打断关闭流程；切企业、登出或快速开关搜索后也不会残留旧浮层。— 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6772">#6772</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6608">#6608</a>)</li>
   <li>设置提醒时间时，可以连续输入两位小时和分钟；清空、越界或刚输入一位就保存时不会再沿用旧时间。— 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6820">#6820</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6795">#6795</a>)</li>
   <li>在搜索结果里点「查看更多功能」时，服务号、企微群、文件传输助手、提醒等分类会继续按当前类型加载，不再混入其他结果。— 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6814">#6814</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6788">#6788</a>)</li>
@@ -274,14 +279,19 @@ a:hover { text-decoration: underline; }
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">08/31 16:58 上次发版后，合入 main 的全部 <strong>16</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">08/31 16:58 上次发版后，合入 main 的全部 <strong>27</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
+  <li><span class="merged-at">[09/01 15:08]</span>艺星群发需求筛选支持多选（#6785） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6790">#6790</a> <span class="author">— kitesky</span></li>
+  <li><span class="merged-at">[09/01 14:29]</span>成都预约结果图生成与发送 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6839">#6839</a> <span class="author">— krcm110</span></li>
   <li><span class="merged-at">[08/31 18:01]</span>close #6792 朋友圈封面使用本地素材并保留加载态 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6802">#6802</a> <span class="author">— LiangChen</span></li>
 </ul>
 
 <h2>🐞 问题修复</h2>
 <ul>
+  <li><span class="merged-at">[09/01 15:58]</span>close #6783 聚合 IM 接收诊断避免 iOS 卡死 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6793">#6793</a> <span class="author">— kitesky</span></li>
+  <li><span class="merged-at">[09/01 15:33]</span>close #6840 区分视频网络失败与大小提示 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6850">#6850</a> <span class="author">— krcm110</span></li>
+  <li><span class="merged-at">[09/01 15:18]</span>close #6831 补齐成都艺星 AI 回复 D8 对账映射 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6836">#6836</a> <span class="author">— cxy-chenxuanyu</span></li>
   <li><span class="merged-at">[09/01 12:02]</span>发版预览统一使用北京时间 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6826">#6826</a> <span class="author">— xfang9528-glitch</span></li>
   <li><span class="merged-at">[09/01 11:52]</span>close #6419 SDK 回写后保留历史缺口提示 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6776">#6776</a> <span class="author">— LiangChen</span></li>
   <li><span class="merged-at">[09/01 11:21]</span>close #6745 修复 ChatCustomer 双 ID 缺失 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6817">#6817</a> <span class="author">— krcm110</span></li>
@@ -295,11 +305,16 @@ a:hover { text-decoration: underline; }
 
 <h2>✨ 体验优化</h2>
 <ul>
-  <li class="empty">无</li>
+  <li><span class="merged-at">[09/01 13:39]</span>量化通讯录消息轮询的恢复期负载 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6789">#6789</a> <span class="author">— kitesky</span></li>
 </ul>
 
 <h2>🔧 其他（chore / docs / test / ...）</h2>
 <ul>
+  <li><span class="merged-at">[09/01 15:27]</span>chore(infra): 统一 pub 镜像为 pub.flutter-io.cn 并加一致性守卫 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6844">#6844</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6568">#6568</a>) <span class="author">— shian</span></li>
+  <li><span class="merged-at">[09/01 15:21]</span>test: close #6830 对齐 PC Linux 视觉基线 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6846">#6846</a> <span class="author">— cxy-chenxuanyu</span></li>
+  <li><span class="merged-at">[09/01 15:20]</span>ci: close #6832 prewarm Linux ObjectBox native library <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6841">#6841</a> <span class="author">— cxy-chenxuanyu</span></li>
+  <li><span class="merged-at">[09/01 15:19]</span>test: close #6833 对齐聊天身份守卫测试夹具 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6837">#6837</a> <span class="author">— cxy-chenxuanyu</span></li>
+  <li><span class="merged-at">[09/01 13:52]</span>test: close #6735 补齐只读页转交真实路由回归 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6744">#6744</a> <span class="author">— krcm110</span></li>
   <li><span class="merged-at">[09/01 11:28]</span>ci: run release preview publisher on hosted runner <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6824">#6824</a> <span class="author">— xfang9528-glitch</span></li>
   <li><span class="merged-at">[09/01 11:00]</span>ci: publish release preview via GitHub Actions <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6822">#6822</a> <span class="author">— xfang9528-glitch</span></li>
   <li><span class="merged-at">[09/01 10:40]</span>test(chat/mobile): 守住系统相册选择器生产绑定 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6819">#6819</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6733">#6733</a>) <span class="author">— krcm110</span></li>

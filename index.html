@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
-<!-- CURRENT_BUILD:2026090101 -->
+<!-- CURRENT_BUILD:2026090201 -->
 <title>下一版发版预览 · flutter-suiyin</title>
 <style>
 :root {
@@ -82,7 +82,8 @@ a:hover { text-decoration: underline; }
 <label>查看历史预览：</label>
 <select id="version-switcher-select" onchange="var v=this.value; if(v) location.href = v; else location.href = './';">
 <!-- VERSION_SWITCHER_OPTIONS_START -->
-<option value="">📦 2026090201 发版预览</option>
+<option value="">📦 2026090202 发版预览</option>
+<option value="2026090201.html">🗂 2026090201</option>
 <option value="2026090101.html">🗂 2026090101</option>
 <option value="2026083102.html">🗂 2026083102</option>
 <option value="2026083101.html">🗂 2026083101</option>
@@ -253,53 +254,40 @@ a:hover { text-decoration: underline; }
   }
 })();
 </script>
-<h1>📦 2026090201 发版预览</h1>
+<h1>📦 2026090202 发版预览</h1>
 <div class="meta">
-当前版本：<code>2026090101</code>（发版时间：<span class="bump-time">09/01 16:08</span>），下一版（预览）：<code>2026090201</code><br>
-生成时间：2026-09-02 12:12:51 · 重新跑脚本后刷新页面即拿最新
+当前版本：<code>2026090201</code>（发版时间：<span class="bump-time">09/02 13:14</span>），下一版（预览）：<code>2026090202</code><br>
+生成时间：2026-09-02 18:00:39 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
 <h3>🆕 新功能</h3>
 <ul>
-  <li>语音消息有变声结果时，PC 主聊天窗和独立聊天窗会在同一条消息里同时显示原声和变声后声音；没有变声结果时仍只显示原声，不留空白。— 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6864">#6864</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6760">#6760</a>)</li>
-  <li>艺星门店的医美辅助划线工具已去掉杭州水印，并补齐更多标准辅助线；成都、深圳、北京、广州、嘉兴和杭州艺星都可以直接使用。— 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6880">#6880</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6855">#6855</a>)</li>
-</ul>
-<h3>✨ 体验优化</h3>
-<ul>
-  <li>大目录账号打开或重开话术面板时，不再瞬间发出上百个请求；会话区和窗口交互会更稳，切换账号或企业后也不会写回旧话术数据。— 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6878">#6878</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6856">#6856</a>)</li>
+  <li>PC 客户详情新增「预约卡片」：保存预约后可直接生成客户可看的卡片图片并发送，内部预约字段不会出现在图片里 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6888">#6888</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6874">#6874</a>)</li>
 </ul>
 <h3>🐞 问题修复</h3>
 <ul>
-  <li>Windows 上反复打开和关闭聊天子窗口后，内存会及时释放，销售继续接待客户时不再容易长时间卡死。— 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6834">#6834</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6808">#6808</a>)</li>
-  <li>深圳艺星冷启动时会丢弃数小时前的客户变更回放，不再因为重复刷新风暴导致打开后几分钟内点不动。— 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6853">#6853</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6829">#6829</a>)</li>
-  <li>PC 在后台、最小化或隐藏时收到好友申请更新，回到前台只刷新一次当前账号的数据，不再被旧请求反复打断或串到旧身份。— 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6842">#6842</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6807">#6807</a>)</li>
-  <li>「添加朋友」和「添加记录」窗口都可以拖动标题区域移动位置；小窗口 fallback 下关闭和重新申请按钮也不会被裁掉。— 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6812">#6812</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6803">#6803</a>)</li>
+  <li>添加好友时，确认弹窗取消或关闭后不再残留遮罩，也不会因为连续点击造成重复提交或窗口卡死 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6926">#6926</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6914">#6914</a>)</li>
+  <li>停接工作号后，会先停止接收新客户，再打开待收尾客户流程；关窗或处理失败也不会自动恢复接待 — 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6818">#6818</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6806">#6806</a>)</li>
+  <li>添加朋友搜索失败时，会直接提示「未开启手机号搜索」等真实原因，不再只显示通用技术错误 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6868">#6868</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6859">#6859</a>)</li>
 </ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">09/01 16:08 上次发版后，合入 main 的全部 <strong>23</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">09/02 13:14 上次发版后，合入 main 的全部 <strong>12</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
-  <li><span class="merged-at">[09/02 11:39]</span>trace Windows IME chain for #6872 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6884">#6884</a> <span class="author">— krcm110</span></li>
-  <li><span class="merged-at">[09/02 11:17]</span>support original and converted voice tracks <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6864">#6864</a> <span class="author">— cxy-chenxuanyu</span></li>
-  <li><span class="merged-at">[09/01 22:00]</span>划线素材去掉杭州艺星水印、补全母版并放开到全部艺星门店 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6880">#6880</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6855">#6855</a>) <span class="author">— shian</span></li>
-  <li><span class="merged-at">[09/01 17:17]</span>新增 Windows 无前兆冻结触发链诊断快照 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6835">#6835</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6809">#6809</a>) <span class="author">— kitesky</span></li>
+  <li><span class="merged-at">[09/02 15:55]</span>增加艺星 APP 好友归属改派 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6825">#6825</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6723">#6723</a>) <span class="author">— kitesky</span></li>
+  <li><span class="merged-at">[09/02 15:46]</span>PC 新增预约支持生成并发送预约卡片 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6888">#6888</a> <span class="author">— krcm110</span></li>
 </ul>
 
 <h2>🐞 问题修复</h2>
 <ul>
-  <li><span class="merged-at">[09/02 11:24]</span>手机端转交成功后避免失效聊天页白屏 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6886">#6886</a> <span class="author">— krcm110</span></li>
-  <li><span class="merged-at">[09/02 11:13]</span>close #6856 限制话术目录预加载并发 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6878">#6878</a> <span class="author">— kitesky</span></li>
-  <li><span class="merged-at">[09/02 11:06]</span>撤掉与 CI analyze 记账步骤叠加的门禁跳过开关 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6899">#6899</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6895">#6895</a>) <span class="author">— shian</span></li>
-  <li><span class="merged-at">[09/02 10:24]</span>CI 宿主跳过为本地全量 gate 设计的 analyze 记账门 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6894">#6894</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6893">#6893</a>) <span class="author">— shian</span></li>
-  <li><span class="merged-at">[09/02 10:10]</span>修复 #6862 main 既有失败并前移契约门禁 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6891">#6891</a> <span class="author">— kitesky</span></li>
-  <li><span class="merged-at">[09/01 20:20]</span>关闭子窗口时释放 Engine 与原生资源 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6834">#6834</a> <span class="author">— kitesky</span></li>
-  <li><span class="merged-at">[09/01 18:04]</span>丢弃冷启动过期客户变更回放 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6853">#6853</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6829">#6829</a>) <span class="author">— kitesky</span></li>
-  <li><span class="merged-at">[09/01 17:46]</span>close #6832 drive delivery snapshots from revisions <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6861">#6861</a> <span class="author">— cxy-chenxuanyu</span></li>
-  <li><span class="merged-at">[09/01 17:24]</span>close #6807 收敛 Windows 后台好友申请刷新 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6842">#6842</a> <span class="author">— kitesky</span></li>
-  <li><span class="merged-at">[09/01 17:09]</span>close #6803 添加好友与添加记录窗口支持拖动 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6812">#6812</a> <span class="author">— kitesky</span></li>
+  <li><span class="merged-at">[09/02 17:02]</span>close #6865 APP 引用图片使用移动端预览 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6905">#6905</a> <span class="author">— kitesky</span></li>
+  <li><span class="merged-at">[09/02 16:48]</span>close #6914 修复添加好友确认弹窗卡死与窗口残留 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6926">#6926</a> <span class="author">— kitesky</span></li>
+  <li><span class="merged-at">[09/02 16:22]</span>防止 Sentry 异常风暴耗尽崩溃额度 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6911">#6911</a> <span class="author">— kitesky</span></li>
+  <li><span class="merged-at">[09/02 14:52]</span>close #6806 停接后再处理待收尾客户 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6818">#6818</a> <span class="author">— chinaszzt</span></li>
+  <li><span class="merged-at">[09/02 14:24]</span>显示添加朋友搜索失败的真实原因 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6868">#6868</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6859">#6859</a>) <span class="author">— kitesky</span></li>
 </ul>
 
 <h2>✨ 体验优化</h2>
@@ -309,22 +297,18 @@ a:hover { text-decoration: underline; }
 
 <h2>🔧 其他（chore / docs / test / ...）</h2>
 <ul>
-  <li><span class="merged-at">[09/02 11:31]</span>test: close #6734 补齐朋友圈表情渲染回归 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6852">#6852</a> <span class="author">— krcm110</span></li>
-  <li><span class="merged-at">[09/02 11:08]</span>test(chat): make #6803 drag assertions platform-aware <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6902">#6902</a> <span class="author">— cxy-chenxuanyu</span></li>
-  <li><span class="merged-at">[09/02 11:00]</span>test(e2e): 成都艺星 AI 客户画像卡与分析面板只读旅程用例（#6848，补发） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6901">#6901</a> <span class="author">— shian</span></li>
-  <li><span class="merged-at">[09/02 10:30]</span>test(e2e): 成都艺星预约管理区段只读旅程用例（#6849，补发） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6885">#6885</a> <span class="author">— build996</span></li>
-  <li><span class="merged-at">[09/01 22:29]</span>test(e2e): 成都艺星回访日程浮窗只读旅程用例（#6847） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6881">#6881</a> <span class="author">— shian</span></li>
-  <li><span class="merged-at">[09/01 21:52]</span>chore(gate): 全量门禁在缺当前树 analyze 记录时判红 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6871">#6871</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6474">#6474</a>) <span class="author">— shian</span></li>
-  <li><span class="merged-at">[09/01 20:58]</span>test(chat): 补投递快照流「订阅可取消」的回归守卫 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6870">#6870</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6810">#6810</a>) <span class="author">— shian</span></li>
-  <li><span class="merged-at">[09/01 17:47]</span>test: close #6833 补齐历史同步身份夹具 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6863">#6863</a> <span class="author">— cxy-chenxuanyu</span></li>
-  <li><span class="merged-at">[09/01 17:17]</span>chore(test): 归一 _FakeSaleProfileCache 五份重复拷贝到 test/helpers <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6857">#6857</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6571">#6571</a>) <span class="author">— shian</span></li>
+  <li><span class="merged-at">[09/02 17:56]</span>ci(release-preview): publish on automation branch push <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6932">#6932</a> <span class="author">— xfang9528-glitch</span></li>
+  <li><span class="merged-at">[09/02 17:34]</span>test(moments): 新增 H2 朋友圈账号筛选面板旅程用例 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6924">#6924</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6658">#6658</a>) <span class="author">— shian</span></li>
+  <li><span class="merged-at">[09/02 17:31]</span>ci(release-preview): add scheduled publish backstop <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6929">#6929</a> <span class="author">— xfang9528-glitch</span></li>
+  <li><span class="merged-at">[09/02 16:44]</span>test(moments): 新增 H1 朋友圈 Feed 窗动态流差分旅程用例 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6923">#6923</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6657">#6657</a>) <span class="author">— shian</span></li>
+  <li><span class="merged-at">[09/02 14:14]</span>ci(release-preview): schedule hosted PC preview publishing <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6913">#6913</a> <span class="author">— xfang9528-glitch</span></li>
 </ul>
 
 
 <hr class="ref-divider">
 
 <div class="foot">
-上一次发版时间：<span class="bump-time">09/01 16:08</span>（基线 commit：<code>PC baseline override 2026090101: feat(image-editor): 杭州艺星医美专用辅助划线工具（选择/移动/缩放/旋转/撤销/干净输出）(#6738)</code>）<br>
+上一次发版时间：<span class="bump-time">09/02 13:14</span>（基线 commit：<code>PC baseline override 2026090201: fix(chat): 修复重连恢复阻塞主 isolate (#6877) (#6906)</code>）<br>
 PR 归属版本由 <code>pubspec.yaml</code> 的 <code>version:</code> 行 git 历史判定 —— bump commit 的 committedAt 是分割线。<br>
 由 <code>tool/generate_release_preview.dart</code> 自动提取；重新跑脚本后刷新页面即拿最新。<br>
 issue 链接基于 PetWebOrg/flutter-suiyin 仓。

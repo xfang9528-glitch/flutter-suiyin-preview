@@ -258,30 +258,46 @@ a:hover { text-decoration: underline; }
 <h1>📦 2026090301 发版预览</h1>
 <div class="meta">
 当前版本：<code>2026090202</code>（发版时间：<span class="bump-time">09/02 17:02</span>），下一版（预览）：<code>2026090301</code><br>
-生成时间：2026-09-03 15:48:31 · 重新跑脚本后刷新页面即拿最新
+生成时间：2026-09-03 20:50:34 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
 <h3>🆕 新功能</h3>
 <ul>
+  <li>停接的人设现在仍能在客户搜索和筛选里找到，搜索结果会用灰色删除线标出停接状态，但不影响点开和主动发起聊天 — 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6975">#6975</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6918">#6918</a>)</li>
+  <li>「我的朋友圈」新增按发布账号筛选：可以只看某个账号发出的内容，且不会影响公共朋友圈的筛选条件 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6949">#6949</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6317">#6317</a>)</li>
   <li>话术库的「批量导入话术」合并成一个入口：纯文字 Excel 和图文视频 ZIP 都能从这里导入，也能直接下载对应模板 — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6936">#6936</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6873">#6873</a>)</li>
 </ul>
 <h3>🐞 问题修复</h3>
 <ul>
+  <li>图片加载失败后更换图片或点击「重试」时，预览窗口不再因为残留的加载状态而白屏退出，并会显示明确的失败提示 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6972">#6972</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6956">#6956</a>)</li>
+  <li>拖入已经失效、不可读取的云盘文件或文件夹时，会整批拒绝并提示重试，聊天输入框不会卡住，也不会留下半截草稿 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6968">#6968</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6957">#6957</a>)</li>
+  <li>朋友圈点赞、评论和互动角标现在只统计当前销售有权限的账号，避免看到其他门店账号的互动 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6940">#6940</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6869">#6869</a>)</li>
+  <li>重装碎银前，主程序退出后会带走占住安装目录的子进程，减少「旧安装目录删除失败」导致装不上的情况 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6952">#6952</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6706">#6706</a>)</li>
+  <li>添加好友窗口在超时、关闭失败或切换企业后不会复用旧窗口，避免弹出两个窗口或带出上个企业的内容 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6933">#6933</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6928">#6928</a>)</li>
+  <li>安装失败时会保留最近几次安装日志；之后在碎银里点「日志上报」也能带上这些记录，方便定位装不上原因 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6951">#6951</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6707">#6707</a>)</li>
+  <li>预约卡片上的提示改为「预约信息以顾问最终确认为准」，预览和导出的图片保持一致 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6947">#6947</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6948">#6948</a>)</li>
+  <li>PC 发消息后如果客户已经收到，气泡旁的「发送中」转圈会自动校验并收敛，减少误以为没发出去而重复发送 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6942">#6942</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6876">#6876</a>)</li>
   <li>双音轨语音消息现在能清楚区分原声和变声音轨；手动「转文字」成功后，转写文案也会正常保存并重新显示 — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6941">#6941</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6931">#6931</a>)</li>
   <li>图片划线标注后点「完成」，导出的图片不再出现左右黑边，也不会因为窗口尺寸变小而变糊 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6935">#6935</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6879">#6879</a>)</li>
 </ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">09/02 17:02 上次发版后，合入 main 的全部 <strong>19</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">09/02 17:02 上次发版后，合入 main 的全部 <strong>27</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
+  <li><span class="merged-at">[09/03 17:21]</span>close #6330 APP 我的朋友圈按账号筛选 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6953">#6953</a> <span class="author">— kite365</span></li>
+  <li><span class="merged-at">[09/03 16:52]</span>close #6918 停接人设继续参与客户搜索与筛选 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6975">#6975</a> <span class="author">— chinaszzt</span></li>
+  <li><span class="merged-at">[09/03 16:38]</span>支持我的朋友圈按发布账号筛选 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6949">#6949</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6317">#6317</a>) <span class="author">— kite365</span></li>
   <li><span class="merged-at">[09/02 18:17]</span>统一话术导入入口并补充双模板 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6936">#6936</a> <span class="author">— cxy-chenxuanyu</span></li>
 </ul>
 
 <h2>🐞 问题修复</h2>
 <ul>
+  <li><span class="merged-at">[09/03 17:28]</span>修复图片预览加载状态致命异常 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6972">#6972</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6956">#6956</a>) <span class="author">— krcm110</span></li>
+  <li><span class="merged-at">[09/03 16:47]</span>修复不可读取拖入路径引发的 OSError <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6968">#6968</a> <span class="author">— krcm110</span></li>
+  <li><span class="merged-at">[09/03 16:01]</span>收口互动消息账号权限 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6940">#6940</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6869">#6869</a>) <span class="author">— kitesky</span></li>
   <li><span class="merged-at">[09/03 15:36]</span>close #6845 ROADMAP 对账器接入三道门禁 + 补判据第四层 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6961">#6961</a> <span class="author">— shian</span></li>
   <li><span class="merged-at">[09/03 15:29]</span>子进程随主进程一起死，不再占住安装目录让重装失败 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6952">#6952</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6706">#6706</a>) <span class="author">— shian</span></li>
   <li><span class="merged-at">[09/03 14:12]</span>修复添加好友双窗口与跨企业旧窗口复用 #6928 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6933">#6933</a> <span class="author">— kitesky</span></li>
@@ -303,6 +319,8 @@ a:hover { text-decoration: underline; }
 
 <h2>🔧 其他（chore / docs / test / ...）</h2>
 <ul>
+  <li><span class="merged-at">[09/03 20:42]</span>chore(gate): AGENTS.md 同步校验接三道网（写入点 hook / fast gate / 全量 gate） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6977">#6977</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6970">#6970</a>) <span class="author">— shian</span></li>
+  <li><span class="merged-at">[09/03 18:25]</span>test(e2e): 懒构建列表行统一走 scrollUntilVisible 追行，修 7 处 + 收敛 6 份重复 helper <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6964">#6964</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6771">#6771</a>) <span class="author">— shian</span></li>
   <li><span class="merged-at">[09/03 14:27]</span>test(chat/pc): 守住客户信息栏拖拽持久化生产接线 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6959">#6959</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6731">#6731</a>) <span class="author">— krcm110</span></li>
   <li><span class="merged-at">[09/03 00:32]</span>ci(release-preview): publish on every automation branch push <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6945">#6945</a> <span class="author">— xfang9528-glitch</span></li>
   <li><span class="merged-at">[09/02 18:11]</span>test(e2e): 新增 B6 未读角标清零与跳转下一条未读旅程用例 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6925">#6925</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6656">#6656</a>) <span class="author">— shian</span></li>

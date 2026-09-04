@@ -259,10 +259,20 @@ a:hover { text-decoration: underline; }
 <h1>📦 2026090401 发版预览</h1>
 <div class="meta">
 当前版本：<code>2026090301</code>（发版时间：<span class="bump-time">09/03 16:52</span>），下一版（预览）：<code>2026090401</code><br>
-生成时间：2026-09-04 02:19:12 · 重新跑脚本后刷新页面即拿最新
+生成时间：2026-09-04 10:49:34 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
+<h3>🆕 新功能</h3>
+<ul>
+  <li>群发创建、编辑和详情页现在能完整预览文字、图片、视频、公众号内容、商品、小程序、位置和文件，图片与视频也能直接点开查看 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6965">#6965</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6796">#6796</a>)</li>
+  <li>图片裁剪改为勾叉确认：框选后只有点绿色勾才会真正裁剪，点叉号、Esc 或切换工具都会完整还原 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6984">#6984</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6930">#6930</a>)</li>
+  <li>深圳艺星在「群发管理 → 筛选好友」第一步可以按微信昵称、好友名称或手机号搜索，名单再长也能快速定位 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6963">#6963</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6960">#6960</a>)</li>
+</ul>
+<h3>✨ 体验优化</h3>
+<ul>
+  <li>在「聊天记录」搜索结果里，图片、视频等分类也能右键选择「定位到原文位置」，不用关掉窗口后再手动翻找 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6983">#6983</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6887">#6887</a>)</li>
+</ul>
 <h3>🐞 问题修复</h3>
 <ul>
   <li>图片加载失败后更换图片或点击「重试」时，预览窗口不再因为残留的加载状态而白屏退出，并会显示明确的失败提示 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6972">#6972</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6956">#6956</a>)</li>
@@ -270,14 +280,19 @@ a:hover { text-decoration: underline; }
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">09/03 16:52 上次发版后，合入 main 的全部 <strong>4</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">09/03 16:52 上次发版后，合入 main 的全部 <strong>9</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
+  <li><span class="merged-at">[09/04 10:03]</span>群发编辑与详情支持完整内容预览 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6965">#6965</a> <span class="author">— kitesky</span></li>
+  <li><span class="merged-at">[09/04 09:46]</span>聊天记录分类结果支持右键定位原文 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6983">#6983</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6887">#6887</a>) <span class="author">— shian</span></li>
+  <li><span class="merged-at">[09/04 09:30]</span>图片裁剪增加待确认状态与勾叉操作 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6984">#6984</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6930">#6930</a>) <span class="author">— shian</span></li>
+  <li><span class="merged-at">[09/04 09:28]</span>close #6960 深圳艺星群发筛选支持昵称搜索 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6963">#6963</a> <span class="author">— kite365</span></li>
   <li><span class="merged-at">[09/03 17:21]</span>close #6330 APP 我的朋友圈按账号筛选 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6953">#6953</a> <span class="author">— kite365</span></li>
 </ul>
 
 <h2>🐞 问题修复</h2>
 <ul>
+  <li><span class="merged-at">[09/04 08:12]</span>make mobile search results tenant-reactive <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6986">#6986</a> <span class="author">— krcm110</span></li>
   <li><span class="merged-at">[09/03 17:28]</span>修复图片预览加载状态致命异常 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6972">#6972</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6956">#6956</a>) <span class="author">— krcm110</span></li>
 </ul>
 

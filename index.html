@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
-<!-- CURRENT_BUILD:2026090301 -->
+<!-- CURRENT_BUILD:2026090401 -->
 <title>下一版发版预览 · flutter-suiyin</title>
 <style>
 :root {
@@ -82,7 +82,8 @@ a:hover { text-decoration: underline; }
 <label>查看历史预览：</label>
 <select id="version-switcher-select" onchange="var v=this.value; if(v) location.href = v; else location.href = './';">
 <!-- VERSION_SWITCHER_OPTIONS_START -->
-<option value="">📦 2026090401 发版预览</option>
+<option value="">📦 2026090402 发版预览</option>
+<option value="2026090401.html">🗂 2026090401</option>
 <option value="2026090301.html">🗂 2026090301</option>
 <option value="2026090202.html">🗂 2026090202</option>
 <option value="2026090201.html">🗂 2026090201</option>
@@ -256,82 +257,60 @@ a:hover { text-decoration: underline; }
   }
 })();
 </script>
-<h1>📦 2026090401 发版预览</h1>
+<h1>📦 2026090402 发版预览</h1>
 <div class="meta">
-当前版本：<code>2026090301</code>（发版时间：<span class="bump-time">09/03 16:52</span>），下一版（预览）：<code>2026090401</code><br>
-生成时间：2026-09-04 17:28:51 · 重新跑脚本后刷新页面即拿最新
+当前版本：<code>2026090401</code>（发版时间：<span class="bump-time">09/04 16:53</span>），下一版（预览）：<code>2026090402</code><br>
+生成时间：2026-09-04 18:35:18 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
 <h3>🆕 新功能</h3>
 <ul>
-  <li>北京、深圳、广州、嘉兴、杭州艺星现在可以在客户资料中正常填写、修改并保存卡号；即使第一需求为空也不会被拦，成都艺星仍由系统自动回填 — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7018">#7018</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6994">#6994</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6991">#6991</a>)</li>
-  <li>群发创建、编辑和详情页现在能完整预览文字、图片、视频、公众号内容、商品、小程序、位置和文件，图片与视频也能直接点开查看 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6965">#6965</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6796">#6796</a>)</li>
-  <li>图片裁剪改为勾叉确认：框选后只有点绿色勾才会真正裁剪，点叉号、Esc 或切换工具都会完整还原 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6984">#6984</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6930">#6930</a>)</li>
-  <li>深圳艺星在「群发管理 → 筛选好友」第一步可以按微信昵称、好友名称或手机号搜索，名单再长也能快速定位 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6963">#6963</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6960">#6960</a>)</li>
+  <li>嘉兴艺星在图片标注里可以使用专属划线图片包，其他门店仍沿用原来的共享图片包；专属包加载失败时会自动回到共享包并提示原因 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7019">#7019</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6981">#6981</a>)</li>
+  <li>北京、深圳、广州、嘉兴、杭州艺星现在可以在客户资料中正常填写、修改并保存卡号；即使第一需求为空也不会被拦，成都艺星仍由系统自动回填 — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7018">#7018</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6991">#6991</a>)</li>
 </ul>
 <h3>✨ 体验优化</h3>
 <ul>
   <li>切换到看过的聊天会话、刷新好友申请时更流畅，窄窗口里的好友申请操作也不会再被遮住 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7010">#7010</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6989">#6989</a>)</li>
-  <li>导入话术时会自动识别纯文字 Excel 和带图片、视频的 ZIP，并按上传、校验、压缩、提交等阶段显示进度；失败时会说明具体原因和下一步 — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6998">#6998</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6995">#6995</a>)</li>
-  <li>在「聊天记录」搜索结果里，图片、视频等分类也能右键选择「定位到原文位置」，不用关掉窗口后再手动翻找 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6983">#6983</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6887">#6887</a>)</li>
 </ul>
 <h3>🐞 问题修复</h3>
 <ul>
-  <li>连续收到图片、文件等非文字消息时，当前会话会继续正常刷新，不用切走再切回来才能看到新内容 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7005">#7005</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6470">#6470</a>)</li>
-  <li>一级话术分类很多时可以在独立区域内完整滚动查看，并能拖到当前画面以外继续排序，不再挤住下面的话术内容 — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7011">#7011</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7002">#7002</a>)</li>
-  <li>图片加载失败后更换图片或点击「重试」时，预览窗口不再因为残留的加载状态而白屏退出，并会显示明确的失败提示 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6972">#6972</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6956">#6956</a>)</li>
+  <li>好友申请遇到后端状态不一致时，不会再一直卡在「待添加」或提示继续重试，而是显示「待确认」避免误操作 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7006">#7006</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6469">#6469</a>)</li>
+  <li>置顶会话点「标记为未读」后，现在会和普通会话一样正常显示未读标记 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7004">#7004</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6681">#6681</a>)</li>
 </ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">09/03 16:52 上次发版后，合入 main 的全部 <strong>25</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">09/04 16:53 上次发版后，合入 main 的全部 <strong>7</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
-  <li><span class="merged-at">[09/04 11:35]</span>close #6991 支持非成都艺星客户资料手填卡号 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6994">#6994</a> <span class="author">— cxy-chenxuanyu</span></li>
-  <li><span class="merged-at">[09/04 10:03]</span>群发编辑与详情支持完整内容预览 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6965">#6965</a> <span class="author">— kitesky</span></li>
-  <li><span class="merged-at">[09/04 09:46]</span>聊天记录分类结果支持右键定位原文 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6983">#6983</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6887">#6887</a>) <span class="author">— shian</span></li>
-  <li><span class="merged-at">[09/04 09:30]</span>图片裁剪增加待确认状态与勾叉操作 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6984">#6984</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6930">#6930</a>) <span class="author">— shian</span></li>
-  <li><span class="merged-at">[09/04 09:28]</span>close #6960 深圳艺星群发筛选支持昵称搜索 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6963">#6963</a> <span class="author">— kite365</span></li>
-  <li><span class="merged-at">[09/03 17:21]</span>close #6330 APP 我的朋友圈按账号筛选 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6953">#6953</a> <span class="author">— kite365</span></li>
+  <li><span class="merged-at">[09/04 18:19]</span>嘉兴艺星专属划线图片包配置 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7019">#7019</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6981">#6981</a>) <span class="author">— shian</span></li>
 </ul>
 
 <h2>🐞 问题修复</h2>
 <ul>
+  <li><span class="merged-at">[09/04 17:52]</span>后端状态自相矛盾时不再让好友申请卡在待添加 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7006">#7006</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6469">#6469</a>) <span class="author">— shian</span></li>
+  <li><span class="merged-at">[09/04 17:31]</span>置顶会话标记为未读不生效 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7004">#7004</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6681">#6681</a>) <span class="author">— shian</span></li>
   <li><span class="merged-at">[09/04 17:19]</span>修复非成都艺星卡号保存 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7018">#7018</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6991">#6991</a>) <span class="author">— cxy-chenxuanyu</span></li>
   <li><span class="merged-at">[09/04 17:05]</span>收敛会话切换与好友刷新前台长帧 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7010">#7010</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6989">#6989</a>) <span class="author">— kitesky</span></li>
-  <li><span class="merged-at">[09/04 15:50]</span>non-text 消息 downloadId 为空导致轮询锚点持续跳过刷新 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7005">#7005</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6470">#6470</a>) <span class="author">— shian</span></li>
-  <li><span class="merged-at">[09/04 15:41]</span>控制 Sentry 配额风暴并上线健康告警 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7000">#7000</a> <span class="author">— kitesky</span></li>
-  <li><span class="merged-at">[09/04 15:08]</span>SLS 三条消息健康告警 severity 与 P 级方向相反 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7003">#7003</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6770">#6770</a>) <span class="author">— shian</span></li>
-  <li><span class="merged-at">[09/04 14:21]</span>close #6950 修复 Windows 暂停冻结误报 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6969">#6969</a> <span class="author">— kitesky</span></li>
-  <li><span class="merged-at">[09/04 13:37]</span>排除首页挂起时长并定位真实慢启动 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6992">#6992</a> <span class="author">— kite365</span></li>
-  <li><span class="merged-at">[09/04 13:34]</span>完善批量导入进度和异常提示 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6998">#6998</a> <span class="author">— cxy-chenxuanyu</span></li>
-  <li><span class="merged-at">[09/04 11:13]</span>close #6692 隔离移动端微信重登录与 PC 主题 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6966">#6966</a> <span class="author">— kitesky</span></li>
-  <li><span class="merged-at">[09/04 08:12]</span>make mobile search results tenant-reactive <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6986">#6986</a> <span class="author">— krcm110</span></li>
-  <li><span class="merged-at">[09/03 17:28]</span>修复图片预览加载状态致命异常 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6972">#6972</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6956">#6956</a>) <span class="author">— krcm110</span></li>
 </ul>
 
 <h2>✨ 体验优化</h2>
 <ul>
-  <li><span class="merged-at">[09/04 16:53]</span>close #6280 extract message draft factory <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7012">#7012</a> <span class="author">— krcm110</span></li>
+  <li class="empty">无</li>
 </ul>
 
 <h2>🔧 其他（chore / docs / test / ...）</h2>
 <ul>
+  <li><span class="merged-at">[09/04 17:53]</span>chore(observability): codeize subwindow IPC stuck alert <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7020">#7020</a> <span class="author">— krcm110</span></li>
   <li><span class="merged-at">[09/04 17:08]</span>chore(chat): split IM receive backlog dashboard <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7016">#7016</a> <span class="author">— krcm110</span></li>
-  <li><span class="merged-at">[09/04 16:47]</span>test(observability): 兼容子窗口 Tracker 局部变量初始化守卫 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6979">#6979</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6973">#6973</a>) <span class="author">— kitesky</span></li>
-  <li><span class="merged-at">[09/04 16:03]</span>chore(observability): migrate SLS alerts to prod logstore <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7014">#7014</a> <span class="author">— krcm110</span></li>
-  <li><span class="merged-at">[09/04 15:16]</span>test: 修复主测试套件 7 个文件的 10 个稳定失败 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6978">#6978</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6967">#6967</a>) <span class="author">— kitesky</span></li>
-  <li><span class="merged-at">[09/04 15:06]</span>修复(script-library/pc): 一级分类过多时完整显示并支持跨视口拖拽 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7011">#7011</a> <span class="author">— cxy-chenxuanyu</span></li>
-  <li><span class="merged-at">[09/03 20:42]</span>chore(gate): AGENTS.md 同步校验接三道网（写入点 hook / fast gate / 全量 gate） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6977">#6977</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6970">#6970</a>) <span class="author">— shian</span></li>
-  <li><span class="merged-at">[09/03 18:25]</span>test(e2e): 懒构建列表行统一走 scrollUntilVisible 追行，修 7 处 + 收敛 6 份重复 helper <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6964">#6964</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6771">#6771</a>) <span class="author">— shian</span></li>
 </ul>
 
 
 <hr class="ref-divider">
 
 <div class="foot">
-上一次发版时间：<span class="bump-time">09/03 16:52</span>（基线 commit：<code>PC baseline override 2026090301: fix(reception): 停接人设保留主动搜索与筛选 (#6918) (#6975)</code>）<br>
+上一次发版时间：<span class="bump-time">09/04 16:53</span>（基线 commit：<code>PC baseline override 2026090401: Merge pull request #7012 from PetWebOrg/refactor/issue-6280-chat-draft-factory</code>）<br>
 PR 归属版本由 <code>pubspec.yaml</code> 的 <code>version:</code> 行 git 历史判定 —— bump commit 的 committedAt 是分割线。<br>
 由 <code>tool/generate_release_preview.dart</code> 自动提取；重新跑脚本后刷新页面即拿最新。<br>
 issue 链接基于 PetWebOrg/flutter-suiyin 仓。

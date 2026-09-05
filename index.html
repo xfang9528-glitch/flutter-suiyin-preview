@@ -260,7 +260,7 @@ a:hover { text-decoration: underline; }
 <h1>📦 2026090501 发版预览</h1>
 <div class="meta">
 当前版本：<code>2026090401</code>（发版时间：<span class="bump-time">09/04 16:53</span>），下一版（预览）：<code>2026090501</code><br>
-生成时间：2026-09-05 02:01:12 · 重新跑脚本后刷新页面即拿最新
+生成时间：2026-09-05 14:57:32 · 重新跑脚本后刷新页面即拿最新
 </div>
 
 <h2>📣 本版用户感知更新</h2>
@@ -275,6 +275,7 @@ a:hover { text-decoration: underline; }
 </ul>
 <h3>🐞 问题修复</h3>
 <ul>
+  <li>Windows 聊天输入框切换窗口、会话或中英文输入法后，现在可以继续正常输入中文，不再只剩英文字母或需要完整退出应用恢复 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7029">#7029</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6939">#6939</a>)</li>
   <li>上传图文视频话术 ZIP 时，现在能正常解压校验并继续导入；文件不合法时会显示中文原因，不再弹出英文内部错误 — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7024">#7024</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7023">#7023</a>)</li>
   <li>好友申请遇到后端状态不一致时，不会再一直卡在「待添加」或提示继续重试，而是显示「待确认」避免误操作 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7006">#7006</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6469">#6469</a>)</li>
   <li>置顶会话点「标记为未读」后，现在会和普通会话一样正常显示未读标记 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7004">#7004</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6681">#6681</a>)</li>
@@ -282,7 +283,7 @@ a:hover { text-decoration: underline; }
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">09/04 16:53 上次发版后，合入 main 的全部 <strong>8</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">09/04 16:53 上次发版后，合入 main 的全部 <strong>10</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
   <li><span class="merged-at">[09/04 18:19]</span>嘉兴艺星专属划线图片包配置 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7019">#7019</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6981">#6981</a>) <span class="author">— shian</span></li>
@@ -290,6 +291,8 @@ a:hover { text-decoration: underline; }
 
 <h2>🐞 问题修复</h2>
 <ul>
+  <li><span class="merged-at">[09/05 09:54]</span>close #6939 修复 Windows IME 恢复生命周期并完成发布清障 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7029">#7029</a> <span class="author">— krcm110</span></li>
+  <li><span class="merged-at">[09/05 02:07]</span>隔离普通 IME 重连与问题事故统计（#6939 P0） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6954">#6954</a> <span class="author">— krcm110</span></li>
   <li><span class="merged-at">[09/04 18:45]</span>修复 ZIP 导入 isolate 崩溃 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7024">#7024</a> <span class="author">— cxy-chenxuanyu</span></li>
   <li><span class="merged-at">[09/04 17:52]</span>后端状态自相矛盾时不再让好友申请卡在待添加 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7006">#7006</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6469">#6469</a>) <span class="author">— shian</span></li>
   <li><span class="merged-at">[09/04 17:31]</span>置顶会话标记为未读不生效 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7004">#7004</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6681">#6681</a>) <span class="author">— shian</span></li>

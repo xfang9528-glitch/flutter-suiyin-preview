@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <!-- CURRENT_BUILD:2026090601 -->
-<!-- PREVIEW_GENERATED_AT:2026-09-07T02:31:23.542789Z -->
+<!-- PREVIEW_GENERATED_AT:2026-09-07T07:56:08.653460Z -->
 <title>下一版发版预览 · flutter-suiyin</title>
 <style>
 :root {
@@ -248,7 +248,7 @@ a:hover { text-decoration: underline; }
 <h1>📦 2026090701 发版预览</h1>
 <div class="meta">
 当前版本：<code>2026090601</code>（发版时间：<span class="bump-time">09/05 23:48</span>），下一版（预览）：<code>2026090701</code><br>
-生成时间：<time id="preview-generated-at" datetime="2026-09-07T02:31:23.542789Z">2026-09-07 10:31:23</time> · 内容重新生成时更新，发布不会改写
+生成时间：<time id="preview-generated-at" datetime="2026-09-07T07:56:08.653460Z">2026-09-07 15:56:08</time> · 内容重新生成时更新，发布不会改写
 </div>
 <script>
 // 让下拉的当前选中态跟着当前页走：在归档页（如 2026042901.html）里，自动选中 `🗂 2026042901`
@@ -268,13 +268,15 @@ a:hover { text-decoration: underline; }
 <h2>📣 本版用户感知更新</h2>
 <h3>🐞 问题修复</h3>
 <ul>
+  <li>销售点击客户名片，或在「我的朋友圈」里评论、回复、点赞时，如果人设被限制操作，现在会直接看到封控处理引导，不再只提示操作失败。 — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7047">#7047</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7045">#7045</a>)</li>
+  <li>群发第二步用昵称、好友名称或手机号搜索后，点击「执行排除」会真正把匹配好友从群发名单里排除，并和手动排除一起保留。 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7044">#7044</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7021">#7021</a>)</li>
   <li>停止接待某个人设号时，只会关闭这个人设号下的聊天，其他人设号不再被一并关闭；确认弹窗也会明确显示本次影响范围。 — 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7041">#7041</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7040">#7040</a>)</li>
   <li>Windows 启动异常后的恢复更稳：应用会在引擎启动前记录本次启动状态，恢复时只清理本次失败产生的缓存，不再误动共享临时目录或其他窗口。 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7037">#7037</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7036">#7036</a>)</li>
 </ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">09/05 23:48 上次发版后，合入 main 的全部 <strong>5</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">09/05 23:48 上次发版后，合入 main 的全部 <strong>9</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
   <li class="empty">无</li>
@@ -282,6 +284,10 @@ a:hover { text-decoration: underline; }
 
 <h2>🐞 问题修复</h2>
 <ul>
+  <li><span class="merged-at">[09/07 15:50]</span>收敛长帧归因并修正帧时点上下文 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7046">#7046</a> <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[09/07 15:41]</span>close #7045 补齐封控引导并消除聊天首屏重复读取 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7047">#7047</a> <span class="author">— 陈宣宇</span></li>
+  <li><span class="merged-at">[09/07 14:52]</span>群发第二步关键词参与执行排除 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7044">#7044</a> <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[09/07 14:26]</span>艺星移动端编辑资料改整屏页 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7048">#7048</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6904">#6904</a>) <span class="author">— 王梓先</span></li>
   <li><span class="merged-at">[09/07 09:36]</span>修复 APP 账号筛选失败态与搜索范围 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6987">#6987</a> <span class="author">— 王争</span></li>
   <li><span class="merged-at">[09/07 09:27]</span>群聊历史按 MsgSeq 自动回补 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7028">#7028</a> <span class="author">— 梁晨</span></li>
   <li><span class="merged-at">[09/07 02:50]</span>收紧停接人设号的一键关闭范围（销售关闭一个人设时其他人设聊天不再被一并关闭） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7041">#7041</a> <span class="author">— 张拓</span></li>

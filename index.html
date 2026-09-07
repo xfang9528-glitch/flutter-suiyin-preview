@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <!-- CURRENT_BUILD:2026090601 -->
-<!-- PREVIEW_GENERATED_AT:2026-09-06T15:06:53.510729Z -->
+<!-- PREVIEW_GENERATED_AT:2026-09-07T02:31:23.542789Z -->
 <title>下一版发版预览 · flutter-suiyin</title>
 <style>
 :root {
@@ -83,7 +83,7 @@ a:hover { text-decoration: underline; }
 <label>查看历史预览：</label>
 <select id="version-switcher-select" onchange="var v=this.value; if(v) location.href = v; else location.href = './';">
 <!-- VERSION_SWITCHER_OPTIONS_START -->
-<option value="">📦 2026090602 发版预览</option>
+<option value="">📦 2026090701 发版预览</option>
 <option value="2026090601.html">🗂 2026090601</option>
 <option value="2026090401.html">🗂 2026090401</option>
 <option value="2026090301.html">🗂 2026090301</option>
@@ -245,10 +245,10 @@ a:hover { text-decoration: underline; }
 <!-- VERSION_SWITCHER_OPTIONS_END -->
 </select>
 </div>
-<h1>📦 2026090602 发版预览</h1>
+<h1>📦 2026090701 发版预览</h1>
 <div class="meta">
-当前版本：<code>2026090601</code>（发版时间：<span class="bump-time">09/05 23:48</span>），下一版（预览）：<code>2026090602</code><br>
-生成时间：<time id="preview-generated-at" datetime="2026-09-06T15:06:53.510729Z">2026-09-06 23:06:53</time> · 内容重新生成时更新，发布不会改写
+当前版本：<code>2026090601</code>（发版时间：<span class="bump-time">09/05 23:48</span>），下一版（预览）：<code>2026090701</code><br>
+生成时间：<time id="preview-generated-at" datetime="2026-09-07T02:31:23.542789Z">2026-09-07 10:31:23</time> · 内容重新生成时更新，发布不会改写
 </div>
 <script>
 // 让下拉的当前选中态跟着当前页走：在归档页（如 2026042901.html）里，自动选中 `🗂 2026042901`
@@ -266,11 +266,15 @@ a:hover { text-decoration: underline; }
 </script>
 
 <h2>📣 本版用户感知更新</h2>
-<div class="notice">本期暂无新的 PC 端用户感知更新。</div>
+<h3>🐞 问题修复</h3>
+<ul>
+  <li>停止接待某个人设号时，只会关闭这个人设号下的聊天，其他人设号不再被一并关闭；确认弹窗也会明确显示本次影响范围。 — 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7041">#7041</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7040">#7040</a>)</li>
+  <li>Windows 启动异常后的恢复更稳：应用会在引擎启动前记录本次启动状态，恢复时只清理本次失败产生的缓存，不再误动共享临时目录或其他窗口。 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7037">#7037</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7036">#7036</a>)</li>
+</ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">09/05 23:48 上次发版后，合入 main 的全部 <strong>2</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">09/05 23:48 上次发版后，合入 main 的全部 <strong>5</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
   <li class="empty">无</li>
@@ -278,6 +282,9 @@ a:hover { text-decoration: underline; }
 
 <h2>🐞 问题修复</h2>
 <ul>
+  <li><span class="merged-at">[09/07 09:36]</span>修复 APP 账号筛选失败态与搜索范围 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6987">#6987</a> <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[09/07 09:27]</span>群聊历史按 MsgSeq 自动回补 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7028">#7028</a> <span class="author">— 梁晨</span></li>
+  <li><span class="merged-at">[09/07 02:50]</span>收紧停接人设号的一键关闭范围（销售关闭一个人设时其他人设聊天不再被一并关闭） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7041">#7041</a> <span class="author">— 张拓</span></li>
   <li><span class="merged-at">[09/06 15:06]</span>close #7036 启动哨兵安全清理与 Windows 引擎前恢复 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7037">#7037</a> <span class="author">— 王争</span></li>
 </ul>
 

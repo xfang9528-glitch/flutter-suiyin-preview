@@ -2,8 +2,8 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
-<!-- CURRENT_BUILD:2026091003 -->
-<!-- PREVIEW_GENERATED_AT:2026-09-10T15:07:11.187291Z -->
+<!-- CURRENT_BUILD:2026091004 -->
+<!-- PREVIEW_GENERATED_AT:2026-09-11T03:17:37.088541Z -->
 <title>下一版发版预览 · flutter-suiyin</title>
 <style>
 :root {
@@ -83,7 +83,8 @@ a:hover { text-decoration: underline; }
 <label>查看历史预览：</label>
 <select id="version-switcher-select" onchange="var v=this.value; if(v) location.href = v; else location.href = './';">
 <!-- VERSION_SWITCHER_OPTIONS_START -->
-<option value="">📦 2026091004 发版预览</option>
+<option value="">📦 2026091101 发版预览</option>
+<option value="2026091004.html">🗂 2026091004</option>
 <option value="2026091003.html">🗂 2026091003</option>
 <option value="2026091001.html">🗂 2026091001</option>
 <option value="2026090902.html">🗂 2026090902</option>
@@ -250,10 +251,10 @@ a:hover { text-decoration: underline; }
 <!-- VERSION_SWITCHER_OPTIONS_END -->
 </select>
 </div>
-<h1>📦 2026091004 发版预览</h1>
+<h1>📦 2026091101 发版预览</h1>
 <div class="meta">
-当前版本：<code>2026091003</code>（发版时间：<span class="bump-time">09/10 18:47</span>），下一版（预览）：<code>2026091004</code><br>
-生成时间：<time id="preview-generated-at" datetime="2026-09-10T15:07:11.187291Z">2026-09-10 23:07:11</time> · 内容重新生成时更新，发布不会改写
+当前版本：<code>2026091004</code>（发版时间：<span class="bump-time">09/10 22:43</span>），下一版（预览）：<code>2026091101</code><br>
+生成时间：<time id="preview-generated-at" datetime="2026-09-11T03:17:37.088541Z">2026-09-11 11:17:37</time> · 内容重新生成时更新，发布不会改写
 </div>
 <script>
 // 让下拉的当前选中态跟着当前页走：在归档页（如 2026042901.html）里，自动选中 `🗂 2026042901`
@@ -273,43 +274,38 @@ a:hover { text-decoration: underline; }
 <h2>📣 本版用户感知更新</h2>
 <h3>🆕 新功能</h3>
 <ul>
-  <li>「存储空间」现在会按聊天记录、日志、更新包、旧版本残留等分类显示占用，并给出可清理入口；遇到 Windows 11 新系统时，也能正常显示磁盘总容量。 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7204">#7204</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6920">#6920</a>)</li>
-</ul>
-<h3>🐞 问题修复</h3>
-<ul>
-  <li>销售用中文输入法连续打字时，光标不再突然跳回最前面，后续文字也不会挤到开头导致整段话要重打。 — 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7215">#7215</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7202">#7202</a>)</li>
-  <li>销售正在输入中文时，不再被无效的输入法重关联和 profile 重激活打断组词。 — 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7209">#7209</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7203">#7203</a>)</li>
+  <li>好友资料里新增「相关群」入口，销售可以直接查看这位好友已加入、且和当前可见人设有关联的群，点开单个群还能看到相关人设和历史邀请人。 — 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7149">#7149</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7052">#7052</a>)</li>
 </ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">09/10 18:47 上次发版后，合入 main 的全部 <strong>5</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">09/10 22:43 上次发版后，合入 main 的全部 <strong>4</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
-  <li><span class="merged-at">[09/10 22:43]</span>PC 存储空间页按分类统计并给出可清理入口 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7204">#7204</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6920">#6920</a>) <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[09/11 09:45]</span>好友资料新增已加入相关群列表 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7149">#7149</a> <span class="author">— 梁晨</span></li>
 </ul>
 
 <h2>🐞 问题修复</h2>
 <ul>
-  <li><span class="merged-at">[09/10 21:37]</span>IME 组合期间保留 composing，修复光标跳到文本开头 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7215">#7215</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7202">#7202</a>) <span class="author">— 张拓</span></li>
+  <li><span class="merged-at">[09/11 10:39]</span>stabilize Jiaxing appointment date card <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7234">#7234</a> <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[09/11 10:27]</span>remove hardcoded appointment edit title font size <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7231">#7231</a> <span class="author">— 陈聪</span></li>
 </ul>
 
 <h2>✨ 体验优化</h2>
 <ul>
-  <li><span class="merged-at">[09/10 22:41]</span>未确认断流时的普通回焦不再计入恢复尝试 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7216">#7216</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7203">#7203</a>) <span class="author">— 张拓</span></li>
-  <li><span class="merged-at">[09/10 21:43]</span>IME 恢复阶梯的 IMM 重关联与 TSF profile 重激活降级为只上报 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7209">#7209</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7203">#7203</a>) <span class="author">— 张拓</span></li>
+  <li class="empty">无</li>
 </ul>
 
 <h2>🔧 其他（chore / docs / test / ...）</h2>
 <ul>
-  <li><span class="merged-at">[09/10 19:57]</span>test(e2e): 新增 X2「通讯录发起聊天 → 落点会话」跨域流转旅程用例 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7201">#7201</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7170">#7170</a>) <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[09/11 10:20]</span>chore(observability): 新增 Windows 多窗口内存归因规范与报告器 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7168">#7168</a> <span class="author">— 王争</span></li>
 </ul>
 
 
 <hr class="ref-divider">
 
 <div class="foot">
-上一次发版时间：<span class="bump-time">09/10 18:47</span>（基线 commit：<code>PC baseline override 2026091003: fix(observability/sls): 三个 SLS 环境暂时全部回写 suiyin-flutter，止住正式包被 LogStoreNotExist 拒收 (#7199) (#7200)</code>）<br>
+上一次发版时间：<span class="bump-time">09/10 22:43</span>（基线 commit：<code>PC baseline override 2026091004: feat(storage): PC 存储空间页按分类统计并给出可清理入口 (#6920)</code>）<br>
 PR 归属版本由 <code>pubspec.yaml</code> 的 <code>version:</code> 行 git 历史判定 —— bump commit 的 committedAt 是分割线。<br>
 由 <code>tool/generate_release_preview.dart</code> 自动提取；重新跑脚本后刷新页面即拿最新。<br>
 issue 链接基于 PetWebOrg/flutter-suiyin 仓。

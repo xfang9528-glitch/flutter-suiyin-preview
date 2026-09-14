@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <!-- CURRENT_BUILD:2026091102 -->
-<!-- PREVIEW_GENERATED_AT:2026-09-14T02:31:27.296310Z -->
+<!-- PREVIEW_GENERATED_AT:2026-09-14T08:58:31.063874Z -->
 <title>下一版发版预览 · flutter-suiyin</title>
 <style>
 :root {
@@ -255,7 +255,7 @@ a:hover { text-decoration: underline; }
 <h1>📦 2026091401 发版预览</h1>
 <div class="meta">
 当前版本：<code>2026091102</code>（发版时间：<span class="bump-time">09/11 17:02</span>），下一版（预览）：<code>2026091401</code><br>
-生成时间：<time id="preview-generated-at" datetime="2026-09-14T02:31:27.296310Z">2026-09-14 10:31:27</time> · 内容重新生成时更新，发布不会改写
+生成时间：<time id="preview-generated-at" datetime="2026-09-14T08:58:31.063874Z">2026-09-14 16:58:31</time> · 内容重新生成时更新，发布不会改写
 </div>
 <script>
 // 让下拉的当前选中态跟着当前页走：在归档页（如 2026042901.html）里，自动选中 `🗂 2026042901`
@@ -273,31 +273,51 @@ a:hover { text-decoration: underline; }
 </script>
 
 <h2>📣 本版用户感知更新</h2>
+<h3>🆕 新功能</h3>
+<ul>
+  <li>客户侧栏的「沟通进度分析」入口会直接显示已有分析数量，没内容时保持清爽，加载失败时也不影响继续进入查看。 — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7237">#7237</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7235">#7235</a>)</li>
+  <li>会话列表漏斗筛选新增「未读@」选项，可以只看当前有人 @ 我或 @ 所有人的会话。 — shain <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7288">#7288</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7262">#7262</a>)</li>
+  <li>图片预览进入编辑后也能继续缩放和平移，放大后画笔、文字和裁剪仍会落在原图的正确位置。 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7277">#7277</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7240">#7240</a>)</li>
+</ul>
+<h3>✨ 体验优化</h3>
+<ul>
+  <li>刷新「新的朋友」后，完成反馈会等列表真正更新到屏幕上再结束，避免刚刷新完还看到旧内容。 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7278">#7278</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7253">#7253</a>)</li>
+</ul>
 <h3>🐞 问题修复</h3>
 <ul>
+  <li>话术服务短暂不可用或快速开关面板时，不再出现 Flutter 红屏；服务恢复后点「重试」即可继续选择话术。 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7275">#7275</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7263">#7263</a>)</li>
+  <li>从通讯录重新发起指定人设的会话时，不会串到同一客户的其他人设。 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7258">#7258</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7220">#7220</a>)</li>
   <li>取消置顶外联或内部客户后，会话仍留在正确分类，AI 等级和「第一需求」筛选也不会失效。 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7256">#7256</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7218">#7218</a>)</li>
 </ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">09/11 17:02 上次发版后，合入 main 的全部 <strong>6</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">09/11 17:02 上次发版后，合入 main 的全部 <strong>16</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
-  <li class="empty">无</li>
+  <li><span class="merged-at">[09/14 16:06]</span>close #7235 沟通进度分析入口显示已有数量 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7237">#7237</a> <span class="author">— 陈宣宇</span></li>
+  <li><span class="merged-at">[09/14 15:42]</span>PC 会话列表漏斗筛选新增「未读@」项 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7288">#7288</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7262">#7262</a>) <span class="author">— shain</span></li>
+  <li><span class="merged-at">[09/14 15:40]</span>close #7240 图片预览编辑态支持缩放 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7277">#7277</a> <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[09/14 11:15]</span>IME 光标跳变事件带上选区变更来源，并拆掉探针三处结构性盲区 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7272">#7272</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7267">#7267</a>) <span class="author">— 张拓</span></li>
 </ul>
 
 <h2>🐞 问题修复</h2>
 <ul>
+  <li><span class="merged-at">[09/14 14:41]</span>keep Hangzhou appointment image disabled <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7281">#7281</a> <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[09/14 14:12]</span>修复话术加载失败时 Scrollbar 红屏（销售看到中文提示并能继续选择话术） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7275">#7275</a> <span class="author">— 王争</span></li>
   <li><span class="merged-at">[09/12 14:50]</span>allow editing mobile speech transcript <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7260">#7260</a> <span class="author">— 陈聪</span></li>
 </ul>
 
 <h2>✨ 体验优化</h2>
 <ul>
-  <li class="empty">无</li>
+  <li><span class="merged-at">[09/14 16:32]</span>close #7253 好友申请刷新反馈延后到呈现帧 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7278">#7278</a> <span class="author">— 王争</span></li>
 </ul>
 
 <h2>🔧 其他（chore / docs / test / ...）</h2>
 <ul>
+  <li><span class="merged-at">[09/14 16:50]</span>build(gitattributes): 统一 C/C++ 源码 LF，修复 Windows source guard 恒红（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7284">#7284</a> <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[09/14 11:22]</span>test(e2e): B7 关闭聊天行移除 + 多人设群结束选择旅程（成都艺星）+ 修 JumpToContact 串人设 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7258">#7258</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7220">#7220</a>) <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[09/14 10:56]</span>test(e2e): B4 会话免打扰随人设 + 标记已读/未读角标旅程（成都艺星） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7269">#7269</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7219">#7219</a>) <span class="author">— 王梓先</span></li>
   <li><span class="merged-at">[09/12 15:20]</span>chore(release): Android 2026091201 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7261">#7261</a> <span class="author">— 陈聪</span></li>
   <li><span class="merged-at">[09/11 22:40]</span>test(e2e): B3 会话列表置顶/取消置顶顺序变化旅程（成都艺星）+ 修置顶表漏 aiGrade <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7256">#7256</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7218">#7218</a>) <span class="author">— 王梓先</span></li>
   <li><span class="merged-at">[09/11 22:08]</span>test(e2e): 成都艺星「分配记录」弹窗 ↔ listAllocationHistory 只读差分旅程 AH-01~04 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7255">#7255</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7221">#7221</a>) <span class="author">— 王梓先</span></li>

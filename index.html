@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <!-- CURRENT_BUILD:2026091502 -->
-<!-- PREVIEW_GENERATED_AT:2026-09-15T15:12:30.563148Z -->
+<!-- PREVIEW_GENERATED_AT:2026-09-16T02:30:18.530629Z -->
 <title>下一版发版预览 · flutter-suiyin</title>
 <style>
 :root {
@@ -83,7 +83,7 @@ a:hover { text-decoration: underline; }
 <label>查看历史预览：</label>
 <select id="version-switcher-select" onchange="var v=this.value; if(v) location.href = v; else location.href = './';">
 <!-- VERSION_SWITCHER_OPTIONS_START -->
-<option value="">📦 2026091503 发版预览</option>
+<option value="">📦 2026091601 发版预览</option>
 <option value="2026091502.html">🗂 2026091502</option>
 <option value="2026091501.html">🗂 2026091501</option>
 <option value="2026091402.html">🗂 2026091402</option>
@@ -255,10 +255,10 @@ a:hover { text-decoration: underline; }
 <!-- VERSION_SWITCHER_OPTIONS_END -->
 </select>
 </div>
-<h1>📦 2026091503 发版预览</h1>
+<h1>📦 2026091601 发版预览</h1>
 <div class="meta">
-当前版本：<code>2026091502</code>（发版时间：<span class="bump-time">09/15 17:46</span>），下一版（预览）：<code>2026091503</code><br>
-生成时间：<time id="preview-generated-at" datetime="2026-09-15T15:12:30.563148Z">2026-09-15 23:12:30</time> · 内容重新生成时更新，发布不会改写
+当前版本：<code>2026091502</code>（发版时间：<span class="bump-time">09/15 17:46</span>），下一版（预览）：<code>2026091601</code><br>
+生成时间：<time id="preview-generated-at" datetime="2026-09-16T02:30:18.530629Z">2026-09-16 10:30:18</time> · 内容重新生成时更新，发布不会改写
 </div>
 <script>
 // 让下拉的当前选中态跟着当前页走：在归档页（如 2026042901.html）里，自动选中 `🗂 2026042901`
@@ -278,12 +278,13 @@ a:hover { text-decoration: underline; }
 <h2>📣 本版用户感知更新</h2>
 <h3>🐞 问题修复</h3>
 <ul>
+  <li>打开过朋友圈后再切换企业，现在不会再切换失败、退回登录页，也不会短暂显示旧企业的朋友圈内容 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7369">#7369</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7356">#7356</a>)</li>
   <li>改派记录按好友筛选时，不再把搜索结果误报成 `customer_id 格式不正确`；选中真实客户后能看到对应记录或明确空态，导出也会跟随同一筛选 — 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7368">#7368</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7355">#7355</a>)</li>
 </ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">09/15 17:46 上次发版后，合入 main 的全部 <strong>3</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">09/15 17:46 上次发版后，合入 main 的全部 <strong>4</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
   <li class="empty">无</li>
@@ -291,6 +292,7 @@ a:hover { text-decoration: underline; }
 
 <h2>🐞 问题修复</h2>
 <ul>
+  <li><span class="merged-at">[09/16 10:14]</span>修复切换企业时朋友圈状态循环依赖 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7369">#7369</a> <span class="author">— 王争</span></li>
   <li><span class="merged-at">[09/15 21:04]</span>安卓包剔除只供 PC 使用的杭州预约卡片图 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7375">#7375</a> <span class="author">— 王梓先</span></li>
   <li><span class="merged-at">[09/15 18:22]</span>改派记录好友筛选与结果状态 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7368">#7368</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7355">#7355</a>) <span class="author">— 梁晨</span></li>
 </ul>

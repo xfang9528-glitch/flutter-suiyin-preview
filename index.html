@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <!-- CURRENT_BUILD:2026091701 -->
-<!-- PREVIEW_GENERATED_AT:2026-09-18T02:29:37.244377Z -->
+<!-- PREVIEW_GENERATED_AT:2026-09-18T08:57:45.192357Z -->
 <title>下一版发版预览 · flutter-suiyin</title>
 <style>
 :root {
@@ -260,7 +260,7 @@ a:hover { text-decoration: underline; }
 <h1>📦 2026091801 发版预览</h1>
 <div class="meta">
 当前版本：<code>2026091701</code>（发版时间：<span class="bump-time">09/17 16:29</span>），下一版（预览）：<code>2026091801</code><br>
-生成时间：<time id="preview-generated-at" datetime="2026-09-18T02:29:37.244377Z">2026-09-18 10:29:37</time> · 内容重新生成时更新，发布不会改写
+生成时间：<time id="preview-generated-at" datetime="2026-09-18T08:57:45.192357Z">2026-09-18 16:57:45</time> · 内容重新生成时更新，发布不会改写
 </div>
 <script>
 // 让下拉的当前选中态跟着当前页走：在归档页（如 2026042901.html）里，自动选中 `🗂 2026042901`
@@ -280,24 +280,31 @@ a:hover { text-decoration: underline; }
 <h2>📣 本版用户感知更新</h2>
 <h3>🆕 新功能</h3>
 <ul>
+  <li>杭州艺星销售现在可以从 PC 聊天工具栏打开小程序入口，并按医生查找、搜索和发送对应案例，不用离开当前会话另行查找 — 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7517">#7517</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7475">#7475</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7515">#7515</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7444">#7444</a>)</li>
+  <li>深圳艺星医生预约卡现在会按后台配置的背景、字段、标题图和底部图生成，销售预览和发送给客户时看到的样式与后台配置一致 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7514">#7514</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7445">#7445</a>)</li>
   <li>艺星客户的「第一需求」变更历史现在可以展开查看备注匹配的依据，包括当时的原备注、命中词、匹配结果和对应人设；备注记录不会再误打开 AI 分析报告 — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7459">#7459</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7453">#7453</a>)</li>
-  <li>杭州艺星销售可以在 PC 聊天的小程序弹窗中按医生查找、搜索并发送对应案例，不用离开当前会话另行查找 — 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7475">#7475</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7444">#7444</a>)</li>
   <li>艺星销售现在可以直接在 PC 聊天工具栏设置回访日期和备注，不用再切到手机操作 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7470">#7470</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7399">#7399</a>)</li>
 </ul>
 <h3>✨ 体验优化</h3>
 <ul>
-  <li>PC 下拉菜单、确认弹窗、操作提示和独立窗口在浅色、深色及企业主题下更清晰，文字、边框和键盘焦点不再难以辨认；切换企业后窗口颜色也会跟随更新 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7443">#7443</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7407">#7407</a>)</li>
+  <li>PC 创建群聊、筛选、搜索消息、群详情、独立聊天窗和合并转发窗在浅色、深色及企业主题下更清晰，文字、边框、焦点和窗口按钮不再难以辨认；切换企业后窗口颜色也会跟随更新 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7454">#7454</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7443">#7443</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7406">#7406</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7407">#7407</a>)</li>
 </ul>
 <h3>🐞 问题修复</h3>
 <ul>
+  <li>修复 Windows 上复制尚未完成时，立刻切到另一个输入框会把新焦点文字误写入剪贴板的问题；来源不明确时会提示重新选择后再复制 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7477">#7477</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7456">#7456</a>)</li>
+  <li>修复广州艺星从后台切回 Windows 客户端后，好友申请后台刷新已经开始但界面没有任何反馈的问题 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7451">#7451</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7428">#7428</a>)</li>
+  <li>修复 PC 窄窗口通讯录里「我未接待 / 未接待」等标签被裁切或横向溢出的问题，放大字号时也能完整显示 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7480">#7480</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7426">#7426</a>)</li>
   <li>修复 PC 手动添加购买记录时，所选交付日期保存后会少一天的问题 — 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7466">#7466</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7465">#7465</a>)</li>
 </ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">09/17 16:29 上次发版后，合入 main 的全部 <strong>8</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">09/17 16:29 上次发版后，合入 main 的全部 <strong>27</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
+  <li><span class="merged-at">[09/18 16:48]</span>移动端人设列表支持下拉刷新 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7509">#7509</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7156">#7156</a>) <span class="author">— shain</span></li>
+  <li><span class="merged-at">[09/18 16:27]</span>close #7445 深圳医生预约卡按后台配置预览和发送 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7514">#7514</a> <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[09/18 11:36]</span>close #7495 Apple 发版一键构建 IPA 与 MAS PKG <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7497">#7497</a> <span class="author">— 王争</span></li>
   <li><span class="merged-at">[09/18 00:18]</span>show remark matching evidence in first-demand history <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7459">#7459</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7453">#7453</a>) <span class="author">— 陈宣宇</span></li>
   <li><span class="merged-at">[09/17 18:37]</span>close #7469 补齐免打扰诊断 SLS 索引与版本统计 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7482">#7482</a> <span class="author">— 陈聪</span></li>
   <li><span class="merged-at">[09/17 18:08]</span>PC 小程序支持按医生选择并发送案例 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7475">#7475</a> <span class="author">— 梁晨</span></li>
@@ -306,6 +313,18 @@ a:hover { text-decoration: underline; }
 
 <h2>🐞 问题修复</h2>
 <ul>
+  <li><span class="merged-at">[09/18 16:46]</span>来源变化时停止恢复写入 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7477">#7477</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7456">#7456</a>) <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[09/18 16:35]</span>杭州艺星显示小程序发送入口 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7517">#7517</a> <span class="author">— 梁晨</span></li>
+  <li><span class="merged-at">[09/18 15:53]</span>close #7511 保留Windows路径差异下的MANUAL生成保护 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7513">#7513</a> <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[09/18 15:51]</span>修复 PC 聊天非主路径主题色（销售创建群聊、搜索消息或打开独立窗口时不再因主题切换看不清状态而中断操作） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7454">#7454</a> <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[09/18 15:15]</span>话术面板扫掠按话术行定位列表，修 SP-04 滚到底缺行 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7498">#7498</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7430">#7430</a>) <span class="author">— shain</span></li>
+  <li><span class="merged-at">[09/18 14:43]</span>close #7367 精确过滤 SLS 上传异常并保留本地证据 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7370">#7370</a> <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[09/18 14:33]</span>close #7428 好友申请后台补跑恢复可见反馈 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7451">#7451</a> <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[09/18 11:54]</span>close #7485 恢复共享名片菜单的 customer_info 公共入口（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7490">#7490</a> <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[09/18 11:44]</span>close #7334 限制相关群查询资格并识别业务不适用 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7478">#7478</a> <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[09/18 11:31]</span>close #7426 修复最小窗口通讯录标签溢出 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7480">#7480</a> <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[09/18 11:21]</span>close #7467 清除未读诊断正文与发送人并过滤旧队列 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7486">#7486</a> <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[09/18 11:01]</span>close #7474 fast gate 分析异常时拒绝误报通过 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7488">#7488</a> <span class="author">— 陈聪</span></li>
   <li><span class="merged-at">[09/17 18:57]</span>close #7468 请求时间异常后恢复 SLS 日志上传 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7476">#7476</a> <span class="author">— 陈聪</span></li>
   <li><span class="merged-at">[09/17 17:24]</span>修复 PC 手动购买记录交付日错位 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7466">#7466</a> <span class="author">— 梁晨</span></li>
 </ul>
@@ -317,6 +336,10 @@ a:hover { text-decoration: underline; }
 
 <h2>🔧 其他（chore / docs / test / ...）</h2>
 <ul>
+  <li><span class="merged-at">[09/18 16:52]</span>test(e2e): 翻正公共话术删除入口断言并收敛残留判定范围 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7504">#7504</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7431">#7431</a>) <span class="author">— shain</span></li>
+  <li><span class="merged-at">[09/18 15:39]</span>chore(e2e): 跑批前把 CMake 缓存指向本地 ObjectBox，跳过逐条重复下载 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7503">#7503</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7429">#7429</a>) <span class="author">— shain</span></li>
+  <li><span class="merged-at">[09/18 13:36]</span>test: close #7489 补齐 PC 主壳测试主题 fixture（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7501">#7501</a> <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[09/18 11:56]</span>test(e2e): 成都艺星新的朋友旅程改用翻页对照，量级越过首页页长不再整条失败 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7496">#7496</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7492">#7492</a>) <span class="author">— shain</span></li>
   <li><span class="merged-at">[09/17 18:46]</span>test(e2e): 具名同事白名单登记王梓先个人微信，建群沙箱群不再红 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7484">#7484</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7483">#7483</a>) <span class="author">— shain</span></li>
 </ul>
 

@@ -2,8 +2,8 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
-<!-- CURRENT_BUILD:2026091804 -->
-<!-- PREVIEW_GENERATED_AT:2026-09-20T08:55:35.748190Z -->
+<!-- CURRENT_BUILD:2026092001 -->
+<!-- PREVIEW_GENERATED_AT:2026-09-21T01:52:47.698181Z -->
 <title>下一版发版预览 · flutter-suiyin</title>
 <style>
 :root {
@@ -83,7 +83,8 @@ a:hover { text-decoration: underline; }
 <label>查看历史预览：</label>
 <select id="version-switcher-select" onchange="var v=this.value; if(v) location.href = v; else location.href = './';">
 <!-- VERSION_SWITCHER_OPTIONS_START -->
-<option value="">📦 2026092001 发版预览</option>
+<option value="">📦 2026092101 发版预览</option>
+<option value="2026092001.html">🗂 2026092001</option>
 <option value="2026091804.html">🗂 2026091804</option>
 <option value="2026091803.html">🗂 2026091803</option>
 <option value="2026091701.html">🗂 2026091701</option>
@@ -259,10 +260,10 @@ a:hover { text-decoration: underline; }
 <!-- VERSION_SWITCHER_OPTIONS_END -->
 </select>
 </div>
-<h1>📦 2026092001 发版预览</h1>
+<h1>📦 2026092101 发版预览</h1>
 <div class="meta">
-当前版本：<code>2026091804</code>（发版时间：<span class="bump-time">09/18 23:42</span>），下一版（预览）：<code>2026092001</code><br>
-生成时间：<time id="preview-generated-at" datetime="2026-09-20T08:55:35.748190Z">2026-09-20 16:55:35</time> · 内容重新生成时更新，发布不会改写
+当前版本：<code>2026092001</code>（发版时间：<span class="bump-time">09/20 17:51</span>），下一版（预览）：<code>2026092101</code><br>
+生成时间：<time id="preview-generated-at" datetime="2026-09-21T01:52:47.698181Z">2026-09-21 09:52:47</time> · 内容重新生成时更新，发布不会改写
 </div>
 <script>
 // 让下拉的当前选中态跟着当前页走：在归档页（如 2026042901.html）里，自动选中 `🗂 2026042901`
@@ -280,55 +281,48 @@ a:hover { text-decoration: underline; }
 </script>
 
 <h2>📣 本版用户感知更新</h2>
-<h3>✨ 体验优化</h3>
+<h3>🆕 新功能</h3>
 <ul>
-  <li>朋友圈视频如果已经归档、恢复中或资源缺失，播放失败时会显示对应提示；资料库批量保存也会告诉你成功数量和失败原因。 — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7442">#7442</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7441">#7441</a>)</li>
-  <li>PC 群发页面的列表、创建流程、预览和失败提示现在会跟随明暗主题和企业主题，界面更统一。 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7471">#7471</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7323">#7323</a>)</li>
-  <li>PC 预约列表、详情、表单和弹层现在会跟随明暗主题、企业主题和不同屏幕缩放，阅读和操作更一致。 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7481">#7481</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7324">#7324</a>)</li>
+  <li>艺星 PC 的聊天和通讯录筛选里新增「原企微标签」，可以按企微标签分组筛出对应好友；同名标签也会区分清楚。 — shain <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7574">#7574</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7534">#7534</a>)</li>
+  <li>客户录音面板现在能展示录音设备导入后的结果和原始片段范围，方便在 PC 上核对录音来源。 — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7562">#7562</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7551">#7551</a>)</li>
+  <li>深圳 PC 统一预约可以选择 0:00–23:59 的分钟级开始和结束时间，不再只能按固定整点时段填写。 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7564">#7564</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7552">#7552</a>)</li>
 </ul>
 <h3>🐞 问题修复</h3>
 <ul>
-  <li>创建公共或部门话术分类失败时，会直接显示后端返回的权限原因，不再只提示“创建分类失败”。 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7499">#7499</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7479">#7479</a>)</li>
-  <li>聊天记录里的竖版图片现在会按真实比例显示，不再因为宽高信息缺失而被裁成方图。 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7544">#7544</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7523">#7523</a>)</li>
-  <li>从 PC 通讯录发起聊天时，等待 2 秒会提示“正在发起聊天…”，8 秒会提示服务器响应较慢，超时也会明确告诉你可以重试。 — shain <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7532">#7532</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7491">#7491</a>)</li>
-  <li>新增预约卡片缺少星粉姓名时，会先提示“请填写客户姓名”，不再反复保存失败或卡在发送前。 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7539">#7539</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7538">#7538</a>)</li>
+  <li>从通讯录发起聊天时如果中途切走导致请求没完成，切回原客户会提示“上次发起聊天未完成”，可直接重试。 — shain <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7563">#7563</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7493">#7493</a>)</li>
 </ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">09/18 23:42 上次发版后，合入 main 的全部 <strong>11</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">09/20 17:51 上次发版后，合入 main 的全部 <strong>5</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
-  <li><span class="merged-at">[09/20 16:35]</span>艺星移动端「+」面板用「回访设置」替换「快速备注」 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7549">#7549</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7462">#7462</a>) <span class="author">— shain</span></li>
-  <li><span class="merged-at">[09/20 13:58]</span>explain archived videos and preserve ordinary retry errors <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7442">#7442</a> <span class="author">— 陈宣宇</span></li>
+  <li><span class="merged-at">[09/21 09:48]</span>新增艺星PC原企微标签筛选 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7574">#7574</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7534">#7534</a>) <span class="author">— shain</span></li>
+  <li><span class="merged-at">[09/21 08:29]</span>把框架本地按键写入与本仓代码写入在光标跳变序列里分开 (#7575 AC-10) <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7581">#7581</a> <span class="author">— 张拓</span></li>
+  <li><span class="merged-at">[09/21 01:24]</span>客户录音设备导入与多段整理 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7562">#7562</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7551">#7551</a>) <span class="author">— 陈宣宇</span></li>
+  <li><span class="merged-at">[09/20 18:39]</span>close #7552 深圳 PC 支持分钟级预约时间 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7564">#7564</a> <span class="author">— 陈聪</span></li>
 </ul>
 
 <h2>🐞 问题修复</h2>
 <ul>
-  <li><span class="merged-at">[09/20 15:58]</span>修复系统通知初始化时序（本地启动和 E2E 不再黑屏） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7543">#7543</a> <span class="author">— 王争</span></li>
-  <li><span class="merged-at">[09/20 14:37]</span>close #7479 创建分类失败时显示后端权限原因 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7499">#7499</a> <span class="author">— 王争</span></li>
-  <li><span class="merged-at">[09/20 13:54]</span>restore portrait image aspect in history <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7544">#7544</a> <span class="author">— 陈聪</span></li>
-  <li><span class="merged-at">[09/20 13:40]</span>让网络层裁决发起聊天超时，消除双计时器竞态 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7533">#7533</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7516">#7516</a>) <span class="author">— shain</span></li>
-  <li><span class="merged-at">[09/20 11:31]</span>为发起聊天加 10 秒前端超时兜底与等待期分级文案 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7532">#7532</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7491">#7491</a>) <span class="author">— shain</span></li>
-  <li><span class="merged-at">[09/20 09:46]</span>close #7538 拦截统一预约创建空姓名 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7539">#7539</a> <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[09/20 20:39]</span>发起聊天被动取消留可重试提示并记账 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7563">#7563</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7493">#7493</a>) <span class="author">— shain</span></li>
 </ul>
 
 <h2>✨ 体验优化</h2>
 <ul>
-  <li><span class="merged-at">[09/20 12:03]</span>close #7323 统一 PC 群发页面主题 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7471">#7471</a> <span class="author">— 王争</span></li>
-  <li><span class="merged-at">[09/20 11:00]</span>close #7324 统一 PC 预约页面主题 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7481">#7481</a> <span class="author">— 王争</span></li>
+  <li class="empty">无</li>
 </ul>
 
 <h2>🔧 其他（chore / docs / test / ...）</h2>
 <ul>
-  <li><span class="merged-at">[09/20 13:06]</span>docs(appointment): 艺星预约卡动态配置操作说明 V1.0 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7546">#7546</a> <span class="author">— 陈聪</span></li>
+  <li class="empty">无</li>
 </ul>
 
 
 <hr class="ref-divider">
 
 <div class="foot">
-上一次发版时间：<span class="bump-time">09/18 23:42</span>（基线 commit：<code>PC baseline override 2026091804: fix: close #7535 隔离嘉兴与杭州预约海报并恢复嘉兴排版 (#7536)</code>）<br>
+上一次发版时间：<span class="bump-time">09/20 17:51</span>（基线 commit：<code>PC baseline override 2026092001: feat(enterprise): 深圳艺星医美工具鼻部分类追加 6 张标注素材 (#7555)</code>）<br>
 PR 归属版本由 <code>pubspec.yaml</code> 的 <code>version:</code> 行 git 历史判定 —— bump commit 的 committedAt 是分割线。<br>
 由 <code>tool/generate_release_preview.dart</code> 自动提取；重新跑脚本后刷新页面即拿最新。<br>
 issue 链接基于 PetWebOrg/flutter-suiyin 仓。

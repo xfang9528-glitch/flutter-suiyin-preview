@@ -2,7 +2,8 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
-<!-- CURRENT_BUILD:2026072801 -->
+<!-- CURRENT_BUILD:2026092402 -->
+<!-- PREVIEW_GENERATED_AT:2026-09-24T08:37:54.543825Z -->
 <title>下一版发版预览 · flutter-suiyin</title>
 <style>
 :root {
@@ -76,8 +77,8 @@ a:hover { text-decoration: underline; }
      - 本地预览（docs/release-preview.html）：dart 读 PREVIEW_REPO_DIR
        （默认 D:/CC work/flutter-suiyin-preview）下已有的 `<build>.html`，option
        value 拼绝对 URL 指向 GitHub Pages，本地点击跳过去看
-     - GitHub Pages 上的 index.html：publish_preview.ps1 推送时会把 marker 之间
-       的内容重写成相对路径 option（同域跳转），覆盖 dart 输出 -->
+     - GitHub Pages 上的 index.html：hosted publisher 只会把 marker 之间的
+       内容重写成相对路径 option（同域跳转），不会重建正文或改写生成时间 -->
 <div class="version-switcher">
 <label>查看历史预览：</label>
 <select id="version-switcher-select" onchange="var v=this.value; if(v) location.href = v; else location.href = './';">
@@ -264,6 +265,11 @@ a:hover { text-decoration: underline; }
 <!-- VERSION_SWITCHER_OPTIONS_END -->
 </select>
 </div>
+<h1>📦 2026092403 发版预览</h1>
+<div class="meta">
+当前版本：<code>2026092402</code>（发版时间：<span class="bump-time">09/24 12:15</span>），下一版（预览）：<code>2026092403</code><br>
+生成时间：<time id="preview-generated-at" datetime="2026-09-24T08:37:54.543825Z">2026-09-24 16:37:54</time> · 内容重新生成时更新，发布不会改写
+</div>
 <script>
 // 让下拉的当前选中态跟着当前页走：在归档页（如 2026042901.html）里，自动选中 `🗂 2026042901`
 // 那项；这样点回 `📦 ... 发版预览`（value=""）时 select.value 才会发生变化，触发 onchange 跳 `./`。
@@ -278,56 +284,55 @@ a:hover { text-decoration: underline; }
   }
 })();
 </script>
-<h1>📦 2026072901 发版预览</h1>
-<div class="meta">
-当前版本：<code>2026072801</code>（发版时间：<span class="bump-time">07/28 17:32</span>），下一版（预览）：<code>2026072901</code><br>
-生成时间：2026-07-29 10:31:48 · 重新跑脚本后刷新页面即拿最新
-</div>
 
 <h2>📣 本版用户感知更新</h2>
-<h2>&#127381; 新功能</h2>
+<h3>🆕 新功能</h3>
 <ul>
-  <li>下班或停止某个工作号接待前，可以按实时接待队列逐条保留、转交、关闭，也可以二次确认后一键关闭全部当前接待；处理结果会同步到聊天列表、接待数量和历史记录 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5370">#5370</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4928">#4928</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5306">#5306</a>)</li>
+  <li>成都艺星可以使用部门话术入口，销售按部门找常用话术时不用再绕到其他渠道。 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7745">#7745</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7743">#7743</a>)</li>
+  <li>艺星 PC「销售统计」新增预约统计：可以按时间、客户、手机号、项目或医生查看本人预约记录，预约图片发送次数也会同步计入统计。 — shain <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7738">#7738</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7737">#7737</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7566">#7566</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7720">#7720</a>)</li>
 </ul>
-<h2>&#128030; 问题修复</h2>
+<h3>✨ 体验优化</h3>
 <ul>
-  <li>PC 唤醒或重新连上消息服务后，会主动补齐离线期间客户发来的消息，会话列表摘要和时间也会同步更新，避免销售漏看客户回复 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5374">#5374</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5323">#5323</a>)</li>
-  <li>打开长历史会话、搜索定位、引用定位或上下翻页时，聊天窗口只加载当前位置附近的消息，减少持续转圈、卡顿和内存上涨；查看历史时也不会被新消息或图片加载强行拉回底部 — 梁晨、Cursor、王争、王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5364">#5364</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5365">#5365</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5373">#5373</a>)</li>
-  <li>独立聊天子窗口完整开放前，双击、拖拽和右键打开入口会先隐藏，避免销售误进尚未完成的窗口；正常选择和操作会话不受影响 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5369">#5369</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5366">#5366</a>)</li>
+  <li>Windows 发送图片时压缩更稳，PNG 的透明背景会保留下来，压缩工具不可用时也不会影响正常发送。 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7741">#7741</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7647">#7647</a>)</li>
+</ul>
+<h3>🐞 问题修复</h3>
+<ul>
+  <li>PC 聊天发送中切换会话或关闭输入区时，未发送内容会保留，已发送内容不会重新回到输入框里造成重复发送。 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7695">#7695</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7689">#7689</a>)</li>
+  <li>切换企业后，聊天筛选里的「第一需求(AI)」下拉会自动重新加载，不再出现空选项。 — shain <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7744">#7744</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7527">#7527</a>)</li>
 </ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">07/28 17:32 上次发版后，合入 main 的全部 <strong>8</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">09/24 12:15 上次发版后，合入 main 的全部 <strong>7</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
-  <li><span class="merged-at">[07/28 22:05]</span>独立聊天窗口复用完整消息与输入体验 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5356">#5356</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5152">#5152</a>) <span class="author">— 王争</span></li>
-  <li><span class="merged-at">[07/28 18:08]</span>完善下班与停号前接待交班流程 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5370">#5370</a> <span class="author">— 陈聪</span></li>
-  <li><span class="merged-at">[07/28 18:07]</span>close #5149 isolate detached chat input state <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5355">#5355</a> <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[09/24 16:12]</span>启用成都艺星部门话术 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7745">#7745</a> <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[09/24 15:17]</span>艺星 PC 销售统计新增预约统计 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7738">#7738</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7566">#7566</a>) <span class="author">— shain</span></li>
+  <li><span class="merged-at">[09/24 14:34]</span>预约图片发送后上报发送事件 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7737">#7737</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7720">#7720</a>) <span class="author">— shain</span></li>
 </ul>
 
 <h2>🐞 问题修复</h2>
 <ul>
-  <li><span class="merged-at">[07/29 00:02]</span>TIM 重连时强制拉一次全量分配快照补齐会话摘要 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5374">#5374</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5323">#5323</a>) <span class="author">— 王梓先</span></li>
-  <li><span class="merged-at">[07/28 18:25]</span>独立聊天完整交付前统一隐藏打开入口 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5369">#5369</a> <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[09/24 16:01]</span>修复发送中输入区卸载后的 ref 读取异常 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7695">#7695</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7689">#7689</a>) <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[09/24 15:16]</span>修复切企业后「第一需求(AI)」下拉选项为空且不重拉 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7744">#7744</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7527">#7527</a>) <span class="author">— shain</span></li>
+  <li><span class="merged-at">[09/24 14:22]</span>fix-7647-windows-image-compression <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7741">#7741</a> <span class="author">— 陈聪</span></li>
 </ul>
 
 <h2>✨ 体验优化</h2>
 <ul>
-  <li><span class="merged-at">[07/29 09:41]</span>重新合入 lc_chat_page 并保留 main 后续修复 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5364">#5364</a> <span class="author">— 梁晨、Cursor、王争、王梓先</span></li>
+  <li><span class="merged-at">[09/24 14:38]</span>调整登录主页与设置页面主题（用户夜间登录和配置账户时不再看不清状态） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7701">#7701</a> <span class="author">— 王争</span></li>
 </ul>
 
 <h2>🔧 其他（chore / docs / test / ...）</h2>
 <ul>
-  <li><span class="merged-at">[07/28 22:54]</span>test: close #5368 prewarm Windows ObjectBox native library <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5372">#5372</a> <span class="author">— 王争</span></li>
-  <li><span class="merged-at">[07/28 18:12]</span>docs(release): archive 2026072801 notes <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5371">#5371</a> <span class="author">— 王梓先</span></li>
+  <li class="empty">无</li>
 </ul>
 
 
 <hr class="ref-divider">
 
 <div class="foot">
-上一次发版时间：<span class="bump-time">07/28 17:32</span>（基线 commit：<code>chore(release): bump Windows build 2026072801 (#5367)</code>）<br>
+上一次发版时间：<span class="bump-time">09/24 12:15</span>（基线 commit：<code>PC baseline override 2026092402: feat(chat): 发版前关闭艺星群分类入口，关闭时不请求分类接口 (#7729)</code>）<br>
 PR 归属版本由 <code>pubspec.yaml</code> 的 <code>version:</code> 行 git 历史判定 —— bump commit 的 committedAt 是分割线。<br>
 由 <code>tool/generate_release_preview.dart</code> 自动提取；重新跑脚本后刷新页面即拿最新。<br>
 issue 链接基于 PetWebOrg/flutter-suiyin 仓。

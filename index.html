@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <!-- CURRENT_BUILD:2026092301 -->
-<!-- PREVIEW_GENERATED_AT:2026-09-23T15:06:32.045587Z -->
+<!-- PREVIEW_GENERATED_AT:2026-09-24T02:32:09.457254Z -->
 <title>下一版发版预览 · flutter-suiyin</title>
 <style>
 :root {
@@ -83,7 +83,7 @@ a:hover { text-decoration: underline; }
 <label>查看历史预览：</label>
 <select id="version-switcher-select" onchange="var v=this.value; if(v) location.href = v; else location.href = './';">
 <!-- VERSION_SWITCHER_OPTIONS_START -->
-<option value="">📦 2026092302 发版预览</option>
+<option value="">📦 2026092401 发版预览</option>
 <option value="2026092301.html">🗂 2026092301</option>
 <option value="2026092201.html">🗂 2026092201</option>
 <option value="2026092101.html">🗂 2026092101</option>
@@ -263,10 +263,10 @@ a:hover { text-decoration: underline; }
 <!-- VERSION_SWITCHER_OPTIONS_END -->
 </select>
 </div>
-<h1>📦 2026092302 发版预览</h1>
+<h1>📦 2026092401 发版预览</h1>
 <div class="meta">
-当前版本：<code>2026092301</code>（发版时间：<span class="bump-time">09/23 17:06</span>），下一版（预览）：<code>2026092302</code><br>
-生成时间：<time id="preview-generated-at" datetime="2026-09-23T15:06:32.045587Z">2026-09-23 23:06:32</time> · 内容重新生成时更新，发布不会改写
+当前版本：<code>2026092301</code>（发版时间：<span class="bump-time">09/23 17:06</span>），下一版（预览）：<code>2026092401</code><br>
+生成时间：<time id="preview-generated-at" datetime="2026-09-24T02:32:09.457254Z">2026-09-24 10:32:09</time> · 内容重新生成时更新，发布不会改写
 </div>
 <script>
 // 让下拉的当前选中态跟着当前页走：在归档页（如 2026042901.html）里，自动选中 `🗂 2026042901`
@@ -288,15 +288,21 @@ a:hover { text-decoration: underline; }
 <ul>
   <li>艺星销售可以给普通群设置分类，并在聊天页和通讯录按同一分类快速找到对应群；清空或修改分类后，两处会同步更新。 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7716">#7716</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7458">#7458</a>)</li>
 </ul>
+<h3>✨ 体验优化</h3>
+<ul>
+  <li>PC 在浅色/深色主题和不同缩放下，多个页面的按钮、焦点、禁用和错误状态会更清楚，键盘操作时也更容易看清当前停在哪。 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7568">#7568</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7330">#7330</a>)</li>
+</ul>
 <h3>🐞 问题修复</h3>
 <ul>
+  <li>成都艺星做群发时，选择“和工作号同在至少一个群”后可以正常执行排除；同群好友会被准确排除，未命中的好友会留在最终名单里。 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7709">#7709</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7707">#7707</a>)</li>
+  <li>从群成员添加好友时，弹窗会先显示可填写表单；加载失败可重试且不丢内容，当前人设已添加过的好友也能直接打开对应好友页面。 — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7686">#7686</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7685">#7685</a>)</li>
   <li>PC 聊天页反复点击或切换同一客户会话时，右侧客户资料卡姓名会保持稳定，不再在微信昵称、聊天备注和资料姓名之间来回跳变。 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7683">#7683</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7672">#7672</a>)</li>
   <li>PC 聊天筛选栏拖到最窄、出现 @ 提醒或切换空渠道后，折叠按钮会继续贴着筛选栏边缘，拖动宽度也会立即跟随鼠标。 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7704">#7704</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7703">#7703</a>)</li>
 </ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">09/23 17:06 上次发版后，合入 main 的全部 <strong>5</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">09/23 17:06 上次发版后，合入 main 的全部 <strong>9</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
   <li><span class="merged-at">[09/23 21:35]</span>新增艺星群分类及聊天通讯录联动筛选 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7716">#7716</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7458">#7458</a>) <span class="author">— shain</span></li>
@@ -304,6 +310,8 @@ a:hover { text-decoration: underline; }
 
 <h2>🐞 问题修复</h2>
 <ul>
+  <li><span class="merged-at">[09/24 10:10]</span>close #7707 艺星群发同群排除使用正确客户 ID <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7709">#7709</a> <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[09/24 02:01]</span>群添加好友表单独立加载与已有好友精确导航 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7686">#7686</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7685">#7685</a>) <span class="author">— 陈宣宇</span></li>
   <li><span class="merged-at">[09/23 21:03]</span>修复安装权限引导无提示、新增已下好 APK 导出到系统下载目录 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7712">#7712</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7464">#7464</a>) <span class="author">— shain</span></li>
   <li><span class="merged-at">[09/23 18:09]</span>separate profile name from chat display name <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7683">#7683</a> <span class="author">— 陈聪</span></li>
   <li><span class="merged-at">[09/23 17:26]</span>close #7703 修复筛选栏拖动死区与折叠按钮错位 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7704">#7704</a> <span class="author">— 陈聪</span></li>
@@ -311,11 +319,12 @@ a:hover { text-decoration: underline; }
 
 <h2>✨ 体验优化</h2>
 <ul>
-  <li class="empty">无</li>
+  <li><span class="merged-at">[09/24 09:56]</span>完成 #7330 PC 全页面无障碍门禁 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7568">#7568</a> <span class="author">— 王争</span></li>
 </ul>
 
 <h2>🔧 其他（chore / docs / test / ...）</h2>
 <ul>
+  <li><span class="merged-at">[09/24 02:29]</span>test: isolated native group friend acceptance <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7713">#7713</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7711">#7711</a>) <span class="author">— 陈宣宇</span></li>
   <li><span class="merged-at">[09/23 18:21]</span>test: restore customer-info test entry gate for #7672 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7708">#7708</a> <span class="author">— 陈聪</span></li>
 </ul>
 

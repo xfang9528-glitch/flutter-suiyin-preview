@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <!-- CURRENT_BUILD:2026092901 -->
-<!-- PREVIEW_GENERATED_AT:2026-09-30T02:32:47.953447Z -->
+<!-- PREVIEW_GENERATED_AT:2026-09-30T08:57:25.889747Z -->
 <title>下一版发版预览 · flutter-suiyin</title>
 <style>
 :root {
@@ -273,7 +273,7 @@ a:hover { text-decoration: underline; }
 <h1>📦 2026093001 发版预览</h1>
 <div class="meta">
 当前版本：<code>2026092901</code>（发版时间：<span class="bump-time">09/29 16:25</span>），下一版（预览）：<code>2026093001</code><br>
-生成时间：<time id="preview-generated-at" datetime="2026-09-30T02:32:47.953447Z">2026-09-30 10:32:47</time> · 内容重新生成时更新，发布不会改写
+生成时间：<time id="preview-generated-at" datetime="2026-09-30T08:57:25.889747Z">2026-09-30 16:57:25</time> · 内容重新生成时更新，发布不会改写
 </div>
 <script>
 // 让下拉的当前选中态跟着当前页走：在归档页（如 2026042901.html）里，自动选中 `🗂 2026042901`
@@ -293,8 +293,13 @@ a:hover { text-decoration: underline; }
 <h2>📣 本版用户感知更新</h2>
 <h3>🆕 新功能</h3>
 <ul>
-  <li>客户资料里的浏览记录现在会同时显示医生和案例条目，入口数量、面板标题和历史明细都能对应到实际浏览内容 — 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7849">#7849</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7742">#7742</a>)</li>
+  <li>群发和筛选里的企微 / 微信标签多选现在支持一键清除、全选；搜索框里也可以直接擦除关键词，不用重新打开下拉框 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7833">#7833</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7830">#7830</a>)</li>
+  <li>客户资料里的「案例介绍相关记录」会把销售介绍和客户浏览记录一起计入父级数量，浏览记录也能同时显示医生和案例条目 — 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7859">#7859</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7849">#7849</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7731">#7731</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7742">#7742</a>)</li>
   <li>[仅:yestar,yestar-sz,yestar-bj,yestar-gz,yestar-jx,yestar-hz] 艺星销售做归属改派时，第一步结果列表可以直接按微信昵称、好友名称或手机号搜索并勾选目标好友，不用反复翻页查找 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7815">#7815</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7811">#7811</a>)</li>
+</ul>
+<h3>✨ 体验优化</h3>
+<ul>
+  <li>PC 里的缺省头像颜色统一为更接近微信的浅灰样式，聊天输入栏的语音按钮也去掉了突兀的方形底色 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7844">#7844</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7840">#7840</a>)</li>
 </ul>
 <h3>🐞 问题修复</h3>
 <ul>
@@ -304,15 +309,20 @@ a:hover { text-decoration: underline; }
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">09/29 16:25 上次发版后，合入 main 的全部 <strong>8</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">09/29 16:25 上次发版后，合入 main 的全部 <strong>18</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
+  <li><span class="merged-at">[09/30 14:42]</span>新增聊天输入框与输入法连接断开及按键无响应的卡死观测 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7842">#7842</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7807">#7807</a>) <span class="author">— 张拓</span></li>
+  <li><span class="merged-at">[09/30 10:45]</span>标签多选补齐清除、全选与搜索擦除 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7833">#7833</a> <span class="author">— 王争</span></li>
   <li><span class="merged-at">[09/30 10:29]</span>客户浏览记录接入医生条目与混合接口 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7849">#7849</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7742">#7742</a>) <span class="author">— 梁晨</span></li>
   <li><span class="merged-at">[09/29 17:57]</span>close #7811 艺星归属改派第一步增加结果内搜索 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7815">#7815</a> <span class="author">— 王争</span></li>
 </ul>
 
 <h2>🐞 问题修复</h2>
 <ul>
+  <li><span class="merged-at">[09/30 16:50]</span>close #7840 统一 PC 缺省头像与语音图标样式 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7844">#7844</a> <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[09/30 11:59]</span>同步 ROADMAP §四 旅程总数 109 与 kJourneyRowCount <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7869">#7869</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7866">#7866</a>) <span class="author">— shain</span></li>
+  <li><span class="merged-at">[09/30 10:48]</span>父级「案例介绍相关记录」合计计入客户浏览记录 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7859">#7859</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7731">#7731</a>) <span class="author">— 梁晨</span></li>
   <li><span class="merged-at">[09/29 22:36]</span>修复 Windows 录音恢复路径比较（销售重启后可继续原录音任务） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7843">#7843</a> <span class="author">— 陈聪</span></li>
   <li><span class="merged-at">[09/29 20:59]</span>预约 fixture 统一按客户+在线人设取会话行 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7860">#7860</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7798">#7798</a>) <span class="author">— 王梓先</span></li>
   <li><span class="merged-at">[09/29 18:36]</span>补群分类筛选真引擎测试并修 Sembast 漏存分类 ID <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7855">#7855</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7718">#7718</a>) <span class="author">— 王梓先</span></li>
@@ -326,6 +336,11 @@ a:hover { text-decoration: underline; }
 
 <h2>🔧 其他（chore / docs / test / ...）</h2>
 <ul>
+  <li><span class="merged-at">[09/30 15:06]</span>docs: close #7870 建立 Windows 微信当前版视觉决策基线 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7881">#7881</a> <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[09/30 15:06]</span>chore(release-notes): 整理更新内容时给出企业归属建议并检查标记启用版本 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7872">#7872</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7812">#7812</a>) <span class="author">— shain</span></li>
+  <li><span class="merged-at">[09/30 14:29]</span>test(appointment_stats): 预约统计 4 条 E2E 旅程测试（艺星深圳，#7727） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7871">#7871</a> <span class="author">— shain</span></li>
+  <li><span class="merged-at">[09/30 13:47]</span>docs(design-system): capture Windows WeChat PC visual audit <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7858">#7858</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7848">#7848</a>) <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[09/30 13:33]</span>test(e2e): SI-05 删除暂停分支，销售导入公共话术库被拒无条件断言 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7867">#7867</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7397">#7397</a>) <span class="author">— shain</span></li>
   <li><span class="merged-at">[09/30 09:51]</span>修复 Apple 一键发版在 Xcode 27 下的构建问题 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7857">#7857</a> <span class="author">— 王争、陈聪</span></li>
   <li><span class="merged-at">[09/29 23:17]</span>test(pc): guard #7757 Yestar narrow conversation rows <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7818">#7818</a> <span class="author">— 陈聪</span></li>
 </ul>

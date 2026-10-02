@@ -2,8 +2,8 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
-<!-- CURRENT_BUILD:2026090902 -->
-<!-- PREVIEW_GENERATED_AT:2026-09-09T15:09:59.665636Z -->
+<!-- CURRENT_BUILD:2026100101 -->
+<!-- PREVIEW_GENERATED_AT:2026-10-02T08:57:11.260580Z -->
 <title>下一版发版预览 · flutter-suiyin</title>
 <style>
 :root {
@@ -273,10 +273,10 @@ a:hover { text-decoration: underline; }
 <!-- VERSION_SWITCHER_OPTIONS_END -->
 </select>
 </div>
-<h1>📦 2026090903 发版预览</h1>
+<h1>📦 2026100201 发版预览</h1>
 <div class="meta">
-当前版本：<code>2026090902</code>（发版时间：<span class="bump-time">09/09 18:20</span>），下一版（预览）：<code>2026090903</code><br>
-生成时间：<time id="preview-generated-at" datetime="2026-09-09T15:09:59.665636Z">2026-09-09 23:09:59</time> · 内容重新生成时更新，发布不会改写
+当前版本：<code>2026100101</code>（发版时间：<span class="bump-time">10/01 09:16</span>），下一版（预览）：<code>2026100201</code><br>
+生成时间：<time id="preview-generated-at" datetime="2026-10-02T08:57:11.260580Z">2026-10-02 16:57:11</time> · 内容重新生成时更新，发布不会改写
 </div>
 <script>
 // 让下拉的当前选中态跟着当前页走：在归档页（如 2026042901.html）里，自动选中 `🗂 2026042901`
@@ -294,26 +294,22 @@ a:hover { text-decoration: underline; }
 </script>
 
 <h2>📣 本版用户感知更新</h2>
-<h3>🐞 问题修复</h3>
+<h3>🆕 新功能</h3>
 <ul>
-  <li>人工重发同一条发送失败的消息时，客户端会保留它的稳定身份，减少客户其实已收到却又重复收到一遍的情况。 — 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7015">#7015</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6999">#6999</a>)</li>
-  <li>部分电脑缺少 AAC 录音编码器时，PC 端语音消息会自动改用 WAV 录制；销售仍能正常录音、发送、回听和转文字。 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7151">#7151</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7059">#7059</a>)</li>
-  <li>关掉加好友等独立子窗口后，聊天框打拼音会直接恢复中文输入，不再先出一串字母、过几秒才好或需要重启客户端。 — 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7152">#7152</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7150">#7150</a>)</li>
+  <li>画美西安、西安傲丽 PC 端现在可进入独立医美配置，使用客户、人设、筛选、话术和共享医美工具工作流 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7912">#7912</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7915">#7915</a>)</li>
 </ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">09/09 18:20 上次发版后，合入 main 的全部 <strong>4</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">10/01 09:16 上次发版后，合入 main 的全部 <strong>3</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
-  <li class="empty">无</li>
+  <li><span class="merged-at">[10/02 15:15]</span>接入画美与奥利 PC 独立医美配置 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7912">#7912</a> <span class="author">— 陈聪</span></li>
 </ul>
 
 <h2>🐞 问题修复</h2>
 <ul>
-  <li><span class="merged-at">[09/09 21:52]</span>close #6999 人工重发保留稳定消息身份 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7015">#7015</a> <span class="author">— 张拓</span></li>
-  <li><span class="merged-at">[09/09 20:54]</span>PC 录音在 AAC 编码器不可用时降级 WAV 采集 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7151">#7151</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7059">#7059</a>) <span class="author">— 王梓先</span></li>
-  <li><span class="merged-at">[09/09 20:17]</span>默认 IME 窗口销毁瞬间事件驱动重建并把 keeper 隐藏窗收敛为单实例 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7152">#7152</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7150">#7150</a>) <span class="author">— 张拓</span></li>
+  <li><span class="merged-at">[10/02 13:23]</span>修复手机端资料库视频播放被下载刷新阻断 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7913">#7913</a> <span class="author">— 陈聪</span></li>
 </ul>
 
 <h2>✨ 体验优化</h2>
@@ -323,14 +319,14 @@ a:hover { text-decoration: underline; }
 
 <h2>🔧 其他（chore / docs / test / ...）</h2>
 <ul>
-  <li><span class="merged-at">[09/09 21:01]</span>infra(ci): 调整 issue-meta-lint 的 labeled 触发范围到门禁会读的标签（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7114">#7114</a> <span class="author">— 张拓</span></li>
+  <li><span class="merged-at">[10/02 14:54]</span>docs(release): 归档 Android 2026100201 更新说明 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7916">#7916</a> <span class="author">— 陈聪</span></li>
 </ul>
 
 
 <hr class="ref-divider">
 
 <div class="foot">
-上一次发版时间：<span class="bump-time">09/09 18:20</span>（基线 commit：<code>PC baseline override 2026090902: Merge pull request #7148 from PetWebOrg/codex/7128-appointment-edit</code>）<br>
+上一次发版时间：<span class="bump-time">10/01 09:16</span>（基线 commit：<code>PC baseline override 2026100101: feat: close #7831 手机端预约创建与变更对齐 PC (#7850)</code>）<br>
 PR 归属版本由 <code>pubspec.yaml</code> 的 <code>version:</code> 行 git 历史判定 —— bump commit 的 committedAt 是分割线。<br>
 由 <code>tool/generate_release_preview.dart</code> 自动提取；重新跑脚本后刷新页面即拿最新。<br>
 issue 链接基于 PetWebOrg/flutter-suiyin 仓。

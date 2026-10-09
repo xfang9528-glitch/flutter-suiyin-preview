@@ -2,8 +2,8 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
-<!-- CURRENT_BUILD:2026100801 -->
-<!-- PREVIEW_GENERATED_AT:2026-10-09T10:12:00.522784Z -->
+<!-- CURRENT_BUILD:2026100901 -->
+<!-- PREVIEW_GENERATED_AT:2026-10-09T10:22:45.608429Z -->
 <title>下一版发版预览 · flutter-suiyin</title>
 <style>
 :root {
@@ -83,7 +83,8 @@ a:hover { text-decoration: underline; }
 <label>查看历史预览：</label>
 <select id="version-switcher-select" onchange="var v=this.value; if(v) location.href = v; else location.href = './';">
 <!-- VERSION_SWITCHER_OPTIONS_START -->
-<option value="">📦 2026100901 发版预览</option>
+<option value="">📦 2026100902 发版预览</option>
+<option value="2026100901.html">🗂 2026100901</option>
 <option value="2026100801.html">🗂 2026100801</option>
 <option value="2026100702.html">🗂 2026100702</option>
 <option value="2026100701.html">🗂 2026100701</option>
@@ -278,10 +279,10 @@ a:hover { text-decoration: underline; }
 <!-- VERSION_SWITCHER_OPTIONS_END -->
 </select>
 </div>
-<h1>📦 2026100901 发版预览</h1>
+<h1>📦 2026100902 发版预览</h1>
 <div class="meta">
-当前版本：<code>2026100801</code>（发版时间：<span class="bump-time">10/08 16:53</span>），下一版（预览）：<code>2026100901</code><br>
-生成时间：<time id="preview-generated-at" datetime="2026-10-09T10:12:00.522784Z">2026-10-09 18:12:00</time> · 内容重新生成时更新，发布不会改写
+当前版本：<code>2026100901</code>（发版时间：<span class="bump-time">10/09 16:17</span>），下一版（预览）：<code>2026100902</code><br>
+生成时间：<time id="preview-generated-at" datetime="2026-10-09T10:22:45.608429Z">2026-10-09 18:22:45</time> · 内容重新生成时更新，发布不会改写
 </div>
 <script>
 // 让下拉的当前选中态跟着当前页走：在归档页（如 2026042901.html）里，自动选中 `🗂 2026042901`
@@ -302,51 +303,19 @@ a:hover { text-decoration: underline; }
 <h3>🆕 新功能</h3>
 <ul>
   <li>PC 主聊天界面的浅色、深色背景和普通文字气泡更接近新版微信，浅色标题栏高度也已统一，切换主题后视觉更一致。— 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7961">#7961</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7883">#7883</a>)</li>
-  <li>聊天记录停在中间时，主窗口、独立窗口和只读会话都会显示统一的“跳转到最新消息”入口，点一下就能回到最新消息。— 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7945">#7945</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7911">#7911</a>)</li>
-  <li>[仅:yestar,yestar-sz,yestar-gz,yestar-hz,yestar-jx]艺星门店的 PC「通知」目录新增「套电通知」，可查看授权手机号、发送销售、授权时间和匹配好友信息。— shain <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7998">#7998</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7941">#7941</a>)</li>
-  <li>PC 会话列表的服务通知会归到可展开的「通知」目录里，原服务通知改名为「消息定时通知」，未读数和旧入口仍能正常使用。— shain <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7997">#7997</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7944">#7944</a>)</li>
-  <li>客户浏览历史现在会同时显示停留秒数和阅读百分比，通讯录只读会话里也能打开浏览记录面板。— 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7980">#7980</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7975">#7975</a>)</li>
-</ul>
-<h3>✨ 体验优化</h3>
-<ul>
-  <li>主窗口和可缩放子窗口的边角更容易拖中，调整窗口大小时不用反复寻找边线，标题栏按钮仍可正常点击。— 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7950">#7950</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7896">#7896</a>)</li>
-</ul>
-<h3>🐞 问题修复</h3>
-<ul>
-  <li>会话因为客户被改派为其他专属销售而自动退出时，提示会说明是哪位销售的专属客户，不再只显示笼统的取消分配说明。— shain <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7996">#7996</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7627">#7627</a>)</li>
-  <li>完成单条或全部回访后，会继续打开对应客户的通讯录页面；如果打开失败，也会显示已完成状态、原因和恢复入口。— 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7960">#7960</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7932">#7932</a>)</li>
-  <li>PC「新的朋友」通过好友申请遇到限频时，会显示“操作频繁，请稍后重试”，并提供行内重试入口。— 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7970">#7970</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7919">#7919</a>)</li>
-  <li>医生喜报海报适配 800×1500 背景后，医生照片不会被放大裁切，简介位置也会按新版设计显示。— 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7978">#7978</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7977">#7977</a>)</li>
-  <li>未配置接待微信号时，通讯录会显示配置提示；列表较窄时提示也能完整显示，聊天和朋友圈能正确提示先完成配置。— 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7976">#7976</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7957">#7957</a>)</li>
-  <li>改善群聊历史消息补齐：重新打开会话或恢复网络后会继续获取缺失历史，短暂失败或一次未补完时会继续重试，保留已经显示的消息。— 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7613">#7613</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7596">#7596</a>)</li>
 </ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">10/08 16:53 上次发版后，合入 main 的全部 <strong>19</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">10/09 16:17 上次发版后，合入 main 的全部 <strong>2</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
   <li><span class="merged-at">[10/09 17:25]</span>align current WeChat chat visuals <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7961">#7961</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7883">#7883</a>) <span class="author">— 王争</span></li>
-  <li><span class="merged-at">[10/09 16:17]</span>close #7911 统一 PC 跳转最新消息入口与滚动显隐 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7945">#7945</a> <span class="author">— 王争</span></li>
-  <li><span class="merged-at">[10/09 15:55]</span>移动端图片压缩对齐 Windows 编码策略 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8003">#8003</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7979">#7979</a>) <span class="author">— 陈聪</span></li>
-  <li><span class="merged-at">[10/09 15:38]</span>艺星套电通知子项与手机号授权卡片 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7998">#7998</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7941">#7941</a>) <span class="author">— shain</span></li>
-  <li><span class="merged-at">[10/09 14:46]</span>补齐客户已添加人设号入口与列表（#7934） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7959">#7959</a> <span class="author">— 王争</span></li>
-  <li><span class="merged-at">[10/09 14:33]</span>服务通知归入可折叠「通知」目录并改名消息定时通知 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7997">#7997</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7944">#7944</a>) <span class="author">— shain</span></li>
-  <li><span class="merged-at">[10/09 10:04]</span>close #7975 客户浏览历史展示逐次阅读比例 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7980">#7980</a> <span class="author">— 梁晨</span></li>
 </ul>
 
 <h2>🐞 问题修复</h2>
 <ul>
-  <li><span class="merged-at">[10/09 14:08]</span>会话因专属销售被收回时退出提示说明是谁的专属客户 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7996">#7996</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7627">#7627</a>) <span class="author">— shain</span></li>
-  <li><span class="merged-at">[10/09 14:01]</span>隔离 Windows 预览配置并接入启动入口 #7953 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7984">#7984</a> <span class="author">— 陈聪</span></li>
-  <li><span class="merged-at">[10/09 13:06]</span>close #7982 移动加号菜单跳转与关闭生命周期 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7986">#7986</a> <span class="author">— 陈聪</span></li>
-  <li><span class="merged-at">[10/09 11:20]</span>close #7963 修复调试面板布局与最小窗口滚动 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7992">#7992</a> <span class="author">— 王争</span></li>
-  <li><span class="merged-at">[10/09 10:20]</span>close #7932 修复回访完成后未打开客户页面 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7960">#7960</a> <span class="author">— 王争</span></li>
-  <li><span class="merged-at">[10/09 09:19]</span>close #7919 好友申请限频后显示原因并支持重试 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7970">#7970</a> <span class="author">— 梁晨</span></li>
-  <li><span class="merged-at">[10/09 08:26]</span>适配800×1500医生喜报图片与简介位置 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7978">#7978</a> <span class="author">— 陈聪</span></li>
-  <li><span class="merged-at">[10/08 21:35]</span>接待微信号未配置判别兼容「未设置接待微信账号」新文案 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7976">#7976</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7957">#7957</a>) <span class="author">— shain</span></li>
-  <li><span class="merged-at">[10/08 17:26]</span>收敛群聊历史消息恢复链路 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7613">#7613</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7596">#7596</a>) <span class="author">— 梁晨</span></li>
-  <li><span class="merged-at">[10/08 17:17]</span>扩展主窗口及子窗口八方向缩放热区并保护标题控件 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7950">#7950</a> <span class="author">— 王争</span></li>
+  <li class="empty">无</li>
 </ul>
 
 <h2>✨ 体验优化</h2>
@@ -356,15 +325,14 @@ a:hover { text-decoration: underline; }
 
 <h2>🔧 其他（chore / docs / test / ...）</h2>
 <ul>
-  <li><span class="merged-at">[10/09 11:44]</span>test: close #7946 修复销售介绍刷新测试订阅生命周期 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7990">#7990</a> <span class="author">— 王争</span></li>
-  <li><span class="merged-at">[10/08 17:08]</span>test(chat): 加好友窗口生命周期测试改用共享 SaleProfileCache 替身，修复 AC-6571-1 守卫恒红 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7971">#7971</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7968">#7968</a>) <span class="author">— shain</span></li>
+  <li><span class="merged-at">[10/09 18:16]</span>test(e2e): 新增 A4 测试1 ⇄ 成都艺星互切企业无残留旅程 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8016">#8016</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7877">#7877</a>) <span class="author">— shain</span></li>
 </ul>
 
 
 <hr class="ref-divider">
 
 <div class="foot">
-上一次发版时间：<span class="bump-time">10/08 16:53</span>（基线 commit：<code>PC baseline override 2026100801: feat: close #7967 支持企微好友添加与混合批量通过 (#7969)</code>）<br>
+上一次发版时间：<span class="bump-time">10/09 16:17</span>（基线 commit：<code>PC baseline override 2026100901: feat: close #7911 统一 PC 跳转最新消息入口与滚动显隐 (#7945)</code>）<br>
 PR 归属版本由 <code>pubspec.yaml</code> 的 <code>version:</code> 行 git 历史判定 —— bump commit 的 committedAt 是分割线。<br>
 由 <code>tool/generate_release_preview.dart</code> 自动提取；重新跑脚本后刷新页面即拿最新。<br>
 issue 链接基于 PetWebOrg/flutter-suiyin 仓。

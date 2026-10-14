@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <!-- CURRENT_BUILD:2026101301 -->
-<!-- PREVIEW_GENERATED_AT:2026-10-14T02:24:50.996052Z -->
+<!-- PREVIEW_GENERATED_AT:2026-10-14T08:59:10.455039Z -->
 <title>下一版发版预览 · flutter-suiyin</title>
 <style>
 :root {
@@ -287,7 +287,7 @@ a:hover { text-decoration: underline; }
 <h1>📦 2026101401 发版预览</h1>
 <div class="meta">
 当前版本：<code>2026101301</code>（发版时间：<span class="bump-time">10/13 17:22</span>），下一版（预览）：<code>2026101401</code><br>
-生成时间：<time id="preview-generated-at" datetime="2026-10-14T02:24:50.996052Z">2026-10-14 10:24:50</time> · 内容重新生成时更新，发布不会改写
+生成时间：<time id="preview-generated-at" datetime="2026-10-14T08:59:10.455039Z">2026-10-14 16:59:10</time> · 内容重新生成时更新，发布不会改写
 </div>
 <script>
 // 让下拉的当前选中态跟着当前页走：在归档页（如 2026042901.html）里，自动选中 `🗂 2026042901`
@@ -311,19 +311,33 @@ a:hover { text-decoration: underline; }
 </ul>
 <h3>🐞 问题修复</h3>
 <ul>
-  <li>客户“第一需求”为空时，编辑姓名、群发称谓、电话等基础信息也能正常保存；PC 端不再把第一需求标成必填。— 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8179">#8179</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/8177">#8177</a>)</li>
+  <li>人工分类菜单用键盘确认后，如果弹层被外部点击或 Esc 关闭，旧回调不会再访问已关闭的页面，也不会重复提交分类。— 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8148">#8148</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/8010">#8010</a>)</li>
+  <li>聊天里收到超出体积上限的微信聊天记录时，PC 会显示恢复卡；可在手机查看，并在允许时转发到销售自己的微信。— 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8173">#8173</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/8169">#8169</a>)</li>
+  <li>无归属图片下载断网或卡住时，会按超时释放下载位；聊天头像、原图和图片预览不再长期转圈排队。— 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8196">#8196</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/8189">#8189</a>)</li>
+  <li>客户照片确认失败后重试会复用已上传的照片，不再重新选图；切换账号后也不会带出上一账号的照片状态。— 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8188">#8188</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/8181">#8181</a>)</li>
+  <li>编辑客户基础信息时，“第一需求”为空也可以保存姓名、群发称谓、电话等资料；已有需求不会被误清空。— 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8179">#8179</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/8177">#8177</a>)</li>
 </ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">10/13 17:22 上次发版后，合入 main 的全部 <strong>4</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">10/13 17:22 上次发版后，合入 main 的全部 <strong>16</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
+  <li><span class="merged-at">[10/14 11:43]</span>接入已有好友归属能力（有权人员可在手机通讯录改派好友归属） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8140">#8140</a> <span class="author">— 王争</span></li>
   <li><span class="merged-at">[10/13 20:52]</span>新增艺星未回超时通知子项与当前超时聊天列表 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8178">#8178</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7942">#7942</a>) <span class="author">— shain</span></li>
 </ul>
 
 <h2>🐞 问题修复</h2>
 <ul>
+  <li><span class="merged-at">[10/14 16:49]</span>close #8190 移动转交晚响应不再重复退出导航 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8201">#8201</a> <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[10/14 16:49]</span>手机异常路由提供恢复入口并补齐可见页面诊断 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8166">#8166</a> <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[10/14 16:30]</span>修复人工分类菜单迟到选择访问已卸载 ref <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8148">#8148</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/8010">#8010</a>) <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[10/14 16:16]</span>按租户与平台限制预约服务，阻止统一预约误回退 PDM <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8056">#8056</a> <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[10/14 15:50]</span>无 owner 图片下载补齐响应头与 body 停顿超时 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8196">#8196</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/8189">#8189</a>) <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[10/14 15:45]</span>接入超限聊天记录恢复卡与销售微信转发 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8173">#8173</a> <span class="author">— 梁晨</span></li>
+  <li><span class="merged-at">[10/14 15:31]</span>close #8181 客户照片确认失败时复用上传对象并隔离账号资料 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8188">#8188</a> <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[10/14 12:04]</span>防止重复打开与生命周期竞态清空本地库 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6962">#6962</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6955">#6955</a>) <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[10/14 11:29]</span>labels 接口无手机号时回退用客户主数据脱敏号渲染查看真实电话按钮（无客户标签模板的租户也能点查看看到完整号） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8135">#8135</a> <span class="author">— 张拓</span></li>
   <li><span class="merged-at">[10/14 01:04]</span>临时日志改用 ${TMPDIR} 下的 mktemp 模板，修复 macOS 上 #8088 用例必挂（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8184">#8184</a> <span class="author">— 张拓</span></li>
   <li><span class="merged-at">[10/13 21:42]</span>close #8177 编辑基础信息第一需求改为非必填 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8179">#8179</a> <span class="author">— 陈宣宇</span></li>
 </ul>
@@ -335,6 +349,8 @@ a:hover { text-decoration: underline; }
 
 <h2>🔧 其他（chore / docs / test / ...）</h2>
 <ul>
+  <li><span class="merged-at">[10/14 12:01]</span>test: 严格收尾录音与上传取消夹具 #8079 #8165 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8174">#8174</a> <span class="author">— 陈聪</span></li>
+  <li><span class="merged-at">[10/14 10:27]</span>test(chat/pc): 覆盖真实搜索入口的空态主题切换 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8168">#8168</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/8067">#8067</a>) <span class="author">— 王争</span></li>
   <li><span class="merged-at">[10/14 01:06]</span>ci(quality-gate,quota-guard): Quality Gate 只留计数棘轮、测试类 workflow 迁本地门禁，ci-quota-guard 拦新增 workflow 与 CI 测试命令（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8185">#8185</a> <span class="author">— 张拓</span></li>
 </ul>
 

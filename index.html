@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <!-- CURRENT_BUILD:2026101901 -->
-<!-- PREVIEW_GENERATED_AT:2026-10-19T15:00:18.587461Z -->
+<!-- PREVIEW_GENERATED_AT:2026-10-20T02:35:21.653932Z -->
 <title>下一版发版预览 · flutter-suiyin</title>
 <style>
 :root {
@@ -83,7 +83,7 @@ a:hover { text-decoration: underline; }
 <label>查看历史预览：</label>
 <select id="version-switcher-select" onchange="var v=this.value; if(v) location.href = v; else location.href = './';">
 <!-- VERSION_SWITCHER_OPTIONS_START -->
-<option value="">📦 2026101902 发版预览</option>
+<option value="">📦 2026102001 发版预览</option>
 <option value="2026101901.html">🗂 2026101901</option>
 <option value="2026101601.html">🗂 2026101601</option>
 <option value="2026101501.html">🗂 2026101501</option>
@@ -288,10 +288,10 @@ a:hover { text-decoration: underline; }
 <!-- VERSION_SWITCHER_OPTIONS_END -->
 </select>
 </div>
-<h1>📦 2026101902 发版预览</h1>
+<h1>📦 2026102001 发版预览</h1>
 <div class="meta">
-当前版本：<code>2026101901</code>（发版时间：<span class="bump-time">10/19 16:49</span>），下一版（预览）：<code>2026101902</code><br>
-生成时间：<time id="preview-generated-at" datetime="2026-10-19T15:00:18.587461Z">2026-10-19 23:00:18</time> · 内容重新生成时更新，发布不会改写
+当前版本：<code>2026101901</code>（发版时间：<span class="bump-time">10/19 16:49</span>），下一版（预览）：<code>2026102001</code><br>
+生成时间：<time id="preview-generated-at" datetime="2026-10-20T02:35:21.653932Z">2026-10-20 10:35:21</time> · 内容重新生成时更新，发布不会改写
 </div>
 <script>
 // 让下拉的当前选中态跟着当前页走：在归档页（如 2026042901.html）里，自动选中 `🗂 2026042901`
@@ -309,11 +309,20 @@ a:hover { text-decoration: underline; }
 </script>
 
 <h2>📣 本版用户感知更新</h2>
-<div class="notice">本期暂无新的 PC 端用户感知更新。</div>
+<h3>🆕 新功能</h3>
+<ul>
+  <li>扫街人账号登录 PC 端时会提示使用手机 APP，并可直接更换账号 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8346">#8346</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/8318">#8318</a>)</li>
+</ul>
+<h3>🐞 问题修复</h3>
+<ul>
+  <li>客户消息「未回」不再混入手动或 AI 标为内部、外联的会话 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8338">#8338</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/8325">#8325</a>)</li>
+  <li>点击未回超时托盘提醒，可打开对应提醒消息，不再跳错会话或加载失败 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8345">#8345</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/8280">#8280</a>)</li>
+  <li>选择瑞熙客户标签后关闭面板，不再发生异常或把旧选择写回当前资料 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8312">#8312</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/8251">#8251</a>)</li>
+</ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">10/19 16:49 上次发版后，合入 main 的全部 <strong>5</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">10/19 16:49 上次发版后，合入 main 的全部 <strong>7</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
   <li><span class="merged-at">[10/19 21:07]</span>close #8311 恢复 APP 长按提取话术文字 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8348">#8348</a> <span class="author">— 陈聪</span></li>
@@ -321,6 +330,8 @@ a:hover { text-decoration: underline; }
 
 <h2>🐞 问题修复</h2>
 <ul>
+  <li><span class="merged-at">[10/20 10:23]</span>客户记录两列对齐与照片入口排列 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8354">#8354</a> <span class="author">— 陈宣宇</span></li>
+  <li><span class="merged-at">[10/20 10:07]</span>close #8209 补齐 PC 主题失败汇总与运行期取色守卫 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8316">#8316</a> <span class="author">— 王争</span></li>
   <li><span class="merged-at">[10/19 21:57]</span>扫街人账号登录时拦截并提示使用手机 APP <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8346">#8346</a> <span class="author">— shain</span></li>
   <li><span class="merged-at">[10/19 21:39]</span>close #8325 客户消息同时排除手动与 AI 内部外联等级 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8338">#8338</a> <span class="author">— shain</span></li>
   <li><span class="merged-at">[10/19 19:22]</span>preserve tray reminder identity <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8345">#8345</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/8280">#8280</a>) <span class="author">— shain</span></li>

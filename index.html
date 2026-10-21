@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <!-- CURRENT_BUILD:2026102101 -->
-<!-- PREVIEW_GENERATED_AT:2026-10-21T09:00:45.785980Z -->
+<!-- PREVIEW_GENERATED_AT:2026-10-21T15:03:59.050198Z -->
 <title>下一版发版预览 · flutter-suiyin</title>
 <style>
 :root {
@@ -293,7 +293,7 @@ a:hover { text-decoration: underline; }
 <h1>📦 2026102102 发版预览</h1>
 <div class="meta">
 当前版本：<code>2026102101</code>（发版时间：<span class="bump-time">10/21 11:55</span>），下一版（预览）：<code>2026102102</code><br>
-生成时间：<time id="preview-generated-at" datetime="2026-10-21T09:00:45.785980Z">2026-10-21 17:00:45</time> · 内容重新生成时更新，发布不会改写
+生成时间：<time id="preview-generated-at" datetime="2026-10-21T15:03:59.050198Z">2026-10-21 23:03:59</time> · 内容重新生成时更新，发布不会改写
 </div>
 <script>
 // 让下拉的当前选中态跟着当前页走：在归档页（如 2026042901.html）里，自动选中 `🗂 2026042901`
@@ -313,6 +313,8 @@ a:hover { text-decoration: underline; }
 <h2>📣 本版用户感知更新</h2>
 <h3>🆕 新功能</h3>
 <ul>
+  <li>同一客户同时使用企微和个微时，可在客户资料中查看另一渠道的人设，并可确认、解除或手动关联 — 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8446">#8446</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/8339">#8339</a> <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/8340">#8340</a> <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/8341">#8341</a> <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/8342">#8342</a>)</li>
+  <li>客户朋友圈中的关联个微动态会显示「个微」标识；可正常查看内容，不会误出现互动入口 — 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8424">#8424</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/8343">#8343</a>)</li>
   <li>群发时搜索到多个工作号的好友后，可按「所在账号」筛选查看；跨账号已选好友会保留，并会一起进入最终确认 — 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8418">#8418</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/8382">#8382</a>)</li>
 </ul>
 <h3>✨ 体验优化</h3>
@@ -321,15 +323,17 @@ a:hover { text-decoration: underline; }
 </ul>
 <h3>🐞 问题修复</h3>
 <ul>
+  <li>群发设置排除条件后，必须先成功执行当前条件才能确认名单；修改条件会提示重新执行，避免沿用过期结果 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8322">#8322</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/8282">#8282</a>)</li>
   <li>从案例库发送内容后会立刻回到聊天；发送失败时仍可在原消息中重试，不会丢失已选内容 — 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8420">#8420</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/8384">#8384</a>)</li>
   <li>聊天列表恢复滚动位置时不再出现界面异常，滚动条可正常继续使用 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8436">#8436</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/8430">#8430</a>)</li>
 </ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">10/21 11:55 上次发版后，合入 main 的全部 <strong>12</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">10/21 11:55 上次发版后，合入 main 的全部 <strong>13</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
+  <li><span class="merged-at">[10/21 18:31]</span>PC 与 APP 展示并处理跨渠道同一人（人设气泡、候选、确认/解除、手动关联、日志脱敏）(#8339 #8340 #8341 #8342) <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8446">#8446</a> <span class="author">— 张拓</span></li>
   <li><span class="merged-at">[10/21 16:56]</span>PC 与 APP 只读展示关联个微动态（企微客户朋友圈出现「个微」角标，不出互动入口） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8424">#8424</a> <span class="author">— 张拓</span></li>
   <li><span class="merged-at">[10/21 14:29]</span>close #8382 群发搜索结果按所在账号筛选 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8418">#8418</a> <span class="author">— 梁晨</span></li>
   <li><span class="merged-at">[10/21 13:36]</span>APP 话术支持按部门筛选（销售在手机上能按部门查找话术，不再逐条辨认混排内容） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8425">#8425</a> <span class="author">— 张拓</span></li>

@@ -2,8 +2,8 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
-<!-- CURRENT_BUILD:2026102001 -->
-<!-- PREVIEW_GENERATED_AT:2026-10-21T02:36:34.928837Z -->
+<!-- CURRENT_BUILD:2026102101 -->
+<!-- PREVIEW_GENERATED_AT:2026-10-21T06:41:14.512259Z -->
 <title>下一版发版预览 · flutter-suiyin</title>
 <style>
 :root {
@@ -83,7 +83,8 @@ a:hover { text-decoration: underline; }
 <label>查看历史预览：</label>
 <select id="version-switcher-select" onchange="var v=this.value; if(v) location.href = v; else location.href = './';">
 <!-- VERSION_SWITCHER_OPTIONS_START -->
-<option value="">📦 2026102101 发版预览</option>
+<option value="">📦 2026102102 发版预览</option>
+<option value="2026102101.html">🗂 2026102101</option>
 <option value="2026102001.html">🗂 2026102001</option>
 <option value="2026101901.html">🗂 2026101901</option>
 <option value="2026101601.html">🗂 2026101601</option>
@@ -289,10 +290,10 @@ a:hover { text-decoration: underline; }
 <!-- VERSION_SWITCHER_OPTIONS_END -->
 </select>
 </div>
-<h1>📦 2026102101 发版预览</h1>
+<h1>📦 2026102102 发版预览</h1>
 <div class="meta">
-当前版本：<code>2026102001</code>（发版时间：<span class="bump-time">10/20 17:23</span>），下一版（预览）：<code>2026102101</code><br>
-生成时间：<time id="preview-generated-at" datetime="2026-10-21T02:36:34.928837Z">2026-10-21 10:36:34</time> · 内容重新生成时更新，发布不会改写
+当前版本：<code>2026102101</code>（发版时间：<span class="bump-time">10/21 11:55</span>），下一版（预览）：<code>2026102102</code><br>
+生成时间：<time id="preview-generated-at" datetime="2026-10-21T06:41:14.512259Z">2026-10-21 14:41:14</time> · 内容重新生成时更新，发布不会改写
 </div>
 <script>
 // 让下拉的当前选中态跟着当前页走：在归档页（如 2026042901.html）里，自动选中 `🗂 2026042901`
@@ -312,30 +313,32 @@ a:hover { text-decoration: underline; }
 <h2>📣 本版用户感知更新</h2>
 <h3>🆕 新功能</h3>
 <ul>
-  <li>在图片和截图编辑中，可导入可调整的辅助线素材；拖动控制点即可微调，也支持移动、删除、撤销、重做和重置 — shain <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8391">#8391</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/8351">#8351</a>)</li>
+  <li>群发时搜索到多个工作号的好友后，可按「所在账号」筛选查看；跨账号已选好友会保留，并会一起进入最终确认 — 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8418">#8418</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/8382">#8382</a>)</li>
+</ul>
+<h3>✨ 体验优化</h3>
+<ul>
+  <li>图片预览不再被固定说明遮挡，打开后可直接查看图片 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8427">#8427</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/8426">#8426</a>)</li>
 </ul>
 <h3>🐞 问题修复</h3>
 <ul>
-  <li>引用刚发出的消息时，会等待消息发送完成后再附上引用；不会再让客户只收到普通文字，发送中的消息也会明确提示稍后再试并保留已输入内容 — shain <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8410">#8410</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/8180">#8180</a>)</li>
-  <li>没有公共话术管理权限的账号，不再看到无法使用的新增、编辑、删除和拖动入口 — 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8308">#8308</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/8304">#8304</a>)</li>
+  <li>从案例库发送内容后会立刻回到聊天；发送失败时仍可在原消息中重试，不会丢失已选内容 — 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8420">#8420</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/8384">#8384</a>)</li>
+  <li>聊天列表恢复滚动位置时不再出现界面异常，滚动条可正常继续使用 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8436">#8436</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/8430">#8430</a>)</li>
 </ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">10/20 17:23 上次发版后，合入 main 的全部 <strong>10</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">10/21 11:55 上次发版后，合入 main 的全部 <strong>6</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
-  <li><span class="merged-at">[10/20 23:09]</span>refs #8351 本地可编辑 SVG 与设计师制作规范 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8391">#8391</a> <span class="author">— shain</span></li>
+  <li><span class="merged-at">[10/21 14:29]</span>close #8382 群发搜索结果按所在账号筛选 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8418">#8418</a> <span class="author">— 梁晨</span></li>
+  <li><span class="merged-at">[10/21 13:36]</span>APP 话术支持按部门筛选（销售在手机上能按部门查找话术，不再逐条辨认混排内容） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8425">#8425</a> <span class="author">— 张拓</span></li>
 </ul>
 
 <h2>🐞 问题修复</h2>
 <ul>
-  <li><span class="merged-at">[10/21 10:14]</span>close #8180 引用刚发送消息时解析正式 ID 并阻断临时 ID 外发 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8410">#8410</a> <span class="author">— shain</span></li>
-  <li><span class="merged-at">[10/21 09:30]</span>未分配会话 getNextMessage 空闲退避、失焦暂停并修复撤回误判卡锚点（未分配会话不再 24 小时每 5 秒空轮询） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8392">#8392</a> <span class="author">— 张拓</span></li>
-  <li><span class="merged-at">[10/21 09:10]</span>公共话术管理入口遵循后端 canManagePublicScript（线上咨询/客服不再看到无权限按钮） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8308">#8308</a> <span class="author">— 张拓</span></li>
-  <li><span class="merged-at">[10/21 00:19]</span>close #8408 修复 NUPKG Unicode 解包并保留完整载荷校验 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8411">#8411</a> <span class="author">— shain</span></li>
-  <li><span class="merged-at">[10/20 17:47]</span>close #8403 修正合并后 API 路径判断误报（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8404">#8404</a> <span class="author">— 王争</span></li>
-  <li><span class="merged-at">[10/20 17:27]</span>医美图片支持长按拖入底部删除区 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8396">#8396</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/8357">#8357</a>) <span class="author">— shain</span></li>
+  <li><span class="merged-at">[10/21 14:26]</span>修复布局期间活动通知触发的帧调度断言（列表恢复滚动位置时不再触发界面异常） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8436">#8436</a> <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[10/21 14:14]</span>close #8384 案例库发送后立即返回聊天 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8420">#8420</a> <span class="author">— 梁晨</span></li>
+  <li><span class="merged-at">[10/21 13:41]</span>移除固定遮挡图片的说明 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8427">#8427</a> <span class="author">— 王争</span></li>
 </ul>
 
 <h2>✨ 体验优化</h2>
@@ -345,16 +348,14 @@ a:hover { text-decoration: underline; }
 
 <h2>🔧 其他（chore / docs / test / ...）</h2>
 <ul>
-  <li><span class="merged-at">[10/21 09:57]</span>test(e2e): cover C13 stage 2 media message matrix <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8414">#8414</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7874">#7874</a>) <span class="author">— 王梓先、张拓</span></li>
-  <li><span class="merged-at">[10/21 09:48]</span>test(media-cache): 修复进程测试 PID 标记完整性校验并区分压力 worker 启动超时（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8416">#8416</a> <span class="author">— 张拓</span></li>
-  <li><span class="merged-at">[10/21 09:36]</span>test(theme/pc): 补齐主题 CLI 夹具的显示账本与可达关系（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8412">#8412</a> <span class="author">— 张拓</span></li>
+  <li><span class="merged-at">[10/21 14:19]</span>test: close #8423 更新独立聊天窗口滑块行为守卫 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8434">#8434</a> <span class="author">— 王争</span></li>
 </ul>
 
 
 <hr class="ref-divider">
 
 <div class="foot">
-上一次发版时间：<span class="bump-time">10/20 17:23</span>（基线 commit：<code>PC baseline override 2026102001: chore: close #8331 补齐 PC 显示依赖主题审计覆盖（无） (#8337)</code>）<br>
+上一次发版时间：<span class="bump-time">10/21 11:55</span>（基线 commit：<code>PC baseline override 2026102101: fix(windows): avoid shadowed numeric variables in scrollbar channel (#8421) (#8422)</code>）<br>
 PR 归属版本由 <code>pubspec.yaml</code> 的 <code>version:</code> 行 git 历史判定 —— bump commit 的 committedAt 是分割线。<br>
 由 <code>tool/generate_release_preview.dart</code> 自动提取；重新跑脚本后刷新页面即拿最新。<br>
 issue 链接基于 PetWebOrg/flutter-suiyin 仓。

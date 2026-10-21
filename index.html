@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <!-- CURRENT_BUILD:2026102001 -->
-<!-- PREVIEW_GENERATED_AT:2026-10-21T00:38:20.652647Z -->
+<!-- PREVIEW_GENERATED_AT:2026-10-21T02:36:34.928837Z -->
 <title>下一版发版预览 · flutter-suiyin</title>
 <style>
 :root {
@@ -292,7 +292,7 @@ a:hover { text-decoration: underline; }
 <h1>📦 2026102101 发版预览</h1>
 <div class="meta">
 当前版本：<code>2026102001</code>（发版时间：<span class="bump-time">10/20 17:23</span>），下一版（预览）：<code>2026102101</code><br>
-生成时间：<time id="preview-generated-at" datetime="2026-10-21T00:38:20.652647Z">2026-10-21 08:38:20</time> · 内容重新生成时更新，发布不会改写
+生成时间：<time id="preview-generated-at" datetime="2026-10-21T02:36:34.928837Z">2026-10-21 10:36:34</time> · 内容重新生成时更新，发布不会改写
 </div>
 <script>
 // 让下拉的当前选中态跟着当前页走：在归档页（如 2026042901.html）里，自动选中 `🗂 2026042901`
@@ -314,10 +314,15 @@ a:hover { text-decoration: underline; }
 <ul>
   <li>在图片和截图编辑中，可导入可调整的辅助线素材；拖动控制点即可微调，也支持移动、删除、撤销、重做和重置 — shain <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8391">#8391</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/8351">#8351</a>)</li>
 </ul>
+<h3>🐞 问题修复</h3>
+<ul>
+  <li>引用刚发出的消息时，会等待消息发送完成后再附上引用；不会再让客户只收到普通文字，发送中的消息也会明确提示稍后再试并保留已输入内容 — shain <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8410">#8410</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/8180">#8180</a>)</li>
+  <li>没有公共话术管理权限的账号，不再看到无法使用的新增、编辑、删除和拖动入口 — 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8308">#8308</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/8304">#8304</a>)</li>
+</ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">10/20 17:23 上次发版后，合入 main 的全部 <strong>4</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">10/20 17:23 上次发版后，合入 main 的全部 <strong>10</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
   <li><span class="merged-at">[10/20 23:09]</span>refs #8351 本地可编辑 SVG 与设计师制作规范 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8391">#8391</a> <span class="author">— shain</span></li>
@@ -325,6 +330,9 @@ a:hover { text-decoration: underline; }
 
 <h2>🐞 问题修复</h2>
 <ul>
+  <li><span class="merged-at">[10/21 10:14]</span>close #8180 引用刚发送消息时解析正式 ID 并阻断临时 ID 外发 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8410">#8410</a> <span class="author">— shain</span></li>
+  <li><span class="merged-at">[10/21 09:30]</span>未分配会话 getNextMessage 空闲退避、失焦暂停并修复撤回误判卡锚点（未分配会话不再 24 小时每 5 秒空轮询） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8392">#8392</a> <span class="author">— 张拓</span></li>
+  <li><span class="merged-at">[10/21 09:10]</span>公共话术管理入口遵循后端 canManagePublicScript（线上咨询/客服不再看到无权限按钮） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8308">#8308</a> <span class="author">— 张拓</span></li>
   <li><span class="merged-at">[10/21 00:19]</span>close #8408 修复 NUPKG Unicode 解包并保留完整载荷校验 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8411">#8411</a> <span class="author">— shain</span></li>
   <li><span class="merged-at">[10/20 17:47]</span>close #8403 修正合并后 API 路径判断误报（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8404">#8404</a> <span class="author">— 王争</span></li>
   <li><span class="merged-at">[10/20 17:27]</span>医美图片支持长按拖入底部删除区 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8396">#8396</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/8357">#8357</a>) <span class="author">— shain</span></li>
@@ -337,7 +345,9 @@ a:hover { text-decoration: underline; }
 
 <h2>🔧 其他（chore / docs / test / ...）</h2>
 <ul>
-  <li class="empty">无</li>
+  <li><span class="merged-at">[10/21 09:57]</span>test(e2e): cover C13 stage 2 media message matrix <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8414">#8414</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7874">#7874</a>) <span class="author">— 王梓先、张拓</span></li>
+  <li><span class="merged-at">[10/21 09:48]</span>test(media-cache): 修复进程测试 PID 标记完整性校验并区分压力 worker 启动超时（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8416">#8416</a> <span class="author">— 张拓</span></li>
+  <li><span class="merged-at">[10/21 09:36]</span>test(theme/pc): 补齐主题 CLI 夹具的显示账本与可达关系（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8412">#8412</a> <span class="author">— 张拓</span></li>
 </ul>
 
 

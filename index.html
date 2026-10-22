@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <!-- CURRENT_BUILD:2026102201 -->
-<!-- PREVIEW_GENERATED_AT:2026-10-22T08:59:54.384082Z -->
+<!-- PREVIEW_GENERATED_AT:2026-10-22T15:08:30.154488Z -->
 <title>下一版发版预览 · flutter-suiyin</title>
 <style>
 :root {
@@ -294,7 +294,7 @@ a:hover { text-decoration: underline; }
 <h1>📦 2026102202 发版预览</h1>
 <div class="meta">
 当前版本：<code>2026102201</code>（发版时间：<span class="bump-time">10/22 01:08</span>），下一版（预览）：<code>2026102202</code><br>
-生成时间：<time id="preview-generated-at" datetime="2026-10-22T08:59:54.384082Z">2026-10-22 16:59:54</time> · 内容重新生成时更新，发布不会改写
+生成时间：<time id="preview-generated-at" datetime="2026-10-22T15:08:30.154488Z">2026-10-22 23:08:30</time> · 内容重新生成时更新，发布不会改写
 </div>
 <script>
 // 让下拉的当前选中态跟着当前页走：在归档页（如 2026042901.html）里，自动选中 `🗂 2026042901`
@@ -316,10 +316,13 @@ a:hover { text-decoration: underline; }
 <ul>
   <li>在聊天里右键图片可直接选择「编辑」：打开大图后会进入编辑器，原消息不会被自动发送或替换 — 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8473">#8473</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/8464">#8464</a>)</li>
   <li>[仅:yestar-sz] 聊天工具栏新增「小程序」入口，可直接打开已有小程序选择器完成发送 — 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8453">#8453</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/8445">#8445</a>)</li>
+  <li>在同一人的「可能是同一人 / 已关联」行中，可点击有权限查看的人设打开客户；打开后会切到通讯录，并调整渠道、人设筛选 — 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8484">#8484</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/8476">#8476</a>)</li>
+  <li>客户姓名会默认隐藏手机号；复制或编辑备注时会读取原文，失败时不会把星号误保存进去 — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8481">#8481</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/8474">#8474</a>)</li>
 </ul>
 <h3>✨ 体验优化</h3>
 <ul>
-  <li>扫码登录时会更清楚提示：验证后还需在微信再点一次「确认」 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8471">#8471</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/8389">#8389</a>)</li>
+  <li>绿色主按钮及各类彩色标签的文字对比度已优化，看得更清楚 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8374">#8374</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/8208">#8208</a>)</li>
+  <li>PC 扫码登录弹窗补充了更清晰的微信确认步骤和提醒 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8471">#8471</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/8389">#8389</a>)</li>
 </ul>
 <h3>🐞 问题修复</h3>
 <ul>
@@ -330,9 +333,11 @@ a:hover { text-decoration: underline; }
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">10/22 01:08 上次发版后，合入 main 的全部 <strong>9</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">10/22 01:08 上次发版后，合入 main 的全部 <strong>14</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
+  <li><span class="merged-at">[10/22 20:57]</span>同一人候选及已关联行支持双端精确跳转与限流 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8484">#8484</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/8476">#8476</a>) <span class="author">— 张拓</span></li>
+  <li><span class="merged-at">[10/22 20:27]</span>close #8474 客户名称脱敏与原文编辑 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8481">#8481</a> <span class="author">— 陈宣宇</span></li>
   <li><span class="merged-at">[10/22 15:33]</span>close #8441 画美和傲丽 APP 通讯录支持原企微标签筛选 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8455">#8455</a> <span class="author">— 王梓先、shain</span></li>
   <li><span class="merged-at">[10/22 15:12]</span>从图片消息菜单直接进入编辑 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8473">#8473</a> <span class="author">— 梁晨</span></li>
   <li><span class="merged-at">[10/22 14:04]</span>APP 更多菜单增加举报并统一入口文案 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8360">#8360</a> <span class="author">— 王争</span></li>
@@ -341,6 +346,8 @@ a:hover { text-decoration: underline; }
 
 <h2>🐞 问题修复</h2>
 <ul>
+  <li><span class="merged-at">[10/22 19:43]</span>截图菜单字号改用现有设计 token（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8493">#8493</a> <span class="author">— 张拓</span></li>
+  <li><span class="merged-at">[10/22 17:18]</span>修复绿色主按钮文字对比度并隔离选择控件前景色 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8374">#8374</a> <span class="author">— 王争</span></li>
   <li><span class="merged-at">[10/22 14:01]</span>close #8344 对齐截图菜单并修复气泡左右留白 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8347">#8347</a> <span class="author">— 王争</span></li>
   <li><span class="merged-at">[10/22 11:33]</span>第三步恢复已排除客户并统一名单人数（销售核对名单时人数与所选客户一致） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8334">#8334</a> <span class="author">— 王争</span></li>
   <li><span class="merged-at">[10/22 11:28]</span>close #8324 修复群发选人电话列溢出 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8333">#8333</a> <span class="author">— 王争</span></li>
@@ -354,6 +361,7 @@ a:hover { text-decoration: underline; }
 
 <h2>🔧 其他（chore / docs / test / ...）</h2>
 <ul>
+  <li><span class="merged-at">[10/22 17:07]</span>test(e2e): 修复 CM-05 未读基线与入站超时误报 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8450">#8450</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/8438">#8438</a>) <span class="author">— 王争</span></li>
   <li><span class="merged-at">[10/22 12:18]</span>test(chat/poller): 注入计时工厂让采样用例不依赖真实时钟（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8478">#8478</a> <span class="author">— 张拓</span></li>
 </ul>
 

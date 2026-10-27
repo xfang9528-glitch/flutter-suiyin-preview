@@ -41,7 +41,8 @@ a:hover { text-decoration: underline; }
 <label>查看历史预览：</label>
 <select id="version-switcher-select" onchange="var v=this.value; if(v) location.href = v; else location.href = './';">
 <!-- VERSION_SWITCHER_OPTIONS_START -->
-<option value="">📦 2026102701 发版预览</option>
+<option value="">📦 2026102702 发版预览</option>
+<option value="2026102701.html">🗂 2026102701</option>
 <option value="2026102601.html">🗂 2026102601</option>
 <option value="2026102301.html">🗂 2026102301</option>
 <option value="2026102202.html">🗂 2026102202</option>
@@ -276,7 +277,7 @@ a:hover { text-decoration: underline; }
 <h3>🆕 新功能</h3>
 <ul>
   <li>群聊里多个号同时接待时，点「关闭聊天」现在可以选择只结束某一个人设，其他号会继续接待这个群；也可以一键全部结束 — 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4964">#4964</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4922">#4922</a>)</li>
-  <li>锦帛 PC 客户信息里新增「衣客信息」后，现在可以直接点开新增条目查看详情，不会再点了没反应 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4968">#4968</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4967">#4967</a>)</li>
+  
   <li>PC 群聊里点击任意已建档群成员，现在好友和非好友名片都能直接看到系统已有卡号，无卡号时不显示空行 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4895">#4895</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4876">#4876</a>)</li>
 </ul>
 
@@ -310,7 +311,7 @@ a:hover { text-decoration: underline; }
   <li><span class="merged-at">[07/20 10:14]</span>主动关闭群聊全部人设时按「谁发起的」抑制矛盾退出提示（销售自己点关闭时不再看到像是被别人踢出或还要继续接待的文案） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4973">#4973</a> <span class="author">— 张拓</span></li>
   <li><span class="merged-at">[07/20 10:13]</span>群聊连续 unassigned 时按执行时刻的行状态软删，不再用入队快照的 clientId（销售名下人设被连续结束后，群立即从接待中列表消失，不留发不出消息的空壳记录） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4972">#4972</a> <span class="author">— 张拓</span></li>
   <li><span class="merged-at">[07/20 09:48]</span>修复群消息历史 objectid×groupComposite 双写双气泡 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4955">#4955</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4946">#4946</a>) <span class="author">— 梁晨、Cursor</span></li>
-  <li><span class="merged-at">[07/19 01:16]</span>close #4967 锦帛新增用户可打开衣客详情 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4968">#4968</a> <span class="author">— 陈聪</span></li>
+  
   <li><span class="merged-at">[07/18 19:33]</span>群聊部分人设被结束接待时不再误关会话窗口（销售正在群里打字，别的人设被结束接待不会打断当前输入） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4962">#4962</a> <span class="author">— 张拓</span></li>
   <li><span class="merged-at">[07/18 18:16]</span>移除群聊切人设的 end-others 调用，收敛 ChatCustomer.clientId 为本地选中人设（销售在群里换人设发言后，原人设仍能继续接待该群） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4958">#4958</a> <span class="author">— 张拓</span></li>
   <li><span class="merged-at">[07/17 19:19]</span>避免客户标签空 id 触发重复 Key 红屏 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/4951">#4951</a> <span class="author">— 陈聪</span></li>

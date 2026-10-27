@@ -83,7 +83,8 @@ a:hover { text-decoration: underline; }
 <label>查看历史预览：</label>
 <select id="version-switcher-select" onchange="var v=this.value; if(v) location.href = v; else location.href = './';">
 <!-- VERSION_SWITCHER_OPTIONS_START -->
-<option value="">📦 2026102701 发版预览</option>
+<option value="">📦 2026102702 发版预览</option>
+<option value="2026102701.html">🗂 2026102701</option>
 <option value="2026102601.html">🗂 2026102601</option>
 <option value="2026102301.html">🗂 2026102301</option>
 <option value="2026102202.html">🗂 2026102202</option>
@@ -326,7 +327,7 @@ a:hover { text-decoration: underline; }
 <h3>🐞 问题修复</h3>
 <ul>
   <li>客户通过好友申请后，即使还没主动发消息，PC 会话也会出现未读角标，让销售能及时发现新加好友 — shain <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7433">#7433</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7307">#7307</a>)</li>
-  <li>深圳艺星创建、编辑和查看预约时，不再展示“专属客服 / 助理电话”；发给客户的预约卡图片里也不会再出现这两个字段 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7410">#7410</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7416">#7416</a>)</li>
+  
   <li>PC 顶部搜索联系人失败时，现在会显示失败提示、取证码和原位重试入口，不会再误显示成“无搜索结果” — 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7413">#7413</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7389">#7389</a>)</li>
   <li>打开过朋友圈后再切换企业，现在不会再切换失败、退回登录页，也不会短暂显示旧企业的朋友圈内容 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7369">#7369</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7356">#7356</a>)</li>
   <li>改派记录按好友筛选时，不再把搜索结果误报成 `customer_id 格式不正确`；选中真实客户后能看到对应记录或明确空态，导出也会跟随同一筛选 — 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7368">#7368</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7355">#7355</a>)</li>
@@ -346,11 +347,11 @@ a:hover { text-decoration: underline; }
   <li><span class="merged-at">[09/16 22:08]</span>好友通过回执计入未读，销售能发现新加的好友 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7433">#7433</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7307">#7307</a>) <span class="author">— shain</span></li>
   <li><span class="merged-at">[09/16 17:55]</span>pin quality gate child cwd <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7423">#7423</a> <span class="author">— 陈聪</span></li>
   <li><span class="merged-at">[09/16 17:09]</span>unify PC customer subpanel boundaries <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7409">#7409</a> <span class="author">— 梁晨</span></li>
-  <li><span class="merged-at">[09/16 16:42]</span>深圳艺星预约不展示专属客服和助理电话 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7410">#7410</a> <span class="author">— 陈聪</span></li>
+  
   <li><span class="merged-at">[09/16 16:15]</span>add offline push reconciliation metric <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7412">#7412</a> <span class="author">— 陈聪</span></li>
   <li><span class="merged-at">[09/16 16:14]</span>联系人搜索失败支持重试 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7413">#7413</a> <span class="author">— 梁晨</span></li>
   <li><span class="merged-at">[09/16 15:17]</span>close #7380 收紧改派记录字号棘轮 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7404">#7404</a> <span class="author">— 梁晨</span></li>
-  <li><span class="merged-at">[09/16 15:00]</span>深圳艺星预约卡显示助理电话 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7403">#7403</a> <span class="author">— 陈聪</span></li>
+  
   <li><span class="merged-at">[09/16 14:45]</span>归一 SaleProfileCache 测试替身 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7402">#7402</a> <span class="author">— 梁晨</span></li>
   <li><span class="merged-at">[09/16 11:01]</span>close #7335 移动端 auth 清理跳过桌面窗口探活 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7346">#7346</a> <span class="author">— 王争</span></li>
   <li><span class="merged-at">[09/16 10:44]</span>联系人搜索失败埋点保留原异常 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7387">#7387</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7384">#7384</a>) <span class="author">— 梁晨</span></li>
@@ -373,7 +374,7 @@ a:hover { text-decoration: underline; }
   <li><span class="merged-at">[09/16 17:22]</span>chore(e2e): 每日跑批排除会对白名单外真实客户产生分配记录的用例 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7419">#7419</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7418">#7418</a>) <span class="author">— shain</span></li>
   <li><span class="merged-at">[09/16 14:30]</span>chore(e2e): 发版通测报告复用每日跑批的失败五类初判并与之共用同一实现 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7401">#7401</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7377">#7377</a>) <span class="author">— shain</span></li>
   <li><span class="merged-at">[09/16 13:30]</span>docs(e2e): 按近 30 天 bug 分布与 49 条用例断言审计重排 E2E 路线图 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7390">#7390</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7376">#7376</a>) <span class="author">— shain</span></li>
-  <li><span class="merged-at">[09/16 13:14]</span>test(e2e): 成都艺星标签 / 渠道筛选差分旅程 B5 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7395">#7395</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7224">#7224</a>) <span class="author">— shain</span></li>
+  
   <li><span class="merged-at">[09/16 11:32]</span>test(e2e): 话术 Excel 批量导入收窄版旅程 D2 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7394">#7394</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7206">#7206</a>) <span class="author">— shain</span></li>
   <li><span class="merged-at">[09/15 18:35]</span>chore(e2e): 新增每日 16:00 全组 E2E 定时跑批并推送飞书群摘要 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7374">#7374</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7364">#7364</a>) <span class="author">— shain</span></li>
 </ul>

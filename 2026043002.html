@@ -41,7 +41,8 @@ a:hover { text-decoration: underline; }
 <label>查看历史预览：</label>
 <select id="version-switcher-select" onchange="var v=this.value; if(v) location.href = v; else location.href = './';">
 <!-- VERSION_SWITCHER_OPTIONS_START -->
-<option value="">📦 2026102701 发版预览</option>
+<option value="">📦 2026102702 发版预览</option>
+<option value="2026102701.html">🗂 2026102701</option>
 <option value="2026102601.html">🗂 2026102601</option>
 <option value="2026102301.html">🗂 2026102301</option>
 <option value="2026102202.html">🗂 2026102202</option>
@@ -282,7 +283,7 @@ a:hover { text-decoration: underline; }
 
 <h3>🐞 问题修复</h3>
 <ul>
-  <li>艺星账号下客户列表反复无限刷新、导致界面卡顿的问题已修复 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1227">#1227</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1155">#1155</a>)</li>
+  
   <li>销售账号没配企业微信号时（如新入职员工 / 暂未授权），现在会停止反复请求并给出明确引导，不再静默失败 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1197">#1197</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1115">#1115</a>)</li>
   <li>切换企业后，通讯录不会自动加载、需要手动刷新才能看到新企业联系人的问题已修复 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1220">#1220</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1218">#1218</a>)</li>
   <li>切换企业后，通讯录的筛选条件还停留在上一家公司的过滤项上的问题已修复，现在切完会自动重置 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1223">#1223</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1222">#1222</a>)</li>

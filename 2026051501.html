@@ -41,7 +41,8 @@ a:hover { text-decoration: underline; }
 <label>查看历史预览：</label>
 <select id="version-switcher-select" onchange="var v=this.value; if(v) location.href = v; else location.href = './';">
 <!-- VERSION_SWITCHER_OPTIONS_START -->
-<option value="">📦 2026102701 发版预览</option>
+<option value="">📦 2026102702 发版预览</option>
+<option value="2026102701.html">🗂 2026102701</option>
 <option value="2026102601.html">🗂 2026102601</option>
 <option value="2026102301.html">🗂 2026102301</option>
 <option value="2026102202.html">🗂 2026102202</option>
@@ -275,7 +276,7 @@ a:hover { text-decoration: underline; }
 <h2>📣 本版用户感知更新</h2>
 <h3>🐞 问题修复</h3>
 <ul>
-  <li>非艺星租户（碎银、瑞熙、达根斯、印象酒店等）列表项不再错误显示「客户」等级标签 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1947">#1947</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1748">#1748</a>)</li>
+  
   <li>点「立即重启」升级到新版后等 3~5 秒的黑屏问题修复，现在能看到完整的升级过渡画面（火箭图 + 进度条），不再以为是卡死了 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1946">#1946</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1943">#1943</a>)</li>
   <li>聊天里的 AI 任务标签现在能稳定显示完整「模板名 (场景)」，对应模板被改名 / 删除后老任务也不再退化成「(场景)」 — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1945">#1945</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1927">#1927</a>)</li>
   <li>截图框选时，拖选区到窗口边缘不再误触发窗口缩放，顶部工具栏也不会消失 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1904">#1904</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1809">#1809</a>)</li>
@@ -292,7 +293,7 @@ a:hover { text-decoration: underline; }
 
 <h2>🐞 问题修复</h2>
 <ul>
-  <li><span class="merged-at">[05/15 10:01]</span>非艺星租户列表项不再渲染'客户'等级标签 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1947">#1947</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1748">#1748</a>) <span class="author">— 王梓先</span></li>
+  
   <li><span class="merged-at">[05/14 21:25]</span>release_velopack_local.sh 去 jq 依赖 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1931">#1931</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1744">#1744</a>) <span class="author">— 王梓先</span></li>
   <li><span class="merged-at">[05/14 18:42]</span>Velopack apply 阶段保留 splash 过渡反馈 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1946">#1946</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1943">#1943</a>) <span class="author">— 王梓先</span></li>
   <li><span class="merged-at">[05/14 18:31]</span>截图选区改用 Flutter 自绘编辑器，消除窗口边框 hit-test 重叠 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1904">#1904</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1809">#1809</a>) <span class="author">— 王争</span></li>

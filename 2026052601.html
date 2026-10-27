@@ -41,7 +41,8 @@ a:hover { text-decoration: underline; }
 <label>查看历史预览：</label>
 <select id="version-switcher-select" onchange="var v=this.value; if(v) location.href = v; else location.href = './';">
 <!-- VERSION_SWITCHER_OPTIONS_START -->
-<option value="">📦 2026102701 发版预览</option>
+<option value="">📦 2026102702 发版预览</option>
+<option value="2026102701.html">🗂 2026102701</option>
 <option value="2026102601.html">🗂 2026102601</option>
 <option value="2026102301.html">🗂 2026102301</option>
 <option value="2026102202.html">🗂 2026102202</option>
@@ -277,7 +278,7 @@ a:hover { text-decoration: underline; }
 <ul>
   <li>话术编辑器支持「并入已有话术」：多选消息打开新建话术弹窗后，名称栏升级成可下拉选择器，选已有话术会自动回填分类 / 二级分组 + 把当前多选消息附到末尾，省得重复建条目 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2442">#2442</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2300">#2300</a>)</li>
   <li>朋友圈发布选择账号时支持 Shift 范围连选，账号多时连续勾选区间更快（与群发选账号一致）— 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2428">#2428</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2414">#2414</a>)</li>
-  <li>厚全鸡蛋（hqjd）企业模块上线：客户右侧栏可使用「食客标签」编辑面板，标签维护按该企业业务方式使用 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2427">#2427</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2399">#2399</a>)</li>
+  
   <li>群发资料库现在可以选择「视频号」内容，群发素材范围更完整（直播 / 笔记仍维持不可选）— 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2426">#2426</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2376">#2376</a>)</li>
   <li>群发管理页的暂停 / 继续 / 取消 / 删除按非超管账号会灰化并 hover 提示「仅管理员可操作群发任务」，避免普通成员误改他人任务 — 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2413">#2413</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2405">#2405</a>)</li>
 </ul>
@@ -302,7 +303,7 @@ a:hover { text-decoration: underline; }
   <li><span class="merged-at">[05/26 07:30]</span>多选消息可并入已有话术（DR-028, #2300） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2442">#2442</a> <span class="author">— 王梓先</span></li>
   <li><span class="merged-at">[05/25 23:27]</span>support PC Velopack grayscale manifest <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2406">#2406</a> <span class="author">— 张拓</span></li>
   <li><span class="merged-at">[05/25 18:54]</span>朋友圈发布账号选择器开启 Shift 范围连选 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2428">#2428</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2414">#2414</a>) <span class="author">— 王争</span></li>
-  <li><span class="merged-at">[05/25 18:19]</span>注册厚全鸡蛋（hqjd）企业模块 + diner 食客标签 Slot <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2427">#2427</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2399">#2399</a>) <span class="author">— 王争</span></li>
+  
   <li><span class="merged-at">[05/25 16:30]</span>左侧筛选栏人设号按拼音首字母排序 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2419">#2419</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2392">#2392</a>) <span class="author">— 王梓先</span></li>
   <li><span class="merged-at">[05/25 15:58]</span>跨级移动后端契约层（DR-029 第 1 步） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2415">#2415</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2301">#2301</a>) <span class="author">— 王梓先</span></li>
   <li><span class="merged-at">[05/25 15:15]</span>群发管理 4 个写按钮按超管角色 disabled + tooltip <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2413">#2413</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2405">#2405</a>) <span class="author">— 梁晨</span></li>

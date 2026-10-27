@@ -83,7 +83,8 @@ a:hover { text-decoration: underline; }
 <label>查看历史预览：</label>
 <select id="version-switcher-select" onchange="var v=this.value; if(v) location.href = v; else location.href = './';">
 <!-- VERSION_SWITCHER_OPTIONS_START -->
-<option value="">📦 2026102701 发版预览</option>
+<option value="">📦 2026102702 发版预览</option>
+<option value="2026102701.html">🗂 2026102701</option>
 <option value="2026102601.html">🗂 2026102601</option>
 <option value="2026102301.html">🗂 2026102301</option>
 <option value="2026102202.html">🗂 2026102202</option>
@@ -318,9 +319,9 @@ a:hover { text-decoration: underline; }
 <h3>🆕 新功能</h3>
 <ul>
   <li>「我的朋友圈」里的定时内容支持取消和重新编辑；保存后会刷新同一条记录，已发布内容不会误显示编辑入口 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7814">#7814</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7805">#7805</a>)</li>
-  <li>群发模板入口不再只限艺星租户，其他租户也能看到模板按钮并打开侧栏；提交中仍会自动禁用，避免重复操作 — 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7838">#7838</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7832">#7832</a>)</li>
+  
   <li>电脑端客户录音现在可以拆分、合并后重新保存并分析，候选片段和来源区间可以试听，普通音频上传仍可继续使用；不再显示已经下线的蓝牙录音设备操作 — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7828">#7828</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7819">#7819</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7827">#7827</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7810">#7810</a>)</li>
-  <li>[仅:yestar-gz] 广州艺星生成喜报时，会展示后台医生列表里的医生头像和资质荣誉，海报内容和后台医生配置保持一致 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7825">#7825</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7823">#7823</a>)</li>
+  
   <li>打开「更新内容」时，企业专属条目会按当前企业过滤，避免看到其他企业才有的功能说明 — shain <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7809">#7809</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7631">#7631</a>)</li>
 </ul>
 <h3>✨ 体验优化</h3>
@@ -342,8 +343,8 @@ a:hover { text-decoration: underline; }
 <h2>🆕 新功能</h2>
 <ul>
   <li><span class="merged-at">[09/29 16:25]</span>close #7805 定时朋友圈支持取消与编辑 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7814">#7814</a> <span class="author">— 王争</span></li>
-  <li><span class="merged-at">[09/29 15:28]</span>移除创建群发模板入口的艺星租户门控 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7838">#7838</a> <span class="author">— 梁晨</span></li>
-  <li><span class="merged-at">[09/29 09:58]</span>艺星 APP 群分类：聊天页分类筛选、管理分类改名隐藏、分类标为已读、群资料分类行 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7826">#7826</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7463">#7463</a>) <span class="author">— shain</span></li>
+  
+  
   <li><span class="merged-at">[09/29 01:03]</span>统一APP录音与双端客户录音整理，移除PC蓝牙 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7819">#7819</a> <span class="author">— 陈宣宇</span></li>
   <li><span class="merged-at">[09/28 23:07]</span>广州喜报展示医生头像与有序荣耀 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7825">#7825</a> <span class="author">— 陈聪</span></li>
   <li><span class="merged-at">[09/28 18:23]</span>更新内容按企业归属过滤，PC/移动端共用同一过滤入口 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7809">#7809</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7631">#7631</a>) <span class="author">— shain</span></li>

@@ -82,7 +82,8 @@ a:hover { text-decoration: underline; }
 <label>查看历史预览：</label>
 <select id="version-switcher-select" onchange="var v=this.value; if(v) location.href = v; else location.href = './';">
 <!-- VERSION_SWITCHER_OPTIONS_START -->
-<option value="">📦 2026102701 发版预览</option>
+<option value="">📦 2026102702 发版预览</option>
+<option value="2026102701.html">🗂 2026102701</option>
 <option value="2026102601.html">🗂 2026102601</option>
 <option value="2026102301.html">🗂 2026102301</option>
 <option value="2026102202.html">🗂 2026102202</option>
@@ -316,10 +317,10 @@ a:hover { text-decoration: underline; }
 <h2>📣 本版用户感知更新</h2>
 <h3>🆕 新功能</h3>
 <ul>
-  <li>北京、深圳、广州、嘉兴、杭州艺星现在可以在客户资料中正常填写、修改并保存卡号；即使第一需求为空也不会被拦，成都艺星仍由系统自动回填 — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7018">#7018</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6994">#6994</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6991">#6991</a>)</li>
+  
   <li>群发创建、编辑和详情页现在能完整预览文字、图片、视频、公众号内容、商品、小程序、位置和文件，图片与视频也能直接点开查看 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6965">#6965</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6796">#6796</a>)</li>
   <li>图片裁剪改为勾叉确认：框选后只有点绿色勾才会真正裁剪，点叉号、Esc 或切换工具都会完整还原 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6984">#6984</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6930">#6930</a>)</li>
-  <li>深圳艺星在「群发管理 → 筛选好友」第一步可以按微信昵称、好友名称或手机号搜索，名单再长也能快速定位 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6963">#6963</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6960">#6960</a>)</li>
+  
 </ul>
 <h3>✨ 体验优化</h3>
 <ul>
@@ -339,17 +340,17 @@ a:hover { text-decoration: underline; }
 <div class="ref-hint">09/03 16:52 上次发版后，合入 main 的全部 <strong>25</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
-  <li><span class="merged-at">[09/04 11:35]</span>close #6991 支持非成都艺星客户资料手填卡号 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6994">#6994</a> <span class="author">— cxy-chenxuanyu</span></li>
+  
   <li><span class="merged-at">[09/04 10:03]</span>群发编辑与详情支持完整内容预览 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6965">#6965</a> <span class="author">— kitesky</span></li>
   <li><span class="merged-at">[09/04 09:46]</span>聊天记录分类结果支持右键定位原文 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6983">#6983</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6887">#6887</a>) <span class="author">— shian</span></li>
   <li><span class="merged-at">[09/04 09:30]</span>图片裁剪增加待确认状态与勾叉操作 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6984">#6984</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6930">#6930</a>) <span class="author">— shian</span></li>
-  <li><span class="merged-at">[09/04 09:28]</span>close #6960 深圳艺星群发筛选支持昵称搜索 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6963">#6963</a> <span class="author">— kite365</span></li>
+  
   <li><span class="merged-at">[09/03 17:21]</span>close #6330 APP 我的朋友圈按账号筛选 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6953">#6953</a> <span class="author">— kite365</span></li>
 </ul>
 
 <h2>🐞 问题修复</h2>
 <ul>
-  <li><span class="merged-at">[09/04 17:19]</span>修复非成都艺星卡号保存 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7018">#7018</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6991">#6991</a>) <span class="author">— cxy-chenxuanyu</span></li>
+  
   <li><span class="merged-at">[09/04 17:05]</span>收敛会话切换与好友刷新前台长帧 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7010">#7010</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6989">#6989</a>) <span class="author">— kitesky</span></li>
   <li><span class="merged-at">[09/04 15:50]</span>non-text 消息 downloadId 为空导致轮询锚点持续跳过刷新 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7005">#7005</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6470">#6470</a>) <span class="author">— shian</span></li>
   <li><span class="merged-at">[09/04 15:41]</span>控制 Sentry 配额风暴并上线健康告警 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7000">#7000</a> <span class="author">— kitesky</span></li>

@@ -41,7 +41,8 @@ a:hover { text-decoration: underline; }
 <label>查看历史预览：</label>
 <select id="version-switcher-select" onchange="var v=this.value; if(v) location.href = v; else location.href = './';">
 <!-- VERSION_SWITCHER_OPTIONS_START -->
-<option value="">📦 2026102701 发版预览</option>
+<option value="">📦 2026102702 发版预览</option>
+<option value="2026102701.html">🗂 2026102701</option>
 <option value="2026102601.html">🗂 2026102601</option>
 <option value="2026102301.html">🗂 2026102301</option>
 <option value="2026102202.html">🗂 2026102202</option>
@@ -278,7 +279,7 @@ a:hover { text-decoration: underline; }
 <ul>
   <li>聊天页右上角「搜索聊天记录」打开的搜索窗口，右侧匹配消息现在支持鼠标拖选 + Ctrl+C 复制 — 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2395">#2395</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2343">#2343</a>)</li>
   <li>「话术库」点开二级分类后，会自动滚到上次选中的那条话术，不用再手动翻找 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2369">#2369</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1650">#1650</a>)</li>
-  <li>艺星 PC 客户右侧栏新增「AI 客户画像」常驻区块，无需手动展开即可查看 — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2358">#2358</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2317">#2317</a>)</li>
+  
 </ul>
 
 <h3>✨ 体验优化</h3>
@@ -291,7 +292,7 @@ a:hover { text-decoration: underline; }
 
 <h3>🐞 问题修复</h3>
 <ul>
-  <li>编辑客户基础信息后点保存，第一次报「保存失败」、之后再点显示成功但重开 panel 字段仍是旧值的问题已修复（艺星销售高频反馈） — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2403">#2403</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2386">#2386</a>)</li>
+  
   <li>IM 消息一直收不到新内容（对方已经发出、本机却看不到）的「假死」问题已修复：应用会主动检测连接异常并自动恢复 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2355">#2355</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2349">#2349</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2351">#2351</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2241">#2241</a>)</li>
   <li>「话术库」展开二级分类后再拖动该分组导致客户端闪退的问题已规避：展开状态下该分组的拖动手柄会隐藏，想调整顺序请先折叠再拖 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2366">#2366</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2356">#2356</a>)</li>
   <li>同一台电脑重复打开客户端时，新实例会自动激活已有窗口，避免多个窗口同时运行造成数据冲突（仅 release 版本生效） — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2352">#2352</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2312">#2312</a>)</li>

@@ -83,7 +83,8 @@ a:hover { text-decoration: underline; }
 <label>查看历史预览：</label>
 <select id="version-switcher-select" onchange="var v=this.value; if(v) location.href = v; else location.href = './';">
 <!-- VERSION_SWITCHER_OPTIONS_START -->
-<option value="">📦 2026102701 发版预览</option>
+<option value="">📦 2026102702 发版预览</option>
+<option value="2026102701.html">🗂 2026102701</option>
 <option value="2026102601.html">🗂 2026102601</option>
 <option value="2026102301.html">🗂 2026102301</option>
 <option value="2026102202.html">🗂 2026102202</option>
@@ -315,12 +316,7 @@ a:hover { text-decoration: underline; }
 </script>
 
 <h2>📣 本版用户感知更新</h2>
-<h3>🆕 新功能</h3>
-<ul>
-  <li>杭州艺星聊天里的自定义表情可以右键管理，常用表情能移到最前，也能直接删除不再需要的表情。 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7057">#7057</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6944">#6944</a>)</li>
-  <li>深圳艺星图片编辑的「医美工具」新增本店自备设计素材，销售做图时可以直接选用深圳专属点位图。 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7090">#7090</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7073">#7073</a>)</li>
-  <li>嘉兴艺星销售可以直接在客户资料里创建预约，预约表单和预约卡按嘉兴本店流程展示，生成图片后可发给客户。 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7088">#7088</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7069">#7069</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6851">#6851</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7085">#7085</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7086">#7086</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7087">#7087</a>)</li>
-</ul>
+
 <h3>🐞 问题修复</h3>
 <ul>
   <li>群发选人时，第一步选中条件和第二步排除条件会重新核对实际名单，避免条件记录丢失后误显示成 0 人。 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7058">#7058</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6993">#6993</a>)</li>
@@ -339,8 +335,8 @@ a:hover { text-decoration: underline; }
 <h2>🆕 新功能</h2>
 <ul>
   <li><span class="merged-at">[09/08 16:16]</span>支持自定义表情右键管理 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7057">#7057</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6944">#6944</a>) <span class="author">— 王争</span></li>
-  <li><span class="merged-at">[09/08 16:15]</span>图片编辑医美工具新增深圳艺星本店自备点位设计素材 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7090">#7090</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7073">#7073</a>) <span class="author">— 王梓先</span></li>
-  <li><span class="merged-at">[09/08 14:50]</span>艺星医美辅助线接入移动端编辑器 + 可观测性 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7078">#7078</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6892">#6892</a>) <span class="author">— 王梓先</span></li>
+  
+  
   <li><span class="merged-at">[09/08 13:45]</span>移动端图片编辑器，发送前可涂鸦/贴纸/文字/裁剪/马赛克 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7077">#7077</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6892">#6892</a>) <span class="author">— 王梓先</span></li>
   <li><span class="merged-at">[09/08 10:40]</span>相册点图片主体看大图、点圈圈才选中 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7076">#7076</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6892">#6892</a>) <span class="author">— 王梓先</span></li>
   <li><span class="merged-at">[09/08 10:15]</span>新增 Caps Lock 触发的中文输入断流现场追踪与进程注入模块清单上报 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7074">#7074</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7060">#7060</a>) <span class="author">— 张拓</span></li>
@@ -369,7 +365,7 @@ a:hover { text-decoration: underline; }
 <h2>🔧 其他（chore / docs / test / ...）</h2>
 <ul>
   <li><span class="merged-at">[09/07 19:16]</span>docs(e2e): 修正与实现脱节的文档，并说软一条过强归因（#6898 review 遗留） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7056">#7056</a> <span class="author">— 王梓先</span></li>
-  <li><span class="merged-at">[09/07 17:52]</span>test(e2e): 成都艺星预约只读旅程 + 接待关系条件自举 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7054">#7054</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6898">#6898</a>) <span class="author">— 王梓先</span></li>
+  
 </ul>
 
 

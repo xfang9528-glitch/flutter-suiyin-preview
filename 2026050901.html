@@ -41,7 +41,8 @@ a:hover { text-decoration: underline; }
 <label>查看历史预览：</label>
 <select id="version-switcher-select" onchange="var v=this.value; if(v) location.href = v; else location.href = './';">
 <!-- VERSION_SWITCHER_OPTIONS_START -->
-<option value="">📦 2026102701 发版预览</option>
+<option value="">📦 2026102702 发版预览</option>
+<option value="2026102701.html">🗂 2026102701</option>
 <option value="2026102601.html">🗂 2026102601</option>
 <option value="2026102301.html">🗂 2026102301</option>
 <option value="2026102202.html">🗂 2026102202</option>
@@ -289,7 +290,7 @@ a:hover { text-decoration: underline; }
 <h3>🐞 问题修复</h3>
 <ul>
   <li>用户主动退出登录时不再误弹「登录已过期」提示 — 房昕 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1496">#1496</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1473">#1473</a>)</li>
-  <li>艺星 PC 客户右栏加载失败时不再整个面板空白，可点重试恢复显示 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1476">#1476</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1376">#1376</a>)</li>
+  
   <li>修复 Windows 任务栏图标偶发闪烁灭帧问题 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1462">#1462</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1460">#1460</a>)</li>
   <li>编辑话术目录时若分类全清空，现在会给出提示拦截，避免公共话术被静默改归属 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1463">#1463</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1357">#1357</a>)</li>
   <li>二级分组现在整行长按 250ms 即可拖动调整顺序（之前拖动失灵） — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1429">#1429</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1426">#1426</a>)</li>
@@ -320,7 +321,7 @@ a:hover { text-decoration: underline; }
 <h2>🐞 问题修复</h2>
 <ul>
   <li><span class="merged-at">[05/08 22:36]</span>用户主动登出不再误弹「登录已过期」toast <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1496">#1496</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1473">#1473</a>) <span class="author">— 房昕</span></li>
-  <li><span class="merged-at">[05/08 17:42]</span>艺星 PC 右栏失败不再吞整面板 + 重试可恢复 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1476">#1476</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1376">#1376</a>) <span class="author">— 陈聪</span></li>
+  
   <li><span class="merged-at">[05/08 17:19]</span>闪烁灭帧用 30% alpha logo 替代全透明 HICON <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1462">#1462</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1460">#1460</a>) <span class="author">— 王梓先</span></li>
   <li><span class="merged-at">[05/08 16:27]</span>编辑话术目录全空给 toast 拦截 — 防公共话术静默改归属 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1463">#1463</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1357">#1357</a>) <span class="author">— 陈聪</span></li>
   <li><span class="merged-at">[05/08 15:19]</span>mock_auth_user 补 messageReminderBox 消除 batch 日志噪音 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/1457">#1457</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1451">#1451</a>) <span class="author">— 王梓先</span></li>

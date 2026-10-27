@@ -41,7 +41,8 @@ a:hover { text-decoration: underline; }
 <label>查看历史预览：</label>
 <select id="version-switcher-select" onchange="var v=this.value; if(v) location.href = v; else location.href = './';">
 <!-- VERSION_SWITCHER_OPTIONS_START -->
-<option value="">📦 2026102701 发版预览</option>
+<option value="">📦 2026102702 发版预览</option>
+<option value="2026102701.html">🗂 2026102701</option>
 <option value="2026102601.html">🗂 2026102601</option>
 <option value="2026102301.html">🗂 2026102301</option>
 <option value="2026102202.html">🗂 2026102202</option>
@@ -277,21 +278,21 @@ a:hover { text-decoration: underline; }
 <h3>🆕 新功能</h3>
 <ul>
   <li>添加好友时可勾选「立即执行」，跳过约 1 分钟的排队等待，几秒内发起申请（提示：勾选有封号风险） — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2204">#2204</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2165">#2165</a>)</li>
-  <li>艺星投保人面板：编辑「省市区」时如果区域数据没拉到，点击会提示「加载中请稍后」并自动重试，多次失败弹「重试 / 关闭」对话框；之前是死按钮点了完全没反应 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2183">#2183</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1828">#1828</a>)</li>
-  <li>艺星销售：客户发来的图片自动收录到「好友照片」里，不用再手动右键存图 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2160">#2160</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2080">#2080</a>)</li>
+  
+  
   <li>「销售产品」弹窗新增「商城入口」Tab：列出所有店铺的首页小程序卡片，一键发给客户 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2171">#2171</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2164">#2164</a>)</li>
 </ul>
 
 <h3>✨ 体验优化</h3>
 <ul>
-  <li>艺星销售切走其他窗口再回到应用时，「新朋友」页不再每次都从头拉 20 页（导致几秒卡顿），60 秒内只会自动刷新一次，新好友请求仍然实时推送 — 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2040">#2040</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2016">#2016</a>)</li>
+  
   <li>启动遇到待应用的更新时不再「装完自动重启 → 又触发自愈 → 再重启」循环：现在装完直接退出，重新点桌面快捷方式即可进入新版 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2174">#2174</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1994">#1994</a>)</li>
   <li>升级检查更稳：之前在某些版本号格式下会误判，导致提示「有新版本」但实际不需要更新，已修复 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2167">#2167</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1903">#1903</a>)</li>
 </ul>
 
 <h3>🐞 问题修复</h3>
 <ul>
-  <li>艺星群发：切换筛选条件 / 重新搜索 / 重置筛选后，之前勾选的客户会自动清空，不会被串到下一次群发名单里 — 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2200">#2200</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2189">#2189</a>)</li>
+  
   <li>「查看添加记录」入口移到「添加朋友」弹窗顶部，单人设账号也能看到（之前会直接跳到第 2 步搜索用户，入口被跳过） — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2202">#2202</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2153">#2153</a>)</li>
   <li>收到陌生客户消息时主动拉一次客户列表同步，避免出现「消息已收到但本地还没这个客户」导致通知音被静默掉的情况 — 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2194">#2194</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2015">#2015</a>)</li>
   <li>「重置应用数据」现在能彻底清空：之前最后登录企业 / UI 偏好等设置会残留，现在重置后回到全新安装状态 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2186">#2186</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2084">#2084</a>)</li>

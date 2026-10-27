@@ -41,7 +41,8 @@ a:hover { text-decoration: underline; }
 <label>查看历史预览：</label>
 <select id="version-switcher-select" onchange="var v=this.value; if(v) location.href = v; else location.href = './';">
 <!-- VERSION_SWITCHER_OPTIONS_START -->
-<option value="">📦 2026102701 发版预览</option>
+<option value="">📦 2026102702 发版预览</option>
+<option value="2026102701.html">🗂 2026102701</option>
 <option value="2026102601.html">🗂 2026102601</option>
 <option value="2026102301.html">🗂 2026102301</option>
 <option value="2026102202.html">🗂 2026102202</option>
@@ -277,8 +278,8 @@ a:hover { text-decoration: underline; }
 <ul>
   <li>话术库里最末一级的条目前面新增序号，方便按顺序查找、报号 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3720">#3720</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3713">#3713</a>)</li>
   <li>服务通知卡片新增关闭按钮，可手动取消已经弹出的消息提醒 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3700">#3700</a></li>
-  <li>艺星：点「添加话术」时默认进入「公共话术」分类，少切一步 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3710">#3710</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3705">#3705</a>)</li>
-  <li>艺星：通讯录顶部统计栏「好友 N」改为「会话数 N」，更贴合实际含义 — 李建林 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3628">#3628</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3561">#3561</a>)</li>
+  
+  
   <li>回复评论时同时显示被引用的原评论内容，一眼看清在回哪条 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3673">#3673</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3581">#3581</a>)</li>
   <li>电脑端新增录音功能：通话录音自动转成文字记录、AI 分析要点，还能注册声纹识别说话人 — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3679">#3679</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3661">#3661</a>)</li>
   <li>安卓版支持应用内升级：有新版本先在后台下载好再提示更新，也能手动检查更新 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3699">#3699</a></li>
@@ -288,8 +289,8 @@ a:hover { text-decoration: underline; }
 
 <h3>🐞 问题修复</h3>
 <ul>
-  <li>艺星：管理员当前处于下班状态时，状态菜单里也能正常看到并切换「下班」 — 陈聪、张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3703">#3703</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3696">#3696</a>)</li>
-  <li>修复萌爪专家会话里消息一直发不出去（100% 失败）的问题 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3707">#3707</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3672">#3672</a>)</li>
+  
+  
   <li>手机端消息头像下方新增小图标，显示这条消息来自哪个平台，并修复 Mac 平台图标显示错误 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3686">#3686</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3567">#3567</a>)</li>
 </ul>
 
@@ -300,9 +301,9 @@ a:hover { text-decoration: underline; }
 <ul>
   <li><span class="merged-at">[06/23 16:53]</span>话术四级条目增加序列编号 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3720">#3720</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3713">#3713</a>) <span class="author">— 王争</span></li>
   <li><span class="merged-at">[06/23 16:33]</span>服务通知卡片加关闭按钮，可取消已触发的消息提醒 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3700">#3700</a> <span class="author">— 陈聪</span></li>
-  <li><span class="merged-at">[06/23 16:27]</span>艺星「添加话术」默认选公共话术 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3710">#3710</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3705">#3705</a>) <span class="author">— 王争</span></li>
+  
   <li><span class="merged-at">[06/23 15:35]</span>安卓发版脚本（按 ABI 打包 + 上传 OSS + 更新 latest.json） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3714">#3714</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3704">#3704</a>) <span class="author">— 王梓先</span></li>
-  <li><span class="merged-at">[06/23 15:25]</span>通讯录统计栏「好友 N」文案改为「会话数 N」（艺星） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3628">#3628</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3561">#3561</a>) <span class="author">— 李建林</span></li>
+  
   <li><span class="merged-at">[06/23 15:10]</span>回复评论时显示被引用的原评论内容 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3673">#3673</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3581">#3581</a>) <span class="author">— 王争</span></li>
   <li><span class="merged-at">[06/23 14:56]</span>PC 录音文字记录 + AI分析 + 声纹注册 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3679">#3679</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3661">#3661</a>) <span class="author">— 陈宣宇</span></li>
   <li><span class="merged-at">[06/23 14:22]</span>安卓 app 内升级（OSS + 先下载再提示 + 主动检查）(#3629 #3677) <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3699">#3699</a> <span class="author">— 王梓先</span></li>
@@ -314,8 +315,8 @@ a:hover { text-decoration: underline; }
 <h2>🐞 问题修复</h2>
 <ul>
   <li><span class="merged-at">[06/23 16:20]</span>callbackUrl + WebView 导航做网络地址校验（#3626 follow-up） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3701">#3701</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3642">#3642</a>) <span class="author">— 王争</span></li>
-  <li><span class="merged-at">[06/23 16:13]</span>艺星管理员当前 off 时状态菜单露出「下班」 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3703">#3703</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3696">#3696</a>) <span class="author">— 陈聪、张拓</span></li>
-  <li><span class="merged-at">[06/23 15:48]</span>萌爪专家会话发消息 100% 失败 — _resolveTargetCustomer 加 expert 兜底 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3707">#3707</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3672">#3672</a>) <span class="author">— 陈聪</span></li>
+  
+  
   <li><span class="merged-at">[06/23 11:37]</span>mobile 消息气泡头像下方显示发送来源平台图标 + 修 Mac 图标 bug <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3686">#3686</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3567">#3567</a>) <span class="author">— 王争</span></li>
 </ul>
 

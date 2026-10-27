@@ -83,7 +83,8 @@ a:hover { text-decoration: underline; }
 <label>查看历史预览：</label>
 <select id="version-switcher-select" onchange="var v=this.value; if(v) location.href = v; else location.href = './';">
 <!-- VERSION_SWITCHER_OPTIONS_START -->
-<option value="">📦 2026102701 发版预览</option>
+<option value="">📦 2026102702 发版预览</option>
+<option value="2026102701.html">🗂 2026102701</option>
 <option value="2026102601.html">🗂 2026102601</option>
 <option value="2026102301.html">🗂 2026102301</option>
 <option value="2026102202.html">🗂 2026102202</option>
@@ -319,7 +320,7 @@ a:hover { text-decoration: underline; }
 <ul>
   <li>群发和筛选里的企微 / 微信标签多选现在支持一键清除、全选；搜索框里也可以直接擦除关键词，不用重新打开下拉框 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7833">#7833</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7830">#7830</a>)</li>
   <li>客户资料里的「案例介绍相关记录」会把销售介绍和客户浏览记录一起计入父级数量，浏览记录也能同时显示医生和案例条目 — 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7859">#7859</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7849">#7849</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7731">#7731</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7742">#7742</a>)</li>
-  <li>[仅:yestar,yestar-sz,yestar-bj,yestar-gz,yestar-jx,yestar-hz] 艺星销售做归属改派时，第一步结果列表可以直接按微信昵称、好友名称或手机号搜索并勾选目标好友，不用反复翻页查找 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7815">#7815</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7811">#7811</a>)</li>
+  
 </ul>
 <h3>✨ 体验优化</h3>
 <ul>
@@ -339,7 +340,7 @@ a:hover { text-decoration: underline; }
   <li><span class="merged-at">[09/30 14:42]</span>新增聊天输入框与输入法连接断开及按键无响应的卡死观测 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7842">#7842</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7807">#7807</a>) <span class="author">— 张拓</span></li>
   <li><span class="merged-at">[09/30 10:45]</span>标签多选补齐清除、全选与搜索擦除 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7833">#7833</a> <span class="author">— 王争</span></li>
   <li><span class="merged-at">[09/30 10:29]</span>客户浏览记录接入医生条目与混合接口 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7849">#7849</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7742">#7742</a>) <span class="author">— 梁晨</span></li>
-  <li><span class="merged-at">[09/29 17:57]</span>close #7811 艺星归属改派第一步增加结果内搜索 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7815">#7815</a> <span class="author">— 王争</span></li>
+  
 </ul>
 
 <h2>🐞 问题修复</h2>
@@ -362,7 +363,7 @@ a:hover { text-decoration: underline; }
 <ul>
   <li><span class="merged-at">[09/30 15:06]</span>docs: close #7870 建立 Windows 微信当前版视觉决策基线 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7881">#7881</a> <span class="author">— 王争</span></li>
   <li><span class="merged-at">[09/30 15:06]</span>chore(release-notes): 整理更新内容时给出企业归属建议并检查标记启用版本 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7872">#7872</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7812">#7812</a>) <span class="author">— shain</span></li>
-  <li><span class="merged-at">[09/30 14:29]</span>test(appointment_stats): 预约统计 4 条 E2E 旅程测试（艺星深圳，#7727） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7871">#7871</a> <span class="author">— shain</span></li>
+  
   <li><span class="merged-at">[09/30 13:47]</span>docs(design-system): capture Windows WeChat PC visual audit <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7858">#7858</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7848">#7848</a>) <span class="author">— 王争</span></li>
   <li><span class="merged-at">[09/30 13:33]</span>test(e2e): SI-05 删除暂停分支，销售导入公共话术库被拒无条件断言 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7867">#7867</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7397">#7397</a>) <span class="author">— shain</span></li>
   <li><span class="merged-at">[09/30 09:51]</span>修复 Apple 一键发版在 Xcode 27 下的构建问题 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7857">#7857</a> <span class="author">— 王争、陈聪</span></li>

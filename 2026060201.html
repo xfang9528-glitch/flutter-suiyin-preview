@@ -41,7 +41,8 @@ a:hover { text-decoration: underline; }
 <label>查看历史预览：</label>
 <select id="version-switcher-select" onchange="var v=this.value; if(v) location.href = v; else location.href = './';">
 <!-- VERSION_SWITCHER_OPTIONS_START -->
-<option value="">📦 2026102701 发版预览</option>
+<option value="">📦 2026102702 发版预览</option>
+<option value="2026102701.html">🗂 2026102701</option>
 <option value="2026102601.html">🗂 2026102601</option>
 <option value="2026102301.html">🗂 2026102301</option>
 <option value="2026102202.html">🗂 2026102202</option>
@@ -278,10 +279,7 @@ a:hover { text-decoration: underline; }
   <li>手机端通讯录里点某个联系人或群，可以直接发起聊天会话 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2666">#2666</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2644">#2644</a>)</li>
   <li>客户资料里新增「年龄(AI)」一栏，把生日和年龄段合并到一处展示 — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2657">#2657</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2631">#2631</a>)</li>
 </ul>
-<h3>✨ 体验优化</h3>
-<ul>
-  <li>艺星 PC 端导航栏第 5 个位置去掉「我的」、恢复「回访」入口 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2619">#2619</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2618">#2618</a>)</li>
-</ul>
+
 <h3>🐞 问题修复</h3>
 <ul>
   <li>给不在当前会话列表里的客户发消息时，提示「找不到目标会话」发不出去的问题已修复 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2674">#2674</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2650">#2650</a>)</li>
@@ -301,7 +299,7 @@ a:hover { text-decoration: underline; }
 <h2>🐞 问题修复</h2>
 <ul>
   <li><span class="merged-at">[06/02 10:21]</span>发送目标会话解析回落本地 DB，修窗口外客户「找不到目标会话」 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2674">#2674</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2650">#2650</a>) <span class="author">— 王梓先</span></li>
-  <li><span class="merged-at">[06/01 18:35]</span>艺星 PC 导航第 5 位 — 删「我的」+ 恢复「回访」 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2619">#2619</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2618">#2618</a>) <span class="author">— 陈聪</span></li>
+  
   <li><span class="merged-at">[06/01 18:28]</span>PC 端关闭「消息通知声音」开关后新消息仍响 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2643">#2643</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2601">#2601</a>) <span class="author">— 陈聪</span></li>
   <li><span class="merged-at">[06/01 18:24]</span>PC 自己发的语音放不出声 — .m4a 播放前转 wav 喂 MCI <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2658">#2658</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2587">#2587</a>) <span class="author">— 王梓先</span></li>
 </ul>

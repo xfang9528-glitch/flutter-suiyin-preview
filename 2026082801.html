@@ -82,7 +82,8 @@ a:hover { text-decoration: underline; }
 <label>查看历史预览：</label>
 <select id="version-switcher-select" onchange="var v=this.value; if(v) location.href = v; else location.href = './';">
 <!-- VERSION_SWITCHER_OPTIONS_START -->
-<option value="">📦 2026102701 发版预览</option>
+<option value="">📦 2026102702 发版预览</option>
+<option value="2026102701.html">🗂 2026102701</option>
 <option value="2026102601.html">🗂 2026102601</option>
 <option value="2026102301.html">🗂 2026102301</option>
 <option value="2026102202.html">🗂 2026102202</option>
@@ -317,13 +318,13 @@ a:hover { text-decoration: underline; }
 <h3>🐞 问题修复</h3>
 <ul>
   <li>拖动 PC 聊天输入区调整高度时，切换会话或关闭窗口后不会再因为迟到的鼠标事件闪退。— 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6693">#6693</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6606">#6606</a>)</li>
-  <li>在艺星客户详情里打开或关闭客户等级菜单时，连续点击、切换客户或保存失败不会再触发闪退。— 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6708">#6708</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6609">#6609</a>)</li>
+  
   <li>在群里 @ 成员时，发送出去的名字现在优先使用群昵称或微信昵称，不会再把发送手机里私有的旧备注广播给全群。— 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6712">#6712</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6675">#6675</a>)</li>
   <li>在聊天里粘贴或拖入大图片时，窗口不会再被卡住；切换会话、账号或企业后，迟到的粘贴结果也不会误发到当前聊天。— 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6691">#6691</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6634">#6634</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6605">#6605</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6680">#6680</a>)</li>
   <li>安装失败时，弹窗会直接显示安装程序返回的真实原因和日志路径，不再误判成磁盘空间不足。— 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6705">#6705</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6683">#6683</a>)</li>
   <li>朋友圈红点和互动角标遇到临时服务错误时，会保留上一次成功的数字，服务恢复后再自动更新。— 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6687">#6687</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6671">#6671</a>)</li>
   <li>手动把会话标为未读时，会话列表现在显示数字角标；点进会话读完后，数字也会正常消失，不用再手动标为已读。— 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6696">#6696</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6653">#6653</a>)</li>
-  <li>鼠标悬停查看艺星会话列表或通讯录里的长名称时，列表刷新、切换或滚动不会再触发异常；长名称仍可悬停显示完整内容。— 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6699">#6699</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6684">#6684</a>)</li>
+  
   <li>在朋友圈子窗口里添加公众号、视频号或小程序资料时，列表不会再因为企业信息没取到而显示为空；失败时也会给出原因和重试入口。— 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6676">#6676</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6661">#6661</a>)</li>
 </ul>
 
@@ -333,7 +334,7 @@ a:hover { text-decoration: underline; }
 <h2>🆕 新功能</h2>
 <ul>
   <li><span class="merged-at">[08/28 13:38]</span>close #6476 新增主 isolate 冻结旁路探针 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6686">#6686</a> <span class="author">— 王争</span></li>
-  <li><span class="merged-at">[08/27 20:10]</span>艺星 APP 好友信息增加微信昵称与复制入口 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6694">#6694</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6378">#6378</a>) <span class="author">— 王梓先</span></li>
+  
 </ul>
 
 <h2>🐞 问题修复</h2>

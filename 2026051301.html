@@ -41,7 +41,8 @@ a:hover { text-decoration: underline; }
 <label>查看历史预览：</label>
 <select id="version-switcher-select" onchange="var v=this.value; if(v) location.href = v; else location.href = './';">
 <!-- VERSION_SWITCHER_OPTIONS_START -->
-<option value="">📦 2026102701 发版预览</option>
+<option value="">📦 2026102702 发版预览</option>
+<option value="2026102701.html">🗂 2026102701</option>
 <option value="2026102601.html">🗂 2026102601</option>
 <option value="2026102301.html">🗂 2026102301</option>
 <option value="2026102202.html">🗂 2026102202</option>
@@ -273,15 +274,12 @@ a:hover { text-decoration: underline; }
 </div>
 
 <h2>📣 本版用户感知更新</h2>
-<h3>✨ 体验优化</h3>
-<ul>
-  <li>艺星企业客户右侧信息栏按最新设计重排：6 对字段左右对齐；「第一需求(AI) / 第二需求(AI) / 地区(AI) / 医美史(AI)」点击后统一弹历次气泡（与「等级气泡」一致）；删除「最近需求(AI)」字段；「地区」恢复显示城市/区县名称（之前显示一串编号） — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1756">#1756</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1737">#1737</a>)</li>
-</ul>
+
 <h3>🐞 问题修复</h3>
 <ul>
   <li>在 Windows 上打开「投保人」「客户信息编辑」等用到地区选择的入口时界面卡几秒、甚至触发系统红屏的问题已解决（地区数据改为启动时预加载到本地，进入选择器无需再等网络） — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1747">#1747</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1742">#1742</a>)</li>
   <li>不同分辨率 / 字体缩放下多个页面右侧出现的红黄报错条已修复（共 14 处，主要集中在话术筛选区域） — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1739">#1739</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1690">#1690</a>)</li>
-  <li>诚如保险 PC 端点击客户信息中的「投保人」一行无响应已修复，现在能正常打开编辑面板 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1741">#1741</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1732">#1732</a>)</li>
+  
 </ul>
 
 <hr class="ref-divider">

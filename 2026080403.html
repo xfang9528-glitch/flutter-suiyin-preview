@@ -82,7 +82,8 @@ a:hover { text-decoration: underline; }
 <label>查看历史预览：</label>
 <select id="version-switcher-select" onchange="var v=this.value; if(v) location.href = v; else location.href = './';">
 <!-- VERSION_SWITCHER_OPTIONS_START -->
-<option value="">📦 2026102701 发版预览</option>
+<option value="">📦 2026102702 发版预览</option>
+<option value="2026102701.html">🗂 2026102701</option>
 <option value="2026102601.html">🗂 2026102601</option>
 <option value="2026102301.html">🗂 2026102301</option>
 <option value="2026102202.html">🗂 2026102202</option>
@@ -318,13 +319,13 @@ a:hover { text-decoration: underline; }
 <ul>
   <li>独立聊天窗口如果失联，会明确提示并阻止继续误操作；点击重新打开可恢复同一会话窗口，未发送草稿也会保留 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5671">#5671</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5640">#5640</a>)</li>
   <li>支持将聊天拖出列表、快速双击会话，或从右键菜单打开独立窗口，可同时并排处理多个客户，减少反复切换会话 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5492">#5492</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5391">#5391</a>)</li>
-  <li>「我发布的朋友圈」增加左侧渠道分类 / 人设筛选侧栏，艺星销售可以按账号查看自己发布过的朋友圈 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5654">#5654</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5641">#5641</a>)</li>
+  
   <li>AI 回复浮层现在可以直接编辑草稿并按短句连续发送；推荐话术会发送正文而不是内部标题，聊天记录里也能看出哪句话用了 AI 辅助 — 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5663">#5663</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5497">#5497</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4940">#4940</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4944">#4944</a>)</li>
 </ul>
 
 <h3>🐞 问题修复</h3>
 <ul>
-  <li>深圳艺星使用独立聊天窗口时，右侧客户信息栏不再一直转圈，客户资料、照片、AI 画像、预约和标签可以正常查看 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5688">#5688</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5685">#5685</a>)</li>
+  
   <li>切换企业后，已打开的客户资料、接待记录、转交和选人弹窗会立即切到新企业内容，不再残留上一企业的字段、主题或策略 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5661">#5661</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5592">#5592</a>)</li>
   <li>添加好友选择人设时，偶发误提示「暂无可用人设」会自动恢复授权人设列表，不用再重启客户端 — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5658">#5658</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5656">#5656</a>)</li>
 </ul>
@@ -343,7 +344,7 @@ a:hover { text-decoration: underline; }
 
 <h2>🐞 问题修复</h2>
 <ul>
-  <li><span class="merged-at">[08/04 16:25]</span>修复独立聊天窗口艺星客户信息栏因登录态守卫永久转圈 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5688">#5688</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5685">#5685</a>) <span class="author">— 王争</span></li>
+  
   <li><span class="merged-at">[08/04 15:37]</span>post_merge_sync 先 fetch 再判脏、untracked 不再误触发 enforce reset（主仓库不会再停在陈旧 commit 上却报同步成功） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5684">#5684</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5677">#5677</a>) <span class="author">— 张拓</span></li>
   <li><span class="merged-at">[08/04 12:04]</span>切企业后客户资料和共享弹窗不再显示上一企业内容 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5661">#5661</a> <span class="author">— 陈聪</span></li>
   <li><span class="merged-at">[08/04 11:44]</span>添加好友选人设在 saleProfile 未加载时自愈重拉授权人设（销售遇「暂无可用人设」不再需重启客户端） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/5658">#5658</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/5656">#5656</a>) <span class="author">— 陈宣宇</span></li>

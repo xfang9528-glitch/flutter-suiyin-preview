@@ -83,7 +83,8 @@ a:hover { text-decoration: underline; }
 <label>查看历史预览：</label>
 <select id="version-switcher-select" onchange="var v=this.value; if(v) location.href = v; else location.href = './';">
 <!-- VERSION_SWITCHER_OPTIONS_START -->
-<option value="">📦 2026102701 发版预览</option>
+<option value="">📦 2026102702 发版预览</option>
+<option value="2026102701.html">🗂 2026102701</option>
 <option value="2026102601.html">🗂 2026102601</option>
 <option value="2026102301.html">🗂 2026102301</option>
 <option value="2026102202.html">🗂 2026102202</option>
@@ -317,7 +318,7 @@ a:hover { text-decoration: underline; }
 <h2>📣 本版用户感知更新</h2>
 <h3>🆕 新功能</h3>
 <ul>
-  <li>成都艺星管理员可以在 PC 群发页维护模板分类和图文、视频、语音等群发模板，销售创建群发任务时可以直接套用模板内容。 — 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7646">#7646</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7593">#7593</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7634">#7634</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7427">#7427</a>)</li>
+  
   <li>销售可以从 PC 设置、客户录音面板和聊天更多菜单进入录音设备工作区，把面诊录音导入当前客户并在失败后继续原任务。 — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7621">#7621</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7583">#7583</a>)</li>
 </ul>
 <h3>✨ 体验优化</h3>
@@ -328,7 +329,7 @@ a:hover { text-decoration: underline; }
 <h3>🐞 问题修复</h3>
 <ul>
   <li>图片预览子窗口里用画笔编辑时，快速关闭或切换工具不再因为晚到的手势事件导致窗口报错或崩溃。 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7636">#7636</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7629">#7629</a>)</li>
-  <li>深圳、北京、广州、嘉兴、杭州艺星在 PC 新建预约时，会优先使用客户资料里的群发称谓，避免预约姓名误回退成微信昵称或备注名。 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7635">#7635</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7612">#7612</a>)</li>
+  
   <li>服务号、微信团队等通知账号有未读消息时，PC 会话列表现在会正常显示数字角标和小红点，减少销售漏看新消息。 — shain <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7642">#7642</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7452">#7452</a>)</li>
   <li>PC 更新安装失败时会弹出原因说明和“手动更新”入口，连续失败后会提示联系 IT 处理安全软件拦截，不再只让销售反复点击重启。 — shain <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7619">#7619</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7385">#7385</a>)</li>
 </ul>
@@ -348,7 +349,7 @@ a:hover { text-decoration: underline; }
 <ul>
   <li><span class="merged-at">[09/22 16:28]</span>close #7608 修复 ObjectBox 离线恢复测试模块加载 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7638">#7638</a> <span class="author">— 陈聪</span></li>
   <li><span class="merged-at">[09/22 15:58]</span>close #7629 修复图片画笔晚到事件崩溃 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7636">#7636</a> <span class="author">— 王争</span></li>
-  <li><span class="merged-at">[09/22 15:45]</span>close #7612 非成都艺星预约姓名使用群发称谓 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7635">#7635</a> <span class="author">— 陈聪</span></li>
+  
   <li><span class="merged-at">[09/22 14:58]</span>会话列表通知账号未读角标恢复显示，三皮肤统一口径 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7642">#7642</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7452">#7452</a>) <span class="author">— shain</span></li>
   <li><span class="merged-at">[09/22 14:09]</span>权限边界用例结束后还原被抢占的 fixture 接待关系 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7639">#7639</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7611">#7611</a>) <span class="author">— shain</span></li>
   <li><span class="merged-at">[09/22 09:46]</span>安装失败改弹说明窗并给手动更新入口，连续失败换指引 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7619">#7619</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7385">#7385</a>) <span class="author">— shain</span></li>

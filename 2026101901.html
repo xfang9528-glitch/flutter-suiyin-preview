@@ -83,7 +83,8 @@ a:hover { text-decoration: underline; }
 <label>查看历史预览：</label>
 <select id="version-switcher-select" onchange="var v=this.value; if(v) location.href = v; else location.href = './';">
 <!-- VERSION_SWITCHER_OPTIONS_START -->
-<option value="">📦 2026102701 发版预览</option>
+<option value="">📦 2026102702 发版预览</option>
+<option value="2026102701.html">🗂 2026102701</option>
 <option value="2026102601.html">🗂 2026102601</option>
 <option value="2026102301.html">🗂 2026102301</option>
 <option value="2026102202.html">🗂 2026102202</option>
@@ -328,7 +329,7 @@ a:hover { text-decoration: underline; }
 <h3>🐞 问题修复</h3>
 <ul>
   <li>查看聊天中引用的图片时，高清图加载失败会保留缩略图并可直接重试，不必重新打开消息 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8260">#8260</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/8256">#8256</a>)</li>
-  <li>艺星管理角色的 PC 未读角标会正确只统计自己正在接待的聊天，不再显示异常数量 — 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8213">#8213</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/8149">#8149</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/8199">#8199</a>)</li>
+  
   <li>独立聊天窗口缩小时，话术预览的末段和「填入」按钮仍可完整查看；拖动滚动条底端也不会误把窗口缩放 — 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8272">#8272</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/8038">#8038</a>)</li>
 </ul>
 

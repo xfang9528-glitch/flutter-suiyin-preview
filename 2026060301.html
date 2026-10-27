@@ -41,7 +41,8 @@ a:hover { text-decoration: underline; }
 <label>查看历史预览：</label>
 <select id="version-switcher-select" onchange="var v=this.value; if(v) location.href = v; else location.href = './';">
 <!-- VERSION_SWITCHER_OPTIONS_START -->
-<option value="">📦 2026102701 发版预览</option>
+<option value="">📦 2026102702 发版预览</option>
+<option value="2026102701.html">🗂 2026102701</option>
 <option value="2026102601.html">🗂 2026102601</option>
 <option value="2026102301.html">🗂 2026102301</option>
 <option value="2026102202.html">🗂 2026102202</option>
@@ -280,8 +281,8 @@ a:hover { text-decoration: underline; }
   <li>手机上能刷朋友圈了：动态以信息流展示，点进去可看详情 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2708">#2708</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2689">#2689</a>)</li>
   <li>聊天时可以从「资料库」里直接挑选内容发给客户 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2701">#2701</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2695">#2695</a>)</li>
   <li>现在能正常收到并查看微信「团队通知」类消息 — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2704">#2704</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2687">#2687</a>)</li>
-  <li>艺星：手机端聊天和通讯录支持漏斗筛选 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2720">#2720</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2585">#2585</a>)</li>
-  <li>艺星：PC 端漏斗筛选全量对齐原型 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2709">#2709</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2670">#2670</a>)</li>
+  
+  
 </ul>
 
 <h3>✨ 体验优化</h3>
@@ -306,11 +307,11 @@ a:hover { text-decoration: underline; }
 <ul>
   <li><span class="merged-at">[06/03 13:34]</span>补齐发布朋友圈「公众号/视频号/小程序」链接资源 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2723">#2723</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2698">#2698</a>) <span class="author">— 王争</span></li>
   <li><span class="merged-at">[06/03 13:29]</span>移动端看图 + 转发面板对齐设计图（#2724 #2725） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2705">#2705</a> <span class="author">— 陈聪</span></li>
-  <li><span class="merged-at">[06/03 10:55]</span>艺星移动端聊天+通讯录漏斗筛选 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2720">#2720</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2585">#2585</a>) <span class="author">— 王梓先</span></li>
+  
   <li><span class="merged-at">[06/03 10:35]</span>移动端发布朋友圈（图文/视频）+ 共享 provider 编辑能力 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2702">#2702</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2690">#2690</a>) <span class="author">— 王争</span></li>
   <li><span class="merged-at">[06/02 20:06]</span>聊天「资料库」选择器 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2701">#2701</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2695">#2695</a>) <span class="author">— 王争</span></li>
   <li><span class="merged-at">[06/02 18:51]</span>朋友圈 Feed 流 + 详情页（移动端） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2708">#2708</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2689">#2689</a>) <span class="author">— 王争</span></li>
-  <li><span class="merged-at">[06/02 18:26]</span>艺星 PC 漏斗筛选全量对齐原型 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2709">#2709</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2670">#2670</a>) <span class="author">— 王梓先</span></li>
+  
   <li><span class="merged-at">[06/02 18:26]</span>发布朋友圈通用「选择内容」组件（#2697） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2700">#2700</a> <span class="author">— 王争</span></li>
   <li><span class="merged-at">[06/02 17:40]</span>适配微信团队通知消息类型 weixinTeamNotification <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2704">#2704</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2687">#2687</a>) <span class="author">— 陈宣宇</span></li>
   <li><span class="merged-at">[06/02 17:26]</span>HEVC → H.264 真转码 fallback + Store 跳转空挂兜底 (B-1) <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2694">#2694</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2514">#2514</a>) <span class="author">— 陈聪</span></li>

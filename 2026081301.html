@@ -82,7 +82,8 @@ a:hover { text-decoration: underline; }
 <label>查看历史预览：</label>
 <select id="version-switcher-select" onchange="var v=this.value; if(v) location.href = v; else location.href = './';">
 <!-- VERSION_SWITCHER_OPTIONS_START -->
-<option value="">📦 2026102701 发版预览</option>
+<option value="">📦 2026102702 发版预览</option>
+<option value="2026102701.html">🗂 2026102701</option>
 <option value="2026102601.html">🗂 2026102601</option>
 <option value="2026102301.html">🗂 2026102301</option>
 <option value="2026102202.html">🗂 2026102202</option>
@@ -330,7 +331,7 @@ a:hover { text-decoration: underline; }
 <h3>🐞 问题修复</h3>
 <ul>
   <li>从通讯录里对群发起聊天后，群会留在正确的会话分类里，输入框里也能正常 @ 群成员。— 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6146">#6146</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6088">#6088</a>)</li>
-  <li>艺星客户资料页和群成员资料卡的三个点菜单现在能稳定点开，名片好友选择器的搜索、禁用原因和底部按钮也不会在小窗口里挤出边界。— 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6145">#6145</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6112">#6112</a>)</li>
+  
   <li>连续快速打开 PDF 或视频预览时，子窗口会确认最新内容已加载后再结束切换，不再偶发停在上一份文件。— 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6142">#6142</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6136">#6136</a>)</li>
   <li>自己撤回的文本消息仍可右键复制，方便找回刚撤回的内容。— 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6125">#6125</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6099">#6099</a>)</li>
   <li>选择数据存储位置时，映射网络盘会直接提示“不支持网络位置”，避免把数据放到不稳定的网络盘。— 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6115">#6115</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6026">#6026</a>)</li>
@@ -349,7 +350,7 @@ a:hover { text-decoration: underline; }
 <h2>🐞 问题修复</h2>
 <ul>
   <li><span class="merged-at">[08/13 17:10]</span>发起群聊后群不进列表、@ 不到人 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6146">#6146</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6088">#6088</a>) <span class="author">— 王梓先</span></li>
-  <li><span class="merged-at">[08/13 16:31]</span>修复艺星三点菜单与名片选择器 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6145">#6145</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6112">#6112</a>) <span class="author">— 陈宣宇</span></li>
+  
   <li><span class="merged-at">[08/13 16:05]</span>close #6136 校验预览子窗口业务 ACK <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6142">#6142</a> <span class="author">— 王争</span></li>
   <li><span class="merged-at">[08/13 14:30]</span>unify business subwindow enterprise themes <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6117">#6117</a> <span class="author">— 王争</span></li>
   <li><span class="merged-at">[08/13 14:10]</span>存储位置试写校验拒绝映射网络盘（选择映射盘时直接提示不支持网络位置） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/6115">#6115</a> <span class="author">— 王梓先</span></li>

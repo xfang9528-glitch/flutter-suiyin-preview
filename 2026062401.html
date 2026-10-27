@@ -41,7 +41,8 @@ a:hover { text-decoration: underline; }
 <label>查看历史预览：</label>
 <select id="version-switcher-select" onchange="var v=this.value; if(v) location.href = v; else location.href = './';">
 <!-- VERSION_SWITCHER_OPTIONS_START -->
-<option value="">📦 2026102701 发版预览</option>
+<option value="">📦 2026102702 发版预览</option>
+<option value="2026102701.html">🗂 2026102701</option>
 <option value="2026102601.html">🗂 2026102601</option>
 <option value="2026102301.html">🗂 2026102301</option>
 <option value="2026102202.html">🗂 2026102202</option>
@@ -309,13 +310,13 @@ a:hover { text-decoration: underline; }
   <li><span class="merged-at">[06/24 15:16]</span>修复 main 上 10 条 widget 测试回归 + cached_image flaky <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3777">#3777</a> <span class="author">— 陈宣宇</span></li>
   <li><span class="merged-at">[06/24 14:35]</span>上传录音时长「—」—— ffmpeg 兜底探任意格式时长 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3763">#3763</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3661">#3661</a>) <span class="author">— 陈宣宇</span></li>
   <li><span class="merged-at">[06/24 14:07]</span>SDK String 端点改返 BaseResponse&lt;String&gt; 保住 code <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3754">#3754</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3529">#3529</a>) <span class="author">— 陈聪</span></li>
-  <li><span class="merged-at">[06/24 13:58]</span>「销售统计」入口接通——非萌爪点了不再无反应 + 占位空态 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3751">#3751</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2953">#2953</a>) <span class="author">— 陈聪</span></li>
+  
   <li><span class="merged-at">[06/24 13:36]</span>转写时间戳按毫秒折算 + 说话人不猜销售 + 录音可拖动暂停 + 打开即轮询 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3748">#3748</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3661">#3661</a>) <span class="author">— 陈宣宇</span></li>
   <li><span class="merged-at">[06/24 13:36]</span>手机微信消息气泡显示微信来源标识与 Logo 头像 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3735">#3735</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3717">#3717</a>) <span class="author">— 王争</span></li>
   <li><span class="merged-at">[06/24 11:44]</span>删除去抖取代失效的 recent_assign 锚点，friend+group 通吃 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3744">#3744</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3645">#3645</a>) <span class="author">— 王梓先</span></li>
   <li><span class="merged-at">[06/24 11:33]</span>聊天多选添加话术时微信图文海报图片下载失败 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3740">#3740</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3698">#3698</a>) <span class="author">— 王争</span></li>
   <li><span class="merged-at">[06/24 10:42]</span>话术四级分类 header 折叠态显示总数徽章 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3737">#3737</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3736">#3736</a>) <span class="author">— 王争</span></li>
-  <li><span class="merged-at">[06/24 07:30]</span>移动端艺星管理员值班菜单多「上班」缺「下班」 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3725">#3725</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3718">#3718</a>) <span class="author">— 陈聪</span></li>
+  
   <li><span class="merged-at">[06/23 18:07]</span>自己发送失败的消息错误渲染在左侧 — 失败态恒为本端自发，统一靠右 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3729">#3729</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3620">#3620</a>) <span class="author">— 王梓先</span></li>
   <li><span class="merged-at">[06/23 18:03]</span>再入客户信息面板自动拉最新，修 keepAlive 缓存导致的数据不一致 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3727">#3727</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3674">#3674</a>) <span class="author">— 陈聪</span></li>
 </ul>
@@ -329,7 +330,7 @@ a:hover { text-decoration: underline; }
 <ul>
   <li><span class="merged-at">[06/24 09:53]</span>chore(tooling #3709): setState 棘轮 840→835 收口 + 跨feature 198→196 锁存 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3732">#3732</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3709">#3709</a>) <span class="author">— 陈聪</span></li>
   <li><span class="merged-at">[06/23 18:03]</span>test(#1606): MaterialApp 测试包装补 NoSplash，修全量 gate 红 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3706">#3706</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/1606">#1606</a>) <span class="author">— 陈聪</span></li>
-  <li><span class="merged-at">[06/23 17:42]</span>diag(chat #3634): 艺星 customer_miss 主因定位脚本（结论=后端漂移 suiyin-go#1878） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/3726">#3726</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/3634">#3634</a>) <span class="author">— 王梓先</span></li>
+  
 </ul>
 
 

@@ -41,7 +41,8 @@ a:hover { text-decoration: underline; }
 <label>查看历史预览：</label>
 <select id="version-switcher-select" onchange="var v=this.value; if(v) location.href = v; else location.href = './';">
 <!-- VERSION_SWITCHER_OPTIONS_START -->
-<option value="">📦 2026102701 发版预览</option>
+<option value="">📦 2026102702 发版预览</option>
+<option value="2026102701.html">🗂 2026102701</option>
 <option value="2026102601.html">🗂 2026102601</option>
 <option value="2026102301.html">🗂 2026102301</option>
 <option value="2026102202.html">🗂 2026102202</option>
@@ -277,7 +278,7 @@ a:hover { text-decoration: underline; }
 <ul>
   <li>手机端新增「朋友圈」：可以查看客户发的朋友圈、管理自己发布的内容（查看详情、删除），还能收到点赞和评论的互动提醒，跟微信朋友圈体验一致 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2728">#2728</a>、<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2729">#2729</a>、<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2745">#2745</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2693">#2693</a>、<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2692">#2692</a>、<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2691">#2691</a>)</li>
   <li>手机端通讯录页面改版，按企业分组展示，找人更清晰 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2741">#2741</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2726">#2726</a>)</li>
-  <li>艺星：客户列表新增「到访状态」标签和快捷筛选，并新增「新的朋友」入口 — 陈聪 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2782">#2782</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2736">#2736</a>、<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2737">#2737</a>、<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2738">#2738</a>)</li>
+  
 </ul>
 <h3>✨ 体验优化</h3>
 <ul>
@@ -287,7 +288,7 @@ a:hover { text-decoration: underline; }
 <ul>
   <li>合并转发的图片现在能保持原始尺寸，不再被拉伸变形 — 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2774">#2774</a></li>
   <li>公众号文章卡片现在显示正确的标题，移动端消息详情页也能正常显示公众号卡片 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2751">#2751</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2734">#2734</a>)</li>
-  <li>艺星：选人弹窗搜索时如果网络中断，现在会自动重试，不用手动重新操作 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2743">#2743</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2731">#2731</a>)</li>
+  
 </ul>
 
 <hr class="ref-divider">
@@ -295,7 +296,7 @@ a:hover { text-decoration: underline; }
 <div class="ref-hint">06/03 13:50 上次发版后，合入 main 的全部 <strong>18</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
-  <li><span class="merged-at">[06/04 10:25]</span>艺星图一三件套 — 到访状态标签 + 快捷筛选 chip + 新的朋友入口 (#2736 #2737 #2738) <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2782">#2782</a> <span class="author">— 陈聪</span></li>
+  
   <li><span class="merged-at">[06/03 17:55]</span>互动消息（移动端） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2745">#2745</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2691">#2691</a>) <span class="author">— 王争</span></li>
   <li><span class="merged-at">[06/03 17:01]</span>备注/昵称编辑双击进入不再全选，降低误删 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2749">#2749</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2685">#2685</a>) <span class="author">— 王梓先</span></li>
   <li><span class="merged-at">[06/03 15:15]</span>手机端通讯录页按企业分岛对齐设计稿 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2741">#2741</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2726">#2726</a>) <span class="author">— 陈聪</span></li>
@@ -308,7 +309,7 @@ a:hover { text-decoration: underline; }
   <li><span class="merged-at">[06/03 23:52]</span>cancel allocation fetch on timeout <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2776">#2776</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2715">#2715</a>) <span class="author">— 张拓</span></li>
   <li><span class="merged-at">[06/03 22:56]</span>preserve image dimensions in merger forwarding <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2774">#2774</a> <span class="author">— 张拓</span></li>
   <li><span class="merged-at">[06/03 18:06]</span>公众号卡片标题用 mediaTitle + 销售名称跨 isolate reload + 移动端详情页补公众号卡片 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2751">#2751</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2734">#2734</a>) <span class="author">— 王争</span></li>
-  <li><span class="merged-at">[06/03 15:30]</span>艺星选人弹窗 Step1 search-list 连接中断自动重试 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2743">#2743</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2731">#2731</a>) <span class="author">— 王争</span></li>
+  
   <li><span class="merged-at">[06/03 15:04]</span>bash 3.2 多字节字符变量插值崩溃 → 自动 exec Homebrew bash ≥ 4 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/2739">#2739</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/2718">#2718</a>) <span class="author">— 王争</span></li>
 </ul>
 

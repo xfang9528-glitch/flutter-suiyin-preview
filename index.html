@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <!-- CURRENT_BUILD:2026102701 -->
-<!-- PREVIEW_GENERATED_AT:2026-10-27T15:01:50.394147Z -->
+<!-- PREVIEW_GENERATED_AT:2026-10-28T09:10:46.923070Z -->
 <title>下一版发版预览 · flutter-suiyin</title>
 <style>
 :root {
@@ -83,7 +83,7 @@ a:hover { text-decoration: underline; }
 <label>查看历史预览：</label>
 <select id="version-switcher-select" onchange="var v=this.value; if(v) location.href = v; else location.href = './';">
 <!-- VERSION_SWITCHER_OPTIONS_START -->
-<option value="">📦 2026102702 发版预览</option>
+<option value="">📦 2026102801 发版预览</option>
 <option value="2026102701.html">🗂 2026102701</option>
 <option value="2026102601.html">🗂 2026102601</option>
 <option value="2026102301.html">🗂 2026102301</option>
@@ -295,10 +295,10 @@ a:hover { text-decoration: underline; }
 <!-- VERSION_SWITCHER_OPTIONS_END -->
 </select>
 </div>
-<h1>📦 2026102702 发版预览</h1>
+<h1>📦 2026102801 发版预览</h1>
 <div class="meta">
-当前版本：<code>2026102701</code>（发版时间：<span class="bump-time">10/27 16:09</span>），下一版（预览）：<code>2026102702</code><br>
-生成时间：<time id="preview-generated-at" datetime="2026-10-27T15:01:50.394147Z">2026-10-27 23:01:50</time> · 内容重新生成时更新，发布不会改写
+当前版本：<code>2026102701</code>（发版时间：<span class="bump-time">10/27 16:09</span>），下一版（预览）：<code>2026102801</code><br>
+生成时间：<time id="preview-generated-at" datetime="2026-10-28T09:10:46.923070Z">2026-10-28 17:10:46</time> · 内容重新生成时更新，发布不会改写
 </div>
 <script>
 // 让下拉的当前选中态跟着当前页走：在归档页（如 2026042901.html）里，自动选中 `🗂 2026042901`
@@ -316,21 +316,46 @@ a:hover { text-decoration: underline; }
 </script>
 
 <h2>📣 本版用户感知更新</h2>
+<h3>🆕 新功能</h3>
+<ul>
+  <li>[仅:yestar-sz,yestar-gz,yestar-jx,yestar-hz,huamei-xian,aoli-xian] 同一位顾客现在可分别为本人和他人创建预约，并发送各自的预约卡，不会改动顾客原有资料 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8627">#8627</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/8562">#8562</a>)</li>
+</ul>
 <h3>🐞 问题修复</h3>
 <ul>
+  <li>客户资料暂时加载失败时，会保留已看到的内容，并提供中文原因和重试入口；恢复后可继续查看最新资料 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8684">#8684</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/8621">#8621</a>)</li>
+  <li>从 PC 发送案例小程序时，卡片会保留独立图标，方便对方辨认内容来源 — 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8683">#8683</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/8634">#8634</a>)</li>
+  <li>图片、视频、语音或文件上传失败时，现在会按内容类型说明原因，方便判断后再试 — 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8667">#8667</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/8195">#8195</a>)</li>
+  <li>点开视频号卡片不再跳到「请升级微信」页面；需要在微信打开时会提示并复制链接 — 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8666">#8666</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7182">#7182</a>)</li>
+  <li>聊天输入框的右键菜单或文本选区已失效时会安全取消操作，不会误删、改写当前内容或报错 — 陈聪、张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8402">#8402</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/8255">#8255</a> <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/8249">#8249</a> <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/8378">#8378</a>)</li>
   <li>PC 端变声器开关现在会清楚说明用途，使用读屏功能时也能准确辨识和操作 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8605">#8605</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/8335">#8335</a>)</li>
+  <li>录音接管或上传被打断后，现在可继续核对原任务、恢复保存，并保留原客户和录音归属 — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8575">#8575</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/8572">#8572</a>)</li>
 </ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">10/27 16:09 上次发版后，合入 main 的全部 <strong>6</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">10/27 16:09 上次发版后，合入 main 的全部 <strong>27</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
-  <li class="empty">无</li>
+  <li><span class="merged-at">[10/28 16:31]</span>close #8634 案例小程序独立图标透传 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8683">#8683</a> <span class="author">— 梁晨</span></li>
+  <li><span class="merged-at">[10/28 13:05]</span>close #8562 医美预约卡片支持勾选帮人预约 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8627">#8627</a> <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[10/28 12:10]</span>close #8650 手机录音按客户归集与未入碎银客户复用 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8656">#8656</a> <span class="author">— 陈宣宇</span></li>
+  <li><span class="merged-at">[10/28 11:04]</span>close #8364 手机预约卡按当前人设接待归属限制发送 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8379">#8379</a> <span class="author">— 陈聪、张拓</span></li>
 </ul>
 
 <h2>🐞 问题修复</h2>
 <ul>
+  <li><span class="merged-at">[10/28 17:05]</span>close #8621 客户资料读取失败后保留数据并支持恢复 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8684">#8684</a> <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[10/28 16:43]</span>修复客户筛选、销售模糊搜索和录音界面 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8690">#8690</a> <span class="author">— 陈宣宇</span></li>
+  <li><span class="merged-at">[10/28 13:59]</span>按媒体类型提示 6008 上传失败，补诊断与默认关闭的自动重试 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8667">#8667</a> <span class="author">— 张拓</span></li>
+  <li><span class="merged-at">[10/28 12:50]</span>视频号卡片改交微信打开并提示复制链接（销售点视频号卡片不再跳到「请升级微信」页） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8666">#8666</a> <span class="author">— 张拓</span></li>
+  <li><span class="merged-at">[10/28 12:24]</span>修复选区与旧菜单回调失效（#8255 #8249 #8378） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8402">#8402</a> <span class="author">— 陈聪、张拓</span></li>
+  <li><span class="merged-at">[10/28 11:03]</span>修复测试接缝、P3 证据筛选、setState 别名计数及 PR 新鲜度检查（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8668">#8668</a> <span class="author">— 张拓</span></li>
+  <li><span class="merged-at">[10/28 10:39]</span>客户电话保存与回读日志脱敏 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8603">#8603</a> <span class="author">— 张拓</span></li>
+  <li><span class="merged-at">[10/28 09:59]</span>补齐 Android 解码初始化失败诊断并同步主题审计夹具（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7750">#7750</a> <span class="author">— 陈聪、张拓</span></li>
+  <li><span class="merged-at">[10/28 09:25]</span>close #7505 首次全量基线未完成时禁止增量 checkpoint <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/7609">#7609</a> <span class="author">— 陈聪、张拓</span></li>
+  <li><span class="merged-at">[10/28 02:20]</span>修复旧 PDM 保存后的快照补查（销售保存后可直接发送预约卡） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8660">#8660</a> <span class="author">— 张拓</span></li>
+  <li><span class="merged-at">[10/28 01:49]</span>增补发版说明客户名单并避免诚如日常措辞误删（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8652">#8652</a> <span class="author">— 张拓</span></li>
+  <li><span class="merged-at">[10/28 01:15]</span>消除客户备注复制按钮重复主题审计登记（AC-8209 转绿） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8658">#8658</a> <span class="author">— 张拓</span></li>
   <li><span class="merged-at">[10/27 22:51]</span>精确绑定历史顺序字面调用 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8649">#8649</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/8648">#8648</a>) <span class="author">— shain</span></li>
   <li><span class="merged-at">[10/27 19:58]</span>发版更新说明整条过滤含客户名的内容 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8645">#8645</a> <span class="author">— 张拓</span></li>
   <li><span class="merged-at">[10/27 18:22]</span>close #8335 修复 PC 变声器开关的读屏用途标签 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8605">#8605</a> <span class="author">— 王争</span></li>
@@ -344,6 +369,11 @@ a:hover { text-decoration: underline; }
 
 <h2>🔧 其他（chore / docs / test / ...）</h2>
 <ul>
+  <li><span class="merged-at">[10/28 15:26]</span>test(pc): 补齐未读旅程前台绘帧并修复升级弹窗跨平台测试（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8628">#8628</a> <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[10/28 14:59]</span>test(e2e/macOS): 修复旅程前置并补齐原生验收证据（#8625） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8631">#8631</a> <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[10/28 10:20]</span>test(e2e): 修复群聊只读旅程折叠置顶行定位（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8663">#8663</a> <span class="author">— 张拓</span></li>
+  <li><span class="merged-at">[10/28 09:32]</span>test: 修复 #8505 与 #8584 两处测试等待竞态（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8662">#8662</a> <span class="author">— 张拓</span></li>
+  <li><span class="merged-at">[10/28 02:05]</span>test(tool): 真宿主与 Dart CLI 用例进入串行批次（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8659">#8659</a> <span class="author">— 张拓</span></li>
   <li><span class="merged-at">[10/27 21:41]</span>test(upgrade/pc): 手动更新弹窗加 Windows 判定注入口并并入主题审计归属 (#8602 #8598)（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8646">#8646</a> <span class="author">— 张拓</span></li>
   <li><span class="merged-at">[10/27 20:55]</span>ci: add reviewed tool-scoped evidence contract <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8644">#8644</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/8643">#8643</a>) <span class="author">— shain</span></li>
 </ul>

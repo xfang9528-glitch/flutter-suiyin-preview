@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <!-- CURRENT_BUILD:2026103001 -->
-<!-- PREVIEW_GENERATED_AT:2026-10-30T15:09:38.886812Z -->
+<!-- PREVIEW_GENERATED_AT:2026-10-31T08:25:34.150160Z -->
 <title>下一版发版预览 · flutter-suiyin</title>
 <style>
 :root {
@@ -83,7 +83,7 @@ a:hover { text-decoration: underline; }
 <label>查看历史预览：</label>
 <select id="version-switcher-select" onchange="var v=this.value; if(v) location.href = v; else location.href = './';">
 <!-- VERSION_SWITCHER_OPTIONS_START -->
-<option value="">📦 2026103002 发版预览</option>
+<option value="">📦 2026103101 发版预览</option>
 <option value="2026103001.html">🗂 2026103001</option>
 <option value="2026102901.html">🗂 2026102901</option>
 <option value="2026102801.html">🗂 2026102801</option>
@@ -298,10 +298,10 @@ a:hover { text-decoration: underline; }
 <!-- VERSION_SWITCHER_OPTIONS_END -->
 </select>
 </div>
-<h1>📦 2026103002 发版预览</h1>
+<h1>📦 2026103101 发版预览</h1>
 <div class="meta">
-当前版本：<code>2026103001</code>（发版时间：<span class="bump-time">10/30 16:03</span>），下一版（预览）：<code>2026103002</code><br>
-生成时间：<time id="preview-generated-at" datetime="2026-10-30T15:09:38.886812Z">2026-10-30 23:09:38</time> · 内容重新生成时更新，发布不会改写
+当前版本：<code>2026103001</code>（发版时间：<span class="bump-time">10/30 16:03</span>），下一版（预览）：<code>2026103101</code><br>
+生成时间：<time id="preview-generated-at" datetime="2026-10-31T08:25:34.150160Z">2026-10-31 16:25:34</time> · 内容重新生成时更新，发布不会改写
 </div>
 <script>
 // 让下拉的当前选中态跟着当前页走：在归档页（如 2026042901.html）里，自动选中 `🗂 2026042901`
@@ -321,6 +321,8 @@ a:hover { text-decoration: underline; }
 <h2>📣 本版用户感知更新</h2>
 <h3>🐞 问题修复</h3>
 <ul>
+  <li>删除多账号朋友圈时，销售只删除自己账号上的发布，并能看到删除受理状态和失败原因 — 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8747">#8747</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/4914">#4914</a>)</li>
+  <li>修复权限加载较慢时，朋友圈误显示为空列表的问题 — 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8783">#8783</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/8752">#8752</a>)</li>
   <li>咨询操作因权限不足被拒绝时，显示具体原因，便于了解为何无法继续 — 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8777">#8777</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/8762">#8762</a>)</li>
   <li>修复聊天历史刷新和切换时的异常 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8739">#8739</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/8730">#8730</a>)</li>
   <li>Windows 退到后台再返回时，中文输入不再重复插入拼音，并保留草稿和光标位置 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8733">#8733</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/8618">#8618</a>)</li>
@@ -328,14 +330,21 @@ a:hover { text-decoration: underline; }
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">10/30 16:03 上次发版后，合入 main 的全部 <strong>4</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">10/30 16:03 上次发版后，合入 main 的全部 <strong>15</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
-  <li class="empty">无</li>
+  <li><span class="merged-at">[10/31 01:19]</span>接入私密字段揭示、保存保护与缓存迁移（客户资料私密字段打码显示，点击查看原值并留痕） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8763">#8763</a> <span class="author">— 张拓</span></li>
+  <li><span class="merged-at">[10/30 23:26]</span>Windows PC 演示包一期 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8751">#8751</a> <span class="author">— 张拓</span></li>
 </ul>
 
 <h2>🐞 问题修复</h2>
 <ul>
+  <li><span class="merged-at">[10/31 15:54]</span>销售仅删除本人账号发布并展示异步受理状态（销售删除多账号朋友圈时只删自己账号上的发布，被拒时看到明确原因） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8747">#8747</a> <span class="author">— 张拓</span></li>
+  <li><span class="merged-at">[10/31 15:38]</span>扩展原文日志守卫并剔除误报、核实基线（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8787">#8787</a> <span class="author">— 张拓</span></li>
+  <li><span class="merged-at">[10/31 15:05]</span>补齐演示包图标和出包输入检查（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8785">#8785</a> <span class="author">— 张拓</span></li>
+  <li><span class="merged-at">[10/31 13:30]</span>修复权限读取生命周期并解除快速备注门禁红（朋友圈不再因权限响应延迟误显示为空） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8783">#8783</a> <span class="author">— 张拓</span></li>
+  <li><span class="merged-at">[10/31 00:18]</span>历史断档回补持久化准入与退避，避免重启/多窗口反复请求同一锚点（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8775">#8775</a> <span class="author">— 张拓</span></li>
+  <li><span class="merged-at">[10/30 23:34]</span>补齐 P3 planner 的 Windows 命令、原生混合分流与脏树提示（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8778">#8778</a> <span class="author">— 张拓</span></li>
   <li><span class="merged-at">[10/30 22:29]</span>保留 40300 权限拒绝文案（销售能看到咨询操作被拒的具体原因） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8777">#8777</a> <span class="author">— 张拓</span></li>
   <li><span class="merged-at">[10/30 18:14]</span>close #8730 修复历史构建刷新与 E2E 会话定位（聊天历史刷新和切换正常） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8739">#8739</a> <span class="author">— 王争</span></li>
   <li><span class="merged-at">[10/30 17:17]</span>close #8618 修复失效输入连接与托盘中文组合态 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8733">#8733</a> <span class="author">— 王争</span></li>
@@ -343,12 +352,14 @@ a:hover { text-decoration: underline; }
 
 <h2>✨ 体验优化</h2>
 <ul>
+  <li><span class="merged-at">[10/31 14:48]</span>close #8597 解除剩余数据服务反向依赖 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8784">#8784</a> <span class="author">— shain</span></li>
   <li><span class="merged-at">[10/30 17:46]</span>close #8594 聊天用例通过窄能力隔离具体 I/O <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8773">#8773</a> <span class="author">— shain</span></li>
 </ul>
 
 <h2>🔧 其他（chore / docs / test / ...）</h2>
 <ul>
-  <li class="empty">无</li>
+  <li><span class="merged-at">[10/31 15:04]</span>chore(tool/phase3): 按主机为原生路径改动增加桌面 runner 编译校验（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8786">#8786</a> <span class="author">— 张拓</span></li>
+  <li><span class="merged-at">[10/31 02:10]</span>test(tool): 日志原文守卫识别链式 tracker 调用并补齐基线（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8776">#8776</a> <span class="author">— 张拓</span></li>
 </ul>
 
 

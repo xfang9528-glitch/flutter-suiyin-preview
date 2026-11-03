@@ -2,8 +2,8 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
-<!-- CURRENT_BUILD:2026110201 -->
-<!-- PREVIEW_GENERATED_AT:2026-11-03T08:54:36.317201Z -->
+<!-- CURRENT_BUILD:2026110301 -->
+<!-- PREVIEW_GENERATED_AT:2026-11-03T15:02:46.546442Z -->
 <title>下一版发版预览 · flutter-suiyin</title>
 <style>
 :root {
@@ -83,7 +83,8 @@ a:hover { text-decoration: underline; }
 <label>查看历史预览：</label>
 <select id="version-switcher-select" onchange="var v=this.value; if(v) location.href = v; else location.href = './';">
 <!-- VERSION_SWITCHER_OPTIONS_START -->
-<option value="">📦 2026110301 发版预览</option>
+<option value="">📦 2026110302 发版预览</option>
+<option value="2026110301.html">🗂 2026110301</option>
 <option value="2026110201.html">🗂 2026110201</option>
 <option value="2026103001.html">🗂 2026103001</option>
 <option value="2026102901.html">🗂 2026102901</option>
@@ -299,10 +300,10 @@ a:hover { text-decoration: underline; }
 <!-- VERSION_SWITCHER_OPTIONS_END -->
 </select>
 </div>
-<h1>📦 2026110301 发版预览</h1>
+<h1>📦 2026110302 发版预览</h1>
 <div class="meta">
-当前版本：<code>2026110201</code>（发版时间：<span class="bump-time">11/02 16:56</span>），下一版（预览）：<code>2026110301</code><br>
-生成时间：<time id="preview-generated-at" datetime="2026-11-03T08:54:36.317201Z">2026-11-03 16:54:36</time> · 内容重新生成时更新，发布不会改写
+当前版本：<code>2026110301</code>（发版时间：<span class="bump-time">11/03 15:21</span>），下一版（预览）：<code>2026110302</code><br>
+生成时间：<time id="preview-generated-at" datetime="2026-11-03T15:02:46.546442Z">2026-11-03 23:02:46</time> · 内容重新生成时更新，发布不会改写
 </div>
 <script>
 // 让下拉的当前选中态跟着当前页走：在归档页（如 2026042901.html）里，自动选中 `🗂 2026042901`
@@ -322,31 +323,25 @@ a:hover { text-decoration: underline; }
 <h2>📣 本版用户感知更新</h2>
 <h3>🆕 新功能</h3>
 <ul>
-  <li>转发选人弹窗支持拖动标题栏移动位置，也可拖动边缘或四角调整大小，方便查看联系人和已选内容 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8872">#8872</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/8835">#8835</a>)</li>
+  <li>[仅:yestar-sz,yestar-jx,aoli-xian] 已启用此能力的企业可在 PC 聊天中选择并发送现有案例小程序 — 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8893">#8893</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/8864">#8864</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/8865">#8865</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/8867">#8867</a>)</li>
 </ul>
 <h3>🐞 问题修复</h3>
 <ul>
-  <li>客户购买或核销记录中部分明细缺少金额时，仍显示已有金额的合计，不再把合计一起隐藏；缺失金额按零计入并显示说明 — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8875">#8875</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/8839">#8839</a>)</li>
-  <li>主朋友圈或客户朋友圈的账号权限加载失败时，及时提示重试，不再一直停留在加载中 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8849">#8849</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/8847">#8847</a>)</li>
-  <li>回访名单中，没有备注的客户姓名后不再显示空白绿色徽章，有备注时仍正常显示 — 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8842">#8842</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/8766">#8766</a>)</li>
+  <li>重新进入单聊或上翻聊天记录时，可补齐旧记录与最新记录之间遗漏的消息，减少中间对话缺段 — 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8893">#8893</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/8794">#8794</a>)</li>
 </ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">11/02 16:56 上次发版后，合入 main 的全部 <strong>9</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">11/03 15:21 上次发版后，合入 main 的全部 <strong>3</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
-  <li><span class="merged-at">[11/03 15:12]</span>转发选人弹窗支持拖动与八方向缩放 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8872">#8872</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/8835">#8835</a>) <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[11/03 18:12]</span>改善聊天正文与输入排版（refs #8828） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8876">#8876</a> <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[11/03 17:58]</span>close #8794 补齐历史并启用三租户双端小程序入口 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8893">#8893</a> <span class="author">— 梁晨</span></li>
 </ul>
 
 <h2>🐞 问题修复</h2>
 <ul>
-  <li><span class="merged-at">[11/03 15:21]</span>支持已登记 Python 测试的 P3 证据复用（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8850">#8850</a> <span class="author">— 王争</span></li>
-  <li><span class="merged-at">[11/03 13:05]</span>#8843 修复 Windows 录音保存、关联回归和上传重试（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8868">#8868</a> <span class="author">— shain</span></li>
-  <li><span class="merged-at">[11/03 12:52]</span>展示金额不完整时的 CRM 购买与核销合计（PC 端部分购买或核销金额缺失时仍显示已有金额合计） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8875">#8875</a> <span class="author">— 陈宣宇</span></li>
-  <li><span class="merged-at">[11/03 10:26]</span>close #8847 修复权限失败被销售资料阻塞（朋友圈加载失败时及时提示重试） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8849">#8849</a> <span class="author">— 王争</span></li>
-  <li><span class="merged-at">[11/03 10:03]</span>过滤空回访别名并合并测试入口（客户名字后不再显示空绿徽章） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8842">#8842</a> <span class="author">— 张拓</span></li>
-  <li><span class="merged-at">[11/02 17:57]</span>close #8821 统一 APP 客户浏览记录样式 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8848">#8848</a> <span class="author">— 梁晨</span></li>
+  <li class="empty">无</li>
 </ul>
 
 <h2>✨ 体验优化</h2>
@@ -356,15 +351,14 @@ a:hover { text-decoration: underline; }
 
 <h2>🔧 其他（chore / docs / test / ...）</h2>
 <ul>
-  <li><span class="merged-at">[11/03 14:11]</span>docs: close #7933 记录消息回补覆盖与交付进度（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8769">#8769</a> <span class="author">— 梁晨</span></li>
-  <li><span class="merged-at">[11/02 20:40]</span>ci(pr-evidence): 增加架构与数据库升级专项核验（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8707">#8707</a> <span class="author">— shain</span></li>
+  <li><span class="merged-at">[11/03 18:14]</span>test(demo): 补齐全尺寸图标的无压缩器回归（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8830">#8830</a> <span class="author">— 王争</span></li>
 </ul>
 
 
 <hr class="ref-divider">
 
 <div class="foot">
-上一次发版时间：<span class="bump-time">11/02 16:56</span>（基线 commit：<code>PC baseline override 2026110201: GitHub tag target for pc/v2026110201</code>）<br>
+上一次发版时间：<span class="bump-time">11/03 15:21</span>（基线 commit：<code>PC baseline override 2026110301: GitHub tag target for pc/v2026110301</code>）<br>
 PR 归属版本由 <code>pubspec.yaml</code> 的 <code>version:</code> 行 git 历史判定 —— bump commit 的 committedAt 是分割线。<br>
 由 <code>tool/generate_release_preview.dart</code> 自动提取；重新跑脚本后刷新页面即拿最新。<br>
 issue 链接基于 PetWebOrg/flutter-suiyin 仓。

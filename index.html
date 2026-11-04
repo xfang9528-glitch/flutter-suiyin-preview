@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <!-- CURRENT_BUILD:2026110301 -->
-<!-- PREVIEW_GENERATED_AT:2026-11-03T15:02:46.546442Z -->
+<!-- PREVIEW_GENERATED_AT:2026-11-04T02:36:04.819018Z -->
 <title>下一版发版预览 · flutter-suiyin</title>
 <style>
 :root {
@@ -83,7 +83,7 @@ a:hover { text-decoration: underline; }
 <label>查看历史预览：</label>
 <select id="version-switcher-select" onchange="var v=this.value; if(v) location.href = v; else location.href = './';">
 <!-- VERSION_SWITCHER_OPTIONS_START -->
-<option value="">📦 2026110302 发版预览</option>
+<option value="">📦 2026110401 发版预览</option>
 <option value="2026110301.html">🗂 2026110301</option>
 <option value="2026110201.html">🗂 2026110201</option>
 <option value="2026103001.html">🗂 2026103001</option>
@@ -300,10 +300,10 @@ a:hover { text-decoration: underline; }
 <!-- VERSION_SWITCHER_OPTIONS_END -->
 </select>
 </div>
-<h1>📦 2026110302 发版预览</h1>
+<h1>📦 2026110401 发版预览</h1>
 <div class="meta">
-当前版本：<code>2026110301</code>（发版时间：<span class="bump-time">11/03 15:21</span>），下一版（预览）：<code>2026110302</code><br>
-生成时间：<time id="preview-generated-at" datetime="2026-11-03T15:02:46.546442Z">2026-11-03 23:02:46</time> · 内容重新生成时更新，发布不会改写
+当前版本：<code>2026110301</code>（发版时间：<span class="bump-time">11/03 15:21</span>），下一版（预览）：<code>2026110401</code><br>
+生成时间：<time id="preview-generated-at" datetime="2026-11-04T02:36:04.819018Z">2026-11-04 10:36:04</time> · 内容重新生成时更新，发布不会改写
 </div>
 <script>
 // 让下拉的当前选中态跟着当前页走：在归档页（如 2026042901.html）里，自动选中 `🗂 2026042901`
@@ -323,25 +323,34 @@ a:hover { text-decoration: underline; }
 <h2>📣 本版用户感知更新</h2>
 <h3>🆕 新功能</h3>
 <ul>
+  <li>在回访日程可按客户渠道筛选某天的待回访名单，也能看到客户在各个工作号下的微信备注 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8899">#8899</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/8766">#8766</a>)</li>
   <li>[仅:yestar-sz,yestar-jx,aoli-xian] 已启用此能力的企业可在 PC 聊天中选择并发送现有案例小程序 — 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8893">#8893</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/8864">#8864</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/8865">#8865</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/8867">#8867</a>)</li>
 </ul>
 <h3>🐞 问题修复</h3>
 <ul>
+  <li>企微掉线后在电脑扫码重登，出现验证码步骤时可直接输入六位验证码，过期后可手动重新取码 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8898">#8898</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/8844">#8844</a>)</li>
+  <li>在电脑点击聊天里的普通小程序或视频号卡片时，会提示「请在微信打开」 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8845">#8845</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/8638">#8638</a>)</li>
+  <li>打开聊天并定位到指定的历史消息时，页面会停在目标消息处，避免刚定位又跳回最新消息 — 王梓先、张拓、王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8774">#8774</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/8699">#8699</a>)</li>
   <li>重新进入单聊或上翻聊天记录时，可补齐旧记录与最新记录之间遗漏的消息，减少中间对话缺段 — 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8893">#8893</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/8794">#8794</a>)</li>
 </ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">11/03 15:21 上次发版后，合入 main 的全部 <strong>3</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">11/03 15:21 上次发版后，合入 main 的全部 <strong>10</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
+  <li><span class="merged-at">[11/03 23:35]</span>手机端展示企业品牌背景并保证二维码操作可读 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8895">#8895</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/8735">#8735</a>) <span class="author">— shain</span></li>
+  <li><span class="merged-at">[11/03 23:35]</span>集成路由恢复、微信打开提示、品牌背景与回访渠道筛选 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8899">#8899</a> <span class="author">— shain、张拓、王争</span></li>
   <li><span class="merged-at">[11/03 18:12]</span>改善聊天正文与输入排版（refs #8828） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8876">#8876</a> <span class="author">— 王争</span></li>
   <li><span class="merged-at">[11/03 17:58]</span>close #8794 补齐历史并启用三租户双端小程序入口 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8893">#8893</a> <span class="author">— 梁晨</span></li>
 </ul>
 
 <h2>🐞 问题修复</h2>
 <ul>
-  <li class="empty">无</li>
+  <li><span class="merged-at">[11/04 04:33]</span>补齐企微重登验证码与手动恢复链路 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8898">#8898</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/8844">#8844</a>) <span class="author">— 王梓先</span></li>
+  <li><span class="merged-at">[11/03 23:35]</span>小程序和视频号点击提示在微信打开 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8877">#8877</a> <span class="author">— shain</span></li>
+  <li><span class="merged-at">[11/03 23:35]</span>小程序和视频号卡片提示在微信打开 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8845">#8845</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/8638">#8638</a>) <span class="author">— shain</span></li>
+  <li><span class="merged-at">[11/03 23:35]</span>保留刷新后的页面数据与操作会话 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8774">#8774</a> <span class="author">— shain、张拓、王争</span></li>
 </ul>
 
 <h2>✨ 体验优化</h2>
@@ -351,6 +360,7 @@ a:hover { text-decoration: underline; }
 
 <h2>🔧 其他（chore / docs / test / ...）</h2>
 <ul>
+  <li><span class="merged-at">[11/03 23:35]</span>chore(ci): close #8526 新增审阅评论安全元数据诊断 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8527">#8527</a> <span class="author">— shain</span></li>
   <li><span class="merged-at">[11/03 18:14]</span>test(demo): 补齐全尺寸图标的无压缩器回归（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8830">#8830</a> <span class="author">— 王争</span></li>
 </ul>
 

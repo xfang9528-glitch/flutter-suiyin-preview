@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <!-- CURRENT_BUILD:2026110401 -->
-<!-- PREVIEW_GENERATED_AT:2026-11-05T01:35:59.856708Z -->
+<!-- PREVIEW_GENERATED_AT:2026-11-05T08:58:51.358122Z -->
 <title>下一版发版预览 · flutter-suiyin</title>
 <style>
 :root {
@@ -304,7 +304,7 @@ a:hover { text-decoration: underline; }
 <h1>📦 2026110501 发版预览</h1>
 <div class="meta">
 当前版本：<code>2026110401</code>（发版时间：<span class="bump-time">11/04 16:40</span>），下一版（预览）：<code>2026110501</code><br>
-生成时间：<time id="preview-generated-at" datetime="2026-11-05T01:35:59.856708Z">2026-11-05 09:35:59</time> · 内容重新生成时更新，发布不会改写
+生成时间：<time id="preview-generated-at" datetime="2026-11-05T08:58:51.358122Z">2026-11-05 16:58:51</time> · 内容重新生成时更新，发布不会改写
 </div>
 <script>
 // 让下拉的当前选中态跟着当前页走：在归档页（如 2026042901.html）里，自动选中 `🗂 2026042901`
@@ -322,19 +322,36 @@ a:hover { text-decoration: underline; }
 </script>
 
 <h2>📣 本版用户感知更新</h2>
-<div class="notice">本期暂无新的 PC 端用户感知更新。</div>
+<h3>🆕 新功能</h3>
+<ul>
+  <li>[仅:jbfs] 在客户标签里可以添加照片、填写备注，保存后随时回看客户的购买偏好和图片资料 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8940">#8940</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/8822">#8822</a>)</li>
+  <li>在客户标签里可以和其他资料一起修改并保存「群发称谓」，后续群发使用更新后的称谓 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8940">#8940</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/8823">#8823</a>)</li>
+</ul>
+<h3>✨ 体验优化</h3>
+<ul>
+  <li>新增、编辑话术以及导入 Excel、图文视频 ZIP 时，可以拖动弹窗并调整大小，腾出更多空间查看内容 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8853">#8853</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/8838">#8838</a>)</li>
+</ul>
+<h3>🐞 问题修复</h3>
+<ul>
+  <li>收到实时群消息时，未读角标或红点会按群聊的免打扰设置正常显示，补收旧消息时仍保持安静 — 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8941">#8941</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/8934">#8934</a>)</li>
+</ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">11/04 16:40 上次发版后，合入 main 的全部 <strong>1</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">11/04 16:40 上次发版后，合入 main 的全部 <strong>8</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
-  <li class="empty">无</li>
+  <li><span class="merged-at">[11/05 12:23]</span>集成 PC 企业配置与双端客户标签改进 (#8398 #8641 #8822 #8823 #8901 #8902) <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8940">#8940</a> <span class="author">— shain、王梓先</span></li>
+  <li><span class="merged-at">[11/05 11:39]</span>close #8838 话术编辑与导入弹窗支持拖动缩放 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8853">#8853</a> <span class="author">— 王争</span></li>
 </ul>
 
 <h2>🐞 问题修复</h2>
 <ul>
-  <li class="empty">无</li>
+  <li><span class="merged-at">[11/05 16:33]</span>close #8852 兼容安卓朋友圈图片选择异常 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8897">#8897</a> <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[11/05 15:06]</span>close #8914 #8916 #8918 #8927 统一修复证据复用与 Windows 验证生命周期（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8929">#8929</a> <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[11/05 13:59]</span>按消息晚到时间识别群补推静默（实时群消息恢复未读提醒） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8941">#8941</a> <span class="author">— 张拓</span></li>
+  <li><span class="merged-at">[11/05 12:15]</span>close #8892 修复门禁进程超时与视频、录音测试隔离（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8920">#8920</a> <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[11/05 10:22]</span>close #8938 修复历史 repair 回放自测（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8939">#8939</a> <span class="author">— 王争</span></li>
 </ul>
 
 <h2>✨ 体验优化</h2>

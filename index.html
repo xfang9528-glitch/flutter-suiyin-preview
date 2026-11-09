@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <!-- CURRENT_BUILD:2026110601 -->
-<!-- PREVIEW_GENERATED_AT:2026-11-09T08:51:10.070200Z -->
+<!-- PREVIEW_GENERATED_AT:2026-11-09T15:05:43.962246Z -->
 <title>下一版发版预览 · flutter-suiyin</title>
 <style>
 :root {
@@ -306,7 +306,7 @@ a:hover { text-decoration: underline; }
 <h1>📦 2026110901 发版预览</h1>
 <div class="meta">
 当前版本：<code>2026110601</code>（发版时间：<span class="bump-time">11/06 17:03</span>），下一版（预览）：<code>2026110901</code><br>
-生成时间：<time id="preview-generated-at" datetime="2026-11-09T08:51:10.070200Z">2026-11-09 16:51:10</time> · 内容重新生成时更新，发布不会改写
+生成时间：<time id="preview-generated-at" datetime="2026-11-09T15:05:43.962246Z">2026-11-09 23:05:43</time> · 内容重新生成时更新，发布不会改写
 </div>
 <script>
 // 让下拉的当前选中态跟着当前页走：在归档页（如 2026042901.html）里，自动选中 `🗂 2026042901`
@@ -326,13 +326,17 @@ a:hover { text-decoration: underline; }
 <h2>📣 本版用户感知更新</h2>
 <h3>✨ 体验优化</h3>
 <ul>
+  <li>话术面板上方分类区支持收起和展开，留出更多空间查看下级分类与话术，部门较多时也不再挤出面板 — shain、王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9102">#9102</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/9078">#9078</a>)</li>
   <li>群发预览、发送记录、对账、喜报和历史更新记录等内容弹窗支持拖动标题移动、从四边和四角调整大小，查看长内容更方便 — 王争、kite365 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8905">#8905</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/8840">#8840</a>)</li>
 </ul>
 <h3>🐞 问题修复</h3>
 <ul>
+  <li>查看历史更新说明时，已识别的其他企业专属内容不再显示，本企业条目中的企业名称也会隐藏 — shain、王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9102">#9102</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/8642">#8642</a>)</li>
+  <li>修复启动后朋友圈、独立聊天等窗口可能因初始化未完成而打不开的问题（新 Windows 安装包仍待实机复验） — shain、王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9102">#9102</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/9080">#9080</a>、<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/9059">#9059</a>)</li>
   <li>后台调整权限后，可直接重新打开图片预览、独立聊天窗等窗口，无需退出重登；暂时打不开时会提示等待或重新登录 — 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9071">#9071</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/9069">#9069</a>)</li>
   <li>修复 Windows 输入、关闭浮层和取消拖动时可能报错或继续操作的问题；剪贴板被占用时会提示重试，切换会话后的旧内容不再误粘贴；PDF 从后往前跨页选中文字时不再选错范围 — kite365 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9049">#9049</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/8953">#8953</a>、<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/8955">#8955</a>、<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/8954">#8954</a>、<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/8950">#8950</a>、<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/8612">#8612</a>)</li>
   <li>弱密码账号切换上下班、权限内容未变化时，已打开的图片预览等窗口不再被误关 — 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9065">#9065</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/9064">#9064</a>)</li>
+  <li>查看未回超时名单时不再因后台更新反复转圈；筛选暂不兼容时会保留渠道账号并显示可用名单 — 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9060">#9060</a> (无关联 issue)</li>
   <li>修复新版登录、重新打开客户端和切换企业时被挡住的问题；切企业失败不再误关已打开的窗口，重新打开窗口也不再空白 — 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9062">#9062</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/9059">#9059</a>)</li>
   <li>处理好友申请遇到安全验证时，可确认解除验证并重试当前申请；取消后仍保持待处理 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9061">#9061</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/8922">#8922</a>)</li>
   <li>客户资料中的私密字段被隐藏时，不再连带清空已有企微标签和 AI 等级；查看私密多选资料时也不再因内容格式不同而报错 — 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9056">#9056</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/8782">#8782</a>)</li>
@@ -342,9 +346,11 @@ a:hover { text-decoration: underline; }
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">11/06 17:03 上次发版后，合入 main 的全部 <strong>19</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">11/06 17:03 上次发版后，合入 main 的全部 <strong>22</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
+  <li><span class="merged-at">[11/09 21:43]</span>合批交付企业更新、话术、APP 配置与子窗口启动修复 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9102">#9102</a> <span class="author">— shain、王梓先</span></li>
+  <li><span class="merged-at">[11/09 19:37]</span>交付 ETag 内存表示匹配单元 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9101">#9101</a> <span class="author">— shain</span></li>
   <li><span class="merged-at">[11/09 11:02]</span>群发及其他居中内容弹窗支持拖动缩放 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/8905">#8905</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/8840">#8840</a>) <span class="author">— 王争、kite365</span></li>
   <li><span class="merged-at">[11/07 23:51]</span>交付企业配置生命周期与已接入消费者 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9053">#9053</a> <span class="author">— shain、王梓先</span></li>
   <li><span class="merged-at">[11/07 09:09]</span>安装可信架构引擎升级协议（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9044">#9044</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/9042">#9042</a>) <span class="author">— shain</span></li>
@@ -352,6 +358,7 @@ a:hover { text-decoration: underline; }
 
 <h2>🐞 问题修复</h2>
 <ul>
+  <li><span class="merged-at">[11/09 16:56]</span>close #9081 为演示副本 bundle 预热 Android PDFium（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9090">#9090</a> <span class="author">— 王争</span></li>
   <li><span class="merged-at">[11/09 14:34]</span>权限变化后恢复子窗口开窗并明确拒绝原因 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9071">#9071</a> <span class="author">— 张拓</span></li>
   <li><span class="merged-at">[11/09 13:54]</span>close #8953 批量修复 Windows 稳定性与 PDF 选区 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9049">#9049</a> <span class="author">— kite365</span></li>
   <li><span class="merged-at">[11/09 10:42]</span>弱密码账号权限拉取内容不变时不再撤销已开子窗口（切上下班后图片预览等子窗口不再被关） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9065">#9065</a> <span class="author">— 张拓</span></li>

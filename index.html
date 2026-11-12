@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <!-- CURRENT_BUILD:2026111102 -->
-<!-- PREVIEW_GENERATED_AT:2026-11-11T15:02:17.035942Z -->
+<!-- PREVIEW_GENERATED_AT:2026-11-12T02:32:00.777358Z -->
 <title>下一版发版预览 · flutter-suiyin</title>
 <style>
 :root {
@@ -83,7 +83,7 @@ a:hover { text-decoration: underline; }
 <label>查看历史预览：</label>
 <select id="version-switcher-select" onchange="var v=this.value; if(v) location.href = v; else location.href = './';">
 <!-- VERSION_SWITCHER_OPTIONS_START -->
-<option value="">📦 2026111103 发版预览</option>
+<option value="">📦 2026111201 发版预览</option>
 <option value="2026111102.html">🗂 2026111102</option>
 <option value="2026111101.html">🗂 2026111101</option>
 <option value="2026110601.html">🗂 2026110601</option>
@@ -305,10 +305,10 @@ a:hover { text-decoration: underline; }
 <!-- VERSION_SWITCHER_OPTIONS_END -->
 </select>
 </div>
-<h1>📦 2026111103 发版预览</h1>
+<h1>📦 2026111201 发版预览</h1>
 <div class="meta">
-当前版本：<code>2026111102</code>（发版时间：<span class="bump-time">11/11 17:23</span>），下一版（预览）：<code>2026111103</code><br>
-生成时间：<time id="preview-generated-at" datetime="2026-11-11T15:02:17.035942Z">2026-11-11 23:02:17</time> · 内容重新生成时更新，发布不会改写
+当前版本：<code>2026111102</code>（发版时间：<span class="bump-time">11/11 17:23</span>），下一版（预览）：<code>2026111201</code><br>
+生成时间：<time id="preview-generated-at" datetime="2026-11-12T02:32:00.777358Z">2026-11-12 10:32:00</time> · 内容重新生成时更新，发布不会改写
 </div>
 <script>
 // 让下拉的当前选中态跟着当前页走：在归档页（如 2026042901.html）里，自动选中 `🗂 2026042901`
@@ -326,14 +326,16 @@ a:hover { text-decoration: underline; }
 </script>
 
 <h2>📣 本版用户感知更新</h2>
-<h3>⚠️ 已知问题</h3>
+<h3>🐞 问题修复</h3>
 <ul>
-  <li>在图片编辑中打开「医美工具」时，划线素材目录仍可能提示加载失败。本版暂时撤回了这项修复 — 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9210">#9210</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/9186">#9186</a>)</li>
+  <li>修复 Windows 聊天中选中文字后，遇到消息刷新或切换会话时可能中断操作的问题 — 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9201">#9201</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/8252">#8252</a>)</li>
+  <li>修复聊天历史的「所有媒体」列表少显示图片和视频的问题，向下滚动可以继续查看更早的内容 — shain、王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9211">#9211</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/9153">#9153</a>)</li>
+  <li>已保存有效登录凭据时，从主界面切换企业可直接进入目标企业，修复切换途中退回登录页的问题 — shain、王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9211">#9211</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/9206">#9206</a>)</li>
 </ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">11/11 17:23 上次发版后，合入 main 的全部 <strong>2</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">11/11 17:23 上次发版后，合入 main 的全部 <strong>8</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
   <li class="empty">无</li>
@@ -341,12 +343,16 @@ a:hover { text-decoration: underline; }
 
 <h2>🐞 问题修复</h2>
 <ul>
-  <li class="empty">无</li>
+  <li><span class="merged-at">[11/12 05:05]</span>清选区遍历稳定快照并接入 Windows 发版入口 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9201">#9201</a> <span class="author">— 张拓</span></li>
+  <li><span class="merged-at">[11/12 03:20]</span>重新合入 #9196 并修复清单登记、测试隔离与台账声明 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9218">#9218</a> <span class="author">— 张拓</span></li>
+  <li><span class="merged-at">[11/12 03:04]</span>按补丁指纹重建 Flutter fork 缓存并补全失败日志 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9219">#9219</a> <span class="author">— 张拓</span></li>
+  <li><span class="merged-at">[11/12 00:52]</span>交付PR独立台账声明及hook参数解析修复 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9216">#9216</a> <span class="author">— shain、王梓先</span></li>
+  <li><span class="merged-at">[11/11 23:48]</span>交付媒体历史、移动编辑、旧入口回归与切企认证修复 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9211">#9211</a> <span class="author">— shain、王梓先</span></li>
 </ul>
 
 <h2>✨ 体验优化</h2>
 <ul>
-  <li class="empty">无</li>
+  <li><span class="merged-at">[11/12 08:14]</span>全量门禁按文件分片并前移静态检查（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9222">#9222</a> <span class="author">— 张拓</span></li>
 </ul>
 
 <h2>🔧 其他（chore / docs / test / ...）</h2>

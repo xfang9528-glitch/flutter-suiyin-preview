@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <!-- CURRENT_BUILD:2026111303 -->
-<!-- PREVIEW_GENERATED_AT:2026-11-13T02:24:49.644926Z -->
+<!-- PREVIEW_GENERATED_AT:2026-11-13T09:42:46.627818Z -->
 <title>下一版发版预览 · flutter-suiyin</title>
 <style>
 :root {
@@ -309,7 +309,7 @@ a:hover { text-decoration: underline; }
 <h1>📦 2026111304 发版预览</h1>
 <div class="meta">
 当前版本：<code>2026111303</code>（发版时间：<span class="bump-time">11/13 06:50</span>），下一版（预览）：<code>2026111304</code><br>
-生成时间：<time id="preview-generated-at" datetime="2026-11-13T02:24:49.644926Z">2026-11-13 10:24:49</time> · 内容重新生成时更新，发布不会改写
+生成时间：<time id="preview-generated-at" datetime="2026-11-13T09:42:46.627818Z">2026-11-13 17:42:46</time> · 内容重新生成时更新，发布不会改写
 </div>
 <script>
 // 让下拉的当前选中态跟着当前页走：在归档页（如 2026042901.html）里，自动选中 `🗂 2026042901`
@@ -327,19 +327,37 @@ a:hover { text-decoration: underline; }
 </script>
 
 <h2>📣 本版用户感知更新</h2>
-<div class="notice">本期暂无新的 PC 端用户感知更新。</div>
+<h3>🆕 新功能</h3>
+<ul>
+  <li>申请添加朋友时，可以点「×」逐条删除不再使用的历史招呼文案，正在编辑的招呼内容会保留。 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9306">#9306</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/9161">#9161</a>)</li>
+</ul>
+<h3>✨ 体验优化</h3>
+<ul>
+  <li>聊天图片重试加载成功后，再次打开会话时可复用已保存的图片，减少重复下载和转圈等待。 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9306">#9306</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/9224">#9224</a>)</li>
+  <li>主窗口和独立聊天窗口的常用操作图标更统一，搜索框在输入前后使用同一个放大镜图标。 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9292">#9292</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/8369">#8369</a>)</li>
+</ul>
+<h3>🐞 问题修复</h3>
+<ul>
+  <li>Windows 覆盖安装遇到已确认占用文件的搜狗输入法后台进程时，安装向导会提示，可确认关闭该进程并重试一次。 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9306">#9306</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/8967">#8967</a>)</li>
+  <li>删除话术分类受阻时，会显示该分类下还剩多少条话术或子分类，并提示如何处理。 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9306">#9306</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/9162">#9162</a>)</li>
+  <li>修复 Windows 上第一次拖出会话时独立聊天窗口不显示的问题。按住会话约 0.2 秒后即可开始拖动。 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9248">#9248</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/9223">#9223</a>)</li>
+  <li>登录或切换账号后，聊天首页会显示准备提示，数据就绪后自动打开当前账号的会话。读取失败时可重试或重新登录。 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9207">#9207</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/9190">#9190</a>)</li>
+</ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">11/13 06:50 上次发版后，合入 main 的全部 <strong>0</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">11/13 06:50 上次发版后，合入 main 的全部 <strong>6</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
-  <li class="empty">无</li>
+  <li><span class="merged-at">[11/13 16:12]</span>交付历史招呼删除、安装恢复、分类反馈与图片缓存修复 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9306">#9306</a> <span class="author">— shain</span></li>
+  <li><span class="merged-at">[11/13 12:34]</span>close #8369 接入主窗与聊天核心共享图标 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9292">#9292</a> <span class="author">— 王争</span></li>
 </ul>
 
 <h2>🐞 问题修复</h2>
 <ul>
-  <li class="empty">无</li>
+  <li><span class="merged-at">[11/13 16:43]</span>修复 Mac 验收失败并归档 #9246 / #9242 实测结果 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9249">#9249</a> <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[11/13 12:19]</span>修复聊天首拖开窗并缩短等待至200ms <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9248">#9248</a> <span class="author">— kite365、王争</span></li>
+  <li><span class="merged-at">[11/13 10:33]</span>close #9190 close #9185 首页会话准备与子窗口守卫验收 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9207">#9207</a> <span class="author">— kite365、王争</span></li>
 </ul>
 
 <h2>✨ 体验优化</h2>
@@ -349,7 +367,7 @@ a:hover { text-decoration: underline; }
 
 <h2>🔧 其他（chore / docs / test / ...）</h2>
 <ul>
-  <li class="empty">无</li>
+  <li><span class="merged-at">[11/13 13:23]</span>test(hooks): 补齐 hook 宿主测试夹具缺失的台账路径模块（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9285">#9285</a> <span class="author">— 张拓</span></li>
 </ul>
 
 

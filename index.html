@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <!-- CURRENT_BUILD:2026111304 -->
-<!-- PREVIEW_GENERATED_AT:2026-11-14T02:29:01.405182Z -->
+<!-- PREVIEW_GENERATED_AT:2026-11-14T08:52:02.461063Z -->
 <title>下一版发版预览 · flutter-suiyin</title>
 <style>
 :root {
@@ -310,7 +310,7 @@ a:hover { text-decoration: underline; }
 <h1>📦 2026111401 发版预览</h1>
 <div class="meta">
 当前版本：<code>2026111304</code>（发版时间：<span class="bump-time">11/13 16:43</span>），下一版（预览）：<code>2026111401</code><br>
-生成时间：<time id="preview-generated-at" datetime="2026-11-14T02:29:01.405182Z">2026-11-14 10:29:01</time> · 内容重新生成时更新，发布不会改写
+生成时间：<time id="preview-generated-at" datetime="2026-11-14T08:52:02.461063Z">2026-11-14 16:52:02</time> · 内容重新生成时更新，发布不会改写
 </div>
 <script>
 // 让下拉的当前选中态跟着当前页走：在归档页（如 2026042901.html）里，自动选中 `🗂 2026042901`
@@ -334,21 +334,19 @@ a:hover { text-decoration: underline; }
 </ul>
 <h3>✨ 体验优化</h3>
 <ul>
-  <li>话术库列表直接显示图片缩略图和视频封面，浏览列表时就能辨认案例。 — 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9325">#9325</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/9317">#9317</a>)</li>
-  <li>Windows 上反复打开和关闭聊天图片预览后，会释放旧预览占用的内存，减少长时间使用时的内存累积。 — 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9330">#9330</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/9293">#9293</a>)</li>
+  <li>话术库列表直接显示图片缩略图和视频封面，无需悬停就能辨认案例。 — 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9325">#9325</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/9317">#9317</a>)</li>
+  <li>在 Windows 上反复查看聊天图片、切换会话时，应用会及时释放旧预览和已完成请求占用的内存，减少长时间使用后的内存累积。 — 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9330">#9330</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/9293">#9293</a>)</li>
 </ul>
 <h3>🐞 问题修复</h3>
 <ul>
-  <li>先打开聊天再查看右侧客户资料时，合并后的资料可以正常显示。 — 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9365">#9365</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/9217">#9217</a>)</li>
+  <li>先打开聊天再查看右侧客户资料时，可以正常看到合并后的资料。其中，合并后的城市显示在「地区」一栏，便于与「地区(AI)」区分。 — 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9365">#9365</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9315">#9315</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/9286">#9286</a>)</li>
   <li>应用在后台时，点击闪烁的托盘图标可直接打开聊天并定位到第一条未读会话。从托盘浮窗点击某条会话也能直接打开。 — 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9358">#9358</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6827">#6827</a>)</li>
   <li>启用排队提示后，批量转发中仍待发送的消息会显示「排队中」，避免被过早标成发送失败而误点重发。 — 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9357">#9357</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/9106">#9106</a>)</li>
-  <li>发送图片、视频或文件时，如果先显示超时，随后确认已发送，聊天里会更新状态并移除红叹号。 — 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9173">#9173</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/9122">#9122</a>)</li>
-  <li>查看同一人的合并资料时，来自合并资料的城市显示为「地区」，便于和「地区(AI)」区分。 — 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9315">#9315</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/9286">#9286</a>)</li>
 </ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">11/13 16:43 上次发版后，合入 main 的全部 <strong>15</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">11/13 16:43 上次发版后，合入 main 的全部 <strong>19</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
   <li><span class="merged-at">[11/14 01:22]</span>预约内部字段、测试2只读统计与诊断日志交付 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9354">#9354</a> <span class="author">— shain</span></li>
@@ -358,6 +356,8 @@ a:hover { text-decoration: underline; }
 
 <h2>🐞 问题修复</h2>
 <ul>
+  <li><span class="merged-at">[11/14 15:56]</span>isolate offline PR evidence fixtures from Actions environment <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9371">#9371</a> <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[11/14 13:35]</span>必需证据校验沿用 runner 的 GitHub API 读取通道（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9364">#9364</a> <span class="author">— 王争</span></li>
   <li><span class="merged-at">[11/14 06:29]</span>延后合并档案状态写入（PC 打开客户资料不再触发构建异常） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9365">#9365</a> <span class="author">— 张拓</span></li>
   <li><span class="merged-at">[11/14 04:32]</span>主干同步后复用原定向和增量验证凭证（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9363">#9363</a> <span class="author">— 王争</span></li>
   <li><span class="merged-at">[11/14 03:04]</span>专项证据尾提交复用原定向 PASS（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9362">#9362</a> <span class="author">— 王争</span></li>
@@ -377,6 +377,8 @@ a:hover { text-decoration: underline; }
 
 <h2>🔧 其他（chore / docs / test / ...）</h2>
 <ul>
+  <li><span class="merged-at">[11/14 16:03]</span>chore(ci): 统一 PR 门禁与分轮证据归属（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9328">#9328</a> <span class="author">— 梁晨</span></li>
+  <li><span class="merged-at">[11/14 11:48]</span>test(revisits): 补充排除客户后的三处计数契约守卫（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9370">#9370</a> <span class="author">— 张拓</span></li>
   <li><span class="merged-at">[11/14 10:07]</span>test(tool): 修复主线 hook 契约、ObjectBox 门禁与日志基线测试（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9369">#9369</a> <span class="author">— 张拓</span></li>
   <li><span class="merged-at">[11/13 18:16]</span>main 红：同步客户资料审计清单数 24→26 与 hook 夹具摘要（AC-7315-1 / AC-8480-3） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9300">#9300</a> <span class="author">— 张拓</span></li>
 </ul>

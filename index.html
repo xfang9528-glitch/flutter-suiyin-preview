@@ -2,8 +2,8 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
-<!-- CURRENT_BUILD:2026111601 -->
-<!-- PREVIEW_GENERATED_AT:2026-11-17T08:57:57.149880Z -->
+<!-- CURRENT_BUILD:2026111701 -->
+<!-- PREVIEW_GENERATED_AT:2026-11-17T15:08:25.227905Z -->
 <title>下一版发版预览 · flutter-suiyin</title>
 <style>
 :root {
@@ -83,7 +83,8 @@ a:hover { text-decoration: underline; }
 <label>查看历史预览：</label>
 <select id="version-switcher-select" onchange="var v=this.value; if(v) location.href = v; else location.href = './';">
 <!-- VERSION_SWITCHER_OPTIONS_START -->
-<option value="">📦 2026111701 发版预览</option>
+<option value="">📦 2026111702 发版预览</option>
+<option value="2026111701.html">🗂 2026111701</option>
 <option value="2026111601.html">🗂 2026111601</option>
 <option value="2026111304.html">🗂 2026111304</option>
 <option value="2026111303.html">🗂 2026111303</option>
@@ -308,10 +309,10 @@ a:hover { text-decoration: underline; }
 <!-- VERSION_SWITCHER_OPTIONS_END -->
 </select>
 </div>
-<h1>📦 2026111701 发版预览</h1>
+<h1>📦 2026111702 发版预览</h1>
 <div class="meta">
-当前版本：<code>2026111601</code>（发版时间：<span class="bump-time">11/16 19:25</span>），下一版（预览）：<code>2026111701</code><br>
-生成时间：<time id="preview-generated-at" datetime="2026-11-17T08:57:57.149880Z">2026-11-17 16:57:57</time> · 内容重新生成时更新，发布不会改写
+当前版本：<code>2026111701</code>（发版时间：<span class="bump-time">11/17 15:34</span>），下一版（预览）：<code>2026111702</code><br>
+生成时间：<time id="preview-generated-at" datetime="2026-11-17T15:08:25.227905Z">2026-11-17 23:08:25</time> · 内容重新生成时更新，发布不会改写
 </div>
 <script>
 // 让下拉的当前选中态跟着当前页走：在归档页（如 2026042901.html）里，自动选中 `🗂 2026042901`
@@ -329,72 +330,43 @@ a:hover { text-decoration: underline; }
 </script>
 
 <h2>📣 本版用户感知更新</h2>
-<h3>🆕 新功能</h3>
-<ul>
-  <li>聊天工具移到输入区底部，语音按钮紧挨着「发送」。相册素材统一在「资料库」里找，「转交」和「接待记录」合到同一个菜单。 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9488">#9488</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/8452">#8452</a>)</li>
-  <li>[仅:yestar-sz] 批量改派可以换几组条件分次选人，返回上一步时会保留已选名单，不用从头筛选。 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9471">#9471</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/9467">#9467</a>)</li>
-  <li>已开通客户筛选的团队，在群发时可以按最近到店、最近消费、累计消费、购买项目和建档状态选择或排除客户。 — 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9382">#9382</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/9373">#9373</a>)</li>
-</ul>
-<h3>✨ 体验优化</h3>
-<ul>
-  <li>拖入或粘贴长视频后，聊天输入区会提前压缩；在同一台电脑上把同一个视频改名或换个位置再发，也可以复用压缩结果。上传在 99% 停留较久时，会提示视频仍在上传。 — 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9503">#9503</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9254">#9254</a> (suiyin-go 议题 5725)</li>
-</ul>
 <h3>🐞 问题修复</h3>
 <ul>
-  <li>群发选人时，未绑定客户的记录仍然可见，会明确提示「未绑定客户，暂不可选」，也不会被全选带入发送名单。 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9524">#9524</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/9483">#9483</a>)</li>
-  <li>群发的「排除好友」步骤可以输入完整 11 位手机号，找到并排除对应客户。 — 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9367">#9367</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/9314">#9314</a>)</li>
-  <li>自动转派接手后，服务号补回的历史消息不会再误加未读，真正的新来信仍会提醒。 — 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9397">#9397</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/9077">#9077</a>)</li>
-  <li>发个微朋友圈选择「不给谁看」时，空名单会被拦住，不支持此功能的企微账号会标明不可选；提交后可以查看屏蔽名单是否已提交，名单异常时会有提示。 — 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9366">#9366</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/9320">#9320</a>)</li>
-  <li>群发列表里，有权限的员工现在可以继续自己暂停的任务。管理员暂停的任务会提示仅管理员可继续，并在有记录时显示暂停人和时间。 — 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9405">#9405</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/9398">#9398</a>)</li>
+  <li>[仅:yestar] 预约时如果客户缺少卡号，页面会提示先到「客户信息」补填并保存手机号，取得卡号后再预约。 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9574">#9574</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/9435">#9435</a>)</li>
+  <li>[仅:yestar] 在「客户信息」保存手机号后，当前会话会主动刷新客户资料。查到卡号后可直接用于预约，无需退出聊天再重新搜索客户。 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9574">#9574</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/9468">#9468</a>)</li>
 </ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">11/16 19:25 上次发版后，合入 main 的可在本公开预览对照的 <strong>22</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">11/17 15:34 上次发版后，合入 main 的全部 <strong>6</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
-  <li><span class="merged-at">[11/17 15:34]</span>close #8452 PC 聊天底部工具栏与资料库分组 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9488">#9488</a> <span class="author">— 王争</span></li>
-  <li><span class="merged-at">[11/17 14:41]</span>close #9467 改派筛选累加并保留步骤往返名单 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9471">#9471</a> <span class="author">— 王争</span></li>
-  <li><span class="merged-at">[11/17 13:44]</span>分类与群发禁选修复、测试2回访及配置审计工具交付 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9524">#9524</a> <span class="author">— shain</span></li>
-  <li><span class="merged-at">[11/17 11:59]</span>PC 群发选人支持 CRM 筛选（到店、消费、项目、建档） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9382">#9382</a> <span class="author">— 张拓</span></li>
-  <li><span class="merged-at">[11/17 10:41]</span>close #9432 移动端话术发送选择与图片编辑 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9441">#9441</a> <span class="author">— 王争</span></li>
-  <li><span class="merged-at">[11/17 05:22]</span>增加原文件指纹缓存、srcHash 载荷和 99% 等待提示 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9503">#9503</a> <span class="author">— 张拓</span></li>
-
+  <li class="empty">无</li>
 </ul>
 
 <h2>🐞 问题修复</h2>
 <ul>
-  <li><span class="merged-at">[11/17 15:10]</span>修复 E2E 暂缓验证守卫对真实旅程状态的硬编码（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9554">#9554</a> <span class="author">— 张拓</span></li>
-  <li><span class="merged-at">[11/17 05:07]</span>群发第二步支持完整 11 位手机号搜索排除（PC 群发选人可按完整手机号找到并排除顾客） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9367">#9367</a> <span class="author">— 张拓</span></li>
-  <li><span class="merged-at">[11/17 01:44]</span>自动转派优先按 countUnread 计未读，服务号历史回填不再增加未读 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9397">#9397</a> <span class="author">— 张拓</span></li>
-  <li><span class="merged-at">[11/17 01:26]</span>补齐测试2三条清单的 chainSkipReason，恢复 e2e_chain_dispatch_test <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9497">#9497</a> <span class="author">— 张拓</span></li>
-  <li><span class="merged-at">[11/17 00:34]</span>补齐不给谁看提交保护与回显并保留定点验收入口 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9366">#9366</a> <span class="author">— 张拓</span></li>
-  <li><span class="merged-at">[11/17 00:06]</span>补齐 Sentry 启动损坏隔离兜底，自动隔离默认关闭 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9490">#9490</a> <span class="author">— 张拓</span></li>
-  <li><span class="merged-at">[11/16 22:21]</span>撤回集中交付对公共验收与发布流程的修改（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9489">#9489</a> <span class="author">— 王争</span></li>
-  <li><span class="merged-at">[11/16 21:07]</span>接入暂停继续能力位与管理员暂停提示（PC员工可继续自己暂停的群发） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9405">#9405</a> <span class="author">— 张拓</span></li>
+  <li><span class="merged-at">[11/17 18:58]</span>缺卡号引导、手机号刷新及只读测试与离线审计交付 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9574">#9574</a> <span class="author">— shain</span></li>
+  <li><span class="merged-at">[11/17 17:32]</span>close #8373 补齐共享操作图标来源与消费门禁 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9571">#9571</a> <span class="author">— 王争</span></li>
 </ul>
 
 <h2>✨ 体验优化</h2>
 <ul>
-  <li><span class="merged-at">[11/17 04:00]</span>提前压缩并优化视频编码参数（长视频首次发送等待更短） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9254">#9254</a> <span class="author">— 张拓</span></li>
+  <li><span class="merged-at">[11/17 18:07]</span>close #7691 收敛 Mac 主窗口偏好轮询与跨窗同步 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9573">#9573</a> <span class="author">— 王争</span></li>
 </ul>
 
 <h2>🔧 其他（chore / docs / test / ...）</h2>
 <ul>
-  <li><span class="merged-at">[11/17 13:24]</span>docs(workflow): 同步个人与集中流程恢复说明 #9516 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9519">#9519</a> <span class="author">— 王争</span></li>
-  <li><span class="merged-at">[11/17 11:48]</span>test(pc-icons): 增加已交付样式来源与实际消费门禁（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9443">#9443</a> <span class="author">— 王争</span></li>
-  <li><span class="merged-at">[11/17 10:20]</span>test(chat): 补齐 PC 发送失败提示与重发契约测试（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9491">#9491</a> <span class="author">— 张拓</span></li>
-  <li><span class="merged-at">[11/17 04:57]</span>test(chat): 增加 go#6023 旧去重回执隔离回归测试（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9500">#9500</a> <span class="author">— 张拓</span></li>
-  <li><span class="merged-at">[11/17 03:47]</span>test: 同步 demo 方法登记与日志审计基线 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9501">#9501</a> <span class="author">— 张拓</span></li>
-  <li><span class="merged-at">[11/17 02:00]</span>main 红：无 PowerShell 时显式跳过引擎钉版测试（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9496">#9496</a> <span class="author">— 张拓</span></li>
-  <li><span class="merged-at">[11/16 20:20]</span>main 红：同步主题审计夹具行号并让 E2E 日跑登记识别 standaloneCases <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9486">#9486</a> <span class="author">— 张拓</span></li>
+  <li><span class="merged-at">[11/17 19:52]</span>test: close #9521 校准原生观察器实例及停止协议 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9527">#9527</a> <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[11/17 18:46]</span>test: close #9522 收紧客户资料只读旅程前置 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9526">#9526</a> <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[11/17 18:24]</span>test: close #9520 校准原生弹窗八向验收与四态证据 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9525">#9525</a> <span class="author">— 王争</span></li>
 </ul>
 
 
 <hr class="ref-divider">
 
 <div class="foot">
-上一次发版时间：<span class="bump-time">11/16 19:25</span>（基线 commit：<code>PC baseline override 2026111601: Merge pull request #9478 from PetWebOrg/codex/pc-release-engine-path</code>）<br>
+上一次发版时间：<span class="bump-time">11/17 15:34</span>（基线 commit：<code>PC baseline override 2026111701: feat: close #8452 PC 聊天底部工具栏与资料库分组 (#9488)</code>）<br>
 PR 归属版本由 <code>pubspec.yaml</code> 的 <code>version:</code> 行 git 历史判定 —— bump commit 的 committedAt 是分割线。<br>
 由 <code>tool/generate_release_preview.dart</code> 自动提取；重新跑脚本后刷新页面即拿最新。<br>
 issue 链接基于 PetWebOrg/flutter-suiyin 仓。

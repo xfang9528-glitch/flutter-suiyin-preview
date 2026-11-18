@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <!-- CURRENT_BUILD:2026111701 -->
-<!-- PREVIEW_GENERATED_AT:2026-11-18T02:30:09.102752Z -->
+<!-- PREVIEW_GENERATED_AT:2026-11-18T08:58:12.298676Z -->
 <title>下一版发版预览 · flutter-suiyin</title>
 <style>
 :root {
@@ -312,7 +312,7 @@ a:hover { text-decoration: underline; }
 <h1>📦 2026111801 发版预览</h1>
 <div class="meta">
 当前版本：<code>2026111701</code>（发版时间：<span class="bump-time">11/17 15:34</span>），下一版（预览）：<code>2026111801</code><br>
-生成时间：<time id="preview-generated-at" datetime="2026-11-18T02:30:09.102752Z">2026-11-18 10:30:09</time> · 内容重新生成时更新，发布不会改写
+生成时间：<time id="preview-generated-at" datetime="2026-11-18T08:58:12.298676Z">2026-11-18 16:58:12</time> · 内容重新生成时更新，发布不会改写
 </div>
 <script>
 // 让下拉的当前选中态跟着当前页走：在归档页（如 2026042901.html）里，自动选中 `🗂 2026042901`
@@ -330,22 +330,28 @@ a:hover { text-decoration: underline; }
 </script>
 
 <h2>📣 本版用户感知更新</h2>
+<h3>✨ 体验优化</h3>
+<ul>
+  <li>聊天输入区和底部工具栏增加圆角外框、四周留白和轻阴影，浅色、深色主题下都更容易看清输入范围，窄窗口仍可使用原有操作。 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9712">#9712</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9686">#9686</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/9709">#9709</a>, <a href="https://github.com/PetWebOrg/flutter-suiyin/issues/9659">#9659</a>)</li>
+</ul>
 <h3>🐞 问题修复</h3>
 <ul>
+  <li>在电脑上传客户录音后，可以正常打开「拆分录音」、查看波形并设置切点，修复误报「无法确认录音归属」而无法拆分的问题。 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9578">#9578</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/9561">#9561</a>)</li>
   <li>[仅:yestar] 预约时如果客户缺少卡号，页面会提示先到「客户信息」补填并保存手机号，取得卡号后再预约。 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9574">#9574</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/9435">#9435</a>)</li>
   <li>[仅:yestar] 在「客户信息」保存手机号后，当前会话会主动刷新客户资料。查到卡号后可直接用于预约，无需退出聊天再重新搜索客户。 — 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9574">#9574</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/9468">#9468</a>)</li>
 </ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">11/17 15:34 上次发版后，合入 main 的全部 <strong>8</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">11/17 15:34 上次发版后，合入 main 的可在本公开预览对照的 <strong>21</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
-  <li class="empty">无</li>
+  <li><span class="merged-at">[11/18 16:02]</span>close #9672 APP 浅色保护、内部主题预览与「我的」试点 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9717">#9717</a> <span class="author">— 王争</span></li>
 </ul>
 
 <h2>🐞 问题修复</h2>
 <ul>
+  <li><span class="merged-at">[11/18 15:48]</span>保留工作号归属登记 PC 上传录音，恢复拆分入口 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9578">#9578</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/9561">#9561</a>) <span class="author">— 王争</span></li>
   <li><span class="merged-at">[11/17 18:58]</span>缺卡号引导、手机号刷新及只读测试与离线审计交付 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9574">#9574</a> <span class="author">— shain</span></li>
   <li><span class="merged-at">[11/17 17:32]</span>close #8373 补齐共享操作图标来源与消费门禁 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9571">#9571</a> <span class="author">— 王争</span></li>
 </ul>
@@ -357,6 +363,17 @@ a:hover { text-decoration: underline; }
 
 <h2>🔧 其他（chore / docs / test / ...）</h2>
 <ul>
+  <li><span class="merged-at">[11/18 16:02]</span>test: close #9672 固定 APP 生产浅色基线 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9684">#9684</a> <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[11/18 15:29]</span>ui: close #9709 调整 PC 聊天输入区外框细节 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9712">#9712</a> <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[11/18 14:58]</span>test(chat): 修正 paste scope 守卫识别与客户资料旅程懒列表定位（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9708">#9708</a> <span class="author">— 张拓</span></li>
+  <li><span class="merged-at">[11/18 14:32]</span>test: refs #9512 核对67项旅程与Mac执行状态 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9528">#9528</a> <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[11/18 14:24]</span>test: refs #9510 采集真实弹窗逐帧性能 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9529">#9529</a> <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[11/18 14:09]</span>ui: close #9659 为 PC 聊天输入区增加圆角边框 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9686">#9686</a> <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[11/18 13:53]</span>test(demo): 同步资料库入口修复写入闸门测试（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9704">#9704</a> <span class="author">— 张拓</span></li>
+  <li><span class="merged-at">[11/18 13:48]</span>docs: refs #9511 核对Mac运行时错误通道 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9530">#9530</a> <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[11/18 13:37]</span>docs: refs #9509 建立37项真实入口验收矩阵 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9531">#9531</a> <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[11/18 11:21]</span>main 红: demo 写入登记补上 saveEdit / saveEditFromPc (Refs #9468) <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9628">#9628</a> <span class="author">— 张拓</span></li>
+  <li><span class="merged-at">[11/18 10:43]</span>test(enterprise/pc): 交付v3纯模型与离线对照及三个最小窗口守卫（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9622">#9622</a> <span class="author">— shain</span></li>
   <li><span class="merged-at">[11/18 10:26]</span>docs: close #9513 核对完整P3来源与复用边界 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9517">#9517</a> <span class="author">— 王争</span></li>
   <li><span class="merged-at">[11/18 02:58]</span>main 红: 对齐 demo 页面走查到合并后的「资料库」单入口（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9609">#9609</a> <span class="author">— 张拓</span></li>
   <li><span class="merged-at">[11/17 19:52]</span>test: close #9521 校准原生观察器实例及停止协议 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9527">#9527</a> <span class="author">— 王争</span></li>

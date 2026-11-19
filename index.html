@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <!-- CURRENT_BUILD:2026111901 -->
-<!-- PREVIEW_GENERATED_AT:2026-11-19T11:49:54.854228Z -->
+<!-- PREVIEW_GENERATED_AT:2026-11-19T15:04:22.119621Z -->
 <title>下一版发版预览 · flutter-suiyin</title>
 <style>
 :root {
@@ -314,7 +314,7 @@ a:hover { text-decoration: underline; }
 <h1>📦 2026111902 发版预览</h1>
 <div class="meta">
 当前版本：<code>2026111901</code>（发版时间：<span class="bump-time">11/19 16:20</span>），下一版（预览）：<code>2026111902</code><br>
-生成时间：<time id="preview-generated-at" datetime="2026-11-19T11:49:54.854228Z">2026-11-19 19:49:54</time> · 内容重新生成时更新，发布不会改写
+生成时间：<time id="preview-generated-at" datetime="2026-11-19T15:04:22.119621Z">2026-11-19 23:04:22</time> · 内容重新生成时更新，发布不会改写
 </div>
 <script>
 // 让下拉的当前选中态跟着当前页走：在归档页（如 2026042901.html）里，自动选中 `🗂 2026042901`
@@ -332,14 +332,23 @@ a:hover { text-decoration: underline; }
 </script>
 
 <h2>📣 本版用户感知更新</h2>
-<div class="notice">本期暂无新的 PC 端用户感知更新。</div>
+<h3>🆕 新功能</h3>
+<ul>
+  <li>测试2的 PC 客户资料新增照片区，可查看已经保存的客户照片；本次仅接通展示，原图与预览仍待验证。— 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9826">#9826</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/9811">#9811</a>)</li>
+  <li>编辑话术时，可以选择案例库的医生、案例小程序卡片，与文字和图片一起保存；需配套后端支持，真实租户发送仍待验证。— 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9805">#9805</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/9453">#9453</a>)</li>
+</ul>
+<h3>🐞 问题修复</h3>
+<ul>
+  <li>聊天区较窄时，更多工具、AI回复、语音和发送入口会分两行显示，避免按钮被挤出界面、无法点击。— 王梓先 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9826">#9826</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/9615">#9615</a>)</li>
+  <li>发送话术时，会跳过停用的卡片并显示发送、跳过和失败数量；检查失败时可重试。真实租户与实际消息送达仍待验证。— 梁晨 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9805">#9805</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/9456">#9456</a>)</li>
+</ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">11/19 16:20 上次发版后，合入 main 的可在本公开预览对照的 <strong>2</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">11/19 16:20 上次发版后，合入 main 的全部 <strong>4</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
-  <li class="empty">无</li>
+  <li><span class="merged-at">[11/19 20:16]</span>integrate liangchen1117 script resources and media readiness <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9805">#9805</a> <span class="author">— 梁晨</span></li>
 </ul>
 
 <h2>🐞 问题修复</h2>
@@ -354,6 +363,7 @@ a:hover { text-decoration: underline; }
 
 <h2>🔧 其他（chore / docs / test / ...）</h2>
 <ul>
+  <li><span class="merged-at">[11/19 20:24]</span>交付：窄聊天工具栏修复与测试2客户照片展示 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9826">#9826</a> <span class="author">— shain</span></li>
   <li><span class="merged-at">[11/19 18:45]</span>main 红：补齐演示模块的 CustomerConfig 字段快照 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9820">#9820</a> <span class="author">— 张拓</span></li>
 </ul>
 

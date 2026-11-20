@@ -375,12 +375,13 @@ issue 链接基于 PetWebOrg/flutter-suiyin 仓。
     var select = document.getElementById('version-switcher-select');
     if (!select) return;
     var current = decodeURIComponent(location.pathname.split('/').pop() || '');
-    var historical = /^\d{10}\.html$/.test(current);
-    var wanted = historical ? current : '';
+    // Workers customer URLs omit .html; Pages archive URLs retain it.
+    var historical = /^\d{10}(?:\.html)?$/.test(current);
+    var wanted = historical ? current.replace(/\.html$/, '') : '';
     for (var i = 0; i < select.options.length; i++) {
       var value = select.options[i].value;
       var page = value ? decodeURIComponent(new URL(value, location.href).pathname.split('/').pop() || '') : '';
-      if (page === wanted) { select.selectedIndex = i; return; }
+      if (page.replace(/\.html$/, '') === wanted) { select.selectedIndex = i; return; }
     }
   }
   function syncAfterRestore() {

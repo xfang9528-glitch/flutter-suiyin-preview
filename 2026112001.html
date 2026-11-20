@@ -81,10 +81,10 @@ a:hover { text-decoration: underline; }
        内容重写成相对路径 option（同域跳转），不会重建正文或改写生成时间 -->
 <div class="version-switcher">
 <label>查看历史预览：</label>
-<select id="version-switcher-select" onchange="var v=this.value; if(v) location.href = v; else location.href = './';">
+<select id="version-switcher-select" onchange="var v=this.value; if(v) location.href = v; else location.href = './';" autocomplete="off">
 <!-- VERSION_SWITCHER_OPTIONS_START -->
 <option value="">📦 2026112002 发版预览</option>
-<option value="2026112001.html">🗂 2026112001</option>
+<option value="2026112001.html" selected>🗂 2026112001</option>
 <option value="2026111901.html">🗂 2026111901</option>
 <option value="2026111801.html">🗂 2026111801</option>
 <option value="2026111701.html">🗂 2026111701</option>
@@ -318,18 +318,27 @@ a:hover { text-decoration: underline; }
 生成时间：<time id="preview-generated-at" datetime="2026-11-20T09:51:07.496Z">2026-11-20 17:51:07</time> · 内容重新生成时更新，发布不会改写
 </div>
 <div class="notice">历史内容补录：本页恢复 2026112001 在正式发版前应有的更新说明，依据今天 17:25 的原始候选快照和 17:31 的审阅记录整理。原任务未完成最终发布；上方生成时间是本次补录完成时间，不是原计划运行时间。企业范围尚未核实及命中客户名称过滤的条目不展示。</div>
-<script>
-// 让下拉的当前选中态跟着当前页走：在归档页（如 2026042901.html）里，自动选中 `🗂 2026042901`
-// 那项；这样点回 `📦 ... 发版预览`（value=""）时 select.value 才会发生变化，触发 onchange 跳 `./`。
-// 不做的话第一项默认选中 = "📦 ..." = ""，在归档页点它无变化、不跳转，用户回不去首页。
-(function(){
-  var sel = document.getElementById('version-switcher-select');
-  if (!sel) return;
-  var cur = location.pathname.split('/').pop();
-  if (!cur || cur === 'index.html' || cur === '') return;
-  for (var i = 0; i < sel.options.length; i++) {
-    if (sel.options[i].value === cur) { sel.selectedIndex = i; break; }
+<script id="version-switcher-state">
+(function () {
+  function syncVersionSelection() {
+    var select = document.getElementById('version-switcher-select');
+    if (!select) return;
+    var current = decodeURIComponent(location.pathname.split('/').pop() || '');
+    var historical = /^\d{10}\.html$/.test(current);
+    var wanted = historical ? current : '';
+    for (var i = 0; i < select.options.length; i++) {
+      var value = select.options[i].value;
+      var page = value ? decodeURIComponent(new URL(value, location.href).pathname.split('/').pop() || '') : '';
+      if (page === wanted) { select.selectedIndex = i; return; }
+    }
   }
+  function syncAfterRestore() {
+    syncVersionSelection();
+    requestAnimationFrame(syncVersionSelection);
+  }
+  syncVersionSelection();
+  window.addEventListener('pageshow', syncAfterRestore);
+  window.addEventListener('load', syncAfterRestore);
 })();
 </script>
 

@@ -80,7 +80,7 @@ a:hover { text-decoration: underline; }
        的内容重写成相对路径 option（同域跳转），覆盖 dart 输出 -->
 <div class="version-switcher">
 <label>查看历史预览：</label>
-<select id="version-switcher-select" onchange="var v=this.value; if(v) location.href = v; else location.href = './';">
+<select id="version-switcher-select" onchange="var v=this.value; if(v) location.href = v; else location.href = './';" autocomplete="off">
 <!-- VERSION_SWITCHER_OPTIONS_START -->
 <option value="">📦 2026112002 发版预览</option>
 <option value="2026112001.html">🗂 2026112001</option>
@@ -180,7 +180,7 @@ a:hover { text-decoration: underline; }
 <option value="2026081202.html">🗂 2026081202</option>
 <option value="2026081201.html">🗂 2026081201</option>
 <option value="2026081102.html">🗂 2026081102</option>
-<option value="2026081001.html">🗂 2026081001</option>
+<option value="2026081001.html" selected>🗂 2026081001</option>
 <option value="2026080901.html">🗂 2026080901</option>
 <option value="2026080701.html">🗂 2026080701</option>
 <option value="2026080602.html">🗂 2026080602</option>
@@ -311,18 +311,27 @@ a:hover { text-decoration: underline; }
 <!-- VERSION_SWITCHER_OPTIONS_END -->
 </select>
 </div>
-<script>
-// 让下拉的当前选中态跟着当前页走：在归档页（如 2026042901.html）里，自动选中 `🗂 2026042901`
-// 那项；这样点回 `📦 ... 发版预览`（value=""）时 select.value 才会发生变化，触发 onchange 跳 `./`。
-// 不做的话第一项默认选中 = "📦 ..." = ""，在归档页点它无变化、不跳转，用户回不去首页。
-(function(){
-  var sel = document.getElementById('version-switcher-select');
-  if (!sel) return;
-  var cur = location.pathname.split('/').pop();
-  if (!cur || cur === 'index.html' || cur === '') return;
-  for (var i = 0; i < sel.options.length; i++) {
-    if (sel.options[i].value === cur) { sel.selectedIndex = i; break; }
+<script id="version-switcher-state">
+(function () {
+  function syncVersionSelection() {
+    var select = document.getElementById('version-switcher-select');
+    if (!select) return;
+    var current = decodeURIComponent(location.pathname.split('/').pop() || '');
+    var historical = /^\d{10}\.html$/.test(current);
+    var wanted = historical ? current : '';
+    for (var i = 0; i < select.options.length; i++) {
+      var value = select.options[i].value;
+      var page = value ? decodeURIComponent(new URL(value, location.href).pathname.split('/').pop() || '') : '';
+      if (page === wanted) { select.selectedIndex = i; return; }
+    }
   }
+  function syncAfterRestore() {
+    syncVersionSelection();
+    requestAnimationFrame(syncVersionSelection);
+  }
+  syncVersionSelection();
+  window.addEventListener('pageshow', syncAfterRestore);
+  window.addEventListener('load', syncAfterRestore);
 })();
 </script>
 <h1>📦 2026081001 发版预览</h1>

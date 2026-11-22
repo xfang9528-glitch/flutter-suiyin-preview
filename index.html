@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <!-- CURRENT_BUILD:2026112101 -->
-<!-- PREVIEW_GENERATED_AT:2026-11-21T15:05:03.674743Z -->
+<!-- PREVIEW_GENERATED_AT:2026-11-22T02:29:31.371902Z -->
 <title>下一版发版预览 · flutter-suiyin</title>
 <style>
 :root {
@@ -83,7 +83,7 @@ a:hover { text-decoration: underline; }
 <label>查看历史预览：</label>
 <select id="version-switcher-select" onchange="var v=this.value; if(v) location.href = v; else location.href = './';" autocomplete="off">
 <!-- VERSION_SWITCHER_OPTIONS_START -->
-<option value="">📦 2026112102 发版预览</option>
+<option value="">📦 2026112201 发版预览</option>
 <option value="2026112101.html">🗂 2026112101</option>
 <option value="2026112001.html">🗂 2026112001</option>
 <option value="2026111901.html">🗂 2026111901</option>
@@ -313,10 +313,10 @@ a:hover { text-decoration: underline; }
 <!-- VERSION_SWITCHER_OPTIONS_END -->
 </select>
 </div>
-<h1>📦 2026112102 发版预览</h1>
+<h1>📦 2026112201 发版预览</h1>
 <div class="meta">
-当前版本：<code>2026112101</code>（发版时间：<span class="bump-time">11/21 17:17</span>），下一版（预览）：<code>2026112102</code><br>
-生成时间：<time id="preview-generated-at" datetime="2026-11-21T15:05:03.674743Z">2026-11-21 23:05:03</time> · 内容重新生成时更新，发布不会改写
+当前版本：<code>2026112101</code>（发版时间：<span class="bump-time">11/21 17:17</span>），下一版（预览）：<code>2026112201</code><br>
+生成时间：<time id="preview-generated-at" datetime="2026-11-22T02:29:31.371902Z">2026-11-22 10:29:31</time> · 内容重新生成时更新，发布不会改写
 </div>
 <script id="version-switcher-state">
 (function () {
@@ -344,19 +344,25 @@ a:hover { text-decoration: underline; }
 </script>
 
 <h2>📣 本版用户感知更新</h2>
-<div class="notice">本期暂无新的 PC 端用户感知更新。</div>
+<h3>🐞 问题修复</h3>
+<ul>
+  <li>修复切企业失败后登录状态未清理的问题，失败后重启客户端需重新登录，不会自动进入目标企业 — 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9944">#9944</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/9941">#9941</a>)</li>
+</ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">11/21 17:17 上次发版后，合入 main 的全部 <strong>2</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">11/21 17:17 上次发版后，合入 main 的全部 <strong>11</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
-  <li class="empty">无</li>
+  <li><span class="merged-at">[11/21 23:49]</span>记录五类子窗口分段启动耗时并提供 release 采样入口（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9939">#9939</a> <span class="author">— 张拓</span></li>
 </ul>
 
 <h2>🐞 问题修复</h2>
 <ul>
-  <li class="empty">无</li>
+  <li><span class="merged-at">[11/22 02:15]</span>统一原录音核实证据与两入口状态展示（手机核实录音时能看到真实进度、确认结果和处理出路） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9900">#9900</a> <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[11/22 01:09]</span>由主引擎统一处理应用退出（关闭添加好友后一次退出碎银）（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9949">#9949</a> <span class="author">— 张拓</span></li>
+  <li><span class="merged-at">[11/22 00:16]</span>清理切企业失败后残留的目标会话（失败后重启需重新登录） #9941 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9944">#9944</a> <span class="author">— 张拓</span></li>
+  <li><span class="merged-at">[11/21 23:09]</span>校验拉新汇总的新增好友数（统计异常时显示失败并可重试） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9938">#9938</a> <span class="author">— 张拓</span></li>
 </ul>
 
 <h2>✨ 体验优化</h2>
@@ -366,6 +372,10 @@ a:hover { text-decoration: underline; }
 
 <h2>🔧 其他（chore / docs / test / ...）</h2>
 <ul>
+  <li><span class="merged-at">[11/22 03:14]</span>main 红：删除托盘控制器过期的原始错误日志基线条目 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9953">#9953</a> <span class="author">— 张拓</span></li>
+  <li><span class="merged-at">[11/22 01:45]</span>chore(gate): 按三跳测试覆盖率升全量并固定运行静态守卫（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9950">#9950</a> <span class="author">— 张拓</span></li>
+  <li><span class="merged-at">[11/22 00:59]</span>test(ci): 覆盖证据协议真实产物与历史兼容回归（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9946">#9946</a> <span class="author">— 张拓</span></li>
+  <li><span class="merged-at">[11/22 00:49]</span>test(chat/pc): 补齐历史媒体补载后大图复制目标回归测试（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9945">#9945</a> <span class="author">— 张拓</span></li>
   <li><span class="merged-at">[11/21 22:48]</span>main 红：补 mounted 守卫、同步会话归属选择器并登记客户资料只读组件（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9943">#9943</a> <span class="author">— 张拓</span></li>
   <li><span class="merged-at">[11/21 20:45]</span>test(customer_info): 补充 PC 客户资料受限视图与 by-id 错误态回归测试（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9935">#9935</a> <span class="author">— 张拓</span></li>
 </ul>

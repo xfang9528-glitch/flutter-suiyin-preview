@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <!-- CURRENT_BUILD:2026112101 -->
-<!-- PREVIEW_GENERATED_AT:2026-11-23T03:13:41.105608Z -->
+<!-- PREVIEW_GENERATED_AT:2026-11-23T09:02:22.406186Z -->
 <title>下一版发版预览 · flutter-suiyin</title>
 <style>
 :root {
@@ -316,7 +316,7 @@ a:hover { text-decoration: underline; }
 <h1>📦 2026112301 发版预览</h1>
 <div class="meta">
 当前版本：<code>2026112101</code>（发版时间：<span class="bump-time">11/21 17:17</span>），下一版（预览）：<code>2026112301</code><br>
-生成时间：<time id="preview-generated-at" datetime="2026-11-23T03:13:41.105608Z">2026-11-23 11:13:41</time> · 内容重新生成时更新，发布不会改写
+生成时间：<time id="preview-generated-at" datetime="2026-11-23T09:02:22.406186Z">2026-11-23 17:02:22</time> · 内容重新生成时更新，发布不会改写
 </div>
 <script id="version-switcher-state">
 (function () {
@@ -346,6 +346,8 @@ a:hover { text-decoration: underline; }
 <h2>📣 本版用户感知更新</h2>
 <h3>🐞 问题修复</h3>
 <ul>
+  <li>电脑端从资料库上传视频时，即使在“图片”页签选择，也会存入“视频”页签并提示去向；压缩或上传失败时会显示具体原因 — 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/10040">#10040</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/10031">#10031</a>)</li>
+  <li>电脑端聊天、通讯录和朋友圈换用更熟悉的导航图标，同列群发、回访、切换人设和设置图标大小更统一 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/10032">#10032</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/10024">#10024</a>)</li>
   <li>电脑端将鼠标移到滚动条所在边缘即可唤出滑块并拖动定位，悬停或拖动期间持续显示，离开后保留 2 秒再淡出 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9959">#9959</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/9958">#9958</a>)</li>
   <li>个微或企微重新登录被拒绝时，若服务端返回中文原因，电脑端会直接显示该原因，方便判断无法登录的原因 — 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9980">#9980</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/9976">#9976</a>)</li>
   <li>电脑端发送个别 JPEG 图片时，若无法压缩会尝试发送原图，避免反复卡在“图片压缩失败” — 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9993">#9993</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/9988">#9988</a>)</li>
@@ -358,16 +360,20 @@ a:hover { text-decoration: underline; }
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">11/21 17:17 上次发版后，合入 main 的全部 <strong>25</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">11/21 17:17 上次发版后，合入 main 的全部 <strong>34</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
   
-  
+  <li><span class="merged-at">[11/23 13:38]</span>deliver explicit v3 preparation and minimum-window regression <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/10009">#10009</a> <span class="author">— shain</span></li>
   <li><span class="merged-at">[11/21 23:49]</span>记录五类子窗口分段启动耗时并提供 release 采样入口（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9939">#9939</a> <span class="author">— 张拓</span></li>
 </ul>
 
 <h2>🐞 问题修复</h2>
 <ul>
+  <li><span class="merged-at">[11/23 16:39]</span>close #10036 对齐 APP 底栏四项导航图标 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/10047">#10047</a> <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[11/23 15:57]</span>资料选择器上传按文件扩展名判断入库类型，并为压缩/上传失败给出原因和埋点（销售在图片页签上传视频后能在「视频」页签找到） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/10040">#10040</a> <span class="author">— 张拓</span></li>
+  <li><span class="merged-at">[11/23 12:56]</span>close #10024 对齐 PC 主导航图标及绘制尺寸 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/10032">#10032</a> <span class="author">— 王争</span></li>
+  <li><span class="merged-at">[11/23 11:15]</span>缓存可信 AOT 快照，超时返回 75 无结论 #9947（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/10003">#10003</a> <span class="author">— 张拓</span></li>
   <li><span class="merged-at">[11/23 11:05]</span>统一聊天消息区与桌面滚动条的悬停显示和淡出时序（销售在 PC 能直接唤出滚动条并拖动定位） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9959">#9959</a> <span class="author">— 王争</span></li>
   <li><span class="merged-at">[11/23 10:47]</span>支持用 gh pr edit 更新引擎升级 v2 草稿正文（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/10007">#10007</a> <span class="author">— 张拓</span></li>
   <li><span class="merged-at">[11/23 09:16]</span>恢复定向守卫覆盖并补齐引擎升级草稿的台账准入（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/10002">#10002</a> <span class="author">— 张拓</span></li>
@@ -387,11 +393,14 @@ a:hover { text-decoration: underline; }
 
 <h2>✨ 体验优化</h2>
 <ul>
-  <li class="empty">无</li>
+  <li><span class="merged-at">[11/23 15:08]</span>close #9650 APP 主题色第六批（预约、咨询、交易、商品与客户跟进） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/10033">#10033</a> <span class="author">— 王争</span></li>
 </ul>
 
 <h2>🔧 其他（chore / docs / test / ...）</h2>
 <ul>
+  <li><span class="merged-at">[11/23 15:48]</span>main 红：门禁复用过期测试资源包导致 demo smoke 误红，补新鲜度检查与 assets.gen.dart <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/10053">#10053</a> <span class="author">— 张拓</span></li>
+  <li><span class="merged-at">[11/23 13:07]</span>chore(gate): 为全量主测增加批级超时、进程树清理和机验（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9982">#9982</a> <span class="author">— 张拓</span></li>
+  <li><span class="merged-at">[11/23 11:27]</span>main 红：补齐 Windows 视频归档与取消发送用例的兜底封面夹具（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/10023">#10023</a> <span class="author">— 张拓</span></li>
   <li><span class="merged-at">[11/23 08:11]</span>test(tool): 拆分 forbidden_guard 测试入口以支持并行调度（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9979">#9979</a> <span class="author">— 张拓</span></li>
   <li><span class="merged-at">[11/22 21:15]</span>main 红：修复 targeted_verify 测试在 Windows 上的中文解码（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9973">#9973</a> <span class="author">— 张拓</span></li>
   <li><span class="merged-at">[11/22 10:57]</span>test(gate): 产品全量移出纯门禁自测并修复录音长尾用例挂死（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9955">#9955</a> <span class="author">— 张拓</span></li>

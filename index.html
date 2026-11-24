@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <!-- CURRENT_BUILD:2026112301 -->
-<!-- PREVIEW_GENERATED_AT:2026-11-24T02:31:44.113883Z -->
+<!-- PREVIEW_GENERATED_AT:2026-11-24T08:55:58.390061Z -->
 <title>下一版发版预览 · flutter-suiyin</title>
 <style>
 :root {
@@ -317,7 +317,7 @@ a:hover { text-decoration: underline; }
 <h1>📦 2026112401 发版预览</h1>
 <div class="meta">
 当前版本：<code>2026112301</code>（发版时间：<span class="bump-time">11/23 16:39</span>），下一版（预览）：<code>2026112401</code><br>
-生成时间：<time id="preview-generated-at" datetime="2026-11-24T02:31:44.113883Z">2026-11-24 10:31:44</time> · 内容重新生成时更新，发布不会改写
+生成时间：<time id="preview-generated-at" datetime="2026-11-24T08:55:58.390061Z">2026-11-24 16:55:58</time> · 内容重新生成时更新，发布不会改写
 </div>
 <script id="version-switcher-state">
 (function () {
@@ -347,14 +347,14 @@ a:hover { text-decoration: underline; }
 <h2>📣 本版用户感知更新</h2>
 <h3>🐞 问题修复</h3>
 <ul>
-  <li>保存话术期间切换账号或企业后，原账号迟到的保存和目录刷新结果不会再改变当前账号的话术列表 — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/10088">#10088</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/10064">#10064</a>)</li>
+  <li>保存话术期间切换账号或企业后，原账号迟到的保存和目录刷新结果不会再改变当前账号的话术列表 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/10088">#10088</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/10064">#10064</a>)</li>
   <li>修复电脑端发送图片时原生压缩失效的问题，减少不必要的备用压缩等待 — 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/10093">#10093</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/10090">#10090</a>)</li>
   <li>Windows 更新未安装成功时，会提示先重启电脑或运行完整安装包，避免反复弹出相同的强制更新而不知如何处理 — 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/10070">#10070</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/10071">#10071</a>)</li>
 </ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">11/23 16:39 上次发版后，合入 main 的全部 <strong>6</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">11/23 16:39 上次发版后，合入 main 的全部 <strong>8</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
   
@@ -363,24 +363,23 @@ a:hover { text-decoration: underline; }
 
 <h2>🐞 问题修复</h2>
 <ul>
+  <li><span class="merged-at">[11/24 11:37]</span>close #10045 移动端重开表情面板时更新最近使用顺序 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/10067">#10067</a> <span class="author">— 王争</span></li>
   <li><span class="merged-at">[11/24 08:58]</span>#10064 隔离话术保存与目录刷新中的旧身份结果 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/10088">#10088</a> <span class="author">— 王争</span></li>
-  
   <li><span class="merged-at">[11/24 03:52]</span>修复 ImageMagick identify 重复订阅并仅记录异常类型和长度（恢复 PC 发图原生压缩） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/10093">#10093</a> <span class="author">— 张拓</span></li>
-  
   <li><span class="merged-at">[11/24 01:17]</span>修复 Windows 自愈检测与安装失败提示（更新没装上时可重启电脑或手动安装） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/10070">#10070</a> <span class="author">— 张拓</span></li>
 </ul>
 
 <h2>✨ 体验优化</h2>
 <ul>
+  
   <li><span class="merged-at">[11/23 19:02]</span>预约卡与医生卡按企业策略选择版式（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/10073">#10073</a> <span class="author">— 张拓</span></li>
   <li><span class="merged-at">[11/23 18:18]</span>APP 主题色第七批（群聊、转发、媒体和共享弹层） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/10072">#10072</a> <span class="author">— 王争</span></li>
 </ul>
 
 <h2>🔧 其他（chore / docs / test / ...）</h2>
 <ul>
-  
+  <li><span class="merged-at">[11/24 16:39]</span>test(moments/app): 覆盖朋友圈点赞和评论备注展示的接口到页面链路（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/10160">#10160</a> <span class="author">— 王争</span></li>
   <li><span class="merged-at">[11/24 04:11]</span>chore(test/gate): 增加慢测试守卫和耗时预算影子记账（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/10094">#10094</a> <span class="author">— 张拓</span></li>
-  
 </ul>
 
 

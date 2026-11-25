@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <!-- CURRENT_BUILD:2026112401 -->
-<!-- PREVIEW_GENERATED_AT:2026-11-24T15:01:49.023690Z -->
+<!-- PREVIEW_GENERATED_AT:2026-11-25T02:31:11.198603Z -->
 <title>下一版发版预览 · flutter-suiyin</title>
 <style>
 :root {
@@ -83,7 +83,7 @@ a:hover { text-decoration: underline; }
 <label>查看历史预览：</label>
 <select id="version-switcher-select" onchange="var v=this.value; if(v) location.href = v; else location.href = './';" autocomplete="off">
 <!-- VERSION_SWITCHER_OPTIONS_START -->
-<option value="">📦 2026112402 发版预览</option>
+<option value="">📦 2026112501 发版预览</option>
 <option value="2026112401.html">🗂 2026112401</option>
 <option value="2026112301.html">🗂 2026112301</option>
 <option value="2026112101.html">🗂 2026112101</option>
@@ -315,10 +315,10 @@ a:hover { text-decoration: underline; }
 <!-- VERSION_SWITCHER_OPTIONS_END -->
 </select>
 </div>
-<h1>📦 2026112402 发版预览</h1>
+<h1>📦 2026112501 发版预览</h1>
 <div class="meta">
-当前版本：<code>2026112401</code>（发版时间：<span class="bump-time">11/24 18:43</span>），下一版（预览）：<code>2026112402</code><br>
-生成时间：<time id="preview-generated-at" datetime="2026-11-24T15:01:49.023690Z">2026-11-24 23:01:49</time> · 内容重新生成时更新，发布不会改写
+当前版本：<code>2026112401</code>（发版时间：<span class="bump-time">11/24 18:43</span>），下一版（预览）：<code>2026112501</code><br>
+生成时间：<time id="preview-generated-at" datetime="2026-11-25T02:31:11.198603Z">2026-11-25 10:31:11</time> · 内容重新生成时更新，发布不会改写
 </div>
 <script id="version-switcher-state">
 (function () {
@@ -346,27 +346,42 @@ a:hover { text-decoration: underline; }
 </script>
 
 <h2>📣 本版用户感知更新</h2>
-<div class="notice">本期暂无新的 PC 端用户感知更新。</div>
+<h3>✨ 体验优化</h3>
+<ul>
+  <li>电脑端设置中的“外观”入口改为“通用”，可在“界面与显示”中通过下拉框切换亮色、暗色或跟随系统 — 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/10179">#10179</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/8451">#8451</a>)</li>
+</ul>
+<h3>🐞 问题修复</h3>
+<ul>
+  <li>批量转发图片时，减少因排队等待时间过短而提前显示发送失败、随后又恢复成功的情况 — 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9992">#9992</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/9985">#9985</a>)</li>
+  <li>单聊客户资料返回受限结果时，右栏显示只读的客户头部与归属，避免把无权查看的资料显示成未填写 — 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/10180">#10180</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/9933">#9933</a>)</li>
+</ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">11/24 18:43 上次发版后，合入 main 的全部 <strong>1</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">11/24 18:43 上次发版后，合入 main 的全部 <strong>8</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
+  <li><span class="merged-at">[11/25 00:08]</span>将外观入口改为通用（PC 用户可在「界面与显示」中查看和切换主题） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/10179">#10179</a> <span class="author">— 张拓</span></li>
+  
 </ul>
 
 <h2>🐞 问题修复</h2>
 <ul>
-  <li class="empty">无</li>
+  <li><span class="merged-at">[11/25 00:11]</span>排队死线取较长者（批量转发图片时不会因短 TTL 提前显示失败） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/9992">#9992</a> <span class="author">— 张拓</span></li>
+  <li><span class="merged-at">[11/24 23:57]</span>单聊右栏复用受限资料视图，独立聊天窗口内只请求一次 by-id（客户在PC单聊看到无权查看的客户时，不再显示像是没填的空白资料） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/10180">#10180</a> <span class="author">— 张拓</span></li>
 </ul>
 
 <h2>✨ 体验优化</h2>
 <ul>
-  <li class="empty">无</li>
+  <li><span class="merged-at">[11/25 10:16]</span>close #9656 第 8 批 APP 主题色 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/10161">#10161</a> <span class="author">— 王争</span></li>
 </ul>
 
 <h2>🔧 其他（chore / docs / test / ...）</h2>
 <ul>
+  
+  <li><span class="merged-at">[11/25 09:08]</span>test(pc): 补齐预约测试工作区的客户读取响应 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/10199">#10199</a> <span class="author">— 梁晨</span></li>
+  <li><span class="merged-at">[11/25 05:55]</span>main 红：补齐独立聊天窗口测试的 by-id 响应夹具 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/10196">#10196</a> <span class="author">— 张拓</span></li>
+  <li><span class="merged-at">[11/25 03:49]</span>ci(specialist): 将 sp_scope_policy.dart 精确移出数据库专项路径（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/10192">#10192</a> <span class="author">— 张拓</span></li>
   <li><span class="merged-at">[11/24 19:57]</span>chore(quality-gate): 全量门禁收齐失败用例，修复后按 run 复验（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/10173">#10173</a> <span class="author">— 张拓</span></li>
 </ul>
 

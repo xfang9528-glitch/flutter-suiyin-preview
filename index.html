@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <!-- CURRENT_BUILD:2026112501 -->
-<!-- PREVIEW_GENERATED_AT:2026-11-26T05:12:04.587766Z -->
+<!-- PREVIEW_GENERATED_AT:2026-11-26T09:02:22.984339Z -->
 <title>下一版发版预览 · flutter-suiyin</title>
 <style>
 :root {
@@ -319,7 +319,7 @@ a:hover { text-decoration: underline; }
 <h1>📦 2026112601 发版预览</h1>
 <div class="meta">
 当前版本：<code>2026112501</code>（发版时间：<span class="bump-time">11/25 16:13</span>），下一版（预览）：<code>2026112601</code><br>
-生成时间：<time id="preview-generated-at" datetime="2026-11-26T05:12:04.587766Z">2026-11-26 13:12:04</time> · 内容重新生成时更新，发布不会改写
+生成时间：<time id="preview-generated-at" datetime="2026-11-26T09:02:22.984339Z">2026-11-26 17:02:22</time> · 内容重新生成时更新，发布不会改写
 </div>
 <script id="version-switcher-state">
 (function () {
@@ -349,6 +349,7 @@ a:hover { text-decoration: underline; }
 <h2>📣 本版用户感知更新</h2>
 <h3>🐞 问题修复</h3>
 <ul>
+  <li>Windows 聊天粘贴发送大 PNG 图片时，改善肤色和背景渐变出现明显色块的问题，保留半透明内容 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/10259">#10259</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/10249">#10249</a>)</li>
   <li>在电脑端聊天列表打开有未读的会话后，立即清除原有未读提示并定位首条未读；在当前会话成功回复后，也会清除该会话的未读提示 — 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/10276">#10276</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/10069">#10069</a>)</li>
   <li>朋友圈窗口打开期间调整字号，文字立即同步；大字号下点赞和评论的未读角标都能完整显示 — 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/10274">#10274</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/10240">#10240</a>)</li>
   <li>图片发送失败后重发时，避免因重复处理图片而卡住；发送中、发送失败或尚不能转发的图片不再显示转发入口 — 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/10275">#10275</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/10254">#10254</a>)</li>
@@ -359,18 +360,19 @@ a:hover { text-decoration: underline; }
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">11/25 16:13 上次发版后，合入 main 的全部 <strong>19</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">11/25 16:13 上次发版后，合入 main 的全部 <strong>22</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
   <li><span class="merged-at">[11/26 12:02]</span>为 Android 扫街人增加独立强更开关（管理方要求升级时须更新后继续使用） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/10279">#10279</a> <span class="author">— 张拓</span></li>
   <li><span class="merged-at">[11/26 09:30]</span>扫街定位上报采集元数据，跳过系统标记的模拟点并提示 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/10281">#10281</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/10244">#10244</a>) <span class="author">— 张拓</span></li>
   <li><span class="merged-at">[11/26 02:09]</span>合入客户回访日程、详情和回访操作 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/10269">#10269</a> <span class="author">— 梁晨</span></li>
-  
   <li><span class="merged-at">[11/25 18:04]</span>支持 E2E 启动自动登录并选择企业，同步 PC 登录反馈清单（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/10246">#10246</a> <span class="author">— 张拓</span></li>
 </ul>
 
 <h2>🐞 问题修复</h2>
 <ul>
+  <li><span class="merged-at">[11/26 14:32]</span>校验报告与检查点真实性并提供离线媒体内容工具（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/10310">#10310</a> <span class="author">— shain</span></li>
+  <li><span class="merged-at">[11/26 14:18]</span>修复大 PNG 粘贴发送的色阶断层（Windows 聊天粘贴发送大图时保留肤色和背景渐变） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/10259">#10259</a> <span class="author">— 王争</span></li>
   <li><span class="merged-at">[11/26 13:07]</span>主动打开会话或回复后清除该会话未读并保留首条未读定位（列表点开、或在会话里回复后，未读角标立即消失） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/10276">#10276</a> <span class="author">— 张拓</span></li>
   <li><span class="merged-at">[11/26 11:38]</span>修复朋友圈窗口字号广播漏发和大字号角标重叠（打开期间调字号即时生效，两个 99+ 完整可见） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/10274">#10274</a> <span class="author">— 张拓</span></li>
   <li><span class="merged-at">[11/26 11:22]</span>第十批 App 主题色 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/10291">#10291</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7651">#7651</a>) <span class="author">— 王争</span></li>
@@ -394,6 +396,7 @@ a:hover { text-decoration: underline; }
 
 <h2>🔧 其他（chore / docs / test / ...）</h2>
 <ul>
+  <li><span class="merged-at">[11/26 16:21]</span>chore(gate): 全量主测 P0 取数脚本与 P1 分批提速（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/10324">#10324</a> <span class="author">— 张拓</span></li>
   <li><span class="merged-at">[11/26 01:04]</span>test(wx-relogin): 补齐 #9976 重复登录回归用例和验收编号（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/10272">#10272</a> <span class="author">— 张拓</span></li>
 </ul>
 

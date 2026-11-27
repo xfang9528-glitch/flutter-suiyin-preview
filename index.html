@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <!-- CURRENT_BUILD:2026112601 -->
-<!-- PREVIEW_GENERATED_AT:2026-11-27T03:21:01.653955Z -->
+<!-- PREVIEW_GENERATED_AT:2026-11-27T09:04:59.190210Z -->
 <title>下一版发版预览 · flutter-suiyin</title>
 <style>
 :root {
@@ -320,7 +320,7 @@ a:hover { text-decoration: underline; }
 <h1>📦 2026112701 发版预览</h1>
 <div class="meta">
 当前版本：<code>2026112601</code>（发版时间：<span class="bump-time">11/26 16:21</span>），下一版（预览）：<code>2026112701</code><br>
-生成时间：<time id="preview-generated-at" datetime="2026-11-27T03:21:01.653955Z">2026-11-27 11:21:01</time> · 内容重新生成时更新，发布不会改写
+生成时间：<time id="preview-generated-at" datetime="2026-11-27T09:04:59.190210Z">2026-11-27 17:04:59</time> · 内容重新生成时更新，发布不会改写
 </div>
 <script id="version-switcher-state">
 (function () {
@@ -352,13 +352,18 @@ a:hover { text-decoration: underline; }
 <ul>
   <li>电脑端个微扫码重登等待确认约 20 秒后，会提示先在手机上完成或重试验证；此时点「重新取码」会先确认，避免误换二维码让正在进行的验证作废 — 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/10261">#10261</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/10250">#10250</a>)</li>
 </ul>
+<h3>🐞 问题修复</h3>
+<ul>
+  <li>从群里用个人微信添加企业微信成员时，会先提示无法通过这种方式添加，避免误以为好友申请已经发出 — 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/10315">#10315</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/10044">#10044</a>)</li>
+  <li>Windows 开启来信提示音后，部分原先无声但能播放系统声音的电脑会再尝试一次播放提示音；实际效果仍需在对应音频设备上核对 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/10227">#10227</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/10202">#10202</a>)</li>
+  <li>发布朋友圈视频时，压缩或上传尚未完成会提示等待，上传失败保留草稿供重新上传，避免提前提交本地视频地址导致发布失败 — 王争 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/10227">#10227</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/10207">#10207</a>)</li>
+</ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">11/26 16:21 上次发版后，合入 main 的全部 <strong>15</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">11/26 16:21 上次发版后，合入 main 的全部 <strong>20</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
-  
   <li><span class="merged-at">[11/27 00:24]</span>为逐文件账本声明增加固定 Git 数据承载（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/10347">#10347</a> <span class="author">— shain</span></li>
   
   <li><span class="merged-at">[11/26 22:51]</span>交付离线用例清单与可用性组合筛选 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/10341">#10341</a> <span class="author">— shain</span></li>
@@ -367,11 +372,11 @@ a:hover { text-decoration: underline; }
 
 <h2>🐞 问题修复</h2>
 <ul>
-  
+  <li><span class="merged-at">[11/27 13:16]</span>拦截个微从群里添加企微成员（PC 和移动端点击添加即可看到原因） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/10315">#10315</a> <span class="author">— 张拓</span></li>
+  <li><span class="merged-at">[11/27 13:05]</span>汇总可信 main 稳定筛选、生产目标阻断与配置核验说明（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/10366">#10366</a> <span class="author">— shain</span></li>
+  <li><span class="merged-at">[11/27 11:54]</span>close #10215 汇总五项客户端稳定性修复 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/10227">#10227</a> <span class="author">— 王争、kite365</span></li>
   <li><span class="merged-at">[11/27 05:28]</span>返回聊天列表时清除本会话未读提示（APP打开会话后返回，未读提示及时消失） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/10328">#10328</a> <span class="author">— shain</span></li>
-  
   <li><span class="merged-at">[11/27 01:38]</span>第十一批主题色与录音横屏修复 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/10360">#10360</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/7651">#7651</a>) <span class="author">— 王争</span></li>
-  
   <li><span class="merged-at">[11/26 22:28]</span>个微重登等待网络验证时提示手机重试，重新取码前二次确认（销售不会误废手机上的验证） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/10261">#10261</a> <span class="author">— 张拓</span></li>
 </ul>
 
@@ -382,6 +387,8 @@ a:hover { text-decoration: underline; }
 
 <h2>🔧 其他（chore / docs / test / ...）</h2>
 <ul>
+  <li><span class="merged-at">[11/27 16:52]</span>test(e2e): 汇总交付本人会话与固定群只读旅程源码 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/10381">#10381</a> <span class="author">— shain</span></li>
+  <li><span class="merged-at">[11/27 15:22]</span>test(e2e): 交付 testing2 预约详情、分配历史与群发选人旅程源码 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/10372">#10372</a> <span class="author">— shain</span></li>
   <li><span class="merged-at">[11/27 05:28]</span>test(e2e): migrate seven existing chat journeys to explicit testing2 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/10335">#10335</a> <span class="author">— shain</span></li>
   <li><span class="merged-at">[11/27 05:28]</span>test(e2e): 群历史有界对照（拒绝局部集合假绿） #7966 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/10334">#10334</a> <span class="author">— shain</span></li>
   <li><span class="merged-at">[11/27 05:28]</span>test(e2e): 双测试企业切换隔离（拒绝旧上下文残留） #9338 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/10333">#10333</a> <span class="author">— shain</span></li>

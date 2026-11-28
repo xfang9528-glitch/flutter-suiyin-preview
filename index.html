@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <!-- CURRENT_BUILD:2026112701 -->
-<!-- PREVIEW_GENERATED_AT:2026-11-27T15:44:16.435418Z -->
+<!-- PREVIEW_GENERATED_AT:2026-11-28T02:35:47.171520Z -->
 <title>下一版发版预览 · flutter-suiyin</title>
 <style>
 :root {
@@ -83,7 +83,7 @@ a:hover { text-decoration: underline; }
 <label>查看历史预览：</label>
 <select id="version-switcher-select" onchange="var v=this.value; if(v) location.href = v; else location.href = './';" autocomplete="off">
 <!-- VERSION_SWITCHER_OPTIONS_START -->
-<option value="">📦 2026112702 发版预览</option>
+<option value="">📦 2026112801 发版预览</option>
 <option value="2026112701.html">🗂 2026112701</option>
 <option value="2026112601.html">🗂 2026112601</option>
 <option value="2026112501.html">🗂 2026112501</option>
@@ -318,10 +318,10 @@ a:hover { text-decoration: underline; }
 <!-- VERSION_SWITCHER_OPTIONS_END -->
 </select>
 </div>
-<h1>📦 2026112702 发版预览</h1>
+<h1>📦 2026112801 发版预览</h1>
 <div class="meta">
-当前版本：<code>2026112701</code>（发版时间：<span class="bump-time">11/27 16:52</span>），下一版（预览）：<code>2026112702</code><br>
-生成时间：<time id="preview-generated-at" datetime="2026-11-27T15:44:16.435418Z">2026-11-27 23:44:16</time> · 内容重新生成时更新，发布不会改写
+当前版本：<code>2026112701</code>（发版时间：<span class="bump-time">11/27 16:52</span>），下一版（预览）：<code>2026112801</code><br>
+生成时间：<time id="preview-generated-at" datetime="2026-11-28T02:35:47.171520Z">2026-11-28 10:35:47</time> · 内容重新生成时更新，发布不会改写
 </div>
 <script id="version-switcher-state">
 (function () {
@@ -349,18 +349,31 @@ a:hover { text-decoration: underline; }
 </script>
 
 <h2>📣 本版用户感知更新</h2>
-<div class="notice">本期暂无新的 PC 端用户感知更新。</div>
+<h3>✨ 体验优化</h3>
+<ul>
+  <li>朋友圈图片、历史聊天缩略图和预览中的图片被云端存档后，会在原位显示「已存档」；视频存档提示也统一为「已存档」 — 张拓 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/10412">#10412</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/6718">#6718</a>)</li>
+</ul>
+<h3>🐞 问题修复</h3>
+<ul>
+  <li>从聊天列表或通讯录打开未回超时、套电等通知时，不再误显示客户资料栏及其读取失败提示，通知内容可使用更大空间 — 陈宣宇 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/10396">#10396</a> (<a href="https://github.com/PetWebOrg/flutter-suiyin/issues/10369">#10369</a>)</li>
+</ul>
 
 <hr class="ref-divider">
 <h2 class="ref-heading">📋 本期所有 PR（含作者）— 对照找漏用</h2>
-<div class="ref-hint">11/27 16:52 上次发版后，合入 main 的全部 <strong>6</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
+<div class="ref-hint">11/27 16:52 上次发版后，合入 main 的全部 <strong>12</strong> 个 PR，由近到远排序。上半区由这里挑选改写。</div>
 <h2>🆕 新功能</h2>
 <ul>
+  
+  <li><span class="merged-at">[11/28 04:11]</span>为聊天回焦事件补充四项观测字段和本地取证模式（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/10388">#10388</a> <span class="author">— 张拓</span></li>
+  <li><span class="merged-at">[11/28 02:51]</span>开工认领只问是否客户群来源并补充 pages 调用点仓规（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/10410">#10410</a> <span class="author">— 张拓</span></li>
+  <li><span class="merged-at">[11/28 02:01]</span>朋友圈图片存档后在原位显示「已存档」（InvalidObjectState，不重试） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/10412">#10412</a> <span class="author">— 张拓</span></li>
   <li><span class="merged-at">[11/27 21:23]</span>认领外部 Issue 时补问客户来源并写回正文（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/10395">#10395</a> <span class="author">— 张拓</span></li>
 </ul>
 
 <h2>🐞 问题修复</h2>
 <ul>
+  <li><span class="merged-at">[11/28 04:37]</span>集成交付通知右栏隔离与录音卡企业准入 #10369 #10313 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/10396">#10396</a> <span class="author">— 王争</span></li>
+  
   <li><span class="merged-at">[11/27 17:44]</span>close #10299 完成第十二批 App 主题入口与移动组件修复 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/10377">#10377</a> <span class="author">— 王争</span></li>
 </ul>
 
@@ -371,6 +384,8 @@ a:hover { text-decoration: underline; }
 
 <h2>🔧 其他（chore / docs / test / ...）</h2>
 <ul>
+  <li><span class="merged-at">[11/28 00:44]</span>docs(android): 冻结 RMX5071 聊天气泡排版基准，归档六组真机对照 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/10413">#10413</a> <span class="author">— 张拓</span></li>
+  <li><span class="merged-at">[11/27 23:53]</span>test(e2e): 补齐三目标剩余四条既有测试来源 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/10404">#10404</a> <span class="author">— shain</span></li>
   <li><span class="merged-at">[11/27 23:34]</span>main 红：话术编辑器改用移动端弹窗后同步 8295 测试与字体清单锚点（无） <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/10406">#10406</a> <span class="author">— 张拓</span></li>
   <li><span class="merged-at">[11/27 22:21]</span>main 红：e2e_guards_test 的 locked media 缩略图用例不再触发 sqflite 缓存初始化 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/10400">#10400</a> <span class="author">— 张拓</span></li>
   <li><span class="merged-at">[11/27 20:48]</span>test(e2e): 收齐固定媒体锁消费者、原风险元数据与预检接线 <a href="https://github.com/PetWebOrg/flutter-suiyin/pull/10389">#10389</a> <span class="author">— shain</span></li>
